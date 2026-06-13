@@ -24,7 +24,10 @@ CACHE_PATH = Path(__file__).with_name("exercise_templates.json")
 # Add entries here when a local name doesn't match Hevy's template title.
 # Key = local name (case-insensitive); value = Hevy template title (exact).
 OVERRIDES: dict[str, str] = {
-    "low-bar squat": "Squat (Barbell)",
+    # User logs under their own custom templates, not Hevy stock — verified against
+    # the live training log (block_report). Keep these pointed at the custom titles
+    # so pushed routines link to existing exercise history.
+    "low-bar squat": "Low-bar Squat",
     "paused low-bar squat": "Paused Low Bar Squat",
     "cgb": "Bench Press - Close Grip (Barbell)",
     "spoto bench": "Bench Press (Barbell)",
@@ -34,7 +37,7 @@ OVERRIDES: dict[str, str] = {
     "paused rdl": "Romanian Deadlift (Barbell)",
     "weighted pull-up": "Pull Up (Weighted)",
     "wpu": "Pull Up (Weighted)",
-    "weighted dip": "Chest Dip (Weighted)",
+    "weighted dip": "Triceps Dip (Weighted)",
     "ohp": "Overhead Press (Barbell)",
     "db lateral raise": "Lateral Raise (Dumbbell)",
     "iso-lateral row": "Iso-Lateral Row (Machine)",
