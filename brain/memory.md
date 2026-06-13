@@ -122,10 +122,14 @@ active-issues.md with a permanent finding.
 
 ## Block 3 launched + W1-W2 review (2026-06-13)
 Block 3 (`2026-Q2-B03`) started ~2026-05-25 after a 2-week vacation following B2 W5
-(2026-05-24). Comp Bench reintroduced on D1 (despite the standing "no comp bench until
-MRI" note in the shoulder update — user proceeded; flag for next conversation whether
-MRI happened or this is intentional override). Dip reintroduced cautiously on D3.
-W5 deload is real this block — fixes the B2 open item.
+(2026-05-24). Comp Bench reintroduced on D1. **Resolved 2026-06-13**: this is a
+deliberate override, not a cleared gate — MRI was postponed (TBD), so the "no comp
+bench until MRI read" restriction never lifted. User is electing to train comp bench
+through tolerable shoulder pain (≤3/10 rule). Family doctor (seen 2026-06-12) referred
+to a pain clinic for a steroid injection and re-ordered the MRI; both pending a
+scheduling call. Full guardrails + escalation triggers now in active-issues.md. Coach
+flagged the partial→full-thickness-tear risk; user accepts. Dip reintroduced cautiously
+on D3. W5 deload is real this block — fixes the B2 open item.
 
 Block plan was authored in Google Sheets (sheet ID `1h3a9W2dklzLPlqi_DGP1pSym9hb3usGNK47qoZLKw0w`)
 and imported into the repo on 2026-06-13. Block 2 archived to `data/block-archive/`.
