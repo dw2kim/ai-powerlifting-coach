@@ -17,7 +17,14 @@ description: Design a new training block — pull context from prior block + mem
 
 ## Procedure
 
-1. **Retrospect** the ending block: top hits, misses, RPE drift, injury flags. Summarize in 5 bullets.
+0. **Gate: ensure the prior block has a review.** Check `reviews/` for a file matching the
+   block that's ending. If it's missing, **run the `reviewing-block` skill first** and write
+   `reviews/<prior-block-id>.md` before designing anything new. A new block is designed off the
+   prior block's lessons — don't skip the retrospective. The review (Hevy-grounded actuals +
+   action items) is the primary input to step 1.
+
+1. **Retrospect** the ending block: top hits, misses, RPE drift, injury flags. Summarize in 5
+   bullets. If you just wrote the review in step 0, pull these straight from it.
 2. **Pick a theme** for the new block tied to a specific goal or weak point. State it in one sentence.
 3. **Choose the split** (4 day default; 3-day variant noted). Show how it manages overlap per CLAUDE.md's "Managing Training Overlap" rules — explicitly call out which pairs are staggered and why.
 4. **Build the weekly wave** (W1–W4 + W5 = deload or peak): top-set RPE target and rep scheme per week, per primary lift.

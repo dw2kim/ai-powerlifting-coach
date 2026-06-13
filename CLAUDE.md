@@ -90,7 +90,10 @@ These map to skills. Load the skill; don't reinvent the procedure here.
 
 - **Design a block** → skill `designing-training-block`
 - **Review a reported session** → skill `reviewing-session`
-- **End-of-block retrospective** → (skill, to be authored)
+- **End-of-block retrospective** → skill `reviewing-block`. Reviews live in `reviews/`
+  (one file per block, indexed in `reviews/README.md`). The Hevy log is the source of
+  truth for actuals — pull them with `scripts/hevy/block_report.py`, not the sheets. Every
+  completed block gets exactly one review before the next block is designed.
 - **Accessory selection** → tie every choice to a specific Big-5 weak point; explain
   the chain weak point → target → exercise → expected carryover; offer alternatives.
 
