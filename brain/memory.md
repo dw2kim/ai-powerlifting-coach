@@ -119,3 +119,28 @@ ultrasound, 18 Jul 2025). ~1.5 yrs since injury, still symptomatic, slow improve
 not rehab-and-done. Comp bench reintroduction stays delayed until MRI read. RPE 9 bench
 cap is structural, not conservative — no grinding on bench, ever. Await MRI before updating
 active-issues.md with a permanent finding.
+
+## Block 3 launched + W1-W2 review (2026-06-13)
+Block 3 (`2026-Q2-B03`) started ~2026-05-25 after a 2-week vacation following B2 W5
+(2026-05-24). Comp Bench reintroduced on D1 (despite the standing "no comp bench until
+MRI" note in the shoulder update — user proceeded; flag for next conversation whether
+MRI happened or this is intentional override). Dip reintroduced cautiously on D3.
+W5 deload is real this block — fixes the B2 open item.
+
+Block plan was authored in Google Sheets (sheet ID `1h3a9W2dklzLPlqi_DGP1pSym9hb3usGNK47qoZLKw0w`)
+and imported into the repo on 2026-06-13. Block 2 archived to `data/block-archive/`.
+
+### W1-W2 actuals — RPE drift continues on bench and WPU
+Pattern from B1 hasn't fully resolved. Plan vs actual on top sets:
+- **Comp Bench W2**: 210-220 @7 → 215 **@8**. RPE breach by 1.0.
+- **Weighted Pull-up W2**: BW+65-70 @7 → BW+70 **@8**. RPE breach by 1.0.
+- Squat, Sumo, Paused Squat, Dip, CGB, RDL all on-target.
+
+**Coaching directive carried into W3**: hold weights on bench (215) and WPU (BW+70).
+Don't add load. Goal in W3 is to bring RPE back down to ≤7.5 at the same weight. If
+RPE doesn't drop, that's a reset signal — drop the next session 5-10 lbs.
+
+**Pattern to watch**: the lifts that drift are consistently the upper-body pressing/pulling
+ones. Squat and sumo respect the cap. Hypothesis: he over-rates pressing fatigue or
+under-rates SBD fatigue — possibly because the upper-body lifts feel "smaller" so he
+pushes through. Worth watching across B3 W3-W4 before structural change.
