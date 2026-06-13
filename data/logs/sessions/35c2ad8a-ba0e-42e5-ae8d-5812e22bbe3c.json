@@ -1,0 +1,315 @@
+{
+  "created_at": "2023-06-20T11:47:39.078Z",
+  "description": "",
+  "end_time": "2023-06-20T11:47:38+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "729237D1",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 20.41168092460379
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 31.75150366049478
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 40.82336184920758
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 40.82336184920758
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 40.82336184920758
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 5,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 31.75150366049478
+        }
+      ],
+      "superset_id": null,
+      "title": "Pull Up (Weighted)"
+    },
+    {
+      "exercise_template_id": "0B841777",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 102.05840462301894
+        }
+      ],
+      "superset_id": null,
+      "title": "Shrug (Barbell)"
+    },
+    {
+      "exercise_template_id": "F1E57334",
+      "index": 2,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 9,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 40.82336184920758
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 9,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 40.82336184920758
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 9,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 40.82336184920758
+        }
+      ],
+      "superset_id": null,
+      "title": "Dumbbell Row"
+    },
+    {
+      "exercise_template_id": "2EE45F81",
+      "index": 3,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 30.617521386905683
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 30.617521386905683
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 30.617521386905683
+        }
+      ],
+      "superset_id": null,
+      "title": "Single Arm Lat Pulldown"
+    },
+    {
+      "exercise_template_id": "D2387AB1",
+      "index": 4,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 29.483539113316585
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 24.947610018960187
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 15,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 24.947610018960187
+        }
+      ],
+      "superset_id": null,
+      "title": "Straight Arm Lat Pulldown (Cable)"
+    },
+    {
+      "exercise_template_id": "BE640BA0",
+      "index": 5,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 21.545663198192887
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 21.545663198192887
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 21.545663198192887
+        }
+      ],
+      "superset_id": null,
+      "title": "Face Pull"
+    },
+    {
+      "exercise_template_id": "01A35BF9",
+      "index": 6,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 36.28743275485118
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 5,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 36.28743275485118
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 5,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 31.75150366049478
+        }
+      ],
+      "superset_id": null,
+      "title": "EZ Bar Biceps Curl"
+    }
+  ],
+  "id": "35c2ad8a-ba0e-42e5-ae8d-5812e22bbe3c",
+  "routine_id": "4ba9cf56-48a5-4824-9404-901235dd3ff7",
+  "start_time": "2023-06-20T10:41:46+00:00",
+  "title": "Wide Back \ud83d\udcaa",
+  "updated_at": "2023-06-20T12:24:23.101Z"
+}

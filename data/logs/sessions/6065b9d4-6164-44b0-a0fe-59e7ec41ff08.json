@@ -1,0 +1,170 @@
+{
+  "created_at": "2026-02-17T13:33:39.287Z",
+  "description": "",
+  "end_time": "2026-02-17T13:33:38+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "D20D7BBE",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 3,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 183.7051283214341
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 3,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 183.7051283214341
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 3,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 183.7051283214341
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 3,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 183.7051283214341
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 5,
+          "reps": 4,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 156.4895537552957
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 6,
+          "reps": 4,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 156.4895537552957
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 7,
+          "reps": 4,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 156.4895537552957
+        }
+      ],
+      "superset_id": null,
+      "title": "Sumo Deadlift"
+    },
+    {
+      "exercise_template_id": "8a94cc7e-f70f-44b9-b5e1-ec14b167c6c2",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 5,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 61.235042773811365
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 1,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 4,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 106.59433371737533
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 4,
+          "rpe": 9,
+          "type": "normal",
+          "weight_kg": 106.59433371737533
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 3,
+          "rpe": 9,
+          "type": "normal",
+          "weight_kg": 106.59433371737533
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 5,
+          "reps": 3,
+          "rpe": 9,
+          "type": "normal",
+          "weight_kg": 106.59433371737533
+        }
+      ],
+      "superset_id": null,
+      "title": "3ct Pause Bench"
+    }
+  ],
+  "id": "6065b9d4-6164-44b0-a0fe-59e7ec41ff08",
+  "routine_id": "3f0d04c1-6c24-4d24-8566-7b81ed4fc620",
+  "start_time": "2026-02-17T11:49:34+00:00",
+  "title": "d2 - sumo",
+  "updated_at": "2026-02-17T13:33:39.287Z"
+}

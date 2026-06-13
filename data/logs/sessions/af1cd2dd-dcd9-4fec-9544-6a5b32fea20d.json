@@ -1,0 +1,285 @@
+{
+  "created_at": "2025-07-02T11:41:53.204Z",
+  "description": "",
+  "end_time": "2025-07-02T11:41:52+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "D20D7BBE",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 5,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 165.5614119440085
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 5,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 165.5614119440085
+        }
+      ],
+      "superset_id": null,
+      "title": "Sumo Deadlift"
+    },
+    {
+      "exercise_template_id": "c6a58fd7-2ecd-47e3-b6bb-2dabd05b74d1",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 5,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 5,
+          "rpe": 9,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        }
+      ],
+      "superset_id": null,
+      "title": "Paused RDL"
+    },
+    {
+      "exercise_template_id": "422B08F1",
+      "index": 2,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 15,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 18.14371637742559
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 15.87575183024739
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 13.607787283069193
+        }
+      ],
+      "superset_id": null,
+      "title": "Lateral Raise (Dumbbell)"
+    },
+    {
+      "exercise_template_id": "724CDE60",
+      "index": 3,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 9,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 18.14371637742559
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 9,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 18.14371637742559
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 8,
+          "rpe": 10,
+          "type": "normal",
+          "weight_kg": 18.14371637742559
+        }
+      ],
+      "superset_id": null,
+      "title": "Concentration Curl"
+    },
+    {
+      "exercise_template_id": "547db401-f20c-4394-bf8a-6adf6859a04d",
+      "index": 4,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 8.164672369841515
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 8.164672369841515
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 8.164672369841515
+        }
+      ],
+      "superset_id": null,
+      "title": "Single Arm Cable Press Around (Full protraction)"
+    },
+    {
+      "exercise_template_id": "93A552C6",
+      "index": 5,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 29.483539113316585
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 29.483539113316585
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 29.483539113316585
+        }
+      ],
+      "superset_id": null,
+      "title": "Triceps Pushdown"
+    },
+    {
+      "exercise_template_id": "E5988A0A",
+      "index": 6,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 11.339822735890994
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 11.339822735890994
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 11.339822735890994
+        }
+      ],
+      "superset_id": null,
+      "title": "Rear Delt Reverse Fly (Dumbbell)"
+    }
+  ],
+  "id": "af1cd2dd-dcd9-4fec-9544-6a5b32fea20d",
+  "routine_id": "0878055b-57eb-4964-9ede-560bec90c1f3",
+  "start_time": "2025-07-02T10:45:40+00:00",
+  "title": "Day 2 (RDL)",
+  "updated_at": "2025-07-02T11:41:53.204Z"
+}

@@ -1,0 +1,315 @@
+{
+  "created_at": "2024-10-30T12:46:44.153Z",
+  "description": "",
+  "end_time": "2024-10-30T12:46:43+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "5a09e61b-3bf6-4268-a5f1-d0f6824d5d56",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 124.73805009480093
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 6,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 129.27397918915733
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 6,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 124.73805009480093
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 6,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 111.13026281173174
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 6,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 115.66619190608813
+        }
+      ],
+      "superset_id": null,
+      "title": "Tempo RDL"
+    },
+    {
+      "exercise_template_id": "78433dd7-775a-4b33-a5be-3c64e3f4b636",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 5,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 83.91468824559335
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 3,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 106.59433371737533
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 5,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 97.52247552866254
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 5,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 88.45061733994974
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 5,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 88.45061733994974
+        }
+      ],
+      "superset_id": null,
+      "title": "Larsen Bench Press"
+    },
+    {
+      "exercise_template_id": "473CF5B8",
+      "index": 2,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 6,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 83.91468824559335
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 70.30690096252415
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 70.30690096252415
+        }
+      ],
+      "superset_id": null,
+      "title": "Lat Pulldown (Machine)"
+    },
+    {
+      "exercise_template_id": "9987330e-553a-4da6-9ae6-b52b4c22bf66",
+      "index": 3,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 20.41168092460379
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 20.41168092460379
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 20.41168092460379
+        }
+      ],
+      "superset_id": null,
+      "title": "Single Leg Hamstring Curl"
+    },
+    {
+      "exercise_template_id": "724CDE60",
+      "index": 4,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 15.87575183024739
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 15.87575183024739
+        }
+      ],
+      "superset_id": null,
+      "title": "Concentration Curl"
+    },
+    {
+      "exercise_template_id": "8BEBFED6",
+      "index": 5,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 45.35929094356398
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": 8.5,
+          "type": "normal",
+          "weight_kg": 45.35929094356398
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": 9.5,
+          "type": "normal",
+          "weight_kg": 45.35929094356398
+        }
+      ],
+      "superset_id": null,
+      "title": "Hip Adduction (Machine)"
+    },
+    {
+      "exercise_template_id": "94B7239B",
+      "index": 6,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 26.081592292549285
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 26.081592292549285
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 26.081592292549285
+        }
+      ],
+      "superset_id": null,
+      "title": "Triceps Rope Pushdown"
+    }
+  ],
+  "id": "659e3ca9-77d1-4562-be32-d05b2d2554c5",
+  "routine_id": "0878055b-57eb-4964-9ede-560bec90c1f3",
+  "start_time": "2024-10-30T10:47:48+00:00",
+  "title": "Day 2",
+  "updated_at": "2024-10-30T12:46:44.153Z"
+}

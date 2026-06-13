@@ -1,0 +1,188 @@
+{
+  "created_at": "2023-01-22T15:45:54.606Z",
+  "description": "Phew",
+  "end_time": "2023-01-22T16:58:26+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "D04AC939",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 5,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 5,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 165.5614119440085
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 165.5614119440085
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 165.5614119440085
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 165.5614119440085
+        }
+      ],
+      "superset_id": null,
+      "title": "Squat (Barbell)"
+    },
+    {
+      "exercise_template_id": "5046D0A9",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 5,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 61.235042773811365
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 61.235042773811365
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 61.235042773811365
+        }
+      ],
+      "superset_id": null,
+      "title": "Front Squat"
+    },
+    {
+      "exercise_template_id": "B5D3A742",
+      "index": 2,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 52.16318458509857
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 52.16318458509857
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 52.16318458509857
+        }
+      ],
+      "superset_id": null,
+      "title": "Bulgarian Split Squat"
+    },
+    {
+      "exercise_template_id": "75A4F6C4",
+      "index": 3,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 47.62725549074217
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 47.62725549074217
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 47.62725549074217
+        }
+      ],
+      "superset_id": null,
+      "title": "Leg Extension (Machine)"
+    }
+  ],
+  "id": "f0a30fa5-7687-42f0-8bae-251321d079ab",
+  "routine_id": "f1651b12-c597-434e-bce2-74b5dea1ccad",
+  "start_time": "2023-01-22T15:45:26+00:00",
+  "title": "3. Legs and Abs",
+  "updated_at": "2023-01-24T05:37:35.443Z"
+}

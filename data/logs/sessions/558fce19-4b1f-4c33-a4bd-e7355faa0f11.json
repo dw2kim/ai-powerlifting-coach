@@ -1,0 +1,256 @@
+{
+  "created_at": "2025-05-14T12:16:28.697Z",
+  "description": "",
+  "end_time": "2025-05-14T12:16:28+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "c6a58fd7-2ecd-47e3-b6bb-2dabd05b74d1",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 5,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 5,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 124.73805009480093
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 5,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 124.73805009480093
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 5,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 124.73805009480093
+        }
+      ],
+      "superset_id": null,
+      "title": "Paused RDL"
+    },
+    {
+      "exercise_template_id": "878b863e-8fe3-4dea-b186-a6c891eb5d90",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 11.339822735890994
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 7,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 20.41168092460379
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 7,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 15.87575183024739
+        }
+      ],
+      "superset_id": null,
+      "title": "Kneeling Single Arm Shoulder Press"
+    },
+    {
+      "exercise_template_id": "94B7239B",
+      "index": 2,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 29.483539113316585
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 29.483539113316585
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 29.483539113316585
+        }
+      ],
+      "superset_id": null,
+      "title": "Triceps Rope Pushdown"
+    },
+    {
+      "exercise_template_id": "724CDE60",
+      "index": 3,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 18.14371637742559
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 18.14371637742559
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 18.14371637742559
+        }
+      ],
+      "superset_id": null,
+      "title": "Concentration Curl"
+    },
+    {
+      "exercise_template_id": "2db09bfb-a294-44e5-bb35-77251cac0032",
+      "index": 4,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 27.215574566138386
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 34.01946820767298
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 34.01946820767298
+        }
+      ],
+      "superset_id": null,
+      "title": "Paused RDL Dumbbell"
+    },
+    {
+      "exercise_template_id": "8293E554",
+      "index": 5,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 15.87575183024739
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 11.339822735890994
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 11.339822735890994
+        }
+      ],
+      "superset_id": null,
+      "title": "Front Raise (Dumbbell)"
+    }
+  ],
+  "id": "558fce19-4b1f-4c33-a4bd-e7355faa0f11",
+  "routine_id": "0878055b-57eb-4964-9ede-560bec90c1f3",
+  "start_time": "2025-05-14T10:55:34+00:00",
+  "title": "Day 2 (RDL)",
+  "updated_at": "2025-05-14T12:16:28.697Z"
+}

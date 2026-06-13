@@ -1,0 +1,130 @@
+{
+  "created_at": "2025-08-11T12:45:30.811Z",
+  "description": "",
+  "end_time": "2025-08-11T12:45:30+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "57e29496-c8d7-4f8b-9bca-d1401504cbc8",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 1,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 183.7051283214341
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 3,
+          "rpe": 8.5,
+          "type": "normal",
+          "weight_kg": 206.38477379321608
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 1,
+          "rpe": 8.5,
+          "type": "normal",
+          "weight_kg": 217.7245965291071
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 4,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 165.5614119440085
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 5,
+          "reps": 4,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 165.5614119440085
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 6,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 165.5614119440085
+        }
+      ],
+      "superset_id": null,
+      "title": "Low-bar Squat"
+    },
+    {
+      "exercise_template_id": "6A6C31A5",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 79.37875915123695
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 83.91468824559335
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 81.64672369841516
+        }
+      ],
+      "superset_id": null,
+      "title": "Lat Pulldown (Cable)"
+    }
+  ],
+  "id": "4ca77ea4-af16-468d-9f99-51b5f77132a7",
+  "routine_id": "7085fd5d-2d87-4b27-ba76-f9fd4bd82c3e",
+  "start_time": "2025-08-11T10:49:26+00:00",
+  "title": "Day 1 (SQUAT)",
+  "updated_at": "2025-08-11T12:45:30.811Z"
+}

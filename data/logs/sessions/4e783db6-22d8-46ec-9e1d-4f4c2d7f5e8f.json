@@ -1,0 +1,217 @@
+{
+  "created_at": "2025-03-26T11:22:29.661Z",
+  "description": "",
+  "end_time": "2025-03-26T11:22:29+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "C6272009",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 4,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 161.02548284965212
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 5,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 151.9536246609393
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 5,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 147.41769556658292
+        }
+      ],
+      "superset_id": null,
+      "title": "Deadlift (Barbell)"
+    },
+    {
+      "exercise_template_id": "08A2974E",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 54.43114913227677
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 8,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 54.43114913227677
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 8,
+          "rpe": 8.5,
+          "type": "normal",
+          "weight_kg": 54.43114913227677
+        }
+      ],
+      "superset_id": null,
+      "title": "T Bar Row"
+    },
+    {
+      "exercise_template_id": "878b863e-8fe3-4dea-b186-a6c891eb5d90",
+      "index": 2,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 6,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 15.87575183024739
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 6,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 16.32934473968303
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 6,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 15.87575183024739
+        }
+      ],
+      "superset_id": null,
+      "title": "Kneeling Single Arm Shoulder Press"
+    },
+    {
+      "exercise_template_id": "93A552C6",
+      "index": 3,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 33.1122823888017
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 36.28743275485118
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 36.28743275485118
+        }
+      ],
+      "superset_id": null,
+      "title": "Triceps Pushdown"
+    },
+    {
+      "exercise_template_id": "724CDE60",
+      "index": 4,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": 9.5,
+          "type": "normal",
+          "weight_kg": 19.50449510573251
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 19.50449510573251
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 7,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 19.50449510573251
+        }
+      ],
+      "superset_id": null,
+      "title": "Concentration Curl"
+    }
+  ],
+  "id": "4e783db6-22d8-46ec-9e1d-4f4c2d7f5e8f",
+  "routine_id": "0878055b-57eb-4964-9ede-560bec90c1f3",
+  "start_time": "2025-03-26T10:40:58+00:00",
+  "title": "Day 2 (Conv Dead)",
+  "updated_at": "2025-03-26T11:22:29.661Z"
+}

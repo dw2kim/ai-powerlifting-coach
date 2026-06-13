@@ -1,0 +1,257 @@
+{
+  "created_at": "2024-10-18T11:49:55.492Z",
+  "description": "",
+  "end_time": "2024-10-18T11:49:55+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "dc821ef2-2735-462c-80e8-7cce49aca94b",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 3,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 161.02548284965212
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 4,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 156.4895537552957
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 4,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 4,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        }
+      ],
+      "superset_id": null,
+      "title": "Paused Low Bar Squat"
+    },
+    {
+      "exercise_template_id": "8a94cc7e-f70f-44b9-b5e1-ec14b167c6c2",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 83.91468824559335
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 3,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 97.52247552866254
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 3,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 86.18265279277155
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 86.18265279277155
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 5,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 86.18265279277155
+        }
+      ],
+      "superset_id": null,
+      "title": "3ct Pause Bench"
+    },
+    {
+      "exercise_template_id": "B5D3A742",
+      "index": 2,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 17.00973410383649
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 8,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 17.00973410383649
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 8,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 17.00973410383649
+        }
+      ],
+      "superset_id": null,
+      "title": "Bulgarian Split Squat"
+    },
+    {
+      "exercise_template_id": "F1E57334",
+      "index": 3,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 38.55539730202938
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 8,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 38.55539730202938
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 8,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 38.55539730202938
+        }
+      ],
+      "superset_id": null,
+      "title": "Dumbbell Row"
+    },
+    {
+      "exercise_template_id": "75A4F6C4",
+      "index": 4,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 54.43114913227677
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 54.43114913227677
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 54.43114913227677
+        }
+      ],
+      "superset_id": null,
+      "title": "Leg Extension (Machine)"
+    }
+  ],
+  "id": "ae318cba-7c24-409c-8d83-37eddb92c01c",
+  "routine_id": "6aebdae5-afd3-4cb5-b788-dc8c9c5441ec",
+  "start_time": "2024-10-18T10:34:25+00:00",
+  "title": "Day 3",
+  "updated_at": "2024-10-18T11:49:55.492Z"
+}

@@ -1,0 +1,169 @@
+{
+  "created_at": "2025-01-26T14:12:52.889Z",
+  "description": "",
+  "end_time": "2025-01-26T14:12:52+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "20caaea9-106c-4f56-8772-ec694c490b1c",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 57,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 5,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 5,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 156.4895537552957
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 5,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 170.0973410383649
+        }
+      ],
+      "superset_id": null,
+      "title": "High-bar Squats"
+    },
+    {
+      "exercise_template_id": "79D0BB3A",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 83.91468824559335
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 4,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 104.32636917019714
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 1,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 108.86229826455354
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 5,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 95.25451098148434
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 5,
+          "reps": 5,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 92.98654643430615
+        }
+      ],
+      "superset_id": null,
+      "title": "Bench Press (Barbell)"
+    },
+    {
+      "exercise_template_id": "C6C9B8A0",
+      "index": 2,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": 62,
+          "index": 0,
+          "reps": null,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": null
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": 60,
+          "index": 1,
+          "reps": null,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": null
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": 71,
+          "index": 2,
+          "reps": null,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": null
+        }
+      ],
+      "superset_id": null,
+      "title": "Plank"
+    }
+  ],
+  "id": "8d91c71a-b582-49c2-8cd7-516b5fec7bc9",
+  "routine_id": "2977dae5-017d-43b9-8102-612e05b683f5",
+  "start_time": "2025-01-26T13:21:11+00:00",
+  "title": "Day 4 (BENCH)",
+  "updated_at": "2025-01-26T14:12:52.889Z"
+}

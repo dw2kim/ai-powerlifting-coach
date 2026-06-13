@@ -1,0 +1,316 @@
+{
+  "created_at": "2023-08-27T13:38:06.149Z",
+  "description": "",
+  "end_time": "2023-08-27T13:38:05+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "20caaea9-106c-4f56-8772-ec694c490b1c",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 5,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 3,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 156.4895537552957
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 6,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 5,
+          "reps": 5,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 6,
+          "reps": 5,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 7,
+          "reps": 5,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        }
+      ],
+      "superset_id": null,
+      "title": "High-bar Squats"
+    },
+    {
+      "exercise_template_id": "C7973E0E",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 183.7051283214341
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 224.52849017064167
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 224.52849017064167
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 224.52849017064167
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 12,
+          "rpe": null,
+          "type": "dropset",
+          "weight_kg": 183.7051283214341
+        }
+      ],
+      "superset_id": null,
+      "title": "Leg Press (Machine)"
+    },
+    {
+      "exercise_template_id": "A733CC5B",
+      "index": 2,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": 10,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": null,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 40.82336184920758
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": 10,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": null,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 40.82336184920758
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": 10,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": null,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 40.82336184920758
+        }
+      ],
+      "superset_id": null,
+      "title": "Walking Lunge (Dumbbell)"
+    },
+    {
+      "exercise_template_id": "47B9DF13",
+      "index": 3,
+      "notes": "Weight plate 90 | machinr 210+",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 95.25451098148434
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 20,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 95.25451098148434
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 16,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 95.25451098148434
+        }
+      ],
+      "superset_id": null,
+      "title": "Calf Extension (Machine)"
+    },
+    {
+      "exercise_template_id": "F4B4C6EE",
+      "index": 4,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 38.55539730202938
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 36.28743275485118
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 6,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 36.28743275485118
+        }
+      ],
+      "superset_id": null,
+      "title": "Hip Abduction (Machine)"
+    },
+    {
+      "exercise_template_id": "091737FA",
+      "index": 5,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 4.535929094356398
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 4.535929094356398
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 4.535929094356398
+        }
+      ],
+      "superset_id": null,
+      "title": "Back Extension (Weighted Hyperextension)"
+    }
+  ],
+  "id": "8ce83e22-d7f1-4f32-bc1e-2b93b4dedf7e",
+  "routine_id": "b6e7ac8b-60c8-444a-832a-df46fa023e14",
+  "start_time": "2023-08-27T12:35:02+00:00",
+  "title": "BB Legs \ud83e\uddb5",
+  "updated_at": "2023-08-28T17:49:51.026Z"
+}

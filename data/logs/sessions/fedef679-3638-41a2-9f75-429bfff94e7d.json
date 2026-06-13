@@ -1,0 +1,198 @@
+{
+  "created_at": "2025-10-06T11:37:25.656Z",
+  "description": "",
+  "end_time": "2025-10-06T11:37:24+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "57e29496-c8d7-4f8b-9bca-d1401504cbc8",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 2,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 165.5614119440085
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 4,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 183.7051283214341
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 2,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 199.5808801516815
+        }
+      ],
+      "superset_id": null,
+      "title": "Low-bar Squat"
+    },
+    {
+      "exercise_template_id": "dc821ef2-2735-462c-80e8-7cce49aca94b",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 4,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 165.5614119440085
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 158.7575183024739
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 158.7575183024739
+        }
+      ],
+      "superset_id": null,
+      "title": "Paused Low Bar Squat"
+    },
+    {
+      "exercise_template_id": "8cd95bf6-daeb-4ca4-b5d1-6ed447248828",
+      "index": 2,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 5,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 61.235042773811365
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 4,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 79.37875915123695
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 6,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 70.30690096252415
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 6,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 70.30690096252415
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 6,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 70.30690096252415
+        }
+      ],
+      "superset_id": null,
+      "title": "Paused Larsen Bench Press"
+    },
+    {
+      "exercise_template_id": "F1E57334",
+      "index": 3,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 36.28743275485118
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 36.28743275485118
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 36.28743275485118
+        }
+      ],
+      "superset_id": null,
+      "title": "Dumbbell Row"
+    }
+  ],
+  "id": "fedef679-3638-41a2-9f75-429bfff94e7d",
+  "routine_id": "7085fd5d-2d87-4b27-ba76-f9fd4bd82c3e",
+  "start_time": "2025-10-06T10:51:45+00:00",
+  "title": "Day 1 (SQUAT)",
+  "updated_at": "2025-10-06T11:37:25.656Z"
+}

@@ -1,0 +1,160 @@
+{
+  "created_at": "2025-05-24T14:54:38.538Z",
+  "description": "",
+  "end_time": "2025-05-24T14:54:38+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "927a2231-9678-4d77-a58d-2dfe25f3ca8f",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 5,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 4,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 154.2215892081175
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 4,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 154.2215892081175
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 4,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 154.2215892081175
+        }
+      ],
+      "superset_id": null,
+      "title": "3-0-0 Tempo Low Bar Squat"
+    },
+    {
+      "exercise_template_id": "79D0BB3A",
+      "index": 1,
+      "notes": "8 6(3)",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 5,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 83.91468824559335
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 1,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 115.66619190608813
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 1,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 120.20212100044454
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 1,
+          "rpe": 7,
+          "type": "warmup",
+          "weight_kg": 124.73805009480093
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 5,
+          "reps": 1,
+          "rpe": 10,
+          "type": "normal",
+          "weight_kg": 129.27397918915733
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 6,
+          "reps": 4,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 7,
+          "reps": 4,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 8,
+          "reps": 5,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 102.05840462301894
+        }
+      ],
+      "superset_id": null,
+      "title": "Bench Press (Barbell)"
+    }
+  ],
+  "id": "1d680387-bcb1-4449-99da-06eeb9320275",
+  "routine_id": "2977dae5-017d-43b9-8102-612e05b683f5",
+  "start_time": "2025-05-24T12:18:44+00:00",
+  "title": "Day 4 (BENCH)",
+  "updated_at": "2025-05-24T14:54:38.538Z"
+}

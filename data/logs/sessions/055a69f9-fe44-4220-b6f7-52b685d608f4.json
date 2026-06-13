@@ -1,0 +1,51 @@
+{
+  "created_at": "2025-02-04T12:43:57.416Z",
+  "description": "",
+  "end_time": "2025-02-04T12:43:56+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "F1E57334",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 36.28743275485118
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 36.28743275485118
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 36.28743275485118
+        }
+      ],
+      "superset_id": null,
+      "title": "Dumbbell Row"
+    }
+  ],
+  "id": "055a69f9-fe44-4220-b6f7-52b685d608f4",
+  "routine_id": "7085fd5d-2d87-4b27-ba76-f9fd4bd82c3e",
+  "start_time": "2025-02-04T12:39:16+00:00",
+  "title": "Day 1 (SQUAT)",
+  "updated_at": "2025-02-04T12:43:57.416Z"
+}

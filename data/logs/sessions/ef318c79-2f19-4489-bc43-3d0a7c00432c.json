@@ -1,0 +1,227 @@
+{
+  "created_at": "2023-10-28T14:15:57.385Z",
+  "description": "",
+  "end_time": "2023-10-28T14:15:56+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "20caaea9-106c-4f56-8772-ec694c490b1c",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 6,
+          "rpe": null,
+          "type": "dropset",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 6,
+          "rpe": null,
+          "type": "dropset",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 6,
+          "rpe": null,
+          "type": "dropset",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 6,
+          "rpe": null,
+          "type": "dropset",
+          "weight_kg": 142.88176647222653
+        }
+      ],
+      "superset_id": null,
+      "title": "High-bar Squats"
+    },
+    {
+      "exercise_template_id": "1E42FD5F",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 83.91468824559335
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 83.91468824559335
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 83.91468824559335
+        }
+      ],
+      "superset_id": null,
+      "title": "Hack Squat (Machine)"
+    },
+    {
+      "exercise_template_id": "A733CC5B",
+      "index": 2,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": 11,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": null,
+          "rpe": null,
+          "type": "dropset",
+          "weight_kg": 31.75150366049478
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": 10,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": null,
+          "rpe": null,
+          "type": "dropset",
+          "weight_kg": 31.75150366049478
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": 10,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": null,
+          "rpe": null,
+          "type": "dropset",
+          "weight_kg": 31.75150366049478
+        }
+      ],
+      "superset_id": null,
+      "title": "Walking Lunge (Dumbbell)"
+    },
+    {
+      "exercise_template_id": "091737FA",
+      "index": 3,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": null,
+          "type": "dropset",
+          "weight_kg": 0.45359290943563974
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": null,
+          "type": "dropset",
+          "weight_kg": 0.45359290943563974
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": null,
+          "type": "dropset",
+          "weight_kg": 0.45359290943563974
+        }
+      ],
+      "superset_id": null,
+      "title": "Back Extension (Weighted Hyperextension)"
+    },
+    {
+      "exercise_template_id": "629AE73D",
+      "index": 4,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 5.669911367945497
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 5.669911367945497
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 5.669911367945497
+        }
+      ],
+      "superset_id": null,
+      "title": "Single Leg Extensions"
+    }
+  ],
+  "id": "ef318c79-2f19-4489-bc43-3d0a7c00432c",
+  "routine_id": "b6e7ac8b-60c8-444a-832a-df46fa023e14",
+  "start_time": "2023-10-28T12:41:38+00:00",
+  "title": "BB Legs \ud83e\uddb5",
+  "updated_at": "2023-10-28T14:15:57.385Z"
+}

@@ -1,0 +1,178 @@
+{
+  "created_at": "2024-05-04T15:39:37.781Z",
+  "description": "",
+  "end_time": "2024-05-04T15:39:37+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "D20D7BBE",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 1,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 183.7051283214341
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 1,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 188.2410574157905
+        }
+      ],
+      "superset_id": null,
+      "title": "Sumo Deadlift"
+    },
+    {
+      "exercise_template_id": "6cee736f-103a-4757-bb8d-e10c614ba473",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 3,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 161.02548284965212
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 3,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 161.02548284965212
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 3,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 161.02548284965212
+        }
+      ],
+      "superset_id": null,
+      "title": "Paused Sumo Deadlift"
+    },
+    {
+      "exercise_template_id": "8a94cc7e-f70f-44b9-b5e1-ec14b167c6c2",
+      "index": 2,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 1,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 111.13026281173174
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 2,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 88.45061733994974
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 79.37875915123695
+        }
+      ],
+      "superset_id": null,
+      "title": "3ct Pause Bench"
+    },
+    {
+      "exercise_template_id": "dc821ef2-2735-462c-80e8-7cce49aca94b",
+      "index": 3,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 147.41769556658292
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 133.80990828351372
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 133.80990828351372
+        }
+      ],
+      "superset_id": null,
+      "title": "Paused Low Bar Squat"
+    }
+  ],
+  "id": "eeb7fae8-5100-4d2d-ba30-c5f9bf654e61",
+  "routine_id": "f550708e-718d-48ad-84db-7085af67814d",
+  "start_time": "2024-05-04T14:28:06+00:00",
+  "title": "Day 3/4 compact",
+  "updated_at": "2024-09-11T13:58:24.991Z"
+}

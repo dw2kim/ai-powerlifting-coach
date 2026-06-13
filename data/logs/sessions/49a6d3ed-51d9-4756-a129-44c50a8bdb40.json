@@ -1,0 +1,295 @@
+{
+  "created_at": "2024-03-07T13:39:18.766Z",
+  "description": "",
+  "end_time": "2024-03-07T13:39:18+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "C6272009",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 1,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 3,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 174.6332701327213
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 3,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 174.6332701327213
+        }
+      ],
+      "superset_id": null,
+      "title": "Deadlift (Barbell)"
+    },
+    {
+      "exercise_template_id": "2B4B7310",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 8,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 124.73805009480093
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 8,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 124.73805009480093
+        }
+      ],
+      "superset_id": null,
+      "title": "Romanian Deadlift (Barbell)"
+    },
+    {
+      "exercise_template_id": "78433dd7-775a-4b33-a5be-3c64e3f4b636",
+      "index": 2,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 6,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 86.18265279277155
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 6,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 90.71858188712795
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 6,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 83.91468824559335
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 6,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 83.91468824559335
+        }
+      ],
+      "superset_id": null,
+      "title": "Larsen Bench Press"
+    },
+    {
+      "exercise_template_id": "70e16fa2-9806-48bd-81fe-0737b3e8e6e0",
+      "index": 3,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 9,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 70.30690096252415
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 9,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 70.30690096252415
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 9,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 70.30690096252415
+        }
+      ],
+      "superset_id": null,
+      "title": "Natural Grip Lat Pulldown"
+    },
+    {
+      "exercise_template_id": "9987330e-553a-4da6-9ae6-b52b4c22bf66",
+      "index": 4,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 29.483539113316585
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 29.483539113316585
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": 9,
+          "type": "normal",
+          "weight_kg": 29.483539113316585
+        }
+      ],
+      "superset_id": null,
+      "title": "Single Leg Hamstring Curl"
+    },
+    {
+      "exercise_template_id": "724CDE60",
+      "index": 5,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 14.741769556658292
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": 8.5,
+          "type": "normal",
+          "weight_kg": 15.87575183024739
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 8,
+          "rpe": 9.5,
+          "type": "normal",
+          "weight_kg": 15.87575183024739
+        }
+      ],
+      "superset_id": null,
+      "title": "Concentration Curl"
+    },
+    {
+      "exercise_template_id": "50DFDFAB",
+      "index": 6,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 70.30690096252415
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 8,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 70.30690096252415
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 9,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 70.30690096252415
+        }
+      ],
+      "superset_id": null,
+      "title": "Incline Bench Press (Barbell)"
+    }
+  ],
+  "id": "49a6d3ed-51d9-4756-a129-44c50a8bdb40",
+  "routine_id": "0878055b-57eb-4964-9ede-560bec90c1f3",
+  "start_time": "2024-03-07T10:17:48+00:00",
+  "title": "Day 2",
+  "updated_at": "2024-09-11T13:58:24.991Z"
+}

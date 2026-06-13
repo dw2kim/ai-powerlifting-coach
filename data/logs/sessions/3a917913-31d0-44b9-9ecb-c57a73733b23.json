@@ -1,0 +1,51 @@
+{
+  "created_at": "2025-05-10T15:05:09.402Z",
+  "description": "",
+  "end_time": "2025-05-10T15:05:09+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "091737FA",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 11.339822735890994
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 11.339822735890994
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 11.339822735890994
+        }
+      ],
+      "superset_id": null,
+      "title": "Back Extension (Weighted Hyperextension)"
+    }
+  ],
+  "id": "3a917913-31d0-44b9-9ecb-c57a73733b23",
+  "routine_id": "6aebdae5-afd3-4cb5-b788-dc8c9c5441ec",
+  "start_time": "2025-05-10T13:52:03+00:00",
+  "title": "Day 3 (SUMO)",
+  "updated_at": "2025-05-10T15:05:09.402Z"
+}

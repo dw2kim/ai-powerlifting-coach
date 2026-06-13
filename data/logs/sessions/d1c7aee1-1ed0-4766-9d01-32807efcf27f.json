@@ -1,0 +1,237 @@
+{
+  "created_at": "2024-05-07T12:21:37.229Z",
+  "description": "",
+  "end_time": "2024-05-07T12:21:36+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "2B4B7310",
+      "index": 0,
+      "notes": "6 5 -5",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 7,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 129.27397918915733
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 9,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 115.66619190608813
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 9,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 111.13026281173174
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 9,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 111.13026281173174
+        }
+      ],
+      "superset_id": null,
+      "title": "Romanian Deadlift (Barbell)"
+    },
+    {
+      "exercise_template_id": "78433dd7-775a-4b33-a5be-3c64e3f4b636",
+      "index": 1,
+      "notes": "6 6 -5",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 83.91468824559335
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 3,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 97.52247552866254
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 5,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 92.98654643430615
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 5,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 88.45061733994974
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 5,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 88.45061733994974
+        }
+      ],
+      "superset_id": null,
+      "title": "Larsen Bench Press"
+    },
+    {
+      "exercise_template_id": "70e16fa2-9806-48bd-81fe-0737b3e8e6e0",
+      "index": 2,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 6,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 68.03893641534596
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": 7.5,
+          "type": "dropset",
+          "weight_kg": 63.50300732098956
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 63.50300732098956
+        }
+      ],
+      "superset_id": null,
+      "title": "Natural Grip Lat Pulldown"
+    },
+    {
+      "exercise_template_id": "9987330e-553a-4da6-9ae6-b52b4c22bf66",
+      "index": 3,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": 7,
+          "type": "warmup",
+          "weight_kg": 18.14371637742559
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 19.27769865101469
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 8,
+          "rpe": 8.5,
+          "type": "normal",
+          "weight_kg": 19.27769865101469
+        }
+      ],
+      "superset_id": null,
+      "title": "Single Leg Hamstring Curl"
+    },
+    {
+      "exercise_template_id": "724CDE60",
+      "index": 4,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 15.87575183024739
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 15.87575183024739
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 15.87575183024739
+        }
+      ],
+      "superset_id": null,
+      "title": "Concentration Curl"
+    }
+  ],
+  "id": "d1c7aee1-1ed0-4766-9d01-32807efcf27f",
+  "routine_id": "0878055b-57eb-4964-9ede-560bec90c1f3",
+  "start_time": "2024-05-07T09:45:20+00:00",
+  "title": "Day 2",
+  "updated_at": "2024-09-11T13:58:24.991Z"
+}

@@ -1,0 +1,61 @@
+{
+  "created_at": "2023-04-19T05:15:17.086Z",
+  "description": "",
+  "end_time": "2023-04-19T05:08:20+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "D04AC939",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 7,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 7,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 6,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        }
+      ],
+      "superset_id": null,
+      "title": "Squat (Barbell)"
+    }
+  ],
+  "id": "b13b017b-def4-4329-9bce-c87656459848",
+  "routine_id": "f1651b12-c597-434e-bce2-74b5dea1ccad",
+  "start_time": "2023-04-19T04:57:20+00:00",
+  "title": "3. Legs and Abs \ud83e\uddb5",
+  "updated_at": "2023-04-19T05:15:17.086Z"
+}
