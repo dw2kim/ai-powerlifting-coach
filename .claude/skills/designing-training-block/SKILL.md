@@ -14,6 +14,8 @@ description: Design a new training block — pull context from prior block + mem
 - `reference/goals.md` — 3-month / 12-month targets to drive periodization
 - `reference/profile.md` — weak points, preferences
 - `brain/active-issues.md` — anything to work around
+- `reference/programming-rules.md` — **active rules from athlete feedback. Binding.** Read
+  before prescribing. Check `feedback/log.md` for any exercise-level notes too.
 
 ## Procedure
 
@@ -29,6 +31,14 @@ description: Design a new training block — pull context from prior block + mem
 3. **Choose the split** (4 day default; 3-day variant noted). Show how it manages overlap per CLAUDE.md's "Managing Training Overlap" rules — explicitly call out which pairs are staggered and why.
 4. **Build the weekly wave** (W1–W4 + W5 = deload or peak): top-set RPE target and rep scheme per week, per primary lift.
 5. **Assign accessories** with weak-point chain: weak point → target → exercise → expected carryover. Offer one alternative per slot.
+   - **Loads come from the log, not guesses** (rule `loads-from-logs`). For every accessory
+     (and primaries when useful), pull the real working load:
+     `python -m scripts.hevy.block_report --exercise "<name>" --recent 90` and anchor on the
+     median. Never copy a planning-sheet number without checking it against the log.
+   - **Progress accessories gradually** (rule `accessory-progression`): hold 2–3 weeks, small
+     bumps — not +5 lb/week.
+   - **Accessory RPE** (rule `accessory-rpe`): assume 7–8; don't prescribe or expect logged RPE
+     on them unless it's a 9+ situation.
 6. **Write**:
    - `brain/current-block.md` — prose for humans (this is what you read on your phone)
    - `brain/current-block.json` — structured spec for `push_block.py`. Schema in `scripts/hevy/push_block.py` docstring.

@@ -96,6 +96,10 @@ These map to skills. Load the skill; don't reinvent the procedure here.
   completed block gets exactly one review before the next block is designed.
 - **Accessory selection** → tie every choice to a specific Big-5 weak point; explain
   the chain weak point → target → exercise → expected carryover; offer alternatives.
+- **Log program-design feedback** → skill `feedback`. The athlete's channel for correcting
+  the program. Raw entries in `feedback/log.md`; durable rules promoted to
+  `reference/programming-rules.md`, which `designing-training-block` is bound to obey.
+  Loads are grounded in the Hevy log — `block_report.py --exercise "<name>"` — never guessed.
 
 ### Output format
 - Clean markdown tables for blocks.

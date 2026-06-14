@@ -6,8 +6,11 @@ lifted. This tool pulls, per Big-5 lift, the heaviest working set each session
 plus the window's best e1RM, so a block review is grounded in real numbers.
 
 Usage:
-  python -m scripts.hevy.block_report --start 2026-03-09 --end 2026-04-17
-  python -m scripts.hevy.block_report --start 2026-04-20 --end 2026-05-13 --md
+  # Big-5 window report (for block reviews):
+  python -m scripts.hevy.block_report --start 2026-03-09 --end 2026-04-17 --md
+
+  # Recent working load for ANY exercise (for block design — base loads on logs):
+  python -m scripts.hevy.block_report --exercise "Hip Abduction" --recent 90
 
 Lifts are matched by Hevy exercise_template_id (stable) — not day labels, which
 go stale in the app. Bodyweight for pull-up/dip e1RM defaults to 180 lb.
@@ -17,6 +20,8 @@ from __future__ import annotations
 import argparse
 import glob
 import json
+import statistics
+from datetime import date as date_cls, timedelta
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -93,6 +98,54 @@ def analyze(start: str, end: str, bw: float = DEFAULT_BW) -> dict:
     return {"sessions": len(sessions), "per_lift": per_lift}
 
 
+def recent_loads(name: str, days: int = 90, bw: float = DEFAULT_BW,
+                 end: str | None = None) -> dict:
+    """Recent top working set per session for ONE exercise (resolved by name).
+
+    For block design: answers "what does the athlete currently train X at?" so
+    suggested loads come from the log, not a guess. Reports each session's
+    heaviest non-warmup set plus the median working load (the number to anchor
+    the next block's prescription on).
+    """
+    # Local import avoids a hard dependency on the API/.env for the Big-5 mode.
+    from .exercise_map import Resolver
+
+    tid = Resolver().resolve(name)
+    end = end or date_cls.today().isoformat()
+    start = (date_cls.fromisoformat(end) - timedelta(days=days)).isoformat()
+    is_bw = LIFTS.get(tid, (None, False))[1]
+
+    rows = []
+    for w in load_window(start, end):
+        date = (w.get("start_time") or "")[:10]
+        for ex in w.get("exercises", []):
+            if ex.get("exercise_template_id") != tid:
+                continue
+            best = None
+            for s in ex.get("sets", []):
+                if s.get("type") == "warmup":
+                    continue
+                wt, reps = s.get("weight_kg"), s.get("reps")
+                if wt is None:
+                    continue
+                lbs = round(wt * KG_TO_LBS, 1)
+                if best is None or lbs > best["added_lb"]:
+                    best = {"date": date, "added_lb": lbs, "reps": reps,
+                            "rpe": s.get("rpe"), "is_bw": is_bw}
+            if best:
+                rows.append(best)
+    loads = [r["added_lb"] for r in rows]
+    return {
+        "exercise": name,
+        "template_id": tid,
+        "window": f"{start} → {end}",
+        "sessions": len(rows),
+        "median_load": round(statistics.median(loads), 1) if loads else None,
+        "max_load": max(loads) if loads else None,
+        "recent": rows[-8:],
+    }
+
+
 def fmt_set(s: dict) -> str:
     load = f"BW+{s['added_lb']:g}" if s["is_bw"] else f"{s['added_lb']:g}"
     rpe = f"@{s['rpe']}" if s["rpe"] is not None else "@—"
@@ -117,11 +170,21 @@ def render_md(start: str, end: str, result: dict) -> str:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--start", required=True)
-    ap.add_argument("--end", required=True)
+    ap.add_argument("--start", help="Window start (Big-5 mode)")
+    ap.add_argument("--end", help="Window end (Big-5 mode); default today in --exercise mode")
+    ap.add_argument("--exercise", help="Recent working load for one exercise (by name)")
+    ap.add_argument("--recent", type=int, default=90, help="Lookback days for --exercise")
     ap.add_argument("--bw", type=float, default=DEFAULT_BW)
-    ap.add_argument("--md", action="store_true", help="Markdown output")
+    ap.add_argument("--md", action="store_true", help="Markdown output (Big-5 mode)")
     args = ap.parse_args()
+
+    if args.exercise:
+        result = recent_loads(args.exercise, args.recent, args.bw, args.end)
+        print(json.dumps(result, indent=2))
+        return
+
+    if not (args.start and args.end):
+        ap.error("Big-5 mode needs --start and --end (or use --exercise)")
     result = analyze(args.start, args.end, args.bw)
     if args.md:
         print(render_md(args.start, args.end, result))

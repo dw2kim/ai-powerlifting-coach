@@ -1633,19 +1633,19 @@
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 40.8,
+              "weight_kg": 52.2,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 40.8,
+              "weight_kg": 52.2,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 40.8,
+              "weight_kg": 52.2,
               "reps": 12,
               "rpe": 7
             }
@@ -1762,19 +1762,19 @@
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 43.1,
+              "weight_kg": 52.2,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 43.1,
+              "weight_kg": 52.2,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 43.1,
+              "weight_kg": 52.2,
               "reps": 12,
               "rpe": 7
             }
@@ -1891,19 +1891,19 @@
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 43.1,
+              "weight_kg": 54.4,
               "reps": 12,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 43.1,
+              "weight_kg": 54.4,
               "reps": 12,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 43.1,
+              "weight_kg": 54.4,
               "reps": 12,
               "rpe": 7.5
             }
@@ -2008,13 +2008,13 @@
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 36.3,
+              "weight_kg": 45.4,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 36.3,
+              "weight_kg": 45.4,
               "reps": 12,
               "rpe": 6
             }
