@@ -106,6 +106,11 @@ def main() -> None:
         help="Actually call the Hevy API. Default is dry-run.",
     )
     parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Explicit no-op; dry-run is already the default without --apply.",
+    )
+    parser.add_argument(
         "--week", type=int, help="Push only this week (default: all weeks)"
     )
     args = parser.parse_args()
