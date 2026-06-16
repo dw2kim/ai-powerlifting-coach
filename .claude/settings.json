@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path // empty' | { read -r f; case \"$f\" in */.claude/skills/*/SKILL.md) python3 \"${CLAUDE_PROJECT_DIR:-.}/scripts/gen_skills_readme.py\" ;; esac; } 2>/dev/null || true",
+            "statusMessage": "Updating Skills table in README"
+          }
+        ]
+      }
+    ]
+  }
+}

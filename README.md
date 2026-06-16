@@ -25,3 +25,18 @@ Versioned strength-coaching system. Runs in Claude Code; the repo IS the coach.
   The Drive copy of source_of_truth is now historical; don't re-import it.
 - NOTE 2026-06-10: original .git was lost when the repo was zipped/transferred;
   history restarts at the baseline commit.
+
+<!-- SKILLS:START -->
+
+## Skills
+
+_Auto-generated from `.claude/skills/*/SKILL.md` by `scripts/gen_skills_readme.py` (via a PostToolUse hook). Do not edit this table by hand — edit the SKILL.md frontmatter._
+
+| Skill | Trigger | What it does |
+|---|---|---|
+| `designing-training-block` | Triggers on "design the next block", "plan block N", or starting a new mesocycle. | Design a new training block — pull context from prior block + memory + maxes + goals, propose split, weekly intensity wave, exercise selection with weak-point rationale, write current-block.md + JSON, optionally push to Hevy |
+| `feedback` | Triggers on "feedback:", "the program got X wrong", corrections to suggested loads/progression/exercise selection, or any note about how future blocks should be designed differently. | Log athlete feedback about program/block design and turn the durable parts into enforced rules |
+| `reviewing-block` | Triggers at end of a block, on "review block N", or automatically when the next block is being designed and the prior block has no review. | End-of-block retrospective. Soft review of a completed training block grounded in the Hevy log (source of truth) — what's been done, what to continue, what to improve, action items, plus power/health notes |
+| `reviewing-session` | Triggers on "review last session", a pasted set-by-set summary, or any session report. | Review a single training session — planned vs actual on weight/RPE/quality/trend, write log, update brain state, commit |
+
+<!-- SKILLS:END -->

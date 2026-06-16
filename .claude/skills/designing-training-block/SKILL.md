@@ -1,6 +1,6 @@
 ---
 name: designing-training-block
-description: Design a new training block — pull context from prior block + memory + maxes + goals, propose split, weekly intensity wave, exercise selection with weak-point rationale, write current-block.md + JSON, optionally push to Hevy.
+description: Design a new training block — pull context from prior block + memory + maxes + goals, propose split, weekly intensity wave, exercise selection with weak-point rationale, write current-block.md + JSON, optionally push to Hevy. Triggers on "design the next block", "plan block N", or starting a new mesocycle.
 ---
 
 # Designing a training block
