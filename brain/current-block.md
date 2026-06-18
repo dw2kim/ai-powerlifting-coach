@@ -9,10 +9,14 @@
 **Reference maxes (lbs)**: Squat 506.3 / Comp Bench 266.5 / Sumo DL 511.8 / WPU BW+90 (e1RM ~100) / BW 180
 
 ## Split (4 days/week)
-- **D1 — Squat + Comp Bench**: Low-bar Squat (top + backoff) · Competition Bench (top sets) · Iso-Lateral Row · Triceps Pushdown · Leg Extension (3s ecc)
-- **D2 — WPU + Sumo Acc**: Weighted Pull-up (top + backoff + BW AMRAP from W2) · Paused RDL · DB Shoulder Press (@7 cap) · Concentration Curl · Seated Leg Curl
-- **D3 — Weighted Dip + Squat Acc**: Weighted Dip (top) · Paused Low-bar Squat (top + backoff, @7 cap) · Lat Pulldown · Hip Adduction · Rear Delt Fly
-- **D4 — Sumo + CGB**: Sumo Deadlift (top + backoff) · Close Grip Bench · Meadows Row · Face Pull (rope) · Weighted Back Extension
+> **Training days: D1 Mon · D2 Tue · D3 Thu · D4 Fri.** This is the normal week. D4
+> occasionally slips to Saturday when Friday doesn't work — but default is Friday.
+> Athlete trains in the morning, so all four days are done by early afternoon.
+
+- **D1 (Mon) — Squat + Comp Bench**: Low-bar Squat (top + backoff) · Competition Bench (top sets) · Iso-Lateral Row · Triceps Pushdown · Leg Extension (3s ecc)
+- **D2 (Tue) — WPU + Sumo Acc**: Weighted Pull-up (top + backoff + BW AMRAP from W2) · Paused RDL · DB Shoulder Press (@7 cap) · Concentration Curl · Seated Leg Curl
+- **D3 (Thu) — Weighted Dip + Squat Acc**: Weighted Dip (top) · Paused Low-bar Squat (top + backoff, @7 cap) · Lat Pulldown · Hip Adduction · Rear Delt Fly
+- **D4 (Fri) — Sumo + CGB**: Sumo Deadlift (top + backoff) · Close Grip Bench · Meadows Row · Face Pull (rope) · Weighted Back Extension
 
 ## Why this shape (vs Block 2)
 - **Comp Bench is back.** B2 ran three bench variants (CGB / Spoto / Paused Larsen) to dodge the shoulder; B3 reintroduces comp setup on D1 starting at @6. Standing order: **@7 cap on top sets through W2.** B1 bench drift to @9 is the warning.
@@ -59,7 +63,7 @@
 - **RPE caps are still the #1 issue — but pressing/squat discipline is strong this block.** The one
   exception is the **weighted pull-up**: W2 @8, W3 @8.5 vs @7-7.5 plan. If a top set hits 0.5 over
   target RPE, stop the set.
-- **W4 pull-up: HOLD BW+85, target @7.5. No weight jump.** It loads the same back/grip as Sat sumo.
+- **W4 pull-up: HOLD BW+85, target @7.5. No weight jump.** It loads the same back/grip as Fri (D4) sumo.
 - **D1 press (POWER Bench): @7 cap holding — keep it there.** Shoulder decision in active-issues.
 - **DB Shoulder Press: @7 absolute cap.** OHP above @7.5 flares the shoulder (B1 lesson).
 - **CGB: @8 cap.** B1 W4 CGB at @9 was "traumatising."
