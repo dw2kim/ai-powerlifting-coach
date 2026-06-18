@@ -31,6 +31,9 @@ When you pull from Hevy, also run `python -m scripts.hevy.sync_archive` to keep 
    - **Trend**: vs the last 1–3 sessions of the same exercise
 4. **Decide**: on-target / undershoot / overshoot / red-flag, and what it implies for next session.
 5. **Respond** with: one-line summary, what's being updated, the concrete next-session instruction.
+   If a Big-5 lift was trained, tag it with a status emoji per `review-status-emoji` (🟢 great /
+   🟡 okay / 🔴 needs attention) and note the e1RM move vs its recent best. Bench gets an explicit
+   call-out (priority lift).
 6. **Write back**:
    - Append a session note to `brain/memory.md` if there's a pattern worth remembering
    - Update `brain/current-block.md` if next session's load/reps change

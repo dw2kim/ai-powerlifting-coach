@@ -32,6 +32,9 @@ athlete's planning surface (planned loads, RPE targets, athlete notes) — usefu
    targets, athlete notes) and from `brain/memory.md` retrospectives.
 4. **Write the review** to `reviews/<block-id>.md` with these sections:
    - **1. What's been done** — block summary + a Big-5 plan-vs-actual table with real e1RMs.
+     Per `review-status-emoji`: show each Big-5 lift's **e1RM delta vs the prior block** (read
+     the prior `reviews/<id>.md`) and a **status emoji** — 🟢 great · 🟡 okay/flat · 🔴 needs
+     attention. Call out **bench** explicitly (priority lift).
    - **2. What to continue** — what's working; keep it.
    - **3. What to improve / change** — the honest part. Name RPE-cap breaches explicitly.
    - **4. Action items** — concrete, carried into the next block. Check off ones already addressed.

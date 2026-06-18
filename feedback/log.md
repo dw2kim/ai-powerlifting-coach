@@ -10,6 +10,44 @@
 
 ---
 
+### 2026-06-18 · general, block · mindful accessory rotation
+**Feedback:** When designing a new block, rotate accessories *mindfully* — don't swap every
+accessory each block. Rotate only a few, so I get variant exposure over time without losing
+continuity. I don't want to do the exact same movement for years. Variants can be: same
+target muscle, different implement (e.g. dumbbell → cable → machine), OR more specific
+targeting (e.g. "back" generally → rear delt specifically next time). Primaries (Big 5)
+don't rotate — only accessories, and only some of them.
+→ rules: `accessory-rotation`
+
+### 2026-06-18 · general · accessory day-interference
+**Feedback:** Accessories must not impair the *next* training day. With the schedule
+D1 Mon / D2 Tue / D3 Thu / D4 Fri: D1→D2 and D3→D4 are back-to-back (no rest), so be
+mindful that **D1 and D3 accessories don't compromise D2 and D4**. D2→D3 has Wednesday as a
+rest day, so **D2 accessories are unconstrained** — "I don't care what accessory I do on D2."
+→ rules: `accessory-day-interference`
+
+### 2026-06-18 · load · implement-swap load conversion (web research)
+**Feedback:** When rotating an accessory to a different implement, don't guess the new load.
+Check the workout CSV (source of truth) for what I lifted on the original, then **web-research
+the equivalent load on the new implement** so the suggestion is realistic. Example: if I did
+cable row at 15 lb, look up what a 15 lb cable row converts to on the machine before
+prescribing the machine version.
+→ rules: `loads-from-logs` (extended with implement-conversion step)
+
+### 2026-06-18 · general · Big-5 priority + bench focus
+**Feedback:** Keep driving the Big 5 (squat, bench, deadlift, pull-up, dip). **Bench is my
+current weakest — prioritize improving it.** Bias block design toward bench progress (frequency,
+volume, variant selection, supporting accessories) without neglecting the others.
+→ rules: `big5-priority`
+
+### 2026-06-18 · general · review format (Big-5 delta + status emoji)
+**Feedback:** In reviews, show **how much I increased** on each Big-5 lift (vs the prior
+block / baseline), and add a **status emoji** so I can see at a glance whether I'm doing
+great / okay / bad on each lift.
+→ rules: `review-status-emoji`
+
+---
+
 ### 2026-06-14 · load, exercise · Weighted Dip · Block 3
 **Source:** Mid-block review (coach-surfaced, athlete to confirm).
 **Finding:** B3 dip top sets were planned at BW+25-40, but the Hevy log shows actuals of

@@ -27,14 +27,27 @@ description: Design a new training block — pull context from prior block + mem
 
 1. **Retrospect** the ending block: top hits, misses, RPE drift, injury flags. Summarize in 5
    bullets. If you just wrote the review in step 0, pull these straight from it.
-2. **Pick a theme** for the new block tied to a specific goal or weak point. State it in one sentence.
+2. **Pick a theme** for the new block tied to a specific goal or weak point. State it in one
+   sentence. **Bench is the standing priority lift** (rule `big5-priority`) — bias the theme
+   and structure toward bench unless the Big-5 trend shows a weaker lift; re-check from the
+   e1RM trend and update the rule if the weakest lift has changed.
 3. **Choose the split** (4 day default; 3-day variant noted). Show how it manages overlap per CLAUDE.md's "Managing Training Overlap" rules — explicitly call out which pairs are staggered and why.
 4. **Build the weekly wave** (W1–W4 + W5 = deload or peak): top-set RPE target and rep scheme per week, per primary lift.
 5. **Assign accessories** with weak-point chain: weak point → target → exercise → expected carryover. Offer one alternative per slot.
+   - **Rotate mindfully** (rule `accessory-rotation`): carry most accessories over from the
+     prior block; change only a **few** for variant exposure. A rotation = same target, new
+     implement (DB→cable→machine) OR more specific targeting (general back → rear delt).
+     Primaries never rotate. State explicitly which slots you rotated and why.
+   - **Respect day-interference** (rule `accessory-day-interference`): D1 accessories must not
+     pre-fatigue D2 (Mon→Tue), and D3 accessories must not pre-fatigue D4 (Thu→Fri). D2
+     accessories are unconstrained (Wed rest before D3). Call out the check for D1 and D3.
    - **Loads come from the log, not guesses** (rule `loads-from-logs`). For every accessory
      (and primaries when useful), pull the real working load:
      `python -m scripts.hevy.block_report --exercise "<name>" --recent 90` and anchor on the
      median. Never copy a planning-sheet number without checking it against the log.
+   - **When you rotate to a new implement, convert the load** (rule `loads-from-logs`): look up
+     the original load in the log, then **web-research the equivalent on the new implement**
+     (e.g. "cable row 15 lb → machine row equivalent") and prescribe from that — don't guess.
    - **Progress accessories gradually** (rule `accessory-progression`): hold 2–3 weeks, small
      bumps — not +5 lb/week.
    - **Accessory RPE** (rule `accessory-rpe`): assume 7–8; don't prescribe or expect logged RPE
