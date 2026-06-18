@@ -10,6 +10,16 @@
 
 ---
 
+### 2026-06-14 · load, exercise · Weighted Dip · Block 3
+**Source:** Mid-block review (coach-surfaced, athlete to confirm).
+**Finding:** B3 dip top sets were planned at BW+25-40, but the Hevy log shows actuals of
+BW+45×6@6 (W1) and BW+70×6@7 (W2) — i.e. he trains dips ~30-35 lb heavier than programmed,
+at on-target RPE. Same root cause as the adduction case: dip loads were sheet-derived, not
+log-derived. Reinforces `loads-from-logs`. Recalibrate dip prescriptions off the log (anchor
+~BW+70 working, progress gradually per `accessory-progression` — though dip is a primary
+Big-5 lift here, so it can progress faster than an accessory).
+→ rules: `loads-from-logs`
+
 ### 2026-06-14 · load, exercise · Hip Adduction · Block 3
 **Feedback:** The suggested Block 3 load dropped into the 90s; I train this at ~110–115.
 Loads should be based on my actual training logs whenever possible.
