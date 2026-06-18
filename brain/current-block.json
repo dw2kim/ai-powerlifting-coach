@@ -1682,23 +1682,23 @@
       "exercises": [
         {
           "name": "Weighted Dip",
-          "notes": "Top @7.5.",
+          "notes": "Top @7.5. [load corrected to BW+75 from Hevy log \u2014 was a +70@7 dipper in W2]",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 21.3,
+              "weight_kg": 34.0,
               "reps": 5,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 21.3,
+              "weight_kg": 34.0,
               "reps": 5,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 21.3,
+              "weight_kg": 34.0,
               "reps": 5,
               "rpe": 7.5
             }
@@ -1811,23 +1811,23 @@
       "exercises": [
         {
           "name": "Weighted Dip",
-          "notes": "Top @8 \u2014 top of block, no grind.",
+          "notes": "Top @8 \u2014 top of block, no grind. [load corrected to BW+85 from Hevy log \u2014 was a +70@7 dipper in W2]",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 25.9,
+              "weight_kg": 38.6,
               "reps": 4,
               "rpe": 8
             },
             {
               "type": "normal",
-              "weight_kg": 25.9,
+              "weight_kg": 38.6,
               "reps": 4,
               "rpe": 8
             },
             {
               "type": "normal",
-              "weight_kg": 25.9,
+              "weight_kg": 38.6,
               "reps": 4,
               "rpe": 8
             }
@@ -1940,17 +1940,17 @@
       "exercises": [
         {
           "name": "Weighted Dip",
-          "notes": "Deload @6 BW only.",
+          "notes": "Deload @6 BW only. [load corrected to BW+40 from Hevy log \u2014 was a +70@7 dipper in W2]",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 0.0,
+              "weight_kg": 18.1,
               "reps": 8,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 0.0,
+              "weight_kg": 18.1,
               "reps": 8,
               "rpe": 6
             }
