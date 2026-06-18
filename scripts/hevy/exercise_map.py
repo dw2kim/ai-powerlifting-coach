@@ -47,8 +47,10 @@ OVERRIDES: dict[str, str] = {
     "lat pulldown": "Lat Pulldown (Cable)",
     "hip abduction": "Hip Abduction (Machine)",
     "hip adduction": "Hip Adduction (Machine)",
-    "comp bench": "Bench Press (Barbell)",
-    "competition bench": "Bench Press (Barbell)",
+    # Athlete's competition bench is logged under a custom template "POWER Bench Press".
+    "comp bench": "POWER Bench Press",
+    "competition bench": "POWER Bench Press",
+    "power bench press": "POWER Bench Press",
     "db shoulder press": "Shoulder Press (Dumbbell)",
     "concentration curl": "Concentration Curl",
     "rear delt fly": "Rear Delt Reverse Fly (Machine)",

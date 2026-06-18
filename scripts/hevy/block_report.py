@@ -34,8 +34,8 @@ DEFAULT_BW = 180.0
 LIFTS = {
     "57e29496-c8d7-4f8b-9bca-d1401504cbc8": ("Low-bar Squat", False),
     "dc821ef2-2735-462c-80e8-7cce49aca94b": ("Paused Low-bar Squat", False),
-    "79D0BB3A": ("Comp Bench", False),
-    "d8218be2-977f-4000-ac42-66cb11986863": ("POWER Bench Press", False),
+    # Comp bench = the athlete's custom "POWER Bench Press" template (not Hevy stock).
+    "d8218be2-977f-4000-ac42-66cb11986863": ("Comp Bench (POWER)", False),
     "35B51B87": ("Close-Grip Bench", False),
     "74dfcc13-02b2-4eef-95f3-5abf04a2702b": ("Spoto Bench", False),
     "8cd95bf6-daeb-4ca4-b5d1-6ed447248828": ("Paused Larsen Bench", False),
