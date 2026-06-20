@@ -1,6 +1,7 @@
 {
   "block_id": "2026-Q2-B03",
   "weeks": 5,
+  "start_date": "2026-06-01",
   "days": [
     {
       "label": "D1",
@@ -20,7 +21,7 @@
     {
       "label": "D4",
       "focus": "Sumo + CGB",
-      "weekday": "Sat"
+      "weekday": "Fri"
     }
   ],
   "prescriptions": [
