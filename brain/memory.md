@@ -144,7 +144,9 @@ Pattern from B1 hasn't fully resolved. Plan vs actual on top sets:
 Don't add load. Goal in W3 is to bring RPE back down to ≤7.5 at the same weight. If
 RPE doesn't drop, that's a reset signal — drop the next session 5-10 lbs.
 
-**Pattern to watch**: the lifts that drift are consistently the upper-body pressing/pulling
-ones. Squat and sumo respect the cap. Hypothesis: he over-rates pressing fatigue or
-under-rates SBD fatigue — possibly because the upper-body lifts feel "smaller" so he
-pushes through. Worth watching across B3 W3-W4 before structural change.
+**Pattern confirmed (B3 W3 review, 2026-06-20)**: the WPU is the consistent cap-breaker across all
+three blocks — @9.5 in B1, @9 in B2, and W2 @8 / W3 @8.5 in B3 (above weight range both weeks).
+Squat, Sumo, Bench, and Dip are all disciplined this block. The WPU problem is now a structural
+pattern, not noise. Next block: consider a hard-programmed RPE ceiling with a lower starting weight
+so there is actual room to grow within the plan, rather than the plan being aspirational from W1.
+Revised W4 directive: drop WPU to BW+80 despite W3 hitting BW+85 — reset the base, then step.
