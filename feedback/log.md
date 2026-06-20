@@ -40,6 +40,16 @@ current weakest — prioritize improving it.** Bias block design toward bench pr
 volume, variant selection, supporting accessories) without neglecting the others.
 → rules: `big5-priority`
 
+### 2026-06-18 · exercise · comp bench = "POWER Bench Press" + bench secondaries
+**Feedback:** "POWER Bench Press" is the custom Hevy template I made for the **competition
+bench** — that's my comp bench, treat it as the Big-5 bench. **CGB is a great secondary** for
+bench improvement, but I'm open to other secondaries too (paused bench, incline bench, etc.).
+**Actions:** repointed exercise_map overrides comp/competition/power bench → "POWER Bench
+Press" (d8218be2); block_report now labels it "Comp Bench (POWER)" and dropped the unused
+stock Bench Press (Barbell) entry; recorded comp-bench + bench-secondary notes in
+programming-rules.
+→ rules: `big5-priority`, by-exercise (competition bench, bench secondary)
+
 ### 2026-06-18 · general · review format (Big-5 delta + status emoji)
 **Feedback:** In reviews, show **how much I increased** on each Big-5 lift (vs the prior
 block / baseline), and add a **status emoji** so I can see at a glance whether I'm doing

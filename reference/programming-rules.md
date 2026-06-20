@@ -65,3 +65,9 @@
 
 - **Hip Adduction (Machine)** — working load ~**110–115 lb** (log median 115, max 125, 10
   sessions; flat for months). Not the 90s. [FB 2026-06-14]
+- **Competition bench** — logged under the custom Hevy template **"POWER Bench Press"** (this
+  IS the comp bench; resolves from "comp bench"/"competition bench"). Treat it as the Big-5
+  bench lift. [FB 2026-06-18]
+- **Bench secondary** — **CGB is the default secondary** for bench improvement, but it can
+  **rotate** (per `accessory-rotation`) among CGB / paused bench / incline bench / similar.
+  Pick the secondary that best serves the bench weak point for that block. [FB 2026-06-18]
