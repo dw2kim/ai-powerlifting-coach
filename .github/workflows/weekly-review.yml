@@ -1,0 +1,55 @@
+name: Weekly training review
+
+# Fires Saturday 11:00 America/New_York. GitHub cron is UTC and has no DST, so we
+# schedule BOTH 15:00 and 16:00 UTC and let the in-script Eastern time guard pass
+# exactly one through: 15:00 UTC = 11:00 EDT (summer), 16:00 UTC = 11:00 EST (winter).
+# Manual runs use workflow_dispatch and default to bypassing the guard.
+on:
+  schedule:
+    - cron: "0 15 * * 6"
+    - cron: "0 16 * * 6"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Bypass the Sat-11:00-ET time guard"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-review
+  cancel-in-progress: false
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Run weekly review
+        env:
+          HEVY_API_KEY: ${{ secrets.HEVY_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          ARGS=""
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force }}" = "true" ]; then
+            ARGS="--force"
+          fi
+          python -m scripts.review.weekly_review $ARGS
