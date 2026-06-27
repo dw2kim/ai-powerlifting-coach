@@ -41,29 +41,28 @@
 ## Where we are
 - **W1 done** (week of 2026-06-01, post-vacation calibration).
 - **W2 done** (week of 2026-06-08).
-- **W3 in progress** — D1 (06-15) + D2 (06-16) done. Next: W3 D3 (dip + paused squat).
+- **W3 done (D1–D3 confirmed; D4 not logged as of 2026-06-20 — may have slipped to Sat or was skipped).**
 - No shoulder flares in W1–W3 logs (no pain logged — relying on ≤3/10 self-check per active-issues).
+- **W4 starts week of 2026-06-22.**
 
-## W1–W3 actuals (Hevy log = source of truth; mid-block review 2026-06-14)
+## W1–W3 actuals (Hevy log = source of truth; updated 2026-06-20)
 > Earlier entries here were sheet-derived; corrected against the Hevy log via `block_report`.
 - **Squat top (D1)**: W1 405×4@7.5 (plan @6 — calibration overshoot) · W2 425×4@7 (on plan) ·
-  **W3 455×3@7** (plan @8, 430-445 — AHEAD: hit a W5 weight at @7, e1RM 500.5). Squat is the star.
-- **D1 press = POWER Bench Press** (not the "Comp Bench" template; W1 D1 was CGB calibration):
-  W2 215×5@7 · W3 225×4@7. **No RPE breach** — the earlier "W2 @8" note was a sheet artifact;
-  the log says @7 both weeks. Discipline holding.
-- **Sumo top (D4)**: W1 415×3@6 · W2 435×3@7 (both spot on plan).
-- **WPU top (D2)**: W1 BW+55×4@7 · W2 BW+70×4**@8** · **W3 BW+85×3@8.5** (plan W3 @7.5, BW+75-80).
-  **Drifting hot — ~1 RPE over, weight above range.** Same lift that ran @9.5 in B1, @9 in B2.
-- **Dip top (D3)**: W1 BW+45×6@6 · W2 BW+70×6@7. **Plan badly under-programmed** (planned +35-40);
-  he's a +70@7 dipper. Recalibrate dip loads off the log.
-- **Paused Squat (D3)**: W1 365×4@6, W2 385×4@6 (under @7 cap ✓).
-- **CGB (D4)**: 205×5@6-7 (conservative, on target).
+  **W3 455×3@7** (plan 430-445 @7-7.5 — running 10+ lb ahead, RPE honest, e1RM 500.5). Block star.
+- **D1 press = POWER Bench Press**: W2 215×5@7 · **W3 225×4@7**. Clean — no breach, shoulder quiet.
+- **Sumo top (D4)**: W1 415×3@6 · W2 435×3@7. **W3 D4 not logged** (may be Sat 06-20 or skipped).
+- **WPU top (D2)**: W1 BW+55×4@7 ✓ · W2 BW+70×4@8 (breach) · **W3 BW+85×3@8.5** (plan BW+75-80 @7-7.5).
+  **Chronic pattern: weight AND RPE over every week after W1.** Same lift that ran @9.5 in B1, @9 in B2.
+- **Dip top (D3)**: W1 BW+45×6@6 · W2 BW+70×6@7 · **W3 BW+75×5@7** (on plan weight and RPE ✓).
+- **Paused Squat (D3)**: W1 365×4@6 · W2 385×4@6 · **W3 385×3@7** (on @7 cap ✓).
+- **CGB (D4)**: W1–W2 205×5@6-7 (on target). **W3 D4 not logged** — see Sumo note above.
 
 ## Standing orders (carried + updated)
 - **RPE caps are still the #1 issue — but pressing/squat discipline is strong this block.** The one
-  exception is the **weighted pull-up**: W2 @8, W3 @8.5 vs @7-7.5 plan. If a top set hits 0.5 over
-  target RPE, stop the set.
-- **W4 pull-up: HOLD BW+85, target @7.5. No weight jump.** It loads the same back/grip as Fri (D4) sumo.
+  exception is the **weighted pull-up**: W2 @8, W3 @8.5 vs @7-7.5 plan — three blocks, same pattern.
+  If a top set hits 0.5 over target RPE, stop the set.
+- **W4 pull-up: DROP to BW+80, target @7.5. Previous "hold BW+85" directive is revised.** W3 hit
+  BW+85 at @8.5 — that weight is already above plan and the RPE is too high going into sumo peak week.
 - **D1 press (POWER Bench): @7 cap holding — keep it there.** Shoulder decision in active-issues.
 - **DB Shoulder Press: @7 absolute cap.** OHP above @7.5 flares the shoulder (B1 lesson).
 - **CGB: @8 cap.** B1 W4 CGB at @9 was "traumatising."
