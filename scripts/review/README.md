@@ -54,3 +54,70 @@ workflow** (defaults to bypassing the guard).
 
 > ⚠️ Security: `.env` with a live `HEVY_API_KEY` is currently tracked in git. Consider
 > `git rm --cached .env`, rotating the key, and relying on the GitHub secrets above.
+
+---
+
+# End-of-W4 next-block draft → Google Sheet
+
+At the **end of Week 4** (the Sunday before the W5 deload) a scheduled Claude Code routine
+drafts the *next* block and drops it into a Google Sheet, so it can be reviewed during the
+deload and finalized before the new block starts. W5 is a deload — it produces no
+design-relevant data, so W1–W4 actuals are the inputs and drafting at end-of-W4 is correct.
+The draft is **provisional**: never auto-applied to `current-block.*`, never pushed to Hevy.
+
+## Why a routine, not a pure cron
+
+The drafting itself is the `designing-training-block` skill (LLM work — retrospect,
+theme, wave, accessories, log-grounded loads). So a **Claude Code routine** runs the skill;
+`draft_next_block.py` owns only the deterministic bookends around it.
+
+## Pipeline
+
+The routine, fired weekly **Sunday 13:00 America/Toronto**, runs:
+
+1. `python -m scripts.review.draft_next_block check` — **guard**: is today the Sunday of the
+   block's penultimate week (W4 for a 5-week block)? Reuses `weekly_metrics.geometry`. Exit
+   `0` = proceed (and sync the Hevy log), exit `3` = skip. The routine stops on `3`, so most
+   Sundays are a clean no-op.
+2. `designing-training-block` **in draft mode** (see the skill's "Draft mode" section): writes
+   `brain/next-block-draft.{md,json}` with a PROVISIONAL banner; skips the review gate, the
+   archive/overwrite, and the Hevy push. Obeys all binding rules — including
+   `primary-backoff-volume` (squat/sumo backoff) and the `accessory-rotation` expansion
+   clause (1–2 new movements).
+3. `python -m scripts.review.draft_next_block notify` — render the draft to a Google Sheet
+   (`scripts.sheets.export_block`, B1–B3 layout: Overview + per-week tabs), push a Telegram
+   heads-up with the Sheet URL + a W1→peak glance, and commit the draft to the
+   `draft/next-block` branch (never master).
+
+**Finalization (after W5, athlete-driven):** run `reviewing-block` for the now-complete
+block, reconcile its lessons + any Sheet edits against the draft, then promote it into
+`brain/current-block.{md,json}`, archive the prior block, and push to Hevy.
+
+## Local testing
+
+```bash
+# Guard only, across dates (exit 0 = proceed, 3 = skip); --no-sync avoids the Hevy API:
+.venv/bin/python -m scripts.review.draft_next_block check --date 2026-06-28 --no-sync  # W4 Sun → proceed
+.venv/bin/python -m scripts.review.draft_next_block check --date 2026-06-21 --no-sync  # W3 Sun → skip
+
+# Sheet layout preview (no Google calls, no creds) — diff against the live B3 sheet:
+.venv/bin/python -m scripts.sheets.export_block brain/current-block.json --dry-run
+
+# Notify preview (needs a brain/next-block-draft.json present): prints Sheet grid + Telegram text
+.venv/bin/python -m scripts.review.draft_next_block notify --dry-run
+```
+
+## One-time setup (Google Sheets)
+
+The Sheet is created by a Google **service account** (so the routine needs no interactive login):
+
+1. **GCP project** → enable the **Google Sheets API** and **Google Drive API**.
+2. Create a **service account**, add a **JSON key**, download it → `GOOGLE_SA_JSON` path.
+3. In Drive, create the folder the drafts should land in, and **share it with the service
+   account's email** (Editor) → its folder id is `SHEETS_DRIVE_FOLDER_ID`.
+4. Optionally set `GOOGLE_SHARE_EMAIL` to your own email so each draft Sheet is shared back
+   to you with write access.
+5. Provision all five env vars (`HEVY_API_KEY`, `TELEGRAM_*`, `GOOGLE_SA_JSON`,
+   `SHEETS_DRIVE_FOLDER_ID`) wherever the routine runs.
+
+`gspread` + `google-auth` are declared in `pyproject.toml` — `pip install -e .` picks them up.

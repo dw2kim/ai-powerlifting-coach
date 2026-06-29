@@ -28,6 +28,12 @@
 - **accessory-progression** — Accessories progress *gradually*: hold a load for 2–3 weeks,
   then small bumps. Do **not** apply the primary/secondary "+5 lb each week" default to
   accessories. They should still trend up across blocks, just slowly. [FB 2026-06-14]
+- **primary-backoff-volume** — Primary **squat** and **sumo** carry more backoff volume than
+  the old plans gave them (athlete consistently added a set). Standard: **Low-bar Squat (D1)
+  backoff = 3 sets, W1–W4.** **Sumo Deadlift (D4) backoff = 3 sets W1–W3, 2 sets at the W4
+  peak** (back off the backoff when the top set is a near-max single). **Top sets are
+  unchanged** — this is backoff-only. W5 deload unchanged. Log-verified against B3 actuals.
+  [FB 2026-06-29]
 
 ## Accessory rotation & interference
 
@@ -36,7 +42,11 @@
   doing the identical movement for years). A "rotation" = same target muscle, different
   implement (dumbbell → cable → machine), OR more specific targeting (e.g. general back →
   rear-delt-specific). **Primaries (Big 5) never rotate** — only accessories. When you rotate,
-  apply the implement-conversion step of `loads-from-logs`. [FB 2026-06-18]
+  apply the implement-conversion step of `loads-from-logs`.
+  **Expansion/shock:** beyond carry-over, each block deliberately introduces **1–2 genuinely
+  new** accessory/secondary movements that expand an under-trained muscle group for novel
+  stimulus — while keeping ≥1 carry-over per slot and primaries fixed. State explicitly which
+  1–2 movements were added and which group each expands. [FB 2026-06-18, extended 2026-06-29]
 - **accessory-day-interference** — Accessories must not compromise the *next* training day.
   Schedule: D1 Mon · D2 Tue · D3 Thu · D4 Fri. D1→D2 and D3→D4 are back-to-back (no rest):
   **D1 accessories must not pre-fatigue D2** (esp. back work vs D2 pull-up), and **D3
