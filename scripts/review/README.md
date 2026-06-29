@@ -121,3 +121,14 @@ The Sheet is created by a Google **service account** (so the routine needs no in
    `SHEETS_DRIVE_FOLDER_ID`) wherever the routine runs.
 
 `gspread` + `google-auth` are declared in `pyproject.toml` — `pip install -e .` picks them up.
+
+> **Where this runs:** the draft job lives in the **local Claude app scheduler** (the
+> `next-block-draft` task), not GitHub Actions — step 2 runs the `designing-training-block`
+> *skill*, which needs Claude. So `GOOGLE_SA_JSON` as a **local file path** is correct; the
+> key file stays on your Mac and never goes in git.
+>
+> If you ever run any of this in **GitHub Actions** instead, a local path is meaningless on
+> the runner. Store the **JSON content** (not a path) as a GitHub secret and pass it through:
+> `env: GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}`. `export_block.py` detects a value
+> starting with `{` and loads it as inline credentials — same var, both environments. Never
+> commit the key file or a populated `.env`.

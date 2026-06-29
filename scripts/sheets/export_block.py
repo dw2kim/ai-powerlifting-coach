@@ -12,7 +12,10 @@ schema) and writes a fresh Google Sheet:
 Auth: a Google **service account**. Same env-from-.env pattern as the Hevy/Telegram
 helpers. Required:
 
-  GOOGLE_SA_JSON           path to the service-account key file (JSON)
+  GOOGLE_SA_JSON           the service-account key — EITHER a path to the key file
+                           (local, e.g. ~/.gcp/key.json) OR the key's JSON content
+                           itself (CI: a GitHub secret has no filesystem path). A
+                           value starting with '{' is read as inline JSON.
   SHEETS_DRIVE_FOLDER_ID   Drive folder to create the Sheet in (shared with the SA)
 
 Optional:
@@ -155,12 +158,21 @@ def _client():
         ) from exc
     from dotenv import load_dotenv
     load_dotenv()
-    sa_path = os.environ.get("GOOGLE_SA_JSON")
-    if not sa_path or not Path(sa_path).is_file():
+    raw = os.environ.get("GOOGLE_SA_JSON")
+    if not raw:
         raise SystemExit(
-            "GOOGLE_SA_JSON not set or file missing — point it at the service-account key."
+            "GOOGLE_SA_JSON not set — set it to the service-account key file path "
+            "(local) or the key JSON itself (CI secret)."
         )
-    creds = Credentials.from_service_account_file(sa_path, scopes=SCOPES)
+    # Accept either a path to the key file (local: runs on your Mac) or the key's
+    # JSON content directly (CI: a GitHub secret has no filesystem path). A value
+    # starting with '{' is treated as inline JSON; anything else as a file path.
+    if raw.lstrip().startswith("{"):
+        creds = Credentials.from_service_account_info(json.loads(raw), scopes=SCOPES)
+    else:
+        if not Path(raw).is_file():
+            raise SystemExit(f"GOOGLE_SA_JSON points at a missing file: {raw}")
+        creds = Credentials.from_service_account_file(raw, scopes=SCOPES)
     return gspread.authorize(creds)
 
 
