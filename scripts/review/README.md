@@ -112,13 +112,17 @@ block, reconcile its lessons + any Sheet edits against the draft, then promote i
 The Sheet is created by a Google **service account** (so the routine needs no interactive login):
 
 1. **GCP project** → enable the **Google Sheets API** and **Google Drive API**.
-2. Create a **service account**, add a **JSON key**, download it → `GOOGLE_SA_JSON` path.
-3. In Drive, create the folder the drafts should land in, and **share it with the service
-   account's email** (Editor) → its folder id is `SHEETS_DRIVE_FOLDER_ID`.
-4. Optionally set `GOOGLE_SHARE_EMAIL` to your own email so each draft Sheet is shared back
-   to you with write access.
-5. Provision all five env vars (`HEVY_API_KEY`, `TELEGRAM_*`, `GOOGLE_SA_JSON`,
-   `SHEETS_DRIVE_FOLDER_ID`) wherever the routine runs.
+2. Create a **service account**, add a **JSON key**, download it → `GOOGLE_SA_JSON` path
+   (keep the file outside the repo, e.g. `~/.gcp/`).
+3. **Pre-make one spreadsheet** in your Drive (e.g. "Block Drafts") and **share it with the
+   service account's email** (Editor). Its id (from `docs.google.com/spreadsheets/d/<ID>/edit`)
+   is `SHEETS_SPREADSHEET_ID`. The SA rewrites its tabs each draft.
+   > Why a pre-made sheet, not a folder: a service account has **no Drive storage quota**, so
+   > it can't *create* files in a personal (`@gmail.com`) Drive — it can only edit a file
+   > you've shared with it. (On Google **Workspace**, you can instead set
+   > `SHEETS_DRIVE_FOLDER_ID` to a **Shared Drive** folder and get a new Sheet per block.)
+4. Provision the env vars (`HEVY_API_KEY`, `TELEGRAM_*`, `GOOGLE_SA_JSON`,
+   `SHEETS_SPREADSHEET_ID`) wherever the routine runs.
 
 `gspread` + `google-auth` are declared in `pyproject.toml` — `pip install -e .` picks them up.
 

@@ -16,7 +16,15 @@ helpers. Required:
                            (local, e.g. ~/.gcp/key.json) OR the key's JSON content
                            itself (CI: a GitHub secret has no filesystem path). A
                            value starting with '{' is read as inline JSON.
-  SHEETS_DRIVE_FOLDER_ID   Drive folder to create the Sheet in (shared with the SA)
+
+And ONE destination:
+
+  SHEETS_SPREADSHEET_ID    (preferred) id of a spreadsheet you pre-made and shared with
+                           the SA as Editor. The SA rewrites its tabs each draft. Works
+                           on personal Gmail — a service account has no Drive quota, so
+                           it cannot *create* files, only edit one it's been shared.
+  SHEETS_DRIVE_FOLDER_ID   (Shared Drive / Workspace only) folder to create a new Sheet
+                           in. Optional GOOGLE_SHARE_EMAIL grants you writer access.
 
 Optional:
 
@@ -156,8 +164,6 @@ def _client():
         raise SystemExit(
             "Missing Google deps. Install with: pip install gspread google-auth"
         ) from exc
-    from dotenv import load_dotenv
-    load_dotenv()
     raw = os.environ.get("GOOGLE_SA_JSON")
     if not raw:
         raise SystemExit(
@@ -182,34 +188,62 @@ def export(block: dict, title: str, dry_run: bool = False) -> str | None:
         _print_dry_run(grids)
         return None
 
-    folder_id = os.environ.get("SHEETS_DRIVE_FOLDER_ID")
-    if not folder_id:
-        raise SystemExit("SHEETS_DRIVE_FOLDER_ID not set — point it at the target Drive folder.")
+    # Load .env before reading ANY of the Google env vars (sheet/folder id, share
+    # email, and the SA key in _client) so a local .env is honored.
+    from dotenv import load_dotenv
+    load_dotenv()
 
     gc = _client()
-    sh = gc.create(title, folder_id=folder_id)
+    sheet_id = os.environ.get("SHEETS_SPREADSHEET_ID")
+    folder_id = os.environ.get("SHEETS_DRIVE_FOLDER_ID")
 
-    share_email = os.environ.get("GOOGLE_SHARE_EMAIL")
-    if share_email:
-        sh.share(share_email, perm_type="user", role="writer")
+    if sheet_id:
+        # Preferred path: write into a spreadsheet the athlete pre-made and shared
+        # with the service account (Editor). A service account has no Drive quota,
+        # so it can't *create* files — but it can *edit* one it doesn't own.
+        sh = gc.open_by_key(sheet_id)
+        _write_tabs(gc, sh, grids)
+        print(f"Sheet updated: {sh.url}")
+    elif folder_id:
+        # Fallback for Shared Drives (Workspace): the SA *can* create there.
+        sh = gc.create(title, folder_id=folder_id)
+        share_email = os.environ.get("GOOGLE_SHARE_EMAIL")
+        if share_email:
+            sh.share(share_email, perm_type="user", role="writer")
+        _write_tabs(gc, sh, grids)
+        print(f"Sheet created: {sh.url}")
+    else:
+        raise SystemExit(
+            "Set SHEETS_SPREADSHEET_ID (a spreadsheet you pre-made and shared with the "
+            "service account) — or SHEETS_DRIVE_FOLDER_ID for a Shared Drive."
+        )
+    return sh.url
 
-    first = True
+
+def _write_tabs(gc, sh, grids: dict[str, list[list[str]]]) -> None:
+    """Upsert each tab into the spreadsheet: clear-and-rewrite if it exists, else add.
+    Nothing the athlete added is removed except the default empty 'Sheet1' placeholder."""
+    import gspread  # already importable — _client ran first
+
+    target = set(grids)
     for tab, grid in grids.items():
-        if first:
-            ws = sh.sheet1
-            ws.update_title(tab)
-            first = False
-        else:
+        try:
+            ws = sh.worksheet(tab)
+            ws.clear()
+        except gspread.WorksheetNotFound:
             rows = max(len(grid) + 2, 10)
             cols = max((max((len(r) for r in grid), default=1)), 6)
             ws = sh.add_worksheet(title=tab, rows=rows, cols=cols)
         if grid:
             ws.update(range_name="A1", values=grid)
-            if tab.startswith("W") or tab == "Overview":
-                ws.freeze(rows=1)
-
-    print(f"Sheet created: {sh.url}")
-    return sh.url
+            ws.freeze(rows=1)
+    # Drop the default placeholder a fresh spreadsheet ships with, once real tabs exist.
+    for ws in sh.worksheets():
+        if ws.title == "Sheet1" and ws.title not in target and len(sh.worksheets()) > 1:
+            try:
+                sh.del_worksheet(ws)
+            except Exception:  # noqa: BLE001
+                pass
 
 
 def main() -> None:
