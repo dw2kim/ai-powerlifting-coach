@@ -29,11 +29,10 @@
   then small bumps. Do **not** apply the primary/secondary "+5 lb each week" default to
   accessories. They should still trend up across blocks, just slowly. [FB 2026-06-14]
 - **primary-backoff-volume** — Primary **squat** and **sumo** carry more backoff volume than
-  the old plans gave them (athlete consistently added a set). Standard: **Low-bar Squat (D1)
-  backoff = 3 sets, W1–W4.** **Sumo Deadlift (D4) backoff = 3 sets W1–W3, 2 sets at the W4
-  peak** (back off the backoff when the top set is a near-max single). **Top sets are
-  unchanged** — this is backoff-only. W5 deload unchanged. Log-verified against B3 actuals.
-  [FB 2026-06-29]
+  the old plans gave them. Standard: **Low-bar Squat (D1) and Sumo Deadlift (D4) backoff =
+  4 sets, flat across W1–W4** (including the W4 peak — no taper). **Top sets are unchanged**
+  — this is backoff-only. W5 deload unchanged. Athlete's explicit call: he habitually did 3
+  (vs 2 planned) and wants clearly more. [FB 2026-06-29, set to 4-flat 2026-07-01]
 
 ## Accessory rotation & interference
 
