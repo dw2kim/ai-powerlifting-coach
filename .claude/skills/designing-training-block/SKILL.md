@@ -33,9 +33,10 @@ description: Design a new training block — pull context from prior block + mem
    e1RM trend and update the rule if the weakest lift has changed.
 3. **Choose the split** (4 day default; 3-day variant noted). Show how it manages overlap per CLAUDE.md's "Managing Training Overlap" rules — explicitly call out which pairs are staggered and why.
 4. **Build the weekly wave** (W1–W4 + W5 = deload or peak): top-set RPE target and rep scheme per week, per primary lift.
-   - **Backoff volume** (rule `primary-backoff-volume`): program **squat (D1) and sumo (D4)
-     backoff at 4 sets, flat across W1–W4** (including the peak — no taper). Top sets are
-     unchanged; this is backoff-only. Other primaries keep their existing backoff scheme.
+   - **Backoff volume** (rule `primary-backoff-volume`): backoff sets match the athlete's
+     logged working-set norm, tapering one at the W4 peak — squat **4·4·4·3·3**, sumo
+     **3·3·3·2·3**, comp bench **4·4·4·3·3** (W1–W5). Top sets unchanged; backoff-only. Other
+     lifts keep their existing scheme.
 5. **Assign accessories** with weak-point chain: weak point → target → exercise → expected carryover. Offer one alternative per slot.
    - **Rotate mindfully** (rule `accessory-rotation`): carry most accessories over from the
      prior block; change only a **few** for variant exposure. A rotation = same target, new

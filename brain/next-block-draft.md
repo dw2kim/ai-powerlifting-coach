@@ -12,10 +12,10 @@ sumo climbing on heavier backoff volume, and finally cap the pull-up RPE drift.
 (BW+85×3 @8.5) · Dip 306 (BW+90×4 @7.5). These supersede the stale reference maxes.
 
 ## Split (unchanged from B3)
-- **D1 (Mon) — Squat + Comp Bench**: Low-bar Squat (top + **4×backoff**) · Comp Bench (top + backoff) · Iso-Lateral Row · Tricep Pushdown · Leg Extension
+- **D1 (Mon) — Squat + Comp Bench**: Low-bar Squat (top + backoff) · Comp Bench (top + backoff) · Iso-Lateral Row · Tricep Pushdown · Leg Extension
 - **D2 (Tue) — WPU + Sumo Acc**: Weighted Pull-up (top + backoff + BW AMRAP) · Paused RDL · DB Shoulder Press · Concentration Curl · **Hanging Leg Raise (NEW)**
 - **D3 (Thu) — Dip + Squat Acc**: Weighted Dip (top) · Paused Low-bar Squat (top + backoff, @7 cap) · Lat Pulldown · Hip Adduction · **Reverse Pec Deck (rotation)**
-- **D4 (Fri) — Sumo + CGB**: Sumo Deadlift (top + **4×backoff**) · CGB · Meadows Row · Face Pull · **Incline DB Press (NEW)**
+- **D4 (Fri) — Sumo + CGB**: Sumo Deadlift (top + backoff) · CGB · Meadows Row · Face Pull · **Incline DB Press (NEW)**
 
 ## Wave — top sets
 | Week | Squat | Comp Bench | Sumo | WPU | Dip |
@@ -26,8 +26,9 @@ sumo climbing on heavier backoff volume, and finally cap the pull-up RPE drift.
 | W4 peak | **495×2 @8.5** | **250×2 @8** | **485×2 @8.5** | BW+80×3 @8 | BW+75×5 @7.5 (pull back) |
 | W5 deload | 405×3 @5.5 | 195×4 @5.5 | 405×3 @5.5 | BW+50×4 @5.5 | BW+45×6 @5.5 |
 
-**Backoff**: squat & sumo = **4 sets flat, W1–W4** (`primary-backoff-volume`). Comp bench 3
-sets. Backoff ~85% of top.
+**Backoff sets** (matched to your logged norm, tapering one at the peak — `primary-backoff-volume`):
+squat **4·4·4·3·3**, comp bench **4·4·4·3·3**, sumo **3·3·3·2·3** (W1–W5). Backoff ~85% of top.
+This *reproduces* your actual B3 squat/sumo set counts; bench gets +1 as the priority lift.
 
 ## Why this shape
 - **Bench priority**: comp bench top climbs to 250×2 (~e1RM 270, small PR) at a **hard @8
@@ -48,6 +49,6 @@ sets. Backoff ~85% of top.
   last accessory, never the backoff.
 
 ## Open for your review
-- Backoff at 4 flat (incl. peak) is a real volume jump on top of heavier tops — watch D1/D4 fatigue.
+- Backoff volume = your logged norm (squat/sumo reproduce B3 counts; bench +1). Push if you want more.
 - WPU intentionally *down* 5 lb vs B3 to break the drift. Push back if you'd rather chase load.
 - Hanging Leg Raise / Reverse Pec Deck / Incline DB Press are the changes — swap any you dislike.

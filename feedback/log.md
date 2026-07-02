@@ -21,9 +21,13 @@ are fine as-is; this is a backoff-only change.
 - **Sumo Deadlift (D4)** — 3 backoff sets W1–W3 (W3 plan 2→did 3 @183.7kg), then **dropped
   to the planned 2 at W4 peak** (top was a 220kg @9 single — backed off the backoff when
   the top set went maximal). So: 3 backoff except when the top set is a near-max single.
-**Action:** new rule `primary-backoff-volume`. **Updated 2026-07-01:** athlete reviewed the
-first draft and wants clearly more than his habitual 3 — set squat AND sumo backoff to
-**4 sets flat, W1–W4** (no peak taper). Deload W5 unchanged. Top sets untouched.
+**Action:** new rule `primary-backoff-volume`. **Revised 2026-07-01 from a volume analysis**
+(athlete asked to ground the number in history, not lock a flat 4). Per-session working-set
+counts across all logs (139 squat / 163 sumo / 83 bench sessions) show his real norm:
+squat 5 working (4 backoff), sumo 4 (3 backoff), bench 5 (4 backoff; 5–8 early 2026) — each
+tapering one set at the heavy peak. Final scheme (backoff, W1–W5): **squat 4·4·4·3·3, sumo
+3·3·3·2·3, comp bench 4·4·4·3·3** (bench +1 vs B3 as the priority lift). Reproduces his B3
+squat/sumo set counts; not a flat guess. Top sets untouched.
 → rules: `primary-backoff-volume`
 
 ### 2026-06-29 · block, general · accessory expansion / shock (1–2 new per block)

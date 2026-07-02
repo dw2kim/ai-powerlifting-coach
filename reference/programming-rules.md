@@ -28,11 +28,16 @@
 - **accessory-progression** — Accessories progress *gradually*: hold a load for 2–3 weeks,
   then small bumps. Do **not** apply the primary/secondary "+5 lb each week" default to
   accessories. They should still trend up across blocks, just slowly. [FB 2026-06-14]
-- **primary-backoff-volume** — Primary **squat** and **sumo** carry more backoff volume than
-  the old plans gave them. Standard: **Low-bar Squat (D1) and Sumo Deadlift (D4) backoff =
-  4 sets, flat across W1–W4** (including the W4 peak — no taper). **Top sets are unchanged**
-  — this is backoff-only. W5 deload unchanged. Athlete's explicit call: he habitually did 3
-  (vs 2 planned) and wants clearly more. [FB 2026-06-29, set to 4-flat 2026-07-01]
+- **primary-backoff-volume** — Backoff volume matches the athlete's **actual logged
+  working-set counts** (from the Hevy log: 139 squat / 163 sumo / 83 bench sessions), NOT a
+  flat guess, and **tapers one set at the W4 peak** (which is what he already does when the
+  top goes heavy). Backoff sets (excl. the top set), W1·W2·W3·W4·W5:
+  - **Low-bar Squat (D1)**: **4·4·4·3·3** — his standing 5-working-set norm.
+  - **Sumo Deadlift (D4)**: **3·3·3·2·3** — his recent 4-working-set norm; drops at the heavy-single peak.
+  - **Comp Bench (D1, priority)**: **4·4·4·3·3** — one more than B3 (was 3); within his
+    historical 5–8 working-set capacity, and bench is the priority push.
+  **Top sets are unchanged** — backoff-only. Other lifts keep their existing scheme.
+  [FB 2026-06-29, revised from volume analysis 2026-07-01]
 
 ## Accessory rotation & interference
 

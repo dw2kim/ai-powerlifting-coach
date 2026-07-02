@@ -6,7 +6,7 @@
     "goal": "Bench-led strength progression: push comp bench (priority lift), keep squat & sumo climbing on heavier backoff volume, and finally cap the pull-up RPE drift.",
     "changes": [
       "Real loads: peaks anchored on your B3 log (squat 480×2 @8 → e1RM 512), not the old conservative sheet.",
-      "Squat & sumo backoff = 4 sets flat W1–W4 — the volume you asked for (top sets unchanged).",
+      "Backoff volume matched to your logged norm (not a flat guess): squat 4·4·4·3·3, sumo 3·3·3·2·3, comp bench 4·4·4·3·3 backoff sets W1–W5 — tapering one at the peak like you already do. Bench gets +1 as the priority lift.",
       "Pull-up gets a HARD @8 cap and conservative loads (top BW+80×3) — deliberately breaking the @9+ drift. Earn weight with reps, don't add load until RPE drops.",
       "Dip peaks W3 (BW+85), pulls back W4 so it doesn't stack with the comp-bench peak (horizontal-press overlap).",
       "W1 opens @6–7 (not a deload) since B3 W5 was a real deload."
@@ -101,8 +101,14 @@
         },
         {
           "name": "Comp Bench",
-          "notes": "Backoff — 3 sets @6.5.",
+          "notes": "Backoff — 4 sets @6.5.",
           "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 88.5,
+              "reps": 5,
+              "rpe": 6.5
+            },
             {
               "type": "normal",
               "weight_kg": 88.5,
@@ -497,14 +503,8 @@
         },
         {
           "name": "Sumo Deadlift",
-          "notes": "Backoff — 4 sets @6.5.",
+          "notes": "Backoff — 3 sets @6.5.",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 165.6,
-              "reps": 4,
-              "rpe": 6.5
-            },
             {
               "type": "normal",
               "weight_kg": 165.6,
@@ -683,8 +683,14 @@
         },
         {
           "name": "Comp Bench",
-          "notes": "Backoff — 3 sets @7.",
+          "notes": "Backoff — 4 sets @7.",
           "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 93.0,
+              "reps": 5,
+              "rpe": 7
+            },
             {
               "type": "normal",
               "weight_kg": 93.0,
@@ -1091,14 +1097,8 @@
         },
         {
           "name": "Sumo Deadlift",
-          "notes": "Backoff — 4 sets @7.",
+          "notes": "Backoff — 3 sets @7.",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 172.4,
-              "reps": 3,
-              "rpe": 7
-            },
             {
               "type": "normal",
               "weight_kg": 172.4,
@@ -1277,8 +1277,14 @@
         },
         {
           "name": "Comp Bench",
-          "notes": "Backoff — 3 sets @7.",
+          "notes": "Backoff — 4 sets @7.",
           "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 95.3,
+              "reps": 4,
+              "rpe": 7
+            },
             {
               "type": "normal",
               "weight_kg": 95.3,
@@ -1685,14 +1691,8 @@
         },
         {
           "name": "Sumo Deadlift",
-          "notes": "Backoff — 4 sets @7.",
+          "notes": "Backoff — 3 sets @7.",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 181.4,
-              "reps": 3,
-              "rpe": 7
-            },
             {
               "type": "normal",
               "weight_kg": 181.4,
@@ -1829,14 +1829,8 @@
         },
         {
           "name": "Low-bar Squat",
-          "notes": "Backoff — 4 sets @7.",
+          "notes": "Backoff — 3 sets @7.",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 192.8,
-              "reps": 3,
-              "rpe": 7
-            },
             {
               "type": "normal",
               "weight_kg": 192.8,
@@ -2279,20 +2273,8 @@
         },
         {
           "name": "Sumo Deadlift",
-          "notes": "Backoff — 4 sets @7.",
+          "notes": "Backoff — 2 sets @7.",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 188.2,
-              "reps": 2,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 188.2,
-              "reps": 2,
-              "rpe": 7
-            },
             {
               "type": "normal",
               "weight_kg": 188.2,
@@ -2423,14 +2405,8 @@
         },
         {
           "name": "Low-bar Squat",
-          "notes": "Backoff — 4 sets @5.",
+          "notes": "Backoff — 3 sets @5.",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 154.2,
-              "reps": 5,
-              "rpe": 5
-            },
             {
               "type": "normal",
               "weight_kg": 154.2,
@@ -2873,14 +2849,8 @@
         },
         {
           "name": "Sumo Deadlift",
-          "notes": "Backoff — 4 sets @5.",
+          "notes": "Backoff — 3 sets @5.",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 154.2,
-              "reps": 4,
-              "rpe": 5
-            },
             {
               "type": "normal",
               "weight_kg": 154.2,
