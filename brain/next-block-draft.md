@@ -23,7 +23,7 @@ sumo climbing on heavier backoff volume, and finally cap the pull-up RPE drift.
 | W1 @6–7 | 435×4 @7 | 220×4 @7 | 425×3 @7 | BW+65×4 @7 | BW+55×6 @7 |
 | W2 @7–7.5 | 455×3 @7.5 | 230×4 @7.5 | 445×3 @7.5 | BW+70×4 @7.5 | BW+70×5 @7.5 |
 | W3 @8 | 475×3 @8 | 240×3 @8 | 465×2 @8 | BW+75×3 @8 | **BW+85×4 @8 (dip peak)** |
-| W4 peak | **495×2 @8.5** | **250×2 @8** | **485×2 @8.5** | BW+80×3 @8 | BW+75×5 @7.5 (pull back) |
+| W4 peak | **485×2 @8** (+ opt. 495×1) | **250×2 @8** | **485×2 @8.5** | BW+80×3 @8 | BW+75×5 @7.5 (pull back) |
 | W5 deload | 405×3 @5.5 | 195×4 @5.5 | 405×3 @5.5 | BW+50×4 @5.5 | BW+45×6 @5.5 |
 
 **Backoff sets** (matched to your logged norm, tapering one at the peak — `primary-backoff-volume`):
@@ -34,7 +34,10 @@ This *reproduces* your actual B3 squat/sumo set counts; bench gets +1 as the pri
 - **Bench priority**: comp bench top climbs to 250×2 (~e1RM 270, small PR) at a **hard @8
   cap** — shoulder is structural, ≤3/10 pain. Plus a new Incline DB Press for pressing volume.
 - **Squat/sumo real loads**: peaks off the B3 log (you hit 480×2 @8), not the old sheet.
-  Squat 495×2, sumo 485×**2** (vs B3's 485×**1** @9 — a rep PR at *lower* RPE, dodging the hitch).
+  Squat programmed **485×2 @8** — a clean gym PR double (~517 e1RM, +5 over your actual B3
+  480×2) — with an **optional 495×1** if it's flying. 495 has only ever been a comp single,
+  never a gym lift, so this exposes it without forcing a rep PR at a weight you're not yet
+  comfortable under. Sumo 485×**2** (vs B3's 485×**1** @9 — a rep PR at *lower* RPE, dodging the hitch).
 - **Pull-up drift fix**: hard @8 cap, conservative BW+80×3 top. Earn weight with reps; don't
   add load until RPE drops. This is the structural answer to the B1→B3 @9+ pattern.
 - **Overlap**: dip peaks **W3**, pulls back W4 so it doesn't stack with the comp-bench peak

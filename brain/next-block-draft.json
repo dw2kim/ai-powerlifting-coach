@@ -1817,13 +1817,13 @@
       "exercises": [
         {
           "name": "Low-bar Squat",
-          "notes": "Top set @8.5. 495×2.",
+          "notes": "Top @8. 485×2. OPTIONAL 495×1 only if the double flies — no grind. (Confidence build: 495 never singled in the gym, only in comp.)",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 224.5,
+              "weight_kg": 220.0,
               "reps": 2,
-              "rpe": 8.5
+              "rpe": 8.0
             }
           ]
         },
