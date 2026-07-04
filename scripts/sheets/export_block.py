@@ -81,6 +81,26 @@ _WK_COLORS = {
 }
 _WK_PHASE = {1: "Calibration", 2: "Establish", 3: "Push", 4: "Peak", 5: "Deload"}
 
+# Lift-family shading in the Plan tab: a lift's primary AND its secondary share one tint so
+# the eye groups them (e.g. Low-bar Squat + Paused Low-bar Squat both yellow). Only the three
+# barbell lifts get coloured — pull-up, dip, and accessories stay plain. Membership is by
+# exercise name; extend each set when a new secondary rotates in (see `accessory-rotation` /
+# the secondary-rotation rule). Colours are light so black text stays readable, and distinct
+# from the week-phase header bands (which sit on separate rows).
+_LIFT_FAMILIES: dict[str, tuple[tuple, set[str]]] = {
+    "Squat":    ((1.00, 0.95, 0.70), {"Low-bar Squat", "Paused Low-bar Squat"}),      # pale yellow
+    "Bench":    ((0.87, 0.85, 0.96), {"Comp Bench", "CGB"}),                            # pale lavender
+    "Deadlift": ((0.99, 0.86, 0.83), {"Sumo Deadlift", "Paused RDL"}),                  # pale coral
+}
+
+
+def _family_bg(name: str) -> tuple | None:
+    """Background tint for a squat/bench/deadlift primary-or-secondary; None otherwise."""
+    for color, names in _LIFT_FAMILIES.values():
+        if name in names:
+            return color
+    return None
+
 
 def _round5(lbs: float) -> int:
     """Snap to the nearest 5 lb — real barbell/dumbbell loads, not kg-conversion noise."""
@@ -255,13 +275,21 @@ def build_plan(block: dict) -> tuple[list[list[str]], list[dict]]:
     r = _row(); rows.append([f"{label} — Weekly Plan (PROVISIONAL)"])
     fmts.append({"range": _a1(r, 1, r, NCOL), "format": _cell_fmt(bg=_TITLE_BG, bold=True, white=True)})
 
-    # Colour key: one shaded cell per week/phase.
+    # Week colour key: one shaded cell per week/phase.
     order = list(range(1, weeks + 1))
-    r = _row(); rows.append(["Colour key →"] + [f"W{w} {_WK_PHASE.get(w, '')}".strip() for w in order])
+    r = _row(); rows.append(["Week colours →"] + [f"W{w} {_WK_PHASE.get(w, '')}".strip() for w in order])
     fmts.append({"range": _a1(r, 1, r, 1), "format": _cell_fmt(bold=True)})
     for i, w in enumerate(order):
         col = 2 + i
         fmts.append({"range": _a1(r, col, r, col), "format": _cell_fmt(bg=_WK_COLORS.get(w), bold=True)})
+
+    # Lift colour key: primary + its secondary share the family tint.
+    r = _row(); rows.append(["Lift colours →"] + [f"{lift} + secondary" for lift in _LIFT_FAMILIES])
+    fmts.append({"range": _a1(r, 1, r, 1), "format": _cell_fmt(bold=True)})
+    for i, (color, _names) in enumerate(_LIFT_FAMILIES.values()):
+        col = 2 + i
+        fmts.append({"range": _a1(r, col, r, col), "format": _cell_fmt(bg=color, bold=True)})
+
     rows.append(["Primary lifts in bold. Blank RPE on accessories = assume 7–8."])
 
     day_order = [d.get("label") for d in block.get("days", [])]
@@ -281,8 +309,9 @@ def build_plan(block: dict) -> tuple[list[list[str]], list[dict]]:
                 scheme, load, rpe = _summarize_sets(ex.get("sets", []), _is_bw_lift(name))
                 r = _row(); rows.append([day if first else "", name, (ex.get("notes") or "").strip(),
                                          scheme, load, rpe])
-                if name in PRIMARY_NAMES:
-                    fmts.append({"range": _a1(r, 1, r, NCOL), "format": _cell_fmt(bold=True)})
+                fmt = _cell_fmt(bg=_family_bg(name), bold=name in PRIMARY_NAMES)
+                if fmt:  # squat/bench/dl rows get a family tint; primaries also bold
+                    fmts.append({"range": _a1(r, 1, r, NCOL), "format": fmt})
                 first = False
             rows.append([])
     return rows, fmts
