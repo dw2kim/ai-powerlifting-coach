@@ -6,6 +6,7 @@
     "goal": "Bench-led strength progression: push comp bench (priority lift), keep squat & sumo climbing on heavier backoff volume, and finally cap the pull-up RPE drift.",
     "changes": [
       "Real loads: peaks anchored on your B3 log (squat 480×2 @8 → e1RM 512), not the old conservative sheet.",
+      "Squat W4 peak set to 485×2 @8 (clean gym PR double, ~517 e1RM) with an OPTIONAL 495×1 if it flies — athlete confidence call: 495 has only ever been a comp single, never a gym lift.",
       "Backoff volume matched to your logged norm (not a flat guess): squat 4·4·4·3·3, sumo 3·3·3·2·3, comp bench 4·4·4·3·3 backoff sets W1–W5 — tapering one at the peak like you already do. Bench gets +1 as the priority lift.",
       "Pull-up gets a HARD @8 cap and conservative loads (top BW+80×3) — deliberately breaking the @9+ drift. Earn weight with reps, don't add load until RPE drops.",
       "Dip peaks W3 (BW+85), pulls back W4 so it doesn't stack with the comp-bench peak (horizontal-press overlap).",
@@ -15,6 +16,8 @@
       "NEW: Incline DB Press (D4) — upper-chest volume for the bench push; replaces Weighted Back Extension (erectors redundant with heavy sumo + 4-set backoff).",
       "NEW: Hanging Leg Raise (D2) — direct core/bracing for squat & sumo; replaces Seated Leg Curl (posterior already hit by same-day Paused RDL).",
       "ROTATION: Rear Delt Fly → Reverse Pec Deck (D3) — same rear-delt target, machine variant, shoulder-friendlier.",
+      "SECONDARY ROTATION (rule secondary-rotation): Bench CGB → Spoto Bench Press (D4) — dead-stop pause ~1in off chest trains the off-chest sticking point; CGB ran 3 straight blocks. Loads anchored on your Spoto log (205–225 @6–7), @8 cap.",
+      "SECONDARY ROTATION: Squat Paused → 3-1-0 Tempo Squat (D3) — 3s eccentric + 1s pause for novel stimulus (paused plateaued ~385); ~40 lb under paused, @7 cap protects Fri sumo. Deadlift secondary HELD at Paused RDL — grooves the tall-lockout/no-hitch cue, a live weak point.",
       "Everything else carries over from B3."
     ]
   },
@@ -382,32 +385,32 @@
           ]
         },
         {
-          "name": "Paused Low-bar Squat",
-          "notes": "Top @6. 385×4. @7 CAP — protects Fri sumo.",
+          "name": "3-1-0 Tempo Squat",
+          "notes": "ROTATED-IN (was Paused Squat). 3-1-0 tempo: 3s ecc, 1s pause. Top @6. 345×4. @7 CAP — protects Fri sumo.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 174.6,
+              "weight_kg": 156.5,
               "reps": 4,
-              "rpe": 6
+              "rpe": 6.0
             }
           ]
         },
         {
-          "name": "Paused Low-bar Squat",
+          "name": "3-1-0 Tempo Squat",
           "notes": "Backoff — 2 sets @6.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 154.2,
+              "weight_kg": 138.3,
               "reps": 4,
-              "rpe": 6
+              "rpe": 6.0
             },
             {
               "type": "normal",
-              "weight_kg": 154.2,
+              "weight_kg": 138.3,
               "reps": 4,
-              "rpe": 6
+              "rpe": 6.0
             }
           ]
         },
@@ -526,8 +529,8 @@
           ]
         },
         {
-          "name": "CGB",
-          "notes": "Top @6. @8 CAP (B1 8.5 was traumatising). 205×5. 3 sets.",
+          "name": "Spoto Bench Press",
+          "notes": "ROTATED-IN (was CGB). Spoto — dead-stop pause ~1in off chest → off-chest sticking point. Top @6. 205×5. @8 CAP. 3 sets.",
           "sets": [
             {
               "type": "normal",
@@ -976,32 +979,32 @@
           ]
         },
         {
-          "name": "Paused Low-bar Squat",
-          "notes": "Top @6.5. 395×4. @7 CAP — protects Fri sumo.",
+          "name": "3-1-0 Tempo Squat",
+          "notes": "ROTATED-IN (was Paused Squat). 3-1-0 tempo: 3s ecc, 1s pause. Top @6.5. 355×4. @7 CAP — protects Fri sumo.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 179.2,
+              "weight_kg": 161.0,
               "reps": 4,
               "rpe": 6.5
             }
           ]
         },
         {
-          "name": "Paused Low-bar Squat",
+          "name": "3-1-0 Tempo Squat",
           "notes": "Backoff — 2 sets @6.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 158.8,
+              "weight_kg": 142.9,
               "reps": 4,
-              "rpe": 6
+              "rpe": 6.0
             },
             {
               "type": "normal",
-              "weight_kg": 158.8,
+              "weight_kg": 142.9,
               "reps": 4,
-              "rpe": 6
+              "rpe": 6.0
             }
           ]
         },
@@ -1120,8 +1123,8 @@
           ]
         },
         {
-          "name": "CGB",
-          "notes": "Top @7. @8 CAP (B1 8.5 was traumatising). 215×5. 3 sets.",
+          "name": "Spoto Bench Press",
+          "notes": "ROTATED-IN (was CGB). Spoto — dead-stop pause ~1in off chest → off-chest sticking point. Top @7. 215×5. @8 CAP. 3 sets.",
           "sets": [
             {
               "type": "normal",
@@ -1570,30 +1573,30 @@
           ]
         },
         {
-          "name": "Paused Low-bar Squat",
-          "notes": "Top @7. 405×3. @7 CAP — protects Fri sumo.",
+          "name": "3-1-0 Tempo Squat",
+          "notes": "ROTATED-IN (was Paused Squat). 3-1-0 tempo: 3s ecc, 1s pause. Top @7. 365×3. @7 CAP — protects Fri sumo.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 183.7,
+              "weight_kg": 165.6,
               "reps": 3,
-              "rpe": 7
+              "rpe": 7.0
             }
           ]
         },
         {
-          "name": "Paused Low-bar Squat",
+          "name": "3-1-0 Tempo Squat",
           "notes": "Backoff — 2 sets @6.5.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 163.3,
+              "weight_kg": 147.4,
               "reps": 3,
               "rpe": 6.5
             },
             {
               "type": "normal",
-              "weight_kg": 163.3,
+              "weight_kg": 147.4,
               "reps": 3,
               "rpe": 6.5
             }
@@ -1714,8 +1717,8 @@
           ]
         },
         {
-          "name": "CGB",
-          "notes": "Top @7.5. @8 CAP (B1 8.5 was traumatising). 220×4. 3 sets.",
+          "name": "Spoto Bench Press",
+          "notes": "ROTATED-IN (was CGB). Spoto — dead-stop pause ~1in off chest → off-chest sticking point. Top @7.5. 220×4. @8 CAP. 3 sets.",
           "sets": [
             {
               "type": "normal",
@@ -1817,13 +1820,13 @@
       "exercises": [
         {
           "name": "Low-bar Squat",
-          "notes": "Top set @8.5. 495×2.",
+          "notes": "Top @8. 485×2. OPTIONAL 495×1 only if the double flies — no grind. (Confidence build: 495 never singled in the gym, only in comp.)",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 224.5,
+              "weight_kg": 220.0,
               "reps": 2,
-              "rpe": 8.5
+              "rpe": 8.0
             }
           ]
         },
@@ -2152,30 +2155,30 @@
           ]
         },
         {
-          "name": "Paused Low-bar Squat",
-          "notes": "Top @7. 415×3. @7 CAP — protects Fri sumo.",
+          "name": "3-1-0 Tempo Squat",
+          "notes": "ROTATED-IN (was Paused Squat). 3-1-0 tempo: 3s ecc, 1s pause. Top @7. 375×3. @7 CAP — protects Fri sumo.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 188.2,
+              "weight_kg": 170.1,
               "reps": 3,
-              "rpe": 7
+              "rpe": 7.0
             }
           ]
         },
         {
-          "name": "Paused Low-bar Squat",
+          "name": "3-1-0 Tempo Squat",
           "notes": "Backoff — 2 sets @6.5.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 165.6,
+              "weight_kg": 149.7,
               "reps": 3,
               "rpe": 6.5
             },
             {
               "type": "normal",
-              "weight_kg": 165.6,
+              "weight_kg": 149.7,
               "reps": 3,
               "rpe": 6.5
             }
@@ -2290,8 +2293,8 @@
           ]
         },
         {
-          "name": "CGB",
-          "notes": "Top @8. @8 CAP (B1 8.5 was traumatising). 225×3. 3 sets.",
+          "name": "Spoto Bench Press",
+          "notes": "ROTATED-IN (was CGB). Spoto — dead-stop pause ~1in off chest → off-chest sticking point. Top @8. 225×3. @8 CAP. 3 sets.",
           "sets": [
             {
               "type": "normal",
@@ -2728,32 +2731,32 @@
           ]
         },
         {
-          "name": "Paused Low-bar Squat",
-          "notes": "Top @5.5. 350×4. @7 CAP — protects Fri sumo.",
+          "name": "3-1-0 Tempo Squat",
+          "notes": "ROTATED-IN (was Paused Squat). 3-1-0 tempo: 3s ecc, 1s pause. Top @5.5. 315×4. @7 CAP — protects Fri sumo.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 158.8,
+              "weight_kg": 142.9,
               "reps": 4,
               "rpe": 5.5
             }
           ]
         },
         {
-          "name": "Paused Low-bar Squat",
+          "name": "3-1-0 Tempo Squat",
           "notes": "Backoff — 2 sets @5.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 142.9,
+              "weight_kg": 129.3,
               "reps": 4,
-              "rpe": 5
+              "rpe": 5.0
             },
             {
               "type": "normal",
-              "weight_kg": 142.9,
+              "weight_kg": 129.3,
               "reps": 4,
-              "rpe": 5
+              "rpe": 5.0
             }
           ]
         },
@@ -2872,8 +2875,8 @@
           ]
         },
         {
-          "name": "CGB",
-          "notes": "Top @5.5. @8 CAP (B1 8.5 was traumatising). 185×5. 3 sets.",
+          "name": "Spoto Bench Press",
+          "notes": "ROTATED-IN (was CGB). Spoto — dead-stop pause ~1in off chest → off-chest sticking point. Top @5.5. 185×5. @8 CAP. 3 sets.",
           "sets": [
             {
               "type": "normal",

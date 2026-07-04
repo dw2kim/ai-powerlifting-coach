@@ -101,7 +101,7 @@ Draft mode differs from a normal design run:
   (`loads-from-logs`).
 
 After writing the draft files, the routine renders the draft to a Google Sheet
-(`scripts/sheets/export_block.py`, matching the B1–B3 layout) and notifies via Telegram with
+(`scripts/sheets/export_block.py`, two colour-coded tabs — "&lt;Block N&gt; Overview" + "&lt;Block N&gt; Plan") and notifies via Telegram with
 the Sheet URL. The draft files are committed to a branch, not master.
 
 ### Finalization (after W5, athlete-driven)
