@@ -10,6 +10,37 @@
 
 ---
 
+### 2026-06-29 · load, general · primary backoff volume (squat + sumo)
+**Feedback:** Backoff volume on primary squat and primary sumo runs low in the plan — I
+always end up doing one more backoff set than programmed. Program more backoff. Top sets
+are fine as-is; this is a backoff-only change.
+**Verified (Hevy, B3 `data/logs/sessions/`):**
+- **Low-bar Squat (D1)** — did **3 backoff sets every week W1–W4**, even when the sheet
+  programmed 2 (W1 plan 2→did 3; W2 plan 3→3; W3 plan 2→3 @174.6kg; W4 plan 2→3 @183.7kg).
+  i.e. 3 is the real standing volume, not 2.
+- **Sumo Deadlift (D4)** — 3 backoff sets W1–W3 (W3 plan 2→did 3 @183.7kg), then **dropped
+  to the planned 2 at W4 peak** (top was a 220kg @9 single — backed off the backoff when
+  the top set went maximal). So: 3 backoff except when the top set is a near-max single.
+**Action:** new rule `primary-backoff-volume`. **Revised 2026-07-01 from a volume analysis**
+(athlete asked to ground the number in history, not lock a flat 4). Per-session working-set
+counts across all logs (139 squat / 163 sumo / 83 bench sessions) show his real norm:
+squat 5 working (4 backoff), sumo 4 (3 backoff), bench 5 (4 backoff; 5–8 early 2026) — each
+tapering one set at the heavy peak. Final scheme (backoff, W1–W5): **squat 4·4·4·3·3, sumo
+3·3·3·2·3, comp bench 4·4·4·3·3** (bench +1 vs B3 as the priority lift). Reproduces his B3
+squat/sumo set counts; not a flat guess. Top sets untouched.
+→ rules: `primary-backoff-volume`
+
+### 2026-06-29 · block, general · accessory expansion / shock (1–2 new per block)
+**Feedback:** I want a bit more stimulus variety — expose a couple of new accessory or
+secondary movements each block to expand the muscle groups I train and give the body a
+little shock. Don't switch too much: primaries stay as they are, and most accessories
+carry over. Just intentionally surface 1–2 genuinely new movements per block.
+**Action:** extended `accessory-rotation` — each block deliberately introduces 1–2 *new*
+accessory/secondary movements targeting an under-trained group, while keeping ≥1 carry-over
+per slot and primaries fixed. The design skill must name which 1–2 it added and the group
+each expands.
+→ rules: `accessory-rotation` (extended)
+
 ### 2026-06-18 · general, block · mindful accessory rotation
 **Feedback:** When designing a new block, rotate accessories *mindfully* — don't swap every
 accessory each block. Rotate only a few, so I get variant exposure over time without losing

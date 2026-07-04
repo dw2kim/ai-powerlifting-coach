@@ -33,11 +33,19 @@ description: Design a new training block — pull context from prior block + mem
    e1RM trend and update the rule if the weakest lift has changed.
 3. **Choose the split** (4 day default; 3-day variant noted). Show how it manages overlap per CLAUDE.md's "Managing Training Overlap" rules — explicitly call out which pairs are staggered and why.
 4. **Build the weekly wave** (W1–W4 + W5 = deload or peak): top-set RPE target and rep scheme per week, per primary lift.
+   - **Backoff volume** (rule `primary-backoff-volume`): backoff sets match the athlete's
+     logged working-set norm, tapering one at the W4 peak — squat **4·4·4·3·3**, sumo
+     **3·3·3·2·3**, comp bench **4·4·4·3·3** (W1–W5). Top sets unchanged; backoff-only. Other
+     lifts keep their existing scheme.
 5. **Assign accessories** with weak-point chain: weak point → target → exercise → expected carryover. Offer one alternative per slot.
    - **Rotate mindfully** (rule `accessory-rotation`): carry most accessories over from the
      prior block; change only a **few** for variant exposure. A rotation = same target, new
      implement (DB→cable→machine) OR more specific targeting (general back → rear delt).
      Primaries never rotate. State explicitly which slots you rotated and why.
+   - **Expansion/shock** (rule `accessory-rotation`, extended): on top of carry-over,
+     deliberately introduce **1–2 genuinely new** accessory/secondary movements that expand
+     an under-trained muscle group for novel stimulus. Name which 1–2 you added and the group
+     each expands. Keep ≥1 carry-over per slot; primaries stay fixed.
    - **Respect day-interference** (rule `accessory-day-interference`): D1 accessories must not
      pre-fatigue D2 (Mon→Tue), and D3 accessories must not pre-fatigue D4 (Thu→Fri). D2
      accessories are unconstrained (Wed rest before D3). Call out the check for D1 and D3.
@@ -67,3 +75,39 @@ Before push_block can run:
 - `.env` must exist with `HEVY_API_KEY`
 - `scripts/hevy/exercise_templates.json` must exist (`python -m scripts.hevy.exercise_map --bootstrap`)
 - Any new exercise names must resolve — if `Resolver.resolve()` errors, add an entry to `OVERRIDES` in `scripts/hevy/exercise_map.py`.
+
+## Draft mode (automated end-of-W4 next-block draft)
+
+The scheduled routine (`scripts/review/draft_next_block.py`, fired weekly Sun 13:00
+America/Toronto and gated to the **W4 Sunday** of the running block) invokes this skill in
+**draft mode**. The intent: hand the athlete a reviewable *draft* of the next block during
+the W5 deload, so it can be finalized before the new block starts. W5 is a deload — it
+produces no design-relevant data, so W1–W4 actuals are the inputs and drafting now is correct.
+
+Draft mode differs from a normal design run:
+
+- **Skip Step 0 (review gate).** The block isn't complete at W4 (W5 deload remains), so there
+  is no end-of-block review yet. Draft anyway, off W1–W4 actuals. The *real*
+  `reviewing-block` retrospective still runs after W5, at finalization.
+- **Skip Steps 7–8 (archive + overwrite).** Do **not** touch `brain/current-block.{md,json}`
+  and do **not** archive. The current block is still being trained.
+- **Write to the draft files instead:** `brain/next-block-draft.md` + `brain/next-block-draft.json`
+  (same schema as `current-block.*`). Both get a banner at the top:
+  `> ⚠️ PROVISIONAL — drafted end of W4 from W1–W4 actuals. Finalize after W5 deload + block review.`
+- **Skip Step 9 (Hevy push).** A provisional draft is never pushed to Hevy.
+- **Still run Steps 1–6 in full**, obeying all binding rules — including
+  `primary-backoff-volume` (squat/sumo backoff volume) and the `accessory-rotation`
+  expansion clause (1–2 new movements). Loads come from the freshly-synced Hevy log
+  (`loads-from-logs`).
+
+After writing the draft files, the routine renders the draft to a Google Sheet
+(`scripts/sheets/export_block.py`, matching the B1–B3 layout) and notifies via Telegram with
+the Sheet URL. The draft files are committed to a branch, not master.
+
+### Finalization (after W5, athlete-driven)
+
+1. Run `reviewing-block` for the now-complete block (the real, Hevy-grounded retrospective).
+2. Reconcile the reviewed lessons against the W4 draft (and any edits the athlete made in the
+   Sheet during W5).
+3. Promote the draft into `brain/current-block.{md,json}`, archive the prior block (Steps 7–8),
+   commit, and offer the Hevy push (Step 9).

@@ -28,6 +28,16 @@
 - **accessory-progression** — Accessories progress *gradually*: hold a load for 2–3 weeks,
   then small bumps. Do **not** apply the primary/secondary "+5 lb each week" default to
   accessories. They should still trend up across blocks, just slowly. [FB 2026-06-14]
+- **primary-backoff-volume** — Backoff volume matches the athlete's **actual logged
+  working-set counts** (from the Hevy log: 139 squat / 163 sumo / 83 bench sessions), NOT a
+  flat guess, and **tapers one set at the W4 peak** (which is what he already does when the
+  top goes heavy). Backoff sets (excl. the top set), W1·W2·W3·W4·W5:
+  - **Low-bar Squat (D1)**: **4·4·4·3·3** — his standing 5-working-set norm.
+  - **Sumo Deadlift (D4)**: **3·3·3·2·3** — his recent 4-working-set norm; drops at the heavy-single peak.
+  - **Comp Bench (D1, priority)**: **4·4·4·3·3** — one more than B3 (was 3); within his
+    historical 5–8 working-set capacity, and bench is the priority push.
+  **Top sets are unchanged** — backoff-only. Other lifts keep their existing scheme.
+  [FB 2026-06-29, revised from volume analysis 2026-07-01]
 
 ## Accessory rotation & interference
 
@@ -36,7 +46,11 @@
   doing the identical movement for years). A "rotation" = same target muscle, different
   implement (dumbbell → cable → machine), OR more specific targeting (e.g. general back →
   rear-delt-specific). **Primaries (Big 5) never rotate** — only accessories. When you rotate,
-  apply the implement-conversion step of `loads-from-logs`. [FB 2026-06-18]
+  apply the implement-conversion step of `loads-from-logs`.
+  **Expansion/shock:** beyond carry-over, each block deliberately introduces **1–2 genuinely
+  new** accessory/secondary movements that expand an under-trained muscle group for novel
+  stimulus — while keeping ≥1 carry-over per slot and primaries fixed. State explicitly which
+  1–2 movements were added and which group each expands. [FB 2026-06-18, extended 2026-06-29]
 - **accessory-day-interference** — Accessories must not compromise the *next* training day.
   Schedule: D1 Mon · D2 Tue · D3 Thu · D4 Fri. D1→D2 and D3→D4 are back-to-back (no rest):
   **D1 accessories must not pre-fatigue D2** (esp. back work vs D2 pull-up), and **D3
