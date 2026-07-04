@@ -85,7 +85,7 @@ The routine, fired weekly **Sunday 13:00 America/Toronto**, runs:
    `primary-backoff-volume` (squat/sumo backoff) and the `accessory-rotation` expansion
    clause (1–2 new movements).
 3. `python -m scripts.review.draft_next_block notify` — render the draft to a Google Sheet
-   (`scripts.sheets.export_block`, B1–B3 layout: Overview + per-week tabs), push a Telegram
+   (`scripts.sheets.export_block`, two colour-coded tabs: "&lt;Block N&gt; Overview" + "&lt;Block N&gt; Plan"), push a Telegram
    heads-up with the Sheet URL + a W1→peak glance, and commit the draft to the
    `draft/next-block` branch (never master).
 
