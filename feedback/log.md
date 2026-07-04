@@ -10,6 +10,24 @@
 
 ---
 
+### 2026-07-03 · block, general · secondary rotation for the three barbell lifts
+**Feedback:** Rotate the *secondary* movement for squat, bench, and deadlift across blocks —
+**0–2 per block, coach's discretion.** Don't force it: hold a secondary if I still need to
+work the same one. This is separate from `accessory-rotation` (accessories + 1–2 new
+movements); it governs only the **secondary slot for the three barbell lifts.** Pull-up and
+dip are not included. Approved rotation pools:
+- **Squat secondary:** 3-1-0 Tempo Squat · Paused (low-bar) Squat
+- **Bench secondary:** Spoto Bench Press · Larsen Press (No Feet) · Close Grip Bench (CGB)
+- **Deadlift secondary:** Paused Deadlift · Romanian Deadlift (RDL) · Paused RDL
+
+**Also (tooling):** the Plan-tab Sheet now colour-codes each barbell lift's primary + secondary
+with one shared tint (squat yellow / bench lavender / deadlift coral). These pool names were
+added to `_LIFT_FAMILIES` in `export_block.py` so a rotated-in secondary still colours right.
+**Interpretation confirmed with athlete:** scope = barbell-lift secondary slot only; count =
+0–2/block at coach discretion.
+**Action:** new rule `secondary-rotation`.
+→ rules: `secondary-rotation`
+
 ### 2026-06-29 · load, general · primary backoff volume (squat + sumo)
 **Feedback:** Backoff volume on primary squat and primary sumo runs low in the plan — I
 always end up doing one more backoff set than programmed. Program more backoff. Top sets

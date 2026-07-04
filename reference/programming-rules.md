@@ -51,6 +51,18 @@
   new** accessory/secondary movements that expand an under-trained muscle group for novel
   stimulus — while keeping ≥1 carry-over per slot and primaries fixed. State explicitly which
   1–2 movements were added and which group each expands. [FB 2026-06-18, extended 2026-06-29]
+- **secondary-rotation** — Rotate the **secondary** movement for the three barbell lifts
+  (squat, bench, sumo deadlift) across blocks: **0–2 rotations per block, coach's discretion.**
+  Hold a secondary when a weak point is better served by staying on it — don't rotate for its
+  own sake. Distinct from `accessory-rotation` (accessories + the 1–2 new-movement expansion);
+  this governs only the barbell-lift secondary slot. **Primaries never change; pull-up & dip
+  secondaries are out of scope.** Draw a rotated-in secondary from the athlete's approved pools:
+  - **Squat:** 3-1-0 Tempo Squat · Paused (low-bar) Squat
+  - **Bench:** Spoto Bench Press · Larsen Press (No Feet) · Close Grip Bench (CGB)
+  - **Deadlift:** Paused Deadlift · Romanian Deadlift (RDL) · Paused RDL
+
+  When you rotate, apply the variant/implement load-conversion step of `loads-from-logs`. The
+  Sheet colour-codes each lift's primary + secondary with one shared tint. [FB 2026-07-03]
 - **accessory-day-interference** — Accessories must not compromise the *next* training day.
   Schedule: D1 Mon · D2 Tue · D3 Thu · D4 Fri. D1→D2 and D3→D4 are back-to-back (no rest):
   **D1 accessories must not pre-fatigue D2** (esp. back work vs D2 pull-up), and **D3

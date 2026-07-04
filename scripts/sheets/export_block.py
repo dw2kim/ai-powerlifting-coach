@@ -87,10 +87,22 @@ _WK_PHASE = {1: "Calibration", 2: "Establish", 3: "Push", 4: "Peak", 5: "Deload"
 # exercise name; extend each set when a new secondary rotates in (see `accessory-rotation` /
 # the secondary-rotation rule). Colours are light so black text stays readable, and distinct
 # from the week-phase header bands (which sit on separate rows).
+# Names cover the primary + every secondary in the athlete's rotation pool (rule
+# `secondary-rotation`), with common spelling variants, so a rotated-in secondary still tints.
 _LIFT_FAMILIES: dict[str, tuple[tuple, set[str]]] = {
-    "Squat":    ((1.00, 0.95, 0.70), {"Low-bar Squat", "Paused Low-bar Squat"}),      # pale yellow
-    "Bench":    ((0.87, 0.85, 0.96), {"Comp Bench", "CGB"}),                            # pale lavender
-    "Deadlift": ((0.99, 0.86, 0.83), {"Sumo Deadlift", "Paused RDL"}),                  # pale coral
+    "Squat": ((1.00, 0.95, 0.70), {  # pale yellow
+        "Low-bar Squat", "Paused Low-bar Squat", "Paused Squat",
+        "3-1-0 Tempo Squat", "Tempo Squat",
+    }),
+    "Bench": ((0.87, 0.85, 0.96), {  # pale lavender
+        "Comp Bench", "CGB", "Close Grip Bench",
+        "Spoto Bench Press", "Spoto Bench", "Spoto",
+        "Larsen Press (No Feet)", "Larsen Press", "Larsen",
+    }),
+    "Deadlift": ((0.99, 0.86, 0.83), {  # pale coral
+        "Sumo Deadlift", "Paused RDL", "RDL", "Romanian Deadlift (RDL)",
+        "Romanian Deadlift", "Paused Deadlift",
+    }),
 }
 
 
