@@ -150,3 +150,15 @@ Squat, Sumo, Bench, and Dip are all disciplined this block. The WPU problem is n
 pattern, not noise. Next block: consider a hard-programmed RPE ceiling with a lower starting weight
 so there is actual room to grow within the plan, rather than the plan being aspirational from W1.
 Revised W4 directive: drop WPU to BW+80 despite W3 hitting BW+85 — reset the base, then step.
+
+## Block 3 review written (2026-07-04) → reviews/2026-Q2-B03.md
+Final Hevy actuals (source of truth): Squat **512** e1RM (480×2 @8, new best, honest RPE) · Comp
+Bench **266** (235×4 @7.5 — reintroduced on the real comp lift, held ≤@7.5 all block, no shoulder
+flare) · Dip **306** (BW+90×4 @7.5 — cleanest lift, reintroduced with zero grind) · Sumo **501**
+(485×1 @9 — *down* ~5 vs B2 and via a grindy hitch-risk single) · WPU **291** (BW+85×3 @8.5, plus
+BW+90×2 @9.5 — e1RM flat, RPE drift continues). **Correction to the mid-block note:** the comp-bench
+"@8 breach" did NOT survive into the final log — bench discipline was excellent. Two durable
+takeaways: (1) squat/bench/dip discipline is now solid; the WPU is the lone structural RPE problem,
+which B4 answers with a hard @8 cap + BW+80 start. (2) Sumo has stalled at ~500–507 for two blocks
+and keeps being reached for as a grindy @9 single — B4 programs 485×**2** ≤@8.5 instead. True W5
+deload achieved (closes the B2 open item).
