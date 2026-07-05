@@ -10,6 +10,18 @@
 
 ---
 
+### 2026-07-04 · general · RPE targets must match the Hevy ladder
+**Feedback:** Hevy's RPE picker only offers **{6, 7, 7.5, 8, 8.5, 9, 9.5, 10}** — there is no
+6.5, and nothing below 6. Prescribing @6.5 or @5.5 gives me a target I can't actually select
+or log.
+**Surfaced:** finalizing B4 — the draft carried @6.5 (calibration tops + backoffs) and @5.5
+(W5 deload) targets; **53 off-ladder values** in total.
+**Actions:** (1) snapped B4's `brain/current-block.json` onto the ladder — deload / sub-6 → **@6**
+(the loggable floor), submax @6.5 backoff/calibration → **@6** (round *down*, keep it submax);
+(2) new rule `rpe-hevy-ladder`. The deload stimulus comes from the **load drop**, not a sub-6 RPE.
+Not a tooling bug — a design-knowledge gap; the rule now binds `designing-training-block`.
+→ rules: `rpe-hevy-ladder`
+
 ### 2026-07-03 · block, general · secondary rotation for the three barbell lifts
 **Feedback:** Rotate the *secondary* movement for squat, bench, and deadlift across blocks —
 **0–2 per block, coach's discretion.** Don't force it: hold a secondary if I still need to
