@@ -65,53 +65,88 @@ PRIMARY_NAMES = {name for _, name, _ in PRIMARY_PEAKS}
 NCOL = 6  # widest row in either tab (Day / Exercise / Notes / Sets×Reps / Load / RPE)
 
 # --- Colour palette (RGB, 0..1) --------------------------------------------------------
-_TITLE_BG = (0.20, 0.25, 0.31)   # dark slate — tab title banner (white text)
+def _hex(h: str) -> tuple:
+    h = h.lstrip("#")
+    return (int(h[0:2], 16) / 255, int(h[2:4], 16) / 255, int(h[4:6], 16) / 255)
+
+
+_TITLE_BG = _hex("2c3e50")       # dark slate — tab title banner (white text)
 _SECTION_BG = (0.87, 0.89, 0.93)  # pale slate — overview section headers
-_HEADER_GRAY = (0.85, 0.85, 0.85)  # plan column-header row
 _POS_GREEN = (0.71, 0.88, 0.72)   # Δ improvement
 _NEG_RED = (0.96, 0.78, 0.76)     # Δ regression
 
-# Weekly-phase colours: calm calibration → hot peak → cool deload.
-_WK_COLORS = {
-    1: (0.81, 0.91, 0.87),  # Calibration — pale teal
-    2: (0.72, 0.85, 0.67),  # Establish   — green
-    3: (0.99, 0.85, 0.58),  # Push        — amber
-    4: (0.93, 0.60, 0.51),  # Peak        — red
-    5: (0.66, 0.79, 0.92),  # Deload      — blue
-}
-_WK_PHASE = {1: "Calibration", 2: "Establish", 3: "Push", 4: "Peak", 5: "Deload"}
+# Plan-tab bands — matched to the Block 3 sheet so the two read the same.
+_WEEK_BG = _hex("1a237e")        # week header band (white text)
+_COLHDR_BG = _hex("34495e")      # column-header row (white text)
+_DAYBAND_BG = _hex("455a64")     # per-day band (white text)
 
-# Lift-family shading in the Plan tab: a lift's primary AND its secondary share one tint so
-# the eye groups them (e.g. Low-bar Squat + Paused Low-bar Squat both yellow). Only the three
-# barbell lifts get coloured — pull-up, dip, and accessories stay plain. Membership is by
-# exercise name; extend each set when a new secondary rotates in (see `accessory-rotation` /
-# the secondary-rotation rule). Colours are light so black text stays readable, and distinct
-# from the week-phase header bands (which sit on separate rows).
-# Names cover the primary + every secondary in the athlete's rotation pool (rule
-# `secondary-rotation`), with common spelling variants, so a rotated-in secondary still tints.
-_LIFT_FAMILIES: dict[str, tuple[tuple, set[str]]] = {
-    "Squat": ((1.00, 0.95, 0.70), {  # pale yellow
-        "Low-bar Squat", "Paused Low-bar Squat", "Paused Squat",
-        "3-1-0 Tempo Squat", "Tempo Squat",
-    }),
-    "Bench": ((0.87, 0.85, 0.96), {  # pale lavender
-        "Comp Bench", "CGB", "Close Grip Bench",
-        "Spoto Bench Press", "Spoto Bench", "Spoto",
-        "Larsen Press (No Feet)", "Larsen Press", "Larsen",
-    }),
-    "Deadlift": ((0.99, 0.86, 0.83), {  # pale coral
-        "Sumo Deadlift", "Paused RDL", "RDL", "Romanian Deadlift (RDL)",
-        "Romanian Deadlift", "Paused Deadlift",
-    }),
+_WK_PHASE = {1: "CALIBRATION", 2: "BUILD", 3: "PUSH", 4: "OVERREACH", 5: "DELOAD"}
+_WK_SUB = {
+    1: "Open easy — first working loads of the block.",
+    2: "Loads climb. Find working weights.",
+    3: "Heavier top sets. Doubles appear.",
+    4: "Peak doubles/singles. Manage fatigue.",
+    5: "Back off. Recover into the next block.",
+}
+
+# Lift-family tint for the Type + Exercise cells (Block-3 palette). Detected by name so a
+# rotated-in secondary (Spoto, 3-1-0 Tempo, etc.) inherits its family's colour automatically.
+_FAMILY_BG = {
+    "Squat": _hex("e8f5e9"),   # light green
+    "Bench": _hex("fff3e0"),   # light amber
+    "Sumo": _hex("e3f2fd"),    # light blue
+    "Pullup": _hex("f3e5f5"),  # light purple
+    "Dip": _hex("e0f7fa"),     # light cyan
+    "Acc": _hex("f5f5f5"),     # light grey
 }
 
 
-def _family_bg(name: str) -> tuple | None:
-    """Background tint for a squat/bench/deadlift primary-or-secondary; None otherwise."""
-    for color, names in _LIFT_FAMILIES.values():
-        if name in names:
-            return color
-    return None
+def _family(name: str) -> str:
+    """Map an exercise name to its Big-5 family (or 'Acc'). Order matters."""
+    n = name.lower()
+    if "squat" in n:
+        return "Squat"
+    if "dip" in n:
+        return "Dip"
+    if "pull-up" in n or "pullup" in n:
+        return "Pullup"
+    if "sumo" in n or "deadlift" in n or "rdl" in n:
+        return "Sumo"
+    if any(k in n for k in ("bench", "spoto", "cgb", "close grip", "larsen")):
+        return "Bench"
+    return "Acc"
+
+
+# --- Note shortening (Plan tab) --------------------------------------------------------
+# The Sets/Reps/RPE/Load columns already carry the numbers, so the note keeps only the
+# qualitative cue: "Top set @7. 435×4." → "Top set". Cap cues ("@8 CAP") are preserved.
+_LOADREP_RE = re.compile(r"(?:BW\+)?(\d+)\s*[×x]\s*\d+")
+_RPE_RE = re.compile(r"@\d+(?:\.\d+)?(?:\s*[-–]\s*@?\d+(?:\.\d+)?)?")
+_CAP_RE = re.compile(r"@(\d+(?:\.\d+)?\s*(?:CAP|cap|Cap))")
+_SETS_RE = re.compile(r"\s*[—-]?\s*\d+\s+sets\b\.?")
+
+
+def _short_note(note: str | None) -> str:
+    if not note:
+        return ""
+    s = note
+
+    def _drop_loadrep(m: re.Match) -> str:
+        # Drop weight×rep tokens (435×4, BW+65×4) but keep rep schemes like "3×12".
+        return "" if ("BW" in m.group(0) or int(m.group(1)) >= 40) else m.group(0)
+
+    s = _LOADREP_RE.sub(_drop_loadrep, s)
+    # Protect "@X CAP" cues, strip the remaining bare RPE targets, then restore the caps.
+    s = _CAP_RE.sub(lambda m: "\x00" + m.group(1), s)
+    s = _RPE_RE.sub("", s)
+    s = s.replace("\x00", "@")
+    s = _SETS_RE.sub("", s)          # "— 4 sets" / "4 sets" (the Sets column shows it)
+    s = re.sub(r"\(\s*\)", "", s)
+    s = re.sub(r"\s+", " ", s)
+    s = re.sub(r"\s*\.\s*(?=\.)", "", s)   # collapse ". ." → "."
+    s = re.sub(r"\s+([.,;])", r"\1", s)
+    s = re.sub(r"[—-]\s*(?=[.,]|$)", "", s)
+    return s.strip(" .,–—")
 
 
 def _round5(lbs: float) -> int:
@@ -215,7 +250,7 @@ def _block_label(block: dict) -> str:
 
 # --- Grid builders (each returns (rows, formats)) --------------------------------------
 
-def build_overview(block: dict, prior: dict | None) -> tuple[list[list[str]], list[dict]]:
+def build_overview(block: dict, prior: dict | None, final: bool = False) -> tuple[list[list[str]], list[dict], dict]:
     rows: list[list[str]] = []
     fmts: list[dict] = []
     label = _block_label(block)
@@ -227,8 +262,10 @@ def build_overview(block: dict, prior: dict | None) -> tuple[list[list[str]], li
     def _row() -> int:
         return len(rows) + 1  # 1-based index of the row about to be appended
 
-    r = _row(); rows.append([f"{label} — DRAFT (PROVISIONAL)",
-                             "Review & iterate during W5, then finalize"])
+    title = f"{label} — FINAL" if final else f"{label} — DRAFT (PROVISIONAL)"
+    subtitle = (f"Active block · start {block.get('start_date') or 'TBD'}" if final
+                else "Review & iterate during W5, then finalize")
+    r = _row(); rows.append([title, subtitle])
     fmts.append({"range": _a1(r, 1, r, NCOL), "format": _cell_fmt(bg=_TITLE_BG, bold=True, white=True)})
 
     if summary.get("goal"):
@@ -272,61 +309,187 @@ def build_overview(block: dict, prior: dict | None) -> tuple[list[list[str]], li
         rows.append(["(Goal, block-vs-block changes, and accessory changes are written here "
                      "when the design skill generates the real draft. This preview is rendered "
                      "straight from the block JSON.)"])
-    return rows, fmts
+    # Fixed widths so the long goal/changes text (col A/B) can't balloon and hide the
+    # load×reps and Δ columns. The text overflows rightward across the empty cells instead.
+    layout = {"col_px": [300, 120, 130, 90, 90, 90], "freeze": (1, 0)}
+    return rows, fmts, layout
 
 
-def build_plan(block: dict) -> tuple[list[list[str]], list[dict]]:
+def _plan_cells(ex: dict) -> tuple[str, str, str, str]:
+    """(sets, reps, rpe, load) display strings for one exercise's working sets."""
+    working = [s for s in ex.get("sets", []) if s.get("type") != "warmup"]
+    if not working:
+        return ("", "", "", "")
+    is_bw = _is_bw_lift(ex.get("name", ""))
+
+    def _reps(s):
+        return "AMRAP" if s.get("reps") in (0, None) else s.get("reps")
+
+    reps = [_reps(s) for s in working]
+    if all(r == "AMRAP" for r in reps):
+        sets_s, reps_s = "1", "AMRAP"
+    elif len({str(r) for r in reps}) == 1:
+        sets_s, reps_s = str(len(working)), str(reps[0])
+    else:
+        sets_s, reps_s = str(len(working)), "/".join(str(r) for r in reps)
+
+    rpes = [s.get("rpe") for s in working if s.get("rpe") is not None]
+    if not rpes:
+        rpe_s = ""
+    elif len(set(rpes)) == 1:
+        rpe_s = _fmt_rpe(rpes[0])
+    else:
+        rpe_s = f"@{min(rpes):g}-{max(rpes):g}"
+
+    if ex.get("display_load"):       # explicit override, e.g. a "485-495" target range
+        return (sets_s, reps_s, rpe_s, str(ex["display_load"]))
+    weights = [s.get("weight_kg") for s in working if s.get("weight_kg") is not None]
+    if not weights:
+        load_s = ""
+    else:
+        lbs = sorted({_round5(w * KG_TO_LBS) for w in weights})
+        if lbs == [0]:
+            load_s = "BW"          # bodyweight movement (dip, pull-up, hanging leg raise)
+        elif len(lbs) == 1:
+            load_s = f"BW+{lbs[0]}" if is_bw else f"{lbs[0]}"
+        else:
+            load_s = (f"BW+{lbs[0]}-{lbs[-1]}" if is_bw else f"{lbs[0]}-{lbs[-1]}")
+    return (sets_s, reps_s, rpe_s, load_s)
+
+
+def _role_suffix(note: str | None) -> str:
+    """Distinguish the top set / backoff / AMRAP entries of the same lift, Block-3 style."""
+    nl = (note or "").lower()
+    if "amrap" in nl:
+        return " (AMRAP)"
+    if "backoff" in nl:
+        return " (backoff)"
+    if "top" in nl:
+        return " (top set)"
+    return ""
+
+
+def _keyed(exs: list) -> dict:
+    """(name, occurrence-within-day) -> exercise, so a lift's top/backoff stay distinct."""
+    seen: dict[str, int] = {}
+    out: dict[tuple, dict] = {}
+    for ex in exs:
+        nm = ex.get("name", "")
+        occ = seen.get(nm, 0)
+        seen[nm] = occ + 1
+        out[(nm, occ)] = ex
+    return out
+
+
+def build_plan(block: dict, final: bool = False) -> tuple[list[list[str]], list[dict], dict]:
+    """Horizontal weekly plan — weeks run across the columns (matches the Block-3 sheet):
+    3 fixed left columns (Day · Type · Exercise), then one block of Sets/Reps/RPE/Load/Notes
+    per week. Whole exercise rows are tinted by lift family; each training day gets a band.
+    The left three columns are frozen so the exercise names stay put when scrolling weeks."""
     rows: list[list[str]] = []
     fmts: list[dict] = []
+    banner_rows: list[int] = []       # rows that should overflow (not wrap) their long text
     label = _block_label(block)
     weeks = block.get("weeks", 0)
+    order = list(range(1, weeks + 1))
+
+    NLEFT = 3                         # Day · Type · Exercise
+    WK_HDRS = ["Sets", "Reps", "RPE", "Load", "Notes"]
+    WK_W = len(WK_HDRS)
+    SPACER = 1                        # blank column between week blocks
+    total = NLEFT + weeks * WK_W + max(weeks - 1, 0) * SPACER
+
+    # Fixed column widths (px) — no auto-resize, so long banner/goal text can't balloon a column.
+    col_px = [46, 66, 205]            # Day · Type · Exercise
+    for wi in order:
+        col_px += [46, 48, 54, 74, 210]      # Sets · Reps · RPE · Load · Notes
+        if wi != order[-1]:
+            col_px.append(26)                # spacer between weeks
+
+    def wk_start(w: int) -> int:      # 1-based first column of week w's block
+        return NLEFT + (w - 1) * (WK_W + SPACER) + 1
+
+    def blank_row() -> list[str]:
+        return [""] * total
 
     def _row() -> int:
         return len(rows) + 1
 
-    r = _row(); rows.append([f"{label} — Weekly Plan (PROVISIONAL)"])
-    fmts.append({"range": _a1(r, 1, r, NCOL), "format": _cell_fmt(bg=_TITLE_BG, bold=True, white=True)})
+    # Title banner
+    r = _row(); banner_rows.append(r); row = blank_row()
+    row[0] = f"{label} — Weekly Plan" if final else f"{label} — Weekly Plan (PROVISIONAL)"
+    rows.append(row)
+    fmts.append({"range": _a1(r, 1, r, total), "format": _cell_fmt(bg=_TITLE_BG, bold=True, white=True)})
 
-    # Week colour key: one shaded cell per week/phase.
-    order = list(range(1, weeks + 1))
-    r = _row(); rows.append(["Week colours →"] + [f"W{w} {_WK_PHASE.get(w, '')}".strip() for w in order])
-    fmts.append({"range": _a1(r, 1, r, 1), "format": _cell_fmt(bold=True)})
-    for i, w in enumerate(order):
-        col = 2 + i
-        fmts.append({"range": _a1(r, col, r, col), "format": _cell_fmt(bg=_WK_COLORS.get(w), bold=True)})
+    # Week header band + one-line phase subtitle
+    r = _row(); banner_rows.append(r); row = blank_row()
+    for w in order:
+        row[wk_start(w) - 1] = f"WEEK {w} — {_WK_PHASE.get(w, '')}".strip()
+    rows.append(row)
+    for w in order:
+        c0 = wk_start(w)
+        fmts.append({"range": _a1(r, c0, r, c0 + WK_W - 1),
+                     "format": _cell_fmt(bg=_WEEK_BG, bold=True, white=True)})
+    r = _row(); banner_rows.append(r); row = blank_row()
+    for w in order:
+        row[wk_start(w) - 1] = _WK_SUB.get(w, "")
+    rows.append(row)
 
-    # Lift colour key: primary + its secondary share the family tint.
-    r = _row(); rows.append(["Lift colours →"] + [f"{lift} + secondary" for lift in _LIFT_FAMILIES])
-    fmts.append({"range": _a1(r, 1, r, 1), "format": _cell_fmt(bold=True)})
-    for i, (color, _names) in enumerate(_LIFT_FAMILIES.values()):
-        col = 2 + i
-        fmts.append({"range": _a1(r, col, r, col), "format": _cell_fmt(bg=color, bold=True)})
-
-    rows.append(["Primary lifts in bold. Blank RPE on accessories = assume 7–8."])
+    # Column-header row
+    r = _row(); row = blank_row()
+    row[0], row[1], row[2] = "Day", "Type", "Exercise"
+    for w in order:
+        c0 = wk_start(w) - 1
+        for j, h in enumerate(WK_HDRS):
+            row[c0 + j] = h
+    rows.append(row)
+    fmts.append({"range": _a1(r, 1, r, total), "format": _cell_fmt(bg=_COLHDR_BG, bold=True, white=True)})
 
     day_order = [d.get("label") for d in block.get("days", [])]
-    for w in range(1, weeks + 1):
-        rows.append([])
-        r = _row(); rows.append([f"WEEK {w} — {_WK_PHASE.get(w, '')}".strip()])
-        fmts.append({"range": _a1(r, 1, r, NCOL), "format": _cell_fmt(bg=_WK_COLORS.get(w), bold=True)})
-        r = _row(); rows.append(["Day", "Exercise", "Set / Notes", "Sets×Reps", "Load (lb)", "RPE"])
-        fmts.append({"range": _a1(r, 1, r, NCOL), "format": _cell_fmt(bg=_HEADER_GRAY, bold=True)})
-        prescs = [p for p in block.get("prescriptions", []) if p.get("week") == w]
-        prescs.sort(key=lambda p: day_order.index(p["day"]) if p.get("day") in day_order else 99)
-        for presc in prescs:
-            day = presc.get("day", "")
-            first = True
-            for ex in presc.get("exercises", []):
-                name = ex.get("name", "")
-                scheme, load, rpe = _summarize_sets(ex.get("sets", []), _is_bw_lift(name))
-                r = _row(); rows.append([day if first else "", name, (ex.get("notes") or "").strip(),
-                                         scheme, load, rpe])
-                fmt = _cell_fmt(bg=_family_bg(name), bold=name in PRIMARY_NAMES)
-                if fmt:  # squat/bench/dl rows get a family tint; primaries also bold
-                    fmts.append({"range": _a1(r, 1, r, NCOL), "format": fmt})
-                first = False
-            rows.append([])
-    return rows, fmts
+    day_focus = {d.get("label"): d.get("focus", "") for d in block.get("days", [])}
+    by_wd: dict[tuple, list] = {}
+    for p in block.get("prescriptions", []):
+        by_wd.setdefault((p.get("week"), p.get("day")), []).extend(p.get("exercises", []))
+
+    for day in day_order:
+        weeks_exs = [(w, by_wd.get((w, day), [])) for w in order]
+        _, canon_exs = max(weeks_exs, key=lambda t: len(t[1]))  # fullest week sets the row order
+        if not canon_exs:
+            continue
+        canon_order = list(_keyed(canon_exs).keys())
+        per_week = {w: _keyed(exs) for w, exs in weeks_exs}
+
+        # Day band — full-width coloured row; "Dn · focus" overflows across the frozen cols.
+        r = _row(); banner_rows.append(r); row = blank_row()
+        row[0] = f"{day} · {day_focus.get(day, '')}".rstrip(" ·")
+        rows.append(row)
+        fmts.append({"range": _a1(r, 1, r, total), "format": _cell_fmt(bg=_DAYBAND_BG, bold=True, white=True)})
+
+        for key in canon_order:
+            name = key[0]
+            fam = _family(name)
+            ref = next((per_week[w][key] for w in order if key in per_week.get(w, {})), None)
+            r = _row(); row = blank_row()
+            row[1] = fam
+            row[2] = f"{name}{_role_suffix((ref or {}).get('notes'))}"
+            for w in order:
+                ex = per_week.get(w, {}).get(key)
+                if not ex:
+                    continue
+                sets_s, reps_s, rpe_s, load_s = _plan_cells(ex)
+                c0 = wk_start(w) - 1
+                (row[c0], row[c0 + 1], row[c0 + 2], row[c0 + 3], row[c0 + 4]) = (
+                    sets_s, reps_s, rpe_s, load_s, _short_note(ex.get("notes")))
+            rows.append(row)
+            # Tint the whole row by family so it reads as one exercise across all the weeks.
+            fmts.append({"range": _a1(r, 1, r, total), "format": _cell_fmt(bg=_FAMILY_BG[fam])})
+            if name in PRIMARY_NAMES:  # keep the primary lift's name bold
+                fmts.append({"range": _a1(r, 3, r, 3),
+                             "format": _cell_fmt(bg=_FAMILY_BG[fam], bold=True)})
+        rows.append(blank_row())
+
+    layout = {"col_px": col_px, "freeze": (4, 3), "wrap_all": True, "overflow_rows": banner_rows}
+    return rows, fmts, layout
 
 
 def _print_dry_run(grid: list[list[str]]) -> None:
@@ -334,12 +497,30 @@ def _print_dry_run(grid: list[list[str]]) -> None:
         print(" | ".join(str(c).replace("\n", " / ") for c in row))
 
 
+BLOCK_ARCHIVE = REPO_ROOT / "data" / "block-archive"
+
+
 def _load_prior(block: dict) -> dict | None:
-    """The current block, for block-vs-block deltas — unless we're rendering it itself."""
-    if not CURRENT_BLOCK.is_file():
-        return None
-    prior = json.loads(CURRENT_BLOCK.read_text())
-    return None if prior.get("block_id") == block.get("block_id") else prior
+    """The block to diff against for block-vs-block deltas. Normally the current block; but
+    once this block *is* the current block (finalized), fall back to the newest archived
+    block JSON so the Δ column still reads against the real prior block."""
+    bid = block.get("block_id")
+    if CURRENT_BLOCK.is_file():
+        prior = json.loads(CURRENT_BLOCK.read_text())
+        if prior.get("block_id") != bid:
+            return prior
+    if BLOCK_ARCHIVE.is_dir():
+        cands = []
+        for p in BLOCK_ARCHIVE.glob("*.json"):
+            try:
+                c = json.loads(p.read_text())
+            except Exception:  # noqa: BLE001
+                continue
+            if c.get("block_id") and c.get("block_id") != bid:
+                cands.append(c)
+        if cands:
+            return max(cands, key=lambda c: c["block_id"])  # newest by block id
+    return None
 
 
 def _client():
@@ -365,12 +546,12 @@ def _client():
     return gspread.authorize(creds)
 
 
-def export(block: dict, title: str, dry_run: bool = False) -> str | None:
+def export(block: dict, title: str, dry_run: bool = False, final: bool = False) -> str | None:
     prior = _load_prior(block)
     label = _block_label(block)
     ov_title, pl_title = f"{label} Overview", f"{label} Plan"
-    ov_rows, ov_fmts = build_overview(block, prior)
-    pl_rows, pl_fmts = build_plan(block)
+    ov_rows, ov_fmts, ov_layout = build_overview(block, prior, final=final)
+    pl_rows, pl_fmts, pl_layout = build_plan(block, final=final)
 
     if dry_run:
         print(f"═════ TAB: {ov_title} ═════")
@@ -399,8 +580,8 @@ def export(block: dict, title: str, dry_run: bool = False) -> str | None:
             "service account) — or SHEETS_DRIVE_FOLDER_ID for a Shared Drive."
         )
 
-    _write_tab(sh, ov_title, ov_rows, ov_fmts, freeze_rows=1)
-    _write_tab(sh, pl_title, pl_rows, pl_fmts, freeze_rows=0)
+    _write_tab(sh, ov_title, ov_rows, ov_fmts, ov_layout)
+    _write_tab(sh, pl_title, pl_rows, pl_fmts, pl_layout)
     _cleanup_tabs(sh, keep={ov_title, pl_title})
     try:  # Overview first, Plan second — cosmetic.
         sh.reorder_worksheets([sh.worksheet(ov_title), sh.worksheet(pl_title)])
@@ -414,34 +595,78 @@ def export(block: dict, title: str, dry_run: bool = False) -> str | None:
 _STALE_TAB = re.compile(r"^(Draft|Overview|W\d+|Sheet\d+)$")
 
 
-def _write_tab(sh, title: str, grid: list[list[str]], fmts: list[dict], freeze_rows: int = 0) -> None:
-    """Write one grid into a named tab, apply cell formats, and size columns to content."""
+def _write_tab(sh, title: str, grid: list[list[str]], fmts: list[dict], layout: dict | None = None) -> None:
+    """Write one grid into a named tab, apply cell formats, then apply the layout
+    (fixed column widths, frozen panes, wrap/overflow)."""
     import gspread
 
+    need_rows = max(len(grid) + 5, 20)
+    need_cols = max((max((len(r) for r in grid), default=1)), NCOL)
     try:
         ws = sh.worksheet(title)
         ws.clear()
+        # Grow the sheet to fit — the horizontal Plan tab is far wider than the old layout,
+        # and ws.update would fail if the grid exceeds the existing column count.
+        if ws.row_count < need_rows or ws.col_count < need_cols:
+            try:
+                ws.resize(rows=max(ws.row_count, need_rows), cols=max(ws.col_count, need_cols))
+            except Exception:  # noqa: BLE001
+                pass
+        # clear() wipes values but NOT cell backgrounds — reset the whole grid to a clean
+        # default first, or stale colours from a prior (differently-shaped) render bleed through.
+        try:
+            ws.format(f"A1:{_col_letter(ws.col_count)}{ws.row_count}", {
+                "backgroundColor": {"red": 1, "green": 1, "blue": 1},
+                "textFormat": {"bold": False,
+                               "foregroundColor": {"red": 0, "green": 0, "blue": 0}},
+            })
+        except Exception:  # noqa: BLE001
+            pass
     except gspread.WorksheetNotFound:
-        cols = max((max((len(r) for r in grid), default=1)), NCOL)
-        ws = sh.add_worksheet(title=title, rows=max(len(grid) + 5, 20), cols=cols)
+        ws = sh.add_worksheet(title=title, rows=need_rows, cols=need_cols)
     if not grid:
         return
     ws.update(range_name="A1", values=grid)
-    if freeze_rows:
-        try:
-            ws.freeze(rows=freeze_rows)
-        except Exception:  # noqa: BLE001
-            pass
     if fmts:
         try:
             ws.batch_format(fmts)
         except Exception:  # noqa: BLE001 — cosmetic; never fail the export over styling
             pass
-    try:
-        ncols = max((len(r) for r in grid), default=NCOL)
-        ws.columns_auto_resize(0, ncols - 1)  # size columns to their content
-    except Exception:  # noqa: BLE001
-        pass
+    _apply_layout(sh, ws, layout or {})
+
+
+def _apply_layout(sh, ws, layout: dict) -> None:
+    """Fixed column widths, frozen panes, and wrap/overflow via one Sheets batchUpdate.
+    All cosmetic — never fail the export over it."""
+    sid = ws.id
+    reqs: list[dict] = []
+    for i, px in enumerate(layout.get("col_px", [])):
+        if not px:
+            continue
+        reqs.append({"updateDimensionProperties": {
+            "range": {"sheetId": sid, "dimension": "COLUMNS", "startIndex": i, "endIndex": i + 1},
+            "properties": {"pixelSize": px}, "fields": "pixelSize"}})
+    if layout.get("wrap_all"):  # wrap everything first…
+        reqs.append({"repeatCell": {
+            "range": {"sheetId": sid},
+            "cell": {"userEnteredFormat": {"wrapStrategy": "WRAP"}},
+            "fields": "userEnteredFormat.wrapStrategy"}})
+    for rr in layout.get("overflow_rows", []):  # …then let banner rows overflow instead
+        reqs.append({"repeatCell": {
+            "range": {"sheetId": sid, "startRowIndex": rr - 1, "endRowIndex": rr},
+            "cell": {"userEnteredFormat": {"wrapStrategy": "OVERFLOW_CELL"}},
+            "fields": "userEnteredFormat.wrapStrategy"}})
+    fr = layout.get("freeze")
+    if fr:
+        reqs.append({"updateSheetProperties": {
+            "properties": {"sheetId": sid,
+                           "gridProperties": {"frozenRowCount": fr[0], "frozenColumnCount": fr[1]}},
+            "fields": "gridProperties.frozenRowCount,gridProperties.frozenColumnCount"}})
+    if reqs:
+        try:
+            sh.batch_update({"requests": reqs})
+        except Exception:  # noqa: BLE001
+            pass
 
 
 def _cleanup_tabs(sh, keep: set[str]) -> None:
@@ -464,11 +689,14 @@ def main() -> None:
     ap.add_argument("--title", help="Sheet title (create mode only; ignored for a pre-made sheet)")
     ap.add_argument("--dry-run", action="store_true",
                     help="Print both tabs' grids; no Google calls, no credentials needed.")
+    ap.add_argument("--final", action="store_true",
+                    help="Render as a finalized block: clean headers, no DRAFT/PROVISIONAL banners.")
     args = ap.parse_args()
 
     block = json.loads(Path(args.block_json).read_text())
-    title = args.title or f"{block.get('block_id', 'block')} DRAFT"
-    export(block, title, dry_run=args.dry_run)
+    suffix = "" if args.final else " DRAFT"
+    title = args.title or f"{block.get('block_id', 'block')}{suffix}"
+    export(block, title, dry_run=args.dry_run, final=args.final)
 
 
 if __name__ == "__main__":
