@@ -76,6 +76,12 @@
   set as **RPE 7–8**, not as missing data — do not flag it. Only an explicitly logged **RPE 9+**
   on an accessory is a signal worth reacting to. Applies both to `reviewing-session` and to
   reading the log during block design. [FB 2026-06-14]
+- **rpe-hevy-ladder** — Every prescribed RPE must be a value the Hevy app can actually record:
+  **{6, 7, 7.5, 8, 8.5, 9, 9.5, 10}**. There is **no 6.5, and nothing below 6** — never program
+  @6.5 / @5.5 / @5. Round submax (backoff / calibration) targets **down** to the nearest ladder
+  value to keep them easy; **deloads target @6** (the floor), with the deload driven by the
+  **load drop**, not a sub-6 RPE. Binds `designing-training-block` output and any hand edit to a
+  block JSON. [FB 2026-07-04]
 
 ## Review conventions
 

@@ -1,82 +1,76 @@
 # Current Block
 
-# Block 3 — 2026-Q2-B03 (Squat + Bench rebuild, dip reintro)
+# Block 4 — 2026-Q3-B04 (Bench-led strength progression)
 
-**Block ID**: 2026-Q2-B03
-**Dates**: 2026-05-25 → 2026-06-28 (5 weeks, 4 days/week) — *approx; see "Where we are" below*
-**Source**: Google Sheet `1h3a9W2dklzLPlqi_DGP1pSym9hb3usGNK47qoZLKw0w` (imported 2026-06-13).
-**Theme**: Comp Bench returns (absent in B2 due to shoulder caution). Weighted Dip reintroduced cautiously. True W5 deload — fixes the B2 open item.
-**Reference maxes (lbs)**: Squat 506.3 / Comp Bench 266.5 / Sumo DL 511.8 / WPU BW+90 (e1RM ~100) / BW 180
+**Block ID**: 2026-Q3-B04
+**Dates**: 2026-07-06 → ~2026-08-09 (5 weeks, 4 days/week)
+**Source**: Finalized from the B4 draft on 2026-07-04 (drafted from B3 W1–W4 Hevy actuals).
+Rendered to the review sheet (`12go_vLzU293s7YBFv4DJppsXrisS8XHxCq5-8luloWE`).
+**Theme**: Bench-led strength progression — push comp bench (priority lift), keep squat &
+sumo climbing on heavier backoff volume, and finally cap the pull-up RPE drift.
+
+**Working e1RMs from the B3 log (lbs)**: Squat 512 · Comp Bench 266 · Sumo 501 ·
+WPU ~291 (BW+85×3 @8.5) · Dip 306 (BW+90×4 @7.5). These supersede the stale reference maxes.
 
 ## Split (4 days/week)
-> **Training days: D1 Mon · D2 Tue · D3 Thu · D4 Fri.** This is the normal week. D4
-> occasionally slips to Saturday when Friday doesn't work — but default is Friday.
-> Athlete trains in the morning, so all four days are done by early afternoon.
+> **Training days: D1 Mon · D2 Tue · D3 Thu · D4 Fri.** Default week. D4 occasionally
+> slips to Saturday when Friday doesn't work. Morning training — all four done by early afternoon.
 
-- **D1 (Mon) — Squat + Comp Bench**: Low-bar Squat (top + backoff) · Competition Bench (top sets) · Iso-Lateral Row · Triceps Pushdown · Leg Extension (3s ecc)
-- **D2 (Tue) — WPU + Sumo Acc**: Weighted Pull-up (top + backoff + BW AMRAP from W2) · Paused RDL · DB Shoulder Press (@7 cap) · Concentration Curl · Seated Leg Curl
-- **D3 (Thu) — Weighted Dip + Squat Acc**: Weighted Dip (top) · Paused Low-bar Squat (top + backoff, @7 cap) · Lat Pulldown · Hip Adduction · Rear Delt Fly
-- **D4 (Fri) — Sumo + CGB**: Sumo Deadlift (top + backoff) · Close Grip Bench · Meadows Row · Face Pull (rope) · Weighted Back Extension
+- **D1 (Mon) — Squat + Comp Bench**: Low-bar Squat (top + backoff) · Comp Bench (top + backoff) · Iso-Lateral Row · Tricep Pushdown · Leg Extension
+- **D2 (Tue) — WPU + Sumo Acc**: Weighted Pull-up (top + backoff + BW AMRAP) · Paused RDL · DB Shoulder Press · Concentration Curl · **Hanging Leg Raise (NEW)**
+- **D3 (Thu) — Dip + Squat Acc**: Weighted Dip (top) · **3-1-0 Tempo Squat (top + backoff, @7 cap) — ROTATED from Paused Squat** · Lat Pulldown · Hip Adduction · **Reverse Pec Deck (rotation)**
+- **D4 (Fri) — Sumo + Spoto**: Sumo Deadlift (top + backoff) · **Spoto Bench Press — ROTATED from CGB** · Meadows Row · Face Pull · **Incline DB Press (NEW)**
 
-## Why this shape (vs Block 2)
-- **Comp Bench is back.** B2 ran three bench variants (CGB / Spoto / Paused Larsen) to dodge the shoulder; B3 reintroduces comp setup on D1 starting at @6. Standing order: **@7 cap on top sets through W2.** B1 bench drift to @9 is the warning.
-- **Dip reintroduced cautiously.** B1 dip was @9 on W1 then dropped W3-W4. B2 cut dips entirely. B3 brings them back at @6 W1 with controlled depth, only ramping to @8 in W4.
-- **True deload in W5.** B2 had no deload (W5 was peak); B3 fixes this.
-- **Concentration Curl replaces Cable Curl** for elbow comfort.
-- **Hip Adduction (not Abduction)** on D3 — adductors for squat/sumo stability.
-- **DB Shoulder Press @7 cap.** B1 OHP routinely flared the shoulder at @9-10; capping at @7.
+## Wave — top sets
+| Week | Squat | Comp Bench | Sumo | WPU | Dip |
+|------|-------|-----------|------|-----|-----|
+| W1 @6–7 | 435×4 @7 | 220×4 @7 | 425×3 @7 | BW+65×4 @7 | BW+55×6 @7 |
+| W2 @7–7.5 | 455×3 @7.5 | 230×4 @7.5 | 445×3 @7.5 | BW+70×4 @7.5 | BW+70×5 @7.5 |
+| W3 @8 | 475×3 @8 | 240×3 @8 | 465×2 @8 | BW+75×3 @8 | **BW+85×4 @8 (dip peak)** |
+| W4 peak | **485–495×2 @8** (495 double, 485 floor) | **250×2 @8** | **485×2 @8.5** | BW+80×3 @8 | BW+75×5 @7.5 (pull back) |
+| W5 deload | 405×3 @6 | 195×4 @6 | 405×3 @6 | BW+50×4 @6 | BW+45×6 @6 |
 
-## Block wave (per the sheet)
-| Week | Top-set RPE | Squat top | Comp Bench top | Sumo top | WPU top | Dip top |
-|------|------------|-----------|----------------|----------|---------|---------|
-| W1 | @6 calibration | 385-405 | 195-205 | 405-415 | BW+55-60 | BW+25-30 |
-| W2 | @7 | 405-420 | 210-220 | 425-435 | BW+65-70 | BW+35-40 |
-| W3 | @7-7.5 (drop reps) | 430-445 (×3) | 220-230 (×4) | 460-470 (×2) | BW+75-80 (×3) | BW+75 (×5) |
-| W4 | @7-8 peak | 455-465 (×2) | 230-240 (×3) | 480-490 (×1, @8.5) | BW+85-90 (×2) | BW+85 (×4) |
-| W5 | @5-6 DELOAD | 365-385 | 185-195 | 400-415 | BW+50-55 | BW+40 (×8) |
+**Backoff sets** (matched to the logged B3 norm, tapering one at the peak — `primary-backoff-volume`):
+squat **4·4·4·3·3**, comp bench **4·4·4·3·3**, sumo **3·3·3·2·3** (W1–W5). Backoff ~85% of top.
 
-> Dip loads (W3-W5) corrected 2026-06-14 from the Hevy log — was +45-60/BW, athlete
-> trained +70@7 in W2. Anchored on actuals per `loads-from-logs`.
+> **All prescribed RPEs sit on the Hevy ladder** {6, 7, 7.5, 8, 8.5, 9, 9.5, 10} — the app has
+> no 6.5 or sub-6. Snapped 2026-07-04: deload → @6 (the loggable floor), submax backoff/calibration
+> → @6. The deload stimulus comes from the load drop, not a sub-6 RPE.
+
+## Why this shape (vs Block 3)
+- **Bench priority**: comp bench top climbs to 250×2 (~e1RM 270, small PR) at a **hard @8
+  cap** — shoulder is structural, ≤3/10 pain. New Incline DB Press adds pressing volume.
+- **Squat/sumo real loads**: peaks anchored on the B3 log (hit 480×2 @8), not the old sheet.
+  Squat W4 top is a **485–495×2 @8** double — work up to a **495 double** (485 floor, no grind).
+  495 has only ever been a comp single, never a gym lift, so this chases a real gym PR double at
+  the top of the range (~528 e1RM if 495×2 lands). Sumo 485×**2** (vs B3's
+  485×**1** @9) — a rep PR at *lower* RPE, dodging the hitch.
+- **Pull-up drift fix**: hard @8 cap, conservative BW+80×3 top. Earn weight with reps; don't
+  add load until RPE drops. Structural answer to the B1→B3 @9+ pattern.
+- **Overlap**: dip peaks **W3**, pulls back W4 so it doesn't stack with the comp-bench peak
+  (both horizontal press). Tempo squat @7 cap on D3 protects Fri sumo.
+- **Secondary rotations (rule `secondary-rotation`, 2 this block)**: bench **CGB → Spoto**
+  (dead-stop off-chest pause; CGB ran 3 straight blocks) and squat **Paused → 3-1-0 Tempo**
+  (slow eccentric, novel stimulus; paused plateaued ~385). Deadlift secondary **held at Paused
+  RDL** — grooves the tall-lockout / no-hitch cue, a live weak point.
 
 ## Where we are
-- **W1 done** (week of 2026-06-01, post-vacation calibration).
-- **W2 done** (week of 2026-06-08).
-- **W3 done (D1–D3 confirmed; D4 not logged as of 2026-06-20 — may have slipped to Sat or was skipped).**
-- No shoulder flares in W1–W3 logs (no pain logged — relying on ≤3/10 self-check per active-issues).
-- **W4 starts week of 2026-06-22.**
+- **Finalized 2026-07-04.** W1 starts **Mon 2026-07-06**. Nothing logged yet.
 
-## W1–W3 actuals (Hevy log = source of truth; updated 2026-06-20)
-> Earlier entries here were sheet-derived; corrected against the Hevy log via `block_report`.
-- **Squat top (D1)**: W1 405×4@7.5 (plan @6 — calibration overshoot) · W2 425×4@7 (on plan) ·
-  **W3 455×3@7** (plan 430-445 @7-7.5 — running 10+ lb ahead, RPE honest, e1RM 500.5). Block star.
-- **D1 press = POWER Bench Press**: W2 215×5@7 · **W3 225×4@7**. Clean — no breach, shoulder quiet.
-- **Sumo top (D4)**: W1 415×3@6 · W2 435×3@7. **W3 D4 not logged** (may be Sat 06-20 or skipped).
-- **WPU top (D2)**: W1 BW+55×4@7 ✓ · W2 BW+70×4@8 (breach) · **W3 BW+85×3@8.5** (plan BW+75-80 @7-7.5).
-  **Chronic pattern: weight AND RPE over every week after W1.** Same lift that ran @9.5 in B1, @9 in B2.
-- **Dip top (D3)**: W1 BW+45×6@6 · W2 BW+70×6@7 · **W3 BW+75×5@7** (on plan weight and RPE ✓).
-- **Paused Squat (D3)**: W1 365×4@6 · W2 385×4@6 · **W3 385×3@7** (on @7 cap ✓).
-- **CGB (D4)**: W1–W2 205×5@6-7 (on target). **W3 D4 not logged** — see Sumo note above.
-
-## Standing orders (carried + updated)
-- **RPE caps are still the #1 issue — but pressing/squat discipline is strong this block.** The one
-  exception is the **weighted pull-up**: W2 @8, W3 @8.5 vs @7-7.5 plan — three blocks, same pattern.
-  If a top set hits 0.5 over target RPE, stop the set.
-- **W4 pull-up: DROP to BW+80, target @7.5. Previous "hold BW+85" directive is revised.** W3 hit
-  BW+85 at @8.5 — that weight is already above plan and the RPE is too high going into sumo peak week.
-- **D1 press (POWER Bench): @7 cap holding — keep it there.** Shoulder decision in active-issues.
-- **DB Shoulder Press: @7 absolute cap.** OHP above @7.5 flares the shoulder (B1 lesson).
-- **CGB: @8 cap.** B1 W4 CGB at @9 was "traumatising."
-- **Dip: depth controlled, no grind even at W4 peak.**
-- **Paused Low-bar Squat: @7 cap.** Protects Fri sumo.
-- **Log every set.** Actual Load + Last-Set RPE minimum.
-- **Skipped = logged as skipped with reason.**
+## Standing orders
+- **Pull-up: @8 is a hard stop.** If a top set exceeds @8, rack it. No BW+90 @9.5 reruns.
+- **Comp bench @8 cap / ≤3/10 pain** (shoulder, structural — see active-issues). Spoto @8 cap.
+  DB Shoulder Press @7 cap. Tempo squat @7 cap.
+- **Sumo top ≤8.5 — no @9 grind singles** (hitch trigger). Use the backoff to groove position.
+- **Squat & sumo backoff = 4 sets** in the volume weeks (tapers to 3/2 at the peak).
+- **D1 is dense** (squat 5 sets + bench 4 + 3 accessories) — if 60 min runs out, drop the
+  last accessory, never the backoff.
+- **Log every set.** Actual Load + Last-Set RPE minimum. Skipped = logged as skipped with reason.
 - **3-day fallback priority**: D1, D2, D4 (drop D3).
 
 ## Open items
-- **Bench/WPU RPE drift in W2** — see standing orders. Revisit at end of W3.
-- **Block 3 → Block 4 transition.** W5 is a real deload, so Block 4 W1 can be at @6 calibration (not deload-on-deload). Plan Block 4 during W4.
-
-## Assumptions
-1. Reference maxes from D1 W1 calibration ramp.
-2. W1 started ~2026-05-25 (post-vacation). Calendar shifts ±2 days OK; treat W2 as complete since latest D4 = 2026-06-12.
-3. Shoulder baseline Fine — no flare reports in W1-W2 logs.
+- **New accessories** (Hanging Leg Raise / Reverse Pec Deck / Incline DB Press) are first
+  exposures — dial loads in W1–W2, swap any that don't fit.
+- **Tempo-squat loads are conservative** (first 3-1-0 exposure). If W2 feels light, bump 10 lb.
+- **B3 review** still outstanding — run the end-of-block retrospective before it goes cold
+  (`reviewing-block`, Hevy log = source of truth).
