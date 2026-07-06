@@ -39,9 +39,10 @@ import argparse
 import json
 import os
 import re
+from datetime import datetime, timedelta
 from pathlib import Path
 
-from ..hevy.block_report import KG_TO_LBS, REPO_ROOT
+from ..hevy.block_report import DEFAULT_BW, KG_TO_LBS, REPO_ROOT, e1rm
 
 DRAFT_JSON = REPO_ROOT / "brain" / "next-block-draft.json"
 CURRENT_BLOCK = REPO_ROOT / "brain" / "current-block.json"
@@ -357,6 +358,24 @@ def _plan_cells(ex: dict) -> tuple[str, str, str, str]:
     return (sets_s, reps_s, rpe_s, load_s)
 
 
+def _e1rm_cell(ex: dict) -> str:
+    """Projected 1RM (Epley, same as block_report) for the heaviest working set — primary
+    and secondary lifts only. Blank for accessories and for AMRAP sets (unknown reps)."""
+    name = ex.get("name", "")
+    if _family(name) == "Acc":
+        return ""
+    working = [s for s in ex.get("sets", []) if s.get("type") != "warmup"]
+    if not working:
+        return ""
+    top = max(working, key=lambda s: (s.get("weight_kg") or 0))
+    reps, w = top.get("reps"), top.get("weight_kg")
+    if reps in (0, None) or w is None:
+        return ""
+    lbs = _round5(w * KG_TO_LBS)
+    total = (DEFAULT_BW + lbs) if _is_bw_lift(name) else lbs   # BW lifts add bodyweight
+    return str(int(round(e1rm(total, reps))))
+
+
 def _role_suffix(note: str | None) -> str:
     """Distinguish the top set / backoff / AMRAP entries of the same lift, Block-3 style."""
     nl = (note or "").lower()
@@ -394,20 +413,38 @@ def build_plan(block: dict, final: bool = False) -> tuple[list[list[str]], list[
     order = list(range(1, weeks + 1))
 
     NLEFT = 3                         # Day · Type · Exercise
-    WK_HDRS = ["Sets", "Reps", "RPE", "Load", "Notes"]
+    WK_HDRS = ["Sets", "Reps", "RPE", "Load", "e1RM", "Notes"]
     WK_W = len(WK_HDRS)
     SPACER = 1                        # blank column between week blocks
     total = NLEFT + weeks * WK_W + max(weeks - 1, 0) * SPACER
 
-    # Fixed column widths (px) — no auto-resize, so long banner/goal text can't balloon a column.
-    col_px = [46, 66, 205]            # Day · Type · Exercise
-    for wi in order:
-        col_px += [46, 48, 54, 74, 210]      # Sets · Reps · RPE · Load · Notes
-        if wi != order[-1]:
-            col_px.append(26)                # spacer between weeks
-
     def wk_start(w: int) -> int:      # 1-based first column of week w's block
         return NLEFT + (w - 1) * (WK_W + SPACER) + 1
+
+    # Fixed column widths (px) — no auto-resize, so long banner/goal text can't balloon a column.
+    # Also collect the collapsible per-week column groups and the between-week divider columns.
+    col_px = [46, 66, 205]            # Day · Type · Exercise
+    group_cols: list[tuple[int, int]] = []   # (start0, end0) per week — native collapse group
+    divider_cols: list[int] = []             # 0-based Notes col of each non-final week
+    for w in order:
+        col_px += [46, 48, 54, 74, 58, 210]  # Sets · Reps · RPE · Load · e1RM · Notes
+        s0 = wk_start(w) - 1
+        group_cols.append((s0, s0 + WK_W))
+        if w != order[-1]:
+            col_px.append(26)                # spacer between weeks
+            divider_cols.append(s0 + WK_W - 1)
+
+    # Week start dates from the block start (each training week is a calendar week).
+    try:
+        start_dt = datetime.strptime(block.get("start_date", ""), "%Y-%m-%d")
+    except (ValueError, TypeError):
+        start_dt = None
+
+    def wk_date(w: int) -> str:
+        if not start_dt:
+            return ""
+        d = start_dt + timedelta(days=7 * (w - 1))
+        return f"{d:%a %b} {d.day}"    # e.g. "Mon Jul 6"
 
     def blank_row() -> list[str]:
         return [""] * total
@@ -421,10 +458,12 @@ def build_plan(block: dict, final: bool = False) -> tuple[list[list[str]], list[
     rows.append(row)
     fmts.append({"range": _a1(r, 1, r, total), "format": _cell_fmt(bg=_TITLE_BG, bold=True, white=True)})
 
-    # Week header band + one-line phase subtitle
+    # Week header band (phase + start date) + one-line phase subtitle
     r = _row(); banner_rows.append(r); row = blank_row()
     for w in order:
-        row[wk_start(w) - 1] = f"WEEK {w} — {_WK_PHASE.get(w, '')}".strip()
+        date = wk_date(w)
+        head = f"WEEK {w} — {_WK_PHASE.get(w, '')}".strip()
+        row[wk_start(w) - 1] = f"{head}  ·  {date}" if date else head
     rows.append(row)
     for w in order:
         c0 = wk_start(w)
@@ -478,8 +517,8 @@ def build_plan(block: dict, final: bool = False) -> tuple[list[list[str]], list[
                     continue
                 sets_s, reps_s, rpe_s, load_s = _plan_cells(ex)
                 c0 = wk_start(w) - 1
-                (row[c0], row[c0 + 1], row[c0 + 2], row[c0 + 3], row[c0 + 4]) = (
-                    sets_s, reps_s, rpe_s, load_s, _short_note(ex.get("notes")))
+                (row[c0], row[c0 + 1], row[c0 + 2], row[c0 + 3], row[c0 + 4], row[c0 + 5]) = (
+                    sets_s, reps_s, rpe_s, load_s, _e1rm_cell(ex), _short_note(ex.get("notes")))
             rows.append(row)
             # Tint the whole row by family so it reads as one exercise across all the weeks.
             fmts.append({"range": _a1(r, 1, r, total), "format": _cell_fmt(bg=_FAMILY_BG[fam])})
@@ -488,7 +527,8 @@ def build_plan(block: dict, final: bool = False) -> tuple[list[list[str]], list[
                              "format": _cell_fmt(bg=_FAMILY_BG[fam], bold=True)})
         rows.append(blank_row())
 
-    layout = {"col_px": col_px, "freeze": (4, 3), "wrap_all": True, "overflow_rows": banner_rows}
+    layout = {"col_px": col_px, "freeze": (4, 3), "wrap_all": True, "overflow_rows": banner_rows,
+              "divider_cols": divider_cols, "group_cols": group_cols}
     return rows, fmts, layout
 
 
@@ -636,16 +676,44 @@ def _write_tab(sh, title: str, grid: list[list[str]], fmts: list[dict], layout: 
 
 
 def _apply_layout(sh, ws, layout: dict) -> None:
-    """Fixed column widths, frozen panes, and wrap/overflow via one Sheets batchUpdate.
-    All cosmetic — never fail the export over it."""
+    """Fixed column widths, frozen panes, wrap/overflow, week dividers, and collapsible
+    per-week column groups via one Sheets batchUpdate. All cosmetic — never fail over it."""
     sid = ws.id
     reqs: list[dict] = []
+
+    # Clear any existing column groups first so re-runs don't nest them ever deeper.
+    if layout.get("group_cols"):
+        try:
+            meta = sh.fetch_sheet_metadata(
+                {"fields": "sheets(properties(sheetId),columnGroups(range(startIndex,endIndex)))"})
+            for s in meta.get("sheets", []):
+                if s.get("properties", {}).get("sheetId") != sid:
+                    continue
+                for g in s.get("columnGroups", []):
+                    rng = g.get("range", {})
+                    reqs.append({"deleteDimensionGroup": {"range": {
+                        "sheetId": sid, "dimension": "COLUMNS",
+                        "startIndex": rng.get("startIndex"), "endIndex": rng.get("endIndex")}}})
+        except Exception:  # noqa: BLE001
+            pass
+
     for i, px in enumerate(layout.get("col_px", [])):
         if not px:
             continue
         reqs.append({"updateDimensionProperties": {
             "range": {"sheetId": sid, "dimension": "COLUMNS", "startIndex": i, "endIndex": i + 1},
             "properties": {"pixelSize": px}, "fields": "pixelSize"}})
+
+    nrows = ws.row_count
+    for c in layout.get("divider_cols", []):  # solid line between adjacent weeks
+        reqs.append({"updateBorders": {
+            "range": {"sheetId": sid, "startRowIndex": 0, "endRowIndex": nrows,
+                      "startColumnIndex": c, "endColumnIndex": c + 1},
+            "right": {"style": "SOLID_MEDIUM", "color": {"red": 0.4, "green": 0.4, "blue": 0.4}}}})
+
+    for s0, e0 in layout.get("group_cols", []):  # collapsible week (native +/- toggle)
+        reqs.append({"addDimensionGroup": {"range": {
+            "sheetId": sid, "dimension": "COLUMNS", "startIndex": s0, "endIndex": e0}}})
     if layout.get("wrap_all"):  # wrap everything first…
         reqs.append({"repeatCell": {
             "range": {"sheetId": sid},
