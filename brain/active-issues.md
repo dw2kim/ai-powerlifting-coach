@@ -12,11 +12,12 @@
   **postponed, date TBD**. Family doctor seen 2026-06-12: referred to a **pain clinic for
   a steroid injection**, and **re-ordered the MRI**. Both pending a scheduling phone call.
   Do not finalize a permanent finding here until the MRI is read.
-- **Update (2026-07-06)**: the pain-clinic referral came through and the injection that
-  actually happened (2026-07-03) was for the **lower back**, not the shoulder — see the Lower
-  back section. **Open question: is the shoulder still on the pain-clinic / MRI track, or has
-  focus shifted to the back?** Confirm at the 2026-07-10 visit. No new shoulder flare reported
-  this session; the ≤3/10 comp-bench rule stands.
+- **Update (2026-07-06 → 07-07)**: the pain-clinic referral came through; the first injection
+  (2026-07-03) was for the **lower back** (see Lower back section). **Confirmed 2026-07-07: the
+  clinic is treating BOTH the lower back and the shoulder**, MRI re-ordered. Shoulder
+  injection/MRI specifics TBD — confirm at the 2026-07-10 visit. No new shoulder flare reported;
+  the ≤3/10 comp-bench rule stands, and the shoulder is now under active clinic care (not just
+  self-monitored).
 - **Triggers**: heavy bench grinds, dip bottom position with full ROM, pressing before
   thorough warm-up.
 
@@ -55,13 +56,15 @@ blind). User accepts and proceeds under the rule below. This **overrides** the p
   referral (previously logged under the shoulder — the injection was for the back).
 - **Not a coaching call — this is the clinic's domain.** My job is to manage training *around* it.
 - **Training implications** (manage heavy axial load around injections):
-  - **No heavy squat / deadlift on or immediately after an injection day.** Standard precaution
-    post-injection is to avoid heavy/strenuous loading for ~**24–72 h** (local soreness/flare,
-    then relief builds over days). **Confirm the exact window with the doctor 2026-07-10.**
+  - **Avoid heavy squat / deadlift in the ~24–72 h *after* an injection** (local soreness/flare,
+    then relief builds over days). Training *before* an injection is fine. **Confirm the exact
+    window with the doctor 2026-07-10.**
   - Back is symptomatic enough to warrant a *series* of injections → keep squat & sumo
     **conservative** until it settles and the doctor clears heavier axial loading.
-  - **This week (B4 W1): Fri 2026-07-10 = D4 (Sumo + Spoto) = injection day.** Direct conflict —
-    do not deadlift heavy on the injection. See the block note below.
+  - **Injection-day timing (confirmed 2026-07-07):** athlete trains **6am**, injections are **3pm** —
+    training *precedes* the injection by ~9 h, so it doesn't load a fresh injection. **D4 (Sumo)
+    stays as-is on injection Fridays.** The precaution applies to the *next* sessions: the first
+    session after a Fri-3pm injection is **Mon D1 (~65 h later — likely fine)**; confirm 2026-07-10.
 
 ## Left ankle (new — 2026-07-06)
 - **Status**: mildly swollen (left), onset ~this week. No mechanism reported (no roll/sprain).
