@@ -12,6 +12,11 @@
   **postponed, date TBD**. Family doctor seen 2026-06-12: referred to a **pain clinic for
   a steroid injection**, and **re-ordered the MRI**. Both pending a scheduling phone call.
   Do not finalize a permanent finding here until the MRI is read.
+- **Update (2026-07-06)**: the pain-clinic referral came through and the injection that
+  actually happened (2026-07-03) was for the **lower back**, not the shoulder — see the Lower
+  back section. **Open question: is the shoulder still on the pain-clinic / MRI track, or has
+  focus shifted to the back?** Confirm at the 2026-07-10 visit. No new shoulder flare reported
+  this session; the ≤3/10 comp-bench rule stands.
 - **Triggers**: heavy bench grinds, dip bottom position with full ROM, pressing before
   thorough warm-up.
 
@@ -41,5 +46,32 @@ blind). User accepts and proceeds under the rule below. This **overrides** the p
   2+ sessions in a row. On escalation: pull comp bench back to a reduced-ROM variant
   (Spoto / CGB), reinstate per-session pain logging, trigger Shoulder Protocol, and chase
   the MRI / pain-clinic appointment.
+
+## Lower back (new — 2026-07-06)
+- **Status**: symptomatic, under active pain-clinic treatment. Pain focused **mid-left lower back**.
+- **Treatment**: pain-clinic **corticosteroid injections** — first round **2026-07-03** (~8 sites
+  across the mid-left lower back, slightly varied areas). Doctor says it needs **multiple visits**
+  to become effective. **Next visit: 2026-07-10 (Fri).** This is the family-doctor pain-clinic
+  referral (previously logged under the shoulder — the injection was for the back).
+- **Not a coaching call — this is the clinic's domain.** My job is to manage training *around* it.
+- **Training implications** (manage heavy axial load around injections):
+  - **No heavy squat / deadlift on or immediately after an injection day.** Standard precaution
+    post-injection is to avoid heavy/strenuous loading for ~**24–72 h** (local soreness/flare,
+    then relief builds over days). **Confirm the exact window with the doctor 2026-07-10.**
+  - Back is symptomatic enough to warrant a *series* of injections → keep squat & sumo
+    **conservative** until it settles and the doctor clears heavier axial loading.
+  - **This week (B4 W1): Fri 2026-07-10 = D4 (Sumo + Spoto) = injection day.** Direct conflict —
+    do not deadlift heavy on the injection. See the block note below.
+
+## Left ankle (new — 2026-07-06)
+- **Status**: mildly swollen (left), onset ~this week. No mechanism reported (no roll/sprain).
+- **Impact**: destabilizing the **squat** — 435 lb felt **unstable** and ~**+0.5–1 RPE** heavier
+  than usual. Reads as an unstable base, not a strength drop.
+- **Related to the injection?** Unknown (athlete's question). A *local* back injection is an
+  unlikely cause of unilateral ankle swelling — more likely separate/mechanical — but that's a
+  medical call: **flag it to the pain-clinic doctor 2026-07-10.**
+- **Restriction**: **do not push heavy squats through an unstable/swollen ankle** — a wobble
+  under a near-max squat is a real injury risk. Cap squat load to where the base is solid until
+  the swelling resolves. W1 is calibration (@6–7), so this costs nothing.
 
 ## (No other active issues)
