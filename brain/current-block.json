@@ -1088,7 +1088,7 @@
       "exercises": [
         {
           "name": "Sumo Deadlift",
-          "notes": "Top set @7.5. 445×3. Cap ≤8.5, no @9 grind singles (hitch).",
+          "notes": "Top set @7.5. 445×3. Cap ≤8.5, no @9 grind. ⚠ INJECTION Thu 07-16 — do NOT run this Fri 6am (~18h post-shot). Move to Sat (~42h) OR run light: @6, backoff-position only, no top set.",
           "sets": [
             {
               "type": "normal",
@@ -1226,13 +1226,13 @@
       "exercises": [
         {
           "name": "Low-bar Squat",
-          "notes": "Top set @8. 475×3.",
+          "notes": "Top @7.5 — HELD at W2 load (back-injection cap, 2026-07-11). 455×3. Cap by load, not feel — steroid masks pain.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 215.5,
+              "weight_kg": 206.4,
               "reps": 3,
-              "rpe": 8
+              "rpe": 7.5
             }
           ]
         },
@@ -1682,13 +1682,13 @@
       "exercises": [
         {
           "name": "Sumo Deadlift",
-          "notes": "Top set @8. 465×2. Cap ≤8.5, no @9 grind singles (hitch).",
+          "notes": "Top @7.5 — HELD at W2 load (back-injection cap, 2026-07-11). 445×3. Cap by load, not feel — steroid masks pain. No @9 grind.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 210.9,
-              "reps": 2,
-              "rpe": 8
+              "weight_kg": 201.8,
+              "reps": 3,
+              "rpe": 7.5
             }
           ]
         },
@@ -1820,16 +1820,15 @@
       "exercises": [
         {
           "name": "Low-bar Squat",
-          "notes": "Top — work up to a 495 double, 485 floor. No grind. (495 has only ever been a comp single, never a gym lift.)",
+          "notes": "Top @7.5 — CAPPED for back-injection series (2026-07-11). No 495 PR attempt this block. 465×3. Revisit on doctor clearance.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 224.5,
-              "reps": 2,
-              "rpe": 8
+              "weight_kg": 210.9,
+              "reps": 3,
+              "rpe": 7.5
             }
-          ],
-          "display_load": "485-495"
+          ]
         },
         {
           "name": "Low-bar Squat",
@@ -2265,13 +2264,13 @@
       "exercises": [
         {
           "name": "Sumo Deadlift",
-          "notes": "Top set @8.5. 485×2. Cap ≤8.5, no @9 grind singles (hitch).",
+          "notes": "Top @7.5 — CAPPED for back-injection series (2026-07-11). No 485 PR attempt this block. 455×3. Revisit on doctor clearance.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 220.0,
-              "reps": 2,
-              "rpe": 8.5
+              "weight_kg": 206.4,
+              "reps": 3,
+              "rpe": 7.5
             }
           ]
         },
