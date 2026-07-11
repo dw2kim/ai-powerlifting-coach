@@ -77,15 +77,10 @@ blind). User accepts and proceeds under the rule below. This **overrides** the p
   - **Avoid heavy squat / deadlift in the ~24–72 h *after* an injection** (local soreness/flare,
     then relief builds over days). **Confirm the exact heavy-lifting window with the doctor.**
 
-## Left ankle (new — 2026-07-06)
-- **Status**: mildly swollen (left), onset ~this week. No mechanism reported (no roll/sprain).
-- **Impact**: destabilizing the **squat** — 435 lb felt **unstable** and ~**+0.5–1 RPE** heavier
-  than usual. Reads as an unstable base, not a strength drop.
-- **Related to the injection?** Unknown (athlete's question). A *local* back injection is an
-  unlikely cause of unilateral ankle swelling — more likely separate/mechanical — but that's a
-  medical call: **flag it to the pain-clinic doctor at the next visit (2026-07-16) — still open.**
-- **Restriction**: **do not push heavy squats through an unstable/swollen ankle** — a wobble
-  under a near-max squat is a real injury risk. Cap squat load to where the base is solid until
-  the swelling resolves. W1 is calibration (@6–7), so this costs nothing.
+## Left ankle — RESOLVED (2026-07-11)
+- Mild left-ankle swelling appeared ~week of 2026-07-06 (no mechanism) and destabilized the squat
+  base (435 felt unstable, ~+0.5–1 RPE). **Athlete reports it fully healed 2026-07-11** — swelling
+  gone within ~a week, no recurrence. Squat-base restriction lifted; **no ankle-driven squat cap.**
+  (The squat load cap that remains is the back-injection cap, unrelated to this.)
 
 ## (No other active issues)
