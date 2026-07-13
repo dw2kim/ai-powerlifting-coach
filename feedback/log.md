@@ -22,13 +22,17 @@ Across the *entire* log the only real set above 12 reps is a single 20-rep squat
 so a rep count over ~20 on a Big-5 lift is a reliable mis-log signal (a trailing-digit slip).
 **Root cause (tooling gap):** the report had no rep-sanity check — it trusted every logged rep.
 Same class of bug as `loads-from-logs`: the numbers were only as good as the raw log.
-**Actions:** (1) added a rep-sanity guard to `block_report.py` — working sets above `--rep-ceiling`
-(default **20**) are **excluded** from the reported numbers and surfaced under `flagged` with a
-⚠️ note to fix the rep in Hevy and re-sync; verified it neutralizes the 50-rep set (comp-bench
-e1RM back to 255) and false-flags nothing in history (the legit 20-rep set passes). (2) new rule
-`log-rep-sanity`. **Note:** the raw session JSON mirrors Hevy (source of truth) and a `--full`
-re-sync would re-pull the 50 — so the durable fix is the pull-time guard, plus correcting the rep
-in the Hevy app. The number is neutralized in reports either way.
+**Actions:** added a rep-sanity guard to `block_report.py` — working sets above `--rep-ceiling`
+(default **20**) are treated as mis-logs. **Revised 2026-07-13 (athlete: correct, don't exclude):**
+the athlete wants the obvious slip *fixed*, not dropped — "the rest were 5 reps, just the one set
+was 50, you can tell it's an accident and correct it to 5." So the guard now **auto-corrects**: it
+infers the intended reps from the plausible **same-weight sibling sets** that session (`infer_reps`)
+and uses the corrected set in the numbers, listing the fix under `corrected` (✏️ `195x50 → 195x5`).
+It only **excludes + flags** when there's no same-weight sibling to infer from (never guesses).
+Verified: comp-bench e1RM stays honest at 255, exactly one correction across all history, zero
+false positives, fallback-to-flag confirmed. New rule `log-rep-sanity`. **Note:** raw JSON still
+mirrors Hevy (correction is at read time, self-healing if the app is later fixed); a hand-edit to
+the JSON isn't durable (`--full` re-pulls the 50), which is why the fix lives in the report layer.
 → rules: `log-rep-sanity`
 
 ### 2026-07-04 · general · RPE targets must match the Hevy ladder

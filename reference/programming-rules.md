@@ -87,13 +87,16 @@
 
 - **log-rep-sanity** — The Hevy log is the source of truth, but raw reps can be mis-punched
   (a trailing-digit slip like **5 → 50**). Since e1RM is Epley-based, one phantom high-rep set
-  silently becomes the reported PR (195x50 → ~520 lb) and poisons any window that touches it.
-  **When pulling data, validate reps:** `block_report.py` excludes any working set above
-  `--rep-ceiling` reps (**default 20** — the whole log has exactly one legit >12-rep set, a 2023
-  squat rep-out) from the reported numbers and lists it under `flagged`. On a flagged set, **do
-  not trust the number** — tell the athlete to correct the rep in Hevy and re-sync; a hand-edit
-  to the mirrored JSON is not durable (a `--full` re-sync re-pulls it). Applies to every read of
-  the log: block design, block/weekly/session reviews. [FB 2026-07-13]
+  would silently become the reported PR (195x50 → ~520 lb) and poison any window that touches it.
+  **When pulling data, `block_report.py` validates reps and auto-corrects obvious slips:** a
+  working set above `--rep-ceiling` reps (**default 20** — the whole log has exactly one legit
+  >12-rep set, a 2023 squat rep-out) is repaired by inferring the intended reps from the
+  **same-weight sibling sets** that session (195x50 next to three 195x5 → read as 195x5), and the
+  fix is reported under `corrected`. A set is only **excluded + `flagged`** when there's no
+  same-weight sibling to infer from — then don't trust the number; have the athlete fix it in Hevy.
+  Correction is at read time (raw JSON stays a faithful Hevy mirror; self-heals if the app is
+  fixed). Applies to every read of the log: block design, block/weekly/session reviews. When a
+  review surfaces a `corrected` set, mention it so the athlete can clean the source. [FB 2026-07-13]
 
 ## Review conventions
 

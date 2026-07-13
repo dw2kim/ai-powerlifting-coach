@@ -15,9 +15,13 @@ Usage:
 Lifts are matched by Hevy exercise_template_id (stable) — not day labels, which
 go stale in the app. Bodyweight for pull-up/dip e1RM defaults to 180 lb.
 
-Rep-sanity guard: a working set above --rep-ceiling reps (default 20) is treated as a
-mis-log (a trailing-digit slip like 5 -> 50), EXCLUDED from the reported numbers so it
-can't Epley into a phantom PR, and surfaced under `flagged` for correction in Hevy.
+Rep-sanity guard: a working set above --rep-ceiling reps (default 20) is a mis-log — a
+trailing-digit slip like 5 -> 50. The report AUTO-CORRECTS it: the intended rep count is
+inferred from the plausible same-weight sibling sets that session (e.g. a 195x50 sitting
+next to three 195x5 sets is read as 195x5), the corrected set is used in the numbers, and
+the fix is surfaced under `corrected`. Only when there is no confident same-weight sibling
+to infer from is the set instead EXCLUDED and surfaced under `flagged`. Raw JSON is left
+untouched (it mirrors Hevy, the source of truth); correction happens at read time.
 """
 from __future__ import annotations
 
@@ -25,6 +29,7 @@ import argparse
 import glob
 import json
 import statistics
+from collections import Counter
 from datetime import date as date_cls, timedelta
 from pathlib import Path
 
@@ -38,16 +43,35 @@ DEFAULT_BW = 180.0
 # entire Hevy history the only legit set above 12 reps is a single 20-rep squat rep-out;
 # heavy SBD / weighted-pull-up / dip work never goes higher. A phantom high-rep set also
 # poisons every e1RM-based number: 195x50 Epleys to ~520 lb and would silently win "best
-# e1RM" over a real 266 comp-bench max. So sets over the ceiling are EXCLUDED from the
-# reported numbers and surfaced separately (`flagged`) so the mis-log gets fixed in Hevy
-# (the source of truth) rather than corrupting a block review. Raise via --rep-ceiling
-# for genuine high-rep protocols.
+# e1RM" over a real 266 comp-bench max. Rather than drop the set, the report CORRECTS it
+# from its same-weight sibling sets (see infer_reps); a set only gets excluded when it
+# can't be confidently inferred. Raise via --rep-ceiling for genuine high-rep protocols.
 REP_CEILING = 20
 
 
 def implausible_reps(reps, ceiling: int = REP_CEILING) -> bool:
     """True if a rep count is too high to be a real set on a tracked strength lift."""
     return reps is not None and reps > ceiling
+
+
+def infer_reps(target_lbs: float, working_sets: list[dict],
+               ceiling: int = REP_CEILING) -> int | None:
+    """Best guess for a mis-logged set's intended reps, from its plausible siblings.
+
+    Strength backoff/top schemes hold reps constant at a given weight, so the other
+    working sets at the *same weight* that session are the ground truth: 195x50 sitting
+    among three 195x5 sets was meant to be 195x5. Returns the most common plausible rep
+    count at `target_lbs`, or None if there's no plausible same-weight sibling to trust
+    (in which case the caller excludes rather than guesses).
+    """
+    same_weight = [
+        s["reps"] for s in working_sets
+        if round(s["weight_kg"] * KG_TO_LBS, 1) == target_lbs
+        and s["reps"] is not None and not implausible_reps(s["reps"], ceiling)
+    ]
+    if not same_weight:
+        return None
+    return Counter(same_weight).most_common(1)[0][0]
 
 # Big-5 + key variants, by template id (the IDs the athlete actually logs under —
 # verified against the live log, not Hevy stock defaults). BW lifts add BW to bar load.
@@ -87,6 +111,7 @@ def analyze(start: str, end: str, bw: float = DEFAULT_BW,
     sessions = load_window(start, end)
     per_lift: dict[str, list[dict]] = {name: [] for name, _ in LIFTS.values()}
     flagged: list[dict] = []
+    corrected: list[dict] = []
     for w in sessions:
         date = (w.get("start_time") or "")[:10]
         for ex in w.get("exercises", []):
@@ -94,39 +119,46 @@ def analyze(start: str, end: str, bw: float = DEFAULT_BW,
             if tid not in LIFTS:
                 continue
             name, is_bw = LIFTS[tid]
+            working = [s for s in ex.get("sets", [])
+                       if s.get("type") != "warmup"
+                       and s.get("weight_kg") is not None and s.get("reps") is not None]
             # heaviest non-warmup set this session
             best = None
-            for s in ex.get("sets", []):
-                if s.get("type") == "warmup":
-                    continue
-                wt = s.get("weight_kg")
-                reps = s.get("reps")
-                if wt is None or reps is None:
-                    continue
-                lbs = round(wt * KG_TO_LBS, 1)
-                total = lbs + bw if is_bw else lbs
-                # A mis-punched rep count (e.g. 5 -> 50) would Epley to a phantom PR and
-                # win best-e1RM. Keep it out of the numbers; report it for correction.
+            for s in working:
+                lbs = round(s["weight_kg"] * KG_TO_LBS, 1)
+                reps = s["reps"]
+                # A mis-punched rep count (e.g. 5 -> 50) would Epley to a phantom PR. Read
+                # the intended value off the same-weight sibling sets and use that; only
+                # exclude when there's no sibling to infer from.
                 if implausible_reps(reps, rep_ceiling):
-                    flagged.append({
-                        "date": date, "lift": name, "added_lb": lbs, "reps": reps,
+                    fixed = infer_reps(lbs, working, rep_ceiling)
+                    if fixed is None:
+                        flagged.append({
+                            "date": date, "lift": name, "added_lb": lbs, "reps": reps,
+                            "rpe": s.get("rpe"), "is_bw": is_bw,
+                        })
+                        continue
+                    corrected.append({
+                        "date": date, "lift": name, "added_lb": lbs,
+                        "reps_logged": reps, "reps_corrected": fixed,
                         "rpe": s.get("rpe"), "is_bw": is_bw,
                     })
-                    continue
-                est = e1rm(total, reps)
+                    reps = fixed
+                total = lbs + bw if is_bw else lbs
                 cand = {
                     "date": date,
                     "added_lb": lbs,
                     "reps": reps,
                     "rpe": s.get("rpe"),
-                    "e1rm": round(est, 1),
+                    "e1rm": round(e1rm(total, reps), 1),
                     "is_bw": is_bw,
                 }
                 if best is None or cand["e1rm"] > best["e1rm"]:
                     best = cand
             if best:
                 per_lift[name].append(best)
-    return {"sessions": len(sessions), "per_lift": per_lift, "flagged": flagged}
+    return {"sessions": len(sessions), "per_lift": per_lift,
+            "corrected": corrected, "flagged": flagged}
 
 
 def recent_loads(name: str, days: int = 90, bw: float = DEFAULT_BW,
@@ -148,23 +180,28 @@ def recent_loads(name: str, days: int = 90, bw: float = DEFAULT_BW,
 
     rows = []
     flagged: list[dict] = []
+    corrected: list[dict] = []
     for w in load_window(start, end):
         date = (w.get("start_time") or "")[:10]
         for ex in w.get("exercises", []):
             if ex.get("exercise_template_id") != tid:
                 continue
+            working = [s for s in ex.get("sets", [])
+                       if s.get("type") != "warmup" and s.get("weight_kg") is not None]
             best = None
-            for s in ex.get("sets", []):
-                if s.get("type") == "warmup":
-                    continue
-                wt, reps = s.get("weight_kg"), s.get("reps")
-                if wt is None:
-                    continue
-                lbs = round(wt * KG_TO_LBS, 1)
+            for s in working:
+                reps = s.get("reps")
+                lbs = round(s["weight_kg"] * KG_TO_LBS, 1)
                 if implausible_reps(reps, rep_ceiling):
-                    flagged.append({"date": date, "lift": name, "added_lb": lbs,
-                                    "reps": reps, "rpe": s.get("rpe"), "is_bw": is_bw})
-                    continue
+                    fixed = infer_reps(lbs, working, rep_ceiling)
+                    if fixed is None:
+                        flagged.append({"date": date, "lift": name, "added_lb": lbs,
+                                        "reps": reps, "rpe": s.get("rpe"), "is_bw": is_bw})
+                        continue
+                    corrected.append({"date": date, "lift": name, "added_lb": lbs,
+                                      "reps_logged": reps, "reps_corrected": fixed,
+                                      "rpe": s.get("rpe"), "is_bw": is_bw})
+                    reps = fixed
                 if best is None or lbs > best["added_lb"]:
                     best = {"date": date, "added_lb": lbs, "reps": reps,
                             "rpe": s.get("rpe"), "is_bw": is_bw}
@@ -179,6 +216,7 @@ def recent_loads(name: str, days: int = 90, bw: float = DEFAULT_BW,
         "median_load": round(statistics.median(loads), 1) if loads else None,
         "max_load": max(loads) if loads else None,
         "recent": rows[-8:],
+        "corrected": corrected,
         "flagged": flagged,
     }
 
@@ -189,10 +227,20 @@ def fmt_set(s: dict) -> str:
     return f"{load}x{s['reps']} {rpe} (e1RM {s['e1rm']:g})"
 
 
+def _load_str(row: dict) -> str:
+    return f"BW+{row['added_lb']:g}" if row["is_bw"] else f"{row['added_lb']:g}"
+
+
 def fmt_flag(f: dict) -> str:
-    load = f"BW+{f['added_lb']:g}" if f["is_bw"] else f"{f['added_lb']:g}"
     rpe = f"@{f['rpe']}" if f["rpe"] is not None else "@—"
-    return f"{f['date']} · {f['lift']} · {load}x{f['reps']} {rpe}"
+    return f"{f['date']} · {f['lift']} · {_load_str(f)}x{f['reps']} {rpe}"
+
+
+def fmt_correction(c: dict) -> str:
+    rpe = f"@{c['rpe']}" if c["rpe"] is not None else "@—"
+    load = _load_str(c)
+    return (f"{c['date']} · {c['lift']} · {load}x{c['reps_logged']} → "
+            f"{load}x{c['reps_corrected']} {rpe}")
 
 
 def render_md(start: str, end: str, result: dict) -> str:
@@ -208,11 +256,19 @@ def render_md(start: str, end: str, result: dict) -> str:
         prog = " · ".join(fmt_set(r) for r in rows)
         lines.append(f"  - {prog}")
         lines.append("")
+    corrected = result.get("corrected", [])
+    if corrected:
+        lines.append(f"> ✏️ **{len(corrected)} mis-logged rep count(s) auto-corrected** "
+                     f"(reps > {REP_CEILING}) from same-weight sibling sets — used as "
+                     f"corrected in the numbers above:")
+        for c in corrected:
+            lines.append(f">   - {fmt_correction(c)}")
+        lines.append("")
     flagged = result.get("flagged", [])
     if flagged:
         lines.append(f"> ⚠️ **{len(flagged)} suspected mis-logged set(s)** "
-                     f"(reps > {REP_CEILING}) — excluded from the numbers above. "
-                     f"Fix the rep count in Hevy, then re-sync:")
+                     f"(reps > {REP_CEILING}, no same-weight sibling to infer from) — "
+                     f"excluded from the numbers. Fix the reps in Hevy, then re-sync:")
         for f in flagged:
             lines.append(f">   - {fmt_flag(f)}  ← check reps")
         lines.append("")
@@ -227,8 +283,8 @@ def main() -> None:
     ap.add_argument("--recent", type=int, default=90, help="Lookback days for --exercise")
     ap.add_argument("--bw", type=float, default=DEFAULT_BW)
     ap.add_argument("--rep-ceiling", type=int, default=REP_CEILING,
-                    help="Flag/exclude working sets above this many reps as suspected "
-                         f"mis-logs (default {REP_CEILING})")
+                    help="Working sets above this many reps are treated as mis-logs and "
+                         f"auto-corrected from same-weight siblings (default {REP_CEILING})")
     ap.add_argument("--md", action="store_true", help="Markdown output (Big-5 mode)")
     args = ap.parse_args()
 
