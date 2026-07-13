@@ -83,6 +83,18 @@
   **load drop**, not a sub-6 RPE. Binds `designing-training-block` output and any hand edit to a
   block JSON. [FB 2026-07-04]
 
+## Data hygiene
+
+- **log-rep-sanity** — The Hevy log is the source of truth, but raw reps can be mis-punched
+  (a trailing-digit slip like **5 → 50**). Since e1RM is Epley-based, one phantom high-rep set
+  silently becomes the reported PR (195x50 → ~520 lb) and poisons any window that touches it.
+  **When pulling data, validate reps:** `block_report.py` excludes any working set above
+  `--rep-ceiling` reps (**default 20** — the whole log has exactly one legit >12-rep set, a 2023
+  squat rep-out) from the reported numbers and lists it under `flagged`. On a flagged set, **do
+  not trust the number** — tell the athlete to correct the rep in Hevy and re-sync; a hand-edit
+  to the mirrored JSON is not durable (a `--full` re-sync re-pulls it). Applies to every read of
+  the log: block design, block/weekly/session reviews. [FB 2026-07-13]
+
 ## Review conventions
 
 - **review-status-emoji** — Every review (session, weekly, block) reports the Big-5 progress

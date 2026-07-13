@@ -10,6 +10,27 @@
 
 ---
 
+### 2026-07-13 · general · validate reps on data pull — catch mis-logged reps
+**Feedback:** In B4 W1 D1 (comp bench, 2026-07-06) I accidentally logged **50 reps instead of 5**
+on a backoff set. That should have been caught. When you pull the data, verify the reps are
+plausibly punched — don't let an obvious mis-log through.
+**Verified (Hevy `data/logs/sessions/`):** the set is `195x50 @6` (`POWER Bench Press`,
+15c7a94a…), sitting between three legit `195x5` sets. Left unguarded it Epleys to a **~520 lb**
+comp-bench e1RM vs the real 266 — and `block_report.py` picks the best set **by e1RM**, so the
+phantom set silently becomes the reported PR and poisons any review touching that window.
+Across the *entire* log the only real set above 12 reps is a single 20-rep squat rep-out (2023),
+so a rep count over ~20 on a Big-5 lift is a reliable mis-log signal (a trailing-digit slip).
+**Root cause (tooling gap):** the report had no rep-sanity check — it trusted every logged rep.
+Same class of bug as `loads-from-logs`: the numbers were only as good as the raw log.
+**Actions:** (1) added a rep-sanity guard to `block_report.py` — working sets above `--rep-ceiling`
+(default **20**) are **excluded** from the reported numbers and surfaced under `flagged` with a
+⚠️ note to fix the rep in Hevy and re-sync; verified it neutralizes the 50-rep set (comp-bench
+e1RM back to 255) and false-flags nothing in history (the legit 20-rep set passes). (2) new rule
+`log-rep-sanity`. **Note:** the raw session JSON mirrors Hevy (source of truth) and a `--full`
+re-sync would re-pull the 50 — so the durable fix is the pull-time guard, plus correcting the rep
+in the Hevy app. The number is neutralized in reports either way.
+→ rules: `log-rep-sanity`
+
 ### 2026-07-04 · general · RPE targets must match the Hevy ladder
 **Feedback:** Hevy's RPE picker only offers **{6, 7, 7.5, 8, 8.5, 9, 9.5, 10}** — there is no
 6.5, and nothing below 6. Prescribing @6.5 or @5.5 gives me a target I can't actually select

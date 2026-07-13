@@ -14,6 +14,10 @@ Usage:
 
 Lifts are matched by Hevy exercise_template_id (stable) — not day labels, which
 go stale in the app. Bodyweight for pull-up/dip e1RM defaults to 180 lb.
+
+Rep-sanity guard: a working set above --rep-ceiling reps (default 20) is treated as a
+mis-log (a trailing-digit slip like 5 -> 50), EXCLUDED from the reported numbers so it
+can't Epley into a phantom PR, and surfaced under `flagged` for correction in Hevy.
 """
 from __future__ import annotations
 
@@ -28,6 +32,22 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 SESSIONS_DIR = REPO_ROOT / "data" / "logs" / "sessions"
 KG_TO_LBS = 2.2046226218
 DEFAULT_BW = 180.0
+
+# A working set above this many reps on a tracked Big-5 lift is almost certainly a
+# logging slip — a trailing-digit mis-punch (e.g. 5 -> 50), not a real set. Across the
+# entire Hevy history the only legit set above 12 reps is a single 20-rep squat rep-out;
+# heavy SBD / weighted-pull-up / dip work never goes higher. A phantom high-rep set also
+# poisons every e1RM-based number: 195x50 Epleys to ~520 lb and would silently win "best
+# e1RM" over a real 266 comp-bench max. So sets over the ceiling are EXCLUDED from the
+# reported numbers and surfaced separately (`flagged`) so the mis-log gets fixed in Hevy
+# (the source of truth) rather than corrupting a block review. Raise via --rep-ceiling
+# for genuine high-rep protocols.
+REP_CEILING = 20
+
+
+def implausible_reps(reps, ceiling: int = REP_CEILING) -> bool:
+    """True if a rep count is too high to be a real set on a tracked strength lift."""
+    return reps is not None and reps > ceiling
 
 # Big-5 + key variants, by template id (the IDs the athlete actually logs under —
 # verified against the live log, not Hevy stock defaults). BW lifts add BW to bar load.
@@ -62,9 +82,11 @@ def load_window(start: str, end: str) -> list[dict]:
     return out
 
 
-def analyze(start: str, end: str, bw: float = DEFAULT_BW) -> dict:
+def analyze(start: str, end: str, bw: float = DEFAULT_BW,
+            rep_ceiling: int = REP_CEILING) -> dict:
     sessions = load_window(start, end)
     per_lift: dict[str, list[dict]] = {name: [] for name, _ in LIFTS.values()}
+    flagged: list[dict] = []
     for w in sessions:
         date = (w.get("start_time") or "")[:10]
         for ex in w.get("exercises", []):
@@ -83,6 +105,14 @@ def analyze(start: str, end: str, bw: float = DEFAULT_BW) -> dict:
                     continue
                 lbs = round(wt * KG_TO_LBS, 1)
                 total = lbs + bw if is_bw else lbs
+                # A mis-punched rep count (e.g. 5 -> 50) would Epley to a phantom PR and
+                # win best-e1RM. Keep it out of the numbers; report it for correction.
+                if implausible_reps(reps, rep_ceiling):
+                    flagged.append({
+                        "date": date, "lift": name, "added_lb": lbs, "reps": reps,
+                        "rpe": s.get("rpe"), "is_bw": is_bw,
+                    })
+                    continue
                 est = e1rm(total, reps)
                 cand = {
                     "date": date,
@@ -96,11 +126,11 @@ def analyze(start: str, end: str, bw: float = DEFAULT_BW) -> dict:
                     best = cand
             if best:
                 per_lift[name].append(best)
-    return {"sessions": len(sessions), "per_lift": per_lift}
+    return {"sessions": len(sessions), "per_lift": per_lift, "flagged": flagged}
 
 
 def recent_loads(name: str, days: int = 90, bw: float = DEFAULT_BW,
-                 end: str | None = None) -> dict:
+                 end: str | None = None, rep_ceiling: int = REP_CEILING) -> dict:
     """Recent top working set per session for ONE exercise (resolved by name).
 
     For block design: answers "what does the athlete currently train X at?" so
@@ -117,6 +147,7 @@ def recent_loads(name: str, days: int = 90, bw: float = DEFAULT_BW,
     is_bw = LIFTS.get(tid, (None, False))[1]
 
     rows = []
+    flagged: list[dict] = []
     for w in load_window(start, end):
         date = (w.get("start_time") or "")[:10]
         for ex in w.get("exercises", []):
@@ -130,6 +161,10 @@ def recent_loads(name: str, days: int = 90, bw: float = DEFAULT_BW,
                 if wt is None:
                     continue
                 lbs = round(wt * KG_TO_LBS, 1)
+                if implausible_reps(reps, rep_ceiling):
+                    flagged.append({"date": date, "lift": name, "added_lb": lbs,
+                                    "reps": reps, "rpe": s.get("rpe"), "is_bw": is_bw})
+                    continue
                 if best is None or lbs > best["added_lb"]:
                     best = {"date": date, "added_lb": lbs, "reps": reps,
                             "rpe": s.get("rpe"), "is_bw": is_bw}
@@ -144,6 +179,7 @@ def recent_loads(name: str, days: int = 90, bw: float = DEFAULT_BW,
         "median_load": round(statistics.median(loads), 1) if loads else None,
         "max_load": max(loads) if loads else None,
         "recent": rows[-8:],
+        "flagged": flagged,
     }
 
 
@@ -151,6 +187,12 @@ def fmt_set(s: dict) -> str:
     load = f"BW+{s['added_lb']:g}" if s["is_bw"] else f"{s['added_lb']:g}"
     rpe = f"@{s['rpe']}" if s["rpe"] is not None else "@—"
     return f"{load}x{s['reps']} {rpe} (e1RM {s['e1rm']:g})"
+
+
+def fmt_flag(f: dict) -> str:
+    load = f"BW+{f['added_lb']:g}" if f["is_bw"] else f"{f['added_lb']:g}"
+    rpe = f"@{f['rpe']}" if f["rpe"] is not None else "@—"
+    return f"{f['date']} · {f['lift']} · {load}x{f['reps']} {rpe}"
 
 
 def render_md(start: str, end: str, result: dict) -> str:
@@ -166,6 +208,14 @@ def render_md(start: str, end: str, result: dict) -> str:
         prog = " · ".join(fmt_set(r) for r in rows)
         lines.append(f"  - {prog}")
         lines.append("")
+    flagged = result.get("flagged", [])
+    if flagged:
+        lines.append(f"> ⚠️ **{len(flagged)} suspected mis-logged set(s)** "
+                     f"(reps > {REP_CEILING}) — excluded from the numbers above. "
+                     f"Fix the rep count in Hevy, then re-sync:")
+        for f in flagged:
+            lines.append(f">   - {fmt_flag(f)}  ← check reps")
+        lines.append("")
     return "\n".join(lines)
 
 
@@ -176,17 +226,21 @@ def main() -> None:
     ap.add_argument("--exercise", help="Recent working load for one exercise (by name)")
     ap.add_argument("--recent", type=int, default=90, help="Lookback days for --exercise")
     ap.add_argument("--bw", type=float, default=DEFAULT_BW)
+    ap.add_argument("--rep-ceiling", type=int, default=REP_CEILING,
+                    help="Flag/exclude working sets above this many reps as suspected "
+                         f"mis-logs (default {REP_CEILING})")
     ap.add_argument("--md", action="store_true", help="Markdown output (Big-5 mode)")
     args = ap.parse_args()
 
     if args.exercise:
-        result = recent_loads(args.exercise, args.recent, args.bw, args.end)
+        result = recent_loads(args.exercise, args.recent, args.bw, args.end,
+                              args.rep_ceiling)
         print(json.dumps(result, indent=2))
         return
 
     if not (args.start and args.end):
         ap.error("Big-5 mode needs --start and --end (or use --exercise)")
-    result = analyze(args.start, args.end, args.bw)
+    result = analyze(args.start, args.end, args.bw, args.rep_ceiling)
     if args.md:
         print(render_md(args.start, args.end, result))
     else:
