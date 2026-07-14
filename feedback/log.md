@@ -10,6 +10,31 @@
 
 ---
 
+### 2026-07-13 · general · validate reps on data pull — catch mis-logged reps
+**Feedback:** In B4 W1 D1 (comp bench, 2026-07-06) I accidentally logged **50 reps instead of 5**
+on a backoff set. That should have been caught. When you pull the data, verify the reps are
+plausibly punched — don't let an obvious mis-log through.
+**Verified (Hevy `data/logs/sessions/`):** the set is `195x50 @6` (`POWER Bench Press`,
+15c7a94a…), sitting between three legit `195x5` sets. Left unguarded it Epleys to a **~520 lb**
+comp-bench e1RM vs the real 266 — and `block_report.py` picks the best set **by e1RM**, so the
+phantom set silently becomes the reported PR and poisons any review touching that window.
+Across the *entire* log the only real set above 12 reps is a single 20-rep squat rep-out (2023),
+so a rep count over ~20 on a Big-5 lift is a reliable mis-log signal (a trailing-digit slip).
+**Root cause (tooling gap):** the report had no rep-sanity check — it trusted every logged rep.
+Same class of bug as `loads-from-logs`: the numbers were only as good as the raw log.
+**Actions:** added a rep-sanity guard to `block_report.py` — working sets above `--rep-ceiling`
+(default **20**) are treated as mis-logs. **Revised 2026-07-13 (athlete: correct, don't exclude):**
+the athlete wants the obvious slip *fixed*, not dropped — "the rest were 5 reps, just the one set
+was 50, you can tell it's an accident and correct it to 5." So the guard now **auto-corrects**: it
+infers the intended reps from the plausible **same-weight sibling sets** that session (`infer_reps`)
+and uses the corrected set in the numbers, listing the fix under `corrected` (✏️ `195x50 → 195x5`).
+It only **excludes + flags** when there's no same-weight sibling to infer from (never guesses).
+Verified: comp-bench e1RM stays honest at 255, exactly one correction across all history, zero
+false positives, fallback-to-flag confirmed. New rule `log-rep-sanity`. **Note:** raw JSON still
+mirrors Hevy (correction is at read time, self-healing if the app is later fixed); a hand-edit to
+the JSON isn't durable (`--full` re-pulls the 50), which is why the fix lives in the report layer.
+→ rules: `log-rep-sanity`
+
 ### 2026-07-04 · general · RPE targets must match the Hevy ladder
 **Feedback:** Hevy's RPE picker only offers **{6, 7, 7.5, 8, 8.5, 9, 9.5, 10}** — there is no
 6.5, and nothing below 6. Prescribing @6.5 or @5.5 gives me a target I can't actually select
