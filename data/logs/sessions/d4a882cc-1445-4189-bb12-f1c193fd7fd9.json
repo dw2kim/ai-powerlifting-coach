@@ -1,0 +1,276 @@
+{
+  "created_at": "2026-07-16T11:53:07.074Z",
+  "description": "",
+  "end_time": "2026-07-16T11:53:03+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "927a2231-9678-4d77-a58d-2dfe25f3ca8f",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 4,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 165.5614119440085
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 4,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 4,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        }
+      ],
+      "superset_id": null,
+      "title": "3-0-0 Tempo Low Bar Squat"
+    },
+    {
+      "exercise_template_id": "10347BAC",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 15.87575183024739
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 5,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 31.75150366049478
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 5,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 31.75150366049478
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 5,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 31.75150366049478
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 5,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 31.75150366049478
+        }
+      ],
+      "superset_id": null,
+      "title": "Triceps Dip (Weighted)"
+    },
+    {
+      "exercise_template_id": "6A6C31A5",
+      "index": 2,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 81.64672369841516
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 81.64672369841516
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 81.64672369841516
+        }
+      ],
+      "superset_id": null,
+      "title": "Lat Pulldown (Cable)"
+    },
+    {
+      "exercise_template_id": "75A4F6C4",
+      "index": 3,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 61.235042773811365
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 61.235042773811365
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 61.235042773811365
+        }
+      ],
+      "superset_id": null,
+      "title": "Leg Extension (Machine)"
+    },
+    {
+      "exercise_template_id": "C6C9B8A0",
+      "index": 4,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": 61,
+          "index": 0,
+          "reps": null,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": null
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": 60,
+          "index": 1,
+          "reps": null,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": null
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": 61,
+          "index": 2,
+          "reps": null,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": null
+        }
+      ],
+      "superset_id": null,
+      "title": "Plank"
+    },
+    {
+      "exercise_template_id": "F21D5693",
+      "index": 5,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 15,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 8.164672369841515
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 15,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 8.164672369841515
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 15,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 8.164672369841515
+        }
+      ],
+      "superset_id": null,
+      "title": "Chest Supported Y Raise (Dumbbell)"
+    }
+  ],
+  "id": "d4a882cc-1445-4189-bb12-f1c193fd7fd9",
+  "routine_id": "1c0ada17-937e-4644-b620-05a208da261f",
+  "start_time": "2026-07-16T10:43:36+00:00",
+  "title": "d3 - paused squat+ dips",
+  "updated_at": "2026-07-16T11:53:07.074Z"
+}

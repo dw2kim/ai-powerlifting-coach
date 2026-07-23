@@ -151,6 +151,18 @@ pattern, not noise. Next block: consider a hard-programmed RPE ceiling with a lo
 so there is actual room to grow within the plan, rather than the plan being aspirational from W1.
 Revised W4 directive: drop WPU to BW+80 despite W3 hitting BW+85 — reset the base, then step.
 
+## Data hygiene: rep-sanity guard on log pulls (2026-07-13)
+Athlete mis-logged **50 reps instead of 5** on a B4 W1 comp-bench backoff (2026-07-06, `195x50`).
+Unguarded that Epleys to a ~520 e1RM and, because `block_report.py` picks best set *by e1RM*, it
+becomes a phantom PR that poisons the window. Added a rep-sanity guard (`--rep-ceiling`, default 20).
+**Athlete follow-up (same day): correct, don't exclude.** He wants an obvious slip *fixed*, not
+dropped — the other sets were 5 reps, so it's clearly a 5. Guard now **auto-corrects** from the
+same-weight sibling sets (`infer_reps`): `195x50 → 195x5`, used in the numbers and reported under
+`corrected`; it only excludes + `flagged` when there's no same-weight sibling to infer from. Rule
+`log-rep-sanity`. Correction is at read time — raw JSON stays a Hevy mirror and self-heals if the app
+is fixed; when a review shows a `corrected` set, mention it so he can clean the source. Same class of
+gap as `loads-from-logs`: pulled numbers are only as trustworthy as the guard around the raw log.
+
 ## Block 3 review written (2026-07-04) → reviews/2026-Q2-B03.md
 Final Hevy actuals (source of truth): Squat **512** e1RM (480×2 @8, new best, honest RPE) · Comp
 Bench **266** (235×4 @7.5 — reintroduced on the real comp lift, held ≤@7.5 all block, no shoulder
