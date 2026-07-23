@@ -103,3 +103,11 @@
 - **Bench secondary** — **CGB is the default secondary** for bench improvement, but it can
   **rotate** (per `accessory-rotation`) among CGB / paused bench / incline bench / similar.
   Pick the secondary that best serves the bench weak point for that block. [FB 2026-06-18]
+- **sumo-back-cap** — Sumo is the athlete's lower-back canary (fatigues/flares at **L5-S1**,
+  imaging-consistent). Program it as the **most conservatively loaded Big-5 lift**: working band
+  **345–405 lb, RPE cap 7, reps ≤4 and every rep crisp, 405 = hard ceiling** while the back is a
+  concern. **Never grind sumo** — any back rounding or bar-speed drop = rack it. Progress toward
+  the ceiling only when RPE holds ≤7 **and** the next-morning back check is clean. This is a
+  **durable** rule, distinct from the temporary injection-series axial cap in `active-issues.md`
+  (that one lifts on doctor clearance; this stays until a long pain-free stretch). Revisit the band
+  upward only on sustained clean pulling. [FB 2026-07-22]

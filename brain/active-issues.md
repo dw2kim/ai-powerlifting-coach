@@ -71,6 +71,15 @@ blind). User accepts and proceeds under the rule below. This **overrides** the p
   Confirmed slots: 2026-07-03 (Fri), 2026-07-10 (Fri), **2026-07-16 (Thu 11:50am)**. Athlete always
   trains **6–7am**, so *same-day* training always precedes the injection — same-day training is fine.
 - **Not a coaching call — this is the clinic's domain.** My job is to manage training *around* it.
+- **Sumo = the back's canary (durable cap, 2026-07-22).** Pain/next-day soreness localize to **L5-S1**
+  (imaging-consistent — see MRI above). Sumo runs as the **most conservatively loaded Big-5 lift,
+  indefinitely:** working band **345–405 lb, RPE ≤7, reps ≤4 & crisp, 405 hard ceiling.** Never grind
+  it — back rounding or bar-speed drop = rack it. **The lever is load, not reps** — adding reps to a
+  fatigue-prone back means more reps done tired (brace fades → lumbar rounds), the opposite of
+  conservative. Creep toward 405 only when RPE holds ≤7 **and** the next-morning back check is clean.
+  **This cap is durable** (athlete tolerance) and outlives the injection-series cap below (which is
+  temporary and lifts on doctor clearance). Rule: `sumo-back-cap`. **Add a next-day back check on sumo
+  days** — "back fine / tight / sore" — since the corticosteroid masks pain *during* the lift.
 - **Training implications** (manage heavy axial load around a weekly injection series):
   - **Cap squat & sumo by absolute LOAD, not by feel, for the duration of the series.** The
     corticosteroid **masks pain**, so RPE / the ≤3/10 rule can't be trusted to protect the back —

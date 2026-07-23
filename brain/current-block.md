@@ -24,17 +24,23 @@ WPU ~291 (BW+85×3 @8.5) · Dip 306 (BW+90×4 @7.5). These supersede the stale r
 ## Wave — top sets
 | Week | Squat | Comp Bench | Sumo | WPU | Dip |
 |------|-------|-----------|------|-----|-----|
-| W1 @6–7 | 435×4 @7 | 220×4 @7 | 425×3 @7 | BW+65×4 @7 | BW+55×6 @7 |
-| W2 @7–7.5 | 455×3 @7.5 | 230×4 @7.5 | 445×3 @7.5 | BW+70×4 @7.5 | BW+70×5 @7.5 |
-| W3 @8 | **~455×3 @7.5 (capped)** | 240×3 @8 | **~445×3 @7.5 (capped)** | BW+75×3 @8 | **BW+85×4 @8 (dip peak)** |
-| W4 peak | **~455–465×3 @7.5 (capped)** | **250×2 @8** | **~445–455×3 @7.5 (capped)** | BW+80×3 @8 | BW+75×5 @7.5 (pull back) |
-| W5 deload | 405×3 @6 | 195×4 @6 | 405×3 @6 | BW+50×4 @6 | BW+45×6 @6 |
+| W1 @6–7 | 435×4 @7 | 220×4 @7 | **345×4 @6 (band)** | BW+65×4 @7 | BW+55×6 @7 |
+| W2 @7–7.5 | 455×3 @7.5 | 230×4 @7.5 | **365×3 @7 (band)** | BW+70×4 @7.5 | BW+70×5 @7.5 |
+| W3 @8 | **~455×3 @7.5 (capped)** | 240×3 @8 | **≤385×3 @7 (band)** | BW+75×3 @8 | **BW+85×4 @8 (dip peak)** |
+| W4 peak | **~455–465×3 @7.5 (capped)** | **250×2 @8** | **≤405×3 @7 (band ceiling)** | BW+80×3 @8 | BW+75×5 @7.5 (pull back) |
+| W5 deload | 405×3 @6 | 195×4 @6 | 345×4 @6 | BW+50×4 @6 | BW+45×6 @6 |
 
-> **Squat & sumo axial cap (2026-07-11, lower-back injection series):** W3–W4 tops **held at W2
-> loads @7.5**, no @8+, W4 PR doubles dropped (was 495 squat / 485 sumo). Cap by **load, not feel** —
-> the corticosteroid masks pain, so RPE can't protect the back. Stimulus off backoff volume.
-> Bench/dip/pull-up wave unchanged. See `active-issues.md` → Lower back. Revisit on doctor clearance.
+> **Sumo — durable L5-S1 band (2026-07-22, supersedes the injection cap for sumo):** sumo now runs
+> the conservative band **345–405 @7, reps ≤4 & crisp, 405 hard ceiling** — the most conservatively
+> loaded Big-5 lift, indefinitely (sumo is the back's canary). Never grind; back rounding / bar-speed
+> drop = rack it. This is *tighter and more durable* than the injection cap. Rule `sumo-back-cap`.
+> **Squat — injection axial cap (2026-07-11, lower-back injection series):** W3–W4 tops **held at W2
+> loads @7.5**, no @8+, W4 PR double dropped (was 495). Cap by **load, not feel** — the corticosteroid
+> masks pain, so RPE can't protect the back. Stimulus off backoff volume. This one is *temporary* —
+> revisit on doctor clearance. Bench/dip/pull-up wave unchanged. See `active-issues.md` → Lower back.
 > **Thu-injection weeks: sumo off Friday morning** — slip D4 to Sat or run Fri sumo light.
+> **Add a next-day back check on sumo days** (back fine / tight / sore) — the honest signal for
+> whether to creep sumo toward 405.
 
 **Backoff sets** (matched to the logged B3 norm, tapering one at the peak — `primary-backoff-volume`):
 squat **4·4·4·3·3**, comp bench **4·4·4·3·3**, sumo **3·3·3·2·3** (W1–W5). Backoff ~85% of top.
@@ -67,9 +73,13 @@ squat **4·4·4·3·3**, comp bench **4·4·4·3·3**, sumo **3·3·3·2·3** (W
 - **Pull-up: @8 is a hard stop.** If a top set exceeds @8, rack it. No BW+90 @9.5 reruns.
 - **Comp bench @8 cap / ≤3/10 pain** (shoulder, structural — see active-issues). Spoto @8 cap.
   DB Shoulder Press @7 cap. Tempo squat @7 cap.
-- **Sumo top ≤8.5 — no @9 grind singles** (hitch trigger). Use the backoff to groove position.
-- **Squat & sumo capped @7.5 W3–W4 (back injection series)** — hold W2 loads, no PR doubles, cap
-  by load not feel. **Thu-injection weeks: sumo off Fri morning (slip to Sat or go light).**
+- **Sumo — durable L5-S1 band: 345–405 @7, reps ≤4 & crisp, 405 hard ceiling** (`sumo-back-cap`).
+  Most conservative Big-5 lift; never grind — back rounding / bar-speed drop = rack it. The lever is
+  **load, not reps.** Creep toward 405 only when RPE ≤7 **and** the next-morning back check is clean.
+  Log a next-day back check on sumo days. (Supersedes the old sumo axial-cap line.)
+- **Squat capped @7.5 W3–W4 (back injection series, temporary)** — hold W2 loads, no PR double, cap
+  by load not feel; revisit on doctor clearance. **Thu-injection weeks: sumo off Fri morning (slip to
+  Sat or go light).**
 - **Squat & sumo backoff = 4 sets** in the volume weeks (tapers to 3/2 at the peak).
 - **D1 is dense** (squat 5 sets + bench 4 + 3 accessories) — if 60 min runs out, drop the
   last accessory, never the backoff.

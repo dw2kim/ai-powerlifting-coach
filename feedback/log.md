@@ -10,6 +10,29 @@
 
 ---
 
+### 2026-07-22 · load, exercise · Sumo Deadlift · conservative L5-S1 cap
+**Feedback:** Sumo is the lift that fatigues/flares my lower back — specifically around **L5-S1**,
+which is where the pain and next-day soreness show up. Want to be **really conservative** with it.
+Initial instinct was to add reps and/or drop load a few pounds.
+**Coach correction:** more reps is the *wrong* lever for a fatigue-prone back — injury on deadlifts
+happens on the fatigued reps (brace fades, lumbar rounds), and higher reps = more cumulative load +
+more reps done tired. The conservative lever is **lower load, LOW reps done fresh, every rep crisp,
+stopped short.** Not "lighter for 5s."
+**Grounded (Hevy, `block_report --exercise "Sumo Deadlift" --recent 30`):** most recent sumo =
+**405×3 @6 (2026-07-03)**; prior = 485×1 @9 (2026-06-26). Median 445 / max 485 over the window.
+Athlete recalled the last session as "345×4 @5-6" — **not in the log** (unsynced or misremembered);
+the logged 405×3 @6 confirms 405 is a comfortable, already-hit load, so it anchors the ceiling.
+**Imaging-consistent:** MRI (2026-07-22) shows the L5-S1 mild bulge + endplate hypertrophy +
+foraminal stenosis exactly where he feels it.
+**Decision (athlete-confirmed):** durable sumo band **345–405 lb, RPE cap 7, reps ≤4 & crisp,
+405 = hard ceiling** while the back is a concern; hard stop on any back rounding or bar-speed drop.
+Creep toward 405 only if RPE stays ≤7 **and** the next-morning back check is clean. Distinct from the
+temporary injection-series axial cap (that one lifts on doctor clearance; **this one is durable** —
+sumo stays the most conservatively loaded Big-5 lift until a long pain-free stretch).
+**Actions:** new by-exercise rule `sumo-back-cap`; added a next-day back check on sumo days;
+updated `active-issues.md` (Lower back) and `current-block.md` (B4 sumo wave dropped to the band).
+→ rules: `sumo-back-cap`
+
 ### 2026-07-04 · general · RPE targets must match the Hevy ladder
 **Feedback:** Hevy's RPE picker only offers **{6, 7, 7.5, 8, 8.5, 9, 9.5, 10}** — there is no
 6.5, and nothing below 6. Prescribing @6.5 or @5.5 gives me a target I can't actually select
