@@ -494,35 +494,35 @@
       "exercises": [
         {
           "name": "Sumo Deadlift",
-          "notes": "Top set @7. 425×3. Cap ≤8.5, no @9 grind singles (hitch).",
+          "notes": "Top @6. 345×4 — durable L5-S1 band (2026-07-22). 405 = hard ceiling; never grind — rack on back rounding / bar-speed drop. Log next-day back check.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 192.8,
-              "reps": 3,
-              "rpe": 7
+              "weight_kg": 156.5,
+              "reps": 4,
+              "rpe": 6
             }
           ]
         },
         {
           "name": "Sumo Deadlift",
-          "notes": "Backoff — 3 sets @6.5.",
+          "notes": "Backoff — 3 sets @6. 295×4.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 165.6,
+              "weight_kg": 133.8,
               "reps": 4,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 165.6,
+              "weight_kg": 133.8,
               "reps": 4,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 165.6,
+              "weight_kg": 133.8,
               "reps": 4,
               "rpe": 6
             }
@@ -1088,37 +1088,37 @@
       "exercises": [
         {
           "name": "Sumo Deadlift",
-          "notes": "Top set @7.5. 445×3. Cap ≤8.5, no @9 grind. ⚠ INJECTION Thu 07-16 — do NOT run this Fri 6am (~18h post-shot). Move to Sat (~42h) OR run light: @6, backoff-position only, no top set.",
+          "notes": "Top @7. 365×3 — durable L5-S1 band. Never grind; rack on back rounding / bar-speed drop. ⚠ Thu-injection weeks: do NOT run sumo Fri 6am (~18h post-shot) — move to Sat (~42h) OR run light (backoff-position only, no top). Log next-day back check.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 201.8,
+              "weight_kg": 165.6,
               "reps": 3,
-              "rpe": 7.5
+              "rpe": 7
             }
           ]
         },
         {
           "name": "Sumo Deadlift",
-          "notes": "Backoff — 3 sets @7.",
+          "notes": "Backoff — 3 sets @6. 315×4.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 172.4,
-              "reps": 3,
-              "rpe": 7
+              "weight_kg": 142.9,
+              "reps": 4,
+              "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 172.4,
-              "reps": 3,
-              "rpe": 7
+              "weight_kg": 142.9,
+              "reps": 4,
+              "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 172.4,
-              "reps": 3,
-              "rpe": 7
+              "weight_kg": 142.9,
+              "reps": 4,
+              "rpe": 6
             }
           ]
         },
@@ -1682,37 +1682,37 @@
       "exercises": [
         {
           "name": "Sumo Deadlift",
-          "notes": "Top @7.5 — HELD at W2 load (back-injection cap, 2026-07-11). 445×3. Cap by load, not feel — steroid masks pain. No @9 grind.",
+          "notes": "Top @7. 385×3 — durable L5-S1 band. Never grind — rack on back rounding / bar-speed drop. Log next-day back check.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 201.8,
+              "weight_kg": 174.6,
               "reps": 3,
-              "rpe": 7.5
+              "rpe": 7
             }
           ]
         },
         {
           "name": "Sumo Deadlift",
-          "notes": "Backoff — 3 sets @7.",
+          "notes": "Backoff — 3 sets @6. 325×4.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 181.4,
-              "reps": 3,
-              "rpe": 7
+              "weight_kg": 147.4,
+              "reps": 4,
+              "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 181.4,
-              "reps": 3,
-              "rpe": 7
+              "weight_kg": 147.4,
+              "reps": 4,
+              "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 181.4,
-              "reps": 3,
-              "rpe": 7
+              "weight_kg": 147.4,
+              "reps": 4,
+              "rpe": 6
             }
           ]
         },
@@ -2264,31 +2264,31 @@
       "exercises": [
         {
           "name": "Sumo Deadlift",
-          "notes": "Top @7.5 — CAPPED for back-injection series (2026-07-11). No 485 PR attempt this block. 455×3. Revisit on doctor clearance.",
+          "notes": "Top @7. 405×3 — band CEILING (durable L5-S1 cap). No PR attempts, no @8+. Never grind — rack on back rounding / bar-speed drop. Log next-day back check.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 206.4,
+              "weight_kg": 183.7,
               "reps": 3,
-              "rpe": 7.5
+              "rpe": 7
             }
           ]
         },
         {
           "name": "Sumo Deadlift",
-          "notes": "Backoff — 2 sets @7.",
+          "notes": "Backoff — 2 sets @6. 345×3.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 188.2,
-              "reps": 2,
-              "rpe": 7
+              "weight_kg": 156.5,
+              "reps": 3,
+              "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 188.2,
-              "reps": 2,
-              "rpe": 7
+              "weight_kg": 156.5,
+              "reps": 3,
+              "rpe": 6
             }
           ]
         },
@@ -2840,35 +2840,35 @@
       "exercises": [
         {
           "name": "Sumo Deadlift",
-          "notes": "Top set @5.5. 405×3. Cap ≤8.5, no @9 grind singles (hitch).",
+          "notes": "Deload. Top @6. 345×4 — L5-S1 band. Easy, crisp, no grind.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 183.7,
-              "reps": 3,
+              "weight_kg": 156.5,
+              "reps": 4,
               "rpe": 6
             }
           ]
         },
         {
           "name": "Sumo Deadlift",
-          "notes": "Backoff — 3 sets @5.",
+          "notes": "Backoff — 3 sets @6. 295×4.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 154.2,
+              "weight_kg": 133.8,
               "reps": 4,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 154.2,
+              "weight_kg": 133.8,
               "reps": 4,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 154.2,
+              "weight_kg": 133.8,
               "reps": 4,
               "rpe": 6
             }
