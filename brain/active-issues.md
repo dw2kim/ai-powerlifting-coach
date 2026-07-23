@@ -51,6 +51,17 @@ blind). User accepts and proceeds under the rule below. This **overrides** the p
 
 ## Lower back (new — 2026-07-06)
 - **Status**: symptomatic, under active pain-clinic treatment. Pain focused **mid-left lower back**.
+- **MRI on file (2026-07-22, lumbar spine w/o gadolinium)**: reassuring for a barbell athlete —
+  **no disc herniation with nerve compression, no significant central canal stenosis, no cord
+  signal abnormality.** Age-typical mild multilevel degeneration. Focal findings: **L3-4 small 2 mm
+  left posterolateral protrusion** + mild left lateral recess narrowing, **no nerve-root impingement**;
+  L4-5 and L5-S1 mild bulges + mild endplate hypertrophy with **mild/moderate R + mild L foraminal
+  stenosis, no impingement described**. The focal left-sided L3-4 findings line up with the reported
+  mid-left pain location (consistency, not a coaching diagnosis — clinical read stays with the clinic).
+  **Training takeaway: nothing here structurally contraindicates loaded squat/pull.** The axial cap
+  below stays anyway — it's driven by the corticosteroid masking pain, NOT by imaging; a clean MRI
+  doesn't un-mask the pain signal. Use this MRI to ask the doctor the return-to-heavy-axial-load
+  question and get a concrete window; lift the cap on that clearance.
 - **Treatment**: pain-clinic **corticosteroid injections** — a **weekly series** (first round
   **2026-07-03**, ~8 sites across the mid-left lower back). Doctor says it needs **multiple visits**
   to become effective. This is the family-doctor pain-clinic referral (previously logged under the
