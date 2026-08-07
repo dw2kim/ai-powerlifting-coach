@@ -36,6 +36,11 @@ You are writing the athlete's WEEKLY check-in, delivered to Telegram. It must:
 - Cover: data readiness, each Big-5 lift (top set vs plan + trend), an RPE watch, a one-line
   accessory note, this-block and long-term (cross-block) progress, and one sharp directive
   for next week.
+- If `load_drift` is present, add ONE short line on the plan-vs-log load sync: name the
+  accessories whose Sheet numbers were corrected (`changes`) and say the Sheet now matches
+  what he actually lifts. If `load_drift.items` flags drift on a PRIMARY or SECONDARY
+  (verdict `review-manually`), mention it as a coaching decision for you to make — those are
+  never auto-adjusted, and on sumo/squat the injury caps deliberately sit below the log.
 - Telegram HTML only: <b>…</b> and <i>…</i> for emphasis. No markdown headers, no tables,
   no code fences. Keep it under ~3500 characters.
 Explain the WHY briefly where it teaches something. Be honest about flat or down weeks."""

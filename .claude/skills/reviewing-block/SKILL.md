@@ -30,6 +30,11 @@ athlete's planning surface (planned loads, RPE targets, athlete notes) — usefu
    `scripts/hevy/block_report.py`.
 3. **Pull the plan + subjective notes** from the block's Google Sheet (planned loads, RPE
    targets, athlete notes) and from `brain/memory.md` retrospectives.
+3b. **Pull the accessory plan-vs-log diff**: `python -m scripts.sheets.reconcile_loads`
+   (report-only). This is the accessory counterpart to step 2 — it sweeps every exercise and
+   shows where the prescription was wrong all block. Feed the drifted ones into section 3 and
+   the corrected anchors into the next block (`sheet-load-sync`). An **unmatched** name is a
+   mapping bug to fix in `OVERRIDES`, not an untrained lift (`exercise-name-mapping`).
 4. **Write the review** to `reviews/<block-id>.md` with these sections:
    - **1. What's been done** — block summary + a Big-5 plan-vs-actual table with real e1RMs.
      Per `review-status-emoji`: show each Big-5 lift's **e1RM delta vs the prior block** (read

@@ -5,21 +5,26 @@ Pipeline:
   2. Sync the Hevy log so the data is fresh (best-effort; a sync failure degrades
      to last-known data with a readiness warning rather than skipping the review).
   3. Compute the weekly metrics.
-  4. Render the PNG progress chart.
-  5. Write the coach-voice narrative (Anthropic API; falls back to a template).
-  6. Send the chart + narrative to Telegram.
-  7. Archive a snapshot to reviews/weekly/ and commit the synced data + snapshot.
+  4. Reconcile the plan's loads against the log — correct the weeks still ahead and
+     re-render the Sheet, so the plan tracks what he actually trains (`sheet-load-sync`).
+  5. Render the PNG progress chart.
+  6. Write the coach-voice narrative (Anthropic API; falls back to a template).
+  7. Send the chart + narrative to Telegram.
+  8. Archive a snapshot to reviews/weekly/ and commit the synced data + snapshot.
 
 Flags:
   --force        bypass the time guard (manual / test runs)
-  --dry-run      compute + render + print; no Telegram, no commit
+  --dry-run      compute + render + print; no Telegram, no commit, no plan edits
   --no-commit    send, but don't commit/push (e.g. local Telegram test)
   --skip-sync    don't hit the Hevy API (offline testing)
+  --no-reconcile      skip the load reconciliation entirely
+  --reconcile-report  reconcile in report-only mode (no plan edits, no Sheet push)
   --date         override 'today' (YYYY-MM-DD) for testing
 """
 from __future__ import annotations
 
 import argparse
+import json
 import subprocess
 import sys
 import tempfile
@@ -29,9 +34,10 @@ from zoneinfo import ZoneInfo
 
 from ..hevy.block_report import DEFAULT_BW, REPO_ROOT
 from ..notifications import telegram
+from ..sheets import reconcile_loads as recon
 from .narrate import gather_context, narrate, render_fallback
 from .render_chart import render
-from .weekly_metrics import build_stats
+from .weekly_metrics import BLOCK_JSON, build_stats
 
 EASTERN = ZoneInfo("America/New_York")
 WEEKLY_DIR = REPO_ROOT / "reviews" / "weekly"
@@ -73,6 +79,57 @@ def sync_log(skip: bool) -> bool:
         return False
 
 
+def reconcile_step(today: date_cls | None, bw: float, *,
+                   enabled: bool = True, apply_changes: bool = True) -> dict | None:
+    """Diff the plan's loads against the log; correct the weeks still ahead and push the
+    Sheet (rule `sheet-load-sync`).
+
+    Only accessories are rewritten, and only for weeks that haven't been trained — see
+    `reconcile_loads` for why primaries are report-only. Entirely best-effort: this runs
+    after the metrics are computed, so any failure here costs the load sync, never the
+    weekly review itself.
+
+    Returns the report (with `changes` / `pushed` attached) for the narrative, or None.
+    """
+    if not enabled:
+        return None
+    try:
+        block = recon.load_block()
+        report = recon.reconcile(block, today, bw=bw)
+    except Exception as exc:  # noqa: BLE001
+        print(f"⚠️ Load reconciliation failed ({exc}); plan left as-is.")
+        return None
+
+    # None (not []) in report-only mode, so the summary omits the "applied" section
+    # instead of claiming nothing needed doing.
+    changes: list[dict] | None = None
+    pushed = False
+    if apply_changes:
+        changes = []
+        try:
+            changes = recon.apply_corrections(block, report)
+            if changes:
+                BLOCK_JSON.write_text(json.dumps(block, indent=2, ensure_ascii=False) + "\n")
+                print(f"Load sync: rewrote {len(changes)} prescription(s) from W{report['from_week']}.")
+        except Exception as exc:  # noqa: BLE001
+            print(f"⚠️ Could not apply load corrections ({exc}).")
+            changes = []
+        if changes:
+            # The Sheet is the athlete's surface — a corrected JSON nobody can see is
+            # half a fix. Needs GOOGLE_SA_JSON + SHEETS_SPREADSHEET_ID; skipped without them.
+            try:
+                from ..sheets.export_block import export
+                export(block, block.get("block_id", "block"), final=True)
+                pushed = True
+            except SystemExit as exc:      # missing creds — expected when unconfigured
+                print(f"⚠️ Sheet not updated ({exc}). Corrections are in the block JSON.")
+            except Exception as exc:  # noqa: BLE001
+                print(f"⚠️ Sheet push failed ({exc}). Corrections are in the block JSON.")
+    report["changes"] = changes
+    report["pushed_to_sheet"] = pushed
+    return report
+
+
 def caption(stats: dict, synced: bool) -> str:
     geo = stats["geometry"]
     rd = stats["readiness"]
@@ -101,7 +158,12 @@ def write_snapshot(stats: dict, message: str) -> Path:
     header = (f"# Weekly review — {geo['block_id']} · Week {geo['week_no']}/{geo['weeks']}"
               f"\n\n_Generated {stats['generated_for']} (Sat 11:00 ET). "
               f"Hevy log = source of truth._\n\n---\n\n")
-    path.write_text(header + message + "\n")
+    body = message + "\n"
+    report = stats.get("load_drift")
+    if report:
+        # Keep the audit trail of what the sync moved next to the review it moved on.
+        body += ("\n---\n\n" + recon.render_md(report, report.get("changes")) + "\n")
+    path.write_text(header + body)
     return path
 
 
@@ -132,6 +194,10 @@ def main() -> None:
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--no-commit", action="store_true")
     ap.add_argument("--skip-sync", action="store_true")
+    ap.add_argument("--no-reconcile", action="store_true",
+                    help="Skip the plan-vs-log load reconciliation entirely")
+    ap.add_argument("--reconcile-report", action="store_true",
+                    help="Reconcile in report-only mode — no plan edits, no Sheet push")
     ap.add_argument("--date")
     ap.add_argument("--bw", type=float, default=DEFAULT_BW)
     args = ap.parse_args()
@@ -141,7 +207,16 @@ def main() -> None:
 
     synced = sync_log(args.skip_sync or args.dry_run)
     today = date_cls.fromisoformat(args.date) if args.date else None
+    # Metrics first: the week just finished is judged against the plan it actually ran
+    # under, before the sync rewrites anything ahead of it.
     stats = build_stats(today, args.bw)
+    report = reconcile_step(
+        today, args.bw,
+        enabled=not args.no_reconcile,
+        apply_changes=not (args.dry_run or args.reconcile_report),
+    )
+    if report:
+        stats["load_drift"] = report
 
     render(stats, CHART_PATH)
     message = build_message(stats)
@@ -150,6 +225,9 @@ def main() -> None:
     if args.dry_run:
         print("\n===== CAPTION =====\n" + cap)
         print("\n===== MESSAGE =====\n" + message)
+        if report:
+            print("\n===== LOAD SYNC (report only in --dry-run) =====\n"
+                  + recon.render_md(report, report.get("changes")))
         print(f"\n===== CHART =====\n{CHART_PATH}")
         return
 

@@ -92,3 +92,11 @@ squat **4·4·4·3·3**, comp bench **4·4·4·3·3**, sumo **3·3·3·2·3** (W
 - **Tempo-squat loads are conservative** (first 3-1-0 exposure). If W2 feels light, bump 10 lb.
 - **B3 review** still outstanding — run the end-of-block retrospective before it goes cold
   (`reviewing-block`, Hevy log = source of truth).
+- **Accessory loads ran light all block** (found 2026-08-07 by the new weekly load sync,
+  `sheet-load-sync`). Six accessories drifted vs the Hevy log: Leg Extension 90–100 → **140**,
+  Reverse Pec Deck 45 → **100**, DB Shoulder Press 50 → **70**, Meadows Row 60 → **80**,
+  Concentration Curl 25 → **43**, Incline DB Press 50 → **65**. Too late to correct in-block
+  (W5) — **carry these anchors into B5.** Root cause was partly a name-mapping bug: Reverse Pec
+  Deck / Incline DB Press / Tricep Pushdown didn't resolve to the templates he logs under, so
+  they looked untrained. **Incline DB Press was labelled "NEW" in this block — he has 66 logged
+  sessions of it.** Mappings fixed; the sync now runs every Saturday.

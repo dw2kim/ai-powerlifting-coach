@@ -10,6 +10,47 @@
 
 ---
 
+### 2026-08-07 · load, general · sync the Sheet to the training log — weekly
+**Feedback:** "If the Google Sheet says 70 lb for leg extension but my training log average is
+120 and my recent log is 140, the Sheet needs to be adjusted to match the log. Also, a new
+exercise I hadn't really done — lower back extension — went in at 1 lb, but I can do 90 now,
+so it needs adjusting. **Weekly**, the Sheet should update itself accordingly."
+**Verified (Hevy, `block_report --exercise`):**
+- **Leg Extension** — B4 programs **90–100 lb** (W5 deload **70**, the exact number he quoted).
+  Log: median **140**, max **165**, 16 sessions; recent 135 / 145 / 140. The Sheet is **~50 lb
+  light**. His recollection was right, if slightly conservative.
+- **Weighted Back Extension** — log runs 25 → 70 → 90 → 90 → 70 → **1** (2026-07-17) → 45. Both
+  the 1 lb and the 90 are real entries, so the placeholder story checks out. Not in B4 (it was
+  cut for Incline DB Press), so nothing to correct there — the pattern is what matters.
+**And it generalizes — he under-reported the problem.** A full sweep of B4 found **six** drifted
+accessories, not one: Leg Extension +50, Reverse Pec Deck +55, DB Shoulder Press +20, Meadows Row
++20, Concentration Curl +18, Incline DB Press +15.
+**Root cause 1 (tooling gap):** `loads-from-logs` binds only at *design* time. A block is frozen
+the moment it renders to the Sheet, so five weeks of real training never feed back. There was no
+in-block correction path at all.
+**Root cause 2 (tooling gap), found while building it:** six plan names didn't resolve to the
+template he actually logs under, so they read as "never trained" — Tricep Pushdown (he moved off
+that template in Jan 2026 → `Triceps Extension (Cable)`), Reverse Pec Deck, Incline DB Press,
+Spoto Bench + Paused Larsen (both pointed at generic `Bench Press (Barbell)` instead of his own
+templates, orphaning their history), and 3-1-0 Tempo Squat (he logs 3-0-0). This is why the
+Sheet could sit 55 lb light on Reverse Pec Deck unnoticed, and why B4 labelled Incline DB Press
+"NEW" when he has **66 logged sessions** of it.
+**Actions:** (1) new `scripts/sheets/reconcile_loads.py` — diffs plan vs log, rewrites the weeks
+still ahead, re-renders the Sheet; (2) wired into the Saturday review so it runs **weekly** per
+his ask, with the drift summary in the Telegram narrative and the weekly snapshot; (3) fixed the
+six `OVERRIDES` mappings — all 20 B4 exercises now resolve; (4) rules `sheet-load-sync` and
+`exercise-name-mapping`.
+**Coach guardrails (deliberate, and he should know):** only **accessories** auto-adjust. Primaries
+and barbell secondaries are reported but never rewritten — their loads come from the intensity
+wave and from injury caps that *intentionally* sit below the log. The live case proves it: sumo's
+log anchor is **385** while `sumo-back-cap` holds it at 345–405 @7 with a hard ceiling, and a
+mid-block run showed the log at **425** against a capped plan of 365. An auto-chase there would
+have quietly undone the back restriction. Past weeks are never rewritten, and corrections scale
+the whole exercise by one factor so the wave and the W5 deload keep their shape.
+**Timing note:** B4 is in W5, so there are **zero** weeks left to correct — the drift report is
+the deliverable now and it feeds the B4 review + B5 design. The weekly sync starts biting in B5.
+→ rules: `sheet-load-sync`, `exercise-name-mapping`
+
 ### 2026-07-13 · general · validate reps on data pull — catch mis-logged reps
 **Feedback:** In B4 W1 D1 (comp bench, 2026-07-06) I accidentally logged **50 reps instead of 5**
 on a backoff set. That should have been caught. When you pull the data, verify the reps are
