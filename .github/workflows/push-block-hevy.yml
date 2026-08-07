@@ -1,0 +1,61 @@
+name: Push block to Hevy
+
+# Manual: creates a Hevy routine folder named after the block id, then one routine per
+# (week, day) inside it — 20 routines for a standard 5-week / 4-day block.
+#
+# Exists for the same reason as export-block.yml: a block is authored in a Claude Code
+# session that has no HEVY_API_KEY, so it needs a credentialled place to run from.
+#
+# ⚠️ THIS IS ADDITIVE AND NOT IDEMPOTENT. push_block only ever POSTs — it never updates or
+# deletes. Running it twice for the same block leaves you with TWO folders named
+# "<block-id>" and 40 routines. That is why `apply` defaults to false: the safe click is a
+# dry run, and pushing for real is a deliberate second action. If you do double-push,
+# delete the duplicate folder in the Hevy app; nothing here will clean it up for you.
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "Actually write to Hevy (leave OFF for a dry run first)"
+        type: boolean
+        default: false
+      week:
+        description: "Push a single week only (1-5). Blank = all weeks."
+        type: string
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  # Never let two pushes overlap — a duplicated folder is annoying to unpick by hand.
+  group: push-block-hevy
+  cancel-in-progress: false
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Push
+        env:
+          HEVY_API_KEY: ${{ secrets.HEVY_API_KEY }}
+        run: |
+          ARGS=""
+          [ "${{ inputs.apply }}" = "true" ] && ARGS="$ARGS --apply"
+          [ -n "${{ inputs.week }}" ] && ARGS="$ARGS --week ${{ inputs.week }}"
+          if [ "${{ inputs.apply }}" = "true" ]; then
+            echo "::warning::Writing to Hevy for real. This is additive — re-running duplicates the folder."
+          else
+            echo "Dry run — no Hevy calls. Flip 'apply' on to write."
+          fi
+          echo "Running: python -m scripts.hevy.push_block $ARGS"
+          python -m scripts.hevy.push_block $ARGS
