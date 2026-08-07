@@ -163,6 +163,27 @@ same-weight sibling sets (`infer_reps`): `195x50 → 195x5`, used in the numbers
 is fixed; when a review shows a `corrected` set, mention it so he can clean the source. Same class of
 gap as `loads-from-logs`: pulled numbers are only as trustworthy as the guard around the raw log.
 
+## Block 4 review written (2026-08-07) → reviews/2026-Q3-B04.md
+W1–W4 only (log last synced 2026-07-31; W5 deload not yet in the repo — append when it lands).
+Final actuals: Squat **511.5** (465×3 @7.5) · Comp Bench **266.7** (250×2 @6) · Sumo **467.5**
+(425×3 @7, W1 pre-cap) · WPU **286** (BW+80×3 @7.5) · Dip **300.3** (BW+85×4 @6).
+**The durable lesson: raw Epley misread this block.** Every lift looks flat-to-down, but
+RPE-adjusted (RIR = 10 − RPE) four of five rose — Squat +6, Bench +14, WPU +3, Dip +8 — while
+*every* lift ran at a lower RPE than B3. He got stronger and cheaper under two injury caps with
+16/16 attendance. **When a block runs under a cap, report the effort-adjusted read alongside raw
+e1RM or the review will understate it.**
+**Two structural wins:** the WPU @8 hard cap **held all block** (top never exceeded @8, peaked
+BW+80×3 @7.5) — that closes the B1→B3 drift problem, and the mechanism (hard ceiling + deliberately
+low start) is the template. Sumo band executed exactly: 425 on-plan pre-cap, then 345 → 385 → 405 @7
+and a dead stop at the ceiling.
+**The new failure mode — over-correction.** Discipline swung too far on the lifts *not* capped by
+injury: bench peaked **@6** against an @8 allowance (240×3 @7 in W3 too), dip peaked @6 against @8.
+On a bench-led block he never tested the priority lift. B5 must program the peak as "work up to @8"
+with a load range, so the cap is a target to find, not a ceiling to sit under.
+**Unlogged signal:** the next-day back check (standing order since 2026-07-22) has zero entries, so
+the 405 @7 ceiling is uncalibrated — sumo stays at 405 until there's data. Reverse Pec Deck: 0/4
+sessions, likely because it was prescribed at 45 lb against a ~100 lb history.
+
 ## Sheet ↔ log load sync, weekly (2026-08-07)
 Athlete feedback: the Sheet's accessory loads don't match what he actually lifts (leg extension
 programmed 90–100 while the log runs 140), and first-exposure placeholders never get rebased
