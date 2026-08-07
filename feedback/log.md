@@ -10,6 +10,45 @@
 
 ---
 
+### 2026-08-07 · block, exercise, general · B5 direction — strive selectively, sumo becomes a skill lift
+**Feedback (athlete, designing B5):** "Sumo deadlift is something I don't want to strive for — I
+just want to do it to keep the technical form. I think it's still valuable and beneficial. If you
+don't think that way, let me know." Plus: be very conservative because sumo fatigues his lower
+back a lot and *"I see a degradation from the MRI, and I think sumo has some impact on that,
+right?"* Squat conservative this block (injections today 2026-08-07 and Fri 2026-08-14, then
+done), strive later. Bench: strive slowly. Pull-ups and dips: strive. **Big 5 movements and their
+days are fixed — don't replace or move them.** Rotate some secondaries and accessories; use logged
+history for loads, best-guess for never-logged movements since the weekly sync corrects them.
+**Coach agreement:** keep sumo — argued *harder* for keeping it than the athlete did. Detraining a
+hinge makes the return more dangerous, light crisp pulling keeps erectors/glutes doing protective
+work, and the above-the-knee hitch only gets fixed with reps at an ownable load. Demoted to a
+**skill lift**: fixed 345–365 band, crisp triples, @7, 405 untouched, no PR intent.
+**Coach correction #1 — sumo did not cause the MRI findings.** The 2026-07-22 report reads
+*age-typical mild multilevel degeneration*; at 37 with 11 training years that's an unremarkable
+spine, and imaging correlates poorly with pain. Corrected because the belief matters: if he thinks
+sumo is grinding his discs down, the logical end of that is dropping the lift, which is wrong. The
+conservatism is justified by his **symptom pattern**, which stands on its own.
+**Coach correction #2 — there is no recent shoulder imaging.** He said the MRI shows no bench
+issue and partial shoulder-tendon damage; those are two different studies. The 07-22 MRI is
+**lumbar only**. The shoulder finding is a **2025-07-18 ultrasound**, 13 months old, and the
+re-ordered shoulder MRI still hasn't happened. He's benching on year-old imaging. Strive anyway —
+but not on a false belief that a recent scan cleared him.
+**Coach correction #3 — the squat cap lifts on doctor clearance, not on the series ending.** He
+expected to "go back next week." Built a W3 gate instead: capped track by default, release track
+documented, unlocked only by a clinical answer. Athlete chose this option.
+**Grounded (Hevy):** B4 comp bench peaked **250×2 @6** against an @8 allowance — the block's one
+clear miss, and the origin of `cap-is-a-target`. Paused RDL ran **265–275×5 with backoffs @8.5**,
+a heavy second hinge on the back being protected → cut to 225–245 @7 in B5.
+**Tooling (third `exercise-name-mapping` instance):** `paused rdl` pointed at the stock
+`Romanian Deadlift (Barbell)` — 55 sessions but abandoned since 2026-02-20 — while his live custom
+`Paused RDL` template has 60 sessions through 2026-07-28. Anchor read 225 instead of 275. Fixed,
+plus `weighted back extension` / `back extension` aliases for the re-introduced movement.
+**Actions:** designed B5 (`2026-Q3-B05`); new rules `sumo-skill-lift`, `cap-is-a-target`,
+`masked-pain-load-cap`; fixed the RDL + back-extension mappings; re-anchored six accessories off
+the log; dropped Iso-Lateral Row and Hip Adduction (both `accessory-day-interference` violations
+that ran all of B4).
+→ rules: `sumo-skill-lift`, `cap-is-a-target`, `masked-pain-load-cap`, `exercise-name-mapping`
+
 ### 2026-08-07 · load, general · sync the Sheet to the training log — weekly
 **Feedback:** "If the Google Sheet says 70 lb for leg extension but my training log average is
 120 and my recent log is 140, the Sheet needs to be adjusted to match the log. Also, a new

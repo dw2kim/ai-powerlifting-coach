@@ -1,26 +1,24 @@
 {
-  "block_id": "2026-Q3-B05",
+  "block_id": "2026-Q3-B04",
   "weeks": 5,
-  "start_date": "2026-08-10",
+  "start_date": "2026-07-06",
   "summary": {
-    "goal": "Strive where it's safe, protect what isn't. Bench, pull-up and dip push hard; squat holds under the injection cap with a W3 clearance gate; sumo is demoted to a technical skill lift with no PR intent.",
+    "goal": "Bench-led strength progression: push comp bench (priority lift), keep squat & sumo climbing on heavier backoff volume, and finally cap the pull-up RPE drift.",
     "changes": [
-      "Sumo is a SKILL LIFT this block, not a strength lift — fixed 345–365 band, crisp triples, 405 not in play. No autoregulating up. Athlete's call, and the right one.",
-      "Squat runs the CAPPED track by default (455–465 @7.5). W3–W4 release to 465×3 / 480×2 @8 ONLY on doctor clearance for heavy axial load — ask at the Aug 14 visit.",
-      "Comp bench W4 is written as a RANGE with 'work up to @8' (255–270×2) — B4's fix. You peaked at @6 against an @8 allowance last block; the cap is a target to find.",
-      "Pull-up keeps the hard @8 cap (it worked) but now earns load: BW+70 → BW+85.",
-      "Dip peaks W3 at BW+90×4 @8, pulls back W4 so it doesn't stack with the bench peak.",
-      "Paused RDL load CUT ~40 lb (265–275 → 225–245, @7 cap). A heavy second hinge on D2 contradicts a back-conservative block.",
-      "Shoulder MRI read 2026-08-07: low-grade partial-thickness supraspinatus + subscapularis tears, NO full-thickness, NO fatty atrophy, labrum/biceps intact, plus mild AC degeneration and subacromial bursitis. Net reassuring — bench numbers unchanged. The bursitis/AC finding makes DIP DEPTH the primary dip variable and justifies the @7 overhead cap."
+      "Real loads: peaks anchored on your B3 log (squat 480×2 @8 → e1RM 512), not the old conservative sheet.",
+      "Squat W4 peak set to 485×2 @8 (clean gym PR double, ~517 e1RM) with an OPTIONAL 495×1 if it flies — athlete confidence call: 495 has only ever been a comp single, never a gym lift.",
+      "Backoff volume matched to your logged norm (not a flat guess): squat 4·4·4·3·3, sumo 3·3·3·2·3, comp bench 4·4·4·3·3 backoff sets W1–W5 — tapering one at the peak like you already do. Bench gets +1 as the priority lift.",
+      "Pull-up gets a HARD @8 cap and conservative loads (top BW+80×3) — deliberately breaking the @9+ drift. Earn weight with reps, don't add load until RPE drops.",
+      "Dip peaks W3 (BW+85), pulls back W4 so it doesn't stack with the comp-bench peak (horizontal-press overlap).",
+      "W1 opens @6–7 (not a deload) since B3 W5 was a real deload."
     ],
     "accessory_changes": [
-      "NEW: Chest Supported Incline Row (D4) — replaces Meadows Row. Same upper-back target, zero lumbar load on your deadlift day. Expands mid-back without loading the spine.",
-      "RE-INTRODUCED: Weighted Back Extension (D4) — your request. Erector capacity with no spinal compression. Starting 45 lb, not 90; the injections still mask pain.",
-      "SECONDARY ROTATION (1): squat 3-1-0 Tempo → Paused Low-bar Squat. Bench (Spoto) and deadlift (Paused RDL) secondaries HELD — Spoto is mid-progress, Paused RDL grooves the hitch fix.",
-      "OUT: Iso-Lateral Row — you logged it 1/4 in B4, and on D1 it pre-fatigued Tuesday's pull-up (day-interference violation). Mid-back volume now comes from D3/D4.",
-      "OUT: Hip Adduction — flat at 115 for months, and adductors on D3 pre-fatigue Friday sumo.",
-      "MOVED: Face Pull D4 → D3, so the shoulder-health cluster sits on dip day and D3 carries nothing that pre-fatigues Friday's sumo.",
-      "RE-ANCHORED from the log (sheet-load-sync): Leg Extension 90→140, Reverse Pec Deck 45→100, DB Shoulder Press 50→70, Concentration Curl 25→43, Incline DB Press 50→65."
+      "NEW: Incline DB Press (D4) — upper-chest volume for the bench push; replaces Weighted Back Extension (erectors redundant with heavy sumo + 4-set backoff).",
+      "NEW: Hanging Leg Raise (D2) — direct core/bracing for squat & sumo; replaces Seated Leg Curl (posterior already hit by same-day Paused RDL).",
+      "ROTATION: Rear Delt Fly → Reverse Pec Deck (D3) — same rear-delt target, machine variant, shoulder-friendlier.",
+      "SECONDARY ROTATION (rule secondary-rotation): Bench CGB → Spoto Bench Press (D4) — dead-stop pause ~1in off chest trains the off-chest sticking point; CGB ran 3 straight blocks. Loads anchored on your Spoto log (205–225 @6–7), @8 cap.",
+      "SECONDARY ROTATION: Squat Paused → 3-1-0 Tempo Squat (D3) — 3s eccentric + 1s pause for novel stimulus (paused plateaued ~385); ~40 lb under paused, @7 cap protects Fri sumo. Deadlift secondary HELD at Paused RDL — grooves the tall-lockout/no-hitch cue, a live weak point.",
+      "Everything else carries over from B3."
     ]
   },
   "days": [
@@ -31,12 +29,12 @@
     },
     {
       "label": "D2",
-      "focus": "WPU + Hinge Secondary",
+      "focus": "WPU + Sumo Acc",
       "weekday": "Tue"
     },
     {
       "label": "D3",
-      "focus": "Dip + Squat Secondary",
+      "focus": "Dip + Squat Acc",
       "weekday": "Thu"
     },
     {
@@ -52,7 +50,7 @@
       "exercises": [
         {
           "name": "Low-bar Squat",
-          "notes": "Top set @7. Calibration — open easy.",
+          "notes": "Top set @7. 435×4.",
           "sets": [
             {
               "type": "normal",
@@ -64,7 +62,7 @@
         },
         {
           "name": "Low-bar Squat",
-          "notes": "Backoff — 4 sets @6.",
+          "notes": "Backoff — 4 sets @6.5.",
           "sets": [
             {
               "type": "normal",
@@ -94,564 +92,594 @@
         },
         {
           "name": "Comp Bench",
-          "notes": "Top @7. PRIORITY LIFT — strive. ≤3/10 shoulder pain, always. MRI (2026-08-07) confirms low-grade partial tears, no full-thickness, no fatty atrophy — the strive is supported.",
+          "notes": "Top @7 CAP (shoulder: RPE8 ceiling, ≤3/10 pain). 220×4.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 99.8,
+              "reps": 4,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Comp Bench",
+          "notes": "Backoff — 4 sets @6.5.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 88.5,
+              "reps": 5,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 88.5,
+              "reps": 5,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 88.5,
+              "reps": 5,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 88.5,
+              "reps": 5,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Iso-Lateral Row",
+          "notes": "@7. Upper-back density → bench stability.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 68.0,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 68.0,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 68.0,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Tricep Pushdown",
+          "notes": "@7-8. Bench lockout.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 22.7,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.7,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.7,
+              "reps": 12,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Leg Extension",
+          "notes": "@7-8. 3s eccentric. Quad for squat.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 40.8,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 40.8,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 40.8,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "day": "D2",
+      "exercises": [
+        {
+          "name": "Weighted Pull-up",
+          "notes": "Top set @7. BW+65×4.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 29.5,
+              "reps": 4,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Weighted Pull-up",
+          "notes": "Backoff — 3 sets @6.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 6,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 6,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 6,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Paused RDL",
+          "notes": "@6.5. Tall lockout, no hitch. 4 sets.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 120.2,
+              "reps": 6,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 120.2,
+              "reps": 6,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 120.2,
+              "reps": 6,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 120.2,
+              "reps": 6,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "DB Shoulder Press",
+          "notes": "@7 CAP. OHP above 7.5 flares shoulder (B1).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 22.7,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.7,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.7,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Concentration Curl",
+          "notes": "@7-8. Elbow-safe biceps for pull.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 11.3,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 11.3,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 11.3,
+              "reps": 12,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Hanging Leg Raise",
+          "notes": "NEW. Bodyweight core/bracing for squat & sumo. Add weight when 3×12 is easy.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 12,
+              "rpe": 7.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "day": "D3",
+      "exercises": [
+        {
+          "name": "Weighted Dip",
+          "notes": "@7. Controlled depth, no grind (shoulder). 4 sets.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 24.9,
+              "reps": 6,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.9,
+              "reps": 6,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.9,
+              "reps": 6,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.9,
+              "reps": 6,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "3-1-0 Tempo Squat",
+          "notes": "ROTATED-IN (was Paused Squat). 3-1-0 tempo: 3s ecc, 1s pause. Top @6. 345×4. @7 CAP — protects Fri sumo.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 156.5,
+              "reps": 4,
+              "rpe": 6.0
+            }
+          ]
+        },
+        {
+          "name": "3-1-0 Tempo Squat",
+          "notes": "Backoff — 2 sets @6.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 138.3,
+              "reps": 4,
+              "rpe": 6.0
+            },
+            {
+              "type": "normal",
+              "weight_kg": 138.3,
+              "reps": 4,
+              "rpe": 6.0
+            }
+          ]
+        },
+        {
+          "name": "Lat Pulldown",
+          "notes": "@7-8. Vertical pull volume → WPU chin clearance.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 81.6,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 81.6,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 81.6,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Hip Adduction",
+          "notes": "@7-8. Adductor → squat/sumo stability. Dialed at ~115.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 52.2,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.2,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.2,
+              "reps": 12,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Reverse Pec Deck",
+          "notes": "ROTATION (was Rear Delt Fly). Same rear-delt target, machine — shoulder-friendly.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 15,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 15,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 15,
+              "rpe": 7.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "day": "D4",
+      "exercises": [
+        {
+          "name": "Sumo Deadlift",
+          "notes": "Top @6. 345×4 — durable L5-S1 band (2026-07-22). 405 = hard ceiling; never grind — rack on back rounding / bar-speed drop. Log next-day back check.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 156.5,
+              "reps": 4,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Sumo Deadlift",
+          "notes": "Backoff — 3 sets @6. 295×4.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 133.8,
+              "reps": 4,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 133.8,
+              "reps": 4,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 133.8,
+              "reps": 4,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Spoto Bench Press",
+          "notes": "ROTATED-IN (was CGB). Spoto — dead-stop pause ~1in off chest → off-chest sticking point. Top @6. 205×5. @8 CAP. 3 sets.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 93.0,
+              "reps": 5,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 93.0,
+              "reps": 5,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 93.0,
+              "reps": 5,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Meadows Row",
+          "notes": "@7-8. Unilateral lat/upper-back.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 27.2,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 27.2,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 27.2,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Face Pull",
+          "notes": "@7-8 rope. Cuff/rear-delt — shoulder health.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 15.9,
+              "reps": 15,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.9,
+              "reps": 15,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.9,
+              "reps": 15,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Incline DB Press",
+          "notes": "NEW (was Weighted Back Ext). Upper-chest volume → bench push. Per-DB load.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 22.7,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.7,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.7,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "day": "D1",
+      "exercises": [
+        {
+          "name": "Low-bar Squat",
+          "notes": "Top set @7.5. 455×3.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 206.4,
+              "reps": 3,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Low-bar Squat",
+          "notes": "Backoff — 4 sets @7.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 176.9,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 176.9,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 176.9,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 176.9,
+              "reps": 4,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Comp Bench",
+          "notes": "Top @7.5 CAP (shoulder: RPE8 ceiling, ≤3/10 pain). 230×4.",
           "sets": [
             {
               "type": "normal",
               "weight_kg": 104.3,
               "reps": 4,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Comp Bench",
-          "notes": "Backoff — 4 sets @6.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 90.7,
-              "reps": 5,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 90.7,
-              "reps": 5,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 90.7,
-              "reps": 5,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 90.7,
-              "reps": 5,
-              "rpe": 6
-            }
-          ]
-        },
-        {
-          "name": "Tricep Pushdown",
-          "notes": "Lockout for bench. Log anchor 53 lb.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 24.9,
-              "reps": 12,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 24.9,
-              "reps": 12,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 24.9,
-              "reps": 12,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Leg Extension",
-          "notes": "RE-ANCHORED 90 → 140 (log median 140, max 165). The sheet was ~50 lb light all of B4.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 63.5,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 63.5,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 63.5,
-              "reps": 10,
-              "rpe": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "week": 1,
-      "day": "D2",
-      "exercises": [
-        {
-          "name": "Weighted Pull-up",
-          "notes": "Top @7. @8 is still a HARD STOP — it's what fixed this lift.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 31.8,
-              "reps": 4,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Weighted Pull-up",
-          "notes": "Backoff — 3 sets @6.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 22.7,
-              "reps": 6,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 22.7,
-              "reps": 6,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 22.7,
-              "reps": 6,
-              "rpe": 6
-            }
-          ]
-        },
-        {
-          "name": "Paused RDL",
-          "notes": "@7 CAP. Load CUT from B4's 265–275 — you are not chasing this. Grooves the tall lockout / no-hitch cue.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 102.1,
-              "reps": 6,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 102.1,
-              "reps": 6,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 102.1,
-              "reps": 6,
-              "rpe": 6
-            }
-          ]
-        },
-        {
-          "name": "DB Shoulder Press",
-          "notes": "@7 CAP — shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC — pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 → 70.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 31.8,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 31.8,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 31.8,
-              "reps": 10,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Concentration Curl",
-          "notes": "Re-anchored 25 → 43.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 19.5,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 19.5,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 19.5,
-              "reps": 10,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Hanging Leg Raise",
-          "notes": "Bodyweight bracing. Add load when 3×12 is easy.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 12,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 12,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 12,
-              "rpe": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "week": 1,
-      "day": "D3",
-      "exercises": [
-        {
-          "name": "Weighted Dip",
-          "notes": "@7. Strive this block. DEPTH IS THE PRIMARY VARIABLE — stop above the pinch point (MRI: subacromial bursitis + AC degeneration compress at the bottom). Full depth buys nothing.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 27.2,
-              "reps": 6,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 27.2,
-              "reps": 6,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 27.2,
-              "reps": 6,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 27.2,
-              "reps": 6,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Paused Low-bar Squat",
-          "notes": "@7 CAP. ROTATED IN from 3-1-0 Tempo Squat. Light — depth and position work, not a second squat session.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 152.0,
-              "reps": 4,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 152.0,
-              "reps": 4,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 152.0,
-              "reps": 4,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 152.0,
-              "reps": 4,
-              "rpe": 6
-            }
-          ]
-        },
-        {
-          "name": "Lat Pulldown",
-          "notes": "Lat width for the pull-up.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 81.6,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 81.6,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 81.6,
-              "reps": 10,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Reverse Pec Deck",
-          "notes": "RE-ANCHORED 45 → 100 (log median 100). You skipped this 4/4 in B4 — it was prescribed at less than half your working load. Posterior-cuff/scap support for the torn anterior tendons; keep it.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 45.4,
-              "reps": 12,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 45.4,
-              "reps": 12,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 45.4,
-              "reps": 12,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Face Pull",
-          "notes": "Shoulder health — LOAD-BEARING, not filler. Posterior cuff is intact while supraspinatus/subscapularis are torn, so this shares load off them. High rep, never heavy. Do not cut when short on time.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 20.4,
-              "reps": 15,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 20.4,
-              "reps": 15,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 20.4,
-              "reps": 15,
-              "rpe": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "week": 1,
-      "day": "D4",
-      "exercises": [
-        {
-          "name": "Sumo Deadlift",
-          "notes": "SKILL LIFT — not a strength lift this block. Crisp triples, tall lockout, no hitch. Do NOT autoregulate up. 365 is the block ceiling; 405 is not in play.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 156.5,
-              "reps": 3,
-              "rpe": 6
-            }
-          ]
-        },
-        {
-          "name": "Sumo Deadlift",
-          "notes": "Backoff — 3 sets @6.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 133.8,
-              "reps": 3,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 133.8,
-              "reps": 3,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 133.8,
-              "reps": 3,
-              "rpe": 6
-            }
-          ]
-        },
-        {
-          "name": "Spoto Bench Press",
-          "notes": "@8 CAP. HELD as the bench secondary — it added +35 lb across B4 and bench is the strive lift; rotating it now would break something that's working.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 97.5,
-              "reps": 5,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 97.5,
-              "reps": 5,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 97.5,
-              "reps": 5,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Chest Supported Incline Row",
-          "notes": "NEW — replaces Meadows Row. Same target, ZERO lumbar load (chest supported) on your deadlift day. First exposure: 50 lb/hand is an estimate, the weekly log sync will correct it.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 22.7,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 22.7,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 22.7,
-              "reps": 10,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Incline DB Press",
-          "notes": "Upper-chest volume for bench. Re-anchored 50 → 65. (NOT new — 66 logged sessions.)",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 29.5,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 29.5,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 29.5,
-              "reps": 10,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Weighted Back Extension",
-          "notes": "RE-INTRODUCED at your request. Erector capacity with NO spinal compression — the safe way to train the low back. Starting 45, not 90: the injections are still masking pain. Build to 90 in B6.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 20.4,
-              "reps": 12,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 20.4,
-              "reps": 12,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 20.4,
-              "reps": 12,
-              "rpe": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "week": 2,
-      "day": "D1",
-      "exercises": [
-        {
-          "name": "Low-bar Squat",
-          "notes": "Top set @7.5.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 206.4,
-              "reps": 3,
-              "rpe": 7.5
-            }
-          ]
-        },
-        {
-          "name": "Low-bar Squat",
-          "notes": "Backoff — 4 sets @7.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 179.2,
-              "reps": 4,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 179.2,
-              "reps": 4,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 179.2,
-              "reps": 4,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 179.2,
-              "reps": 4,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Comp Bench",
-          "notes": "Top @7.5. Climbing.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 108.9,
-              "reps": 4,
               "rpe": 7.5
             }
           ]
@@ -662,609 +690,33 @@
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 95.3,
+              "weight_kg": 93.0,
               "reps": 5,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 95.3,
+              "weight_kg": 93.0,
               "reps": 5,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 95.3,
+              "weight_kg": 93.0,
               "reps": 5,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 95.3,
-              "reps": 5,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Tricep Pushdown",
-          "notes": "Lockout for bench. Log anchor 53 lb.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 24.9,
-              "reps": 12,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 24.9,
-              "reps": 12,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 24.9,
-              "reps": 12,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Leg Extension",
-          "notes": "RE-ANCHORED 90 → 140 (log median 140, max 165). The sheet was ~50 lb light all of B4.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 63.5,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 63.5,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 63.5,
-              "reps": 10,
-              "rpe": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "week": 2,
-      "day": "D2",
-      "exercises": [
-        {
-          "name": "Weighted Pull-up",
-          "notes": "Top @7.5.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 34.0,
-              "reps": 4,
-              "rpe": 7.5
-            }
-          ]
-        },
-        {
-          "name": "Weighted Pull-up",
-          "notes": "Backoff — 3 sets @7.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 24.9,
-              "reps": 5,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 24.9,
-              "reps": 5,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 24.9,
+              "weight_kg": 93.0,
               "reps": 5,
               "rpe": 7
             }
           ]
         },
         {
-          "name": "Paused RDL",
-          "notes": "@7 CAP. Load CUT from B4's 265–275 — you are not chasing this. Grooves the tall lockout / no-hitch cue.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 102.1,
-              "reps": 6,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 102.1,
-              "reps": 6,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 102.1,
-              "reps": 6,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "DB Shoulder Press",
-          "notes": "@7 CAP — shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC — pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 → 70.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 31.8,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 31.8,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 31.8,
-              "reps": 10,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Concentration Curl",
-          "notes": "Re-anchored 25 → 43.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 19.5,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 19.5,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 19.5,
-              "reps": 10,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Hanging Leg Raise",
-          "notes": "Bodyweight bracing. Add load when 3×12 is easy.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 12,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 12,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 12,
-              "rpe": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "week": 2,
-      "day": "D3",
-      "exercises": [
-        {
-          "name": "Weighted Dip",
-          "notes": "@7.5. Same depth rule — stop above the pinch.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 34.0,
-              "reps": 5,
-              "rpe": 7.5
-            },
-            {
-              "type": "normal",
-              "weight_kg": 34.0,
-              "reps": 5,
-              "rpe": 7.5
-            },
-            {
-              "type": "normal",
-              "weight_kg": 34.0,
-              "reps": 5,
-              "rpe": 7.5
-            },
-            {
-              "type": "normal",
-              "weight_kg": 34.0,
-              "reps": 5,
-              "rpe": 7.5
-            }
-          ]
-        },
-        {
-          "name": "Paused Low-bar Squat",
-          "notes": "@7 CAP. ROTATED IN from 3-1-0 Tempo Squat. Light — depth and position work, not a second squat session.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 156.5,
-              "reps": 4,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 156.5,
-              "reps": 4,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 156.5,
-              "reps": 4,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 156.5,
-              "reps": 4,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Lat Pulldown",
-          "notes": "Lat width for the pull-up.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 81.6,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 81.6,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 81.6,
-              "reps": 10,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Reverse Pec Deck",
-          "notes": "RE-ANCHORED 45 → 100 (log median 100). You skipped this 4/4 in B4 — it was prescribed at less than half your working load. Posterior-cuff/scap support for the torn anterior tendons; keep it.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 45.4,
-              "reps": 12,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 45.4,
-              "reps": 12,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 45.4,
-              "reps": 12,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Face Pull",
-          "notes": "Shoulder health — LOAD-BEARING, not filler. Posterior cuff is intact while supraspinatus/subscapularis are torn, so this shares load off them. High rep, never heavy. Do not cut when short on time.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 20.4,
-              "reps": 15,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 20.4,
-              "reps": 15,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 20.4,
-              "reps": 15,
-              "rpe": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "week": 2,
-      "day": "D4",
-      "exercises": [
-        {
-          "name": "Sumo Deadlift",
-          "notes": "Same load as W1 — deliberate. Groove the pattern.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 156.5,
-              "reps": 3,
-              "rpe": 6
-            }
-          ]
-        },
-        {
-          "name": "Sumo Deadlift",
-          "notes": "Backoff — 3 sets @6.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 133.8,
-              "reps": 3,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 133.8,
-              "reps": 3,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 133.8,
-              "reps": 3,
-              "rpe": 6
-            }
-          ]
-        },
-        {
-          "name": "Spoto Bench Press",
-          "notes": "@8 CAP. HELD as the bench secondary — it added +35 lb across B4 and bench is the strive lift; rotating it now would break something that's working.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 102.1,
-              "reps": 4,
-              "rpe": 7.5
-            },
-            {
-              "type": "normal",
-              "weight_kg": 102.1,
-              "reps": 4,
-              "rpe": 7.5
-            },
-            {
-              "type": "normal",
-              "weight_kg": 102.1,
-              "reps": 4,
-              "rpe": 7.5
-            }
-          ]
-        },
-        {
-          "name": "Chest Supported Incline Row",
-          "notes": "NEW — replaces Meadows Row. Same target, ZERO lumbar load (chest supported) on your deadlift day. First exposure: 50 lb/hand is an estimate, the weekly log sync will correct it.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 22.7,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 22.7,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 22.7,
-              "reps": 10,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Incline DB Press",
-          "notes": "Upper-chest volume for bench. Re-anchored 50 → 65. (NOT new — 66 logged sessions.)",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 29.5,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 29.5,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 29.5,
-              "reps": 10,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Weighted Back Extension",
-          "notes": "RE-INTRODUCED at your request. Erector capacity with NO spinal compression — the safe way to train the low back. Starting 45, not 90: the injections are still masking pain. Build to 90 in B6.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 20.4,
-              "reps": 12,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 20.4,
-              "reps": 12,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 20.4,
-              "reps": 12,
-              "rpe": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "week": 3,
-      "day": "D1",
-      "exercises": [
-        {
-          "name": "Low-bar Squat",
-          "notes": "Top @7.5 — CAPPED (injection series). If the doctor clears heavy axial load: 465×3 @7.5.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 206.4,
-              "reps": 3,
-              "rpe": 7.5
-            }
-          ]
-        },
-        {
-          "name": "Low-bar Squat",
-          "notes": "Backoff — 4 sets @7.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 183.7,
-              "reps": 4,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 183.7,
-              "reps": 4,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 183.7,
-              "reps": 4,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 183.7,
-              "reps": 4,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Comp Bench",
-          "notes": "Top @7.5 — hold. Dip peaks this week (horizontal-press overlap).",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 111.1,
-              "reps": 3,
-              "rpe": 7.5
-            }
-          ]
-        },
-        {
-          "name": "Comp Bench",
-          "notes": "Backoff — 4 sets @7.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 97.5,
-              "reps": 4,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 97.5,
-              "reps": 4,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 97.5,
-              "reps": 4,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 97.5,
-              "reps": 4,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Tricep Pushdown",
-          "notes": "Lockout for bench. Log anchor 53 lb.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 27.2,
-              "reps": 10,
-              "rpe": 7.5
-            },
-            {
-              "type": "normal",
-              "weight_kg": 27.2,
-              "reps": 10,
-              "rpe": 7.5
-            },
-            {
-              "type": "normal",
-              "weight_kg": 27.2,
-              "reps": 10,
-              "rpe": 7.5
-            }
-          ]
-        },
-        {
-          "name": "Leg Extension",
-          "notes": "RE-ANCHORED 90 → 140 (log median 140, max 165). The sheet was ~50 lb light all of B4.",
+          "name": "Iso-Lateral Row",
+          "notes": "@7. Upper-back density → bench stability.",
           "sets": [
             {
               "type": "normal",
@@ -1285,292 +737,358 @@
               "rpe": 7.5
             }
           ]
+        },
+        {
+          "name": "Tricep Pushdown",
+          "notes": "@7-8. Bench lockout.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 22.7,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.7,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.7,
+              "reps": 12,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Leg Extension",
+          "notes": "@7-8. 3s eccentric. Quad for squat.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 40.8,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 40.8,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 40.8,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
         }
       ]
     },
     {
-      "week": 3,
+      "week": 2,
       "day": "D2",
       "exercises": [
         {
           "name": "Weighted Pull-up",
-          "notes": "Top @8 — at the cap, not over it.",
+          "notes": "Top set @7.5. BW+70×4.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 36.3,
-              "reps": 3,
-              "rpe": 8
+              "weight_kg": 31.8,
+              "reps": 4,
+              "rpe": 7.5
             }
           ]
         },
         {
           "name": "Weighted Pull-up",
-          "notes": "Backoff — 3 sets @7.",
+          "notes": "Backoff — 3 sets @6.5.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 27.2,
-              "reps": 5,
-              "rpe": 7
+              "weight_kg": 22.7,
+              "reps": 6,
+              "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 27.2,
-              "reps": 5,
-              "rpe": 7
+              "weight_kg": 22.7,
+              "reps": 6,
+              "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 27.2,
-              "reps": 5,
-              "rpe": 7
+              "weight_kg": 22.7,
+              "reps": 6,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Weighted Pull-up",
+          "notes": "BW AMRAP @9. Beat W1.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 0,
+              "rpe": 9
             }
           ]
         },
         {
           "name": "Paused RDL",
-          "notes": "@7 CAP. Load CUT from B4's 265–275 — you are not chasing this. Grooves the tall lockout / no-hitch cue.",
+          "notes": "@7. Tall lockout, no hitch. 4 sets.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 111.1,
-              "reps": 5,
+              "weight_kg": 124.7,
+              "reps": 6,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 111.1,
-              "reps": 5,
+              "weight_kg": 124.7,
+              "reps": 6,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 111.1,
-              "reps": 5,
+              "weight_kg": 124.7,
+              "reps": 6,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 124.7,
+              "reps": 6,
               "rpe": 7
             }
           ]
         },
         {
           "name": "DB Shoulder Press",
-          "notes": "@7 CAP — shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC — pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 → 70.",
+          "notes": "@7 CAP. OHP above 7.5 flares shoulder (B1).",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 34.0,
-              "reps": 8,
-              "rpe": 7
+              "weight_kg": 22.7,
+              "reps": 10,
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 34.0,
-              "reps": 8,
-              "rpe": 7
+              "weight_kg": 22.7,
+              "reps": 10,
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 34.0,
-              "reps": 8,
-              "rpe": 7
+              "weight_kg": 22.7,
+              "reps": 10,
+              "rpe": 7.5
             }
           ]
         },
         {
           "name": "Concentration Curl",
-          "notes": "Re-anchored 25 → 43.",
+          "notes": "@7-8. Elbow-safe biceps for pull.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 21.8,
-              "reps": 8,
+              "weight_kg": 11.3,
+              "reps": 12,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 21.8,
-              "reps": 8,
+              "weight_kg": 11.3,
+              "reps": 12,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 21.8,
-              "reps": 8,
+              "weight_kg": 11.3,
+              "reps": 12,
               "rpe": 7.5
             }
           ]
         },
         {
           "name": "Hanging Leg Raise",
-          "notes": "Bodyweight bracing. Add load when 3×12 is easy.",
+          "notes": "NEW. Bodyweight core/bracing for squat & sumo. Add weight when 3×12 is easy.",
           "sets": [
             {
               "type": "normal",
               "weight_kg": 0.0,
               "reps": 12,
-              "rpe": 7
+              "rpe": 7.5
             },
             {
               "type": "normal",
               "weight_kg": 0.0,
               "reps": 12,
-              "rpe": 7
+              "rpe": 7.5
             },
             {
               "type": "normal",
               "weight_kg": 0.0,
               "reps": 12,
-              "rpe": 7
+              "rpe": 7.5
             }
           ]
         }
       ]
     },
     {
-      "week": 3,
+      "week": 2,
       "day": "D3",
       "exercises": [
         {
           "name": "Weighted Dip",
-          "notes": "PEAK BW+90×4 @8 — dip peaks here so it doesn't stack with the W4 bench peak. Depth still capped at pain-free; add load, not ROM.",
+          "notes": "@7.5. Controlled depth, no grind (shoulder). 4 sets.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 40.8,
-              "reps": 4,
-              "rpe": 8
+              "weight_kg": 31.8,
+              "reps": 5,
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 40.8,
-              "reps": 4,
-              "rpe": 8
+              "weight_kg": 31.8,
+              "reps": 5,
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 40.8,
-              "reps": 4,
-              "rpe": 8
+              "weight_kg": 31.8,
+              "reps": 5,
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 40.8,
-              "reps": 4,
-              "rpe": 8
+              "weight_kg": 31.8,
+              "reps": 5,
+              "rpe": 7.5
             }
           ]
         },
         {
-          "name": "Paused Low-bar Squat",
-          "notes": "@7 CAP. ROTATED IN from 3-1-0 Tempo Squat. Light — depth and position work, not a second squat session.",
+          "name": "3-1-0 Tempo Squat",
+          "notes": "ROTATED-IN (was Paused Squat). 3-1-0 tempo: 3s ecc, 1s pause. Top @6.5. 355×4. @7 CAP — protects Fri sumo.",
           "sets": [
             {
               "type": "normal",
               "weight_kg": 161.0,
-              "reps": 3,
-              "rpe": 7
+              "reps": 4,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "3-1-0 Tempo Squat",
+          "notes": "Backoff — 2 sets @6.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 142.9,
+              "reps": 4,
+              "rpe": 6.0
             },
             {
               "type": "normal",
-              "weight_kg": 161.0,
-              "reps": 3,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 161.0,
-              "reps": 3,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 161.0,
-              "reps": 3,
-              "rpe": 7
+              "weight_kg": 142.9,
+              "reps": 4,
+              "rpe": 6.0
             }
           ]
         },
         {
           "name": "Lat Pulldown",
-          "notes": "Lat width for the pull-up.",
+          "notes": "@7-8. Vertical pull volume → WPU chin clearance.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 86.2,
-              "reps": 8,
+              "weight_kg": 81.6,
+              "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 86.2,
-              "reps": 8,
+              "weight_kg": 81.6,
+              "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 86.2,
-              "reps": 8,
+              "weight_kg": 81.6,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Hip Adduction",
+          "notes": "@7-8. Adductor → squat/sumo stability. Dialed at ~115.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 52.2,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.2,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.2,
+              "reps": 12,
               "rpe": 7.5
             }
           ]
         },
         {
           "name": "Reverse Pec Deck",
-          "notes": "RE-ANCHORED 45 → 100 (log median 100). You skipped this 4/4 in B4 — it was prescribed at less than half your working load. Posterior-cuff/scap support for the torn anterior tendons; keep it.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 49.9,
-              "reps": 10,
-              "rpe": 7.5
-            },
-            {
-              "type": "normal",
-              "weight_kg": 49.9,
-              "reps": 10,
-              "rpe": 7.5
-            },
-            {
-              "type": "normal",
-              "weight_kg": 49.9,
-              "reps": 10,
-              "rpe": 7.5
-            }
-          ]
-        },
-        {
-          "name": "Face Pull",
-          "notes": "Shoulder health — LOAD-BEARING, not filler. Posterior cuff is intact while supraspinatus/subscapularis are torn, so this shares load off them. High rep, never heavy. Do not cut when short on time.",
+          "notes": "ROTATION (was Rear Delt Fly). Same rear-delt target, machine — shoulder-friendly.",
           "sets": [
             {
               "type": "normal",
               "weight_kg": 20.4,
               "reps": 15,
-              "rpe": 7
+              "rpe": 7.5
             },
             {
               "type": "normal",
               "weight_kg": 20.4,
               "reps": 15,
-              "rpe": 7
+              "rpe": 7.5
             },
             {
               "type": "normal",
               "weight_kg": 20.4,
               "reps": 15,
-              "rpe": 7
+              "rpe": 7.5
             }
           ]
         }
       ]
     },
     {
-      "week": 3,
+      "week": 2,
       "day": "D4",
       "exercises": [
         {
           "name": "Sumo Deadlift",
-          "notes": "365 = block ceiling. Stop here even if it feels easy.",
+          "notes": "Top @7. 365×3 — durable L5-S1 band. Never grind; rack on back rounding / bar-speed drop. ⚠ Thu-injection weeks: do NOT run sumo Fri 6am (~18h post-shot) — move to Sat (~42h) OR run light (backoff-position only, no top). Log next-day back check.",
           "sets": [
             {
               "type": "normal",
@@ -1582,121 +1100,715 @@
         },
         {
           "name": "Sumo Deadlift",
-          "notes": "Backoff — 3 sets @6.",
+          "notes": "Backoff — 3 sets @6. 315×4.",
           "sets": [
             {
               "type": "normal",
               "weight_kg": 142.9,
-              "reps": 3,
+              "reps": 4,
               "rpe": 6
             },
             {
               "type": "normal",
               "weight_kg": 142.9,
-              "reps": 3,
+              "reps": 4,
               "rpe": 6
             },
             {
               "type": "normal",
               "weight_kg": 142.9,
-              "reps": 3,
+              "reps": 4,
               "rpe": 6
             }
           ]
         },
         {
           "name": "Spoto Bench Press",
-          "notes": "@8 CAP. HELD as the bench secondary — it added +35 lb across B4 and bench is the strive lift; rotating it now would break something that's working.",
+          "notes": "ROTATED-IN (was CGB). Spoto — dead-stop pause ~1in off chest → off-chest sticking point. Top @7. 215×5. @8 CAP. 3 sets.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 106.6,
-              "reps": 4,
+              "weight_kg": 97.5,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 97.5,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 97.5,
+              "reps": 5,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Meadows Row",
+          "notes": "@7-8. Unilateral lat/upper-back.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 27.2,
+              "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 106.6,
-              "reps": 4,
+              "weight_kg": 27.2,
+              "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 106.6,
-              "reps": 4,
+              "weight_kg": 27.2,
+              "reps": 10,
               "rpe": 7.5
             }
           ]
         },
         {
-          "name": "Chest Supported Incline Row",
-          "notes": "NEW — replaces Meadows Row. Same target, ZERO lumbar load (chest supported) on your deadlift day. First exposure: 50 lb/hand is an estimate, the weekly log sync will correct it.",
+          "name": "Face Pull",
+          "notes": "@7-8 rope. Cuff/rear-delt — shoulder health.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 24.9,
-              "reps": 10,
+              "weight_kg": 15.9,
+              "reps": 15,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 24.9,
-              "reps": 10,
+              "weight_kg": 15.9,
+              "reps": 15,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 24.9,
-              "reps": 10,
+              "weight_kg": 15.9,
+              "reps": 15,
               "rpe": 7.5
             }
           ]
         },
         {
           "name": "Incline DB Press",
-          "notes": "Upper-chest volume for bench. Re-anchored 50 → 65. (NOT new — 66 logged sessions.)",
+          "notes": "NEW (was Weighted Back Ext). Upper-chest volume → bench push. Per-DB load.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 31.8,
-              "reps": 8,
+              "weight_kg": 22.7,
+              "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 31.8,
-              "reps": 8,
+              "weight_kg": 22.7,
+              "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 31.8,
-              "reps": 8,
+              "weight_kg": 22.7,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "day": "D1",
+      "exercises": [
+        {
+          "name": "Low-bar Squat",
+          "notes": "Top @7.5 — HELD at W2 load (back-injection cap, 2026-07-11). 455×3. Cap by load, not feel — steroid masks pain.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 206.4,
+              "reps": 3,
               "rpe": 7.5
             }
           ]
         },
         {
-          "name": "Weighted Back Extension",
-          "notes": "RE-INTRODUCED at your request. Erector capacity with NO spinal compression — the safe way to train the low back. Starting 45, not 90: the injections are still masking pain. Build to 90 in B6.",
+          "name": "Low-bar Squat",
+          "notes": "Backoff — 4 sets @7.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 183.7,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 183.7,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 183.7,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 183.7,
+              "reps": 4,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Comp Bench",
+          "notes": "Top @8 CAP (shoulder: RPE8 ceiling, ≤3/10 pain). 240×3.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 108.9,
+              "reps": 3,
+              "rpe": 8
+            }
+          ]
+        },
+        {
+          "name": "Comp Bench",
+          "notes": "Backoff — 4 sets @7.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 95.3,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 95.3,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 95.3,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 95.3,
+              "reps": 4,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Iso-Lateral Row",
+          "notes": "@7. Upper-back density → bench stability.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 72.6,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 72.6,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 72.6,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Tricep Pushdown",
+          "notes": "@7-8. Bench lockout.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 27.2,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 27.2,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 27.2,
+              "reps": 12,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Leg Extension",
+          "notes": "@7-8. 3s eccentric. Quad for squat.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 45.4,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 45.4,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 45.4,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "day": "D2",
+      "exercises": [
+        {
+          "name": "Weighted Pull-up",
+          "notes": "Top set @8. BW+75×3.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 34.0,
+              "reps": 3,
+              "rpe": 8
+            }
+          ]
+        },
+        {
+          "name": "Weighted Pull-up",
+          "notes": "Backoff — 3 sets @7.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 24.9,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.9,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.9,
+              "reps": 5,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Weighted Pull-up",
+          "notes": "BW AMRAP @9. Beat W2.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 0,
+              "rpe": 9
+            }
+          ]
+        },
+        {
+          "name": "Paused RDL",
+          "notes": "@7. Tall lockout, no hitch. 4 sets.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 129.3,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 129.3,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 129.3,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 129.3,
+              "reps": 5,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "DB Shoulder Press",
+          "notes": "@7 CAP. OHP above 7.5 flares shoulder (B1).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 24.9,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.9,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.9,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Concentration Curl",
+          "notes": "@7-8. Elbow-safe biceps for pull.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 13.6,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 13.6,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 13.6,
+              "reps": 12,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Hanging Leg Raise",
+          "notes": "NEW. Bodyweight core/bracing for squat & sumo. Add weight when 3×12 is easy.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 12,
+              "rpe": 7.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "day": "D3",
+      "exercises": [
+        {
+          "name": "Weighted Dip",
+          "notes": "@8. Controlled depth, no grind (shoulder). 4 sets. Dip PEAK this week.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 38.6,
+              "reps": 4,
+              "rpe": 8
+            },
+            {
+              "type": "normal",
+              "weight_kg": 38.6,
+              "reps": 4,
+              "rpe": 8
+            },
+            {
+              "type": "normal",
+              "weight_kg": 38.6,
+              "reps": 4,
+              "rpe": 8
+            },
+            {
+              "type": "normal",
+              "weight_kg": 38.6,
+              "reps": 4,
+              "rpe": 8
+            }
+          ]
+        },
+        {
+          "name": "3-1-0 Tempo Squat",
+          "notes": "ROTATED-IN (was Paused Squat). 3-1-0 tempo: 3s ecc, 1s pause. Top @7. 365×3. @7 CAP — protects Fri sumo.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 165.6,
+              "reps": 3,
+              "rpe": 7.0
+            }
+          ]
+        },
+        {
+          "name": "3-1-0 Tempo Squat",
+          "notes": "Backoff — 2 sets @6.5.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 147.4,
+              "reps": 3,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 147.4,
+              "reps": 3,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Lat Pulldown",
+          "notes": "@7-8. Vertical pull volume → WPU chin clearance.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 86.2,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 86.2,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 86.2,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Hip Adduction",
+          "notes": "@7-8. Adductor → squat/sumo stability. Dialed at ~115.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 52.2,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.2,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.2,
+              "reps": 12,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Reverse Pec Deck",
+          "notes": "ROTATION (was Rear Delt Fly). Same rear-delt target, machine — shoulder-friendly.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 24.9,
+              "reps": 15,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.9,
+              "reps": 15,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.9,
+              "reps": 15,
+              "rpe": 7.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "day": "D4",
+      "exercises": [
+        {
+          "name": "Sumo Deadlift",
+          "notes": "Top @7. 385×3 — durable L5-S1 band. Never grind — rack on back rounding / bar-speed drop. Log next-day back check.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 174.6,
+              "reps": 3,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Sumo Deadlift",
+          "notes": "Backoff — 3 sets @6. 325×4.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 147.4,
+              "reps": 4,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 147.4,
+              "reps": 4,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 147.4,
+              "reps": 4,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Spoto Bench Press",
+          "notes": "ROTATED-IN (was CGB). Spoto — dead-stop pause ~1in off chest → off-chest sticking point. Top @7.5. 220×4. @8 CAP. 3 sets.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 99.8,
+              "reps": 4,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 99.8,
+              "reps": 4,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 99.8,
+              "reps": 4,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Meadows Row",
+          "notes": "@7-8. Unilateral lat/upper-back.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 31.8,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 31.8,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 31.8,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Face Pull",
+          "notes": "@7-8 rope. Cuff/rear-delt — shoulder health.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 18.1,
+              "reps": 15,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.1,
+              "reps": 15,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.1,
+              "reps": 15,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Incline DB Press",
+          "notes": "NEW (was Weighted Back Ext). Upper-chest volume → bench push. Per-DB load.",
           "sets": [
             {
               "type": "normal",
               "weight_kg": 27.2,
               "reps": 10,
-              "rpe": 7
+              "rpe": 7.5
             },
             {
               "type": "normal",
               "weight_kg": 27.2,
               "reps": 10,
-              "rpe": 7
+              "rpe": 7.5
             },
             {
               "type": "normal",
               "weight_kg": 27.2,
               "reps": 10,
-              "rpe": 7
+              "rpe": 7.5
             }
           ]
         }
@@ -1708,7 +1820,7 @@
       "exercises": [
         {
           "name": "Low-bar Squat",
-          "notes": "Top @7.5 — CAPPED. If cleared: 480×2 @8. Do NOT self-release without the clearance.",
+          "notes": "Top @7.5 — CAPPED for back-injection series (2026-07-11). No 495 PR attempt this block. 465×3. Revisit on doctor clearance.",
           "sets": [
             {
               "type": "normal",
@@ -1724,19 +1836,19 @@
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 188.2,
+              "weight_kg": 192.8,
               "reps": 3,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 188.2,
+              "weight_kg": 192.8,
               "reps": 3,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 188.2,
+              "weight_kg": 192.8,
               "reps": 3,
               "rpe": 7
             }
@@ -1744,16 +1856,15 @@
         },
         {
           "name": "Comp Bench",
-          "notes": "PEAK — WORK UP TO @8. Range 255–270×2: take the heaviest double that stays ≤@8. The cap is a target to FIND, not a ceiling to sit under. Stop at @8 or 3/10 pain.",
+          "notes": "Top @8 CAP (shoulder: RPE8 ceiling, ≤3/10 pain). 250×2.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 120.2,
+              "weight_kg": 113.4,
               "reps": 2,
               "rpe": 8
             }
-          ],
-          "display_load": "255-270"
+          ]
         },
         {
           "name": "Comp Bench",
@@ -1761,67 +1872,91 @@
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 102.1,
+              "weight_kg": 97.5,
               "reps": 4,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 102.1,
+              "weight_kg": 97.5,
               "reps": 4,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 102.1,
+              "weight_kg": 97.5,
               "reps": 4,
               "rpe": 7
             }
           ]
         },
         {
+          "name": "Iso-Lateral Row",
+          "notes": "@7. Upper-back density → bench stability.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 72.6,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 72.6,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 72.6,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
           "name": "Tricep Pushdown",
-          "notes": "Lockout for bench. Log anchor 53 lb.",
+          "notes": "@7-8. Bench lockout.",
           "sets": [
             {
               "type": "normal",
               "weight_kg": 27.2,
-              "reps": 10,
+              "reps": 12,
               "rpe": 7.5
             },
             {
               "type": "normal",
               "weight_kg": 27.2,
-              "reps": 10,
+              "reps": 12,
               "rpe": 7.5
             },
             {
               "type": "normal",
               "weight_kg": 27.2,
-              "reps": 10,
+              "reps": 12,
               "rpe": 7.5
             }
           ]
         },
         {
           "name": "Leg Extension",
-          "notes": "RE-ANCHORED 90 → 140 (log median 140, max 165). The sheet was ~50 lb light all of B4.",
+          "notes": "@7-8. 3s eccentric. Quad for squat.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 68.0,
+              "weight_kg": 45.4,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 68.0,
+              "weight_kg": 45.4,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 68.0,
+              "weight_kg": 45.4,
               "reps": 10,
               "rpe": 7.5
             }
@@ -1835,11 +1970,11 @@
       "exercises": [
         {
           "name": "Weighted Pull-up",
-          "notes": "PEAK BW+85×3 @8. If it exceeds @8, rack it and stay at BW+80.",
+          "notes": "Top set @8. BW+80×3.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 38.6,
+              "weight_kg": 36.3,
               "reps": 3,
               "rpe": 8
             }
@@ -1851,43 +1986,61 @@
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 27.2,
+              "weight_kg": 24.9,
               "reps": 5,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 27.2,
+              "weight_kg": 24.9,
               "reps": 5,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 27.2,
+              "weight_kg": 24.9,
               "reps": 5,
               "rpe": 7
             }
           ]
         },
         {
-          "name": "Paused RDL",
-          "notes": "@7 CAP. Load CUT from B4's 265–275 — you are not chasing this. Grooves the tall lockout / no-hitch cue.",
+          "name": "Weighted Pull-up",
+          "notes": "BW AMRAP @9. Beat W3.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 111.1,
+              "weight_kg": 0.0,
+              "reps": 0,
+              "rpe": 9
+            }
+          ]
+        },
+        {
+          "name": "Paused RDL",
+          "notes": "@7. Tall lockout, no hitch. 4 sets.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 133.8,
               "reps": 5,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 111.1,
+              "weight_kg": 133.8,
               "reps": 5,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 111.1,
+              "weight_kg": 133.8,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 133.8,
               "reps": 5,
               "rpe": 7
             }
@@ -1895,73 +2048,73 @@
         },
         {
           "name": "DB Shoulder Press",
-          "notes": "@7 CAP — shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC — pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 → 70.",
+          "notes": "@7 CAP. OHP above 7.5 flares shoulder (B1).",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 34.0,
-              "reps": 8,
-              "rpe": 7
+              "weight_kg": 24.9,
+              "reps": 10,
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 34.0,
-              "reps": 8,
-              "rpe": 7
+              "weight_kg": 24.9,
+              "reps": 10,
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 34.0,
-              "reps": 8,
-              "rpe": 7
+              "weight_kg": 24.9,
+              "reps": 10,
+              "rpe": 7.5
             }
           ]
         },
         {
           "name": "Concentration Curl",
-          "notes": "Re-anchored 25 → 43.",
+          "notes": "@7-8. Elbow-safe biceps for pull.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 21.8,
-              "reps": 8,
+              "weight_kg": 13.6,
+              "reps": 12,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 21.8,
-              "reps": 8,
+              "weight_kg": 13.6,
+              "reps": 12,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 21.8,
-              "reps": 8,
+              "weight_kg": 13.6,
+              "reps": 12,
               "rpe": 7.5
             }
           ]
         },
         {
           "name": "Hanging Leg Raise",
-          "notes": "Bodyweight bracing. Add load when 3×12 is easy.",
+          "notes": "NEW. Bodyweight core/bracing for squat & sumo. Add weight when 3×12 is easy.",
           "sets": [
             {
               "type": "normal",
               "weight_kg": 0.0,
               "reps": 12,
-              "rpe": 7
+              "rpe": 7.5
             },
             {
               "type": "normal",
               "weight_kg": 0.0,
               "reps": 12,
-              "rpe": 7
+              "rpe": 7.5
             },
             {
               "type": "normal",
               "weight_kg": 0.0,
               "reps": 12,
-              "rpe": 7
+              "rpe": 7.5
             }
           ]
         }
@@ -1973,127 +2126,133 @@
       "exercises": [
         {
           "name": "Weighted Dip",
-          "notes": "Pull back @7.5 — bench peaks this week.",
+          "notes": "@7.5. Controlled depth, no grind (shoulder). 4 sets. Pulled back — comp bench peaks this week.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 36.3,
+              "weight_kg": 34.0,
               "reps": 5,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 36.3,
+              "weight_kg": 34.0,
               "reps": 5,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 36.3,
+              "weight_kg": 34.0,
               "reps": 5,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 36.3,
+              "weight_kg": 34.0,
               "reps": 5,
               "rpe": 7.5
             }
           ]
         },
         {
-          "name": "Paused Low-bar Squat",
-          "notes": "@7 CAP. ROTATED IN from 3-1-0 Tempo Squat. Light — depth and position work, not a second squat session.",
+          "name": "3-1-0 Tempo Squat",
+          "notes": "ROTATED-IN (was Paused Squat). 3-1-0 tempo: 3s ecc, 1s pause. Top @7. 375×3. @7 CAP — protects Fri sumo.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 161.0,
+              "weight_kg": 170.1,
               "reps": 3,
-              "rpe": 7
+              "rpe": 7.0
+            }
+          ]
+        },
+        {
+          "name": "3-1-0 Tempo Squat",
+          "notes": "Backoff — 2 sets @6.5.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 149.7,
+              "reps": 3,
+              "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 161.0,
+              "weight_kg": 149.7,
               "reps": 3,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 161.0,
-              "reps": 3,
-              "rpe": 7
+              "rpe": 6
             }
           ]
         },
         {
           "name": "Lat Pulldown",
-          "notes": "Lat width for the pull-up.",
+          "notes": "@7-8. Vertical pull volume → WPU chin clearance.",
           "sets": [
             {
               "type": "normal",
               "weight_kg": 86.2,
-              "reps": 8,
+              "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
               "weight_kg": 86.2,
-              "reps": 8,
+              "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
               "weight_kg": 86.2,
-              "reps": 8,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Hip Adduction",
+          "notes": "@7-8. Adductor → squat/sumo stability. Dialed at ~115.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 52.2,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.2,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.2,
+              "reps": 12,
               "rpe": 7.5
             }
           ]
         },
         {
           "name": "Reverse Pec Deck",
-          "notes": "RE-ANCHORED 45 → 100 (log median 100). You skipped this 4/4 in B4 — it was prescribed at less than half your working load. Posterior-cuff/scap support for the torn anterior tendons; keep it.",
+          "notes": "ROTATION (was Rear Delt Fly). Same rear-delt target, machine — shoulder-friendly.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 49.9,
-              "reps": 10,
+              "weight_kg": 24.9,
+              "reps": 15,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 49.9,
-              "reps": 10,
+              "weight_kg": 24.9,
+              "reps": 15,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 49.9,
-              "reps": 10,
+              "weight_kg": 24.9,
+              "reps": 15,
               "rpe": 7.5
-            }
-          ]
-        },
-        {
-          "name": "Face Pull",
-          "notes": "Shoulder health — LOAD-BEARING, not filler. Posterior cuff is intact while supraspinatus/subscapularis are torn, so this shares load off them. High rep, never heavy. Do not cut when short on time.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 20.4,
-              "reps": 15,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 20.4,
-              "reps": 15,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 20.4,
-              "reps": 15,
-              "rpe": 7
             }
           ]
         }
@@ -2105,11 +2264,11 @@
       "exercises": [
         {
           "name": "Sumo Deadlift",
-          "notes": "Hold 365 @7. No peak, no PR attempt. Back rounding or bar-speed drop = rack it.",
+          "notes": "Top @7. 405×3 — band CEILING (durable L5-S1 cap). No PR attempts, no @8+. Never grind — rack on back rounding / bar-speed drop. Log next-day back check.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 165.6,
+              "weight_kg": 183.7,
               "reps": 3,
               "rpe": 7
             }
@@ -2117,23 +2276,17 @@
         },
         {
           "name": "Sumo Deadlift",
-          "notes": "Backoff — 3 sets @6.",
+          "notes": "Backoff — 2 sets @6. 345×3.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 142.9,
+              "weight_kg": 156.5,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 142.9,
-              "reps": 3,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 142.9,
+              "weight_kg": 156.5,
               "reps": 3,
               "rpe": 6
             }
@@ -2141,97 +2294,97 @@
         },
         {
           "name": "Spoto Bench Press",
-          "notes": "@8 CAP. HELD as the bench secondary — it added +35 lb across B4 and bench is the strive lift; rotating it now would break something that's working.",
+          "notes": "ROTATED-IN (was CGB). Spoto — dead-stop pause ~1in off chest → off-chest sticking point. Top @8. 225×3. @8 CAP. 3 sets.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 111.1,
+              "weight_kg": 102.1,
               "reps": 3,
               "rpe": 8
             },
             {
               "type": "normal",
-              "weight_kg": 111.1,
+              "weight_kg": 102.1,
               "reps": 3,
               "rpe": 8
             },
             {
               "type": "normal",
-              "weight_kg": 111.1,
+              "weight_kg": 102.1,
               "reps": 3,
               "rpe": 8
             }
           ]
         },
         {
-          "name": "Chest Supported Incline Row",
-          "notes": "NEW — replaces Meadows Row. Same target, ZERO lumbar load (chest supported) on your deadlift day. First exposure: 50 lb/hand is an estimate, the weekly log sync will correct it.",
+          "name": "Meadows Row",
+          "notes": "@7-8. Unilateral lat/upper-back.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 24.9,
+              "weight_kg": 31.8,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 24.9,
+              "weight_kg": 31.8,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 24.9,
+              "weight_kg": 31.8,
               "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Face Pull",
+          "notes": "@7-8 rope. Cuff/rear-delt — shoulder health.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 18.1,
+              "reps": 15,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.1,
+              "reps": 15,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.1,
+              "reps": 15,
               "rpe": 7.5
             }
           ]
         },
         {
           "name": "Incline DB Press",
-          "notes": "Upper-chest volume for bench. Re-anchored 50 → 65. (NOT new — 66 logged sessions.)",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 31.8,
-              "reps": 8,
-              "rpe": 7.5
-            },
-            {
-              "type": "normal",
-              "weight_kg": 31.8,
-              "reps": 8,
-              "rpe": 7.5
-            },
-            {
-              "type": "normal",
-              "weight_kg": 31.8,
-              "reps": 8,
-              "rpe": 7.5
-            }
-          ]
-        },
-        {
-          "name": "Weighted Back Extension",
-          "notes": "RE-INTRODUCED at your request. Erector capacity with NO spinal compression — the safe way to train the low back. Starting 45, not 90: the injections are still masking pain. Build to 90 in B6.",
+          "notes": "NEW (was Weighted Back Ext). Upper-chest volume → bench push. Per-DB load.",
           "sets": [
             {
               "type": "normal",
               "weight_kg": 27.2,
               "reps": 10,
-              "rpe": 7
+              "rpe": 7.5
             },
             {
               "type": "normal",
               "weight_kg": 27.2,
               "reps": 10,
-              "rpe": 7
+              "rpe": 7.5
             },
             {
               "type": "normal",
               "weight_kg": 27.2,
               "reps": 10,
-              "rpe": 7
+              "rpe": 7.5
             }
           ]
         }
@@ -2243,7 +2396,7 @@
       "exercises": [
         {
           "name": "Low-bar Squat",
-          "notes": "Deload @6.",
+          "notes": "Top set @5.5. 405×3.",
           "sets": [
             {
               "type": "normal",
@@ -2255,7 +2408,7 @@
         },
         {
           "name": "Low-bar Squat",
-          "notes": "Backoff — 3 sets @6.",
+          "notes": "Backoff — 3 sets @5.",
           "sets": [
             {
               "type": "normal",
@@ -2279,11 +2432,11 @@
         },
         {
           "name": "Comp Bench",
-          "notes": "Deload @6.",
+          "notes": "Top @5.5 CAP (shoulder: RPE8 ceiling, ≤3/10 pain). 195×4.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 90.7,
+              "weight_kg": 88.5,
               "reps": 4,
               "rpe": 6
             }
@@ -2291,73 +2444,97 @@
         },
         {
           "name": "Comp Bench",
-          "notes": "Backoff — 3 sets @6.",
+          "notes": "Backoff — 3 sets @5.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 81.6,
+              "weight_kg": 79.4,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 81.6,
+              "weight_kg": 79.4,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 81.6,
+              "weight_kg": 79.4,
               "reps": 5,
               "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Iso-Lateral Row",
+          "notes": "@7. Upper-back density → bench stability.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 59.0,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 59.0,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 59.0,
+              "reps": 10,
+              "rpe": 7.5
             }
           ]
         },
         {
           "name": "Tricep Pushdown",
-          "notes": "Lockout for bench. Log anchor 53 lb.",
+          "notes": "@7-8. Bench lockout.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 20.4,
+              "weight_kg": 18.1,
               "reps": 12,
-              "rpe": 6
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 20.4,
+              "weight_kg": 18.1,
               "reps": 12,
-              "rpe": 6
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 20.4,
+              "weight_kg": 18.1,
               "reps": 12,
-              "rpe": 6
+              "rpe": 7.5
             }
           ]
         },
         {
           "name": "Leg Extension",
-          "notes": "RE-ANCHORED 90 → 140 (log median 140, max 165). The sheet was ~50 lb light all of B4.",
+          "notes": "@7-8. 3s eccentric. Quad for squat.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 49.9,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 31.8,
+              "reps": 10,
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 49.9,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 31.8,
+              "reps": 10,
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 49.9,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 31.8,
+              "reps": 10,
+              "rpe": 7.5
             }
           ]
         }
@@ -2369,11 +2546,11 @@
       "exercises": [
         {
           "name": "Weighted Pull-up",
-          "notes": "Deload @6.",
+          "notes": "Top set @5.5. BW+50×4.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 24.9,
+              "weight_kg": 22.7,
               "reps": 4,
               "rpe": 6
             }
@@ -2381,47 +2558,65 @@
         },
         {
           "name": "Weighted Pull-up",
-          "notes": "Backoff — 3 sets @6.",
+          "notes": "Backoff — 3 sets @5.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 15.9,
+              "weight_kg": 13.6,
               "reps": 6,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 15.9,
+              "weight_kg": 13.6,
               "reps": 6,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 15.9,
+              "weight_kg": 13.6,
               "reps": 6,
               "rpe": 6
             }
           ]
         },
         {
-          "name": "Paused RDL",
-          "notes": "@7 CAP. Load CUT from B4's 265–275 — you are not chasing this. Grooves the tall lockout / no-hitch cue.",
+          "name": "Weighted Pull-up",
+          "notes": "BW AMRAP @9. Beat W4.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 88.5,
+              "weight_kg": 0.0,
+              "reps": 0,
+              "rpe": 9
+            }
+          ]
+        },
+        {
+          "name": "Paused RDL",
+          "notes": "@5.5. Tall lockout, no hitch. 4 sets.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 108.9,
               "reps": 6,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 88.5,
+              "weight_kg": 108.9,
               "reps": 6,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 88.5,
+              "weight_kg": 108.9,
+              "reps": 6,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 108.9,
               "reps": 6,
               "rpe": 6
             }
@@ -2429,73 +2624,73 @@
         },
         {
           "name": "DB Shoulder Press",
-          "notes": "@7 CAP — shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC — pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 → 70.",
+          "notes": "@7 CAP. OHP above 7.5 flares shoulder (B1).",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 24.9,
+              "weight_kg": 18.1,
               "reps": 10,
-              "rpe": 6
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 24.9,
+              "weight_kg": 18.1,
               "reps": 10,
-              "rpe": 6
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 24.9,
+              "weight_kg": 18.1,
               "reps": 10,
-              "rpe": 6
+              "rpe": 7.5
             }
           ]
         },
         {
           "name": "Concentration Curl",
-          "notes": "Re-anchored 25 → 43.",
+          "notes": "@7-8. Elbow-safe biceps for pull.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 15.9,
+              "weight_kg": 9.1,
               "reps": 12,
-              "rpe": 6
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 15.9,
+              "weight_kg": 9.1,
               "reps": 12,
-              "rpe": 6
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 15.9,
+              "weight_kg": 9.1,
               "reps": 12,
-              "rpe": 6
+              "rpe": 7.5
             }
           ]
         },
         {
           "name": "Hanging Leg Raise",
-          "notes": "Bodyweight bracing. Add load when 3×12 is easy.",
+          "notes": "NEW. Bodyweight core/bracing for squat & sumo. Add weight when 3×12 is easy.",
           "sets": [
             {
               "type": "normal",
               "weight_kg": 0.0,
               "reps": 12,
-              "rpe": 7
+              "rpe": 7.5
             },
             {
               "type": "normal",
               "weight_kg": 0.0,
               "reps": 12,
-              "rpe": 7
+              "rpe": 7.5
             },
             {
               "type": "normal",
               "weight_kg": 0.0,
               "reps": 12,
-              "rpe": 7
+              "rpe": 7.5
             }
           ]
         }
@@ -2507,53 +2702,59 @@
       "exercises": [
         {
           "name": "Weighted Dip",
-          "notes": "Deload @6.",
+          "notes": "@5.5. Controlled depth, no grind (shoulder). 4 sets.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 22.7,
+              "weight_kg": 20.4,
               "reps": 6,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 22.7,
+              "weight_kg": 20.4,
               "reps": 6,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 22.7,
+              "weight_kg": 20.4,
               "reps": 6,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 22.7,
+              "weight_kg": 20.4,
               "reps": 6,
               "rpe": 6
             }
           ]
         },
         {
-          "name": "Paused Low-bar Squat",
-          "notes": "@7 CAP. ROTATED IN from 3-1-0 Tempo Squat. Light — depth and position work, not a second squat session.",
+          "name": "3-1-0 Tempo Squat",
+          "notes": "ROTATED-IN (was Paused Squat). 3-1-0 tempo: 3s ecc, 1s pause. Top @5.5. 315×4. @7 CAP — protects Fri sumo.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 138.3,
+              "weight_kg": 142.9,
+              "reps": 4,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "3-1-0 Tempo Squat",
+          "notes": "Backoff — 2 sets @5.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 129.3,
               "reps": 4,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 138.3,
-              "reps": 4,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 138.3,
+              "weight_kg": 129.3,
               "reps": 4,
               "rpe": 6
             }
@@ -2561,73 +2762,73 @@
         },
         {
           "name": "Lat Pulldown",
-          "notes": "Lat width for the pull-up.",
+          "notes": "@7-8. Vertical pull volume → WPU chin clearance.",
           "sets": [
             {
               "type": "normal",
               "weight_kg": 68.0,
-              "reps": 12,
-              "rpe": 6
+              "reps": 10,
+              "rpe": 7.5
             },
             {
               "type": "normal",
               "weight_kg": 68.0,
-              "reps": 12,
-              "rpe": 6
+              "reps": 10,
+              "rpe": 7.5
             },
             {
               "type": "normal",
               "weight_kg": 68.0,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Hip Adduction",
+          "notes": "@7-8. Adductor → squat/sumo stability. Dialed at ~115.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 43.1,
               "reps": 12,
-              "rpe": 6
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 43.1,
+              "reps": 12,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 43.1,
+              "reps": 12,
+              "rpe": 7.5
             }
           ]
         },
         {
           "name": "Reverse Pec Deck",
-          "notes": "RE-ANCHORED 45 → 100 (log median 100). You skipped this 4/4 in B4 — it was prescribed at less than half your working load. Posterior-cuff/scap support for the torn anterior tendons; keep it.",
+          "notes": "ROTATION (was Rear Delt Fly). Same rear-delt target, machine — shoulder-friendly.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 38.6,
-              "reps": 12,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 38.6,
-              "reps": 12,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 38.6,
-              "reps": 12,
-              "rpe": 6
-            }
-          ]
-        },
-        {
-          "name": "Face Pull",
-          "notes": "Shoulder health — LOAD-BEARING, not filler. Posterior cuff is intact while supraspinatus/subscapularis are torn, so this shares load off them. High rep, never heavy. Do not cut when short on time.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 20.4,
+              "weight_kg": 15.9,
               "reps": 15,
-              "rpe": 7
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 20.4,
+              "weight_kg": 15.9,
               "reps": 15,
-              "rpe": 7
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 20.4,
+              "weight_kg": 15.9,
               "reps": 15,
-              "rpe": 7
+              "rpe": 7.5
             }
           ]
         }
@@ -2639,133 +2840,133 @@
       "exercises": [
         {
           "name": "Sumo Deadlift",
-          "notes": "Deload @6.",
+          "notes": "Deload. Top @6. 345×4 — L5-S1 band. Easy, crisp, no grind.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 142.9,
-              "reps": 3,
+              "weight_kg": 156.5,
+              "reps": 4,
               "rpe": 6
             }
           ]
         },
         {
           "name": "Sumo Deadlift",
-          "notes": "Backoff — 3 sets @6.",
+          "notes": "Backoff — 3 sets @6. 295×4.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 124.7,
-              "reps": 3,
+              "weight_kg": 133.8,
+              "reps": 4,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 124.7,
-              "reps": 3,
+              "weight_kg": 133.8,
+              "reps": 4,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 124.7,
-              "reps": 3,
+              "weight_kg": 133.8,
+              "reps": 4,
               "rpe": 6
             }
           ]
         },
         {
           "name": "Spoto Bench Press",
-          "notes": "@8 CAP. HELD as the bench secondary — it added +35 lb across B4 and bench is the strive lift; rotating it now would break something that's working.",
+          "notes": "ROTATED-IN (was CGB). Spoto — dead-stop pause ~1in off chest → off-chest sticking point. Top @5.5. 185×5. @8 CAP. 3 sets.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 88.5,
+              "weight_kg": 83.9,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 88.5,
+              "weight_kg": 83.9,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 88.5,
+              "weight_kg": 83.9,
               "reps": 5,
               "rpe": 6
             }
           ]
         },
         {
-          "name": "Chest Supported Incline Row",
-          "notes": "NEW — replaces Meadows Row. Same target, ZERO lumbar load (chest supported) on your deadlift day. First exposure: 50 lb/hand is an estimate, the weekly log sync will correct it.",
+          "name": "Meadows Row",
+          "notes": "@7-8. Unilateral lat/upper-back.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 18.1,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 22.7,
+              "reps": 10,
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 18.1,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 22.7,
+              "reps": 10,
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 18.1,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 22.7,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Face Pull",
+          "notes": "@7-8 rope. Cuff/rear-delt — shoulder health.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 13.6,
+              "reps": 15,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 13.6,
+              "reps": 15,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 13.6,
+              "reps": 15,
+              "rpe": 7.5
             }
           ]
         },
         {
           "name": "Incline DB Press",
-          "notes": "Upper-chest volume for bench. Re-anchored 50 → 65. (NOT new — 66 logged sessions.)",
+          "notes": "NEW (was Weighted Back Ext). Upper-chest volume → bench push. Per-DB load.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 22.7,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 18.1,
+              "reps": 10,
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 22.7,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 18.1,
+              "reps": 10,
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 22.7,
-              "reps": 12,
-              "rpe": 6
-            }
-          ]
-        },
-        {
-          "name": "Weighted Back Extension",
-          "notes": "RE-INTRODUCED at your request. Erector capacity with NO spinal compression — the safe way to train the low back. Starting 45, not 90: the injections are still masking pain. Build to 90 in B6.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 15.9,
-              "reps": 12,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 15.9,
-              "reps": 12,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 15.9,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 18.1,
+              "reps": 10,
+              "rpe": 7.5
             }
           ]
         }

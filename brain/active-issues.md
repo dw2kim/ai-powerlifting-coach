@@ -5,13 +5,74 @@
 
 ## Shoulder (chronic)
 - **Status**: chronic, manageable, symptomatic. No acute flare as of 2026-06-13.
-- **Diagnosis on file**: 2mm partial-thickness intrasubstance subscapularis tendon tear
-  (R shoulder ultrasound, 18 Jul 2025, Richmond Hill Diagnostic Center). Biceps tendon
-  intact, rotator cuff otherwise intact, negative impingement.
-- **Clinical status (2026-06-13)**: MRI originally slated for week of 2026-06-03 was
-  **postponed, date TBD**. Family doctor seen 2026-06-12: referred to a **pain clinic for
-  a steroid injection**, and **re-ordered the MRI**. Both pending a scheduling phone call.
-  Do not finalize a permanent finding here until the MRI is read.
+
+### ✅ DEFINITIVE FINDING — R shoulder MRI without contrast, **taken 2026-07-28** (shared 2026-08-07)
+**This supersedes the 2025 ultrasound and closes the "training blind" gap open since June.** The
+re-ordered MRI (requested 2026-06-12) came through on **2026-07-28** — during B4 W4. No priors were
+available to the radiologist, so this is the baseline. Taken **before** any shoulder injection, so
+the images are clean of post-injection change.
+
+> **Impression:** Low-grade partial-thickness supraspinatus and subscapularis tears. Mild
+> degenerative changes at the acromioclavicular joint with mild subacromial-subdeltoid bursitis.
+
+| Structure | Finding | Training read |
+|---|---|---|
+| Supraspinatus | **Low-grade partial-thickness** intrasubstance tear at insertion | Real but mild. New vs the ultrasound on file. |
+| Subscapularis | **Low-grade partial-thickness** intrasubstance tear at insertion | Consistent with the 2025 ultrasound. |
+| Infraspinatus / teres minor | **Intact** | Posterior cuff is fine. |
+| **Fatty atrophy / infiltration** | **NONE** | ⭐ The best line in the report — see below. |
+| Biceps tendon | Normally situated, intact | No biceps/SLAP driver. |
+| Labrum | **Intact** | No instability component. |
+| AC joint | Mild degenerative change | Relevant to **deep dips** and end-range horizontal adduction. |
+| Subacromial-subdeltoid bursa | **Mild bursal fluid (bursitis)** | Likely the actual **pain generator**. |
+
+**Net read: better than we were planning around, not worse.**
+1. **No full-thickness tear.** The requisition's clinical history says the ultrasound reported a
+   *full-thickness* supraspinatus tear; the MRI does **not** confirm that. MRI is the more
+   definitive modality for cuff integrity, so the full-thickness worry is off the table.
+2. **No fatty atrophy or infiltration** — the single most important prognostic marker in cuff
+   pathology. Its absence means the muscle is healthy and pulling its weight; this is what
+   separates "manage and train" from "surgical problem."
+3. **Labrum and biceps intact** — nothing structurally unstable.
+
+**What it does change:** there are now **two** tendons involved instead of one, and the
+**bursitis + AC degeneration** give the symptoms a mechanism. Both live in the subacromial
+space, which is compressed at the **bottom of a dip** and in **overhead pressing** — so the
+depth and overhead caps stop being generic caution and become targeted.
+
+### ⚠️ The 2025 ultrasound and this MRI describe the same shoulder — and they disagree
+**Resolved 2026-08-07 (athlete):** there was only ever **one** ultrasound — 2025-07-18, the one on
+file. So the MRI requisition's clinical history is describing *that* study, and the two accounts of
+it conflict:
+
+| Source | Supraspinatus |
+|---|---|
+| Ultrasound as recorded on file (2025-07-18) | not torn — *"rotator cuff otherwise intact"* |
+| Same ultrasound, per the MRI requisition's clinical history | *"full-thickness and partial-thickness supraspinatus tear"* |
+| **MRI 2026-07-28 (definitive)** | **low-grade partial-thickness intrasubstance tear** |
+
+**Coach's read — the ultrasound almost certainly over-called it, and the MRI is the number to
+trust.** Two reasons, neither of which is a diagnosis:
+1. **A full-thickness tear does not spontaneously become a low-grade partial-thickness tear.**
+   Cuff tears don't heal upward. If both studies are of this shoulder, at least one read is wrong,
+   and MRI is the more definitive modality for cuff integrity (ultrasound is operator-dependent and
+   over-calls supraspinatus).
+2. **No fatty atrophy or infiltration on the MRI.** A genuine full-thickness supraspinatus tear
+   left unrepaired for ~12 months would usually start showing some. Its absence argues against
+   there ever having been one.
+
+**Practical upshot: you may have spent 13 months worrying about a tear the better scan doesn't
+support.** Nothing in the training plan changes — the MRI already governs, and B5 was built on it.
+**Worth one question to the clinic at the 2026-08-14 visit:** ask them to reconcile the ultrasound
+report against the MRI, and confirm which read they're treating from. Do not let this sit as a
+discrepancy in your chart.
+
+- **Superseded — prior diagnosis on file**: 2mm partial-thickness intrasubstance subscapularis
+  tear (R shoulder ultrasound, 18 Jul 2025, Richmond Hill Diagnostic Center), biceps intact,
+  "rotator cuff otherwise intact", negative impingement. Kept for history; **the 2026-07-28 MRI
+  governs.** Note this file's summary of that ultrasound may itself be lossy — see the table above.
+- **Clinical status**: MRI **done and read** (closes the item open since 2026-06-03). The
+  **shoulder steroid injection is still outstanding** — see below.
 - **Update (2026-07-06 → 07-07)**: the pain-clinic referral came through; the first injection
   (2026-07-03) was for the **lower back** (see Lower back section). **Confirmed 2026-07-07: the
   clinic is treating BOTH the lower back and the shoulder**, MRI re-ordered. Shoulder
@@ -35,19 +96,36 @@ blind). User accepts and proceeds under the rule below. This **overrides** the p
 - Per-session pain logging was offered and declined; the ≤3/10 ceiling is the substitute.
   Re-offer logging if escalation triggers fire.
 
-- **Active restrictions** (still in force):
+- **Active restrictions** (still in force; MRI-informed as of 2026-08-07):
   - Do not grind last reps on heavy bench. **RPE 9 cap on main bench work — structural,
-    not a suggestion.** (Note: Block 3 W2 comp bench already drifted to @8 vs a @7 plan;
-    W3 directive is hold 215 / chase RPE down — this also protects the shoulder.)
-  - Dips: limit bottom ROM to pain-free depth when shoulder is "Slight" or worse.
+    not a suggestion.** B5 runs a tighter **@8 cap** on comp bench and Spoto.
+  - **Dips: stop above the pinch point — not just "when the shoulder is cranky."** The MRI
+    names the mechanism: **subacromial-subdeltoid bursitis + AC degeneration**, both of which
+    are compressed at the **bottom** of a dip. Depth is now the primary dip variable, ahead
+    of load. Full-depth dips buy nothing here.
+  - **Overhead pressing is the most bursitis-provocative pattern in the program.** DB Shoulder
+    Press stays capped **@7**; stop the set on any **painful arc** (pain through a middle
+    range that eases at the top), which is the classic subacromial sign. If it shows up two
+    sessions running, swap to a landmine/neutral-grip press and tell me.
   - Always include shoulder-specific warmup before any press: band pull-aparts, face
-    pulls, scap push-ups. No cold benching.
+    pulls, scap push-ups. No cold benching. **Now evidence-backed, not precautionary.**
+  - **Keep the posterior-cuff/scap work** (Face Pull, Reverse Pec Deck — both on D3). With two
+    anterior/superior tendons involved and the posterior cuff intact, this work is doing real
+    protective load-sharing. Don't drop it when time is short.
   - Monitor cumulative shoulder load across bench + dip + pull-up days.
 - **Escalation** (any one trips it): pain reaches **4+/10**, OR **night pain / pain at
   rest** appears, OR pain **stops settling within 24h**, OR shoulder logs "Noticeable"
   2+ sessions in a row. On escalation: pull comp bench back to a reduced-ROM variant
-  (Spoto / CGB), reinstate per-session pain logging, trigger Shoulder Protocol, and chase
-  the MRI / pain-clinic appointment.
+  (Spoto / CGB), reinstate per-session pain logging, trigger Shoulder Protocol, and get back
+  to the clinic. ~~chase the MRI~~ — **done, read 2026-08-07.**
+- **Shoulder steroid injection — STILL OUTSTANDING, now better targeted.** Confirmed
+  2026-07-07 the clinic would treat both regions; as of 07-11 they were injecting the back
+  only. The MRI's **mild subacromial-subdeltoid bursitis** is exactly the kind of finding a
+  **subacromial injection** addresses, so this is now a specific ask, not a vague one. Raise it
+  at the **2026-08-14** visit.
+  ⚠️ **If it happens, tell me before the next session.** Rule `masked-pain-load-cap` then binds
+  bench and dip the same way it binds squat and sumo: the ≤3/10 pain rule **cannot** protect a
+  chemically quiet joint, so those lifts go to an absolute-load cap for the masking window.
 
 ## Lower back (new — 2026-07-06)
 - **Status**: symptomatic, under active pain-clinic treatment. Pain focused **mid-left lower back**.

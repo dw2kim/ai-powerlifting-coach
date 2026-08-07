@@ -377,13 +377,18 @@ def _e1rm_cell(ex: dict) -> str:
 
 
 def _role_suffix(note: str | None) -> str:
-    """Distinguish the top set / backoff / AMRAP entries of the same lift, Block-3 style."""
+    """Distinguish the top set / backoff / AMRAP entries of the same lift, Block-3 style.
+
+    Matched on whole words: a plain `"top" in note` also fires on **"stop"**, which mislabelled
+    every accessory whose cue said "stop above the pinch" / "stop on any painful arc" as a
+    top set on the athlete's Sheet.
+    """
     nl = (note or "").lower()
-    if "amrap" in nl:
+    if re.search(r"\bamrap\b", nl):
         return " (AMRAP)"
-    if "backoff" in nl:
+    if re.search(r"\bback-?off\b", nl):
         return " (backoff)"
-    if "top" in nl:
+    if re.search(r"\btop\b", nl):
         return " (top set)"
     return ""
 

@@ -163,6 +163,55 @@ same-weight sibling sets (`infer_reps`): `195x50 → 195x5`, used in the numbers
 is fixed; when a review shows a `corrected` set, mention it so he can clean the source. Same class of
 gap as `loads-from-logs`: pulled numbers are only as trustworthy as the guard around the raw log.
 
+## Shoulder MRI read (shared 2026-08-07) — closes a gap open since June
+Low-grade partial-thickness **supraspinatus AND subscapularis** tears at the insertions; mild AC
+degeneration; mild subacromial-subdeltoid bursitis. Infraspinatus/teres minor intact, biceps
+intact, labrum intact, **no fatty atrophy or infiltration**.
+**Net: better than we were planning around.** No full-thickness tear (the requisition's clinical
+history claimed the ultrasound found one — the MRI does not confirm it), and the absence of fatty
+infiltration is the key prognostic marker separating "manage and train" from "surgical problem".
+Two tendons now instead of one, but both low-grade with healthy muscle behind them.
+**No load changes followed** — the block was already conservative and the imaging supports the
+bench strive. What changed is that the shoulder rules gained a **mechanism**: the bursitis and AC
+changes both sit in the subacromial space, compressed at the **bottom of a dip** and in **overhead
+pressing**. So dip DEPTH is now the primary dip variable ahead of load, the DB Shoulder Press @7
+cap is targeted rather than generic, and Face Pull / Reverse Pec Deck are load-bearing (posterior
+cuff intact, sharing load off the torn anterior tendons) — not filler to cut when time is short.
+**Both open questions resolved 2026-08-07:** MRI taken **2026-07-28** (during B4 W4, before any
+shoulder injection). And there was only ever **one** ultrasound — the 2025-07-18 study on file — so
+the requisition's "full-thickness supraspinatus" is a *conflicting account of that same study*, not
+a second scan.
+**Conclusion: the ultrasound over-called it.** A full-thickness tear does not spontaneously
+downgrade to low-grade partial-thickness, MRI is the more definitive modality for cuff integrity
+(ultrasound over-calls supraspinatus), and the **absence of fatty atrophy** argues against there
+ever having been a full-thickness tear left unrepaired for a year. He may have spent 13 months
+worrying about something the better scan doesn't support. Training unchanged — the MRI already
+governs. Flagged for him to have the clinic reconcile the two reports on 2026-08-14.
+**Shoulder injection still outstanding**, but now a specific ask: bursitis is what a subacromial
+injection targets. If he gets one, `masked-pain-load-cap` binds bench + dip.
+
+## Block 5 designed (2026-08-07) — selective striving
+B5 (`2026-Q3-B05`, 2026-08-10 → 09-13). Theme: **strive where it's safe, protect what isn't.**
+Bench/pull-up/dip push; squat capped with a **W3 doctor-clearance gate**; **sumo demoted to a skill
+lift** (345–365 @7, crisp triples, 405 untouched, no PR intent — rule `sumo-skill-lift`).
+**Three corrections worth remembering, because he'll likely repeat them:**
+1. He believes sumo caused his MRI degeneration. It didn't — *age-typical* at 37 with 11 training
+   years, and imaging correlates poorly with pain. Correct this whenever it resurfaces; the belief
+   trends toward dropping the lift, which is the wrong call.
+2. He conflates the **2026-07-22 lumbar MRI** with shoulder imaging. There is none current — the
+   shoulder finding is a **2025-07-18 ultrasound** and the re-ordered shoulder MRI still hasn't
+   happened.
+3. He expects the squat cap to lift when the injection series ends. It lifts on **doctor
+   clearance** (`masked-pain-load-cap`) — the steroid masks pain for weeks after.
+**New rule `cap-is-a-target`:** on lifts *not* injury-capped, write the peak as an instruction +
+load range ("work up to @8, 255–270×2"), never a single number at the cap RPE. Direct answer to
+B4's @6-against-@8 bench peak.
+**Day-interference violations that ran all of B4, now fixed:** Iso-Lateral Row on D1 pre-fatigued
+Tuesday's pull-up; Hip Adduction on D3 pre-fatigued Friday's sumo. Both out. Meadows Row (bent-over
+lumbar load on deadlift day) → Chest Supported Incline Row, zero spinal load.
+**Watch for:** if a shoulder injection starts, bench needs a load cap for the masking window —
+same logic as the back. He must report it.
+
 ## Block 4 review written (2026-08-07) → reviews/2026-Q3-B04.md
 W1–W4 only (log last synced 2026-07-31; W5 deload not yet in the repo — append when it lands).
 Final actuals: Squat **511.5** (465×3 @7.5) · Comp Bench **266.7** (250×2 @6) · Sumo **467.5**
