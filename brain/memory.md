@@ -183,6 +183,21 @@ is considered not reflexive; and **complying costs almost nothing** because squa
 and sumo already demoted. Reframing compliance as cheap is what moved it.
 **And always write the light numbers down** — "train light" is not a restriction for this athlete
 (B4 W1 sumo planned 345 → pulled 425).
+**He then negotiated, and the negotiation pattern is worth reusing.** He asked for a **225 floor**
+("I'll be depressed with 185"). Granted — but as a **flat load with no ramp**, so the ceiling fell
+from the planned 245. *Higher floor, lower ceiling, zero creep.* Giving ground on the number he
+cares about while taking it back on the shape he doesn't notice is the trade that works with him.
+Declined, with reasons: **more reps** (second time asked — backs fail on fatigued reps; the lever is
+load and SETS, so squat got a 4th set instead), **DB RDL** (a second loaded hinge is what we cut;
+gave Seated Leg Curl instead — spine-free), and **"strive even more upstairs since I'll have more
+energy"** (recovery isn't one pool; the limiter on bench/dip is the shoulder, not systemic energy —
+redirected him to *hitting* @8 in W4 rather than adding to the plan).
+⚠️ **His account of the doctor escalated between messages** — "stop the heavy lifting" became "stop
+working on any of the exercises." Unresolved, flagged. Logged as an explicit **athlete override**
+(same treatment as the 2026-06-13 comp-bench decision) with hard escalation triggers: leg symptoms,
+night pain, pain not settling in 24 h, or two "sore" back checks in a row → axial work stops.
+**Watch for the account of a clinical instruction shifting on re-telling — confirm, don't average.**
+Injection agent confirmed **anesthetic only**; steroid is the doctor's next option if this fails.
 
 ## Shoulder MRI read (shared 2026-08-07) — closes a gap open since June
 Low-grade partial-thickness **supraspinatus AND subscapularis** tears at the insertions; mild AC

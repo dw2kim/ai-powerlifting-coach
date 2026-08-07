@@ -171,8 +171,40 @@ decision**, for three reasons he hadn't weighed:
 - **Numbers are written down, not left to feel** — his self-defined "light" has a documented failure
   rate (B4 W1 sumo planned 345, pulled **425**; squat backoffs **@8.5** under a cap).
 
-**Revisit 2026-08-14** with the "what does heavy mean" question. More room → raise W3–W4. The real
-squat/sumo return is **B6**, mid-September, on clearance.
+**Revisit 2026-08-14** with the "what does heavy mean" question. The real squat/sumo return is
+**B6**, mid-September, on clearance.
+
+### ⚠️ Athlete override — training against advice (2026-08-07, athlete-confirmed)
+**The instruction escalated on re-telling.** First account: *"stop doing the heavy lifting for four
+weeks."* Second, same evening: *"he said I need to completely stop working on any of the
+exercises."* Those are **different instructions** — no heavy lifting vs no exercise at all.
+❓ **UNRESOLVED — confirm which he actually said.** The plan below assumes the first; if it's the
+second, the athlete is overriding a total-rest instruction, not a load restriction.
+
+**Athlete's position:** keeps light lifting regardless, on the grounds that light work helped him
+heal a past injury under his previous powerlifting coach, and that pull-ups/dips/bench don't load
+the lower back.
+**Coach's position:** he is **substantially right on the mechanism** — a weighted pull-up
+decompresses the spine if anything, dips are near spine-neutral, and bench is only implicated via
+the arch. Graded loading also beats bed rest for low back pain. **But this is now an explicit
+decision to train against medical advice**, and it is logged as such — same treatment as the
+2026-06-13 comp-bench decision. Coach made the case for compliance twice; athlete reaffirmed.
+Proceeding under the written loads, which is the safer of the two ways to disagree with a doctor.
+
+**Conditions attached:**
+- **Tell the clinic he is still training and what he's doing.** He was *shocked* once already —
+  advice built on a false picture of rest is worth nothing to either side.
+- **Escalation — any one of these stops the axial work outright** (not "reduce", stop): new or
+  worsening **leg symptoms** (pain, numbness, tingling, weakness below the knee), **night pain or
+  pain at rest**, pain that **doesn't settle within 24 h**, or a back check of "sore" **two sumo/
+  squat days in a row**. On any of these: cut squat and sumo entirely and get back to the clinic.
+- **Athlete requests granted 2026-08-07:** 225 floor on squat/sumo (given as a *flat* load, so the
+  ceiling actually drops from the planned 245); +1 squat set.
+- **Athlete requests declined:** **more reps** (backs fail on fatigued reps — the lever is load and
+  sets, per `sumo-back-cap`, and this is the second time this suggestion has been made and
+  declined); **DB RDL** (a second loaded hinge is exactly what was cut — Seated Leg Curl added
+  instead, spine-free); **striving harder on bench/pull-up/dip** (the shoulder is the limiter
+  there, not systemic energy).
 
 ## Lower back (background — from 2026-07-06)
 - **Status**: symptomatic, under active pain-clinic treatment. Pain focused **mid-left lower back**.

@@ -48,6 +48,34 @@ extension under load** and to moderate the arch before the weight. Also flagged 
 ("he touched it and said it's okay") is **not** a clearance and doesn't override the 07-28 MRI.
 **Deliberate rule break:** `primary-backoff-volume` no longer holds for B5 squat/sumo — a medical
 restriction outranks a volume rule. Recorded as `clinical-override` so it isn't read as drift.
+**Follow-up same evening — athlete negotiated the numbers.** Three requests + two answers:
+- **"225 lb minimum for squat and sumo — I'll be depressed with 185, it's too light."** *Granted,
+  with a trade.* 225 is ~48% of his 465 and ~46% of his 485 pull — genuinely light either way, and
+  adherence is a real variable: a plan he finds demoralising is a plan he cheats. But it's given as
+  a **flat load with no weekly ramp**, so the ceiling *drops* from the planned 245. Higher floor,
+  lower ceiling, zero creep vector. Framed that way to him explicitly.
+- **"Can we do the dumbbell RDL? Just thinking out loud."** *Declined.* He already hinges on D4
+  (light sumo); a second loaded hinge on D2 is precisely what was removed. Offered the thing he
+  actually wants instead: **Seated Leg Curl** (48 logged sessions, median 115) — posterior chain
+  with zero spinal loading. Concentration Curl dropped to make room; pull-ups carry the biceps.
+- **"Can we make more reps since it's light weight?"** *Declined — second time this suggestion has
+  come up and been declined* (first was sumo, 2026-07-22). Backs fail on the **fatigued** reps:
+  brace fades and the lumbar rounds at the end of a long set no matter how light the bar. The lever
+  is **load and SETS, never reps.** Compromise that gives him the volume he's after: squat gets a
+  **4th set** of the same crisp fives, every set started fresh. Sumo stays 3×3 — it's the lift that
+  flares his back, and a deadlift set costs more lumbar exposure per rep than a squat set.
+- **"Can we strive even more on bench/pull-up/dip since I'll have more energy?"** *Declined.* The
+  strive plan is already aggressive; recovery isn't one pool you reallocate; and the limiter on
+  bench and dip is the **shoulder** (two partial tears + bursitis), which fresh legs don't help.
+  Redirected: the real prize is finally **hitting @8 in W4** instead of B4's @6.
+- **Injection agent:** athlete confirms **anesthetic only** — "steroid is the next option if this
+  isn't working." Confirms the trigger-point read and means a steroid escalation is still ahead.
+- ⚠️ **The instruction escalated on re-telling** — first "stop the heavy lifting for four weeks",
+  then "he said I need to completely stop working on any of the exercises." Those are different
+  instructions. **Unresolved; flagged for confirmation.** Logged as an explicit **athlete override**
+  in `active-issues.md` with escalation triggers, same treatment as the 2026-06-13 comp-bench call.
+  He is substantially right that pull-ups/dips/bench don't load the lumbar spine — but he is now
+  training against medical advice, and that's recorded rather than smoothed over.
 → rules: `clinical-override`, `masked-pain-load-cap` (extended to local anesthetic)
 
 ### 2026-08-07 · block, exercise, general · B5 direction — strive selectively, sumo becomes a skill lift

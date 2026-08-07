@@ -63,8 +63,8 @@ B4 proved you'll respect a cap — so this block the caps move to exactly where 
 > **D1 Mon · D2 Tue · D3 Thu · D4 Fri.** Morning training, 6–7am. D4 occasionally slips to Sat.
 > **The five primary lifts and their days do not change.** Locked at the athlete's request.
 
-- **D1 (Mon) — Squat (light) + Comp Bench**: Low-bar Squat *(3×5 light, single load)* · Comp Bench (top + backoff) · Tricep Pushdown · Leg Extension
-- **D2 (Tue) — WPU + Posterior Chain**: Weighted Pull-up (top + backoff) · **Weighted Back Extension** *(moved here, BW through W2)* · DB Shoulder Press · Concentration Curl · Hanging Leg Raise
+- **D1 (Mon) — Squat (light) + Comp Bench**: Low-bar Squat *(4×5 @225 flat)* · Comp Bench (top + backoff) · Tricep Pushdown · Leg Extension
+- **D2 (Tue) — WPU + Posterior Chain**: Weighted Pull-up (top + backoff) · **Weighted Back Extension** *(moved here, BW through W2)* · **Seated Leg Curl (NEW for the window)** · DB Shoulder Press · Hanging Leg Raise
 - **D3 (Thu) — Dip + Upper Body**: Weighted Dip · Lat Pulldown · Reverse Pec Deck · Face Pull
 - **D4 (Fri) — Sumo (light) + Spoto**: Sumo Deadlift *(3×3 light)* · Spoto Bench Press *(held)* · **Chest Supported Incline Row (NEW)** · Incline DB Press
 
@@ -77,28 +77,42 @@ B4 proved you'll respect a cap — so this block the caps move to exactly where 
 
 | Week | Squat *(light)* | Comp Bench | Sumo *(light)* | WPU | Dip |
 |------|-------|-----------|------|-----|-----|
-| W1 | **185×5 @6 ×3** | 230×4 @7 | **185×3 @6 ×3** | BW+70×4 @7 | BW+60×6 @7 |
-| W2 | **205×5 @6 ×3** | 240×4 @7.5 | **205×3 @6 ×3** | BW+75×4 @7.5 | BW+75×5 @7.5 |
-| W3 | **225×5 @6 ×3** | 245×3 @7.5 *(hold)* | **225×3 @6 ×3** | BW+80×3 @8 | **BW+90×4 @8 (dip peak)** |
-| W4 | **245×5 @6 ×3** | **255–270×2 — work up to @8** | **225×3 @6 ×3** | **BW+85×3 @8** | BW+80×5 @7.5 |
+| W1 | **225×5 @6 ×4** | 230×4 @7 | **225×3 @6 ×3** | BW+70×4 @7 | BW+60×6 @7 |
+| W2 | **225×5 @6 ×4** | 240×4 @7.5 | **225×3 @6 ×3** | BW+75×4 @7.5 | BW+75×5 @7.5 |
+| W3 | **225×5 @6 ×4** | 245×3 @7.5 *(hold)* | **225×3 @6 ×3** | BW+80×3 @8 | **BW+90×4 @8 (dip peak)** |
+| W4 | **225×5 @6 ×4** | **255–270×2 — work up to @8** | **225×3 @6 ×3** | **BW+85×3 @8** | BW+80×5 @7.5 |
 | W5 deload | **185×5 @6 ×3** | 200×4 @6 | **185×3 @6 ×3** | BW+55×4 @6 | BW+50×6 @6 |
 
-Squat tops out at **245 — about 53% of your 465.** Sumo at **225.** That is deliberate. There is no
-top-set/backoff split on the axial lifts this block: it's one light load, three sets, and the point
-is position and pattern, not stimulus.
+**225 flat, no weekly ramp.** You asked for a 225 floor because 185 would be demoralising — fair,
+and adherence matters. So you get the higher floor *and a lower ceiling*: the plan this replaces
+climbed to **245**, this one never leaves 225. Net, you're doing **less at the top** than I first
+wrote. That's the trade, and the flat line is the point — it removes the creep vector entirely.
+225 is ~48% of your 465 and ~46% of your 485 pull. There's no top-set/backoff split on the axial
+lifts: one load, sets done fresh, position and pattern rather than stimulus.
 
 **Backoff sets**: comp bench **4·4·4·3·3** (`primary-backoff-volume`), WPU 3 throughout, dip 4
 throughout. **Squat and sumo are a documented exception to `primary-backoff-volume`** — a medical
 restriction outranks a volume rule.
 
+### On "more reps, since it's light" — no. Same answer as 2026-07-22.
+You asked this before, about sumo, and the reasoning hasn't changed (it's rule `sumo-back-cap`):
+**backs get hurt on the fatigued reps.** Brace fades, lumbar rounds, and that happens at the *end*
+of a long set regardless of how light the bar is. Higher reps means more cumulative load AND more
+reps done tired — the opposite of conservative.
+
+**The lever is load and SETS, never reps.** So squat gets a **4th set** instead of longer sets —
+same crisp fives, ~33% more work, every set started fresh. Sumo stays at **3 sets of 3** and does
+*not* get the extra set: it's the lift that actually flares your back, and a deadlift set costs
+more lumbar exposure per rep than a squat set.
+
 ## The three postures
 
 ### 🔴 Sumo — SKILL LIFT, now at a skill-lift load
 Athlete's call, and I agree with it. Sumo stops being periodized like the other four. **Revised
-2026-08-07 for the medical window: 185–225, crisp triples @6.** The 345–365 band is off the table
-until B6. No autoregulating up, no PR intent, no "it felt easy so I added weight." The job is the
-tall lockout and no hitch — and at 200 lb you can actually think about the pattern instead of
-surviving the load.
+2026-08-07 for the medical window: 225 flat, crisp triples @6, 3 sets.** The 345–365 band is off
+the table until B6. No autoregulating up, no PR intent, no "it felt easy so I added weight." The
+job is the tall lockout and no hitch — and at 225 you can actually think about the pattern instead
+of surviving the load.
 
 **On the MRI question — sumo did not cause it.** The radiologist called it *age-typical mild
 multilevel degeneration*, which at 37 with 11 training years is what a normal spine looks like.
@@ -110,8 +124,8 @@ crisp pulling keeps the erectors and glutes doing protective work.
 
 ### 🟡 Squat — LIGHT for the whole block (superseded the W3 clearance gate)
 **Revised 2026-08-07.** The clearance gate is gone; the doctor's answer arrived before the gate
-did, and it was "stop heavy lifting for 4 weeks." So squat runs **185 → 245 ×5 @6, 3 sets** all
-block. Top load is ~53% of your 465.
+did, and it was "stop heavy lifting for 4 weeks." So squat runs **225 ×5 @6, 4 sets, flat** all
+block — ~48% of your 465.
 
 **There is no release track this block.** If the 2026-08-14 conversation gives explicit room —
 i.e. he tells you a specific load or category is fine — W3–W4 come up and I'll rewrite. Until
@@ -132,6 +146,17 @@ stay exactly as written.** Don't let a reassuring touch upgrade your shoulder.
 ⚠️ **Bench arch is lumbar extension under load.** A hard powerlifting arch loads the very thing
 we're protecting, and you already lose arch under fatigue (a known weak point). If the back
 complains on bench day, **moderate the arch before you moderate the weight** — and tell me.
+
+### "Can we strive even MORE upstairs, since I'll have more energy?" — no.
+Asked 2026-08-07; declining, and the reason isn't caution:
+- **The strive plan is already aggressive.** Bench to a real @8 test at 255–270×2, pull-up to
+  BW+85, dip to BW+90×4. Adding to that isn't spending spare capacity, it's overreaching.
+- **Recovery isn't one pool you reallocate.** Cutting squat volume doesn't buy bench capacity.
+  The limiter on bench and dip is your **shoulder**, and it has two partial-thickness tears and
+  bursitis. More pressing volume loads the *tears* — the fresh legs are irrelevant to it.
+- **Extra energy has a better use: hitting the target you keep missing.** B4's peak came in at
+  **@6 against an @8 allowance.** Being fresher makes it far more likely you actually find @8 in
+  W4. That's the win — **better execution of this plan, not a bigger plan.**
 
 Nothing else about your back constrains these. Bench is the priority lift and B4's one clear miss:
 you peaked **250×2 @6** against an @8 allowance. W4 is deliberately written as a **range with an
@@ -211,9 +236,11 @@ months, D3→D4 interference) · Meadows Row (bent-over lumbar load on deadlift 
 
 ## Standing orders
 
-- **Squat 185–245 ×5 @6 · Sumo 185–225 ×3 @6. These are ceilings, not starting points.** Adding
-  weight because it feels easy is the exact failure this block is written to prevent — and with
-  anesthetic in the erectors, "feels easy" is not information.
+- **Squat 225 ×5 @6 ×4 · Sumo 225 ×3 @6 ×3. Flat all block. These are ceilings, not floors.**
+  Adding weight because it feels easy is the exact failure this block is written to prevent — and
+  with anesthetic in the erectors, "feels easy" is **not information**. You asked for 225 and got
+  it; 226 is not part of the deal.
+- **Reps do not go up.** Extra work comes from an extra SET, done fresh. See above.
 - **Sumo: back rounding or bar-speed drop = rack it.** Still true at 185.
 - **Log the next-day back check** ("back fine / tight / sore") on **every squat and sumo day**.
   Zero entries in all of B4, which is why nothing can progress. **No check, no progression.**

@@ -6,8 +6,8 @@
     "goal": "Protect the back, strive upstairs. Doctor ordered 4 weeks off heavy lifting (2026-08-07) after a trigger-point injection series — so squat and sumo run LIGHT position/technique work all block and the loaded hinges are cut, while bench, pull-up and dip push the full plan.",
     "changes": [
       "MEDICAL OVERRIDE (2026-08-07): doctor was shocked the athlete is still lifting heavy and recommended 4 weeks off heavy lifting. That window (to ~2026-09-04) covers B5 W1-W4, so the axial lifts run light for the whole block. Real squat/sumo return is B6, on clearance.",
-      "Squat: 435-465 @7.5 -> LIGHT 185-245 x5 @6, 3 sets, single load. Position work, not strength.",
-      "Sumo: 345-365 @7 -> LIGHT 185-225 x3 @6. Still the skill lift, at a skill-lift load.",
+      "Squat: 435-465 @7.5 -> 225 x5 @6, 4 sets, FLAT W1-W4 (athlete asked for a 225 floor; granted as a flat load, so the ceiling drops from the planned 245). ~48% of top.",
+      "Sumo: 345-365 @7 -> 225 x3 @6, 3 sets, FLAT W1-W4. Triples stay triples — the lever is load and sets, never reps (sumo-back-cap). No 4th set: sumo is the canary.",
       "CUT for the window: Paused RDL (loaded hinge) and Paused Low-bar Squat (2nd weekly axial session). Neither is worth its risk right now.",
       "Weighted Back Extension moved D4 -> D2 and held at BODYWEIGHT through W2 — the injections go into these exact muscles. Skip it if the sites are sore.",
       "Bench, pull-up and dip UNCHANGED — full strive plan. No shoulder injection was given (2026-08-07), so masked-pain-load-cap does not bind them.",
@@ -15,6 +15,8 @@
       "Deliberate exception to primary-backoff-volume: squat/sumo volume is cut below the logged norm. A medical restriction outranks a volume rule."
     ],
     "accessory_changes": [
+      "Seated Leg Curl IN on D2 (log median 115) — posterior chain with zero spinal load, filling the hole Paused RDL left. A DB RDL was requested and DECLINED: you already hinge on D4, and a second loaded hinge is exactly what we removed.",
+      "Concentration Curl OUT for the window — makes room for the leg curl on D2. Pull-ups carry the biceps. Returns in B6.",
       "NEW: Chest Supported Incline Row (D4) — replaces Meadows Row. Same upper-back target, zero lumbar load on your deadlift day. Expands mid-back without loading the spine.",
       "RE-INTRODUCED: Weighted Back Extension (D4) — your request. Erector capacity with no spinal compression. Starting 45 lb, not 90; the injections still mask pain.",
       "SECONDARY ROTATION (1): squat 3-1-0 Tempo → Paused Low-bar Squat. Bench (Spoto) and deadlift (Paused RDL) secondaries HELD — Spoto is mid-progress, Paused RDL grooves the hitch fix.",
@@ -53,28 +55,34 @@
       "exercises": [
         {
           "name": "Low-bar Squat",
-          "notes": "LIGHT — 4-week back-protection window (doctor, 2026-08-07). ~40-53% of your top. This is POSITION WORK, not a strength set: brace, depth, crisp reps, stop the set the moment the back talks. Do NOT add weight because it feels easy — that is the whole point.",
+          "notes": "LIGHT — 4-week back-protection window (doctor, 2026-08-07). 225 FLAT, no weekly ramp: you asked for a higher floor, so you get a higher floor and a LOWER ceiling (was 185->245). ~48% of your 465. 4 sets, not more reps — extra work comes from sets done FRESH, never from fatigued reps. This is POSITION WORK. Do NOT add weight.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 83.9,
+              "weight_kg": 102.1,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 83.9,
+              "weight_kg": 102.1,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 83.9,
+              "weight_kg": 102.1,
+              "reps": 5,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 102.1,
               "reps": 5,
               "rpe": 6
             }
           ],
-          "display_load": "185",
+          "display_load": "225",
           "hold": true,
           "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light position work only until ~2026-09-04."
         },
@@ -237,6 +245,30 @@
           "hold_reason": "Bodyweight through W2 — trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this."
         },
         {
+          "name": "Seated Leg Curl",
+          "notes": "Hamstrings / posterior chain with ZERO spinal loading — this is what replaces Paused RDL for the window, and why a DB RDL was declined: you already hinge on D4 (light sumo), and a second loaded hinge is the thing we removed. Log median 115.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 49.9,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 49.9,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 49.9,
+              "reps": 12,
+              "rpe": 7
+            }
+          ]
+        },
+        {
           "name": "DB Shoulder Press",
           "notes": "@7 CAP — shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC — pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 → 70.",
           "sets": [
@@ -255,30 +287,6 @@
             {
               "type": "normal",
               "weight_kg": 31.8,
-              "reps": 10,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Concentration Curl",
-          "notes": "Re-anchored 25 → 43.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 19.5,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 19.5,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 19.5,
               "reps": 10,
               "rpe": 7
             }
@@ -424,28 +432,28 @@
       "exercises": [
         {
           "name": "Sumo Deadlift",
-          "notes": "LIGHT technique pull — back-protection window. Tall lockout, no hitch, every rep crisp. Skill lift at a skill-lift load. Back rounding or bar-speed drop = rack it. Do NOT creep.",
+          "notes": "LIGHT technique pull — 225 FLAT, 3 sets of 3, no ramp. Triples stay triples: the lever is LOAD and SETS, never reps (rule sumo-back-cap). Sumo is the lift that flares your back, so it does NOT get the 4th set squat gets. Tall lockout, no hitch, every rep crisp. Rounding or bar-speed drop = rack it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 83.9,
+              "weight_kg": 102.1,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 83.9,
+              "weight_kg": 102.1,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 83.9,
+              "weight_kg": 102.1,
               "reps": 3,
               "rpe": 6
             }
           ],
-          "display_load": "185",
+          "display_load": "225",
           "hold": true,
           "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light technique work only until ~2026-09-04."
         },
@@ -529,28 +537,34 @@
       "exercises": [
         {
           "name": "Low-bar Squat",
-          "notes": "LIGHT — 4-week back-protection window (doctor, 2026-08-07). ~40-53% of your top. This is POSITION WORK, not a strength set: brace, depth, crisp reps, stop the set the moment the back talks. Do NOT add weight because it feels easy — that is the whole point.",
+          "notes": "LIGHT — 4-week back-protection window (doctor, 2026-08-07). 225 FLAT, no weekly ramp: you asked for a higher floor, so you get a higher floor and a LOWER ceiling (was 185->245). ~48% of your 465. 4 sets, not more reps — extra work comes from sets done FRESH, never from fatigued reps. This is POSITION WORK. Do NOT add weight.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 93.0,
+              "weight_kg": 102.1,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 93.0,
+              "weight_kg": 102.1,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 93.0,
+              "weight_kg": 102.1,
+              "reps": 5,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 102.1,
               "reps": 5,
               "rpe": 6
             }
           ],
-          "display_load": "205",
+          "display_load": "225",
           "hold": true,
           "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light position work only until ~2026-09-04."
         },
@@ -713,6 +727,30 @@
           "hold_reason": "Bodyweight through W2 — trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this."
         },
         {
+          "name": "Seated Leg Curl",
+          "notes": "Hamstrings / posterior chain with ZERO spinal loading — this is what replaces Paused RDL for the window, and why a DB RDL was declined: you already hinge on D4 (light sumo), and a second loaded hinge is the thing we removed. Log median 115.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 49.9,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 49.9,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 49.9,
+              "reps": 12,
+              "rpe": 7
+            }
+          ]
+        },
+        {
           "name": "DB Shoulder Press",
           "notes": "@7 CAP — shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC — pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 → 70.",
           "sets": [
@@ -731,30 +769,6 @@
             {
               "type": "normal",
               "weight_kg": 31.8,
-              "reps": 10,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Concentration Curl",
-          "notes": "Re-anchored 25 → 43.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 19.5,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 19.5,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 19.5,
               "reps": 10,
               "rpe": 7
             }
@@ -900,28 +914,28 @@
       "exercises": [
         {
           "name": "Sumo Deadlift",
-          "notes": "LIGHT technique pull — back-protection window. Tall lockout, no hitch, every rep crisp. Skill lift at a skill-lift load. Back rounding or bar-speed drop = rack it. Do NOT creep.",
+          "notes": "LIGHT technique pull — 225 FLAT, 3 sets of 3, no ramp. Triples stay triples: the lever is LOAD and SETS, never reps (rule sumo-back-cap). Sumo is the lift that flares your back, so it does NOT get the 4th set squat gets. Tall lockout, no hitch, every rep crisp. Rounding or bar-speed drop = rack it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 93.0,
+              "weight_kg": 102.1,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 93.0,
+              "weight_kg": 102.1,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 93.0,
+              "weight_kg": 102.1,
               "reps": 3,
               "rpe": 6
             }
           ],
-          "display_load": "205",
+          "display_load": "225",
           "hold": true,
           "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light technique work only until ~2026-09-04."
         },
@@ -1005,8 +1019,14 @@
       "exercises": [
         {
           "name": "Low-bar Squat",
-          "notes": "LIGHT — 4-week back-protection window (doctor, 2026-08-07). ~40-53% of your top. This is POSITION WORK, not a strength set: brace, depth, crisp reps, stop the set the moment the back talks. Do NOT add weight because it feels easy — that is the whole point.",
+          "notes": "LIGHT — 4-week back-protection window (doctor, 2026-08-07). 225 FLAT, no weekly ramp: you asked for a higher floor, so you get a higher floor and a LOWER ceiling (was 185->245). ~48% of your 465. 4 sets, not more reps — extra work comes from sets done FRESH, never from fatigued reps. This is POSITION WORK. Do NOT add weight.",
           "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 102.1,
+              "reps": 5,
+              "rpe": 6
+            },
             {
               "type": "normal",
               "weight_kg": 102.1,
@@ -1189,6 +1209,30 @@
           "hold_reason": "Bodyweight through W2 — trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this."
         },
         {
+          "name": "Seated Leg Curl",
+          "notes": "Hamstrings / posterior chain with ZERO spinal loading — this is what replaces Paused RDL for the window, and why a DB RDL was declined: you already hinge on D4 (light sumo), and a second loaded hinge is the thing we removed. Log median 115.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 52.2,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.2,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.2,
+              "reps": 12,
+              "rpe": 7
+            }
+          ]
+        },
+        {
           "name": "DB Shoulder Press",
           "notes": "@7 CAP — shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC — pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 → 70.",
           "sets": [
@@ -1209,30 +1253,6 @@
               "weight_kg": 34.0,
               "reps": 8,
               "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Concentration Curl",
-          "notes": "Re-anchored 25 → 43.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 21.8,
-              "reps": 8,
-              "rpe": 7.5
-            },
-            {
-              "type": "normal",
-              "weight_kg": 21.8,
-              "reps": 8,
-              "rpe": 7.5
-            },
-            {
-              "type": "normal",
-              "weight_kg": 21.8,
-              "reps": 8,
-              "rpe": 7.5
             }
           ]
         },
@@ -1376,7 +1396,7 @@
       "exercises": [
         {
           "name": "Sumo Deadlift",
-          "notes": "LIGHT technique pull — back-protection window. Tall lockout, no hitch, every rep crisp. Skill lift at a skill-lift load. Back rounding or bar-speed drop = rack it. Do NOT creep.",
+          "notes": "LIGHT technique pull — 225 FLAT, 3 sets of 3, no ramp. Triples stay triples: the lever is LOAD and SETS, never reps (rule sumo-back-cap). Sumo is the lift that flares your back, so it does NOT get the 4th set squat gets. Tall lockout, no hitch, every rep crisp. Rounding or bar-speed drop = rack it.",
           "sets": [
             {
               "type": "normal",
@@ -1481,28 +1501,34 @@
       "exercises": [
         {
           "name": "Low-bar Squat",
-          "notes": "LIGHT — 4-week back-protection window (doctor, 2026-08-07). ~40-53% of your top. This is POSITION WORK, not a strength set: brace, depth, crisp reps, stop the set the moment the back talks. Do NOT add weight because it feels easy — that is the whole point.",
+          "notes": "LIGHT — 4-week back-protection window (doctor, 2026-08-07). 225 FLAT, no weekly ramp: you asked for a higher floor, so you get a higher floor and a LOWER ceiling (was 185->245). ~48% of your 465. 4 sets, not more reps — extra work comes from sets done FRESH, never from fatigued reps. This is POSITION WORK. Do NOT add weight.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 111.1,
+              "weight_kg": 102.1,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 111.1,
+              "weight_kg": 102.1,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 111.1,
+              "weight_kg": 102.1,
+              "reps": 5,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 102.1,
               "reps": 5,
               "rpe": 6
             }
           ],
-          "display_load": "245",
+          "display_load": "225",
           "hold": true,
           "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light position work only until ~2026-09-04."
         },
@@ -1660,6 +1686,30 @@
           "hold_reason": "Bodyweight through W2 — trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this."
         },
         {
+          "name": "Seated Leg Curl",
+          "notes": "Hamstrings / posterior chain with ZERO spinal loading — this is what replaces Paused RDL for the window, and why a DB RDL was declined: you already hinge on D4 (light sumo), and a second loaded hinge is the thing we removed. Log median 115.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 52.2,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.2,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.2,
+              "reps": 12,
+              "rpe": 7
+            }
+          ]
+        },
+        {
           "name": "DB Shoulder Press",
           "notes": "@7 CAP — shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC — pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 → 70.",
           "sets": [
@@ -1680,30 +1730,6 @@
               "weight_kg": 34.0,
               "reps": 8,
               "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Concentration Curl",
-          "notes": "Re-anchored 25 → 43.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 21.8,
-              "reps": 8,
-              "rpe": 7.5
-            },
-            {
-              "type": "normal",
-              "weight_kg": 21.8,
-              "reps": 8,
-              "rpe": 7.5
-            },
-            {
-              "type": "normal",
-              "weight_kg": 21.8,
-              "reps": 8,
-              "rpe": 7.5
             }
           ]
         },
@@ -1847,7 +1873,7 @@
       "exercises": [
         {
           "name": "Sumo Deadlift",
-          "notes": "LIGHT technique pull — back-protection window. Tall lockout, no hitch, every rep crisp. Skill lift at a skill-lift load. Back rounding or bar-speed drop = rack it. Do NOT creep.",
+          "notes": "LIGHT technique pull — 225 FLAT, 3 sets of 3, no ramp. Triples stay triples: the lever is LOAD and SETS, never reps (rule sumo-back-cap). Sumo is the lift that flares your back, so it does NOT get the 4th set squat gets. Tall lockout, no hitch, every rep crisp. Rounding or bar-speed drop = rack it.",
           "sets": [
             {
               "type": "normal",
@@ -1952,7 +1978,7 @@
       "exercises": [
         {
           "name": "Low-bar Squat",
-          "notes": "LIGHT — 4-week back-protection window (doctor, 2026-08-07). ~40-53% of your top. This is POSITION WORK, not a strength set: brace, depth, crisp reps, stop the set the moment the back talks. Do NOT add weight because it feels easy — that is the whole point.",
+          "notes": "LIGHT — 4-week back-protection window (doctor, 2026-08-07). 225 FLAT, no weekly ramp: you asked for a higher floor, so you get a higher floor and a LOWER ceiling (was 185->245). ~48% of your 465. 4 sets, not more reps — extra work comes from sets done FRESH, never from fatigued reps. This is POSITION WORK. Do NOT add weight.",
           "sets": [
             {
               "type": "normal",
@@ -2130,6 +2156,30 @@
           "hold_reason": "Bodyweight through W2 — trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this."
         },
         {
+          "name": "Seated Leg Curl",
+          "notes": "Hamstrings / posterior chain with ZERO spinal loading — this is what replaces Paused RDL for the window, and why a DB RDL was declined: you already hinge on D4 (light sumo), and a second loaded hinge is the thing we removed. Log median 115.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 40.8,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 40.8,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 40.8,
+              "reps": 12,
+              "rpe": 7
+            }
+          ]
+        },
+        {
           "name": "DB Shoulder Press",
           "notes": "@7 CAP — shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC — pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 → 70.",
           "sets": [
@@ -2149,30 +2199,6 @@
               "type": "normal",
               "weight_kg": 24.9,
               "reps": 10,
-              "rpe": 6
-            }
-          ]
-        },
-        {
-          "name": "Concentration Curl",
-          "notes": "Re-anchored 25 → 43.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 15.9,
-              "reps": 12,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 15.9,
-              "reps": 12,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 15.9,
-              "reps": 12,
               "rpe": 6
             }
           ]
@@ -2317,7 +2343,7 @@
       "exercises": [
         {
           "name": "Sumo Deadlift",
-          "notes": "LIGHT technique pull — back-protection window. Tall lockout, no hitch, every rep crisp. Skill lift at a skill-lift load. Back rounding or bar-speed drop = rack it. Do NOT creep.",
+          "notes": "LIGHT technique pull — 225 FLAT, 3 sets of 3, no ramp. Triples stay triples: the lever is LOAD and SETS, never reps (rule sumo-back-cap). Sumo is the lift that flares your back, so it does NOT get the 4th set squat gets. Tall lockout, no hitch, every rep crisp. Rounding or bar-speed drop = rack it.",
           "sets": [
             {
               "type": "normal",
