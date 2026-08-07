@@ -42,7 +42,11 @@ OVERRIDES: dict[str, str] = {
     "tempo squat": "3-0-0 Tempo Low Bar Squat",
     "sumo deadlift": "Sumo Deadlift",
     "paused sumo deadlift": "Paused Sumo Deadlift",
-    "paused rdl": "Romanian Deadlift (Barbell)",
+    # Custom "Paused RDL" template (60 sessions, still live) — NOT the stock barbell RDL,
+    # which he last touched 2026-02-20. Pointing here reads 275 lb instead of a stale 225.
+    "paused rdl": "Paused RDL",
+    "rdl": "Romanian Deadlift (Barbell)",
+    "romanian deadlift (rdl)": "Romanian Deadlift (Barbell)",
     "weighted pull-up": "Pull Up (Weighted)",
     "wpu": "Pull Up (Weighted)",
     "weighted dip": "Triceps Dip (Weighted)",
