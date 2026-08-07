@@ -177,9 +177,16 @@ changes both sit in the subacromial space, compressed at the **bottom of a dip**
 pressing**. So dip DEPTH is now the primary dip variable ahead of load, the DB Shoulder Press @7
 cap is targeted rather than generic, and Face Pull / Reverse Pec Deck are load-bearing (posterior
 cuff intact, sharing load off the torn anterior tendons) — not filler to cut when time is short.
-**Still open:** the MRI's date wasn't stated, and the clinical history references an ultrasound
-finding (full-thickness supraspinatus) that doesn't match the 2025-07-18 study on file — possibly
-a second ultrasound. Ask.
+**Both open questions resolved 2026-08-07:** MRI taken **2026-07-28** (during B4 W4, before any
+shoulder injection). And there was only ever **one** ultrasound — the 2025-07-18 study on file — so
+the requisition's "full-thickness supraspinatus" is a *conflicting account of that same study*, not
+a second scan.
+**Conclusion: the ultrasound over-called it.** A full-thickness tear does not spontaneously
+downgrade to low-grade partial-thickness, MRI is the more definitive modality for cuff integrity
+(ultrasound over-calls supraspinatus), and the **absence of fatty atrophy** argues against there
+ever having been a full-thickness tear left unrepaired for a year. He may have spent 13 months
+worrying about something the better scan doesn't support. Training unchanged — the MRI already
+governs. Flagged for him to have the clinic reconcile the two reports on 2026-08-14.
 **Shoulder injection still outstanding**, but now a specific ask: bursitis is what a subacromial
 injection targets. If he gets one, `masked-pain-load-cap` binds bench + dip.
 

@@ -95,8 +95,11 @@ is that the shoulder rules now have a *mechanism* instead of being generic cauti
   the anterior/superior tendons aren't — that work shares load off the torn structures. Don't
   cut them when the clock runs out.
 
-See `active-issues.md` for the full read and two open questions (the MRI's date, and which
-ultrasound the clinical history refers to — it doesn't match the one on file).
+**MRI taken 2026-07-28** (B4 W4, before any shoulder injection). The requisition's "full-thickness
+supraspinatus" line refers to the *same* 2025-07-18 ultrasound already on file — there was only one
+— so the two reports of that study conflict, and the MRI wins. Full-thickness tears don't downgrade
+to low-grade partial on their own, and the absence of fatty atrophy argues one was never there.
+**Ask the clinic on Aug 14 to reconcile the two reports.** See `active-issues.md` for the full read.
 
 ## Managing overlap (explicit, per CLAUDE.md)
 

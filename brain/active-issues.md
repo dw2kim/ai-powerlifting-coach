@@ -6,9 +6,11 @@
 ## Shoulder (chronic)
 - **Status**: chronic, manageable, symptomatic. No acute flare as of 2026-06-13.
 
-### ✅ DEFINITIVE FINDING — R shoulder MRI without contrast (shared 2026-08-07)
-**This supersedes the 2025 ultrasound and closes the "training blind" gap that has been open
-since June.** No priors were available to the radiologist, so this is the baseline.
+### ✅ DEFINITIVE FINDING — R shoulder MRI without contrast, **taken 2026-07-28** (shared 2026-08-07)
+**This supersedes the 2025 ultrasound and closes the "training blind" gap open since June.** The
+re-ordered MRI (requested 2026-06-12) came through on **2026-07-28** — during B4 W4. No priors were
+available to the radiologist, so this is the baseline. Taken **before** any shoulder injection, so
+the images are clean of post-injection change.
 
 > **Impression:** Low-grade partial-thickness supraspinatus and subscapularis tears. Mild
 > degenerative changes at the acromioclavicular joint with mild subacromial-subdeltoid bursitis.
@@ -38,16 +40,37 @@ since June.** No priors were available to the radiologist, so this is the baseli
 space, which is compressed at the **bottom of a dip** and in **overhead pressing** — so the
 depth and overhead caps stop being generic caution and become targeted.
 
-⚠️ **Two open questions for the athlete** (do not resolve by assumption):
-- **What date was this MRI taken?** Not stated in what was shared; needed to anchor the timeline.
-- **Which ultrasound is the clinical history referring to?** The one on file (2025-07-18) reported
-  *subscapularis only, rotator cuff otherwise intact* — it did **not** report a supraspinatus
-  tear, let alone a full-thickness one. Either there was a second, later ultrasound, or the
-  requisition was garbled. Worth knowing which.
+### ⚠️ The 2025 ultrasound and this MRI describe the same shoulder — and they disagree
+**Resolved 2026-08-07 (athlete):** there was only ever **one** ultrasound — 2025-07-18, the one on
+file. So the MRI requisition's clinical history is describing *that* study, and the two accounts of
+it conflict:
+
+| Source | Supraspinatus |
+|---|---|
+| Ultrasound as recorded on file (2025-07-18) | not torn — *"rotator cuff otherwise intact"* |
+| Same ultrasound, per the MRI requisition's clinical history | *"full-thickness and partial-thickness supraspinatus tear"* |
+| **MRI 2026-07-28 (definitive)** | **low-grade partial-thickness intrasubstance tear** |
+
+**Coach's read — the ultrasound almost certainly over-called it, and the MRI is the number to
+trust.** Two reasons, neither of which is a diagnosis:
+1. **A full-thickness tear does not spontaneously become a low-grade partial-thickness tear.**
+   Cuff tears don't heal upward. If both studies are of this shoulder, at least one read is wrong,
+   and MRI is the more definitive modality for cuff integrity (ultrasound is operator-dependent and
+   over-calls supraspinatus).
+2. **No fatty atrophy or infiltration on the MRI.** A genuine full-thickness supraspinatus tear
+   left unrepaired for ~12 months would usually start showing some. Its absence argues against
+   there ever having been one.
+
+**Practical upshot: you may have spent 13 months worrying about a tear the better scan doesn't
+support.** Nothing in the training plan changes — the MRI already governs, and B5 was built on it.
+**Worth one question to the clinic at the 2026-08-14 visit:** ask them to reconcile the ultrasound
+report against the MRI, and confirm which read they're treating from. Do not let this sit as a
+discrepancy in your chart.
 
 - **Superseded — prior diagnosis on file**: 2mm partial-thickness intrasubstance subscapularis
   tear (R shoulder ultrasound, 18 Jul 2025, Richmond Hill Diagnostic Center), biceps intact,
-  "rotator cuff otherwise intact", negative impingement. Kept for history; the MRI above governs.
+  "rotator cuff otherwise intact", negative impingement. Kept for history; **the 2026-07-28 MRI
+  governs.** Note this file's summary of that ultrasound may itself be lossy — see the table above.
 - **Clinical status**: MRI **done and read** (closes the item open since 2026-06-03). The
   **shoulder steroid injection is still outstanding** — see below.
 - **Update (2026-07-06 → 07-07)**: the pain-clinic referral came through; the first injection
