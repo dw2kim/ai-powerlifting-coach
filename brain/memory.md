@@ -163,6 +163,26 @@ same-weight sibling sets (`infer_reps`): `195x50 → 195x5`, used in the numbers
 is fixed; when a review shows a `corrected` set, mention it so he can clean the source. Same class of
 gap as `loads-from-logs`: pulled numbers are only as trustworthy as the guard around the raw log.
 
+## Shoulder MRI read (shared 2026-08-07) — closes a gap open since June
+Low-grade partial-thickness **supraspinatus AND subscapularis** tears at the insertions; mild AC
+degeneration; mild subacromial-subdeltoid bursitis. Infraspinatus/teres minor intact, biceps
+intact, labrum intact, **no fatty atrophy or infiltration**.
+**Net: better than we were planning around.** No full-thickness tear (the requisition's clinical
+history claimed the ultrasound found one — the MRI does not confirm it), and the absence of fatty
+infiltration is the key prognostic marker separating "manage and train" from "surgical problem".
+Two tendons now instead of one, but both low-grade with healthy muscle behind them.
+**No load changes followed** — the block was already conservative and the imaging supports the
+bench strive. What changed is that the shoulder rules gained a **mechanism**: the bursitis and AC
+changes both sit in the subacromial space, compressed at the **bottom of a dip** and in **overhead
+pressing**. So dip DEPTH is now the primary dip variable ahead of load, the DB Shoulder Press @7
+cap is targeted rather than generic, and Face Pull / Reverse Pec Deck are load-bearing (posterior
+cuff intact, sharing load off the torn anterior tendons) — not filler to cut when time is short.
+**Still open:** the MRI's date wasn't stated, and the clinical history references an ultrasound
+finding (full-thickness supraspinatus) that doesn't match the 2025-07-18 study on file — possibly
+a second ultrasound. Ask.
+**Shoulder injection still outstanding**, but now a specific ask: bursitis is what a subacromial
+injection targets. If he gets one, `masked-pain-load-cap` binds bench + dip.
+
 ## Block 5 designed (2026-08-07) — selective striving
 B5 (`2026-Q3-B05`, 2026-08-10 → 09-13). Theme: **strive where it's safe, protect what isn't.**
 Bench/pull-up/dip push; squat capped with a **W3 doctor-clearance gate**; **sumo demoted to a skill

@@ -10,7 +10,8 @@
       "Comp bench W4 is written as a RANGE with 'work up to @8' (255–270×2) — B4's fix. You peaked at @6 against an @8 allowance last block; the cap is a target to find.",
       "Pull-up keeps the hard @8 cap (it worked) but now earns load: BW+70 → BW+85.",
       "Dip peaks W3 at BW+90×4 @8, pulls back W4 so it doesn't stack with the bench peak.",
-      "Paused RDL load CUT ~40 lb (265–275 → 225–245, @7 cap). A heavy second hinge on D2 contradicts a back-conservative block."
+      "Paused RDL load CUT ~40 lb (265–275 → 225–245, @7 cap). A heavy second hinge on D2 contradicts a back-conservative block.",
+      "Shoulder MRI read 2026-08-07: low-grade partial-thickness supraspinatus + subscapularis tears, NO full-thickness, NO fatty atrophy, labrum/biceps intact, plus mild AC degeneration and subacromial bursitis. Net reassuring — bench numbers unchanged. The bursitis/AC finding makes DIP DEPTH the primary dip variable and justifies the @7 overhead cap."
     ],
     "accessory_changes": [
       "NEW: Chest Supported Incline Row (D4) — replaces Meadows Row. Same upper-back target, zero lumbar load on your deadlift day. Expands mid-back without loading the spine.",
@@ -93,7 +94,7 @@
         },
         {
           "name": "Comp Bench",
-          "notes": "Top @7. PRIORITY LIFT — strive. ≤3/10 shoulder pain, always.",
+          "notes": "Top @7. PRIORITY LIFT — strive. ≤3/10 shoulder pain, always. MRI (2026-08-07) confirms low-grade partial tears, no full-thickness, no fatty atrophy — the strive is supported.",
           "sets": [
             {
               "type": "normal",
@@ -249,7 +250,7 @@
         },
         {
           "name": "DB Shoulder Press",
-          "notes": "@7 CAP — shoulder. Re-anchored 50 → 70.",
+          "notes": "@7 CAP — shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC — pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 → 70.",
           "sets": [
             {
               "type": "normal",
@@ -327,7 +328,7 @@
       "exercises": [
         {
           "name": "Weighted Dip",
-          "notes": "@7. Strive this block. Pain-free depth only.",
+          "notes": "@7. Strive this block. DEPTH IS THE PRIMARY VARIABLE — stop above the pinch point (MRI: subacromial bursitis + AC degeneration compress at the bottom). Full depth buys nothing.",
           "sets": [
             {
               "type": "normal",
@@ -411,7 +412,7 @@
         },
         {
           "name": "Reverse Pec Deck",
-          "notes": "RE-ANCHORED 45 → 100 (log median 100). You skipped this 4/4 in B4 — it was prescribed at less than half your working load.",
+          "notes": "RE-ANCHORED 45 → 100 (log median 100). You skipped this 4/4 in B4 — it was prescribed at less than half your working load. Posterior-cuff/scap support for the torn anterior tendons; keep it.",
           "sets": [
             {
               "type": "normal",
@@ -435,7 +436,7 @@
         },
         {
           "name": "Face Pull",
-          "notes": "Shoulder health. High rep, never heavy. Moved D4 → D3 (shoulder cluster on dip day).",
+          "notes": "Shoulder health — LOAD-BEARING, not filler. Posterior cuff is intact while supraspinatus/subscapularis are torn, so this shares load off them. High rep, never heavy. Do not cut when short on time.",
           "sets": [
             {
               "type": "normal",
@@ -801,7 +802,7 @@
         },
         {
           "name": "DB Shoulder Press",
-          "notes": "@7 CAP — shoulder. Re-anchored 50 → 70.",
+          "notes": "@7 CAP — shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC — pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 → 70.",
           "sets": [
             {
               "type": "normal",
@@ -879,7 +880,7 @@
       "exercises": [
         {
           "name": "Weighted Dip",
-          "notes": "@7.5.",
+          "notes": "@7.5. Same depth rule — stop above the pinch.",
           "sets": [
             {
               "type": "normal",
@@ -963,7 +964,7 @@
         },
         {
           "name": "Reverse Pec Deck",
-          "notes": "RE-ANCHORED 45 → 100 (log median 100). You skipped this 4/4 in B4 — it was prescribed at less than half your working load.",
+          "notes": "RE-ANCHORED 45 → 100 (log median 100). You skipped this 4/4 in B4 — it was prescribed at less than half your working load. Posterior-cuff/scap support for the torn anterior tendons; keep it.",
           "sets": [
             {
               "type": "normal",
@@ -987,7 +988,7 @@
         },
         {
           "name": "Face Pull",
-          "notes": "Shoulder health. High rep, never heavy. Moved D4 → D3 (shoulder cluster on dip day).",
+          "notes": "Shoulder health — LOAD-BEARING, not filler. Posterior cuff is intact while supraspinatus/subscapularis are torn, so this shares load off them. High rep, never heavy. Do not cut when short on time.",
           "sets": [
             {
               "type": "normal",
@@ -1353,7 +1354,7 @@
         },
         {
           "name": "DB Shoulder Press",
-          "notes": "@7 CAP — shoulder. Re-anchored 50 → 70.",
+          "notes": "@7 CAP — shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC — pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 → 70.",
           "sets": [
             {
               "type": "normal",
@@ -1431,7 +1432,7 @@
       "exercises": [
         {
           "name": "Weighted Dip",
-          "notes": "PEAK BW+90×4 @8 — dip peaks here so it doesn't stack with the W4 bench peak.",
+          "notes": "PEAK BW+90×4 @8 — dip peaks here so it doesn't stack with the W4 bench peak. Depth still capped at pain-free; add load, not ROM.",
           "sets": [
             {
               "type": "normal",
@@ -1515,7 +1516,7 @@
         },
         {
           "name": "Reverse Pec Deck",
-          "notes": "RE-ANCHORED 45 → 100 (log median 100). You skipped this 4/4 in B4 — it was prescribed at less than half your working load.",
+          "notes": "RE-ANCHORED 45 → 100 (log median 100). You skipped this 4/4 in B4 — it was prescribed at less than half your working load. Posterior-cuff/scap support for the torn anterior tendons; keep it.",
           "sets": [
             {
               "type": "normal",
@@ -1539,7 +1540,7 @@
         },
         {
           "name": "Face Pull",
-          "notes": "Shoulder health. High rep, never heavy. Moved D4 → D3 (shoulder cluster on dip day).",
+          "notes": "Shoulder health — LOAD-BEARING, not filler. Posterior cuff is intact while supraspinatus/subscapularis are torn, so this shares load off them. High rep, never heavy. Do not cut when short on time.",
           "sets": [
             {
               "type": "normal",
@@ -1894,7 +1895,7 @@
         },
         {
           "name": "DB Shoulder Press",
-          "notes": "@7 CAP — shoulder. Re-anchored 50 → 70.",
+          "notes": "@7 CAP — shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC — pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 → 70.",
           "sets": [
             {
               "type": "normal",
@@ -2050,7 +2051,7 @@
         },
         {
           "name": "Reverse Pec Deck",
-          "notes": "RE-ANCHORED 45 → 100 (log median 100). You skipped this 4/4 in B4 — it was prescribed at less than half your working load.",
+          "notes": "RE-ANCHORED 45 → 100 (log median 100). You skipped this 4/4 in B4 — it was prescribed at less than half your working load. Posterior-cuff/scap support for the torn anterior tendons; keep it.",
           "sets": [
             {
               "type": "normal",
@@ -2074,7 +2075,7 @@
         },
         {
           "name": "Face Pull",
-          "notes": "Shoulder health. High rep, never heavy. Moved D4 → D3 (shoulder cluster on dip day).",
+          "notes": "Shoulder health — LOAD-BEARING, not filler. Posterior cuff is intact while supraspinatus/subscapularis are torn, so this shares load off them. High rep, never heavy. Do not cut when short on time.",
           "sets": [
             {
               "type": "normal",
@@ -2428,7 +2429,7 @@
         },
         {
           "name": "DB Shoulder Press",
-          "notes": "@7 CAP — shoulder. Re-anchored 50 → 70.",
+          "notes": "@7 CAP — shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC — pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 → 70.",
           "sets": [
             {
               "type": "normal",
@@ -2584,7 +2585,7 @@
         },
         {
           "name": "Reverse Pec Deck",
-          "notes": "RE-ANCHORED 45 → 100 (log median 100). You skipped this 4/4 in B4 — it was prescribed at less than half your working load.",
+          "notes": "RE-ANCHORED 45 → 100 (log median 100). You skipped this 4/4 in B4 — it was prescribed at less than half your working load. Posterior-cuff/scap support for the torn anterior tendons; keep it.",
           "sets": [
             {
               "type": "normal",
@@ -2608,7 +2609,7 @@
         },
         {
           "name": "Face Pull",
-          "notes": "Shoulder health. High rep, never heavy. Moved D4 → D3 (shoulder cluster on dip day).",
+          "notes": "Shoulder health — LOAD-BEARING, not filler. Posterior cuff is intact while supraspinatus/subscapularis are torn, so this shares load off them. High rep, never heavy. Do not cut when short on time.",
           "sets": [
             {
               "type": "normal",

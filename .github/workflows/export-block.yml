@@ -1,0 +1,58 @@
+name: Export block to Google Sheet
+
+# Manual: renders a block JSON to the two colour-coded tabs ("<Block N> Overview" +
+# "<Block N> Plan") on the spreadsheet in SHEETS_SPREADSHEET_ID.
+#
+# Exists because a block is normally authored in a Claude Code session that has no Google
+# credentials — the weekly review only pushes the Sheet when the load sync actually changed
+# something, so a freshly designed block needs a way to get rendered on demand.
+on:
+  workflow_dispatch:
+    inputs:
+      block_json:
+        description: "Block JSON to render"
+        type: choice
+        default: brain/current-block.json
+        options:
+          - brain/current-block.json
+          - brain/next-block-draft.json
+      final:
+        description: "Render as FINAL (no DRAFT/PROVISIONAL banners)"
+        type: boolean
+        default: true
+      dry_run:
+        description: "Print the grids to the job log instead of writing the Sheet"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: export-block
+  cancel-in-progress: false
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Render
+        env:
+          GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
+          SHEETS_SPREADSHEET_ID: ${{ secrets.SHEETS_SPREADSHEET_ID }}
+        run: |
+          ARGS="${{ inputs.block_json }}"
+          [ "${{ inputs.final }}" = "true" ] && ARGS="$ARGS --final"
+          [ "${{ inputs.dry_run }}" = "true" ] && ARGS="$ARGS --dry-run"
+          echo "Running: python -m scripts.sheets.export_block $ARGS"
+          python -m scripts.sheets.export_block $ARGS

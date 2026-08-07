@@ -75,11 +75,28 @@ you peaked **250×2 @6** against an @8 allowance. W4 is deliberately written as 
 instruction** — *work up to @8, 255–270×2, take the heaviest double that stays at or under the cap.*
 Find the cap. Don't sit two points under it.
 
-**Correction on the shoulder:** the 2026-07-22 MRI is **lumbar only** — it says nothing about
-your shoulder. The shoulder finding on file is the **2025-07-18 ultrasound** (2mm partial-thickness
-subscapularis tear), now 13 months old, and the re-ordered shoulder MRI still hasn't happened.
-You are benching on year-old imaging. That doesn't stop the strive — the ≤3/10 pain rule and the
-@8 cap are the guardrails — but don't tell yourself a recent scan cleared the shoulder.
+**Shoulder MRI is in (shared 2026-08-07) — and it supports the strive.** Low-grade
+partial-thickness supraspinatus **and** subscapularis tears, mild AC degeneration, mild
+subacromial-subdeltoid bursitis. Infraspinatus/teres minor intact, biceps intact, labrum intact,
+and **no fatty atrophy or infiltration** — the best line in the report. **No full-thickness tear**,
+despite the requisition's clinical history claiming the ultrasound found one.
+
+Net: better than what we were planning around. Two tendons instead of one, but both low-grade,
+with healthy muscle behind them. **Nothing here changes the bench numbers.** What it does change
+is that the shoulder rules now have a *mechanism* instead of being generic caution:
+
+- **Dip depth is the primary dip variable, ahead of load.** The bursitis and AC changes both sit
+  in the subacromial space, which is compressed at the **bottom** of a dip. Stop above the pinch.
+  Full depth buys you nothing and costs the bursa.
+- **DB Shoulder Press stays @7** — overhead is the most bursitis-provocative pattern you own.
+  Stop on any **painful arc** (pain mid-range that eases at the top). Two sessions running with
+  that, tell me and we swap to a neutral-grip/landmine press.
+- **Face Pull + Reverse Pec Deck are load-bearing, not filler.** Posterior cuff is intact and
+  the anterior/superior tendons aren't — that work shares load off the torn structures. Don't
+  cut them when the clock runs out.
+
+See `active-issues.md` for the full read and two open questions (the MRI's date, and which
+ultrasound the clinical history refers to — it doesn't match the one on file).
 
 ## Managing overlap (explicit, per CLAUDE.md)
 
