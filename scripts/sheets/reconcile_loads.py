@@ -29,6 +29,11 @@ SAFETY — what this will and won't touch:
   * **The anchor is a median, not a max.** The median of the last few sessions tracks the
     current working level while shrugging off one stray entry (the 1 lb back-extension set
     sitting between 90s). Loads snap to the 5 lb grid the Sheet already uses.
+  * **`hold` pins anything, including accessories.** `{"hold": true, "hold_reason": "..."}` on a
+    prescription entry means the log is not the authority for that lift — report it, never
+    rewrite it. Needed because the primaries guard misses the case where an *accessory* is
+    deliberately light: B5 holds Weighted Back Extension at bodyweight (trigger-point injections
+    went into those muscles) and the sync would otherwise have rebased it to 45 lb.
 
 CLI:
   python -m scripts.sheets.reconcile_loads                 # report only (default)
@@ -85,6 +90,26 @@ def current_week(block: dict, today: date_cls) -> int:
 
 def _working_sets(ex: dict) -> list[dict]:
     return [s for s in ex.get("sets", []) if s.get("type") != "warmup"]
+
+
+def held_exercises(block: dict) -> dict[str, str]:
+    """Names pinned by the block author: `{"hold": true, "hold_reason": "..."}` on any
+    prescription entry.
+
+    The primaries/secondaries guard is not enough on its own. An **accessory** can also be
+    deliberately under-prescribed — B5 holds Weighted Back Extension at bodyweight because
+    trigger-point injections went into those exact muscles — and without this flag the weekly
+    sync would read the log, call it a first exposure, and cheerfully rebase it to 45 lb,
+    silently undoing a medical restriction. A hold is the author saying "the log is not the
+    authority here"; only a human lifts it.
+    """
+    out: dict[str, str] = {}
+    for presc in block.get("prescriptions", []):
+        for ex in presc.get("exercises", []):
+            if ex.get("hold"):
+                name = ex.get("name", "")
+                out.setdefault(name, ex.get("hold_reason") or "held by the block author")
+    return out
 
 
 def prescribed_by_week(block: dict, name: str) -> dict[int, float]:
@@ -163,7 +188,10 @@ def _anchor(history: list[dict], n: int) -> float | None:
 
 
 def _classify(name: str, ref_lb: float | None, anchor_lb: float | None,
-              matched: bool, threshold_lb: float, threshold_pct: float) -> str:
+              matched: bool, threshold_lb: float, threshold_pct: float,
+              held: bool = False) -> str:
+    if held:
+        return "held"
     if _family(name) != "Acc" or name in PRIMARY_NAMES:
         return "review-manually"
     if anchor_lb is None:
@@ -233,6 +261,7 @@ def reconcile(block: dict, today: date_cls | None = None, *,
     index = _index_exercises(_sessions_in(window_start, today.isoformat()))
     resolver = _safe_resolver()
 
+    held = held_exercises(block)
     names: list[str] = []
     for presc in block.get("prescriptions", []):
         for ex in presc.get("exercises", []):
@@ -254,12 +283,14 @@ def reconcile(block: dict, today: date_cls | None = None, *,
         rows = hist["rows"]
         anchor_lb = _anchor(rows, anchor_sessions)
         verdict = _classify(name, ref_lb, anchor_lb, hist["matched"],
-                            threshold_lb, threshold_pct)
+                            threshold_lb, threshold_pct, held=name in held)
         drift = (anchor_lb - ref_lb) if (anchor_lb is not None and ref_lb) else None
         items.append({
             "name": name,
             "family": _family(name),
-            "adjustable": _family(name) == "Acc" and name not in PRIMARY_NAMES,
+            "adjustable": (_family(name) == "Acc" and name not in PRIMARY_NAMES
+                           and name not in held),
+            "held_reason": held.get(name),
             "verdict": verdict,
             "prescribed": {
                 "by_week": {w: _round5(lb) for w, lb in sorted(by_week.items())},
@@ -363,7 +394,7 @@ def apply_corrections(block: dict, report: dict) -> list[dict]:
 # --- Rendering -------------------------------------------------------------------------
 
 _ICON = {"drift": "📈", "first-exposure": "🆕", "review-manually": "👀",
-         "no-data": "❓", "ok": "✅", "bodyweight": "⚪"}
+         "no-data": "❓", "ok": "✅", "bodyweight": "⚪", "held": "🔒"}
 
 
 def render_md(report: dict, changes: list[dict] | None = None) -> str:
@@ -392,6 +423,8 @@ def render_md(report: dict, changes: list[dict] | None = None) -> str:
         bit = f"**{it['name']}** — sheet {sheet_s} → log {a:g} lb"
         if d is not None:
             bit += f" (**{d:+g} lb**)"
+        if it["verdict"] == "held":
+            return f"- {_ICON['held']} {bit} · **held**: {it['held_reason']}"
         prop = it.get("proposal")
         if prop:
             weeks = ", ".join(f"W{w} → {lb}" for w, lb in sorted(prop["by_week"].items()))
@@ -399,6 +432,7 @@ def render_md(report: dict, changes: list[dict] | None = None) -> str:
         return f"- {_ICON[it['verdict']]} {bit}"
 
     for verdict, heading in (
+        ("held", "HELD — pinned by the block author, sync will not touch these"),
         ("drift", "Drifted — sheet no longer matches what he trains"),
         ("first-exposure", "First exposures — placeholder loads to rebase"),
         ("review-manually", "Primaries & secondaries — reported only, never auto-adjusted"),

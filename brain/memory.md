@@ -163,6 +163,27 @@ same-weight sibling sets (`infer_reps`): `195x50 → 195x5`, used in the numbers
 is fixed; when a review shows a `corrected` set, mention it so he can clean the source. Same class of
 gap as `loads-from-logs`: pulled numbers are only as trustworthy as the guard around the raw log.
 
+## 2026-08-07 (evening) — doctor orders 4 weeks off heavy; B5 axial work rewritten light
+Pain-clinic visit: 4–5 lower-back injections, **no shoulder injection** (palpated, "it's okay"), and
+the doctor was **shocked he's still lifting heavy → stop heavy lifting for 4 weeks** (to ~09-04,
+covering B5 W1–W4). Squat → **185–245 ×5 @6**, sumo → **185–225 ×3 @6**, Paused RDL + Paused Squat
+**cut**, back extension bodyweight through W2. Bench/pull-up/dip untouched. Rule `clinical-override`.
+**The injections are probably NOT corticosteroid.** He describes "freezing" (local anesthetic) into
+4–5 sites to loosen muscle — that's a **trigger-point injection** for myofascial pain, not disc
+treatment. This repo has said "corticosteroid" since 2026-07-06 and may have been wrong all along.
+**Anesthetic masks harder than steroid** (immediate profound numbness vs gradual dulling), so
+`masked-pain-load-cap` binds more, not less.
+**How to handle him disagreeing with a doctor — the pattern worth reusing.** He said "he recommended
+completely stopping, but I kinda don't agree." Right answer was *not* to pick a side: agree on the
+principle (graded loading beats rest — he's correct), then point out **they're probably not
+disagreeing** — "heavy" to a clinician who just heard about 465 lb squats means the 465, not 185.
+The fix is to make him ask the specific question, not to overrule anyone. Two supporting arguments
+that landed: the doctor was **shocked**, i.e. he'd been planning treatment without knowing, so this
+is considered not reflexive; and **complying costs almost nothing** because squat was already capped
+and sumo already demoted. Reframing compliance as cheap is what moved it.
+**And always write the light numbers down** — "train light" is not a restriction for this athlete
+(B4 W1 sumo planned 345 → pulled 425).
+
 ## Shoulder MRI read (shared 2026-08-07) — closes a gap open since June
 Low-grade partial-thickness **supraspinatus AND subscapularis** tears at the insertions; mild AC
 degeneration; mild subacromial-subdeltoid bursitis. Infraspinatus/teres minor intact, biceps
