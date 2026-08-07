@@ -53,6 +53,13 @@ description: Design a new training block — pull context from prior block + mem
      (and primaries when useful), pull the real working load:
      `python -m scripts.hevy.block_report --exercise "<name>" --recent 90` and anchor on the
      median. Never copy a planning-sheet number without checking it against the log.
+   - **Start from the outgoing block's drift report** (rule `sheet-load-sync`): run
+     `python -m scripts.sheets.reconcile_loads` against the block that's ending. It sweeps every
+     exercise at once and tells you which prescriptions were wrong all block — a faster and more
+     complete starting point than per-exercise pulls. If it reports an exercise as unmatched,
+     that's a **name-mapping bug**, not missing history: fix `OVERRIDES` in
+     `scripts/hevy/exercise_map.py` before prescribing (rule `exercise-name-mapping`), or you
+     will program a well-trained lift as a first exposure.
    - **When you rotate to a new implement, convert the load** (rule `loads-from-logs`): look up
      the original load in the log, then **web-research the equivalent on the new implement**
      (e.g. "cable row 15 lb → machine row equivalent") and prescribe from that — don't guess.

@@ -12,13 +12,28 @@ summary plus a progress chart to Telegram. The Hevy log is the source of truth.
    ⚠️ readiness caveat rather than skipping the review.
 3. **Metrics** (`weekly_metrics.py`) — block/week geometry, data-readiness, this week's
    Big-5 top sets vs plan + RPE-cap flags, accessories, block-to-date e1RM, long-term trend.
-4. **Chart** (`render_chart.py`) — two-panel PNG (this block by week + long-term by month).
-5. **Narrative** (`narrate.py`) — Anthropic API (`claude-opus-4-8`) writes the coach-voice
+4. **Load sync** (`scripts.sheets.reconcile_loads`) — diffs the plan's prescribed loads
+   against the log and rewrites the **weeks still ahead** so the Sheet tracks what he
+   actually trains, then re-renders the Sheet (rule `sheet-load-sync`). Metrics run first,
+   so the week just finished is still judged against the plan it ran under. Best-effort:
+   a failure here costs the sync, never the review. **Only accessories are auto-adjusted** —
+   primaries and barbell secondaries are reported for a coaching decision, because their
+   loads come from the intensity wave and the injury caps (`sumo-back-cap`, the squat axial
+   cap), which deliberately sit *below* what the log shows.
+5. **Chart** (`render_chart.py`) — two-panel PNG (this block by week + long-term by month).
+6. **Narrative** (`narrate.py`) — Anthropic API (`claude-opus-4-8`) writes the coach-voice
    text from the stats + standing orders + notes. Falls back to a deterministic template
    if `ANTHROPIC_API_KEY` is unset or the call fails.
-6. **Deliver** — `scripts.notifications.telegram` sends the chart (photo) + narrative.
-7. **Archive** — snapshot to `reviews/weekly/<ISO-week>.md`, then commit the synced data +
-   snapshot (also keeps the scheduled workflow alive past GitHub's 60-day idle disable).
+7. **Deliver** — `scripts.notifications.telegram` sends the chart (photo) + narrative.
+8. **Archive** — snapshot to `reviews/weekly/<ISO-week>.md` (with the reconciliation
+   summary appended), then commit the synced data + corrected block + snapshot (also keeps
+   the scheduled workflow alive past GitHub's 60-day idle disable).
+
+### Secrets
+
+`HEVY_API_KEY`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `ANTHROPIC_API_KEY`, plus
+`GOOGLE_SA_JSON` + `SHEETS_SPREADSHEET_ID` for the Sheet push. Without the Google pair the
+review still ships and the block JSON is still corrected — only the Sheet write is skipped.
 
 ## Schedule (DST-safe)
 
@@ -37,6 +52,10 @@ workflow** (defaults to bypassing the guard).
 .venv/bin/python -m scripts.review.weekly_metrics --date 2026-06-20
 .venv/bin/python -m scripts.review.render_chart  --date 2026-06-20 --out /tmp/chart.png
 .venv/bin/python -m scripts.review.narrate       --date 2026-06-20 --fallback
+
+# Load sync on its own — report is the default; nothing is written without --apply:
+.venv/bin/python -m scripts.sheets.reconcile_loads
+.venv/bin/python -m scripts.sheets.reconcile_loads --apply --push
 
 # Real Telegram send (needs .env keys), but don't commit:
 .venv/bin/python -m scripts.review.weekly_review --force --no-commit

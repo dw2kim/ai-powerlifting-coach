@@ -163,6 +163,27 @@ same-weight sibling sets (`infer_reps`): `195x50 → 195x5`, used in the numbers
 is fixed; when a review shows a `corrected` set, mention it so he can clean the source. Same class of
 gap as `loads-from-logs`: pulled numbers are only as trustworthy as the guard around the raw log.
 
+## Sheet ↔ log load sync, weekly (2026-08-07)
+Athlete feedback: the Sheet's accessory loads don't match what he actually lifts (leg extension
+programmed 90–100 while the log runs 140), and first-exposure placeholders never get rebased
+(back extension went in around 1 lb; he does 90). Wants the Sheet updated **weekly**.
+**Both examples verified in the log, and the problem was bigger than he said** — six B4
+accessories had drifted: Leg Extension +50, Reverse Pec Deck +55, DB Shoulder Press +20,
+Meadows Row +20, Concentration Curl +18, Incline DB Press +15.
+Root cause: `loads-from-logs` only bound at *design* time; once a block rendered to the Sheet
+nothing fed five weeks of real training back into it. Fixed with `scripts/sheets/reconcile_loads.py`,
+wired into the Saturday review. Rule `sheet-load-sync`.
+**Second bug found underneath it:** six plan names didn't resolve to the Hevy templates he
+currently logs under, so they read as "never trained" — including Incline DB Press, which B4
+introduced as a **NEW** movement when he has 66 logged sessions of it, and Spoto/Larsen, whose
+overrides pointed at generic `Bench Press (Barbell)` instead of his own templates. Rule
+`exercise-name-mapping`. **Lesson: "no log history" is a mapping bug until proven otherwise** —
+every log-grounded rule degrades silently to a guess when a name doesn't resolve.
+**Deliberate limit:** only accessories auto-adjust. Primaries and barbell secondaries are reported
+only, because the injury caps sit *below* the log on purpose — sumo's log anchor is 385 (425
+mid-block) against a `sumo-back-cap` plan of 345–405. Auto-chasing the log would have undone the
+back restriction. That's the line to keep holding.
+
 ## Block 3 review written (2026-07-04) → reviews/2026-Q2-B03.md
 Final Hevy actuals (source of truth): Squat **512** e1RM (480×2 @8, new best, honest RPE) · Comp
 Bench **266** (235×4 @7.5 — reintroduced on the real comp lift, held ≤@7.5 all block, no shoulder

@@ -30,8 +30,16 @@ OVERRIDES: dict[str, str] = {
     "low-bar squat": "Low-bar Squat",
     "paused low-bar squat": "Paused Low Bar Squat",
     "cgb": "Bench Press - Close Grip (Barbell)",
-    "spoto bench": "Bench Press (Barbell)",
-    "paused larsen bench": "Bench Press (Barbell)",
+    # Spoto and Larsen have their own custom templates (the ids block_report.LIFTS already
+    # tracks) — pointing them at the generic barbell bench orphans their history and makes
+    # a pushed routine log against the wrong exercise.
+    "spoto bench": "Spoto Bench",
+    "spoto bench press": "Spoto Bench",
+    "paused larsen bench": "Paused Larsen Bench Press",
+    "larsen press (no feet)": "Larsen Bench Press",
+    # He logs the tempo squat as 3-0-0, whatever the block calls the prescription.
+    "3-1-0 tempo squat": "3-0-0 Tempo Low Bar Squat",
+    "tempo squat": "3-0-0 Tempo Low Bar Squat",
     "sumo deadlift": "Sumo Deadlift",
     "paused sumo deadlift": "Paused Sumo Deadlift",
     "paused rdl": "Romanian Deadlift (Barbell)",
@@ -54,7 +62,13 @@ OVERRIDES: dict[str, str] = {
     "db shoulder press": "Shoulder Press (Dumbbell)",
     "concentration curl": "Concentration Curl",
     "rear delt fly": "Rear Delt Reverse Fly (Machine)",
-    "tricep pushdown": "Triceps Pushdown",
+    "reverse pec deck": "Rear Delt Reverse Fly (Machine)",
+    # He logged pushdowns under "Triceps Pushdown" until 2026-01-02, then switched to the
+    # cable template — point at the one he actually uses now, or the log lookup comes back
+    # empty and the plan never gets reconciled against reality.
+    "tricep pushdown": "Triceps Extension (Cable)",
+    "triceps pushdown": "Triceps Extension (Cable)",
+    "incline db press": "Incline Bench Press (Dumbbell)",
     "meadows row": "Meadows Rows (Barbell)",
     "weighted back ext": "Back Extension (Weighted Hyperextension)",
     "face pull": "Face Pull",

@@ -25,6 +25,24 @@
   (dumbbell↔cable↔machine), don't guess — look up the original load in the log/workout CSV,
   then **web-research the equivalent load on the new implement** and prescribe from that.
   [FB 2026-06-14, extended 2026-06-18]
+- **sheet-load-sync** — `loads-from-logs` binds at *design* time; this keeps it true *during*
+  the block. **Every week (Saturday review), reconcile the plan's prescribed loads against the
+  Hevy log and correct the weeks still ahead**, then re-render the Sheet — so the Sheet never
+  drifts from what he actually lifts. Run
+  `python -m scripts.sheets.reconcile_loads [--apply --push]` (report-only by default).
+  - **Anchor** = median of the last 3 logged sessions' top working loads. Median, not max —
+    it tracks the current level and shrugs off one stray entry.
+  - **Only accessories are auto-adjusted.** Big-5 primaries and the barbell secondaries are
+    *reported* and left to a coaching call: their loads come from the intensity wave and from
+    injury caps (`sumo-back-cap`, the squat axial cap) that deliberately sit **below** the log.
+    Auto-chasing the log there would silently undo a restriction.
+  - **Only future weeks.** Weeks already trained are the record of what was prescribed.
+  - **Shape is preserved** — one scale factor per exercise, so the wave and the W5 deload keep
+    their relative depth. This re-bases a wrong anchor; it is not progression
+    (`accessory-progression` still governs how loads climb).
+  - **First exposures**: a movement programmed at a placeholder load (no history to anchor on)
+    gets rebased flat onto the log as soon as there are real sessions — that's the fix for
+    "went in at 1 lb, he does 90". [FB 2026-08-07]
 - **accessory-progression** — Accessories progress *gradually*: hold a load for 2–3 weeks,
   then small bumps. Do **not** apply the primary/secondary "+5 lb each week" default to
   accessories. They should still trend up across blocks, just slowly. [FB 2026-06-14]
@@ -97,6 +115,15 @@
   Correction is at read time (raw JSON stays a faithful Hevy mirror; self-heals if the app is
   fixed). Applies to every read of the log: block design, block/weekly/session reviews. When a
   review surfaces a `corrected` set, mention it so the athlete can clean the source. [FB 2026-07-13]
+- **exercise-name-mapping** — A plan name that doesn't resolve to the Hevy template he *currently*
+  logs under reads as "no history", and every log-grounded rule silently degrades to a guess —
+  it's what let the Sheet sit 55 lb light on Reverse Pec Deck and label a 66-session Incline DB
+  Press "NEW". When adding or renaming an exercise, resolve it against the log
+  (`block_report.py --exercise "<name>"`) and add an `OVERRIDES` entry in
+  `scripts/hevy/exercise_map.py` if it doesn't match. Templates get **abandoned** as well as
+  renamed (he moved off "Triceps Pushdown" in Jan 2026) — point the override at the one with
+  recent sessions. `reconcile_loads` flags unmatched names; treat that as a bug, not a data gap.
+  [FB 2026-08-07]
 
 ## Review conventions
 
