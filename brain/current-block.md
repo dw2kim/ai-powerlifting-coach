@@ -90,8 +90,10 @@ squat **4·4·4·3·3**, comp bench **4·4·4·3·3**, sumo **3·3·3·2·3** (W
 - **New accessories** (Hanging Leg Raise / Reverse Pec Deck / Incline DB Press) are first
   exposures — dial loads in W1–W2, swap any that don't fit.
 - **Tempo-squat loads are conservative** (first 3-1-0 exposure). If W2 feels light, bump 10 lb.
-- **B3 review** still outstanding — run the end-of-block retrospective before it goes cold
-  (`reviewing-block`, Hevy log = source of truth).
+- ~~**B3 review** outstanding~~ — done 2026-07-04, `reviews/2026-Q2-B03.md` (this line was stale).
+- **B4 review written 2026-08-07** → `reviews/2026-Q3-B04.md`. Covers **W1–W4 only**; the log's last
+  synced session is 2026-07-31, so the W5 deload isn't in the repo. **Re-run `block_report.py` after
+  the next Hevy sync and append a W5 note** before designing B5.
 - **Accessory loads ran light all block** (found 2026-08-07 by the new weekly load sync,
   `sheet-load-sync`). Six accessories drifted vs the Hevy log: Leg Extension 90–100 → **140**,
   Reverse Pec Deck 45 → **100**, DB Shoulder Press 50 → **70**, Meadows Row 60 → **80**,
