@@ -127,7 +127,86 @@ blind). User accepts and proceeds under the rule below. This **overrides** the p
   bench and dip the same way it binds squat and sumo: the ≤3/10 pain rule **cannot** protect a
   chemically quiet joint, so those lifts go to an absolute-load cap for the masking window.
 
-## Lower back (new — 2026-07-06)
+## Lower back — 🚨 DOCTOR ORDERED 4 WEEKS OFF HEAVY LIFTING (2026-08-07)
+
+**Visit 2026-08-07.** 4–5 injections around the mid-left lower back. **The doctor was shocked the
+athlete is still lifting heavy and recommended stopping heavy lifting for 4 weeks**
+(→ ~**2026-09-04**, covering B5 W1–W4). **No shoulder injection given** — he palpated the shoulder
+and said it's okay.
+
+**What the injections are — likely NOT corticosteroid.** The athlete describes a **"freezing"
+injection** (local anesthetic) into 4–5 sites, intended to *loosen the muscle*. That pattern reads
+as a **trigger-point injection** treating **myofascial** pain, not the disc. ⚠️ **This file has
+called them corticosteroid since 2026-07-06 — that may have been wrong the whole time. Confirm the
+agent with the clinic** (anesthetic only, or anesthetic + steroid?).
+**The athlete's stated mechanism** — loosen muscle → less disc compression → faster healing — is
+probably not right; muscle relaxation doesn't meaningfully decompress a disc. Trigger-point
+injections break a **pain–spasm cycle**, which is a real and worthwhile thing. Not a coaching call
+either way; the clinic owns it.
+**Training conclusion is unchanged and stronger:** local anesthetic produces **profound, immediate
+numbness for hours** — *less* reliable pain feedback than a steroid, not more. `masked-pain-load-cap`
+binds harder than before.
+
+**Coach's position on the 4 weeks (2026-08-07).** The athlete wanted to keep training light and
+disagreed with stopping outright. **Agreed on the principle** — graded loading beats rest for low
+back pain, and complete rest would be the wrong prescription — **but sided with the doctor on the
+decision**, for three reasons he hadn't weighed:
+1. **They're probably not disagreeing.** "Heavy" to a clinician who just learned about 465 lb squats
+   means *the 465*, not 185. → **Ask him literally on 2026-08-14.**
+2. **He was *shocked*, i.e. he didn't know until now.** Every plan since 2026-07-03 was built
+   without that fact; he got it and immediately said stop. Considered, not reflexive.
+3. **Complying costs almost nothing** — squat was already capped and flat, sumo already demoted by
+   the athlete's own call, and bench/pull-up/dip don't load the back.
+
+**Resulting training restriction (in force to ~2026-09-04):**
+- **Squat: 185–245 ×5 @6, 3 sets.** Position work. ~40–53% of top.
+- **Sumo: 185–225 ×3 @6, 3 sets.** Technique only.
+- **CUT: Paused RDL** (loaded hinge) and **Paused Low-bar Squat** (2nd weekly axial session).
+- **Weighted Back Extension: bodyweight through W2**, and **skip if the injection sites are sore** —
+  the trigger points are in these exact muscles.
+- **Bench / pull-up / dip: unrestricted**, full strive plan. Watch the **bench arch** (lumbar
+  extension under load); moderate the arch before the weight if the back complains.
+- **Mon 2026-08-10 is ~72 h post-injection.** If the back is sore/tight/numb that morning, **skip
+  the squat, do bench + accessories only.**
+- **Numbers are written down, not left to feel** — his self-defined "light" has a documented failure
+  rate (B4 W1 sumo planned 345, pulled **425**; squat backoffs **@8.5** under a cap).
+
+**Revisit 2026-08-14** with the "what does heavy mean" question. The real squat/sumo return is
+**B6**, mid-September, on clearance.
+
+### ⚠️ Athlete override — training against advice (2026-08-07, athlete-confirmed)
+**The instruction escalated on re-telling.** First account: *"stop doing the heavy lifting for four
+weeks."* Second, same evening: *"he said I need to completely stop working on any of the
+exercises."* Those are **different instructions** — no heavy lifting vs no exercise at all.
+❓ **UNRESOLVED — confirm which he actually said.** The plan below assumes the first; if it's the
+second, the athlete is overriding a total-rest instruction, not a load restriction.
+
+**Athlete's position:** keeps light lifting regardless, on the grounds that light work helped him
+heal a past injury under his previous powerlifting coach, and that pull-ups/dips/bench don't load
+the lower back.
+**Coach's position:** he is **substantially right on the mechanism** — a weighted pull-up
+decompresses the spine if anything, dips are near spine-neutral, and bench is only implicated via
+the arch. Graded loading also beats bed rest for low back pain. **But this is now an explicit
+decision to train against medical advice**, and it is logged as such — same treatment as the
+2026-06-13 comp-bench decision. Coach made the case for compliance twice; athlete reaffirmed.
+Proceeding under the written loads, which is the safer of the two ways to disagree with a doctor.
+
+**Conditions attached:**
+- **Tell the clinic he is still training and what he's doing.** He was *shocked* once already —
+  advice built on a false picture of rest is worth nothing to either side.
+- **Escalation — any one of these stops the axial work outright** (not "reduce", stop): new or
+  worsening **leg symptoms** (pain, numbness, tingling, weakness below the knee), **night pain or
+  pain at rest**, pain that **doesn't settle within 24 h**, or a back check of "sore" **two sumo/
+  squat days in a row**. On any of these: cut squat and sumo entirely and get back to the clinic.
+- **Athlete requests granted 2026-08-07:** 225 floor on squat/sumo (given as a *flat* load, so the
+  ceiling actually drops from the planned 245); +1 squat set.
+- **Athlete requests declined:** **more reps** (backs fail on fatigued reps — the lever is load and
+  sets, per `sumo-back-cap`, and this is the second time this suggestion has been made and
+  declined); **DB RDL** (a second loaded hinge is exactly what was cut — Seated Leg Curl added
+  instead, spine-free); **striving harder on bench/pull-up/dip** (the shoulder is the limiter
+  there, not systemic energy).
+
+## Lower back (background — from 2026-07-06)
 - **Status**: symptomatic, under active pain-clinic treatment. Pain focused **mid-left lower back**.
 - **MRI on file (2026-07-22, lumbar spine w/o gadolinium)**: reassuring for a barbell athlete —
   **no disc herniation with nerve compression, no significant central canal stenosis, no cord

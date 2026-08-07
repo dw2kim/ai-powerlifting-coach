@@ -75,6 +75,16 @@ description: Design a new training block — pull context from prior block + mem
 9. **Offer to push to Hevy**:
    - Always start with `python -m scripts.hevy.push_block` (dry-run). Show the user the routine titles and a sample payload.
    - On confirmation: `python -m scripts.hevy.push_block --apply`. Routines land in a folder named after the block id.
+   - **⚠️ The push is additive and NOT idempotent** — it only POSTs, never updates or deletes.
+     Running it twice for the same block creates a **second** folder and a duplicate set of
+     routines. Confirm it hasn't already been pushed before applying; if it has, the duplicate
+     must be deleted by hand in the Hevy app.
+   - **No credentials in the session?** A Claude Code session usually has no `HEVY_API_KEY` (and
+     no `GOOGLE_SA_JSON`). Don't claim the push happened — say so, and point at the
+     `workflow_dispatch` workflows that run with the repo secrets:
+     **Actions → "Push block to Hevy"** (defaults to a dry run; flip `apply` to write) and
+     **Actions → "Export block to Google Sheet"**. Note that `actions_run_trigger` may 403 —
+     the GitHub App token often lacks Actions-write, so the athlete clicks the button.
 
 ## First-time setup gates
 

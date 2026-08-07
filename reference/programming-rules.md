@@ -42,7 +42,15 @@
     (`accessory-progression` still governs how loads climb).
   - **First exposures**: a movement programmed at a placeholder load (no history to anchor on)
     gets rebased flat onto the log as soon as there are real sessions — that's the fix for
-    "went in at 1 lb, he does 90". [FB 2026-08-07]
+    "went in at 1 lb, he does 90".
+  - **🔒 `hold` overrides the sync.** Set `"hold": true` + `"hold_reason"` on a prescription entry
+    and the sync reports it but never rewrites it. **Required whenever a load is deliberately
+    below what the log says** — medical restriction, technique work, a deload the athlete keeps
+    ignoring. The primaries/secondaries guard alone is *not* enough: an **accessory** can be
+    deliberately under-prescribed too, and B5 caught this live — Weighted Back Extension was held
+    at bodyweight because trigger-point injections went into those exact muscles, and the sync
+    would have rebased it to 45 lb the following Saturday, silently undoing a medical restriction.
+    A hold is only lifted by a human. [FB 2026-08-07]
 - **accessory-progression** — Accessories progress *gradually*: hold a load for 2–3 weeks,
   then small bumps. Do **not** apply the primary/secondary "+5 lb each week" default to
   accessories. They should still trend up across blocks, just slowly. [FB 2026-06-14]
@@ -96,13 +104,28 @@
   ≤@8" — never a single number at a cap RPE. Reserve fixed-load prescriptions for lifts under an
   injury cap, where the load *is* the restriction (`sumo-back-cap`, the squat axial cap).
   [FB 2026-08-07]
-- **masked-pain-load-cap** — When a corticosteroid injection is active in a joint or region, the
-  pain signal is **chemically muffled**, so pain-based and RPE-based guardrails stop protecting
-  that structure. Cap the affected lifts **by absolute load** for the injection window and the
-  weeks after, and lift the cap on **doctor clearance** — not on the series ending, not on a clean
-  scan, and never on how it feels. Established for the lower back / squat + sumo; **applies to the
-  shoulder and bench the moment a shoulder injection starts** (still pending as of 2026-08-07 —
-  the athlete must report it so bench gets the same treatment). [FB 2026-08-07]
+- **clinical-override** — **A doctor's training restriction outranks every rule in this file and
+  every number in the block.** When one lands, rewrite the block to fit it rather than negotiating
+  around it, and record the instruction verbatim in `active-issues.md` with its expiry. Two
+  corollaries learned 2026-08-07:
+  - **Clarify the scope before assuming a conflict.** "Stop heavy lifting" from a clinician who
+    just heard about a 465 lb squat almost certainly means *the 465*, not a 185 lb technique squat.
+    Athlete and doctor usually aren't disagreeing — they're using one word for two different
+    things. Get the specific question asked before treating it as a dispute.
+  - **Write the light numbers down.** This athlete follows a number on a page reliably and cannot
+    reliably generate one in the moment (B4 W1 sumo: planned 345, pulled 425; squat backoffs @8.5
+    under a cap written to stop that). "Train light" as a instruction is not a restriction.
+  Volume rules yield too — `primary-backoff-volume` was deliberately broken for B5's squat/sumo.
+  [FB 2026-08-07]
+- **masked-pain-load-cap** — When an injection is active in a joint or region — **corticosteroid
+  *or* local anesthetic ("freezing")** — the pain signal is **chemically muffled**, so pain-based
+  and RPE-based guardrails stop protecting that structure. Cap the affected lifts **by absolute
+  load** for the injection window and the weeks after, and lift the cap on **doctor clearance** —
+  not on the series ending, not on a clean scan, and never on how it feels. **Anesthetic is the
+  worse case, not the milder one**: it produces profound, immediate numbness for hours, where a
+  steroid dulls pain gradually over days. Established for the lower back / squat + sumo; **applies
+  to the shoulder and bench the moment a shoulder injection starts** (still not given as of
+  2026-08-07 — the athlete must report it so bench and dip get the same treatment). [FB 2026-08-07]
 
 ## RPE conventions
 

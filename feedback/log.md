@@ -10,6 +10,74 @@
 
 ---
 
+### 2026-08-07 (evening) · block, load, general · doctor orders 4 weeks off heavy — B5 axial work rewritten light
+**Event (athlete, after the pain-clinic visit):** got the lower-back injection — 4–5 sites,
+described as a **"freezing" injection** to loosen the muscle. **No shoulder injection**; the doctor
+palpated it and said it's okay. **The doctor was shocked he's still lifting heavy and recommended
+stopping heavy lifting for 4 weeks.** Athlete: *"He recommended completely stopping, but I kinda
+don't agree. I still need to do light lifting — when I got injured with my actual powerlifting
+coach we still did very light lifting and it helped heal the area."* Asked for the coach's opinion
+before any change.
+**Coach's answer — agreed on the principle, sided with the doctor on the decision.** Graded loading
+does beat rest for low back pain; complete rest would be the wrong prescription, so his instinct is
+sound. But three things he hadn't weighed: (1) **they're probably not disagreeing** — "heavy" to a
+clinician who just learned about 465 lb squats means the 465, not a 185 lb technique squat, so the
+fix is to *ask him literally* on 08-14, not to overrule him; (2) **he was shocked, meaning he didn't
+know until now** — every plan since 07-03 was built without that fact, so this is a considered
+response to new information, which makes it weightier not lighter; (3) **complying costs almost
+nothing** — squat was already capped and flat in B4, sumo already demoted by the athlete's own call,
+and bench/pull-up/dip don't load the back, so the real cost is four weeks of light squats he'd
+largely conceded already.
+**Pushed back on him directly:** his self-defined "light" has a documented failure rate — B4 W1 sumo
+planned 345 → pulled **425**; squat backoffs hit **@8.5** under a cap written to stop exactly that.
+He follows a number on a page; he does not generate one in the moment. So the light work is
+prescribed numerically, not as a vibe.
+**Corrected the injection record:** "freezing" = **local anesthetic**, 4–5 sites → reads as a
+**trigger-point injection** treating myofascial pain, not the disc. This file had called the series
+**corticosteroid** since 2026-07-06 and that may have been wrong throughout — flagged for him to
+confirm the agent. Also corrected his mechanism story (muscle relaxation doesn't meaningfully
+decompress a disc; trigger-point injections break a pain–spasm cycle). **Training conclusion
+unchanged and stronger** — anesthetic numbs harder and faster than steroid dulls, so
+`masked-pain-load-cap` binds *more*.
+**Changes to B5** (athlete approved "write them now at the conservative end"): squat 435–465 @7.5 →
+**185–245 ×5 @6 ×3**; sumo 345–365 @7 → **185–225 ×3 @6 ×3**; **Paused RDL and Paused Low-bar Squat
+CUT** for the window; Weighted Back Extension moved D4 → D2 and held at **bodyweight through W2**
+(the trigger points are in those exact muscles); **bench/pull-up/dip untouched** — no shoulder
+injection means `masked-pain-load-cap` doesn't bind them. Flagged that the **bench arch is lumbar
+extension under load** and to moderate the arch before the weight. Also flagged that a palpation
+("he touched it and said it's okay") is **not** a clearance and doesn't override the 07-28 MRI.
+**Deliberate rule break:** `primary-backoff-volume` no longer holds for B5 squat/sumo — a medical
+restriction outranks a volume rule. Recorded as `clinical-override` so it isn't read as drift.
+**Follow-up same evening — athlete negotiated the numbers.** Three requests + two answers:
+- **"225 lb minimum for squat and sumo — I'll be depressed with 185, it's too light."** *Granted,
+  with a trade.* 225 is ~48% of his 465 and ~46% of his 485 pull — genuinely light either way, and
+  adherence is a real variable: a plan he finds demoralising is a plan he cheats. But it's given as
+  a **flat load with no weekly ramp**, so the ceiling *drops* from the planned 245. Higher floor,
+  lower ceiling, zero creep vector. Framed that way to him explicitly.
+- **"Can we do the dumbbell RDL? Just thinking out loud."** *Declined.* He already hinges on D4
+  (light sumo); a second loaded hinge on D2 is precisely what was removed. Offered the thing he
+  actually wants instead: **Seated Leg Curl** (48 logged sessions, median 115) — posterior chain
+  with zero spinal loading. Concentration Curl dropped to make room; pull-ups carry the biceps.
+- **"Can we make more reps since it's light weight?"** *Declined — second time this suggestion has
+  come up and been declined* (first was sumo, 2026-07-22). Backs fail on the **fatigued** reps:
+  brace fades and the lumbar rounds at the end of a long set no matter how light the bar. The lever
+  is **load and SETS, never reps.** Compromise that gives him the volume he's after: squat gets a
+  **4th set** of the same crisp fives, every set started fresh. Sumo stays 3×3 — it's the lift that
+  flares his back, and a deadlift set costs more lumbar exposure per rep than a squat set.
+- **"Can we strive even more on bench/pull-up/dip since I'll have more energy?"** *Declined.* The
+  strive plan is already aggressive; recovery isn't one pool you reallocate; and the limiter on
+  bench and dip is the **shoulder** (two partial tears + bursitis), which fresh legs don't help.
+  Redirected: the real prize is finally **hitting @8 in W4** instead of B4's @6.
+- **Injection agent:** athlete confirms **anesthetic only** — "steroid is the next option if this
+  isn't working." Confirms the trigger-point read and means a steroid escalation is still ahead.
+- ⚠️ **The instruction escalated on re-telling** — first "stop the heavy lifting for four weeks",
+  then "he said I need to completely stop working on any of the exercises." Those are different
+  instructions. **Unresolved; flagged for confirmation.** Logged as an explicit **athlete override**
+  in `active-issues.md` with escalation triggers, same treatment as the 2026-06-13 comp-bench call.
+  He is substantially right that pull-ups/dips/bench don't load the lumbar spine — but he is now
+  training against medical advice, and that's recorded rather than smoothed over.
+→ rules: `clinical-override`, `masked-pain-load-cap` (extended to local anesthetic)
+
 ### 2026-08-07 · block, exercise, general · B5 direction — strive selectively, sumo becomes a skill lift
 **Feedback (athlete, designing B5):** "Sumo deadlift is something I don't want to strive for — I
 just want to do it to keep the technical form. I think it's still valuable and beneficial. If you

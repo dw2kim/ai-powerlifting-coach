@@ -1,12 +1,49 @@
 # Current Block
 
-# Block 5 — 2026-Q3-B05 (Strive where it's safe, protect what isn't)
+# Block 5 — 2026-Q3-B05 (Protect the back, strive upstairs)
 
 **Block ID**: 2026-Q3-B05
 **Dates**: 2026-08-10 → 2026-09-13 (5 weeks, 4 days/week)
 **Source**: Designed 2026-08-07 from the B4 review (`reviews/2026-Q3-B04.md`) + athlete direction.
-**Theme**: Push bench, pull-up and dip hard. Hold squat under the injection cap with a W3
-clearance gate. Demote sumo to a technical skill lift with no PR intent.
+**Revised same day** after the 2026-08-07 pain-clinic visit — see the medical override below.
+**Theme**: Bench, pull-up and dip push the full plan. **Squat and sumo run light position and
+technique work for the whole block**, and the loaded hinges are cut.
+
+---
+
+## 🚨 MEDICAL OVERRIDE — 4 weeks off heavy lifting (2026-08-07 → ~2026-09-04)
+
+At the pain-clinic visit on **2026-08-07** the doctor was **shocked the athlete is still lifting
+heavy** and recommended **stopping heavy lifting for 4 weeks.** That window covers **B5 W1–W4**.
+The real squat/sumo return is **B6**, on clearance.
+
+**What the injections actually are.** The athlete describes a **"freezing" injection** — local
+anesthetic — into 4–5 sites around the mid-left lower back, aimed at loosening the muscle. That
+reads as **trigger-point injection** treating *myofascial* pain, not the disc. (This file called
+them corticosteroid from 2026-07-06; that may have been wrong the whole time. **Confirm the agent
+with the clinic.**) Either way the training conclusion is unchanged and now stronger: an anesthetic
+produces **profound, immediate numbness for hours**, so pain feedback from that back is *less*
+reliable than under a steroid, not more. `masked-pain-load-cap` binds harder than before.
+
+**Coach's position (stated to the athlete, 2026-08-07).** He wanted to keep training light and
+disagreed with "stop completely." Agreed on the principle — graded loading beats rest for low back
+pain — but three things decided it:
+1. **He and the doctor are probably not disagreeing.** "Heavy" to a clinician who just heard about
+   465 lb squats means *the 465*, not a 185 lb technique squat. **Ask him literally on 2026-08-14.**
+2. **The doctor was *shocked* — he didn't know until now.** Every plan since 2026-07-03 was built
+   without that fact. He learned it and immediately said stop. That's considered, not reflexive.
+3. **Complying costs almost nothing.** Squat was already capped and went flat in B4; sumo was
+   already demoted to a skill lift by the athlete's own call; bench/pull-up/dip don't load the back.
+   The only real cost is four weeks of light squats he'd largely conceded anyway.
+
+**And the reason the numbers are written down rather than left to feel:** his self-defined "light"
+has a documented failure rate — B4 W1 sumo was planned 345 and he pulled **425**; squat backoffs hit
+**@8.5** under a cap written to stop exactly that. He follows a number on a page reliably. He does
+not reliably generate one in the moment.
+
+> **These loads are the conservative end, on purpose.** If the doctor gives more room on
+> **2026-08-14**, W3–W4 can come up. Training a guess for a week and getting told off is the worse
+> mistake.
 
 **Working numbers from the B4 log (lbs)**: Squat 511.5 (465×3 @7.5) · Comp Bench 266.7
 (250×2 @6, ~300 RPE-adjusted) · Sumo 467.5 · WPU 286 (BW+80×3 @7.5) · Dip 300.3 (BW+85×4 @6).
@@ -26,30 +63,56 @@ B4 proved you'll respect a cap — so this block the caps move to exactly where 
 > **D1 Mon · D2 Tue · D3 Thu · D4 Fri.** Morning training, 6–7am. D4 occasionally slips to Sat.
 > **The five primary lifts and their days do not change.** Locked at the athlete's request.
 
-- **D1 (Mon) — Squat + Comp Bench**: Low-bar Squat (top + backoff) · Comp Bench (top + backoff) · Tricep Pushdown · Leg Extension
-- **D2 (Tue) — WPU + Hinge**: Weighted Pull-up (top + backoff) · Paused RDL *(load cut)* · DB Shoulder Press · Concentration Curl · Hanging Leg Raise
-- **D3 (Thu) — Dip + Squat Acc**: Weighted Dip · **Paused Low-bar Squat — ROTATED from 3-1-0 Tempo** · Lat Pulldown · Reverse Pec Deck · Face Pull
-- **D4 (Fri) — Sumo + Spoto**: Sumo Deadlift (top + backoff) · Spoto Bench Press *(held)* · **Chest Supported Incline Row (NEW)** · Incline DB Press · **Weighted Back Extension (back in)**
+- **D1 (Mon) — Squat (light) + Comp Bench**: Low-bar Squat *(4×5 @225 flat)* · Comp Bench (top + backoff) · Tricep Pushdown · Leg Extension
+- **D2 (Tue) — WPU + Posterior Chain**: Weighted Pull-up (top + backoff) · **Weighted Back Extension** *(moved here, BW through W2)* · **Seated Leg Curl (NEW for the window)** · DB Shoulder Press · Hanging Leg Raise
+- **D3 (Thu) — Dip + Upper Body**: Weighted Dip · Lat Pulldown · Reverse Pec Deck · Face Pull
+- **D4 (Fri) — Sumo (light) + Spoto**: Sumo Deadlift *(3×3 light)* · Spoto Bench Press *(held)* · **Chest Supported Incline Row (NEW)** · Incline DB Press
+
+> **CUT for the 4-week window:** **Paused RDL** (a loaded hinge is the single worst fit right now)
+> and **Paused Low-bar Squat** (a second weekly axial session isn't worth its risk). Both return
+> in B6 on clearance. That leaves **one light squat, one light sumo, and zero loaded hinges per
+> week** — while the three strive lifts run untouched.
 
 ## Wave — top sets
 
-| Week | Squat | Comp Bench | Sumo | WPU | Dip |
+| Week | Squat *(light)* | Comp Bench | Sumo *(light)* | WPU | Dip |
 |------|-------|-----------|------|-----|-----|
-| W1 calibration | 435×4 @7 | 230×4 @7 | 345×3 @6 | BW+70×4 @7 | BW+60×6 @7 |
-| W2 build | 455×3 @7.5 | 240×4 @7.5 | 345×3 @6 | BW+75×4 @7.5 | BW+75×5 @7.5 |
-| W3 push | **455×3 @7.5 (capped)** | 245×3 @7.5 *(hold)* | 365×3 @7 | BW+80×3 @8 | **BW+90×4 @8 (dip peak)** |
-| W4 peak | **465×3 @7.5 (capped)** | **255–270×2 — work up to @8** | 365×3 @7 | **BW+85×3 @8** | BW+80×5 @7.5 |
-| W5 deload | 405×3 @6 | 200×4 @6 | 315×3 @6 | BW+55×4 @6 | BW+50×6 @6 |
+| W1 | **225×5 @6 ×4** | 230×4 @7 | **225×3 @6 ×3** | BW+70×4 @7 | BW+60×6 @7 |
+| W2 | **225×5 @6 ×4** | 240×4 @7.5 | **225×3 @6 ×3** | BW+75×4 @7.5 | BW+75×5 @7.5 |
+| W3 | **225×5 @6 ×4** | 245×3 @7.5 *(hold)* | **225×3 @6 ×3** | BW+80×3 @8 | **BW+90×4 @8 (dip peak)** |
+| W4 | **225×5 @6 ×4** | **255–270×2 — work up to @8** | **225×3 @6 ×3** | **BW+85×3 @8** | BW+80×5 @7.5 |
+| W5 deload | **185×5 @6 ×3** | 200×4 @6 | **185×3 @6 ×3** | BW+55×4 @6 | BW+50×6 @6 |
 
-**Backoff sets** (`primary-backoff-volume`): squat **4·4·4·3·3**, comp bench **4·4·4·3·3**,
-sumo **3·3·3·3·3**, WPU 3 throughout, dip 4 throughout.
+**225 flat, no weekly ramp.** You asked for a 225 floor because 185 would be demoralising — fair,
+and adherence matters. So you get the higher floor *and a lower ceiling*: the plan this replaces
+climbed to **245**, this one never leaves 225. Net, you're doing **less at the top** than I first
+wrote. That's the trade, and the flat line is the point — it removes the creep vector entirely.
+225 is ~48% of your 465 and ~46% of your 485 pull. There's no top-set/backoff split on the axial
+lifts: one load, sets done fresh, position and pattern rather than stimulus.
+
+**Backoff sets**: comp bench **4·4·4·3·3** (`primary-backoff-volume`), WPU 3 throughout, dip 4
+throughout. **Squat and sumo are a documented exception to `primary-backoff-volume`** — a medical
+restriction outranks a volume rule.
+
+### On "more reps, since it's light" — no. Same answer as 2026-07-22.
+You asked this before, about sumo, and the reasoning hasn't changed (it's rule `sumo-back-cap`):
+**backs get hurt on the fatigued reps.** Brace fades, lumbar rounds, and that happens at the *end*
+of a long set regardless of how light the bar is. Higher reps means more cumulative load AND more
+reps done tired — the opposite of conservative.
+
+**The lever is load and SETS, never reps.** So squat gets a **4th set** instead of longer sets —
+same crisp fives, ~33% more work, every set started fresh. Sumo stays at **3 sets of 3** and does
+*not* get the extra set: it's the lift that actually flares your back, and a deadlift set costs
+more lumbar exposure per rep than a squat set.
 
 ## The three postures
 
-### 🔴 Sumo — SKILL LIFT (no striving)
-Athlete's call, and I agree with it. Sumo stops being periodized like the other four. Fixed
-**345–365 band, crisp triples, @7 ceiling. 405 is not in play this block.** No autoregulating
-up, no PR intent, no "it felt easy so I added weight." The job is the tall lockout and no hitch.
+### 🔴 Sumo — SKILL LIFT, now at a skill-lift load
+Athlete's call, and I agree with it. Sumo stops being periodized like the other four. **Revised
+2026-08-07 for the medical window: 225 flat, crisp triples @6, 3 sets.** The 345–365 band is off
+the table until B6. No autoregulating up, no PR intent, no "it felt easy so I added weight." The
+job is the tall lockout and no hitch — and at 225 you can actually think about the pattern instead
+of surviving the load.
 
 **On the MRI question — sumo did not cause it.** The radiologist called it *age-typical mild
 multilevel degeneration*, which at 37 with 11 training years is what a normal spine looks like.
@@ -59,18 +122,43 @@ belief that you're grinding your discs down; that belief's logical end is droppi
 that would be the wrong move. Detraining a hinge makes returning to it more dangerous, and light
 crisp pulling keeps the erectors and glutes doing protective work.
 
-### 🟡 Squat — CAPPED, with a W3 clearance gate
-Default track is capped: **455 @7.5 in W3, 465 @7.5 in W4.** That's what's in the JSON and on
-the Sheet.
+### 🟡 Squat — LIGHT for the whole block (superseded the W3 clearance gate)
+**Revised 2026-08-07.** The clearance gate is gone; the doctor's answer arrived before the gate
+did, and it was "stop heavy lifting for 4 weeks." So squat runs **225 ×5 @6, 4 sets, flat** all
+block — ~48% of your 465.
 
-**Release track — W3 465×3 @7.5, W4 480×2 @8 — unlocks ONLY on doctor clearance** for heavy
-axial load. Ask at the **Aug 14** visit and bring the 2026-07-22 lumbar MRI; it's reassuring
-(no nerve compression, no canal stenosis) and it's the right document to get a concrete answer
-from. The cap is driven by the corticosteroid **masking pain**, not by imaging — so a clean scan
-alone doesn't lift it, and neither does the series ending. **Do not self-release on feel.**
+**There is no release track this block.** If the 2026-08-14 conversation gives explicit room —
+i.e. he tells you a specific load or category is fine — W3–W4 come up and I'll rewrite. Until
+then, this is the number. **Do not self-release on feel**, and note the feel argument is *weaker*
+than ever: local anesthetic in the erectors means the back can be numb and you'd never know.
+Bring the 2026-07-22 lumbar MRI to that conversation — it's reassuring (no nerve compression, no
+canal stenosis) and it's the right document to get a concrete window from.
 
-### 🟢 Bench · Pull-up · Dip — STRIVE
-Nothing about your back constrains these. Bench is the priority lift and B4's one clear miss:
+### 🟢 Bench · Pull-up · Dip — STRIVE (unchanged by the medical override)
+**No shoulder injection was given on 2026-08-07** — the doctor palpated it and said it's okay — so
+`masked-pain-load-cap` does **not** bind bench or dip. The full strive plan stands. That's the best
+outcome available today, and it's why this block still has a point.
+
+⚠️ **But a palpation is not a clearance.** "He touched it and said it's okay" does not override a
+10-day-old MRI showing two partial-thickness tears plus bursitis. The **@8 cap and the ≤3/10 rule
+stay exactly as written.** Don't let a reassuring touch upgrade your shoulder.
+
+⚠️ **Bench arch is lumbar extension under load.** A hard powerlifting arch loads the very thing
+we're protecting, and you already lose arch under fatigue (a known weak point). If the back
+complains on bench day, **moderate the arch before you moderate the weight** — and tell me.
+
+### "Can we strive even MORE upstairs, since I'll have more energy?" — no.
+Asked 2026-08-07; declining, and the reason isn't caution:
+- **The strive plan is already aggressive.** Bench to a real @8 test at 255–270×2, pull-up to
+  BW+85, dip to BW+90×4. Adding to that isn't spending spare capacity, it's overreaching.
+- **Recovery isn't one pool you reallocate.** Cutting squat volume doesn't buy bench capacity.
+  The limiter on bench and dip is your **shoulder**, and it has two partial-thickness tears and
+  bursitis. More pressing volume loads the *tears* — the fresh legs are irrelevant to it.
+- **Extra energy has a better use: hitting the target you keep missing.** B4's peak came in at
+  **@6 against an @8 allowance.** Being fresher makes it far more likely you actually find @8 in
+  W4. That's the win — **better execution of this plan, not a bigger plan.**
+
+Nothing else about your back constrains these. Bench is the priority lift and B4's one clear miss:
 you peaked **250×2 @6** against an @8 allowance. W4 is deliberately written as a **range with an
 instruction** — *work up to @8, 255–270×2, take the heaviest double that stays at or under the cap.*
 Find the cap. Don't sit two points under it.
@@ -148,35 +236,46 @@ months, D3→D4 interference) · Meadows Row (bent-over lumbar load on deadlift 
 
 ## Standing orders
 
-- **Sumo: 345–365, triples, @7. 405 is not in play.** Back rounding or bar-speed drop = rack it.
-  **Log the next-day back check** ("back fine / tight / sore") — it had zero entries all of B4,
-  which is why sumo can't creep. No check, no progression. Ever.
-- **Squat: capped track by default.** Release W3–W4 only on doctor clearance. Not on feel.
+- **Squat 225 ×5 @6 ×4 · Sumo 225 ×3 @6 ×3. Flat all block. These are ceilings, not floors.**
+  Adding weight because it feels easy is the exact failure this block is written to prevent — and
+  with anesthetic in the erectors, "feels easy" is **not information**. You asked for 225 and got
+  it; 226 is not part of the deal.
+- **Reps do not go up.** Extra work comes from an extra SET, done fresh. See above.
+- **Sumo: back rounding or bar-speed drop = rack it.** Still true at 185.
+- **Log the next-day back check** ("back fine / tight / sore") on **every squat and sumo day**.
+  Zero entries in all of B4, which is why nothing can progress. **No check, no progression.**
+  It matters more now than ever: it's the only honest signal while the area is being anesthetized.
 - **Comp bench: @8 cap is a TARGET at the W4 peak, not a ceiling to avoid.** ≤3/10 shoulder pain
-  overrides everything.
+  overrides everything. Moderate the **arch** before the weight if the back complains.
 - **Pull-up: @8 is still a hard stop.** It's what fixed this lift. Earn load inside it.
-- **Dip: pain-free depth only.** Peaks W3, backs off W4.
+- **Dip: depth is the primary variable.** Stop above the pinch. Peaks W3, backs off W4.
 - **Log every set.** Skipped = logged as skipped with a reason.
-- **3-day fallback priority**: D1, D2, D3 (drop D4 — sumo is the most expendable this block).
-  *Changed from B4:* sumo is now the lowest-value session, dip and the squat secondary are not.
+- **3-day fallback priority**: D1, D2, D3 (drop D4). Sumo is the most expendable session.
 
-## Injection schedule (athlete, 2026-08-07)
+## Injection schedule + this week
 
-- **Fri Aug 7** (today) and **Fri Aug 14** — then the back series ends.
-- Fridays are 1–4pm and he trains 6–7am, so **same-day D4 always precedes the shot.** W1 D4
-  (Aug 14) is clean. No Thursday injections this block → the "sumo off Friday" rule doesn't fire.
-- **W2 onward is post-series.** The masking effect fades over the following weeks, which is
-  exactly why the squat gate sits at W3 rather than W2.
+- **Fri Aug 7** (4–5 trigger-point sites, mid-left lower back) and **Fri Aug 14** — then the
+  series ends. Fridays 1–4pm; he trains 6–7am, so same-day D4 always *precedes* the shot.
+- **No training this weekend** (athlete confirmed). **Next session is Mon Aug 10 = W1 D1**, roughly
+  **72 h post-injection** — the edge of the 24–72 h avoid-window already in `active-issues.md`.
+  - **If the back is sore, tight, or numb Monday morning: skip the squat, do bench + accessories
+    only.** Missing one 185 lb squat costs nothing. There is no version of this where pushing
+    through on Monday is the right call.
+- **W1 D4 (Fri Aug 14)** runs 6–7am, before that day's injection. Light sumo is fine.
 
 ## Open items
 
-- [ ] **Ask about the shoulder injection at the Aug 14 visit.** Confirmed 2026-07-07 that the
-      clinic would treat both; as of 07-11 they were still doing back only. It has been a month.
-- [ ] **Ask the return-to-heavy-axial-load question** and get a concrete window. Bring the
-      lumbar MRI. This is the gate on the squat release.
-- [ ] **If a shoulder injection starts**, tell me — bench needs a load cap for the weeks inside
-      the masking window, same logic as the back. The ≤3/10 rule can't protect a chemically
-      quiet joint.
+- [ ] **Ask the doctor what "heavy" means — literally.** *"Is a 185 lb technique squat inside what
+      you're telling me to stop? Bodyweight work? Upper body?"* This is the single highest-value
+      question on the list; it either confirms this block or unlocks W3–W4.
+- [ ] **Confirm the injection agent** — anesthetic only, or anesthetic + steroid? Changes how long
+      the masking lasts. This file said "corticosteroid" from 2026-07-06 and that may be wrong.
+- [ ] **Tell the clinic what you actually lift.** He was *shocked* — which means he's been planning
+      your treatment without knowing. Give him the real numbers so the advice is built on them.
+- [ ] **Ask about the shoulder injection.** Still not given as of 2026-08-07 (he palpated and said
+      it's okay). If one starts, tell me — bench and dip go to a load cap.
 - [ ] **B4 W5 deload** never synced. Append it to `reviews/2026-Q3-B04.md` when it lands.
 - [ ] **Chest Supported Incline Row load is a guess** (~50/hand, converted from Meadows 80).
       The Saturday sync will re-anchor it after W1.
+- [ ] **B6 (mid-Sep)** is where squat and sumo come back, on clearance. Paused RDL and Paused
+      Low-bar Squat return then too.

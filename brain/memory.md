@@ -163,6 +163,42 @@ same-weight sibling sets (`infer_reps`): `195x50 → 195x5`, used in the numbers
 is fixed; when a review shows a `corrected` set, mention it so he can clean the source. Same class of
 gap as `loads-from-logs`: pulled numbers are only as trustworthy as the guard around the raw log.
 
+## 2026-08-07 (evening) — doctor orders 4 weeks off heavy; B5 axial work rewritten light
+Pain-clinic visit: 4–5 lower-back injections, **no shoulder injection** (palpated, "it's okay"), and
+the doctor was **shocked he's still lifting heavy → stop heavy lifting for 4 weeks** (to ~09-04,
+covering B5 W1–W4). Squat → **185–245 ×5 @6**, sumo → **185–225 ×3 @6**, Paused RDL + Paused Squat
+**cut**, back extension bodyweight through W2. Bench/pull-up/dip untouched. Rule `clinical-override`.
+**The injections are probably NOT corticosteroid.** He describes "freezing" (local anesthetic) into
+4–5 sites to loosen muscle — that's a **trigger-point injection** for myofascial pain, not disc
+treatment. This repo has said "corticosteroid" since 2026-07-06 and may have been wrong all along.
+**Anesthetic masks harder than steroid** (immediate profound numbness vs gradual dulling), so
+`masked-pain-load-cap` binds more, not less.
+**How to handle him disagreeing with a doctor — the pattern worth reusing.** He said "he recommended
+completely stopping, but I kinda don't agree." Right answer was *not* to pick a side: agree on the
+principle (graded loading beats rest — he's correct), then point out **they're probably not
+disagreeing** — "heavy" to a clinician who just heard about 465 lb squats means the 465, not 185.
+The fix is to make him ask the specific question, not to overrule anyone. Two supporting arguments
+that landed: the doctor was **shocked**, i.e. he'd been planning treatment without knowing, so this
+is considered not reflexive; and **complying costs almost nothing** because squat was already capped
+and sumo already demoted. Reframing compliance as cheap is what moved it.
+**And always write the light numbers down** — "train light" is not a restriction for this athlete
+(B4 W1 sumo planned 345 → pulled 425).
+**He then negotiated, and the negotiation pattern is worth reusing.** He asked for a **225 floor**
+("I'll be depressed with 185"). Granted — but as a **flat load with no ramp**, so the ceiling fell
+from the planned 245. *Higher floor, lower ceiling, zero creep.* Giving ground on the number he
+cares about while taking it back on the shape he doesn't notice is the trade that works with him.
+Declined, with reasons: **more reps** (second time asked — backs fail on fatigued reps; the lever is
+load and SETS, so squat got a 4th set instead), **DB RDL** (a second loaded hinge is what we cut;
+gave Seated Leg Curl instead — spine-free), and **"strive even more upstairs since I'll have more
+energy"** (recovery isn't one pool; the limiter on bench/dip is the shoulder, not systemic energy —
+redirected him to *hitting* @8 in W4 rather than adding to the plan).
+⚠️ **His account of the doctor escalated between messages** — "stop the heavy lifting" became "stop
+working on any of the exercises." Unresolved, flagged. Logged as an explicit **athlete override**
+(same treatment as the 2026-06-13 comp-bench decision) with hard escalation triggers: leg symptoms,
+night pain, pain not settling in 24 h, or two "sore" back checks in a row → axial work stops.
+**Watch for the account of a clinical instruction shifting on re-telling — confirm, don't average.**
+Injection agent confirmed **anesthetic only**; steroid is the doctor's next option if this fails.
+
 ## Shoulder MRI read (shared 2026-08-07) — closes a gap open since June
 Low-grade partial-thickness **supraspinatus AND subscapularis** tears at the insertions; mild AC
 degeneration; mild subacromial-subdeltoid bursitis. Infraspinatus/teres minor intact, biceps
