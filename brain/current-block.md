@@ -1,104 +1,162 @@
 # Current Block
 
-# Block 4 — 2026-Q3-B04 (Bench-led strength progression)
+# Block 5 — 2026-Q3-B05 (Strive where it's safe, protect what isn't)
 
-**Block ID**: 2026-Q3-B04
-**Dates**: 2026-07-06 → ~2026-08-09 (5 weeks, 4 days/week)
-**Source**: Finalized from the B4 draft on 2026-07-04 (drafted from B3 W1–W4 Hevy actuals).
-Rendered to the review sheet (`12go_vLzU293s7YBFv4DJppsXrisS8XHxCq5-8luloWE`).
-**Theme**: Bench-led strength progression — push comp bench (priority lift), keep squat &
-sumo climbing on heavier backoff volume, and finally cap the pull-up RPE drift.
+**Block ID**: 2026-Q3-B05
+**Dates**: 2026-08-10 → 2026-09-13 (5 weeks, 4 days/week)
+**Source**: Designed 2026-08-07 from the B4 review (`reviews/2026-Q3-B04.md`) + athlete direction.
+**Theme**: Push bench, pull-up and dip hard. Hold squat under the injection cap with a W3
+clearance gate. Demote sumo to a technical skill lift with no PR intent.
 
-**Working e1RMs from the B3 log (lbs)**: Squat 512 · Comp Bench 266 · Sumo 501 ·
-WPU ~291 (BW+85×3 @8.5) · Dip 306 (BW+90×4 @7.5). These supersede the stale reference maxes.
+**Working numbers from the B4 log (lbs)**: Squat 511.5 (465×3 @7.5) · Comp Bench 266.7
+(250×2 @6, ~300 RPE-adjusted) · Sumo 467.5 · WPU 286 (BW+80×3 @7.5) · Dip 300.3 (BW+85×4 @6).
 
-## Split (4 days/week)
-> **Training days: D1 Mon · D2 Tue · D3 Thu · D4 Fri.** Default week. D4 occasionally
-> slips to Saturday when Friday doesn't work. Morning training — all four done by early afternoon.
+> ⚠️ **B4's W5 deload never synced** (log ends 2026-07-31). These are W1–W4 numbers. If W5 lands
+> later and shows anything odd, revisit W1 here.
 
-- **D1 (Mon) — Squat + Comp Bench**: Low-bar Squat (top + backoff) · Comp Bench (top + backoff) · Iso-Lateral Row · Tricep Pushdown · Leg Extension
-- **D2 (Tue) — WPU + Sumo Acc**: Weighted Pull-up (top + backoff + BW AMRAP) · Paused RDL · DB Shoulder Press · Concentration Curl · **Hanging Leg Raise (NEW)**
-- **D3 (Thu) — Dip + Squat Acc**: Weighted Dip (top) · **3-1-0 Tempo Squat (top + backoff, @7 cap) — ROTATED from Paused Squat** · Lat Pulldown · Hip Adduction · **Reverse Pec Deck (rotation)**
-- **D4 (Fri) — Sumo + Spoto**: Sumo Deadlift (top + backoff) · **Spoto Bench Press — ROTATED from CGB** · Meadows Row · Face Pull · **Incline DB Press (NEW)**
+---
+
+## The one-sentence version
+
+B4 proved you'll respect a cap — so this block the caps move to exactly where the injury is
+(squat, sumo) and come off where it isn't (bench, pull-up, dip).
+
+## Split (4 days/week) — Big 5 fixed, days unchanged
+
+> **D1 Mon · D2 Tue · D3 Thu · D4 Fri.** Morning training, 6–7am. D4 occasionally slips to Sat.
+> **The five primary lifts and their days do not change.** Locked at the athlete's request.
+
+- **D1 (Mon) — Squat + Comp Bench**: Low-bar Squat (top + backoff) · Comp Bench (top + backoff) · Tricep Pushdown · Leg Extension
+- **D2 (Tue) — WPU + Hinge**: Weighted Pull-up (top + backoff) · Paused RDL *(load cut)* · DB Shoulder Press · Concentration Curl · Hanging Leg Raise
+- **D3 (Thu) — Dip + Squat Acc**: Weighted Dip · **Paused Low-bar Squat — ROTATED from 3-1-0 Tempo** · Lat Pulldown · Reverse Pec Deck · Face Pull
+- **D4 (Fri) — Sumo + Spoto**: Sumo Deadlift (top + backoff) · Spoto Bench Press *(held)* · **Chest Supported Incline Row (NEW)** · Incline DB Press · **Weighted Back Extension (back in)**
 
 ## Wave — top sets
+
 | Week | Squat | Comp Bench | Sumo | WPU | Dip |
 |------|-------|-----------|------|-----|-----|
-| W1 @6–7 | 435×4 @7 | 220×4 @7 | **345×4 @6 (band)** | BW+65×4 @7 | BW+55×6 @7 |
-| W2 @7–7.5 | 455×3 @7.5 | 230×4 @7.5 | **365×3 @7 (band)** | BW+70×4 @7.5 | BW+70×5 @7.5 |
-| W3 @8 | **~455×3 @7.5 (capped)** | 240×3 @8 | **≤385×3 @7 (band)** | BW+75×3 @8 | **BW+85×4 @8 (dip peak)** |
-| W4 peak | **~455–465×3 @7.5 (capped)** | **250×2 @8** | **≤405×3 @7 (band ceiling)** | BW+80×3 @8 | BW+75×5 @7.5 (pull back) |
-| W5 deload | 405×3 @6 | 195×4 @6 | 345×4 @6 | BW+50×4 @6 | BW+45×6 @6 |
+| W1 calibration | 435×4 @7 | 230×4 @7 | 345×3 @6 | BW+70×4 @7 | BW+60×6 @7 |
+| W2 build | 455×3 @7.5 | 240×4 @7.5 | 345×3 @6 | BW+75×4 @7.5 | BW+75×5 @7.5 |
+| W3 push | **455×3 @7.5 (capped)** | 245×3 @7.5 *(hold)* | 365×3 @7 | BW+80×3 @8 | **BW+90×4 @8 (dip peak)** |
+| W4 peak | **465×3 @7.5 (capped)** | **255–270×2 — work up to @8** | 365×3 @7 | **BW+85×3 @8** | BW+80×5 @7.5 |
+| W5 deload | 405×3 @6 | 200×4 @6 | 315×3 @6 | BW+55×4 @6 | BW+50×6 @6 |
 
-> **Sumo — durable L5-S1 band (2026-07-22, supersedes the injection cap for sumo):** sumo now runs
-> the conservative band **345–405 @7, reps ≤4 & crisp, 405 hard ceiling** — the most conservatively
-> loaded Big-5 lift, indefinitely (sumo is the back's canary). Never grind; back rounding / bar-speed
-> drop = rack it. This is *tighter and more durable* than the injection cap. Rule `sumo-back-cap`.
-> **Squat — injection axial cap (2026-07-11, lower-back injection series):** W3–W4 tops **held at W2
-> loads @7.5**, no @8+, W4 PR double dropped (was 495). Cap by **load, not feel** — the corticosteroid
-> masks pain, so RPE can't protect the back. Stimulus off backoff volume. This one is *temporary* —
-> revisit on doctor clearance. Bench/dip/pull-up wave unchanged. See `active-issues.md` → Lower back.
-> **Thu-injection weeks: sumo off Friday morning** — slip D4 to Sat or run Fri sumo light.
-> **Add a next-day back check on sumo days** (back fine / tight / sore) — the honest signal for
-> whether to creep sumo toward 405.
+**Backoff sets** (`primary-backoff-volume`): squat **4·4·4·3·3**, comp bench **4·4·4·3·3**,
+sumo **3·3·3·3·3**, WPU 3 throughout, dip 4 throughout.
 
-**Backoff sets** (matched to the logged B3 norm, tapering one at the peak — `primary-backoff-volume`):
-squat **4·4·4·3·3**, comp bench **4·4·4·3·3**, sumo **3·3·3·2·3** (W1–W5). Backoff ~85% of top.
+## The three postures
 
-> **All prescribed RPEs sit on the Hevy ladder** {6, 7, 7.5, 8, 8.5, 9, 9.5, 10} — the app has
-> no 6.5 or sub-6. Snapped 2026-07-04: deload → @6 (the loggable floor), submax backoff/calibration
-> → @6. The deload stimulus comes from the load drop, not a sub-6 RPE.
+### 🔴 Sumo — SKILL LIFT (no striving)
+Athlete's call, and I agree with it. Sumo stops being periodized like the other four. Fixed
+**345–365 band, crisp triples, @7 ceiling. 405 is not in play this block.** No autoregulating
+up, no PR intent, no "it felt easy so I added weight." The job is the tall lockout and no hitch.
 
-## Why this shape (vs Block 3)
-- **Bench priority**: comp bench top climbs to 250×2 (~e1RM 270, small PR) at a **hard @8
-  cap** — shoulder is structural, ≤3/10 pain. New Incline DB Press adds pressing volume.
-- **Squat/sumo real loads**: peaks anchored on the B3 log (hit 480×2 @8), not the old sheet.
-  Squat W4 top is a **485–495×2 @8** double — work up to a **495 double** (485 floor, no grind).
-  495 has only ever been a comp single, never a gym lift, so this chases a real gym PR double at
-  the top of the range (~528 e1RM if 495×2 lands). Sumo 485×**2** (vs B3's
-  485×**1** @9) — a rep PR at *lower* RPE, dodging the hitch.
-- **Pull-up drift fix**: hard @8 cap, conservative BW+80×3 top. Earn weight with reps; don't
-  add load until RPE drops. Structural answer to the B1→B3 @9+ pattern.
-- **Overlap**: dip peaks **W3**, pulls back W4 so it doesn't stack with the comp-bench peak
-  (both horizontal press). Tempo squat @7 cap on D3 protects Fri sumo.
-- **Secondary rotations (rule `secondary-rotation`, 2 this block)**: bench **CGB → Spoto**
-  (dead-stop off-chest pause; CGB ran 3 straight blocks) and squat **Paused → 3-1-0 Tempo**
-  (slow eccentric, novel stimulus; paused plateaued ~385). Deadlift secondary **held at Paused
-  RDL** — grooves the tall-lockout / no-hitch cue, a live weak point.
+**On the MRI question — sumo did not cause it.** The radiologist called it *age-typical mild
+multilevel degeneration*, which at 37 with 11 training years is what a normal spine looks like.
+Imaging findings correlate poorly with pain. We are being conservative because sumo reproducibly
+fatigues **your** back right now — a symptom signal, which stands on its own. Don't carry the
+belief that you're grinding your discs down; that belief's logical end is dropping the lift, and
+that would be the wrong move. Detraining a hinge makes returning to it more dangerous, and light
+crisp pulling keeps the erectors and glutes doing protective work.
 
-## Where we are
-- **Finalized 2026-07-04.** W1 starts **Mon 2026-07-06**. Nothing logged yet.
+### 🟡 Squat — CAPPED, with a W3 clearance gate
+Default track is capped: **455 @7.5 in W3, 465 @7.5 in W4.** That's what's in the JSON and on
+the Sheet.
+
+**Release track — W3 465×3 @7.5, W4 480×2 @8 — unlocks ONLY on doctor clearance** for heavy
+axial load. Ask at the **Aug 14** visit and bring the 2026-07-22 lumbar MRI; it's reassuring
+(no nerve compression, no canal stenosis) and it's the right document to get a concrete answer
+from. The cap is driven by the corticosteroid **masking pain**, not by imaging — so a clean scan
+alone doesn't lift it, and neither does the series ending. **Do not self-release on feel.**
+
+### 🟢 Bench · Pull-up · Dip — STRIVE
+Nothing about your back constrains these. Bench is the priority lift and B4's one clear miss:
+you peaked **250×2 @6** against an @8 allowance. W4 is deliberately written as a **range with an
+instruction** — *work up to @8, 255–270×2, take the heaviest double that stays at or under the cap.*
+Find the cap. Don't sit two points under it.
+
+**Correction on the shoulder:** the 2026-07-22 MRI is **lumbar only** — it says nothing about
+your shoulder. The shoulder finding on file is the **2025-07-18 ultrasound** (2mm partial-thickness
+subscapularis tear), now 13 months old, and the re-ordered shoulder MRI still hasn't happened.
+You are benching on year-old imaging. That doesn't stop the strive — the ≤3/10 pain rule and the
+@8 cap are the guardrails — but don't tell yourself a recent scan cleared the shoulder.
+
+## Managing overlap (explicit, per CLAUDE.md)
+
+- **Bench (D1 Mon) + Dip (D3 Thu)** — both horizontal press, 3 days apart, never heavy together.
+  **Peaks staggered: dip peaks W3, bench peaks W4**, and bench deliberately *holds* at 245 in W3
+  so the two don't stack.
+- **Deadlift (D4 Fri) + Pull-up (D2 Tue)** — 3 days apart. Sumo is light all block, so back/grip
+  interference is near zero this time. WPU gets the cleanest run it's had.
+- **Squat (D1 Mon) + Sumo (D4 Fri)** — 4 days apart, and sumo never goes above 365.
+- **Dip + shoulder load** — dip peak (W3) sits a week before the bench peak (W4); DB Shoulder
+  Press capped @7; Face Pull moved onto dip day as shoulder-health work.
+- **D1 → D2 (no rest)**: D1 accessories are now triceps + quads only. **Iso-Lateral Row is gone
+  from D1** — it was pre-fatiguing Tuesday's pull-up, a straight `accessory-day-interference`
+  violation that ran all of B4.
+- **D3 → D4 (no rest)**: D3 accessories are lats + rear delts only. **Hip Adduction is out** —
+  adductors on Thursday before Friday sumo. D3 now carries nothing that pre-fatigues the pull.
+- **D2 is unconstrained** (Wed rest before D3), so the hinge secondary lives there.
+
+## Secondaries — 1 rotation, 2 deliberate holds
+
+| Slot | B4 | B5 | Why |
+|---|---|---|---|
+| Squat | 3-1-0 Tempo | **Paused Low-bar Squat** | ROTATED. Tempo had its exposure; paused is depth/position work, run light (335–355 @7 cap) so it isn't a second squat session. |
+| Bench | Spoto | **Spoto (held)** | Added +35 lb across B4, finishing 240×3 @7.5. Bench is the strive lift — rotating away from something mid-progress would break it for no reason. |
+| Deadlift | Paused RDL | **Paused RDL (held, load cut ~40 lb)** | Grooves the tall-lockout / no-hitch cue, a live weak point. But B4 ran it **265–275×5 with backoffs at @8.5** — a heavy second hinge, on the back we're protecting. Now **225–245 @7 cap.** |
+
+## Accessories
+
+| Day | Movement | Load | Note |
+|---|---|---|---|
+| D1 | Tricep Pushdown | 55 → 60 | Bench lockout. |
+| D1 | Leg Extension | **140 → 150** | **Re-anchored from 90.** Sheet was ~50 lb light all of B4. |
+| D2 | DB Shoulder Press | **70 → 75** | Re-anchored from 50. @7 cap — shoulder. |
+| D2 | Concentration Curl | **43 → 48** | Re-anchored from 25. |
+| D2 | Hanging Leg Raise | BW ×12 | Bracing for squat + sumo. |
+| D3 | Lat Pulldown | 180 → 190 | Lat width for the pull-up. |
+| D3 | Reverse Pec Deck | **100 → 110** | **Re-anchored from 45.** You skipped this 4/4 in B4 — it was prescribed at under half your working load. At 100 it's a real set. |
+| D3 | Face Pull | 45 ×15 | Shoulder health. Moved D4 → D3. |
+| D4 | **Chest Supported Incline Row (NEW)** | ~50/hand | Replaces Meadows Row: same upper-back target, **zero lumbar load** on deadlift day. First exposure — 50 is an estimate, the weekly sync corrects it. |
+| D4 | Incline DB Press | **65 → 70** | Re-anchored from 50. (Not new — you have 66 logged sessions.) |
+| D4 | **Weighted Back Extension (back in)** | **45 → 60** | Your request. Erector capacity with **no spinal compression** — the safe way to train the low back. Starting 45, not 90: injections still mask pain. Build toward 90 in B6. |
+
+**Out**: Iso-Lateral Row (1/4 logged, D1→D2 interference) · Hip Adduction (flat at 115 for
+months, D3→D4 interference) · Meadows Row (bent-over lumbar load on deadlift day) · BW AMRAP
+(three blocks, never produced a usable number).
 
 ## Standing orders
-- **Pull-up: @8 is a hard stop.** If a top set exceeds @8, rack it. No BW+90 @9.5 reruns.
-- **Comp bench @8 cap / ≤3/10 pain** (shoulder, structural — see active-issues). Spoto @8 cap.
-  DB Shoulder Press @7 cap. Tempo squat @7 cap.
-- **Sumo — durable L5-S1 band: 345–405 @7, reps ≤4 & crisp, 405 hard ceiling** (`sumo-back-cap`).
-  Most conservative Big-5 lift; never grind — back rounding / bar-speed drop = rack it. The lever is
-  **load, not reps.** Creep toward 405 only when RPE ≤7 **and** the next-morning back check is clean.
-  Log a next-day back check on sumo days. (Supersedes the old sumo axial-cap line.)
-- **Squat capped @7.5 W3–W4 (back injection series, temporary)** — hold W2 loads, no PR double, cap
-  by load not feel; revisit on doctor clearance. **Thu-injection weeks: sumo off Fri morning (slip to
-  Sat or go light).**
-- **Squat & sumo backoff = 4 sets** in the volume weeks (tapers to 3/2 at the peak).
-- **D1 is dense** (squat 5 sets + bench 4 + 3 accessories) — if 60 min runs out, drop the
-  last accessory, never the backoff.
-- **Log every set.** Actual Load + Last-Set RPE minimum. Skipped = logged as skipped with reason.
-- **3-day fallback priority**: D1, D2, D4 (drop D3).
+
+- **Sumo: 345–365, triples, @7. 405 is not in play.** Back rounding or bar-speed drop = rack it.
+  **Log the next-day back check** ("back fine / tight / sore") — it had zero entries all of B4,
+  which is why sumo can't creep. No check, no progression. Ever.
+- **Squat: capped track by default.** Release W3–W4 only on doctor clearance. Not on feel.
+- **Comp bench: @8 cap is a TARGET at the W4 peak, not a ceiling to avoid.** ≤3/10 shoulder pain
+  overrides everything.
+- **Pull-up: @8 is still a hard stop.** It's what fixed this lift. Earn load inside it.
+- **Dip: pain-free depth only.** Peaks W3, backs off W4.
+- **Log every set.** Skipped = logged as skipped with a reason.
+- **3-day fallback priority**: D1, D2, D3 (drop D4 — sumo is the most expendable this block).
+  *Changed from B4:* sumo is now the lowest-value session, dip and the squat secondary are not.
+
+## Injection schedule (athlete, 2026-08-07)
+
+- **Fri Aug 7** (today) and **Fri Aug 14** — then the back series ends.
+- Fridays are 1–4pm and he trains 6–7am, so **same-day D4 always precedes the shot.** W1 D4
+  (Aug 14) is clean. No Thursday injections this block → the "sumo off Friday" rule doesn't fire.
+- **W2 onward is post-series.** The masking effect fades over the following weeks, which is
+  exactly why the squat gate sits at W3 rather than W2.
 
 ## Open items
-- **New accessories** (Hanging Leg Raise / Reverse Pec Deck / Incline DB Press) are first
-  exposures — dial loads in W1–W2, swap any that don't fit.
-- **Tempo-squat loads are conservative** (first 3-1-0 exposure). If W2 feels light, bump 10 lb.
-- ~~**B3 review** outstanding~~ — done 2026-07-04, `reviews/2026-Q2-B03.md` (this line was stale).
-- **B4 review written 2026-08-07** → `reviews/2026-Q3-B04.md`. Covers **W1–W4 only**; the log's last
-  synced session is 2026-07-31, so the W5 deload isn't in the repo. **Re-run `block_report.py` after
-  the next Hevy sync and append a W5 note** before designing B5.
-- **Accessory loads ran light all block** (found 2026-08-07 by the new weekly load sync,
-  `sheet-load-sync`). Six accessories drifted vs the Hevy log: Leg Extension 90–100 → **140**,
-  Reverse Pec Deck 45 → **100**, DB Shoulder Press 50 → **70**, Meadows Row 60 → **80**,
-  Concentration Curl 25 → **43**, Incline DB Press 50 → **65**. Too late to correct in-block
-  (W5) — **carry these anchors into B5.** Root cause was partly a name-mapping bug: Reverse Pec
-  Deck / Incline DB Press / Tricep Pushdown didn't resolve to the templates he logs under, so
-  they looked untrained. **Incline DB Press was labelled "NEW" in this block — he has 66 logged
-  sessions of it.** Mappings fixed; the sync now runs every Saturday.
+
+- [ ] **Ask about the shoulder injection at the Aug 14 visit.** Confirmed 2026-07-07 that the
+      clinic would treat both; as of 07-11 they were still doing back only. It has been a month.
+- [ ] **Ask the return-to-heavy-axial-load question** and get a concrete window. Bring the
+      lumbar MRI. This is the gate on the squat release.
+- [ ] **If a shoulder injection starts**, tell me — bench needs a load cap for the weeks inside
+      the masking window, same logic as the back. The ≤3/10 rule can't protect a chemically
+      quiet joint.
+- [ ] **B4 W5 deload** never synced. Append it to `reviews/2026-Q3-B04.md` when it lands.
+- [ ] **Chest Supported Incline Row load is a guess** (~50/hand, converted from Meadows 80).
+      The Saturday sync will re-anchor it after W1.

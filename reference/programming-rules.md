@@ -88,6 +88,22 @@
   off, so **D2 accessories are unconstrained.** This extends CLAUDE.md's primary-lift overlap
   rules down to accessories. [FB 2026-06-18]
 
+- **cap-is-a-target** — An RPE cap on a lift that is **not** injury-restricted is a ceiling to
+  *approach*, not a number to stay under. B4 proved the failure mode: after three blocks of
+  breaching caps, the athlete over-corrected and peaked comp bench at **@6 against an @8
+  allowance** on a bench-led block. When a lift is in "strive" posture, write the peak as an
+  **instruction plus a load range** — "work up to @8, 255–270×2, take the heaviest set that stays
+  ≤@8" — never a single number at a cap RPE. Reserve fixed-load prescriptions for lifts under an
+  injury cap, where the load *is* the restriction (`sumo-back-cap`, the squat axial cap).
+  [FB 2026-08-07]
+- **masked-pain-load-cap** — When a corticosteroid injection is active in a joint or region, the
+  pain signal is **chemically muffled**, so pain-based and RPE-based guardrails stop protecting
+  that structure. Cap the affected lifts **by absolute load** for the injection window and the
+  weeks after, and lift the cap on **doctor clearance** — not on the series ending, not on a clean
+  scan, and never on how it feels. Established for the lower back / squat + sumo; **applies to the
+  shoulder and bench the moment a shoulder injection starts** (still pending as of 2026-08-07 —
+  the athlete must report it so bench gets the same treatment). [FB 2026-08-07]
+
 ## RPE conventions
 
 - **accessory-rpe** — Accessories usually have **no logged RPE**. Treat a blank-RPE accessory
@@ -145,6 +161,21 @@
 - **Bench secondary** — **CGB is the default secondary** for bench improvement, but it can
   **rotate** (per `accessory-rotation`) among CGB / paused bench / incline bench / similar.
   Pick the secondary that best serves the bench weak point for that block. [FB 2026-06-18]
+- **sumo-skill-lift** — **Sumo is programmed as a SKILL lift, not a strength lift** (athlete
+  decision 2026-08-07). It stays one of the Big 5 and keeps its day, but it is **not periodized
+  for progression**: no PR intent, no intensity wave, no autoregulating up, no "felt easy so I
+  added weight." Prescribe a **fixed low band, crisp low reps, technique focus** (tall lockout,
+  no hitch) and hold it. This sits *inside* `sumo-back-cap` and is tighter still — B5 runs
+  345–365 @7 and does not touch the 405 ceiling at all.
+  **Why keep it rather than drop it:** detraining a hinge makes returning to it more dangerous;
+  light crisp pulling keeps erectors and glutes doing protective work; and the above-the-knee
+  hitch only gets fixed with reps at an ownable load.
+  **On causation — do not tell the athlete sumo damaged his spine.** The 2026-07-22 MRI reads
+  *age-typical mild multilevel degeneration*, which is unremarkable at 37 with 11 training years,
+  and imaging correlates poorly with pain. The conservatism is justified by his **symptom
+  pattern**, not by the images. Getting this backwards pushes toward dropping the lift, which is
+  the wrong call. Revisit the skill-lift framing only after a long pain-free stretch **and** a
+  doctor's clearance. [FB 2026-08-07]
 - **sumo-back-cap** — Sumo is the athlete's lower-back canary (fatigues/flares at **L5-S1**,
   imaging-consistent). Program it as the **most conservatively loaded Big-5 lift**: working band
   **345–405 lb, RPE cap 7, reps ≤4 and every rep crisp, 405 = hard ceiling** while the back is a

@@ -163,6 +163,28 @@ same-weight sibling sets (`infer_reps`): `195x50 → 195x5`, used in the numbers
 is fixed; when a review shows a `corrected` set, mention it so he can clean the source. Same class of
 gap as `loads-from-logs`: pulled numbers are only as trustworthy as the guard around the raw log.
 
+## Block 5 designed (2026-08-07) — selective striving
+B5 (`2026-Q3-B05`, 2026-08-10 → 09-13). Theme: **strive where it's safe, protect what isn't.**
+Bench/pull-up/dip push; squat capped with a **W3 doctor-clearance gate**; **sumo demoted to a skill
+lift** (345–365 @7, crisp triples, 405 untouched, no PR intent — rule `sumo-skill-lift`).
+**Three corrections worth remembering, because he'll likely repeat them:**
+1. He believes sumo caused his MRI degeneration. It didn't — *age-typical* at 37 with 11 training
+   years, and imaging correlates poorly with pain. Correct this whenever it resurfaces; the belief
+   trends toward dropping the lift, which is the wrong call.
+2. He conflates the **2026-07-22 lumbar MRI** with shoulder imaging. There is none current — the
+   shoulder finding is a **2025-07-18 ultrasound** and the re-ordered shoulder MRI still hasn't
+   happened.
+3. He expects the squat cap to lift when the injection series ends. It lifts on **doctor
+   clearance** (`masked-pain-load-cap`) — the steroid masks pain for weeks after.
+**New rule `cap-is-a-target`:** on lifts *not* injury-capped, write the peak as an instruction +
+load range ("work up to @8, 255–270×2"), never a single number at the cap RPE. Direct answer to
+B4's @6-against-@8 bench peak.
+**Day-interference violations that ran all of B4, now fixed:** Iso-Lateral Row on D1 pre-fatigued
+Tuesday's pull-up; Hip Adduction on D3 pre-fatigued Friday's sumo. Both out. Meadows Row (bent-over
+lumbar load on deadlift day) → Chest Supported Incline Row, zero spinal load.
+**Watch for:** if a shoulder injection starts, bench needs a load cap for the masking window —
+same logic as the back. He must report it.
+
 ## Block 4 review written (2026-08-07) → reviews/2026-Q3-B04.md
 W1–W4 only (log last synced 2026-07-31; W5 deload not yet in the repo — append when it lands).
 Final actuals: Squat **511.5** (465×3 @7.5) · Comp Bench **266.7** (250×2 @6) · Sumo **467.5**

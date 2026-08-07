@@ -111,7 +111,11 @@ def _identity(name: str, index: list[dict], resolver) -> tuple[str, str] | None:
     Returning an identity (not a single exercise) lets us collect every session."""
     exemplar = _match_accessory(name, index, resolver)
     if exemplar is None:
-        return None
+        # Nothing logged in the window. If the name still resolves to a real Hevy template,
+        # this is a genuinely untrained movement (a first exposure), NOT a mapping gap —
+        # return the identity so the report says "nothing logged" without crying wolf.
+        tid = resolver(name)
+        return ("tid", tid) if tid else None
     tid = exemplar.get("exercise_template_id")
     if tid:
         return ("tid", tid)

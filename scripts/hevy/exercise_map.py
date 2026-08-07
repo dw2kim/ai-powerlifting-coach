@@ -75,6 +75,8 @@ OVERRIDES: dict[str, str] = {
     "incline db press": "Incline Bench Press (Dumbbell)",
     "meadows row": "Meadows Rows (Barbell)",
     "weighted back ext": "Back Extension (Weighted Hyperextension)",
+    "weighted back extension": "Back Extension (Weighted Hyperextension)",
+    "back extension": "Back Extension (Weighted Hyperextension)",
     "face pull": "Face Pull",
     # No native cable-pullover template; Pullover (Machine) is the closest stand-in.
     "cable lat pullover": "Pullover (Machine)",
