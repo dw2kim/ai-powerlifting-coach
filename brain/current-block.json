@@ -129,6 +129,54 @@
           ]
         },
         {
+          "name": "Leg Press (Machine)",
+          "notes": "NEW — replaces Leg Extension. Quad/glute volume with no bar on your back. HARD ROM RULE: stop the sled well before your hips lift off the pad — at depth the pelvis tucks under load, and loaded lumbar flexion is exactly the L3-4 mechanism. Run at 315-365, well under your 495 log median: 'moderate if tolerated' is a number here, not a feel, because the injections mask the feel.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 142.9,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 142.9,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 142.9,
+              "reps": 10,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Hip Thrust",
+          "notes": "NEW — the best hip-extension option available with zero spinal compression, and the direct replacement for what the light squat/sumo no longer give you. ZERO logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES — never hyperextend the lower back at lockout. That is the one way this movement hurts you, and a numb back will not warn you.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 10,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 10,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 10,
+              "rpe": 6
+            }
+          ]
+        },
+        {
           "name": "Tricep Pushdown",
           "notes": "Lockout for bench. Log anchor 53 lb.",
           "sets": [
@@ -153,24 +201,24 @@
           ]
         },
         {
-          "name": "Leg Extension",
-          "notes": "RE-ANCHORED 90 → 140 (log median 140, max 165). The sheet was ~50 lb light all of B4.",
+          "name": "Skullcrusher (Barbell)",
+          "notes": "NEW — long-head triceps, the bench-lockout angle the pushdown misses (pushdowns bias the lateral/medial head). Bench is the priority lift and this is bench day. Log median 75 lb across 4 sessions. Elbows in, no shoulder travel.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 63.5,
+              "weight_kg": 34.0,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 63.5,
+              "weight_kg": 34.0,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 63.5,
+              "weight_kg": 34.0,
               "reps": 10,
               "rpe": 7
             }
@@ -293,28 +341,53 @@
           ]
         },
         {
-          "name": "Hanging Leg Raise",
-          "notes": "Bodyweight bracing. Add load when 3×12 is easy.",
+          "name": "Pallof Press",
+          "notes": "REPLACES Hanging Leg Raise. Anti-rotation core — the kind that PROTECTS a lumbar spine. Hanging leg raise is hip-flexor dominant and the psoas attaches straight onto L1-L5, so it pulls on the exact segments we are protecting. Log median 20 lb. Per side, slow, brace and resist the rotation — do not rush it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 0.0,
+              "weight_kg": 9.1,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 0.0,
+              "weight_kg": 9.1,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 0.0,
+              "weight_kg": 9.1,
               "reps": 12,
               "rpe": 7
             }
           ]
+        },
+        {
+          "name": "Dead Bug",
+          "notes": "REPLACES Hanging Leg Raise (with the Pallof press). Anti-extension core: teaches the brace that keeps your lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow — lower back stays flat on the floor the entire time. If it arches off the floor, shorten the range.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            }
+          ],
+          "display_load": "BW"
         }
       ]
     },
@@ -482,6 +555,30 @@
           ]
         },
         {
+          "name": "Bulgarian Split Squat",
+          "notes": "NEW to the block, NOT new to you — 50 logged sessions, median 42.5/hand. This is your 'lunge', already grooved. Unilateral, so you get a leg's worth of quad/glute stimulus at roughly half the spinal load of bilateral squatting. Torso tall, per leg.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 10,
+              "rpe": 7
+            }
+          ]
+        },
+        {
           "name": "Chest Supported Incline Row",
           "notes": "NEW — replaces Meadows Row. Same target, ZERO lumbar load (chest supported) on your deadlift day. First exposure: 50 lb/hand is an estimate, the weekly log sync will correct it.",
           "sets": [
@@ -611,6 +708,54 @@
           ]
         },
         {
+          "name": "Leg Press (Machine)",
+          "notes": "NEW — replaces Leg Extension. Quad/glute volume with no bar on your back. HARD ROM RULE: stop the sled well before your hips lift off the pad — at depth the pelvis tucks under load, and loaded lumbar flexion is exactly the L3-4 mechanism. Run at 315-365, well under your 495 log median: 'moderate if tolerated' is a number here, not a feel, because the injections mask the feel.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 142.9,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 142.9,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 142.9,
+              "reps": 10,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Hip Thrust",
+          "notes": "NEW — the best hip-extension option available with zero spinal compression, and the direct replacement for what the light squat/sumo no longer give you. ZERO logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES — never hyperextend the lower back at lockout. That is the one way this movement hurts you, and a numb back will not warn you.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 61.2,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 61.2,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 61.2,
+              "reps": 10,
+              "rpe": 7
+            }
+          ]
+        },
+        {
           "name": "Tricep Pushdown",
           "notes": "Lockout for bench. Log anchor 53 lb.",
           "sets": [
@@ -635,24 +780,24 @@
           ]
         },
         {
-          "name": "Leg Extension",
-          "notes": "RE-ANCHORED 90 → 140 (log median 140, max 165). The sheet was ~50 lb light all of B4.",
+          "name": "Skullcrusher (Barbell)",
+          "notes": "NEW — long-head triceps, the bench-lockout angle the pushdown misses (pushdowns bias the lateral/medial head). Bench is the priority lift and this is bench day. Log median 75 lb across 4 sessions. Elbows in, no shoulder travel.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 63.5,
+              "weight_kg": 34.0,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 63.5,
+              "weight_kg": 34.0,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 63.5,
+              "weight_kg": 34.0,
               "reps": 10,
               "rpe": 7
             }
@@ -775,28 +920,53 @@
           ]
         },
         {
-          "name": "Hanging Leg Raise",
-          "notes": "Bodyweight bracing. Add load when 3×12 is easy.",
+          "name": "Pallof Press",
+          "notes": "REPLACES Hanging Leg Raise. Anti-rotation core — the kind that PROTECTS a lumbar spine. Hanging leg raise is hip-flexor dominant and the psoas attaches straight onto L1-L5, so it pulls on the exact segments we are protecting. Log median 20 lb. Per side, slow, brace and resist the rotation — do not rush it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 0.0,
+              "weight_kg": 9.1,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 0.0,
+              "weight_kg": 9.1,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 0.0,
+              "weight_kg": 9.1,
               "reps": 12,
               "rpe": 7
             }
           ]
+        },
+        {
+          "name": "Dead Bug",
+          "notes": "REPLACES Hanging Leg Raise (with the Pallof press). Anti-extension core: teaches the brace that keeps your lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow — lower back stays flat on the floor the entire time. If it arches off the floor, shorten the range.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            }
+          ],
+          "display_load": "BW"
         }
       ]
     },
@@ -964,6 +1134,30 @@
           ]
         },
         {
+          "name": "Bulgarian Split Squat",
+          "notes": "NEW to the block, NOT new to you — 50 logged sessions, median 42.5/hand. This is your 'lunge', already grooved. Unilateral, so you get a leg's worth of quad/glute stimulus at roughly half the spinal load of bilateral squatting. Torso tall, per leg.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 10,
+              "rpe": 7
+            }
+          ]
+        },
+        {
           "name": "Chest Supported Incline Row",
           "notes": "NEW — replaces Meadows Row. Same target, ZERO lumbar load (chest supported) on your deadlift day. First exposure: 50 lb/hand is an estimate, the weekly log sync will correct it.",
           "sets": [
@@ -1093,6 +1287,54 @@
           ]
         },
         {
+          "name": "Leg Press (Machine)",
+          "notes": "NEW — replaces Leg Extension. Quad/glute volume with no bar on your back. HARD ROM RULE: stop the sled well before your hips lift off the pad — at depth the pelvis tucks under load, and loaded lumbar flexion is exactly the L3-4 mechanism. Run at 315-365, well under your 495 log median: 'moderate if tolerated' is a number here, not a feel, because the injections mask the feel.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 165.6,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 165.6,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 165.6,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Hip Thrust",
+          "notes": "NEW — the best hip-extension option available with zero spinal compression, and the direct replacement for what the light squat/sumo no longer give you. ZERO logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES — never hyperextend the lower back at lockout. That is the one way this movement hurts you, and a numb back will not warn you.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 83.9,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.9,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.9,
+              "reps": 10,
+              "rpe": 7
+            }
+          ]
+        },
+        {
           "name": "Tricep Pushdown",
           "notes": "Lockout for bench. Log anchor 53 lb.",
           "sets": [
@@ -1117,24 +1359,24 @@
           ]
         },
         {
-          "name": "Leg Extension",
-          "notes": "RE-ANCHORED 90 → 140 (log median 140, max 165). The sheet was ~50 lb light all of B4.",
+          "name": "Skullcrusher (Barbell)",
+          "notes": "NEW — long-head triceps, the bench-lockout angle the pushdown misses (pushdowns bias the lateral/medial head). Bench is the priority lift and this is bench day. Log median 75 lb across 4 sessions. Elbows in, no shoulder travel.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 68.0,
+              "weight_kg": 36.3,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 68.0,
+              "weight_kg": 36.3,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 68.0,
+              "weight_kg": 36.3,
               "reps": 10,
               "rpe": 7.5
             }
@@ -1257,28 +1499,53 @@
           ]
         },
         {
-          "name": "Hanging Leg Raise",
-          "notes": "Bodyweight bracing. Add load when 3×12 is easy.",
+          "name": "Pallof Press",
+          "notes": "REPLACES Hanging Leg Raise. Anti-rotation core — the kind that PROTECTS a lumbar spine. Hanging leg raise is hip-flexor dominant and the psoas attaches straight onto L1-L5, so it pulls on the exact segments we are protecting. Log median 20 lb. Per side, slow, brace and resist the rotation — do not rush it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 0.0,
+              "weight_kg": 11.3,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 0.0,
+              "weight_kg": 11.3,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 0.0,
+              "weight_kg": 11.3,
               "reps": 12,
               "rpe": 7
             }
           ]
+        },
+        {
+          "name": "Dead Bug",
+          "notes": "REPLACES Hanging Leg Raise (with the Pallof press). Anti-extension core: teaches the brace that keeps your lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow — lower back stays flat on the floor the entire time. If it arches off the floor, shorten the range.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            }
+          ],
+          "display_load": "BW"
         }
       ]
     },
@@ -1446,6 +1713,30 @@
           ]
         },
         {
+          "name": "Bulgarian Split Squat",
+          "notes": "NEW to the block, NOT new to you — 50 logged sessions, median 42.5/hand. This is your 'lunge', already grooved. Unilateral, so you get a leg's worth of quad/glute stimulus at roughly half the spinal load of bilateral squatting. Torso tall, per leg.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 22.7,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.7,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.7,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
           "name": "Chest Supported Incline Row",
           "notes": "NEW — replaces Meadows Row. Same target, ZERO lumbar load (chest supported) on your deadlift day. First exposure: 50 lb/hand is an estimate, the weekly log sync will correct it.",
           "sets": [
@@ -1570,6 +1861,54 @@
           ]
         },
         {
+          "name": "Leg Press (Machine)",
+          "notes": "NEW — replaces Leg Extension. Quad/glute volume with no bar on your back. HARD ROM RULE: stop the sled well before your hips lift off the pad — at depth the pelvis tucks under load, and loaded lumbar flexion is exactly the L3-4 mechanism. Run at 315-365, well under your 495 log median: 'moderate if tolerated' is a number here, not a feel, because the injections mask the feel.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 165.6,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 165.6,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 165.6,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Hip Thrust",
+          "notes": "NEW — the best hip-extension option available with zero spinal compression, and the direct replacement for what the light squat/sumo no longer give you. ZERO logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES — never hyperextend the lower back at lockout. That is the one way this movement hurts you, and a numb back will not warn you.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 83.9,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.9,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.9,
+              "reps": 10,
+              "rpe": 7
+            }
+          ]
+        },
+        {
           "name": "Tricep Pushdown",
           "notes": "Lockout for bench. Log anchor 53 lb.",
           "sets": [
@@ -1594,24 +1933,24 @@
           ]
         },
         {
-          "name": "Leg Extension",
-          "notes": "RE-ANCHORED 90 → 140 (log median 140, max 165). The sheet was ~50 lb light all of B4.",
+          "name": "Skullcrusher (Barbell)",
+          "notes": "NEW — long-head triceps, the bench-lockout angle the pushdown misses (pushdowns bias the lateral/medial head). Bench is the priority lift and this is bench day. Log median 75 lb across 4 sessions. Elbows in, no shoulder travel.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 68.0,
+              "weight_kg": 36.3,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 68.0,
+              "weight_kg": 36.3,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 68.0,
+              "weight_kg": 36.3,
               "reps": 10,
               "rpe": 7.5
             }
@@ -1734,28 +2073,53 @@
           ]
         },
         {
-          "name": "Hanging Leg Raise",
-          "notes": "Bodyweight bracing. Add load when 3×12 is easy.",
+          "name": "Pallof Press",
+          "notes": "REPLACES Hanging Leg Raise. Anti-rotation core — the kind that PROTECTS a lumbar spine. Hanging leg raise is hip-flexor dominant and the psoas attaches straight onto L1-L5, so it pulls on the exact segments we are protecting. Log median 20 lb. Per side, slow, brace and resist the rotation — do not rush it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 0.0,
+              "weight_kg": 11.3,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 0.0,
+              "weight_kg": 11.3,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 0.0,
+              "weight_kg": 11.3,
               "reps": 12,
               "rpe": 7
             }
           ]
+        },
+        {
+          "name": "Dead Bug",
+          "notes": "REPLACES Hanging Leg Raise (with the Pallof press). Anti-extension core: teaches the brace that keeps your lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow — lower back stays flat on the floor the entire time. If it arches off the floor, shorten the range.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            }
+          ],
+          "display_load": "BW"
         }
       ]
     },
@@ -1923,6 +2287,30 @@
           ]
         },
         {
+          "name": "Bulgarian Split Squat",
+          "notes": "NEW to the block, NOT new to you — 50 logged sessions, median 42.5/hand. This is your 'lunge', already grooved. Unilateral, so you get a leg's worth of quad/glute stimulus at roughly half the spinal load of bilateral squatting. Torso tall, per leg.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 22.7,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.7,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.7,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
           "name": "Chest Supported Incline Row",
           "notes": "NEW — replaces Meadows Row. Same target, ZERO lumbar load (chest supported) on your deadlift day. First exposure: 50 lb/hand is an estimate, the weekly log sync will correct it.",
           "sets": [
@@ -2040,6 +2428,54 @@
           ]
         },
         {
+          "name": "Leg Press (Machine)",
+          "notes": "NEW — replaces Leg Extension. Quad/glute volume with no bar on your back. HARD ROM RULE: stop the sled well before your hips lift off the pad — at depth the pelvis tucks under load, and loaded lumbar flexion is exactly the L3-4 mechanism. Run at 315-365, well under your 495 log median: 'moderate if tolerated' is a number here, not a feel, because the injections mask the feel.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 102.1,
+              "reps": 12,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 102.1,
+              "reps": 12,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 102.1,
+              "reps": 12,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Hip Thrust",
+          "notes": "NEW — the best hip-extension option available with zero spinal compression, and the direct replacement for what the light squat/sumo no longer give you. ZERO logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES — never hyperextend the lower back at lockout. That is the one way this movement hurts you, and a numb back will not warn you.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 61.2,
+              "reps": 12,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 61.2,
+              "reps": 12,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 61.2,
+              "reps": 12,
+              "rpe": 6
+            }
+          ]
+        },
+        {
           "name": "Tricep Pushdown",
           "notes": "Lockout for bench. Log anchor 53 lb.",
           "sets": [
@@ -2064,24 +2500,24 @@
           ]
         },
         {
-          "name": "Leg Extension",
-          "notes": "RE-ANCHORED 90 → 140 (log median 140, max 165). The sheet was ~50 lb light all of B4.",
+          "name": "Skullcrusher (Barbell)",
+          "notes": "NEW — long-head triceps, the bench-lockout angle the pushdown misses (pushdowns bias the lateral/medial head). Bench is the priority lift and this is bench day. Log median 75 lb across 4 sessions. Elbows in, no shoulder travel.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 49.9,
+              "weight_kg": 27.2,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 49.9,
+              "weight_kg": 27.2,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 49.9,
+              "weight_kg": 27.2,
               "reps": 12,
               "rpe": 6
             }
@@ -2204,28 +2640,53 @@
           ]
         },
         {
-          "name": "Hanging Leg Raise",
-          "notes": "Bodyweight bracing. Add load when 3×12 is easy.",
+          "name": "Pallof Press",
+          "notes": "REPLACES Hanging Leg Raise. Anti-rotation core — the kind that PROTECTS a lumbar spine. Hanging leg raise is hip-flexor dominant and the psoas attaches straight onto L1-L5, so it pulls on the exact segments we are protecting. Log median 20 lb. Per side, slow, brace and resist the rotation — do not rush it.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 9.1,
+              "reps": 12,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 9.1,
+              "reps": 12,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 9.1,
+              "reps": 12,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Dead Bug",
+          "notes": "REPLACES Hanging Leg Raise (with the Pallof press). Anti-extension core: teaches the brace that keeps your lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow — lower back stays flat on the floor the entire time. If it arches off the floor, shorten the range.",
           "sets": [
             {
               "type": "normal",
               "weight_kg": 0.0,
-              "reps": 12,
-              "rpe": 7
+              "reps": 10,
+              "rpe": 6
             },
             {
               "type": "normal",
               "weight_kg": 0.0,
-              "reps": 12,
-              "rpe": 7
+              "reps": 10,
+              "rpe": 6
             },
             {
               "type": "normal",
               "weight_kg": 0.0,
-              "reps": 12,
-              "rpe": 7
+              "reps": 10,
+              "rpe": 6
             }
-          ]
+          ],
+          "display_load": "BW"
         }
       ]
     },
@@ -2388,6 +2849,30 @@
               "type": "normal",
               "weight_kg": 88.5,
               "reps": 5,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Bulgarian Split Squat",
+          "notes": "NEW to the block, NOT new to you — 50 logged sessions, median 42.5/hand. This is your 'lunge', already grooved. Unilateral, so you get a leg's worth of quad/glute stimulus at roughly half the spinal load of bilateral squatting. Torso tall, per leg.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 15.9,
+              "reps": 12,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.9,
+              "reps": 12,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.9,
+              "reps": 12,
               "rpe": 6
             }
           ]

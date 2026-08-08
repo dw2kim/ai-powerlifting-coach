@@ -102,9 +102,17 @@ _FAMILY_BG = {
 }
 
 
+# Accessories whose names contain a Big-5 keyword but which are NOT that lift's
+# primary/secondary. Without this they inherit the family tint + an e1RM column, which reads
+# on the Sheet as "this is your squat secondary" — misleading for a unilateral accessory.
+_ACC_DESPITE_KEYWORD = ("bulgarian", "split squat", "goblet", "hack squat", "sissy squat")
+
+
 def _family(name: str) -> str:
     """Map an exercise name to its Big-5 family (or 'Acc'). Order matters."""
     n = name.lower()
+    if any(k in n for k in _ACC_DESPITE_KEYWORD):
+        return "Acc"
     if "squat" in n:
         return "Squat"
     if "dip" in n:
@@ -119,35 +127,31 @@ def _family(name: str) -> str:
 
 
 # --- Note shortening (Plan tab) --------------------------------------------------------
-# The Sets/Reps/RPE/Load columns already carry the numbers, so the note keeps only the
-# qualitative cue: "Top set @7. 435×4." → "Top set". Cap cues ("@8 CAP") are preserved.
-_LOADREP_RE = re.compile(r"(?:BW\+)?(\d+)\s*[×x]\s*\d+")
-_RPE_RE = re.compile(r"@\d+(?:\.\d+)?(?:\s*[-–]\s*@?\d+(?:\.\d+)?)?")
-_CAP_RE = re.compile(r"@(\d+(?:\.\d+)?\s*(?:CAP|cap|Cap))")
-_SETS_RE = re.compile(r"\s*[—-]?\s*\d+\s+sets\b\.?")
+# The Sets/Reps/RPE/Load columns already carry the numbers, so a note that OPENS with a
+# bare role label plus those same numbers gets the numbers dropped:
+#   "Top set @7. 435×4." → "Top set."   "Backoff — 4 sets @6." → "Backoff."
+#
+# Nothing else is touched. An earlier version stripped every "@N" and "N sets" token
+# anywhere in the note, which quietly destroyed the instruction it was carrying:
+#   "PEAK — WORK UP TO @8. Range 255–270×2: take the heaviest double that stays ≤@8."
+#     → "PEAK — WORK UP TO. Range 255–: take the heaviest double that stays ≤."
+# Those numbers ARE the prescription on a capped lift, so the rule is now: only rewrite a
+# leading clause that is *nothing but* a label and its numbers. If it contains words, it
+# is prose and it survives intact.
+_PURE_LABEL_RE = re.compile(
+    r"^\s*(top set|top|back-?off|amrap|deload)"
+    r"(?:[\s,—–-]|\d+\s*sets?|@\d+(?:\.\d+)?|(?:BW\+)?\d+\s*[×x]\s*\d+)*"
+    r"(?=[.;]|\s*$)",
+    re.I,
+)
 
 
 def _short_note(note: str | None) -> str:
     if not note:
         return ""
-    s = note
-
-    def _drop_loadrep(m: re.Match) -> str:
-        # Drop weight×rep tokens (435×4, BW+65×4) but keep rep schemes like "3×12".
-        return "" if ("BW" in m.group(0) or int(m.group(1)) >= 40) else m.group(0)
-
-    s = _LOADREP_RE.sub(_drop_loadrep, s)
-    # Protect "@X CAP" cues, strip the remaining bare RPE targets, then restore the caps.
-    s = _CAP_RE.sub(lambda m: "\x00" + m.group(1), s)
-    s = _RPE_RE.sub("", s)
-    s = s.replace("\x00", "@")
-    s = _SETS_RE.sub("", s)          # "— 4 sets" / "4 sets" (the Sets column shows it)
-    s = re.sub(r"\(\s*\)", "", s)
+    s = _PURE_LABEL_RE.sub(lambda m: m.group(1), note, count=1)
     s = re.sub(r"\s+", " ", s)
-    s = re.sub(r"\s*\.\s*(?=\.)", "", s)   # collapse ". ." → "."
-    s = re.sub(r"\s+([.,;])", r"\1", s)
-    s = re.sub(r"[—-]\s*(?=[.,]|$)", "", s)
-    return s.strip(" .,–—")
+    return s.strip()
 
 
 def _round5(lbs: float) -> int:
