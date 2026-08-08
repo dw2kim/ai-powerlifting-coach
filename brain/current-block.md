@@ -63,10 +63,43 @@ B4 proved you'll respect a cap — so this block the caps move to exactly where 
 > **D1 Mon · D2 Tue · D3 Thu · D4 Fri.** Morning training, 6–7am. D4 occasionally slips to Sat.
 > **The five primary lifts and their days do not change.** Locked at the athlete's request.
 
-- **D1 (Mon) — Squat (light) + Comp Bench**: Low-bar Squat *(4×5 @225 flat)* · Comp Bench (top + backoff) · **Leg Press (NEW — replaces Leg Extension)** · **Hip Thrust (NEW)** · Tricep Pushdown · **Skullcrusher (NEW)**
-- **D2 (Tue) — WPU + Posterior Chain**: Weighted Pull-up (top + backoff) · **Weighted Back Extension** *(moved here, BW through W2)* · **Seated Leg Curl (NEW for the window)** · DB Shoulder Press · **Pallof Press + Dead Bug (NEW — replace Hanging Leg Raise)**
-- **D3 (Thu) — Dip + Upper Body**: Weighted Dip · Lat Pulldown · Reverse Pec Deck · Face Pull
-- **D4 (Fri) — Sumo (light) + Spoto**: Sumo Deadlift *(3×3 light)* · Spoto Bench Press *(held)* · **Bulgarian Split Squat (NEW)** · **Chest Supported Incline Row (NEW)** · Incline DB Press
+- **D1 (Mon) — Squat (light) + Comp Bench**: Low-bar Squat *(4×5 @225 flat)* · Comp Bench (top + backoff) · **Leg Press (NEW — replaces Leg Extension)** · Tricep Pushdown · **Side Plank (core)**
+- **D2 (Tue) — WPU + Posterior Chain**: Weighted Pull-up (top + backoff) · **Weighted Back Extension** *(moved here, BW through W2)* · **Seated Leg Curl (NEW for the window)** · DB Shoulder Press · **Lateral Raise (NEW)** · **Pallof Press (core)**
+- **D3 (Thu) — Dip + Glutes + Upper Back**: Weighted Dip · **Hip Thrust (moved from D1)** · Lat Pulldown · Reverse Pec Deck · Face Pull · **Dead Bug (core)**
+- **D4 (Fri) — Sumo (light) + Spoto**: Sumo Deadlift *(3×3 light)* · Spoto Bench Press *(held)* · **Bulgarian Split Squat (NEW)** · Chest Supported Incline Row · Incline DB Press · **Concentration Curl (back in)** · **Bird Dog (core)**
+
+### Muscle coverage — audited 2026-08-07 (rule `muscle-coverage-audit`)
+
+| Group | Where | Group | Where |
+|---|---|---|---|
+| Quads | Leg Press (D1) · BSS (D4) · squat | Lats | WPU (D2) · Lat Pulldown (D3) |
+| Hamstrings | Leg Curl (D2) · Back Ext (D2) · sumo | Mid-back | CS Incline Row (D4) |
+| Glutes | Hip Thrust (D3) · BSS (D4) · squat | Front delts | DB Shoulder Press (D2) |
+| Erectors | Back Ext (D2) · Bird Dog (D4) | **Lateral delts** | **Lateral Raise (D2) — was a hole** |
+| Chest | Bench (D1) · Dip (D3) · Spoto + Incline DB (D4) | Rear delts | Reverse Pec Deck · Face Pull (D3) |
+| Triceps | Pushdown (D1) · Dip (D3) · all benching | **Biceps** | **Concentration Curl (D4) — was a hole** |
+| **Core** | **All four days, four different patterns** | *Calves* | *none — deliberate, see below* |
+
+**Core is now on every day, deliberately non-redundant** (`core-every-day`): anti-lateral-flexion
+(D1 Side Plank) · anti-rotation (D2 Pallof) · anti-extension (D3 Dead Bug) · spine-neutral
+endurance (D4 Bird Dog). All anti-movement work — **no loaded lumbar flexion** (cable crunch,
+sit-ups) and **no hanging leg raise** while the back is under treatment.
+
+**Calves are the one uncovered group, and that's a decision, not an oversight.** Zero logged
+history, no meaningful Big-5 carryover, and this is not the block to add a movement you've never
+done. Say the word and it goes on D4.
+
+> **D1 vs D2 balance — why they aren't equal by count.** D1 runs **3** accessories to D2's **5**,
+> because D1 carries *two* primary lifts (9 primary sets) against D2's one (4). Total working
+> sets land at **~18 vs ~19** — balanced by **volume**, which is what actually costs recovery.
+> D1 also structurally *can't* hold back or biceps work: Mon→Tue is back-to-back into pull-up day.
+> **D2 and D4 are the unconstrained days** (Wed rest after D2; weekend after D4), which is why
+> the shoulder cluster sits on D2 and the biceps work sits on D4.
+
+> **Hip Thrust moved D1 → D3** to fix a leg-heavy D1 and a thin D3. It is glute work the day
+> before sumo — normally an `accessory-day-interference` violation, acceptable **only** because
+> sumo is 225 @6 technique work. **If Friday's pull feels heavy or the next-day back check is
+> off, it moves to D2.**
 
 > **Non-axial leg work added 2026-08-07 (athlete's proposal).** Cutting squat 465→225, sumo
 > 405→225 and both hinges left a real leg-stimulus hole, and D1/D4 now run short because the
@@ -239,13 +272,13 @@ to low-grade partial on their own, and the absence of fatty atrophy argues one w
 | Day | Movement | Load | Note |
 |---|---|---|---|
 | D1 | **Leg Press (NEW)** | **315 → 365** | Replaces Leg Extension. Quad/glute volume, no bar on your back. **HARD ROM RULE: stop well before your hips lift off the pad** — at depth the pelvis tucks under load, and loaded lumbar flexion is exactly the L3-4 mechanism. Deliberately under your 495 log median: "moderate if tolerated" is a *number* here, because the injections mask the feel. |
-| D1 | **Hip Thrust (NEW)** | **empty bar → 135 → 185** | Best hip-extension option with **zero spinal compression** — the direct replacement for what light squat/sumo no longer give you. **0 logged sessions**, so W1 is empty-bar pattern work only. Ribs down, chin tucked, finish with the **glutes** — never hyperextend the low back at lockout. That's the one way this movement hurts you, and a numb back won't warn you. |
-| D1 | Tricep Pushdown | 55 → 60 | Bench lockout. |
-| D1 | **Skullcrusher (NEW)** | **75 → 80** | Long-head triceps — the lockout angle the pushdown misses (pushdowns bias lateral/medial head). Bench is the priority lift and this is bench day. Log median 75 across 4 sessions. |
+| D1 | Tricep Pushdown | 55 → 60 | Bench lockout. **Now the only triceps accessory** — Skullcrusher cut, since dip + three bench variants already over-serve triceps. |
+| D1 | **Side Plank (NEW — core)** | BW ×30–40s/side | Anti-lateral-flexion. Isometric, spine neutral, zero compression. |
 | D2 | DB Shoulder Press | **70 → 75** | Re-anchored from 50. @7 cap — shoulder. |
-| D2 | Concentration Curl | **43 → 48** | Re-anchored from 25. |
-| D2 | **Pallof Press (NEW)** | **20 → 25** | Anti-rotation core. Replaces Hanging Leg Raise. |
-| D2 | **Dead Bug (NEW)** | BW ×10/side | Anti-extension core — trains the brace that keeps the lumbar spine neutral under load. Low back stays flat on the floor; if it arches, shorten the range. |
+| D2 | **Lateral Raise (NEW)** | **30 → 35** | **Lateral delts — nothing else in the block trained them.** Log median 40 over 68 sessions, but prescribed *below* it on purpose: the MRI shows subacromial bursitis and 60–120° abduction is this movement's arc. **Stop at shoulder height, no higher.** Light, high-rep. Painful arc = stop the set and tell me. |
+| D2 | **Pallof Press (NEW — core)** | **20 → 25** | Anti-rotation. Replaces Hanging Leg Raise. |
+| D3 | **Hip Thrust (moved from D1)** | **empty bar → 135 → 185** | Best hip-extension option with **zero spinal compression** — the direct replacement for what light squat/sumo no longer give you. **0 logged sessions**, so W1 is empty-bar pattern work only. Ribs down, chin tucked, finish with the **glutes** — never hyperextend the low back at lockout. A numb back won't warn you. |
+| D3 | **Dead Bug (moved from D2 — core)** | BW ×10/side | Anti-extension. Low back stays flat on the floor; if it arches, shorten the range. |
 | D2 | **Weighted Back Extension (back in)** | **BW → 45 → 60** | Your request. Erector capacity with **no spinal compression** — the safe way to train the low back. **Bodyweight through W2**; the trigger-point injections went into these exact muscles, so skip it entirely if the sites are sore. Build toward 90 in B6. |
 | D3 | Lat Pulldown | 180 → 190 | Lat width for the pull-up. |
 | D3 | Reverse Pec Deck | **100 → 110** | **Re-anchored from 45.** You skipped this 4/4 in B4 — it was prescribed at under half your working load. At 100 it's a real set. |
@@ -253,6 +286,8 @@ to low-grade partial on their own, and the absence of fatty atrophy argues one w
 | D4 | **Bulgarian Split Squat (NEW to the block)** | **45 → 50/hand** | **Not new to you — 50 logged sessions, median 42.5.** This is your "lunge", already grooved. Unilateral: a leg's worth of quad/glute stimulus at roughly half the spinal load of bilateral squatting. |
 | D4 | **Chest Supported Incline Row (NEW)** | ~50/hand | Replaces Meadows Row: same upper-back target, **zero lumbar load** on deadlift day. First exposure — 50 is an estimate, the weekly sync corrects it. |
 | D4 | Incline DB Press | **65 → 70** | Re-anchored from 50. (Not new — you have 66 logged sessions.) |
+| D4 | **Concentration Curl (back in)** | **40 → 45** | **Biceps had no direct work at all** once this was cut — pull-ups and rows don't cover it. On D4 because nothing follows Friday. Log median 38 over 93 sessions, max 45. |
+| D4 | **Bird Dog (NEW — core)** | BW ×10/side | Anti-rotation + erector endurance, spine neutral throughout. The gentlest of the four core patterns, which is why it sits on deadlift day. |
 
 **Out**: Iso-Lateral Row (1/4 logged, D1→D2 interference) · Hip Adduction (flat at 115 for
 months, D3→D4 interference) · Meadows Row (bent-over lumbar load on deadlift day) · BW AMRAP
@@ -282,9 +317,13 @@ segments we're protecting; wrong core tool for this block).
   W1 is empty bar — you have zero logged sessions and you're learning it on a numb back.
 - **Log every set.** Skipped = logged as skipped with a reason.
 - **3-day fallback priority**: D1, D2, D3 (drop D4). Sumo is the most expendable session.
-- **If D1 runs long, the new leg work is what gets cut** — never the bench backoff. D1 is now six
-  movements. Priority order: squat, bench (top + backoff), leg press, hip thrust, pushdown,
-  skullcrusher.
+- **If D1 runs long, the leg press is what gets cut** — never the bench backoff. Priority order:
+  squat, bench (top + backoff), leg press, pushdown, side plank.
+- **Lateral raise: stop at shoulder height.** Above that is the impingement arc, and you have
+  bursitis in it. Light and high-rep, never heavy.
+- **One core movement every day, and they're four different patterns on purpose** — don't
+  substitute them for each other, and don't swap any of them for sit-ups, cable crunches or
+  hanging leg raises while the back is under treatment.
 
 ## Injection schedule + this week
 

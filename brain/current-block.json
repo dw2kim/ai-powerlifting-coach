@@ -15,31 +15,35 @@
       "Deliberate exception to primary-backoff-volume: squat/sumo volume is cut below the logged norm. A medical restriction outranks a volume rule."
     ],
     "accessory_changes": [
-      "Seated Leg Curl IN on D2 (log median 115) — posterior chain with zero spinal load, filling the hole Paused RDL left. A DB RDL was requested and DECLINED: you already hinge on D4, and a second loaded hinge is exactly what we removed.",
-      "Concentration Curl OUT for the window — makes room for the leg curl on D2. Pull-ups carry the biceps. Returns in B6.",
-      "NEW: Chest Supported Incline Row (D4) — replaces Meadows Row. Same upper-back target, zero lumbar load on your deadlift day. Expands mid-back without loading the spine.",
-      "RE-INTRODUCED: Weighted Back Extension (D4) — your request. Erector capacity with no spinal compression. Starting 45 lb, not 90; the injections still mask pain.",
-      "SECONDARY ROTATION (1): squat 3-1-0 Tempo → Paused Low-bar Squat. Bench (Spoto) and deadlift (Paused RDL) secondaries HELD — Spoto is mid-progress, Paused RDL grooves the hitch fix.",
-      "OUT: Iso-Lateral Row — you logged it 1/4 in B4, and on D1 it pre-fatigued Tuesday's pull-up (day-interference violation). Mid-back volume now comes from D3/D4.",
-      "OUT: Hip Adduction — flat at 115 for months, and adductors on D3 pre-fatigue Friday sumo.",
-      "MOVED: Face Pull D4 → D3, so the shoulder-health cluster sits on dip day and D3 carries nothing that pre-fatigues Friday's sumo.",
-      "RE-ANCHORED from the log (sheet-load-sync): Leg Extension 90→140, Reverse Pec Deck 45→100, DB Shoulder Press 50→70, Concentration Curl 25→43, Incline DB Press 50→65."
+      "COVERAGE AUDIT (2026-08-07, rule muscle-coverage-audit): checked all four days against every major group. Found three real holes — lateral delts (nothing trained them), biceps (Concentration Curl had been cut, leaving zero direct work), and core (D2 only). All three now closed.",
+      "CORE ON EVERY DAY, four DIFFERENT patterns so they aren't redundant: Side Plank (D1, anti-lateral-flexion) / Pallof Press (D2, anti-rotation) / Dead Bug (D3, anti-extension) / Bird Dog (D4, spine-neutral endurance). All anti-movement work — NO loaded lumbar flexion (cable crunch, sit-ups) and NO hanging leg raise while the back is under treatment (hip-flexor dominant; the psoas attaches onto L1-L5).",
+      "D1 SLIMMED to 3 accessories: Skullcrusher CUT (triceps were over-served by pushdown + dip + three bench variants) and Hip Thrust MOVED to D3. D1 was leg- and tricep-heavy; it now runs Leg Press, Tricep Pushdown, Side Plank.",
+      "D3 FILLED OUT 3 -> 5 accessories (it was the thinnest day): gains Hip Thrust + Dead Bug.",
+      "NEW: Lateral Raise (D2) — the one shoulder head nothing else trains. Log median 40 over 68 sessions, but prescribed at 30-35 DELIBERATELY BELOW it: the MRI shows subacromial bursitis and 60-120 degrees of abduction is exactly this movement's arc. STOP AT SHOULDER HEIGHT, light, high-rep.",
+      "BACK IN: Concentration Curl (D4) — cutting it left the biceps with no direct work at all. Log median 38 over 93 sessions. On D4 because nothing follows Friday.",
+      "D1 vs D2 balance: 3 accessories vs 5, but ~18 vs ~19 total working sets — D1 carries TWO primary lifts (9 primary sets) to D2's one (4). Balanced by volume, not by count. D1 also structurally can't hold back/biceps work: Mon->Tue is back-to-back into pull-up day.",
+      "Hip Thrust on D3 is glute work the day before sumo — acceptable ONLY because sumo is 225 @6 technique work. If Friday's pull feels heavy or the next-day back check is off, it moves to D2.",
+      "CALVES remain the one uncovered group — deliberate, not an oversight: zero logged history, no Big-5 carryover, and a medical window is the wrong time to add an unfamiliar movement.",
+      "NEW (2026-08-07): Leg Press (D1, replaces Leg Extension — HARD ROM RULE, stop before the pelvis tucks), Hip Thrust (D3), Bulgarian Split Squat (D4, 50 logged sessions). Non-axial leg work replacing the stimulus the axial cap removed.",
+      "OUT: Iso-Lateral Row (D1->D2 interference) · Hip Adduction (flat at 115, D3->D4 interference) · Meadows Row (lumbar load on deadlift day) · BW AMRAP (three blocks, never produced a usable number) · Leg Extension (replaced by Leg Press) · Hanging Leg Raise (replaced by the core cluster) · Skullcrusher (triceps redundancy).",
+      "MOVED: Face Pull D4 -> D3 (shoulder-health cluster on dip day). Weighted Back Extension D4 -> D2, bodyweight through W2 — the trigger-point injections went into these exact muscles.",
+      "RE-ANCHORED from the log (sheet-load-sync): Reverse Pec Deck 45->100, DB Shoulder Press 50->70, Concentration Curl 25->40, Incline DB Press 50->65."
     ]
   },
   "days": [
     {
       "label": "D1",
-      "focus": "Squat + Comp Bench",
+      "focus": "Squat (light) + Comp Bench",
       "weekday": "Mon"
     },
     {
       "label": "D2",
-      "focus": "WPU + Posterior Chain",
+      "focus": "WPU + Posterior Chain + Shoulders",
       "weekday": "Tue"
     },
     {
       "label": "D3",
-      "focus": "Dip + Upper Body",
+      "focus": "Dip + Glutes + Upper Back",
       "weekday": "Thu"
     },
     {
@@ -153,30 +157,6 @@
           ]
         },
         {
-          "name": "Hip Thrust",
-          "notes": "NEW — the best hip-extension option available with zero spinal compression, and the direct replacement for what the light squat/sumo no longer give you. ZERO logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES — never hyperextend the lower back at lockout. That is the one way this movement hurts you, and a numb back will not warn you.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 20.4,
-              "reps": 10,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 20.4,
-              "reps": 10,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 20.4,
-              "reps": 10,
-              "rpe": 6
-            }
-          ]
-        },
-        {
           "name": "Tricep Pushdown",
           "notes": "Lockout for bench. Log anchor 53 lb.",
           "sets": [
@@ -201,28 +181,29 @@
           ]
         },
         {
-          "name": "Skullcrusher (Barbell)",
-          "notes": "NEW — long-head triceps, the bench-lockout angle the pushdown misses (pushdowns bias the lateral/medial head). Bench is the priority lift and this is bench day. Log median 75 lb across 4 sessions. Elbows in, no shoulder travel.",
+          "name": "Side Plank",
+          "notes": "CORE (D1) — anti-lateral-flexion. Every day now carries one core movement, and each day gets a DIFFERENT pattern so they aren't redundant. Isometric hold, seconds per side, spine neutral, zero spinal compression. The reps column is SECONDS.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 34.0,
-              "reps": 10,
+              "weight_kg": 0.0,
+              "reps": 30,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 34.0,
-              "reps": 10,
+              "weight_kg": 0.0,
+              "reps": 30,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 34.0,
-              "reps": 10,
+              "weight_kg": 0.0,
+              "reps": 30,
               "rpe": 7
             }
-          ]
+          ],
+          "display_load": "BW"
         }
       ]
     },
@@ -341,8 +322,32 @@
           ]
         },
         {
+          "name": "Lateral Raise (Dumbbell)",
+          "notes": "Lateral delts — the one shoulder head nothing else in this block trains (presses hit front, face pull + pec deck hit rear). Log median 40 lb over 68 sessions, but prescribed at 30-35 DELIBERATELY: the MRI shows subacromial bursitis, and 60-120° of abduction is the impingement arc this movement lives in. STOP AT SHOULDER HEIGHT, no higher, light and high-rep. Any painful arc — stop the set and tell me.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 13.6,
+              "reps": 15,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 13.6,
+              "reps": 15,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 13.6,
+              "reps": 15,
+              "rpe": 7
+            }
+          ]
+        },
+        {
           "name": "Pallof Press",
-          "notes": "REPLACES Hanging Leg Raise. Anti-rotation core — the kind that PROTECTS a lumbar spine. Hanging leg raise is hip-flexor dominant and the psoas attaches straight onto L1-L5, so it pulls on the exact segments we are protecting. Log median 20 lb. Per side, slow, brace and resist the rotation — do not rush it.",
+          "notes": "CORE (D2) — anti-rotation. Replaces Hanging Leg Raise, which is hip-flexor dominant; the psoas attaches straight onto L1-L5, so it pulls on the exact segments under treatment. Log median 20 lb. Per side, slow, brace and resist the rotation.",
           "sets": [
             {
               "type": "normal",
@@ -363,31 +368,6 @@
               "rpe": 7
             }
           ]
-        },
-        {
-          "name": "Dead Bug",
-          "notes": "REPLACES Hanging Leg Raise (with the Pallof press). Anti-extension core: teaches the brace that keeps your lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow — lower back stays flat on the floor the entire time. If it arches off the floor, shorten the range.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 7
-            }
-          ],
-          "display_load": "BW"
         }
       ]
     },
@@ -422,6 +402,30 @@
               "weight_kg": 27.2,
               "reps": 6,
               "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Hip Thrust",
+          "notes": "MOVED D1 -> D3 to unload a leg-heavy D1. Best hip-extension option with ZERO spinal compression. 0 logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES — never hyperextend the low back at lockout; a numb back will not warn you. Note this is glute work the day before sumo: acceptable ONLY because sumo is 225 @6 technique work. If Friday's pull feels heavy or the next-day back check is off, this moves to D2.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 10,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 10,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 10,
+              "rpe": 6
             }
           ]
         },
@@ -496,6 +500,31 @@
               "rpe": 7
             }
           ]
+        },
+        {
+          "name": "Dead Bug",
+          "notes": "CORE (D3) — anti-extension. Teaches the brace that keeps the lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow — lower back stays flat on the floor. If it arches off the floor, shorten the range.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            }
+          ],
+          "display_load": "BW"
         }
       ]
     },
@@ -625,6 +654,55 @@
               "rpe": 7
             }
           ]
+        },
+        {
+          "name": "Concentration Curl",
+          "notes": "Biceps — back in. Cutting it left the biceps with no direct work at all; pull-ups and rows alone don't cover it. On D4 because nothing follows Friday. Log median 38 lb over 93 sessions, max 45.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 18.1,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.1,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.1,
+              "reps": 12,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Bird Dog",
+          "notes": "CORE (D4) — anti-rotation plus erector endurance, spine neutral throughout. Per side, slow, no rotation through the hips. The gentlest of the four core patterns, which is why it sits on deadlift day.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            }
+          ],
+          "display_load": "BW"
         }
       ]
     },
@@ -732,30 +810,6 @@
           ]
         },
         {
-          "name": "Hip Thrust",
-          "notes": "NEW — the best hip-extension option available with zero spinal compression, and the direct replacement for what the light squat/sumo no longer give you. ZERO logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES — never hyperextend the lower back at lockout. That is the one way this movement hurts you, and a numb back will not warn you.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 61.2,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 61.2,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 61.2,
-              "reps": 10,
-              "rpe": 7
-            }
-          ]
-        },
-        {
           "name": "Tricep Pushdown",
           "notes": "Lockout for bench. Log anchor 53 lb.",
           "sets": [
@@ -780,28 +834,29 @@
           ]
         },
         {
-          "name": "Skullcrusher (Barbell)",
-          "notes": "NEW — long-head triceps, the bench-lockout angle the pushdown misses (pushdowns bias the lateral/medial head). Bench is the priority lift and this is bench day. Log median 75 lb across 4 sessions. Elbows in, no shoulder travel.",
+          "name": "Side Plank",
+          "notes": "CORE (D1) — anti-lateral-flexion. Every day now carries one core movement, and each day gets a DIFFERENT pattern so they aren't redundant. Isometric hold, seconds per side, spine neutral, zero spinal compression. The reps column is SECONDS.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 34.0,
-              "reps": 10,
+              "weight_kg": 0.0,
+              "reps": 30,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 34.0,
-              "reps": 10,
+              "weight_kg": 0.0,
+              "reps": 30,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 34.0,
-              "reps": 10,
+              "weight_kg": 0.0,
+              "reps": 30,
               "rpe": 7
             }
-          ]
+          ],
+          "display_load": "BW"
         }
       ]
     },
@@ -920,8 +975,32 @@
           ]
         },
         {
+          "name": "Lateral Raise (Dumbbell)",
+          "notes": "Lateral delts — the one shoulder head nothing else in this block trains (presses hit front, face pull + pec deck hit rear). Log median 40 lb over 68 sessions, but prescribed at 30-35 DELIBERATELY: the MRI shows subacromial bursitis, and 60-120° of abduction is the impingement arc this movement lives in. STOP AT SHOULDER HEIGHT, no higher, light and high-rep. Any painful arc — stop the set and tell me.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 13.6,
+              "reps": 15,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 13.6,
+              "reps": 15,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 13.6,
+              "reps": 15,
+              "rpe": 7
+            }
+          ]
+        },
+        {
           "name": "Pallof Press",
-          "notes": "REPLACES Hanging Leg Raise. Anti-rotation core — the kind that PROTECTS a lumbar spine. Hanging leg raise is hip-flexor dominant and the psoas attaches straight onto L1-L5, so it pulls on the exact segments we are protecting. Log median 20 lb. Per side, slow, brace and resist the rotation — do not rush it.",
+          "notes": "CORE (D2) — anti-rotation. Replaces Hanging Leg Raise, which is hip-flexor dominant; the psoas attaches straight onto L1-L5, so it pulls on the exact segments under treatment. Log median 20 lb. Per side, slow, brace and resist the rotation.",
           "sets": [
             {
               "type": "normal",
@@ -942,31 +1021,6 @@
               "rpe": 7
             }
           ]
-        },
-        {
-          "name": "Dead Bug",
-          "notes": "REPLACES Hanging Leg Raise (with the Pallof press). Anti-extension core: teaches the brace that keeps your lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow — lower back stays flat on the floor the entire time. If it arches off the floor, shorten the range.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 7
-            }
-          ],
-          "display_load": "BW"
         }
       ]
     },
@@ -1001,6 +1055,30 @@
               "weight_kg": 34.0,
               "reps": 5,
               "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Hip Thrust",
+          "notes": "MOVED D1 -> D3 to unload a leg-heavy D1. Best hip-extension option with ZERO spinal compression. 0 logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES — never hyperextend the low back at lockout; a numb back will not warn you. Note this is glute work the day before sumo: acceptable ONLY because sumo is 225 @6 technique work. If Friday's pull feels heavy or the next-day back check is off, this moves to D2.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 61.2,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 61.2,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 61.2,
+              "reps": 10,
+              "rpe": 7
             }
           ]
         },
@@ -1075,6 +1153,31 @@
               "rpe": 7
             }
           ]
+        },
+        {
+          "name": "Dead Bug",
+          "notes": "CORE (D3) — anti-extension. Teaches the brace that keeps the lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow — lower back stays flat on the floor. If it arches off the floor, shorten the range.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            }
+          ],
+          "display_load": "BW"
         }
       ]
     },
@@ -1204,6 +1307,55 @@
               "rpe": 7
             }
           ]
+        },
+        {
+          "name": "Concentration Curl",
+          "notes": "Biceps — back in. Cutting it left the biceps with no direct work at all; pull-ups and rows alone don't cover it. On D4 because nothing follows Friday. Log median 38 lb over 93 sessions, max 45.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 18.1,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.1,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.1,
+              "reps": 12,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Bird Dog",
+          "notes": "CORE (D4) — anti-rotation plus erector endurance, spine neutral throughout. Per side, slow, no rotation through the hips. The gentlest of the four core patterns, which is why it sits on deadlift day.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            }
+          ],
+          "display_load": "BW"
         }
       ]
     },
@@ -1311,30 +1463,6 @@
           ]
         },
         {
-          "name": "Hip Thrust",
-          "notes": "NEW — the best hip-extension option available with zero spinal compression, and the direct replacement for what the light squat/sumo no longer give you. ZERO logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES — never hyperextend the lower back at lockout. That is the one way this movement hurts you, and a numb back will not warn you.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 83.9,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 83.9,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 83.9,
-              "reps": 10,
-              "rpe": 7
-            }
-          ]
-        },
-        {
           "name": "Tricep Pushdown",
           "notes": "Lockout for bench. Log anchor 53 lb.",
           "sets": [
@@ -1359,28 +1487,29 @@
           ]
         },
         {
-          "name": "Skullcrusher (Barbell)",
-          "notes": "NEW — long-head triceps, the bench-lockout angle the pushdown misses (pushdowns bias the lateral/medial head). Bench is the priority lift and this is bench day. Log median 75 lb across 4 sessions. Elbows in, no shoulder travel.",
+          "name": "Side Plank",
+          "notes": "CORE (D1) — anti-lateral-flexion. Every day now carries one core movement, and each day gets a DIFFERENT pattern so they aren't redundant. Isometric hold, seconds per side, spine neutral, zero spinal compression. The reps column is SECONDS.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 36.3,
-              "reps": 10,
-              "rpe": 7.5
+              "weight_kg": 0.0,
+              "reps": 40,
+              "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 36.3,
-              "reps": 10,
-              "rpe": 7.5
+              "weight_kg": 0.0,
+              "reps": 40,
+              "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 36.3,
-              "reps": 10,
-              "rpe": 7.5
+              "weight_kg": 0.0,
+              "reps": 40,
+              "rpe": 7
             }
-          ]
+          ],
+          "display_load": "BW"
         }
       ]
     },
@@ -1499,8 +1628,32 @@
           ]
         },
         {
+          "name": "Lateral Raise (Dumbbell)",
+          "notes": "Lateral delts — the one shoulder head nothing else in this block trains (presses hit front, face pull + pec deck hit rear). Log median 40 lb over 68 sessions, but prescribed at 30-35 DELIBERATELY: the MRI shows subacromial bursitis, and 60-120° of abduction is the impingement arc this movement lives in. STOP AT SHOULDER HEIGHT, no higher, light and high-rep. Any painful arc — stop the set and tell me.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 15.9,
+              "reps": 15,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.9,
+              "reps": 15,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.9,
+              "reps": 15,
+              "rpe": 7
+            }
+          ]
+        },
+        {
           "name": "Pallof Press",
-          "notes": "REPLACES Hanging Leg Raise. Anti-rotation core — the kind that PROTECTS a lumbar spine. Hanging leg raise is hip-flexor dominant and the psoas attaches straight onto L1-L5, so it pulls on the exact segments we are protecting. Log median 20 lb. Per side, slow, brace and resist the rotation — do not rush it.",
+          "notes": "CORE (D2) — anti-rotation. Replaces Hanging Leg Raise, which is hip-flexor dominant; the psoas attaches straight onto L1-L5, so it pulls on the exact segments under treatment. Log median 20 lb. Per side, slow, brace and resist the rotation.",
           "sets": [
             {
               "type": "normal",
@@ -1521,31 +1674,6 @@
               "rpe": 7
             }
           ]
-        },
-        {
-          "name": "Dead Bug",
-          "notes": "REPLACES Hanging Leg Raise (with the Pallof press). Anti-extension core: teaches the brace that keeps your lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow — lower back stays flat on the floor the entire time. If it arches off the floor, shorten the range.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 7
-            }
-          ],
-          "display_load": "BW"
         }
       ]
     },
@@ -1580,6 +1708,30 @@
               "weight_kg": 40.8,
               "reps": 4,
               "rpe": 8
+            }
+          ]
+        },
+        {
+          "name": "Hip Thrust",
+          "notes": "MOVED D1 -> D3 to unload a leg-heavy D1. Best hip-extension option with ZERO spinal compression. 0 logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES — never hyperextend the low back at lockout; a numb back will not warn you. Note this is glute work the day before sumo: acceptable ONLY because sumo is 225 @6 technique work. If Friday's pull feels heavy or the next-day back check is off, this moves to D2.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 83.9,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.9,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.9,
+              "reps": 10,
+              "rpe": 7
             }
           ]
         },
@@ -1654,6 +1806,31 @@
               "rpe": 7
             }
           ]
+        },
+        {
+          "name": "Dead Bug",
+          "notes": "CORE (D3) — anti-extension. Teaches the brace that keeps the lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow — lower back stays flat on the floor. If it arches off the floor, shorten the range.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            }
+          ],
+          "display_load": "BW"
         }
       ]
     },
@@ -1783,6 +1960,55 @@
               "rpe": 7.5
             }
           ]
+        },
+        {
+          "name": "Concentration Curl",
+          "notes": "Biceps — back in. Cutting it left the biceps with no direct work at all; pull-ups and rows alone don't cover it. On D4 because nothing follows Friday. Log median 38 lb over 93 sessions, max 45.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Bird Dog",
+          "notes": "CORE (D4) — anti-rotation plus erector endurance, spine neutral throughout. Per side, slow, no rotation through the hips. The gentlest of the four core patterns, which is why it sits on deadlift day.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            }
+          ],
+          "display_load": "BW"
         }
       ]
     },
@@ -1885,30 +2111,6 @@
           ]
         },
         {
-          "name": "Hip Thrust",
-          "notes": "NEW — the best hip-extension option available with zero spinal compression, and the direct replacement for what the light squat/sumo no longer give you. ZERO logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES — never hyperextend the lower back at lockout. That is the one way this movement hurts you, and a numb back will not warn you.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 83.9,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 83.9,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 83.9,
-              "reps": 10,
-              "rpe": 7
-            }
-          ]
-        },
-        {
           "name": "Tricep Pushdown",
           "notes": "Lockout for bench. Log anchor 53 lb.",
           "sets": [
@@ -1933,28 +2135,29 @@
           ]
         },
         {
-          "name": "Skullcrusher (Barbell)",
-          "notes": "NEW — long-head triceps, the bench-lockout angle the pushdown misses (pushdowns bias the lateral/medial head). Bench is the priority lift and this is bench day. Log median 75 lb across 4 sessions. Elbows in, no shoulder travel.",
+          "name": "Side Plank",
+          "notes": "CORE (D1) — anti-lateral-flexion. Every day now carries one core movement, and each day gets a DIFFERENT pattern so they aren't redundant. Isometric hold, seconds per side, spine neutral, zero spinal compression. The reps column is SECONDS.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 36.3,
-              "reps": 10,
-              "rpe": 7.5
+              "weight_kg": 0.0,
+              "reps": 40,
+              "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 36.3,
-              "reps": 10,
-              "rpe": 7.5
+              "weight_kg": 0.0,
+              "reps": 40,
+              "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 36.3,
-              "reps": 10,
-              "rpe": 7.5
+              "weight_kg": 0.0,
+              "reps": 40,
+              "rpe": 7
             }
-          ]
+          ],
+          "display_load": "BW"
         }
       ]
     },
@@ -2073,8 +2276,32 @@
           ]
         },
         {
+          "name": "Lateral Raise (Dumbbell)",
+          "notes": "Lateral delts — the one shoulder head nothing else in this block trains (presses hit front, face pull + pec deck hit rear). Log median 40 lb over 68 sessions, but prescribed at 30-35 DELIBERATELY: the MRI shows subacromial bursitis, and 60-120° of abduction is the impingement arc this movement lives in. STOP AT SHOULDER HEIGHT, no higher, light and high-rep. Any painful arc — stop the set and tell me.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 15.9,
+              "reps": 15,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.9,
+              "reps": 15,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.9,
+              "reps": 15,
+              "rpe": 7
+            }
+          ]
+        },
+        {
           "name": "Pallof Press",
-          "notes": "REPLACES Hanging Leg Raise. Anti-rotation core — the kind that PROTECTS a lumbar spine. Hanging leg raise is hip-flexor dominant and the psoas attaches straight onto L1-L5, so it pulls on the exact segments we are protecting. Log median 20 lb. Per side, slow, brace and resist the rotation — do not rush it.",
+          "notes": "CORE (D2) — anti-rotation. Replaces Hanging Leg Raise, which is hip-flexor dominant; the psoas attaches straight onto L1-L5, so it pulls on the exact segments under treatment. Log median 20 lb. Per side, slow, brace and resist the rotation.",
           "sets": [
             {
               "type": "normal",
@@ -2095,31 +2322,6 @@
               "rpe": 7
             }
           ]
-        },
-        {
-          "name": "Dead Bug",
-          "notes": "REPLACES Hanging Leg Raise (with the Pallof press). Anti-extension core: teaches the brace that keeps your lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow — lower back stays flat on the floor the entire time. If it arches off the floor, shorten the range.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 7
-            }
-          ],
-          "display_load": "BW"
         }
       ]
     },
@@ -2154,6 +2356,30 @@
               "weight_kg": 36.3,
               "reps": 5,
               "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Hip Thrust",
+          "notes": "MOVED D1 -> D3 to unload a leg-heavy D1. Best hip-extension option with ZERO spinal compression. 0 logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES — never hyperextend the low back at lockout; a numb back will not warn you. Note this is glute work the day before sumo: acceptable ONLY because sumo is 225 @6 technique work. If Friday's pull feels heavy or the next-day back check is off, this moves to D2.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 83.9,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.9,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.9,
+              "reps": 10,
+              "rpe": 7
             }
           ]
         },
@@ -2228,6 +2454,31 @@
               "rpe": 7
             }
           ]
+        },
+        {
+          "name": "Dead Bug",
+          "notes": "CORE (D3) — anti-extension. Teaches the brace that keeps the lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow — lower back stays flat on the floor. If it arches off the floor, shorten the range.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            }
+          ],
+          "display_load": "BW"
         }
       ]
     },
@@ -2357,6 +2608,55 @@
               "rpe": 7.5
             }
           ]
+        },
+        {
+          "name": "Concentration Curl",
+          "notes": "Biceps — back in. Cutting it left the biceps with no direct work at all; pull-ups and rows alone don't cover it. On D4 because nothing follows Friday. Log median 38 lb over 93 sessions, max 45.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 10,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.4,
+              "reps": 10,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Bird Dog",
+          "notes": "CORE (D4) — anti-rotation plus erector endurance, spine neutral throughout. Per side, slow, no rotation through the hips. The gentlest of the four core patterns, which is why it sits on deadlift day.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 7
+            }
+          ],
+          "display_load": "BW"
         }
       ]
     },
@@ -2452,30 +2752,6 @@
           ]
         },
         {
-          "name": "Hip Thrust",
-          "notes": "NEW — the best hip-extension option available with zero spinal compression, and the direct replacement for what the light squat/sumo no longer give you. ZERO logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES — never hyperextend the lower back at lockout. That is the one way this movement hurts you, and a numb back will not warn you.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 61.2,
-              "reps": 12,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 61.2,
-              "reps": 12,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 61.2,
-              "reps": 12,
-              "rpe": 6
-            }
-          ]
-        },
-        {
           "name": "Tricep Pushdown",
           "notes": "Lockout for bench. Log anchor 53 lb.",
           "sets": [
@@ -2500,28 +2776,29 @@
           ]
         },
         {
-          "name": "Skullcrusher (Barbell)",
-          "notes": "NEW — long-head triceps, the bench-lockout angle the pushdown misses (pushdowns bias the lateral/medial head). Bench is the priority lift and this is bench day. Log median 75 lb across 4 sessions. Elbows in, no shoulder travel.",
+          "name": "Side Plank",
+          "notes": "CORE (D1) — anti-lateral-flexion. Every day now carries one core movement, and each day gets a DIFFERENT pattern so they aren't redundant. Isometric hold, seconds per side, spine neutral, zero spinal compression. The reps column is SECONDS.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 27.2,
-              "reps": 12,
+              "weight_kg": 0.0,
+              "reps": 30,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 27.2,
-              "reps": 12,
+              "weight_kg": 0.0,
+              "reps": 30,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 27.2,
-              "reps": 12,
+              "weight_kg": 0.0,
+              "reps": 30,
               "rpe": 6
             }
-          ]
+          ],
+          "display_load": "BW"
         }
       ]
     },
@@ -2640,8 +2917,32 @@
           ]
         },
         {
+          "name": "Lateral Raise (Dumbbell)",
+          "notes": "Lateral delts — the one shoulder head nothing else in this block trains (presses hit front, face pull + pec deck hit rear). Log median 40 lb over 68 sessions, but prescribed at 30-35 DELIBERATELY: the MRI shows subacromial bursitis, and 60-120° of abduction is the impingement arc this movement lives in. STOP AT SHOULDER HEIGHT, no higher, light and high-rep. Any painful arc — stop the set and tell me.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 11.3,
+              "reps": 15,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 11.3,
+              "reps": 15,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 11.3,
+              "reps": 15,
+              "rpe": 6
+            }
+          ]
+        },
+        {
           "name": "Pallof Press",
-          "notes": "REPLACES Hanging Leg Raise. Anti-rotation core — the kind that PROTECTS a lumbar spine. Hanging leg raise is hip-flexor dominant and the psoas attaches straight onto L1-L5, so it pulls on the exact segments we are protecting. Log median 20 lb. Per side, slow, brace and resist the rotation — do not rush it.",
+          "notes": "CORE (D2) — anti-rotation. Replaces Hanging Leg Raise, which is hip-flexor dominant; the psoas attaches straight onto L1-L5, so it pulls on the exact segments under treatment. Log median 20 lb. Per side, slow, brace and resist the rotation.",
           "sets": [
             {
               "type": "normal",
@@ -2662,31 +2963,6 @@
               "rpe": 6
             }
           ]
-        },
-        {
-          "name": "Dead Bug",
-          "notes": "REPLACES Hanging Leg Raise (with the Pallof press). Anti-extension core: teaches the brace that keeps your lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow — lower back stays flat on the floor the entire time. If it arches off the floor, shorten the range.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 6
-            }
-          ],
-          "display_load": "BW"
         }
       ]
     },
@@ -2720,6 +2996,30 @@
               "type": "normal",
               "weight_kg": 22.7,
               "reps": 6,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Hip Thrust",
+          "notes": "MOVED D1 -> D3 to unload a leg-heavy D1. Best hip-extension option with ZERO spinal compression. 0 logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES — never hyperextend the low back at lockout; a numb back will not warn you. Note this is glute work the day before sumo: acceptable ONLY because sumo is 225 @6 technique work. If Friday's pull feels heavy or the next-day back check is off, this moves to D2.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 61.2,
+              "reps": 12,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 61.2,
+              "reps": 12,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 61.2,
+              "reps": 12,
               "rpe": 6
             }
           ]
@@ -2795,6 +3095,31 @@
               "rpe": 7
             }
           ]
+        },
+        {
+          "name": "Dead Bug",
+          "notes": "CORE (D3) — anti-extension. Teaches the brace that keeps the lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow — lower back stays flat on the floor. If it arches off the floor, shorten the range.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 6
+            }
+          ],
+          "display_load": "BW"
         }
       ]
     },
@@ -2924,6 +3249,55 @@
               "rpe": 6
             }
           ]
+        },
+        {
+          "name": "Concentration Curl",
+          "notes": "Biceps — back in. Cutting it left the biceps with no direct work at all; pull-ups and rows alone don't cover it. On D4 because nothing follows Friday. Log median 38 lb over 93 sessions, max 45.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 13.6,
+              "reps": 12,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 13.6,
+              "reps": 12,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 13.6,
+              "reps": 12,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Bird Dog",
+          "notes": "CORE (D4) — anti-rotation plus erector endurance, spine neutral throughout. Per side, slow, no rotation through the hips. The gentlest of the four core patterns, which is why it sits on deadlift day.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 6
+            }
+          ],
+          "display_load": "BW"
         }
       ]
     }

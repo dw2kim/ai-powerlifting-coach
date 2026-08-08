@@ -10,6 +10,48 @@
 
 ---
 
+### 2026-08-07 · block, general, exercise · accessory balance + muscle coverage · Block 5
+**Feedback (5 parts):** (1) D1 is leg- and tricep-heavy, and has too many accessories — drop
+one. (2) D3 is too thin. (3) Every day should carry at least one abs/core accessory.
+(4) *"Are we targeting all the primary muscles across D1–D4?"* (5) Balance accessories
+between D1 and D2 to cover all primary muscles — noting the rest days (Wed between D2/D3,
+weekend between D4/D1).
+
+**Coach's audit (the answer to #4): no, we weren't.** Running the coverage check across all
+four days exposed three genuine holes and one lopsided day:
+- **Lateral delts** — nothing trained them. Presses cover front delts; face pull + reverse
+  pec deck cover rear. The lateral head had zero direct work.
+- **Biceps** — Concentration Curl had been cut for the window, leaving no direct biceps work.
+  Pull-ups and rows don't cover it.
+- **Core** — existed on D2 only.
+- **D1 was carrying 4 accessories (2 legs + 2 triceps) while D3 carried 3.** Triceps were
+  over-served (pushdown + skullcrusher + dip + three bench variants); D3 was the thinnest day
+  in the block.
+- **Calves: still uncovered, deliberately.** Zero logged history, no Big-5 carryover; not
+  worth a slot during a medical window. Named here so it's a decision, not an oversight.
+
+**Verified (Hevy) before prescribing** (`loads-from-logs`): Lateral Raise (Dumbbell) median
+**40**, max 50, 68 sessions · Concentration Curl median **38**, max 45, 93 sessions.
+Lateral raise prescribed at **30–35, deliberately below the log median** — the 2026-07-28 MRI
+shows subacromial bursitis and 60–120° abduction is exactly this movement's arc. Capped at
+shoulder height, high rep. A load anchored on the log would have been wrong here; the injury
+overrides the median, and that's the one case where `loads-from-logs` yields.
+
+**Actions taken:** D1 → 3 accessories (dropped Skullcrusher for triceps redundancy, moved Hip
+Thrust to D3, added Side Plank). D2 gained Lateral Raise. D3 gained Hip Thrust + Dead Bug
+(3 → 5 accessories). D4 gained Concentration Curl + Bird Dog. Core is now on all four days as
+**four distinct patterns** — anti-lateral-flexion (D1) / anti-rotation (D2) / anti-extension
+(D3) / spine-neutral endurance (D4) — rather than the same movement repeated.
+
+**Note on D1↔D2 balance (#5):** they can't be equalized by accessory *count*, and shouldn't
+be. D1 carries two primary lifts (9 primary sets) vs D2's one (4). At 3 vs 5 accessories the
+two days land at ~18 vs ~19 total working sets — balanced by **volume**, which is what
+actually costs recovery. Also, D1→D2 is back-to-back into pull-up day, so D1 structurally
+can't hold back or biceps work; that constrains what balance is even possible.
+→ rules: `core-every-day`, `muscle-coverage-audit`, `loads-from-logs`
+
+---
+
 ### 2026-08-07 (evening) · block, load, general · doctor orders 4 weeks off heavy — B5 axial work rewritten light
 **Event (athlete, after the pain-clinic visit):** got the lower-back injection — 4–5 sites,
 described as a **"freezing" injection** to loosen the muscle. **No shoulder injection**; the doctor

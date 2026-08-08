@@ -89,6 +89,20 @@
 
   When you rotate, apply the variant/implement load-conversion step of `loads-from-logs`. The
   Sheet colour-codes each lift's primary + secondary with one shared tint. [FB 2026-07-03]
+- **core-every-day** — **Every training day carries at least one core/abs accessory**, and each
+  day gets a **different pattern** so they aren't redundant: anti-lateral-flexion (side plank) ·
+  anti-rotation (Pallof press) · anti-extension (dead bug) · spine-neutral endurance (bird dog).
+  While the low back is under treatment, prefer **anti-movement** work and avoid **loaded lumbar
+  flexion** (cable crunch, sit-ups) and **hip-flexor-dominant** work (hanging leg raise — the
+  psoas attaches onto L1–L5 and pulls on the treated segments). [FB 2026-08-07]
+- **muscle-coverage-audit** — Before finalizing a block, **audit muscle coverage across all
+  training days** and state the result: quads · hamstrings · glutes · erectors · chest · triceps ·
+  front delts · lateral delts · rear delts · lats · mid-back · biceps · core. Name any group left
+  uncovered **as a deliberate decision with a reason**, not by omission. The B5 audit caught three
+  real holes (lateral delts, biceps, core-on-one-day-only) plus a day carrying two triceps
+  movements while another day ran thin. **Balance days by working-set volume, not accessory
+  count** — a day with two primary lifts needs fewer accessories than a day with one.
+  [FB 2026-08-07]
 - **accessory-day-interference** — Accessories must not compromise the *next* training day.
   Schedule: D1 Mon · D2 Tue · D3 Thu · D4 Fri. D1→D2 and D3→D4 are back-to-back (no rest):
   **D1 accessories must not pre-fatigue D2** (esp. back work vs D2 pull-up), and **D3
