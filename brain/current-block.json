@@ -16,6 +16,7 @@
     ],
     "accessory_changes": [
       "COVERAGE AUDIT (2026-08-07, rule muscle-coverage-audit): checked all four days against every major group. Found three real holes — lateral delts (nothing trained them), biceps (Concentration Curl had been cut, leaving zero direct work), and core (D2 only). All three now closed.",
+      "CALVES IN (2026-08-07, athlete's call) — Seated Calf Raise on D4, SWAPPED for Incline DB Press rather than added, so D4 stays at 21 sets (it was already the longest day). Seated, not standing: zero spinal load. Bonus — it removes a fourth pressing exposure from a shoulder with bursitis and two partial-thickness tears. Log median 175 over 4 sessions. Every major muscle group is now covered.",
       "CORE ON EVERY DAY, four DIFFERENT patterns so they aren't redundant: Side Plank (D1, anti-lateral-flexion) / Pallof Press (D2, anti-rotation) / Dead Bug (D3, anti-extension) / Bird Dog (D4, spine-neutral endurance). All anti-movement work — NO loaded lumbar flexion (cable crunch, sit-ups) and NO hanging leg raise while the back is under treatment (hip-flexor dominant; the psoas attaches onto L1-L5).",
       "D1 SLIMMED to 3 accessories: Skullcrusher CUT (triceps were over-served by pushdown + dip + three bench variants) and Hip Thrust MOVED to D3. D1 was leg- and tricep-heavy; it now runs Leg Press, Tricep Pushdown, Side Plank.",
       "D3 FILLED OUT 3 -> 5 accessories (it was the thinnest day): gains Hip Thrust + Dead Bug.",
@@ -182,25 +183,25 @@
         },
         {
           "name": "Side Plank",
-          "notes": "CORE (D1) — anti-lateral-flexion. Every day now carries one core movement, and each day gets a DIFFERENT pattern so they aren't redundant. Isometric hold, seconds per side, spine neutral, zero spinal compression. The reps column is SECONDS.",
+          "notes": "CORE (D1) — anti-lateral-flexion. Every day carries one core movement, each a DIFFERENT pattern. Isometric HOLD, 30-40 SECONDS PER SIDE (logged as duration, not reps). Spine neutral, zero spinal compression. Do it in your rest periods between bench sets.",
           "sets": [
             {
-              "type": "normal",
+              "type": "duration",
               "weight_kg": 0.0,
-              "reps": 30,
-              "rpe": 7
+              "rpe": 7,
+              "duration_seconds": 30
             },
             {
-              "type": "normal",
+              "type": "duration",
               "weight_kg": 0.0,
-              "reps": 30,
-              "rpe": 7
+              "rpe": 7,
+              "duration_seconds": 30
             },
             {
-              "type": "normal",
+              "type": "duration",
               "weight_kg": 0.0,
-              "reps": 30,
-              "rpe": 7
+              "rpe": 7,
+              "duration_seconds": 30
             }
           ],
           "display_load": "BW"
@@ -632,25 +633,25 @@
           ]
         },
         {
-          "name": "Incline DB Press",
-          "notes": "Upper-chest volume for bench. Re-anchored 50 → 65. (NOT new — 66 logged sessions.)",
+          "name": "Seated Calf Raise",
+          "notes": "Calves — the last uncovered muscle group, now in. SEATED on purpose: a standing/barbell calf raise puts load straight down the spine, a seated one puts zero. Log median 175 over 4 sessions. Swapped in for Incline DB Press rather than added, so D4 stays at 21 sets — and it pulls a fourth pressing exposure off a shoulder with bursitis and two partial tears. Comp bench, dip and Spoto still cover the press.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 29.5,
-              "reps": 10,
+              "weight_kg": 70.3,
+              "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 29.5,
-              "reps": 10,
+              "weight_kg": 70.3,
+              "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 29.5,
-              "reps": 10,
+              "weight_kg": 70.3,
+              "reps": 15,
               "rpe": 7
             }
           ]
@@ -835,25 +836,25 @@
         },
         {
           "name": "Side Plank",
-          "notes": "CORE (D1) — anti-lateral-flexion. Every day now carries one core movement, and each day gets a DIFFERENT pattern so they aren't redundant. Isometric hold, seconds per side, spine neutral, zero spinal compression. The reps column is SECONDS.",
+          "notes": "CORE (D1) — anti-lateral-flexion. Every day carries one core movement, each a DIFFERENT pattern. Isometric HOLD, 30-40 SECONDS PER SIDE (logged as duration, not reps). Spine neutral, zero spinal compression. Do it in your rest periods between bench sets.",
           "sets": [
             {
-              "type": "normal",
+              "type": "duration",
               "weight_kg": 0.0,
-              "reps": 30,
-              "rpe": 7
+              "rpe": 7,
+              "duration_seconds": 30
             },
             {
-              "type": "normal",
+              "type": "duration",
               "weight_kg": 0.0,
-              "reps": 30,
-              "rpe": 7
+              "rpe": 7,
+              "duration_seconds": 30
             },
             {
-              "type": "normal",
+              "type": "duration",
               "weight_kg": 0.0,
-              "reps": 30,
-              "rpe": 7
+              "rpe": 7,
+              "duration_seconds": 30
             }
           ],
           "display_load": "BW"
@@ -1285,25 +1286,25 @@
           ]
         },
         {
-          "name": "Incline DB Press",
-          "notes": "Upper-chest volume for bench. Re-anchored 50 → 65. (NOT new — 66 logged sessions.)",
+          "name": "Seated Calf Raise",
+          "notes": "Calves — the last uncovered muscle group, now in. SEATED on purpose: a standing/barbell calf raise puts load straight down the spine, a seated one puts zero. Log median 175 over 4 sessions. Swapped in for Incline DB Press rather than added, so D4 stays at 21 sets — and it pulls a fourth pressing exposure off a shoulder with bursitis and two partial tears. Comp bench, dip and Spoto still cover the press.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 29.5,
-              "reps": 10,
+              "weight_kg": 70.3,
+              "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 29.5,
-              "reps": 10,
+              "weight_kg": 70.3,
+              "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 29.5,
-              "reps": 10,
+              "weight_kg": 70.3,
+              "reps": 15,
               "rpe": 7
             }
           ]
@@ -1488,25 +1489,25 @@
         },
         {
           "name": "Side Plank",
-          "notes": "CORE (D1) — anti-lateral-flexion. Every day now carries one core movement, and each day gets a DIFFERENT pattern so they aren't redundant. Isometric hold, seconds per side, spine neutral, zero spinal compression. The reps column is SECONDS.",
+          "notes": "CORE (D1) — anti-lateral-flexion. Every day carries one core movement, each a DIFFERENT pattern. Isometric HOLD, 30-40 SECONDS PER SIDE (logged as duration, not reps). Spine neutral, zero spinal compression. Do it in your rest periods between bench sets.",
           "sets": [
             {
-              "type": "normal",
+              "type": "duration",
               "weight_kg": 0.0,
-              "reps": 40,
-              "rpe": 7
+              "rpe": 7,
+              "duration_seconds": 40
             },
             {
-              "type": "normal",
+              "type": "duration",
               "weight_kg": 0.0,
-              "reps": 40,
-              "rpe": 7
+              "rpe": 7,
+              "duration_seconds": 40
             },
             {
-              "type": "normal",
+              "type": "duration",
               "weight_kg": 0.0,
-              "reps": 40,
-              "rpe": 7
+              "rpe": 7,
+              "duration_seconds": 40
             }
           ],
           "display_load": "BW"
@@ -1938,25 +1939,25 @@
           ]
         },
         {
-          "name": "Incline DB Press",
-          "notes": "Upper-chest volume for bench. Re-anchored 50 → 65. (NOT new — 66 logged sessions.)",
+          "name": "Seated Calf Raise",
+          "notes": "Calves — the last uncovered muscle group, now in. SEATED on purpose: a standing/barbell calf raise puts load straight down the spine, a seated one puts zero. Log median 175 over 4 sessions. Swapped in for Incline DB Press rather than added, so D4 stays at 21 sets — and it pulls a fourth pressing exposure off a shoulder with bursitis and two partial tears. Comp bench, dip and Spoto still cover the press.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 31.8,
-              "reps": 8,
+              "weight_kg": 79.4,
+              "reps": 15,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 31.8,
-              "reps": 8,
+              "weight_kg": 79.4,
+              "reps": 15,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 31.8,
-              "reps": 8,
+              "weight_kg": 79.4,
+              "reps": 15,
               "rpe": 7.5
             }
           ]
@@ -2136,25 +2137,25 @@
         },
         {
           "name": "Side Plank",
-          "notes": "CORE (D1) — anti-lateral-flexion. Every day now carries one core movement, and each day gets a DIFFERENT pattern so they aren't redundant. Isometric hold, seconds per side, spine neutral, zero spinal compression. The reps column is SECONDS.",
+          "notes": "CORE (D1) — anti-lateral-flexion. Every day carries one core movement, each a DIFFERENT pattern. Isometric HOLD, 30-40 SECONDS PER SIDE (logged as duration, not reps). Spine neutral, zero spinal compression. Do it in your rest periods between bench sets.",
           "sets": [
             {
-              "type": "normal",
+              "type": "duration",
               "weight_kg": 0.0,
-              "reps": 40,
-              "rpe": 7
+              "rpe": 7,
+              "duration_seconds": 40
             },
             {
-              "type": "normal",
+              "type": "duration",
               "weight_kg": 0.0,
-              "reps": 40,
-              "rpe": 7
+              "rpe": 7,
+              "duration_seconds": 40
             },
             {
-              "type": "normal",
+              "type": "duration",
               "weight_kg": 0.0,
-              "reps": 40,
-              "rpe": 7
+              "rpe": 7,
+              "duration_seconds": 40
             }
           ],
           "display_load": "BW"
@@ -2586,25 +2587,25 @@
           ]
         },
         {
-          "name": "Incline DB Press",
-          "notes": "Upper-chest volume for bench. Re-anchored 50 → 65. (NOT new — 66 logged sessions.)",
+          "name": "Seated Calf Raise",
+          "notes": "Calves — the last uncovered muscle group, now in. SEATED on purpose: a standing/barbell calf raise puts load straight down the spine, a seated one puts zero. Log median 175 over 4 sessions. Swapped in for Incline DB Press rather than added, so D4 stays at 21 sets — and it pulls a fourth pressing exposure off a shoulder with bursitis and two partial tears. Comp bench, dip and Spoto still cover the press.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 31.8,
-              "reps": 8,
+              "weight_kg": 79.4,
+              "reps": 15,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 31.8,
-              "reps": 8,
+              "weight_kg": 79.4,
+              "reps": 15,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 31.8,
-              "reps": 8,
+              "weight_kg": 79.4,
+              "reps": 15,
               "rpe": 7.5
             }
           ]
@@ -2777,25 +2778,25 @@
         },
         {
           "name": "Side Plank",
-          "notes": "CORE (D1) — anti-lateral-flexion. Every day now carries one core movement, and each day gets a DIFFERENT pattern so they aren't redundant. Isometric hold, seconds per side, spine neutral, zero spinal compression. The reps column is SECONDS.",
+          "notes": "CORE (D1) — anti-lateral-flexion. Every day carries one core movement, each a DIFFERENT pattern. Isometric HOLD, 30-40 SECONDS PER SIDE (logged as duration, not reps). Spine neutral, zero spinal compression. Do it in your rest periods between bench sets.",
           "sets": [
             {
-              "type": "normal",
+              "type": "duration",
               "weight_kg": 0.0,
-              "reps": 30,
-              "rpe": 6
+              "rpe": 6,
+              "duration_seconds": 30
             },
             {
-              "type": "normal",
+              "type": "duration",
               "weight_kg": 0.0,
-              "reps": 30,
-              "rpe": 6
+              "rpe": 6,
+              "duration_seconds": 30
             },
             {
-              "type": "normal",
+              "type": "duration",
               "weight_kg": 0.0,
-              "reps": 30,
-              "rpe": 6
+              "rpe": 6,
+              "duration_seconds": 30
             }
           ],
           "display_load": "BW"
@@ -3227,25 +3228,25 @@
           ]
         },
         {
-          "name": "Incline DB Press",
-          "notes": "Upper-chest volume for bench. Re-anchored 50 → 65. (NOT new — 66 logged sessions.)",
+          "name": "Seated Calf Raise",
+          "notes": "Calves — the last uncovered muscle group, now in. SEATED on purpose: a standing/barbell calf raise puts load straight down the spine, a seated one puts zero. Log median 175 over 4 sessions. Swapped in for Incline DB Press rather than added, so D4 stays at 21 sets — and it pulls a fourth pressing exposure off a shoulder with bursitis and two partial tears. Comp bench, dip and Spoto still cover the press.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 22.7,
-              "reps": 12,
+              "weight_kg": 61.2,
+              "reps": 15,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 22.7,
-              "reps": 12,
+              "weight_kg": 61.2,
+              "reps": 15,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 22.7,
-              "reps": 12,
+              "weight_kg": 61.2,
+              "reps": 15,
               "rpe": 6
             }
           ]

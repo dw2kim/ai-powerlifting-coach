@@ -237,6 +237,33 @@ Proceeding under the written loads, which is the safer of the two ways to disagr
   **This cap is durable** (athlete tolerance) and outlives the injection-series cap below (which is
   temporary and lifts on doctor clearance). Rule: `sumo-back-cap`. **Add a next-day back check on sumo
   days** — "back fine / tight / sore" — since the corticosteroid masks pain *during* the lift.
+### Training decision (2026-08-07): athlete declines the "stop heavy lifting" advice; holds 225
+
+Athlete's position, stated 2026-08-07: **the doctor is giving a textbook answer**, 225 lb is very
+light for him (~48% of his squat, ~46% of his pull), and **graded light loading will heal the back
+faster than stopping**. He is an experienced lifter, knows how to brace, and is electing to train
+the plan as written rather than reduce further or stop. **This is his call and it stands.**
+
+**Coach's position — recorded, not re-litigated.** Two things are true at once:
+- **He is right on the principle.** Graded loading beats rest for non-specific low back pain; that
+  is mainstream, not contrarian. The lumbar MRI (2026-07-22) is reassuring — no nerve compression,
+  no canal stenosis, age-typical degeneration. Nothing on imaging contraindicates a 225 squat.
+- **The plan does not actually change.** B5 was already written at 225 flat. He is declining to go
+  *lower* or stop — he is not asking to go heavier. So there is no load delta to argue about.
+
+**What does NOT get relaxed by this decision:**
+1. **225 stays a ceiling, not a floor.** His own argument is "225 is light, therefore healing." That
+   argument does not extend to 275 or 315 — at that point it's a different claim needing different
+   evidence. B4 W1 is the precedent: sumo planned at 345, pulled at **425**. Self-defined "light"
+   has a documented failure rate, which is exactly why the number is written down.
+2. **The next-day back check matters MORE now, not less.** He is now the sole decision-maker on
+   axial load, and the anesthetic muffles the in-session signal. The morning-after check is the only
+   honest data either of us will get. Zero entries in all of B4.
+3. **The purely informational clinic questions still get asked** — what's actually in the injection
+   (anesthetic vs anesthetic + steroid, which sets how long pain stays masked) and the shoulder
+   injection, still not started after two blocks. Those are data, not permission. Declining advice
+   is not a reason to stop collecting facts.
+
 - **Training implications** (manage heavy axial load around a weekly injection series):
   - **Cap squat & sumo by absolute LOAD, not by feel, for the duration of the series.** The
     corticosteroid **masks pain**, so RPE / the ≤3/10 rule can't be trusted to protect the back —

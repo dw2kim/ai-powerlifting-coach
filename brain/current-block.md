@@ -78,16 +78,18 @@ B4 proved you'll respect a cap — so this block the caps move to exactly where 
 | Erectors | Back Ext (D2) · Bird Dog (D4) | **Lateral delts** | **Lateral Raise (D2) — was a hole** |
 | Chest | Bench (D1) · Dip (D3) · Spoto + Incline DB (D4) | Rear delts | Reverse Pec Deck · Face Pull (D3) |
 | Triceps | Pushdown (D1) · Dip (D3) · all benching | **Biceps** | **Concentration Curl (D4) — was a hole** |
-| **Core** | **All four days, four different patterns** | *Calves* | *none — deliberate, see below* |
+| **Core** | **All four days, four different patterns** | **Calves** | **Seated Calf Raise (D4)** |
+
+**Every major muscle group is now covered.** Calves came in 2026-08-07 at the athlete's call.
 
 **Core is now on every day, deliberately non-redundant** (`core-every-day`): anti-lateral-flexion
 (D1 Side Plank) · anti-rotation (D2 Pallof) · anti-extension (D3 Dead Bug) · spine-neutral
 endurance (D4 Bird Dog). All anti-movement work — **no loaded lumbar flexion** (cable crunch,
 sit-ups) and **no hanging leg raise** while the back is under treatment.
 
-**Calves are the one uncovered group, and that's a decision, not an oversight.** Zero logged
-history, no meaningful Big-5 carryover, and this is not the block to add a movement you've never
-done. Say the word and it goes on D4.
+**Calves went in 2026-08-07** on your call — Seated Calf Raise on D4, swapped for Incline DB Press
+so the day's set count doesn't grow (D4 was already the longest at 21). Seated rather than standing
+because a loaded standing raise compresses the spine and a seated one doesn't.
 
 > **D1 vs D2 balance — why they aren't equal by count.** D1 runs **3** accessories to D2's **5**,
 > because D1 carries *two* primary lifts (9 primary sets) against D2's one (4). Total working
@@ -285,7 +287,7 @@ to low-grade partial on their own, and the absence of fatty atrophy argues one w
 | D3 | Face Pull | 45 ×15 | Shoulder health. Moved D4 → D3. |
 | D4 | **Bulgarian Split Squat (NEW to the block)** | **45 → 50/hand** | **Not new to you — 50 logged sessions, median 42.5.** This is your "lunge", already grooved. Unilateral: a leg's worth of quad/glute stimulus at roughly half the spinal load of bilateral squatting. |
 | D4 | **Chest Supported Incline Row (NEW)** | ~50/hand | Replaces Meadows Row: same upper-back target, **zero lumbar load** on deadlift day. First exposure — 50 is an estimate, the weekly sync corrects it. |
-| D4 | Incline DB Press | **65 → 70** | Re-anchored from 50. (Not new — you have 66 logged sessions.) |
+| D4 | **Seated Calf Raise (NEW)** | **155 → 175** | **Calves — the last uncovered group, now in (your call).** **Seated** on purpose: a standing/barbell calf raise runs load straight down the spine, a seated one runs none. Log median 175 over 4 sessions. **Swapped in for Incline DB Press**, not added — D4 was already the longest day at 21 sets, and this pulls a fourth pressing exposure off a shoulder with bursitis and two partial tears. Bench, dip and Spoto still cover the press. |
 | D4 | **Concentration Curl (back in)** | **40 → 45** | **Biceps had no direct work at all** once this was cut — pull-ups and rows don't cover it. On D4 because nothing follows Friday. Log median 38 over 93 sessions, max 45. |
 | D4 | **Bird Dog (NEW — core)** | BW ×10/side | Anti-rotation + erector endurance, spine neutral throughout. The gentlest of the four core patterns, which is why it sits on deadlift day. |
 
@@ -338,14 +340,14 @@ segments we're protecting; wrong core tool for this block).
 
 ## Open items
 
-- [ ] **Ask the doctor what "heavy" means — literally.** *"Is a 185 lb technique squat inside what
-      you're telling me to stop? Bodyweight work? Upper body?"* This is the single highest-value
-      question on the list; it either confirms this block or unlocks W3–W4.
-- [ ] **Disclose the new leg work at the same visit (2026-08-07 addition).** *"I've cut my squat to
-      225 and my deadlift to 225, and added a leg press, a hip thrust and a split squat — is that
-      inside the four weeks?"* You're adding three loaded leg movements inside a window where he
-      told you to stop, and he was **already shocked once** by what you actually lift. If he says
-      no, we drop them and lose nothing. Do not let him find out afterward.
+- [x] ~~Ask the doctor what "heavy" means / disclose the new leg work.~~ **Closed 2026-08-07 —
+      athlete declines the stop-heavy advice and holds 225.** See `active-issues.md` → *Training
+      decision (2026-08-07)*. The plan is unchanged (it was already 225); what changed is that
+      there's no longer a clearance gate waiting to unlock W3–W4. **225 remains a ceiling.**
+- [ ] **Still ask the two informational questions** — these are data, not permission, and they
+      don't depend on taking the advice: (1) **what's actually in the injection** (anesthetic only,
+      or anesthetic + steroid — it sets how long pain stays masked, which is what the back check is
+      working around); (2) **the shoulder injection**, still not started after two blocks.
 - [ ] **Confirm the injection agent** — anesthetic only, or anesthetic + steroid? Changes how long
       the masking lasts. This file said "corticosteroid" from 2026-07-06 and that may be wrong.
 - [ ] **Tell the clinic what you actually lift.** He was *shocked* — which means he's been planning
