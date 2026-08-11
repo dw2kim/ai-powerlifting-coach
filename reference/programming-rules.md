@@ -153,11 +153,20 @@
   already showed clean numbers; this makes Hevy match it. [FB 2026-08-11]
 - **rest-times-programmed** — **Every exercise in a pushed block carries `rest_seconds`.** Not
   optional, not "he'll know" — the app runs the timer so the decision isn't made mid-session while
-  tired. Defaults: primary top sets **180–240s** (the W4 peak / any @8 test gets **300s** — a
-  short-rested peak is how B4's bench came in at @6 against an @8 allowance), primary backoffs
-  **180s**, loaded compound accessories **120s**, other accessories **90s**, isolation **60s**,
-  core **45s** (short by design — they're meant to fit inside the rest on the big lifts when the
-  session runs long). Deviate when there's a reason, and say what it is. [FB 2026-08-11]
+  tired. [FB 2026-08-11]
+- **rest-times-athlete-set** — **The rest values are the athlete's, not the coach's** (set
+  2026-08-11, after a first pass at 2–5 min was rejected as far too long):
+  - **Primary — squat · bench · sumo · weighted pull-up · weighted dip: 75s.** Top sets *and*
+    backoffs; a backoff of a primary is still the primary.
+  - **Secondary + all accessories: 60s.** Includes the barbell secondaries (Spoto, CGB).
+  - **Core / abs: 30s.**
+
+  He trains dense and reports that he takes another 5–10 s past the buzzer anyway, so the timer is
+  a **floor, not a ceiling** — treat these as defaults, not caps, and don't quietly re-inflate them
+  in a later block. **Say so in the block file where a set genuinely wants more**: the W4 comp-bench
+  work-up to @8 and the W3 dip peak are the two in B5, because an under-rested top set reads
+  heavier than it is and B4's defining miss was peaking **@6 against an @8 allowance**. Changing
+  these numbers takes new feedback from him, not a coaching preference. [FB 2026-08-11]
 - **push-is-idempotent-with-update** — A block that's already live gets **corrected in place**:
   `push_block --update --start W<n>-D<n>` PUTs over the routines whose titles match and leaves
   everything before the start point alone. **Hevy has no DELETE for routines**, so a plain re-push

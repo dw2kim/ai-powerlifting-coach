@@ -8,6 +8,8 @@
 **Revised same day** after the 2026-08-07 pain-clinic visit — see the medical override below.
 **Re-pushed 2026-08-11 (W1-D3 → W5-D4)**: clean whole-pound loads in Hevy, rest times on every
 exercise, and **CGB added to D3**. No load, rep, RPE or day changed anywhere else.
+**Rest times reset same day (W1-D2 → W5-D4)** to the athlete's own rule — **1:15 primary / 1:00
+secondary + accessory / 0:30 core**. See *Rest times* below.
 **Theme**: Bench, pull-up and dip push the full plan. **Squat and sumo run light position and
 technique work for the whole block**, and the loaded hinges are cut.
 
@@ -307,23 +309,23 @@ the **same day as the dip**, and it's the **morning before Spoto**. That's a rea
 
 </details>
 
-## Rest times — programmed 2026-08-11, in Hevy on every exercise
+## Rest times — your rule, set 2026-08-11, in Hevy on every exercise
 
-Your ask. Hevy now runs the timer for you; nothing here is a guess you have to make mid-session.
+| Slot | Rest |
+|---|---|
+| **Primary — squat · bench · sumo · pull-up · dip** (top sets *and* backoffs) | **1:15** |
+| **Secondary + accessories** — Spoto · CGB · everything else | **1:00** |
+| **Core / abs** — side plank · Pallof · dead bug · bird dog | **0:30** |
 
-| Slot | Rest | Why |
-|---|---|---|
-| Comp Bench **top** | **4:00** (W4: **5:00**) | The W4 work-up to @8 is the one test in this block. Short-resting it is how you end up at @6 again. |
-| Weighted Pull-up top | 3:30 (W4: 4:00) | @8 hard cap — a fatigued top set breaches it by accident. |
-| Weighted Dip | 3:00 (W3 peak: 3:30) | Peak week gets more. |
-| Sumo · Spoto | 3:00 | |
-| Squat (light) | 2:30 | It's 225 @6 — full recovery isn't the constraint, position is. |
-| Bench/pull-up backoffs | 3:00 | |
-| CGB | 2:30 | |
-| Leg Press · Hip Thrust · BSS | 2:00 | Loaded, but non-axial. |
-| Rows · pulldown · leg curl · back ext · DB press | 1:30 | |
-| Isolation (pushdown, lateral raise, pec deck, face pull, calf, curl) | 1:00 | |
-| Core (side plank, Pallof, dead bug, bird dog) | 0:45 | Short on purpose — do these **inside** the rest on the big lifts if the session runs long. |
+My first pass ran 2–5 minutes; you called it too long, and you're right about your own rhythm —
+you train dense and always have. Replaced wholesale, no exceptions carved out. Rule
+`rest-times-athlete-set`.
+
+> **The timer is a floor, not a ceiling.** It tells you when you *may* go, not when you *must*.
+> One place to ignore it: **the W4 comp bench work-up to @8** (255–270×2). That's the single test
+> in this block, and B4's whole failure was peaking @6 against an @8 allowance — an under-rested
+> double reads heavier than it is, and you'll stop short of the number again. Take what that set
+> needs. Same on the W3 dip peak (BW+90 @8). Everywhere else: 1:15 and go.
 
 ## Accessories
 

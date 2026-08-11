@@ -90,7 +90,7 @@
           "display_load": "225",
           "hold": true,
           "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light position work only until ~2026-09-04.",
-          "rest_seconds": 150
+          "rest_seconds": 75
         },
         {
           "name": "Comp Bench",
@@ -103,7 +103,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 240
+          "rest_seconds": 75
         },
         {
           "name": "Comp Bench",
@@ -134,7 +134,7 @@
               "rpe": 6
             }
           ],
-          "rest_seconds": 180
+          "rest_seconds": 75
         },
         {
           "name": "Leg Press (Machine)",
@@ -159,7 +159,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 120
+          "rest_seconds": 60
         },
         {
           "name": "Tricep Pushdown",
@@ -210,7 +210,7 @@
             }
           ],
           "display_load": "BW",
-          "rest_seconds": 45
+          "rest_seconds": 30
         }
       ]
     },
@@ -229,7 +229,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 210
+          "rest_seconds": 75
         },
         {
           "name": "Weighted Pull-up",
@@ -254,7 +254,7 @@
               "rpe": 6
             }
           ],
-          "rest_seconds": 180
+          "rest_seconds": 75
         },
         {
           "name": "Weighted Back Extension",
@@ -281,7 +281,7 @@
           ],
           "hold": true,
           "hold_reason": "Bodyweight through W2 \u2014 trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this.",
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "Seated Leg Curl",
@@ -306,7 +306,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "DB Shoulder Press",
@@ -331,7 +331,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "Lateral Raise (Dumbbell)",
@@ -381,7 +381,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 45
+          "rest_seconds": 30
         }
       ]
     },
@@ -418,12 +418,12 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 180
+          "rest_seconds": 75
         },
         {
           "name": "CGB",
           "notes": "NEW on D3 (your ask) \u2014 third bench exposure of the week, run as SUPPORT not a strive lift. Close grip on purpose: less shoulder abduction than a comp grip, so less subacromial provocation, and it trains the lockout \u2014 the part of your bench that actually fails. Fixed load, @7 cap, elbows tucked. Log median 205; this is deliberately under it. STOP if shoulder pain >3/10.",
-          "rest_seconds": 150,
+          "rest_seconds": 60,
           "sets": [
             {
               "type": "normal",
@@ -471,7 +471,7 @@
               "rpe": 6
             }
           ],
-          "rest_seconds": 120
+          "rest_seconds": 60
         },
         {
           "name": "Lat Pulldown",
@@ -496,7 +496,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "Reverse Pec Deck",
@@ -572,7 +572,7 @@
             }
           ],
           "display_load": "BW",
-          "rest_seconds": 45
+          "rest_seconds": 30
         }
       ]
     },
@@ -606,7 +606,7 @@
           "display_load": "225",
           "hold": true,
           "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light technique work only until ~2026-09-04.",
-          "rest_seconds": 180
+          "rest_seconds": 75
         },
         {
           "name": "Spoto Bench Press",
@@ -631,7 +631,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 180
+          "rest_seconds": 60
         },
         {
           "name": "Bulgarian Split Squat",
@@ -656,7 +656,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 120
+          "rest_seconds": 60
         },
         {
           "name": "Chest Supported Incline Row",
@@ -681,7 +681,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "Seated Calf Raise",
@@ -757,7 +757,7 @@
             }
           ],
           "display_load": "BW",
-          "rest_seconds": 45
+          "rest_seconds": 30
         }
       ]
     },
@@ -797,7 +797,7 @@
           "display_load": "225",
           "hold": true,
           "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light position work only until ~2026-09-04.",
-          "rest_seconds": 150
+          "rest_seconds": 75
         },
         {
           "name": "Comp Bench",
@@ -810,7 +810,7 @@
               "rpe": 7.5
             }
           ],
-          "rest_seconds": 240
+          "rest_seconds": 75
         },
         {
           "name": "Comp Bench",
@@ -841,7 +841,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 180
+          "rest_seconds": 75
         },
         {
           "name": "Leg Press (Machine)",
@@ -866,7 +866,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 120
+          "rest_seconds": 60
         },
         {
           "name": "Tricep Pushdown",
@@ -917,7 +917,7 @@
             }
           ],
           "display_load": "BW",
-          "rest_seconds": 45
+          "rest_seconds": 30
         }
       ]
     },
@@ -936,7 +936,7 @@
               "rpe": 7.5
             }
           ],
-          "rest_seconds": 210
+          "rest_seconds": 75
         },
         {
           "name": "Weighted Pull-up",
@@ -961,7 +961,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 180
+          "rest_seconds": 75
         },
         {
           "name": "Weighted Back Extension",
@@ -988,7 +988,7 @@
           ],
           "hold": true,
           "hold_reason": "Bodyweight through W2 \u2014 trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this.",
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "Seated Leg Curl",
@@ -1013,7 +1013,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "DB Shoulder Press",
@@ -1038,7 +1038,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "Lateral Raise (Dumbbell)",
@@ -1088,7 +1088,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 45
+          "rest_seconds": 30
         }
       ]
     },
@@ -1125,12 +1125,12 @@
               "rpe": 7.5
             }
           ],
-          "rest_seconds": 180
+          "rest_seconds": 75
         },
         {
           "name": "CGB",
           "notes": "Support work, +10 lb. Still capped @7 \u2014 this lift does not get autoregulated up. Friday's Spoto is the priority press; if Spoto feels a full RPE heavier two weeks in a row, this is what gets cut.",
-          "rest_seconds": 150,
+          "rest_seconds": 60,
           "sets": [
             {
               "type": "normal",
@@ -1178,7 +1178,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 120
+          "rest_seconds": 60
         },
         {
           "name": "Lat Pulldown",
@@ -1203,7 +1203,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "Reverse Pec Deck",
@@ -1279,7 +1279,7 @@
             }
           ],
           "display_load": "BW",
-          "rest_seconds": 45
+          "rest_seconds": 30
         }
       ]
     },
@@ -1313,7 +1313,7 @@
           "display_load": "225",
           "hold": true,
           "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light technique work only until ~2026-09-04.",
-          "rest_seconds": 180
+          "rest_seconds": 75
         },
         {
           "name": "Spoto Bench Press",
@@ -1338,7 +1338,7 @@
               "rpe": 7.5
             }
           ],
-          "rest_seconds": 180
+          "rest_seconds": 60
         },
         {
           "name": "Bulgarian Split Squat",
@@ -1363,7 +1363,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 120
+          "rest_seconds": 60
         },
         {
           "name": "Chest Supported Incline Row",
@@ -1388,7 +1388,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "Seated Calf Raise",
@@ -1464,7 +1464,7 @@
             }
           ],
           "display_load": "BW",
-          "rest_seconds": 45
+          "rest_seconds": 30
         }
       ]
     },
@@ -1504,7 +1504,7 @@
           "display_load": "225",
           "hold": true,
           "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light position work only until ~2026-09-04.",
-          "rest_seconds": 150
+          "rest_seconds": 75
         },
         {
           "name": "Comp Bench",
@@ -1517,7 +1517,7 @@
               "rpe": 7.5
             }
           ],
-          "rest_seconds": 240
+          "rest_seconds": 75
         },
         {
           "name": "Comp Bench",
@@ -1548,7 +1548,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 180
+          "rest_seconds": 75
         },
         {
           "name": "Leg Press (Machine)",
@@ -1573,7 +1573,7 @@
               "rpe": 7.5
             }
           ],
-          "rest_seconds": 120
+          "rest_seconds": 60
         },
         {
           "name": "Tricep Pushdown",
@@ -1624,7 +1624,7 @@
             }
           ],
           "display_load": "BW",
-          "rest_seconds": 45
+          "rest_seconds": 30
         }
       ]
     },
@@ -1643,7 +1643,7 @@
               "rpe": 8
             }
           ],
-          "rest_seconds": 210
+          "rest_seconds": 75
         },
         {
           "name": "Weighted Pull-up",
@@ -1668,7 +1668,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 180
+          "rest_seconds": 75
         },
         {
           "name": "Weighted Back Extension",
@@ -1695,7 +1695,7 @@
           ],
           "hold": true,
           "hold_reason": "Bodyweight through W2 \u2014 trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this.",
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "Seated Leg Curl",
@@ -1720,7 +1720,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "DB Shoulder Press",
@@ -1745,7 +1745,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "Lateral Raise (Dumbbell)",
@@ -1795,7 +1795,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 45
+          "rest_seconds": 30
         }
       ]
     },
@@ -1832,12 +1832,12 @@
               "rpe": 8
             }
           ],
-          "rest_seconds": 210
+          "rest_seconds": 75
         },
         {
           "name": "CGB",
           "notes": "HOLD at 175 \u2014 dip peaks this week (BW+90 @8) and this is the same day. Two peaking presses on one day is how the shoulder flares.",
-          "rest_seconds": 150,
+          "rest_seconds": 60,
           "sets": [
             {
               "type": "normal",
@@ -1885,7 +1885,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 120
+          "rest_seconds": 60
         },
         {
           "name": "Lat Pulldown",
@@ -1910,7 +1910,7 @@
               "rpe": 7.5
             }
           ],
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "Reverse Pec Deck",
@@ -1986,7 +1986,7 @@
             }
           ],
           "display_load": "BW",
-          "rest_seconds": 45
+          "rest_seconds": 30
         }
       ]
     },
@@ -2020,7 +2020,7 @@
           "display_load": "225",
           "hold": true,
           "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light technique work only until ~2026-09-04.",
-          "rest_seconds": 180
+          "rest_seconds": 75
         },
         {
           "name": "Spoto Bench Press",
@@ -2045,7 +2045,7 @@
               "rpe": 7.5
             }
           ],
-          "rest_seconds": 180
+          "rest_seconds": 60
         },
         {
           "name": "Bulgarian Split Squat",
@@ -2070,7 +2070,7 @@
               "rpe": 7.5
             }
           ],
-          "rest_seconds": 120
+          "rest_seconds": 60
         },
         {
           "name": "Chest Supported Incline Row",
@@ -2095,7 +2095,7 @@
               "rpe": 7.5
             }
           ],
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "Seated Calf Raise",
@@ -2171,7 +2171,7 @@
             }
           ],
           "display_load": "BW",
-          "rest_seconds": 45
+          "rest_seconds": 30
         }
       ]
     },
@@ -2211,7 +2211,7 @@
           "display_load": "225",
           "hold": true,
           "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light position work only until ~2026-09-04.",
-          "rest_seconds": 150
+          "rest_seconds": 75
         },
         {
           "name": "Comp Bench",
@@ -2225,7 +2225,7 @@
             }
           ],
           "display_load": "255-270",
-          "rest_seconds": 300
+          "rest_seconds": 75
         },
         {
           "name": "Comp Bench",
@@ -2250,7 +2250,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 180
+          "rest_seconds": 75
         },
         {
           "name": "Leg Press (Machine)",
@@ -2275,7 +2275,7 @@
               "rpe": 7.5
             }
           ],
-          "rest_seconds": 120
+          "rest_seconds": 60
         },
         {
           "name": "Tricep Pushdown",
@@ -2326,7 +2326,7 @@
             }
           ],
           "display_load": "BW",
-          "rest_seconds": 45
+          "rest_seconds": 30
         }
       ]
     },
@@ -2345,7 +2345,7 @@
               "rpe": 8
             }
           ],
-          "rest_seconds": 240
+          "rest_seconds": 75
         },
         {
           "name": "Weighted Pull-up",
@@ -2370,7 +2370,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 180
+          "rest_seconds": 75
         },
         {
           "name": "Weighted Back Extension",
@@ -2397,7 +2397,7 @@
           ],
           "hold": true,
           "hold_reason": "Bodyweight through W2 \u2014 trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this.",
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "Seated Leg Curl",
@@ -2422,7 +2422,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "DB Shoulder Press",
@@ -2447,7 +2447,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "Lateral Raise (Dumbbell)",
@@ -2497,7 +2497,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 45
+          "rest_seconds": 30
         }
       ]
     },
@@ -2534,12 +2534,12 @@
               "rpe": 7.5
             }
           ],
-          "rest_seconds": 180
+          "rest_seconds": 75
         },
         {
           "name": "CGB",
           "notes": "185\u00d75, last real set of the block. Bench peaks Monday this week \u2014 this comes after it, so it stays @7. Do not chase the comp-bench number here.",
-          "rest_seconds": 150,
+          "rest_seconds": 60,
           "sets": [
             {
               "type": "normal",
@@ -2587,7 +2587,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 120
+          "rest_seconds": 60
         },
         {
           "name": "Lat Pulldown",
@@ -2612,7 +2612,7 @@
               "rpe": 7.5
             }
           ],
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "Reverse Pec Deck",
@@ -2688,7 +2688,7 @@
             }
           ],
           "display_load": "BW",
-          "rest_seconds": 45
+          "rest_seconds": 30
         }
       ]
     },
@@ -2722,7 +2722,7 @@
           "display_load": "225",
           "hold": true,
           "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light technique work only until ~2026-09-04.",
-          "rest_seconds": 180
+          "rest_seconds": 75
         },
         {
           "name": "Spoto Bench Press",
@@ -2747,7 +2747,7 @@
               "rpe": 8
             }
           ],
-          "rest_seconds": 180
+          "rest_seconds": 60
         },
         {
           "name": "Bulgarian Split Squat",
@@ -2772,7 +2772,7 @@
               "rpe": 7.5
             }
           ],
-          "rest_seconds": 120
+          "rest_seconds": 60
         },
         {
           "name": "Chest Supported Incline Row",
@@ -2797,7 +2797,7 @@
               "rpe": 7.5
             }
           ],
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "Seated Calf Raise",
@@ -2873,7 +2873,7 @@
             }
           ],
           "display_load": "BW",
-          "rest_seconds": 45
+          "rest_seconds": 30
         }
       ]
     },
@@ -2907,7 +2907,7 @@
           "display_load": "185",
           "hold": true,
           "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light position work only until ~2026-09-04.",
-          "rest_seconds": 150
+          "rest_seconds": 75
         },
         {
           "name": "Comp Bench",
@@ -2920,7 +2920,7 @@
               "rpe": 6
             }
           ],
-          "rest_seconds": 240
+          "rest_seconds": 75
         },
         {
           "name": "Comp Bench",
@@ -2945,7 +2945,7 @@
               "rpe": 6
             }
           ],
-          "rest_seconds": 180
+          "rest_seconds": 75
         },
         {
           "name": "Leg Press (Machine)",
@@ -2970,7 +2970,7 @@
               "rpe": 6
             }
           ],
-          "rest_seconds": 120
+          "rest_seconds": 60
         },
         {
           "name": "Tricep Pushdown",
@@ -3021,7 +3021,7 @@
             }
           ],
           "display_load": "BW",
-          "rest_seconds": 45
+          "rest_seconds": 30
         }
       ]
     },
@@ -3040,7 +3040,7 @@
               "rpe": 6
             }
           ],
-          "rest_seconds": 210
+          "rest_seconds": 75
         },
         {
           "name": "Weighted Pull-up",
@@ -3065,7 +3065,7 @@
               "rpe": 6
             }
           ],
-          "rest_seconds": 180
+          "rest_seconds": 75
         },
         {
           "name": "Weighted Back Extension",
@@ -3092,7 +3092,7 @@
           ],
           "hold": true,
           "hold_reason": "Bodyweight through W2 \u2014 trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this.",
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "Seated Leg Curl",
@@ -3117,7 +3117,7 @@
               "rpe": 7
             }
           ],
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "DB Shoulder Press",
@@ -3142,7 +3142,7 @@
               "rpe": 6
             }
           ],
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "Lateral Raise (Dumbbell)",
@@ -3192,7 +3192,7 @@
               "rpe": 6
             }
           ],
-          "rest_seconds": 45
+          "rest_seconds": 30
         }
       ]
     },
@@ -3229,12 +3229,12 @@
               "rpe": 6
             }
           ],
-          "rest_seconds": 180
+          "rest_seconds": 75
         },
         {
           "name": "CGB",
           "notes": "Deload \u2014 135, two sets, pattern only.",
-          "rest_seconds": 150,
+          "rest_seconds": 60,
           "sets": [
             {
               "type": "normal",
@@ -3276,7 +3276,7 @@
               "rpe": 6
             }
           ],
-          "rest_seconds": 120
+          "rest_seconds": 60
         },
         {
           "name": "Lat Pulldown",
@@ -3301,7 +3301,7 @@
               "rpe": 6
             }
           ],
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "Reverse Pec Deck",
@@ -3377,7 +3377,7 @@
             }
           ],
           "display_load": "BW",
-          "rest_seconds": 45
+          "rest_seconds": 30
         }
       ]
     },
@@ -3411,7 +3411,7 @@
           "display_load": "185",
           "hold": true,
           "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light technique work only until ~2026-09-04.",
-          "rest_seconds": 180
+          "rest_seconds": 75
         },
         {
           "name": "Spoto Bench Press",
@@ -3436,7 +3436,7 @@
               "rpe": 6
             }
           ],
-          "rest_seconds": 180
+          "rest_seconds": 60
         },
         {
           "name": "Bulgarian Split Squat",
@@ -3461,7 +3461,7 @@
               "rpe": 6
             }
           ],
-          "rest_seconds": 120
+          "rest_seconds": 60
         },
         {
           "name": "Chest Supported Incline Row",
@@ -3486,7 +3486,7 @@
               "rpe": 6
             }
           ],
-          "rest_seconds": 90
+          "rest_seconds": 60
         },
         {
           "name": "Seated Calf Raise",
@@ -3562,7 +3562,7 @@
             }
           ],
           "display_load": "BW",
-          "rest_seconds": 45
+          "rest_seconds": 30
         }
       ]
     }

@@ -73,9 +73,11 @@ description: Design a new training block — pull context from prior block + mem
    - **Loads must render as whole pounds** (rule `hevy-load-precision`): `weight_kg` is the exact
      kg equivalent of the intended lb load (`lb × 0.45359237`, full precision), prescribed in 5 lb
      increments. Never a kg value rounded to 1 decimal — that shows up as `225.09` in his app.
-   - **Every exercise needs `rest_seconds`** (rule `rest-times-programmed`): primary tops 180–240s
-     (**300s** on a peak/@8 test), backoffs 180s, loaded compounds 120s, accessories 90s,
-     isolation 60s, core 45s.
+   - **Every exercise needs `rest_seconds`** (rules `rest-times-programmed`,
+     `rest-times-athlete-set`): **75s primary** (squat/bench/sumo/pull-up/dip, tops *and*
+     backoffs) · **60s secondary + accessories** · **30s core**. These are the athlete's numbers —
+     don't re-inflate them. Where a set genuinely wants more (a peak / @8 test), say so **in the
+     block prose** rather than overriding the field.
 7. **Archive** the prior block: move `brain/current-block.md` (pre-overwrite) to `data/block-archive/<old-block-id>.md`. Same for the .json if present.
 8. **Commit** atomically with a one-paragraph message explaining the block's theme.
 9. **Offer to push to Hevy**:

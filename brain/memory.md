@@ -333,3 +333,19 @@ so the sync can't chase the 205 log median, and **first to be cut if Spoto degra
 running.** Deliberately NOT given `cap-is-a-target` treatment — support work, not a strive lift.
 **The pattern that keeps working with him: grant the thing he asked for, take the ceiling back in
 the shape he doesn't notice** (same trade as the 225 floor / flat load on 2026-08-07).
+
+## 2026-08-11 (follow-up) — rest times: my defaults were wrong, his are right
+Rejected my 2–5 min rest prescriptions same day: **75s primary (SBD + pull-up + dip, tops AND
+backoffs) / 60s secondary + accessories / 30s core.** Applied literally, 19 routines, no exceptions
+carved out. Rule `rest-times-athlete-set`.
+**The lesson is about defaults, not rest.** I filled the gap with textbook strength-work rest and
+never checked it against eleven years of how he actually trains — dense, short breaks. His own
+line: *"even when it rings at 1 minute I usually take another 5–10 seconds anyway."* **When a field
+has no athlete-stated preference, the log and his habits are the anchor, same as `loads-from-logs`
+— don't reach for the textbook number and call it a default.** He noticed within hours, which is
+the tell that it was never a small detail to him.
+**What I held onto, in prose rather than in the field:** the timer is a floor, not a ceiling, and
+the W4 comp-bench work-up to @8 (plus the W3 dip peak) is worth ignoring it for — an under-rested
+double reads heavier than it is, and B4's defining miss was peaking @6 against an @8 allowance.
+Right shape for a disagreement this size: take the number, keep the one caveat where it decides
+something, don't relitigate the rest.

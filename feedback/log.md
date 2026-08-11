@@ -61,6 +61,26 @@ W1-D3` (leave already-trained sessions alone). 18 routines updated in place; W1-
 untouched; no duplicates, no new folder.
 → rules: `hevy-load-precision`, `rest-times-programmed`, `push-is-idempotent-with-update`
 
+### 2026-08-11 (follow-up) · general · rest times were too long — athlete sets the numbers
+**Feedback:** *"Everything looks good except the rest times. Primary movements (SBD + pull-up +
+dip) → **1:15** default. Secondary and accessories → **1:00**. Core and abs → **0:30**. I see 2
+min, 3 min, 2.5 min — that's too much. I don't need that much; even when it rings at 1 minute I
+usually take another 5–10 seconds before the next set anyway."*
+**Coach's read: his call, and he knows his own rhythm better than my defaults did.** My first pass
+was textbook strength-work rest (2–5 min) and it ignored eleven years of how he actually trains —
+dense, short breaks, and the whole log backs him up. Applied literally, no exceptions carved out:
+**75s** on all five primaries (top sets *and* backoffs — a primary backoff is still the primary),
+**60s** on secondaries and accessories (Spoto and CGB included), **30s** on core. 19 routines
+updated in place, W1-D2 → W5-D4.
+**One thing flagged rather than argued:** the timer is a **floor, not a ceiling** — it says when he
+*may* start, not when he *must*. The one place it's worth ignoring is the **W4 comp-bench work-up
+to @8** (and the W3 dip peak): an under-rested double reads heavier than it is, and B4's defining
+miss was peaking **@6 against an @8 allowance**. That's written into the block prose, not into the
+field — the numbers stay his.
+**Also confirmed for him:** changing rest times needs no regeneration. It's a per-exercise field;
+loads, sets, reps, RPE and order were untouched, and the same in-place update path carried it.
+→ rules: `rest-times-athlete-set`
+
 ---
 
 ### 2026-08-07 · block, general, exercise · accessory balance + muscle coverage · Block 5
