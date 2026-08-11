@@ -301,3 +301,35 @@ takeaways: (1) squat/bench/dip discipline is now solid; the WPU is the lone stru
 which B4 answers with a hard @8 cap + BW+80 start. (2) Sumo has stalled at ~500–507 for two blocks
 and keeps being reached for as a grindy @9 single — B4 programs 485×**2** ≤@8.5 instead. True W5
 deload achieved (closes the B2 open item).
+
+## 2026-08-11 — B5 re-pushed W1-D3→W5-D4: clean loads, rest times, CGB on D3
+Three asks, all granted; nothing else in the block moved.
+**The decimal bug he reported was real and total.** The API takes kg, his app displays lb, and the
+block JSON stored kg at 1 decimal — so `102.1` rendered as **225.09 lb** on every set. **297/297
+loaded sets** were wrong. The Sheet looked fine because `export_block` rounds lb to 5s for display,
+so **two surfaces of the same plan disagreed and only the one he trains from was broken.** Worth
+generalizing: when he says a number looks wrong in one place, check whether the *other* renderer is
+hiding it. Fix = store the exact kg equivalent of the intended pound (`lb × 0.45359237`, full
+precision), which is what his own logged sets look like in the raw log. No load changed, only
+precision. Rule `hevy-load-precision`.
+**And the same fix had to be made twice** — `reconcile_loads` re-rounded to 1 dp when rewriting
+future weeks, so the Saturday sync would have put the decimals straight back. Same lesson
+`sheet-load-sync` taught: a rule that only binds at design time isn't a rule.
+**Rest times now on every exercise** (`rest-times-programmed`) — the W4 bench work-up gets **300s**
+specifically because B4 peaked **@6 against an @8 allowance**, and a short-rested top set is a
+cheap way to under-hit a peak. Core sits at 45s on purpose: they're meant to fit inside the rest on
+the big lifts when a session runs long.
+**Tooling gap closed — the push was additive-only, and Hevy has no routine DELETE.** He asked
+whether *he* had to delete B5 from the app first. He shouldn't ever have to: added
+`push_block --update --start W1-D3`, which PUTs over matching titles and leaves trained sessions
+alone. 18 routines corrected in place, no duplicates, same folder. Rule
+`push-is-idempotent-with-update`. **The right answer to "should I delete it?" is always no — fix
+the push, not his Saturday.**
+**CGB added to D3 (his ask) — granted with terms, cost stated.** It's a third weekly press, on dip
+day, the morning before Spoto, on the shoulder that limits this block — and B5 had already pulled
+Incline DB Press off D4 to reduce exactly that. Contained instead of refused: fixed
+165/175/175/185/135, hard @7, **held at 175 in W3 because the dip peaks that week**, marked `hold`
+so the sync can't chase the 205 log median, and **first to be cut if Spoto degrades two weeks
+running.** Deliberately NOT given `cap-is-a-target` treatment — support work, not a strive lift.
+**The pattern that keeps working with him: grant the thing he asked for, take the ceiling back in
+the shape he doesn't notice** (same trade as the 225 floor / flat load on 2026-08-07).

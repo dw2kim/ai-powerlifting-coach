@@ -70,15 +70,24 @@ description: Design a new training block — pull context from prior block + mem
 6. **Write**:
    - `brain/current-block.md` — prose for humans (this is what you read on your phone)
    - `brain/current-block.json` — structured spec for `push_block.py`. Schema in `scripts/hevy/push_block.py` docstring.
+   - **Loads must render as whole pounds** (rule `hevy-load-precision`): `weight_kg` is the exact
+     kg equivalent of the intended lb load (`lb × 0.45359237`, full precision), prescribed in 5 lb
+     increments. Never a kg value rounded to 1 decimal — that shows up as `225.09` in his app.
+   - **Every exercise needs `rest_seconds`** (rule `rest-times-programmed`): primary tops 180–240s
+     (**300s** on a peak/@8 test), backoffs 180s, loaded compounds 120s, accessories 90s,
+     isolation 60s, core 45s.
 7. **Archive** the prior block: move `brain/current-block.md` (pre-overwrite) to `data/block-archive/<old-block-id>.md`. Same for the .json if present.
 8. **Commit** atomically with a one-paragraph message explaining the block's theme.
 9. **Offer to push to Hevy**:
    - Always start with `python -m scripts.hevy.push_block` (dry-run). Show the user the routine titles and a sample payload.
    - On confirmation: `python -m scripts.hevy.push_block --apply`. Routines land in a folder named after the block id.
-   - **⚠️ The push is additive and NOT idempotent** — it only POSTs, never updates or deletes.
-     Running it twice for the same block creates a **second** folder and a duplicate set of
-     routines. Confirm it hasn't already been pushed before applying; if it has, the duplicate
-     must be deleted by hand in the Hevy app.
+   - **Correcting a block that is already live** (rule `push-is-idempotent-with-update`): use
+     `python -m scripts.hevy.push_block --update --start W<n>-D<n> --apply`. `--update` PUTs over
+     the routines whose titles match (keeping their folder) and `--start` leaves sessions already
+     trained alone. **Never ask the athlete to delete routines in the app** — the Hevy API has no
+     routine DELETE, which is exactly why the update path exists.
+   - **⚠️ Without `--update` the push is additive** — a plain re-push POSTs again and creates a
+     **second** folder plus a duplicate set of routines, which then can only be cleared by hand.
    - **No credentials in the session?** A Claude Code session usually has no `HEVY_API_KEY` (and
      no `GOOGLE_SA_JSON`). Don't claim the push happened — say so, and point at the
      `workflow_dispatch` workflows that run with the repo secrets:

@@ -10,6 +10,59 @@
 
 ---
 
+### 2026-08-11 · general, block, exercise · clean loads + rest times in Hevy, and a bench secondary on D3
+
+**Feedback (3 parts):** (1) *"I don't want too many decimal points on the weight load in Hevy —
+just like you log it in Google Sheets."* (2) *"Add the rest time for all the training."*
+(3) *"Just for Block 5, on D3, add a secondary movement for bench or any shorter related workout.
+I don't want to change anything else — everything else looks good."* Regenerate and push from
+**W1-D3 → W5-D4** (W1-D1/D2 already trained).
+
+**Root cause of (1) — a unit-conversion rounding bug, and he was right to call it.** The Hevy API
+takes **kg**; his app displays **lb**. The block JSON stored kg rounded to 1 decimal for
+readability — `102.1` — which the app renders as **225.09 lb**. Every load in the block carried a
+junk decimal: 54.9, 70.11, 229.94, 315.04. The Sheet looked clean the whole time because
+`export_block` rounds lb to 5s for display, so the two surfaces disagreed and only Hevy was wrong.
+**Verified: 297 of 297 loaded sets** failed to map to a whole pound. Fix is to store the *exact*
+kg equivalent of the intended pound (`lb × 0.45359237`, full precision) — which is what his own
+logged sets look like in the raw log (`142.88176647 kg` = exactly 315.0 lb). **No load value
+changed**, only its precision.
+**Second bug found underneath it** (same class as `exercise-name-mapping`): `reconcile_loads.py`
+re-rounded to `round(new_lb / KG_TO_LBS, 1)` when it rewrote future weeks, so the **Saturday sync
+would have reintroduced the decimals** every week. Fixed at the same time — a rule that only holds
+at design time isn't a rule, which is exactly the lesson `sheet-load-sync` already taught.
+
+**(2) Rest times:** every exercise in the block now carries `rest_seconds` and the app runs the
+timer. Structure: primary tops 180–240s, **300s on the W4 bench work-up to @8**, backoffs 180s,
+loaded compounds 120s, accessories 90s, isolation 60s, core 45s. The W4 bump is deliberate and
+points straight at B4's failure — he peaked bench **@6 against an @8 allowance**, and a
+short-rested top set is one of the cheapest ways to under-hit a peak.
+
+**(3) D3 bench secondary — granted, with terms.** Chose **CGB**: it's his default bench secondary
+per the rules, **20 logged sessions (median 205, max 235)**, close grip = less shoulder abduction
+than a comp grip (least provocative barbell press for two partial-thickness tears + bursitis), and
+it trains the **lockout**, a live bench weak point.
+**Coach's stated cost, not smoothed over:** this makes a **third pressing exposure in one week**,
+on the **same day as the dip**, the **morning before Spoto** — a real `accessory-day-interference`
+risk, on the one joint that limits this block. B5 had already pulled Incline DB Press off D4 to
+*reduce* pressing exposure on that shoulder, so this partly walks that back. Granted anyway
+because the interference is against a *press* rather than the pull, and it's containable:
+**fixed loads 165/175/175/185/135, hard @7, held flat at 175 in W3 (dip peak week), marked `hold`
+so the weekly sync can't chase it up to the 205 median**, and **it is the first thing cut if
+Spoto's top set runs a full RPE heavy two weeks running.** Explicitly *not* given
+`cap-is-a-target` treatment — it's support, not a strive lift, and the whole point is that it
+doesn't compete with the three lifts that are.
+
+**Answer to "do I need to delete the routines myself?" — no, and he never should have to.** The
+push was **additive-only** (POST, skip-if-exists), so correcting a live block meant either
+duplicates or hand-deletion, and **the Hevy API has no DELETE for routines at all.** Added
+`--update` (PUT over the matching title, keeping the routine's existing folder) and `--start
+W1-D3` (leave already-trained sessions alone). 18 routines updated in place; W1-D1 and W1-D2
+untouched; no duplicates, no new folder.
+→ rules: `hevy-load-precision`, `rest-times-programmed`, `push-is-idempotent-with-update`
+
+---
+
 ### 2026-08-07 · block, general, exercise · accessory balance + muscle coverage · Block 5
 **Feedback (5 parts):** (1) D1 is leg- and tricep-heavy, and has too many accessories — drop
 one. (2) D3 is too thin. (3) Every day should carry at least one abs/core accessory.

@@ -49,6 +49,7 @@ import statistics
 from datetime import date as date_cls, timedelta
 
 from ..hevy.block_report import DEFAULT_BW, KG_TO_LBS, REPO_ROOT
+from ..hevy.push_block import LB_TO_KG
 from ..review.weekly_metrics import (
     BLOCK_JSON,
     PRIMARY_NAMES,
@@ -380,7 +381,10 @@ def apply_corrections(block: dict, report: dict) -> list[dict]:
                 new_lb = _round5(old_lb * factor)
                 if new_lb == old_lb:
                     continue
-                s["weight_kg"] = round(new_lb / KG_TO_LBS, 1)
+                # Full precision, not a rounded kg: the athlete's app displays lb, and a kg
+                # rounded to 1 dp round-trips to 225.09 lb on screen. Rule
+                # `hevy-load-precision` — the weekly sync must not undo it.
+                s["weight_kg"] = new_lb * LB_TO_KG
             ex["notes"] = _retarget_note(ex.get("notes"), entry_top_lb, new_entry_top)
             if new_entry_top != entry_top_lb:
                 changes.append({

@@ -141,6 +141,29 @@
   to the shoulder and bench the moment a shoulder injection starts** (still not given as of
   2026-08-07 — the athlete must report it so bench and dip get the same treatment). [FB 2026-08-07]
 
+## What lands in the app
+
+- **hevy-load-precision** — **Every prescribed load must render in Hevy as a whole pound.** The
+  API speaks kg and the athlete's app displays lb, so a kg value rounded for readability (102.1)
+  comes out as **225.09 lb** on his screen — a junk decimal on every set, and the plate maths stops
+  being obvious mid-session. Store `weight_kg` as the **exact** kg equivalent of the intended
+  pound load (`lb × 0.45359237`, full precision), never a 1-decimal kg. `push_block._snap_weight`
+  enforces it on the way out and `reconcile_loads` must not re-round it on the weekly sync.
+  Prescribe in **5 lb increments** — that's what's on the bar and in the stack. The Google Sheet
+  already showed clean numbers; this makes Hevy match it. [FB 2026-08-11]
+- **rest-times-programmed** — **Every exercise in a pushed block carries `rest_seconds`.** Not
+  optional, not "he'll know" — the app runs the timer so the decision isn't made mid-session while
+  tired. Defaults: primary top sets **180–240s** (the W4 peak / any @8 test gets **300s** — a
+  short-rested peak is how B4's bench came in at @6 against an @8 allowance), primary backoffs
+  **180s**, loaded compound accessories **120s**, other accessories **90s**, isolation **60s**,
+  core **45s** (short by design — they're meant to fit inside the rest on the big lifts when the
+  session runs long). Deviate when there's a reason, and say what it is. [FB 2026-08-11]
+- **push-is-idempotent-with-update** — A block that's already live gets **corrected in place**:
+  `push_block --update --start W<n>-D<n>` PUTs over the routines whose titles match and leaves
+  everything before the start point alone. **Hevy has no DELETE for routines**, so a plain re-push
+  is additive and strands duplicates the athlete has to clear by hand. Never ask him to delete
+  routines to make room for a correction. [FB 2026-08-11]
+
 ## RPE conventions
 
 - **accessory-rpe** — Accessories usually have **no logged RPE**. Treat a blank-RPE accessory

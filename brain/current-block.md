@@ -6,6 +6,8 @@
 **Dates**: 2026-08-10 → 2026-09-13 (5 weeks, 4 days/week)
 **Source**: Designed 2026-08-07 from the B4 review (`reviews/2026-Q3-B04.md`) + athlete direction.
 **Revised same day** after the 2026-08-07 pain-clinic visit — see the medical override below.
+**Re-pushed 2026-08-11 (W1-D3 → W5-D4)**: clean whole-pound loads in Hevy, rest times on every
+exercise, and **CGB added to D3**. No load, rep, RPE or day changed anywhere else.
 **Theme**: Bench, pull-up and dip push the full plan. **Squat and sumo run light position and
 technique work for the whole block**, and the loaded hinges are cut.
 
@@ -65,7 +67,7 @@ B4 proved you'll respect a cap — so this block the caps move to exactly where 
 
 - **D1 (Mon) — Squat (light) + Comp Bench**: Low-bar Squat *(4×5 @225 flat)* · Comp Bench (top + backoff) · **Leg Press (NEW — replaces Leg Extension)** · Tricep Pushdown · **Side Plank (core)**
 - **D2 (Tue) — WPU + Posterior Chain**: Weighted Pull-up (top + backoff) · **Weighted Back Extension** *(moved here, BW through W2)* · **Seated Leg Curl (NEW for the window)** · DB Shoulder Press · **Lateral Raise (NEW)** · **Pallof Press (core)**
-- **D3 (Thu) — Dip + Glutes + Upper Back**: Weighted Dip · **Hip Thrust (moved from D1)** · Lat Pulldown · Reverse Pec Deck · Face Pull · **Dead Bug (core)**
+- **D3 (Thu) — Dip + Glutes + Upper Back**: Weighted Dip · **CGB (NEW 2026-08-11 — bench secondary, capped)** · **Hip Thrust (moved from D1)** · Lat Pulldown · Reverse Pec Deck · Face Pull · **Dead Bug (core)**
 - **D4 (Fri) — Sumo (light) + Spoto**: Sumo Deadlift *(3×3 light)* · Spoto Bench Press *(held)* · **Bulgarian Split Squat (NEW)** · Chest Supported Incline Row · Incline DB Press · **Concentration Curl (back in)** · **Bird Dog (core)**
 
 ### Muscle coverage — audited 2026-08-07 (rule `muscle-coverage-audit`)
@@ -248,16 +250,52 @@ to low-grade partial on their own, and the absence of fatty atrophy argues one w
   violation that ran all of B4.
 - **D3 → D4 (no rest)**: D3 accessories are lats + rear delts only. **Hip Adduction is out** —
   adductors on Thursday before Friday sumo. D3 now carries nothing that pre-fatigues the pull.
+  ⚠️ **CGB (added 2026-08-11) is the one deliberate exception** — it pre-fatigues Friday's *press*,
+  not the pull. Held light and flat to keep that cost small, and it's first in line to be cut if
+  Spoto starts suffering. Bench-day sequencing across the week: comp bench Mon → dip + CGB Thu →
+  Spoto Fri. Three presses, only one of them heavy.
 - **D2 is unconstrained** (Wed rest before D3), so the hinge secondary lives there.
 
-## Secondaries — ⚠️ ALL OVERRIDDEN. Zero rotations actually run this block.
+## Secondaries — the axial ones are still cut; bench now runs two
 
-> **Corrected 2026-08-07.** The table below was written *before* the medical override and is
-> kept only as the record of what was planned. **Both squat and deadlift secondaries were CUT**
-> by the 4-week window (see the CUT line in the split above) — Paused Low-bar Squat and Paused
-> RDL do **not** appear in any week of the plan. **Spoto is the only secondary running**, and it
-> was a hold, not a rotation. So the effective count is **0 rotations, 1 secondary, 2 cut.**
-> Both return in B6 on clearance. Do not train off the table below.
+> **Corrected 2026-08-07, revised 2026-08-11.** The table below was written *before* the medical
+> override and is kept only as the record of what was planned. **Both squat and deadlift
+> secondaries were CUT** by the 4-week window (see the CUT line in the split above) — Paused
+> Low-bar Squat and Paused RDL do **not** appear in any week of the plan. Both return in B6 on
+> clearance. Do not train off the table below.
+>
+> **What actually runs: two bench secondaries and nothing else.** Spoto (D4, held from B4) plus
+> **CGB on D3, added 2026-08-11 at your request.** Effective count: **0 rotations, 2 secondaries,
+> 2 cut** — and both live secondaries are on the priority lift, which is the right place for them
+> in a block where the axial work is frozen.
+
+### CGB on D3 — added 2026-08-11 (your ask), and the terms it comes with
+
+You asked for "a secondary bench or a shorter related workout" on D3. CGB is the right answer —
+it's your default bench secondary per the rules, you have **20 logged sessions** (median 205, max
+235), and close grip means **less shoulder abduction than a comp grip**, so it's the least
+provocative barbell press available to a shoulder with two partial-thickness tears and bursitis.
+It also trains the **lockout**, which is the part of your bench that actually fails.
+
+**The cost, stated plainly:** this is a **third pressing exposure in the same week**, it sits on
+the **same day as the dip**, and it's the **morning before Spoto**. That's a real
+`accessory-day-interference` risk and the reason the terms below aren't optional:
+
+| Week | CGB | Why |
+|---|---|---|
+| W1 | 165×6 ×3 @7 | Well under your 205 median. Support work, not a lift you're testing. |
+| W2 | 175×6 ×3 @7 | +10. |
+| W3 | 175×6 ×3 @7 **(hold)** | **Dip peaks this week (BW+90 @8), same day.** Two peaking presses on one day is how the shoulder flares. |
+| W4 | 185×5 ×3 @7 | Bench peaks Monday. This stays @7 — do not chase Monday's number on Thursday. |
+| W5 | 135×6 ×2 @6 | Deload. |
+
+- **Fixed loads and a hard @7 — this one does NOT get `cap-is-a-target` treatment.** Bench,
+  pull-up and dip are the strive lifts; CGB is support. It is marked `hold` in the JSON so the
+  weekly sync can't rebase it up to your 205 log median.
+- **Friday's Spoto is the priority press, not this.** If Spoto's top set feels a full RPE heavier
+  than plan **two weeks running**, CGB is what gets cut — tell me and I'll pull it.
+- **≤3/10 shoulder pain, same as everything else.** Elbows tucked.
+- Nothing else on the block changed. This is additive.
 
 <details><summary>Superseded pre-override plan</summary>
 
@@ -268,6 +306,24 @@ to low-grade partial on their own, and the absence of fatty atrophy argues one w
 | Deadlift | Paused RDL | **Paused RDL (held, load cut ~40 lb)** | Grooves the tall-lockout / no-hitch cue, a live weak point. But B4 ran it **265–275×5 with backoffs at @8.5** — a heavy second hinge, on the back we're protecting. Now **225–245 @7 cap.** |
 
 </details>
+
+## Rest times — programmed 2026-08-11, in Hevy on every exercise
+
+Your ask. Hevy now runs the timer for you; nothing here is a guess you have to make mid-session.
+
+| Slot | Rest | Why |
+|---|---|---|
+| Comp Bench **top** | **4:00** (W4: **5:00**) | The W4 work-up to @8 is the one test in this block. Short-resting it is how you end up at @6 again. |
+| Weighted Pull-up top | 3:30 (W4: 4:00) | @8 hard cap — a fatigued top set breaches it by accident. |
+| Weighted Dip | 3:00 (W3 peak: 3:30) | Peak week gets more. |
+| Sumo · Spoto | 3:00 | |
+| Squat (light) | 2:30 | It's 225 @6 — full recovery isn't the constraint, position is. |
+| Bench/pull-up backoffs | 3:00 | |
+| CGB | 2:30 | |
+| Leg Press · Hip Thrust · BSS | 2:00 | Loaded, but non-axial. |
+| Rows · pulldown · leg curl · back ext · DB press | 1:30 | |
+| Isolation (pushdown, lateral raise, pec deck, face pull, calf, curl) | 1:00 | |
+| Core (side plank, Pallof, dead bug, bird dog) | 0:45 | Short on purpose — do these **inside** the rest on the big lifts if the session runs long. |
 
 ## Accessories
 
@@ -313,6 +369,8 @@ segments we're protecting; wrong core tool for this block).
   overrides everything. Moderate the **arch** before the weight if the back complains.
 - **Pull-up: @8 is still a hard stop.** It's what fixed this lift. Earn load inside it.
 - **Dip: depth is the primary variable.** Stop above the pinch. Peaks W3, backs off W4.
+- **CGB is support work, not a lift you test.** Fixed load, hard @7, elbows tucked. It exists to
+  add bench exposure without stealing from Friday's Spoto — if it starts costing Spoto, it goes.
 - **Leg press: ROM before load.** Stop the sled well before your hips lift off the pad. A tucked
   pelvis under load is the one thing on this day that can reach the L3-4 protrusion.
 - **Hip thrust: never hyperextend at lockout.** Ribs down, chin tucked, finish with the glutes.
