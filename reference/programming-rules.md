@@ -178,6 +178,40 @@
   recent sessions. `reconcile_loads` flags unmatched names; treat that as a bug, not a data gap.
   [FB 2026-08-07]
 
+## Hevy routines (what actually lands in the app)
+
+> The app is what he trains off at 6am. If the Sheet and the app disagree, the app wins by
+> default — so the push has to be exact, not approximately right.
+
+- **hevy-load-fidelity** — **A pushed routine must show the same load the Google Sheet shows,
+  to the pound.** Hevy stores kg and converts for display, so a load that isn't stored as an
+  exact pound equivalent surfaces in the app as junk precision — a 70 lb pull-up read
+  **"70.11 lb"**, which is not a number anyone can put on a bar.
+  - Convert with **Hevy's own factor, 2.20462** (not 2.2046226218), at **full precision**.
+    Verified against his own logged sets: 70 lb is stored by the app as `31.75150366049478`,
+    exactly `70 / 2.20462`.
+  - **Never round `weight_kg` to 1 decimal.** That was the bug: 70 lb → `31.8` → 70.107 lb.
+  - `scripts/hevy/units.py` owns this. `push_block` re-snaps every set to a real loading
+    increment (0.5 lb) on the way out, so a stale or hand-edited value can't leak decimals into
+    the app, and `reconcile_loads` writes full-precision kg when it rewrites a week.
+  - The **dry run prints loads in lb** — check that against the Sheet before applying.
+  [FB 2026-08-11]
+- **hevy-rest-timers** — **Every exercise in a pushed routine carries a rest timer.** Athlete's
+  rule, no exceptions and no blanks:
+
+  | Tier | Rest |
+  |---|---|
+  | Primary (the Big 5) | **1:15** (75s) |
+  | Secondary / accessory | **1:00** (60s) |
+  | Core / abs | **0:30** (30s) |
+
+  Every exercise entry in the block JSON gets an explicit **`tier`**
+  (`primary` / `secondary` / `accessory` / `core`) and `push_block` derives the timer from it —
+  a name classifier is only the fallback so a hand-added movement can't push with no timer
+  (name matching is the `exercise-name-mapping` failure mode; don't rely on it). An explicit
+  `rest_seconds` on an entry overrides the tier for a deliberate one-off. `scripts/hevy/rest_times.py`
+  owns the policy. [FB 2026-08-11]
+
 ## Review conventions
 
 - **review-status-emoji** — Every review (session, weekly, block) reports the Big-5 progress

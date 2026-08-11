@@ -10,6 +10,55 @@
 
 ---
 
+### 2026-08-11 · load, general · Hevy push — load fidelity + rest timers · Block 5
+**Feedback (2 parts):** (1) *"For weight load, please match with the google sheet. I don't want
+the two decimal points for the load — you put 70.11 lb for pullup on day 2 week 1, it should be
+just 70."* (2) *"Please put the rest time. Rule: primary movement 1 min 15 sec · secondary or
+accessories 1 min · core/abs 30 seconds."*
+
+**Both verified — he's right on (1), and (2) was simply never being sent.**
+
+**Root cause of the 70.11 — a unit bug, in two layers.** Hevy stores every set in **kg** and
+converts for display, so what he sees in the app is a round-trip, and the round-trip was lossy:
+- The block JSON stored `weight_kg` **rounded to 1 decimal**. 70 lb went in as `31.8`, and
+  31.8 kg comes back out as **70.107 lb** → the app renders "70.11".
+- Hevy's conversion factor is **2.20462**, not the 2.2046226218 this repo used. Confirmed
+  against his own log: a 70 lb pull-up *he* entered is stored as `31.75150366049478`, which is
+  `70 / 2.20462` to the last digit. Using the "correct" constant would still have been ~0.0001
+  lb off, and `reconcile_loads` was re-introducing the 1-decimal rounding every Saturday.
+
+The Sheet was never wrong — `export_block` snaps to the 5 lb grid on display, so the Sheet said
+70 while the app said 70.11. Same underlying number, two different amounts of honesty about it.
+
+**Actions taken:**
+1. **`scripts/hevy/units.py` (new)** — lb↔kg on Hevy's own factor, at full precision, plus
+   `normalize_kg()`, which re-snaps any load to a real 0.5 lb increment before it goes over the
+   wire. Defensive: a stale or hand-edited kg value can no longer leak decimals into the app.
+2. **`push_block`** now normalizes every set's weight on the way out, and the **dry run prints
+   loads in lb** (with the tier and rest timer per exercise) so the push is checkable against
+   the Sheet before it's applied. `--json` still dumps the raw payload.
+3. **`reconcile_loads`** writes full-precision kg instead of `round(lb / KG_TO_LBS, 1)` — the
+   weekly sync can't put the decimals back mid-block.
+4. **`scripts/hevy/rest_times.py` (new)** — the rest policy above, resolved from an explicit
+   **`tier`** on each exercise entry (`primary`/`secondary`/`accessory`/`core`), with a name
+   classifier only as a fallback so a hand-added movement can't push with a blank timer.
+5. **`brain/current-block.json` rewritten** — all **382 sets** across all 20 B5 routines
+   re-stored at exact loads, and a `tier` added to all 130 exercise entries.
+   **Verified: every set now displays as a whole pound in the app and matches the Sheet string
+   exactly; every exercise carries a timer.** Previously: 0 exercises had a rest timer at all.
+
+**Caught while in there (unrelated to the feedback, flagged to the athlete):** **Leg Press** was
+prescribed 315–365 against a 585 log anchor — deliberately, for the medical ROM rule — but was
+**not marked `hold`**, so Saturday's sync would have auto-raised it to 540→630 and silently
+undone a medical restriction. This is the exact case the `hold` clause was added for after the
+Back Extension catch on 2026-08-07, and it was missed on the *same* block. Held now.
+Also noted: **Hip Thrust is not a first exposure** — it's logged under "Hip Thrust (Barbell)"
+(2023, up to 275) and "Hip Thrust (Smith Machine)" (2026-05-26, 225), so the block's
+"0 logged sessions → empty bar in W1" premise is a name-mapping miss (`exercise-name-mapping`),
+not a real gap. Left as-is pending a coaching call.
+→ rules: `hevy-load-fidelity`, `hevy-rest-timers` (both new); reinforces `sheet-load-sync`
+(the `hold` clause) and `exercise-name-mapping`
+
 ### 2026-08-07 · block, general, exercise · accessory balance + muscle coverage · Block 5
 **Feedback (5 parts):** (1) D1 is leg- and tricep-heavy, and has too many accessories — drop
 one. (2) D3 is too thin. (3) Every day should carry at least one abs/core accessory.
