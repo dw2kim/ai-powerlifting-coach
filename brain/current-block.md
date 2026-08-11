@@ -378,6 +378,9 @@ segments we're protecting; wrong core tool for this block).
 - **Hip thrust: never hyperextend at lockout.** Ribs down, chin tucked, finish with the glutes.
   W1 is empty bar — you have zero logged sessions and you're learning it on a numb back.
 - **Log every set.** Skipped = logged as skipped with a reason.
+- **Rest timers are set in the app** (2026-08-11): **primary 1:15 · secondary/accessory 1:00 ·
+  core 0:30.** Hevy runs the clock, so you don't have to. Loads in the app now match the Sheet
+  to the pound — if you ever see a load with decimals on it again, tell me, it's a bug.
 - **3-day fallback priority**: D1, D2, D3 (drop D4). Sumo is the most expendable session.
 - **If D1 runs long, the leg press is what gets cut** — never the bench backoff. Priority order:
   squat, bench (top + backoff), leg press, pushdown, side plank.

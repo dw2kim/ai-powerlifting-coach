@@ -70,18 +70,27 @@ description: Design a new training block — pull context from prior block + mem
 6. **Write**:
    - `brain/current-block.md` — prose for humans (this is what you read on your phone)
    - `brain/current-block.json` — structured spec for `push_block.py`. Schema in `scripts/hevy/push_block.py` docstring.
-   - **Loads must render as whole pounds** (rule `hevy-load-precision`): `weight_kg` is the exact
-     kg equivalent of the intended lb load (`lb × 0.45359237`, full precision), prescribed in 5 lb
-     increments. Never a kg value rounded to 1 decimal — that shows up as `225.09` in his app.
-   - **Every exercise needs `rest_seconds`** (rules `rest-times-programmed`,
-     `rest-times-athlete-set`): **75s primary** (squat/bench/sumo/pull-up/dip, tops *and*
-     backoffs) · **60s secondary + accessories** · **30s core**. These are the athlete's numbers —
-     don't re-inflate them. Where a set genuinely wants more (a peak / @8 test), say so **in the
-     block prose** rather than overriding the field.
+   - **Loads: full-precision kg, never rounded** (rule `hevy-load-fidelity`). Write every
+     `weight_kg` as `scripts.hevy.units.lb_to_kg(<lb>)` — Hevy stores kg and displays lb, and a
+     1-decimal kg makes a 70 lb prescription read **"70.11 lb"** in the app. Prescribe in 5 lb
+     increments; that's what's on the bar and in the stack.
+   - **Every exercise entry gets a `tier`** — `primary` / `secondary` / `accessory` / `core`
+     (rules `hevy-rest-timers`, `rest-times-athlete-set`). It drives the pushed rest timer
+     (1:15 / 1:00 / 1:00 / 0:30). Don't leave it to the name classifier, and **don't re-inflate
+     the numbers** — they're the athlete's, not a coaching preference. Where a set genuinely
+     wants longer (a peak / @8 test), say so **in the block prose** rather than overriding the
+     field.
+   - **Mark `hold` on anything deliberately prescribed below the log** (rule `sheet-load-sync`) —
+     medical caps, technique work, first-exposure pattern work. Sweep the finished JSON against
+     `reconcile_loads` output and confirm every under-prescribed lift is pinned; an unheld one
+     gets auto-raised by the next Saturday sync, which is how a restriction quietly dies.
 7. **Archive** the prior block: move `brain/current-block.md` (pre-overwrite) to `data/block-archive/<old-block-id>.md`. Same for the .json if present.
 8. **Commit** atomically with a one-paragraph message explaining the block's theme.
 9. **Offer to push to Hevy**:
-   - Always start with `python -m scripts.hevy.push_block` (dry-run). Show the user the routine titles and a sample payload.
+   - Always start with `python -m scripts.hevy.push_block` (dry-run). It prints, per exercise,
+     the **tier, rest timer and loads in lb** — the same units as the Sheet. **Check that
+     against the Sheet before applying**: whole-pound loads, and a timer on every line
+     (rules `hevy-load-fidelity`, `hevy-rest-timers`). `--json` dumps the raw kg payload.
    - On confirmation: `python -m scripts.hevy.push_block --apply`. Routines land in a folder named after the block id.
    - **Correcting a block that is already live** (rule `push-is-idempotent-with-update`): use
      `python -m scripts.hevy.push_block --update --start W<n>-D<n> --apply`. `--update` PUTs over

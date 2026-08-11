@@ -10,78 +10,93 @@
 
 ---
 
-### 2026-08-11 · general, block, exercise · clean loads + rest times in Hevy, and a bench secondary on D3
+### 2026-08-11 · block, exercise, general · a bench secondary on D3, and correcting a block that's already live
+**Feedback (2 parts, alongside the load/rest fix logged below):** (1) *"Just for Block 5, on D3,
+could we add any secondary movement for bench or any shorter related workout? I don't want to
+change anything else — everything looks good, just my opinion."* (2) *"Do I need to delete the
+Block 5 trainings from my end, or can you do it by yourself? Tell me what to do."*
 
-**Feedback (3 parts):** (1) *"I don't want too many decimal points on the weight load in Hevy —
-just like you log it in Google Sheets."* (2) *"Add the rest time for all the training."*
-(3) *"Just for Block 5, on D3, add a secondary movement for bench or any shorter related workout.
-I don't want to change anything else — everything else looks good."* Regenerate and push from
-**W1-D3 → W5-D4** (W1-D1/D2 already trained).
+**(1) Granted — CGB — with the cost stated rather than glossed.** Chosen because it's his default
+bench secondary per the rules, he has **20 logged sessions** (median 205, max 235), close grip
+means **less shoulder abduction** than a comp grip (the least provocative barbell press for two
+partial-thickness tears + bursitis), and it trains the **lockout**, a live bench weak point.
+**But it is a third weekly pressing exposure, on dip day, the morning before Spoto** — and B5 had
+already pulled Incline DB Press off D4 to *reduce* pressing on that shoulder, so this partly walks
+that back. Contained instead of refused: **165 / 175 / 175 / 185 / 135, 3 sets, hard @7**, held
+flat at 175 in W3 because the **dip peaks that week on the same day**, marked **`hold`** so the
+Saturday sync can't chase it up to the 205 median, and **first thing cut if Spoto's top set runs a
+full RPE heavy two weeks running.** Deliberately **not** given `cap-is-a-target` treatment — it's
+support work, and the whole point is that it doesn't compete with the three lifts that are
+striving. Tier `secondary`, so it carries the 1:00 rest timer.
 
-**Root cause of (1) — a unit-conversion rounding bug, and he was right to call it.** The Hevy API
-takes **kg**; his app displays **lb**. The block JSON stored kg rounded to 1 decimal for
-readability — `102.1` — which the app renders as **225.09 lb**. Every load in the block carried a
-junk decimal: 54.9, 70.11, 229.94, 315.04. The Sheet looked clean the whole time because
-`export_block` rounds lb to 5s for display, so the two surfaces disagreed and only Hevy was wrong.
-**Verified: 297 of 297 loaded sets** failed to map to a whole pound. Fix is to store the *exact*
-kg equivalent of the intended pound (`lb × 0.45359237`, full precision) — which is what his own
-logged sets look like in the raw log (`142.88176647 kg` = exactly 315.0 lb). **No load value
-changed**, only its precision.
-**Second bug found underneath it** (same class as `exercise-name-mapping`): `reconcile_loads.py`
-re-rounded to `round(new_lb / KG_TO_LBS, 1)` when it rewrote future weeks, so the **Saturday sync
-would have reintroduced the decimals** every week. Fixed at the same time — a rule that only holds
-at design time isn't a rule, which is exactly the lesson `sheet-load-sync` already taught.
+**(2) No — and he should never have to.** The push was **additive-only** (POST, skip-if-exists),
+so correcting a block already in the app meant either duplicates or hand-deletion — and **the Hevy
+API has no DELETE for routines at all**, so "just delete and re-push" was never even available.
+Added `--update` (PUT over the matching title, keeping the routine's existing folder) and
+`--start W1-D3` (leave already-trained sessions alone). 19 routines corrected in place across two
+passes; no duplicates, no new folder, W1-D1 (already trained, routine since removed from the app)
+untouched. **The right answer to "should I delete it?" is always no — fix the push, not his
+Saturday.**
 
-**(2) Rest times:** every exercise in the block now carries `rest_seconds` and the app runs the
-timer. Structure: primary tops 180–240s, **300s on the W4 bench work-up to @8**, backoffs 180s,
-loaded compounds 120s, accessories 90s, isolation 60s, core 45s. The W4 bump is deliberate and
-points straight at B4's failure — he peaked bench **@6 against an @8 allowance**, and a
-short-rested top set is one of the cheapest ways to under-hit a peak.
-
-**(3) D3 bench secondary — granted, with terms.** Chose **CGB**: it's his default bench secondary
-per the rules, **20 logged sessions (median 205, max 235)**, close grip = less shoulder abduction
-than a comp grip (least provocative barbell press for two partial-thickness tears + bursitis), and
-it trains the **lockout**, a live bench weak point.
-**Coach's stated cost, not smoothed over:** this makes a **third pressing exposure in one week**,
-on the **same day as the dip**, the **morning before Spoto** — a real `accessory-day-interference`
-risk, on the one joint that limits this block. B5 had already pulled Incline DB Press off D4 to
-*reduce* pressing exposure on that shoulder, so this partly walks that back. Granted anyway
-because the interference is against a *press* rather than the pull, and it's containable:
-**fixed loads 165/175/175/185/135, hard @7, held flat at 175 in W3 (dip peak week), marked `hold`
-so the weekly sync can't chase it up to the 205 median**, and **it is the first thing cut if
-Spoto's top set runs a full RPE heavy two weeks running.** Explicitly *not* given
-`cap-is-a-target` treatment — it's support, not a strive lift, and the whole point is that it
-doesn't compete with the three lifts that are.
-
-**Answer to "do I need to delete the routines myself?" — no, and he never should have to.** The
-push was **additive-only** (POST, skip-if-exists), so correcting a live block meant either
-duplicates or hand-deletion, and **the Hevy API has no DELETE for routines at all.** Added
-`--update` (PUT over the matching title, keeping the routine's existing folder) and `--start
-W1-D3` (leave already-trained sessions alone). 18 routines updated in place; W1-D1 and W1-D2
-untouched; no duplicates, no new folder.
-→ rules: `hevy-load-precision`, `rest-times-programmed`, `push-is-idempotent-with-update`
-
-### 2026-08-11 (follow-up) · general · rest times were too long — athlete sets the numbers
-**Feedback:** *"Everything looks good except the rest times. Primary movements (SBD + pull-up +
-dip) → **1:15** default. Secondary and accessories → **1:00**. Core and abs → **0:30**. I see 2
-min, 3 min, 2.5 min — that's too much. I don't need that much; even when it rings at 1 minute I
-usually take another 5–10 seconds before the next set anyway."*
-**Coach's read: his call, and he knows his own rhythm better than my defaults did.** My first pass
-was textbook strength-work rest (2–5 min) and it ignored eleven years of how he actually trains —
-dense, short breaks, and the whole log backs him up. Applied literally, no exceptions carved out:
-**75s** on all five primaries (top sets *and* backoffs — a primary backoff is still the primary),
-**60s** on secondaries and accessories (Spoto and CGB included), **30s** on core. 19 routines
-updated in place, W1-D2 → W5-D4.
-**One thing flagged rather than argued:** the timer is a **floor, not a ceiling** — it says when he
-*may* start, not when he *must*. The one place it's worth ignoring is the **W4 comp-bench work-up
-to @8** (and the W3 dip peak): an under-rested double reads heavier than it is, and B4's defining
-miss was peaking **@6 against an @8 allowance**. That's written into the block prose, not into the
-field — the numbers stay his.
-**Also confirmed for him:** changing rest times needs no regeneration. It's a per-exercise field;
-loads, sets, reps, RPE and order were untouched, and the same in-place update path carried it.
-→ rules: `rest-times-athlete-set`
+**Note on the rest times, for the record:** an earlier pass this same day shipped textbook 2–5 min
+rests before his rule landed, and he rejected them immediately ("this is too much"). His numbers
+are now the standing default (`hevy-rest-timers`). The one caveat kept — in the block prose, not
+in the field — is that the timer is a **floor, not a ceiling**, and the W4 comp-bench work-up to
+@8 is worth ignoring it for: an under-rested double reads heavier than it is, and B4's defining
+miss was peaking **@6 against an @8 allowance**.
+→ rules: `push-is-idempotent-with-update` (new); `hevy-rest-timers`, `sheet-load-sync` (the
+`hold` clause), `secondary-rotation`, `accessory-day-interference`
 
 ---
+
+### 2026-08-11 · load, general · Hevy push — load fidelity + rest timers · Block 5
+**Feedback (2 parts):** (1) *"For weight load, please match with the google sheet. I don't want
+the two decimal points for the load — you put 70.11 lb for pullup on day 2 week 1, it should be
+just 70."* (2) *"Please put the rest time. Rule: primary movement 1 min 15 sec · secondary or
+accessories 1 min · core/abs 30 seconds."*
+
+**Both verified — he's right on (1), and (2) was simply never being sent.**
+
+**Root cause of the 70.11 — a unit bug, in two layers.** Hevy stores every set in **kg** and
+converts for display, so what he sees in the app is a round-trip, and the round-trip was lossy:
+- The block JSON stored `weight_kg` **rounded to 1 decimal**. 70 lb went in as `31.8`, and
+  31.8 kg comes back out as **70.107 lb** → the app renders "70.11".
+- Hevy's conversion factor is **2.20462**, not the 2.2046226218 this repo used. Confirmed
+  against his own log: a 70 lb pull-up *he* entered is stored as `31.75150366049478`, which is
+  `70 / 2.20462` to the last digit. Using the "correct" constant would still have been ~0.0001
+  lb off, and `reconcile_loads` was re-introducing the 1-decimal rounding every Saturday.
+
+The Sheet was never wrong — `export_block` snaps to the 5 lb grid on display, so the Sheet said
+70 while the app said 70.11. Same underlying number, two different amounts of honesty about it.
+
+**Actions taken:**
+1. **`scripts/hevy/units.py` (new)** — lb↔kg on Hevy's own factor, at full precision, plus
+   `normalize_kg()`, which re-snaps any load to a real 0.5 lb increment before it goes over the
+   wire. Defensive: a stale or hand-edited kg value can no longer leak decimals into the app.
+2. **`push_block`** now normalizes every set's weight on the way out, and the **dry run prints
+   loads in lb** (with the tier and rest timer per exercise) so the push is checkable against
+   the Sheet before it's applied. `--json` still dumps the raw payload.
+3. **`reconcile_loads`** writes full-precision kg instead of `round(lb / KG_TO_LBS, 1)` — the
+   weekly sync can't put the decimals back mid-block.
+4. **`scripts/hevy/rest_times.py` (new)** — the rest policy above, resolved from an explicit
+   **`tier`** on each exercise entry (`primary`/`secondary`/`accessory`/`core`), with a name
+   classifier only as a fallback so a hand-added movement can't push with a blank timer.
+5. **`brain/current-block.json` rewritten** — all **382 sets** across all 20 B5 routines
+   re-stored at exact loads, and a `tier` added to all 130 exercise entries.
+   **Verified: every set now displays as a whole pound in the app and matches the Sheet string
+   exactly; every exercise carries a timer.** Previously: 0 exercises had a rest timer at all.
+
+**Caught while in there (unrelated to the feedback, flagged to the athlete):** **Leg Press** was
+prescribed 315–365 against a 585 log anchor — deliberately, for the medical ROM rule — but was
+**not marked `hold`**, so Saturday's sync would have auto-raised it to 540→630 and silently
+undone a medical restriction. This is the exact case the `hold` clause was added for after the
+Back Extension catch on 2026-08-07, and it was missed on the *same* block. Held now.
+Also noted: **Hip Thrust is not a first exposure** — it's logged under "Hip Thrust (Barbell)"
+(2023, up to 275) and "Hip Thrust (Smith Machine)" (2026-05-26, 225), so the block's
+"0 logged sessions → empty bar in W1" premise is a name-mapping miss (`exercise-name-mapping`),
+not a real gap. Left as-is pending a coaching call.
+→ rules: `hevy-load-fidelity`, `hevy-rest-timers` (both new); reinforces `sheet-load-sync`
+(the `hold` clause) and `exercise-name-mapping`
 
 ### 2026-08-07 · block, general, exercise · accessory balance + muscle coverage · Block 5
 **Feedback (5 parts):** (1) D1 is leg- and tricep-heavy, and has too many accessories — drop

@@ -290,6 +290,35 @@ only, because the injury caps sit *below* the log on purpose — sumo's log anch
 mid-block) against a `sumo-back-cap` plan of 345–405. Auto-chasing the log would have undone the
 back restriction. That's the line to keep holding.
 
+## Hevy push fidelity — loads + rest timers (2026-08-11)
+Athlete feedback on the B5 push: **loads showed two decimals in the app** (B5 W1 D2 pull-up read
+**"70.11 lb"** where the Sheet said 70) and **no rest timers were set at all**.
+**The decimals were a real unit bug, not a display quirk.** Hevy stores kg and converts on
+display, and the block JSON stored `weight_kg` rounded to **1 decimal** — 70 lb → `31.8` →
+70.107 lb back out. Compounding it, **Hevy's factor is 2.20462**, not the 2.2046226218 the repo
+used; his own logged 70 lb pull-up is stored as `31.75150366049478` = `70 / 2.20462` exactly.
+Fixed at the boundary (`scripts/hevy/units.py`): full precision, Hevy's constant, and every set
+re-snapped to a 0.5 lb increment on the way out so a stale value can't leak decimals. All 382
+B5 sets re-stored; **`reconcile_loads` was re-introducing the rounding every Saturday** and now
+writes full precision too. Rule `hevy-load-fidelity`.
+**Rest timers: primary 1:15 · secondary/accessory 1:00 · core 0:30**, driven by an explicit
+`tier` on every exercise entry (name classification only as a fallback — `exercise-name-mapping`
+is exactly why you don't infer from names). Rule `hevy-rest-timers`.
+**The durable lesson: the app is the deliverable, not the JSON.** Every guardrail in this repo
+was operating on numbers that were correct in the repo and wrong by the time he read them at
+6am. Verify the artifact he actually trains off — the dry run now prints lb + timers for exactly
+that, and it's a step in the design skill, not an optional check.
+**Caught in passing, same class as the 2026-08-07 Back Extension catch:** **Leg Press** was
+prescribed 315–365 against a **585** log anchor for medical ROM reasons but was never marked
+`hold`, so the next Saturday sync would have auto-raised it to 540→630 and silently undone a
+medical restriction — the `hold` clause was written four days earlier and still got missed on
+the same block. **Sweep `reconcile_loads` against a finished block JSON and confirm every
+deliberately-light lift is pinned** — that's now a step in `designing-training-block`.
+Also: **Hip Thrust is not a first exposure** — logged under "Hip Thrust (Barbell)" (2023, to
+275) and "Hip Thrust (Smith Machine)" (2026-05-26, 225). The block's "0 logged sessions →
+empty bar W1" premise is a name-mapping miss. Left for a coaching call; **"no log history" is a
+mapping bug until proven otherwise** keeps being right.
+
 ## Block 3 review written (2026-07-04) → reviews/2026-Q2-B03.md
 Final Hevy actuals (source of truth): Squat **512** e1RM (480×2 @8, new best, honest RPE) · Comp
 Bench **266** (235×4 @7.5 — reintroduced on the real comp lift, held ≤@7.5 all block, no shoulder
@@ -302,50 +331,26 @@ which B4 answers with a hard @8 cap + BW+80 start. (2) Sumo has stalled at ~500�
 and keeps being reached for as a grindy @9 single — B4 programs 485×**2** ≤@8.5 instead. True W5
 deload achieved (closes the B2 open item).
 
-## 2026-08-11 — B5 re-pushed W1-D3→W5-D4: clean loads, rest times, CGB on D3
-Three asks, all granted; nothing else in the block moved.
-**The decimal bug he reported was real and total.** The API takes kg, his app displays lb, and the
-block JSON stored kg at 1 decimal — so `102.1` rendered as **225.09 lb** on every set. **297/297
-loaded sets** were wrong. The Sheet looked fine because `export_block` rounds lb to 5s for display,
-so **two surfaces of the same plan disagreed and only the one he trains from was broken.** Worth
-generalizing: when he says a number looks wrong in one place, check whether the *other* renderer is
-hiding it. Fix = store the exact kg equivalent of the intended pound (`lb × 0.45359237`, full
-precision), which is what his own logged sets look like in the raw log. No load changed, only
-precision. Rule `hevy-load-precision`.
-**And the same fix had to be made twice** — `reconcile_loads` re-rounded to 1 dp when rewriting
-future weeks, so the Saturday sync would have put the decimals straight back. Same lesson
-`sheet-load-sync` taught: a rule that only binds at design time isn't a rule.
-**Rest times now on every exercise** (`rest-times-programmed`) — the W4 bench work-up gets **300s**
-specifically because B4 peaked **@6 against an @8 allowance**, and a short-rested top set is a
-cheap way to under-hit a peak. Core sits at 45s on purpose: they're meant to fit inside the rest on
-the big lifts when a session runs long.
-**Tooling gap closed — the push was additive-only, and Hevy has no routine DELETE.** He asked
-whether *he* had to delete B5 from the app first. He shouldn't ever have to: added
-`push_block --update --start W1-D3`, which PUTs over matching titles and leaves trained sessions
-alone. 18 routines corrected in place, no duplicates, same folder. Rule
-`push-is-idempotent-with-update`. **The right answer to "should I delete it?" is always no — fix
-the push, not his Saturday.**
-**CGB added to D3 (his ask) — granted with terms, cost stated.** It's a third weekly press, on dip
-day, the morning before Spoto, on the shoulder that limits this block — and B5 had already pulled
-Incline DB Press off D4 to reduce exactly that. Contained instead of refused: fixed
-165/175/175/185/135, hard @7, **held at 175 in W3 because the dip peaks that week**, marked `hold`
+## 2026-08-11 — CGB onto D3, and the push that couldn't correct itself
+Same day as the load/rest fix above, two more things.
+**"Do I need to delete the Block 5 trainings from my end?"** No — and that he had to ask is the
+finding. The push was POST-only, so correcting a live block meant duplicates or hand-deletion, and
+**the Hevy API has no routine DELETE at all**, so "delete and re-push" wasn't even available.
+Added `--update` (PUT over the matching title, keeping its folder) + `--start W1-D3` (leave trained
+sessions alone); 19 routines corrected in place. **The right answer to "should I delete it?" is
+always no — fix the push, not his Saturday.** Rule `push-is-idempotent-with-update`.
+**CGB added to D3 on his ask — granted with terms, cost stated.** It's a third weekly press, on dip
+day, the morning before Spoto, on the shoulder that limits this block — and B5 had *already* pulled
+Incline DB Press off D4 to reduce exactly that. Contained rather than refused: 165/175/175/185/135,
+hard @7, **held flat at 175 in W3 because the dip peaks that week on the same day**, marked `hold`
 so the sync can't chase the 205 log median, and **first to be cut if Spoto degrades two weeks
 running.** Deliberately NOT given `cap-is-a-target` treatment — support work, not a strive lift.
-**The pattern that keeps working with him: grant the thing he asked for, take the ceiling back in
-the shape he doesn't notice** (same trade as the 225 floor / flat load on 2026-08-07).
-
-## 2026-08-11 (follow-up) — rest times: my defaults were wrong, his are right
-Rejected my 2–5 min rest prescriptions same day: **75s primary (SBD + pull-up + dip, tops AND
-backoffs) / 60s secondary + accessories / 30s core.** Applied literally, 19 routines, no exceptions
-carved out. Rule `rest-times-athlete-set`.
-**The lesson is about defaults, not rest.** I filled the gap with textbook strength-work rest and
-never checked it against eleven years of how he actually trains — dense, short breaks. His own
-line: *"even when it rings at 1 minute I usually take another 5–10 seconds anyway."* **When a field
-has no athlete-stated preference, the log and his habits are the anchor, same as `loads-from-logs`
-— don't reach for the textbook number and call it a default.** He noticed within hours, which is
-the tell that it was never a small detail to him.
-**What I held onto, in prose rather than in the field:** the timer is a floor, not a ceiling, and
-the W4 comp-bench work-up to @8 (plus the W3 dip peak) is worth ignoring it for — an under-rested
-double reads heavier than it is, and B4's defining miss was peaking @6 against an @8 allowance.
-Right shape for a disagreement this size: take the number, keep the one caveat where it decides
-something, don't relitigate the rest.
+**The trade that keeps working with him: grant the thing he asked for, take the ceiling back in the
+shape he doesn't notice** (same move as the 225 floor / flat load on 2026-08-07).
+**And a defaults lesson worth keeping:** an earlier pass that day filled the rest field with
+textbook 2–5 min strength rest, and he rejected it within hours — *"even when it rings at 1 minute I
+usually take another 5–10 seconds anyway."* **When a field has no stated preference, his log and his
+habits are the anchor, same as `loads-from-logs` — don't reach for the textbook number and call it a
+default.** What I kept, in the block prose rather than the field: the timer is a floor, not a
+ceiling, and the W4 bench work-up to @8 is worth ignoring it for, because B4's defining miss was
+peaking @6 against an @8 allowance.

@@ -141,38 +141,6 @@
   to the shoulder and bench the moment a shoulder injection starts** (still not given as of
   2026-08-07 — the athlete must report it so bench and dip get the same treatment). [FB 2026-08-07]
 
-## What lands in the app
-
-- **hevy-load-precision** — **Every prescribed load must render in Hevy as a whole pound.** The
-  API speaks kg and the athlete's app displays lb, so a kg value rounded for readability (102.1)
-  comes out as **225.09 lb** on his screen — a junk decimal on every set, and the plate maths stops
-  being obvious mid-session. Store `weight_kg` as the **exact** kg equivalent of the intended
-  pound load (`lb × 0.45359237`, full precision), never a 1-decimal kg. `push_block._snap_weight`
-  enforces it on the way out and `reconcile_loads` must not re-round it on the weekly sync.
-  Prescribe in **5 lb increments** — that's what's on the bar and in the stack. The Google Sheet
-  already showed clean numbers; this makes Hevy match it. [FB 2026-08-11]
-- **rest-times-programmed** — **Every exercise in a pushed block carries `rest_seconds`.** Not
-  optional, not "he'll know" — the app runs the timer so the decision isn't made mid-session while
-  tired. [FB 2026-08-11]
-- **rest-times-athlete-set** — **The rest values are the athlete's, not the coach's** (set
-  2026-08-11, after a first pass at 2–5 min was rejected as far too long):
-  - **Primary — squat · bench · sumo · weighted pull-up · weighted dip: 75s.** Top sets *and*
-    backoffs; a backoff of a primary is still the primary.
-  - **Secondary + all accessories: 60s.** Includes the barbell secondaries (Spoto, CGB).
-  - **Core / abs: 30s.**
-
-  He trains dense and reports that he takes another 5–10 s past the buzzer anyway, so the timer is
-  a **floor, not a ceiling** — treat these as defaults, not caps, and don't quietly re-inflate them
-  in a later block. **Say so in the block file where a set genuinely wants more**: the W4 comp-bench
-  work-up to @8 and the W3 dip peak are the two in B5, because an under-rested top set reads
-  heavier than it is and B4's defining miss was peaking **@6 against an @8 allowance**. Changing
-  these numbers takes new feedback from him, not a coaching preference. [FB 2026-08-11]
-- **push-is-idempotent-with-update** — A block that's already live gets **corrected in place**:
-  `push_block --update --start W<n>-D<n>` PUTs over the routines whose titles match and leaves
-  everything before the start point alone. **Hevy has no DELETE for routines**, so a plain re-push
-  is additive and strands duplicates the athlete has to clear by hand. Never ask him to delete
-  routines to make room for a correction. [FB 2026-08-11]
-
 ## RPE conventions
 
 - **accessory-rpe** — Accessories usually have **no logged RPE**. Treat a blank-RPE accessory
@@ -209,6 +177,51 @@
   renamed (he moved off "Triceps Pushdown" in Jan 2026) — point the override at the one with
   recent sessions. `reconcile_loads` flags unmatched names; treat that as a bug, not a data gap.
   [FB 2026-08-07]
+
+## Hevy routines (what actually lands in the app)
+
+> The app is what he trains off at 6am. If the Sheet and the app disagree, the app wins by
+> default — so the push has to be exact, not approximately right.
+
+- **hevy-load-fidelity** — **A pushed routine must show the same load the Google Sheet shows,
+  to the pound.** Hevy stores kg and converts for display, so a load that isn't stored as an
+  exact pound equivalent surfaces in the app as junk precision — a 70 lb pull-up read
+  **"70.11 lb"**, which is not a number anyone can put on a bar.
+  - Convert with **Hevy's own factor, 2.20462** (not 2.2046226218), at **full precision**.
+    Verified against his own logged sets: 70 lb is stored by the app as `31.75150366049478`,
+    exactly `70 / 2.20462`.
+  - **Never round `weight_kg` to 1 decimal.** That was the bug: 70 lb → `31.8` → 70.107 lb.
+  - `scripts/hevy/units.py` owns this. `push_block` re-snaps every set to a real loading
+    increment (0.5 lb) on the way out, so a stale or hand-edited value can't leak decimals into
+    the app, and `reconcile_loads` writes full-precision kg when it rewrites a week.
+  - The **dry run prints loads in lb** — check that against the Sheet before applying.
+  [FB 2026-08-11]
+- **hevy-rest-timers** — **Every exercise in a pushed routine carries a rest timer.** Athlete's
+  rule, no exceptions and no blanks:
+
+  | Tier | Rest |
+  |---|---|
+  | Primary (the Big 5) | **1:15** (75s) |
+  | Secondary / accessory | **1:00** (60s) |
+  | Core / abs | **0:30** (30s) |
+
+  Every exercise entry in the block JSON gets an explicit **`tier`**
+  (`primary` / `secondary` / `accessory` / `core`) and `push_block` derives the timer from it —
+  a name classifier is only the fallback so a hand-added movement can't push with no timer
+  (name matching is the `exercise-name-mapping` failure mode; don't rely on it). An explicit
+  `rest_seconds` on an entry overrides the tier for a deliberate one-off. `scripts/hevy/rest_times.py`
+  owns the policy.
+  **These numbers are the athlete's, not the coach's** — a first pass at textbook 2–5 min rest was
+  rejected the same day ("too much"). He trains dense and takes ~5–10 s past the buzzer anyway, so
+  the timer is a **floor, not a ceiling**. Don't quietly re-inflate it in a later block; where a
+  set genuinely wants longer (a peak, an @8 test — B5's W4 bench work-up and W3 dip peak), **say
+  so in the block prose** rather than overriding the field. Changing these takes new feedback from
+  him. [FB 2026-08-11]
+- **push-is-idempotent-with-update** — A block that's already live gets **corrected in place**:
+  `push_block --update --start W<n>-D<n>` PUTs over the routines whose titles match and leaves
+  everything before the start point alone. **Hevy has no DELETE for routines**, so a plain re-push
+  is additive and strands duplicates the athlete has to clear by hand. **Never ask him to delete
+  routines to make room for a correction** — fix the push instead. [FB 2026-08-11]
 
 ## Review conventions
 

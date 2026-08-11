@@ -60,134 +60,137 @@
       "exercises": [
         {
           "name": "Low-bar Squat",
+          "tier": "primary",
           "notes": "LIGHT \u2014 4-week back-protection window (doctor, 2026-08-07). 225 FLAT, no weekly ramp: you asked for a higher floor, so you get a higher floor and a LOWER ceiling (was 185->245). ~48% of your 465. 4 sets, not more reps \u2014 extra work comes from sets done FRESH, never from fatigued reps. This is POSITION WORK. Do NOT add weight.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 5,
               "rpe": 6
             }
           ],
           "display_load": "225",
           "hold": true,
-          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light position work only until ~2026-09-04.",
-          "rest_seconds": 75
+          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light position work only until ~2026-09-04."
         },
         {
           "name": "Comp Bench",
+          "tier": "primary",
           "notes": "Top @7. PRIORITY LIFT \u2014 strive. \u22643/10 shoulder pain, always. MRI (2026-08-07) confirms low-grade partial tears, no full-thickness, no fatty atrophy \u2014 the strive is supported.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 104.3262451,
+              "weight_kg": 104.32636917019714,
               "reps": 4,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "Comp Bench",
+          "tier": "primary",
           "notes": "Backoff \u2014 4 sets @6.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 90.718474,
+              "weight_kg": 90.71858188712795,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 90.718474,
+              "weight_kg": 90.71858188712795,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 90.718474,
+              "weight_kg": 90.71858188712795,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 90.718474,
+              "weight_kg": 90.71858188712795,
               "reps": 5,
               "rpe": 6
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "Leg Press (Machine)",
+          "tier": "accessory",
           "notes": "NEW \u2014 replaces Leg Extension. Quad/glute volume with no bar on your back. HARD ROM RULE: stop the sled well before your hips lift off the pad \u2014 at depth the pelvis tucks under load, and loaded lumbar flexion is exactly the L3-4 mechanism. Run at 315-365, well under your 495 log median: 'moderate if tolerated' is a number here, not a feel, because the injections mask the feel.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 142.88159655,
+              "weight_kg": 142.88176647222653,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 142.88159655,
+              "weight_kg": 142.88176647222653,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 142.88159655,
+              "weight_kg": 142.88176647222653,
               "reps": 10,
               "rpe": 7
             }
           ],
-          "rest_seconds": 60
+          "hold": true,
+          "hold_reason": "Deliberately prescribed under the log (315-365 vs a 585 log anchor) for the medical window: the ROM rule is what protects the L3-4 protrusion, and the anesthetic masks the feel. Do not let the log rebase this."
         },
         {
           "name": "Tricep Pushdown",
+          "tier": "accessory",
           "notes": "Lockout for bench. Log anchor 53 lb.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 24.94758035,
+              "weight_kg": 24.947610018960187,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 24.94758035,
+              "weight_kg": 24.947610018960187,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 24.94758035,
+              "weight_kg": 24.947610018960187,
               "reps": 12,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Side Plank",
+          "tier": "core",
           "notes": "CORE (D1) \u2014 anti-lateral-flexion. Every day carries one core movement, each a DIFFERENT pattern. Isometric HOLD, 30-40 SECONDS PER SIDE (logged as duration, not reps). Spine neutral, zero spinal compression. Do it in your rest periods between bench sets.",
           "sets": [
             {
@@ -209,8 +212,7 @@
               "duration_seconds": 30
             }
           ],
-          "display_load": "BW",
-          "rest_seconds": 30
+          "display_load": "BW"
         }
       ]
     },
@@ -220,44 +222,45 @@
       "exercises": [
         {
           "name": "Weighted Pull-up",
+          "tier": "primary",
           "notes": "Top @7. @8 is still a HARD STOP \u2014 it's what fixed this lift.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 31.7514659,
+              "weight_kg": 31.75150366049478,
               "reps": 4,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "Weighted Pull-up",
+          "tier": "primary",
           "notes": "Backoff \u2014 3 sets @6.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 22.6796185,
+              "weight_kg": 22.67964547178199,
               "reps": 6,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 22.6796185,
+              "weight_kg": 22.67964547178199,
               "reps": 6,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 22.6796185,
+              "weight_kg": 22.67964547178199,
               "reps": 6,
               "rpe": 6
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "Weighted Back Extension",
+          "tier": "accessory",
           "notes": "Erector capacity, NO spinal compression. BODYWEIGHT ONLY through W2 \u2014 the trigger-point injections went into these exact muscles, so loading them fresh is not smart. SKIP ENTIRELY if the injection sites are sore. Moved D4 -> D2 (replaces Paused RDL).",
           "sets": [
             {
@@ -280,108 +283,107 @@
             }
           ],
           "hold": true,
-          "hold_reason": "Bodyweight through W2 \u2014 trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this.",
-          "rest_seconds": 60
+          "hold_reason": "Bodyweight through W2 \u2014 trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this."
         },
         {
           "name": "Seated Leg Curl",
+          "tier": "accessory",
           "notes": "Hamstrings / posterior chain with ZERO spinal loading \u2014 this is what replaces Paused RDL for the window, and why a DB RDL was declined: you already hinge on D4 (light sumo), and a second loaded hinge is the thing we removed. Log median 115.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 49.8951607,
+              "weight_kg": 49.895220037920375,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 49.8951607,
+              "weight_kg": 49.895220037920375,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 49.8951607,
+              "weight_kg": 49.895220037920375,
               "reps": 12,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "DB Shoulder Press",
+          "tier": "accessory",
           "notes": "@7 CAP \u2014 shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC \u2014 pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 \u2192 70.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 31.7514659,
+              "weight_kg": 31.75150366049478,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 31.7514659,
+              "weight_kg": 31.75150366049478,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 31.7514659,
+              "weight_kg": 31.75150366049478,
               "reps": 10,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Lateral Raise (Dumbbell)",
+          "tier": "accessory",
           "notes": "Lateral delts \u2014 the one shoulder head nothing else in this block trains (presses hit front, face pull + pec deck hit rear). Log median 40 lb over 68 sessions, but prescribed at 30-35 DELIBERATELY: the MRI shows subacromial bursitis, and 60-120\u00b0 of abduction is the impingement arc this movement lives in. STOP AT SHOULDER HEIGHT, no higher, light and high-rep. Any painful arc \u2014 stop the set and tell me.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 13.6077711,
+              "weight_kg": 13.607787283069193,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 13.6077711,
+              "weight_kg": 13.607787283069193,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 13.6077711,
+              "weight_kg": 13.607787283069193,
               "reps": 15,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Pallof Press",
+          "tier": "core",
           "notes": "CORE (D2) \u2014 anti-rotation. Replaces Hanging Leg Raise, which is hip-flexor dominant; the psoas attaches straight onto L1-L5, so it pulls on the exact segments under treatment. Log median 20 lb. Per side, slow, brace and resist the rotation.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 9.0718474,
+              "weight_kg": 9.071858188712795,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 9.0718474,
+              "weight_kg": 9.071858188712795,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 9.0718474,
+              "weight_kg": 9.071858188712795,
               "reps": 12,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 30
+          ]
         }
       ]
     },
@@ -391,55 +393,55 @@
       "exercises": [
         {
           "name": "Weighted Dip",
+          "tier": "primary",
           "notes": "@7. Strive this block. DEPTH IS THE PRIMARY VARIABLE \u2014 stop above the pinch point (MRI: subacromial bursitis + AC degeneration compress at the bottom). Full depth buys nothing.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 27.2155422,
+              "weight_kg": 27.215574566138386,
               "reps": 6,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 27.2155422,
+              "weight_kg": 27.215574566138386,
               "reps": 6,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 27.2155422,
+              "weight_kg": 27.215574566138386,
               "reps": 6,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 27.2155422,
+              "weight_kg": 27.215574566138386,
               "reps": 6,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "CGB",
+          "tier": "secondary",
           "notes": "NEW on D3 (your ask) \u2014 third bench exposure of the week, run as SUPPORT not a strive lift. Close grip on purpose: less shoulder abduction than a comp grip, so less subacromial provocation, and it trains the lockout \u2014 the part of your bench that actually fails. Fixed load, @7 cap, elbows tucked. Log median 205; this is deliberately under it. STOP if shoulder pain >3/10.",
-          "rest_seconds": 60,
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 74.84274105,
+              "weight_kg": 74.84283005688056,
               "reps": 6,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 74.84274105,
+              "weight_kg": 74.84283005688056,
               "reps": 6,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 74.84274105,
+              "weight_kg": 74.84283005688056,
               "reps": 6,
               "rpe": 7
             }
@@ -450,106 +452,107 @@
         },
         {
           "name": "Hip Thrust",
+          "tier": "accessory",
           "notes": "MOVED D1 -> D3 to unload a leg-heavy D1. Best hip-extension option with ZERO spinal compression. 0 logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES \u2014 never hyperextend the low back at lockout; a numb back will not warn you. Note this is glute work the day before sumo: acceptable ONLY because sumo is 225 @6 technique work. If Friday's pull feels heavy or the next-day back check is off, this moves to D2.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 10,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 10,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 10,
               "rpe": 6
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Lat Pulldown",
+          "tier": "accessory",
           "notes": "Lat width for the pull-up.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 81.6466266,
+              "weight_kg": 81.64672369841516,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 81.6466266,
+              "weight_kg": 81.64672369841516,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 81.6466266,
+              "weight_kg": 81.64672369841516,
               "reps": 10,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Reverse Pec Deck",
+          "tier": "accessory",
           "notes": "RE-ANCHORED 45 \u2192 100 (log median 100). You skipped this 4/4 in B4 \u2014 it was prescribed at less than half your working load. Posterior-cuff/scap support for the torn anterior tendons; keep it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 45.359237,
+              "weight_kg": 45.35929094356398,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 45.359237,
+              "weight_kg": 45.35929094356398,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 45.359237,
+              "weight_kg": 45.35929094356398,
               "reps": 12,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Face Pull",
+          "tier": "accessory",
           "notes": "Shoulder health \u2014 LOAD-BEARING, not filler. Posterior cuff is intact while supraspinatus/subscapularis are torn, so this shares load off them. High rep, never heavy. Do not cut when short on time.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 15,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Dead Bug",
+          "tier": "core",
           "notes": "CORE (D3) \u2014 anti-extension. Teaches the brace that keeps the lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow \u2014 lower back stays flat on the floor. If it arches off the floor, shorten the range.",
           "sets": [
             {
@@ -571,8 +574,7 @@
               "rpe": 7
             }
           ],
-          "display_load": "BW",
-          "rest_seconds": 30
+          "display_load": "BW"
         }
       ]
     },
@@ -582,159 +584,160 @@
       "exercises": [
         {
           "name": "Sumo Deadlift",
+          "tier": "primary",
           "notes": "LIGHT technique pull \u2014 225 FLAT, 3 sets of 3, no ramp. Triples stay triples: the lever is LOAD and SETS, never reps (rule sumo-back-cap). Sumo is the lift that flares your back, so it does NOT get the 4th set squat gets. Tall lockout, no hitch, every rep crisp. Rounding or bar-speed drop = rack it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 3,
               "rpe": 6
             }
           ],
           "display_load": "225",
           "hold": true,
-          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light technique work only until ~2026-09-04.",
-          "rest_seconds": 75
+          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light technique work only until ~2026-09-04."
         },
         {
           "name": "Spoto Bench Press",
+          "tier": "secondary",
           "notes": "@8 CAP. HELD as the bench secondary \u2014 it added +35 lb across B4 and bench is the strive lift; rotating it now would break something that's working.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 97.52235955,
+              "weight_kg": 97.52247552866254,
               "reps": 5,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 97.52235955,
+              "weight_kg": 97.52247552866254,
               "reps": 5,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 97.52235955,
+              "weight_kg": 97.52247552866254,
               "reps": 5,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Bulgarian Split Squat",
+          "tier": "accessory",
           "notes": "NEW to the block, NOT new to you \u2014 50 logged sessions, median 42.5/hand. This is your 'lunge', already grooved. Unilateral, so you get a leg's worth of quad/glute stimulus at roughly half the spinal load of bilateral squatting. Torso tall, per leg.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 10,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Chest Supported Incline Row",
+          "tier": "accessory",
           "notes": "NEW \u2014 replaces Meadows Row. Same target, ZERO lumbar load (chest supported) on your deadlift day. First exposure: 50 lb/hand is an estimate, the weekly log sync will correct it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 22.6796185,
+              "weight_kg": 22.67964547178199,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 22.6796185,
+              "weight_kg": 22.67964547178199,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 22.6796185,
+              "weight_kg": 22.67964547178199,
               "reps": 10,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Seated Calf Raise",
+          "tier": "accessory",
           "notes": "Calves \u2014 the last uncovered muscle group, now in. SEATED on purpose: a standing/barbell calf raise puts load straight down the spine, a seated one puts zero. Log median 175 over 4 sessions. Swapped in for Incline DB Press rather than added, so D4 stays at 21 sets \u2014 and it pulls a fourth pressing exposure off a shoulder with bursitis and two partial tears. Comp bench, dip and Spoto still cover the press.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 70.30681735,
+              "weight_kg": 70.30690096252415,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 70.30681735,
+              "weight_kg": 70.30690096252415,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 70.30681735,
+              "weight_kg": 70.30690096252415,
               "reps": 15,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Concentration Curl",
+          "tier": "accessory",
           "notes": "Biceps \u2014 back in. Cutting it left the biceps with no direct work at all; pull-ups and rows alone don't cover it. On D4 because nothing follows Friday. Log median 38 lb over 93 sessions, max 45.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 18.1436948,
+              "weight_kg": 18.14371637742559,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 18.1436948,
+              "weight_kg": 18.14371637742559,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 18.1436948,
+              "weight_kg": 18.14371637742559,
               "reps": 12,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Bird Dog",
+          "tier": "core",
           "notes": "CORE (D4) \u2014 anti-rotation plus erector endurance, spine neutral throughout. Per side, slow, no rotation through the hips. The gentlest of the four core patterns, which is why it sits on deadlift day.",
           "sets": [
             {
@@ -756,8 +759,7 @@
               "rpe": 7
             }
           ],
-          "display_load": "BW",
-          "rest_seconds": 30
+          "display_load": "BW"
         }
       ]
     },
@@ -767,134 +769,137 @@
       "exercises": [
         {
           "name": "Low-bar Squat",
+          "tier": "primary",
           "notes": "LIGHT \u2014 4-week back-protection window (doctor, 2026-08-07). 225 FLAT, no weekly ramp: you asked for a higher floor, so you get a higher floor and a LOWER ceiling (was 185->245). ~48% of your 465. 4 sets, not more reps \u2014 extra work comes from sets done FRESH, never from fatigued reps. This is POSITION WORK. Do NOT add weight.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 5,
               "rpe": 6
             }
           ],
           "display_load": "225",
           "hold": true,
-          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light position work only until ~2026-09-04.",
-          "rest_seconds": 75
+          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light position work only until ~2026-09-04."
         },
         {
           "name": "Comp Bench",
+          "tier": "primary",
           "notes": "Top @7.5. Climbing.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 108.8621688,
+              "weight_kg": 108.86229826455354,
               "reps": 4,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "Comp Bench",
+          "tier": "primary",
           "notes": "Backoff \u2014 4 sets @7.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 95.2543977,
+              "weight_kg": 95.25451098148434,
               "reps": 5,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 95.2543977,
+              "weight_kg": 95.25451098148434,
               "reps": 5,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 95.2543977,
+              "weight_kg": 95.25451098148434,
               "reps": 5,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 95.2543977,
+              "weight_kg": 95.25451098148434,
               "reps": 5,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "Leg Press (Machine)",
+          "tier": "accessory",
           "notes": "NEW \u2014 replaces Leg Extension. Quad/glute volume with no bar on your back. HARD ROM RULE: stop the sled well before your hips lift off the pad \u2014 at depth the pelvis tucks under load, and loaded lumbar flexion is exactly the L3-4 mechanism. Run at 315-365, well under your 495 log median: 'moderate if tolerated' is a number here, not a feel, because the injections mask the feel.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 142.88159655,
+              "weight_kg": 142.88176647222653,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 142.88159655,
+              "weight_kg": 142.88176647222653,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 142.88159655,
+              "weight_kg": 142.88176647222653,
               "reps": 10,
               "rpe": 7
             }
           ],
-          "rest_seconds": 60
+          "hold": true,
+          "hold_reason": "Deliberately prescribed under the log (315-365 vs a 585 log anchor) for the medical window: the ROM rule is what protects the L3-4 protrusion, and the anesthetic masks the feel. Do not let the log rebase this."
         },
         {
           "name": "Tricep Pushdown",
+          "tier": "accessory",
           "notes": "Lockout for bench. Log anchor 53 lb.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 24.94758035,
+              "weight_kg": 24.947610018960187,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 24.94758035,
+              "weight_kg": 24.947610018960187,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 24.94758035,
+              "weight_kg": 24.947610018960187,
               "reps": 12,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Side Plank",
+          "tier": "core",
           "notes": "CORE (D1) \u2014 anti-lateral-flexion. Every day carries one core movement, each a DIFFERENT pattern. Isometric HOLD, 30-40 SECONDS PER SIDE (logged as duration, not reps). Spine neutral, zero spinal compression. Do it in your rest periods between bench sets.",
           "sets": [
             {
@@ -916,8 +921,7 @@
               "duration_seconds": 30
             }
           ],
-          "display_load": "BW",
-          "rest_seconds": 30
+          "display_load": "BW"
         }
       ]
     },
@@ -927,44 +931,45 @@
       "exercises": [
         {
           "name": "Weighted Pull-up",
+          "tier": "primary",
           "notes": "Top @7.5.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 34.01942775,
+              "weight_kg": 34.01946820767298,
               "reps": 4,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "Weighted Pull-up",
+          "tier": "primary",
           "notes": "Backoff \u2014 3 sets @7.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 24.94758035,
+              "weight_kg": 24.947610018960187,
               "reps": 5,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 24.94758035,
+              "weight_kg": 24.947610018960187,
               "reps": 5,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 24.94758035,
+              "weight_kg": 24.947610018960187,
               "reps": 5,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "Weighted Back Extension",
+          "tier": "accessory",
           "notes": "Erector capacity, NO spinal compression. BODYWEIGHT ONLY through W2 \u2014 the trigger-point injections went into these exact muscles, so loading them fresh is not smart. SKIP ENTIRELY if the injection sites are sore. Moved D4 -> D2 (replaces Paused RDL).",
           "sets": [
             {
@@ -987,108 +992,107 @@
             }
           ],
           "hold": true,
-          "hold_reason": "Bodyweight through W2 \u2014 trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this.",
-          "rest_seconds": 60
+          "hold_reason": "Bodyweight through W2 \u2014 trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this."
         },
         {
           "name": "Seated Leg Curl",
+          "tier": "accessory",
           "notes": "Hamstrings / posterior chain with ZERO spinal loading \u2014 this is what replaces Paused RDL for the window, and why a DB RDL was declined: you already hinge on D4 (light sumo), and a second loaded hinge is the thing we removed. Log median 115.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 49.8951607,
+              "weight_kg": 49.895220037920375,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 49.8951607,
+              "weight_kg": 49.895220037920375,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 49.8951607,
+              "weight_kg": 49.895220037920375,
               "reps": 12,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "DB Shoulder Press",
+          "tier": "accessory",
           "notes": "@7 CAP \u2014 shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC \u2014 pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 \u2192 70.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 31.7514659,
+              "weight_kg": 31.75150366049478,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 31.7514659,
+              "weight_kg": 31.75150366049478,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 31.7514659,
+              "weight_kg": 31.75150366049478,
               "reps": 10,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Lateral Raise (Dumbbell)",
+          "tier": "accessory",
           "notes": "Lateral delts \u2014 the one shoulder head nothing else in this block trains (presses hit front, face pull + pec deck hit rear). Log median 40 lb over 68 sessions, but prescribed at 30-35 DELIBERATELY: the MRI shows subacromial bursitis, and 60-120\u00b0 of abduction is the impingement arc this movement lives in. STOP AT SHOULDER HEIGHT, no higher, light and high-rep. Any painful arc \u2014 stop the set and tell me.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 13.6077711,
+              "weight_kg": 13.607787283069193,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 13.6077711,
+              "weight_kg": 13.607787283069193,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 13.6077711,
+              "weight_kg": 13.607787283069193,
               "reps": 15,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Pallof Press",
+          "tier": "core",
           "notes": "CORE (D2) \u2014 anti-rotation. Replaces Hanging Leg Raise, which is hip-flexor dominant; the psoas attaches straight onto L1-L5, so it pulls on the exact segments under treatment. Log median 20 lb. Per side, slow, brace and resist the rotation.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 9.0718474,
+              "weight_kg": 9.071858188712795,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 9.0718474,
+              "weight_kg": 9.071858188712795,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 9.0718474,
+              "weight_kg": 9.071858188712795,
               "reps": 12,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 30
+          ]
         }
       ]
     },
@@ -1098,55 +1102,55 @@
       "exercises": [
         {
           "name": "Weighted Dip",
+          "tier": "primary",
           "notes": "@7.5. Same depth rule \u2014 stop above the pinch.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 34.01942775,
+              "weight_kg": 34.01946820767298,
               "reps": 5,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 34.01942775,
+              "weight_kg": 34.01946820767298,
               "reps": 5,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 34.01942775,
+              "weight_kg": 34.01946820767298,
               "reps": 5,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 34.01942775,
+              "weight_kg": 34.01946820767298,
               "reps": 5,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "CGB",
+          "tier": "secondary",
           "notes": "Support work, +10 lb. Still capped @7 \u2014 this lift does not get autoregulated up. Friday's Spoto is the priority press; if Spoto feels a full RPE heavier two weeks in a row, this is what gets cut.",
-          "rest_seconds": 60,
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 79.37866475,
+              "weight_kg": 79.37875915123695,
               "reps": 6,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 79.37866475,
+              "weight_kg": 79.37875915123695,
               "reps": 6,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 79.37866475,
+              "weight_kg": 79.37875915123695,
               "reps": 6,
               "rpe": 7
             }
@@ -1157,106 +1161,107 @@
         },
         {
           "name": "Hip Thrust",
+          "tier": "accessory",
           "notes": "MOVED D1 -> D3 to unload a leg-heavy D1. Best hip-extension option with ZERO spinal compression. 0 logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES \u2014 never hyperextend the low back at lockout; a numb back will not warn you. Note this is glute work the day before sumo: acceptable ONLY because sumo is 225 @6 technique work. If Friday's pull feels heavy or the next-day back check is off, this moves to D2.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 61.23496995,
+              "weight_kg": 61.235042773811365,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 61.23496995,
+              "weight_kg": 61.235042773811365,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 61.23496995,
+              "weight_kg": 61.235042773811365,
               "reps": 10,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Lat Pulldown",
+          "tier": "accessory",
           "notes": "Lat width for the pull-up.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 81.6466266,
+              "weight_kg": 81.64672369841516,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 81.6466266,
+              "weight_kg": 81.64672369841516,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 81.6466266,
+              "weight_kg": 81.64672369841516,
               "reps": 10,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Reverse Pec Deck",
+          "tier": "accessory",
           "notes": "RE-ANCHORED 45 \u2192 100 (log median 100). You skipped this 4/4 in B4 \u2014 it was prescribed at less than half your working load. Posterior-cuff/scap support for the torn anterior tendons; keep it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 45.359237,
+              "weight_kg": 45.35929094356398,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 45.359237,
+              "weight_kg": 45.35929094356398,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 45.359237,
+              "weight_kg": 45.35929094356398,
               "reps": 12,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Face Pull",
+          "tier": "accessory",
           "notes": "Shoulder health \u2014 LOAD-BEARING, not filler. Posterior cuff is intact while supraspinatus/subscapularis are torn, so this shares load off them. High rep, never heavy. Do not cut when short on time.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 15,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Dead Bug",
+          "tier": "core",
           "notes": "CORE (D3) \u2014 anti-extension. Teaches the brace that keeps the lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow \u2014 lower back stays flat on the floor. If it arches off the floor, shorten the range.",
           "sets": [
             {
@@ -1278,8 +1283,7 @@
               "rpe": 7
             }
           ],
-          "display_load": "BW",
-          "rest_seconds": 30
+          "display_load": "BW"
         }
       ]
     },
@@ -1289,159 +1293,160 @@
       "exercises": [
         {
           "name": "Sumo Deadlift",
+          "tier": "primary",
           "notes": "LIGHT technique pull \u2014 225 FLAT, 3 sets of 3, no ramp. Triples stay triples: the lever is LOAD and SETS, never reps (rule sumo-back-cap). Sumo is the lift that flares your back, so it does NOT get the 4th set squat gets. Tall lockout, no hitch, every rep crisp. Rounding or bar-speed drop = rack it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 3,
               "rpe": 6
             }
           ],
           "display_load": "225",
           "hold": true,
-          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light technique work only until ~2026-09-04.",
-          "rest_seconds": 75
+          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light technique work only until ~2026-09-04."
         },
         {
           "name": "Spoto Bench Press",
+          "tier": "secondary",
           "notes": "@8 CAP. HELD as the bench secondary \u2014 it added +35 lb across B4 and bench is the strive lift; rotating it now would break something that's working.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 4,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 4,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 4,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Bulgarian Split Squat",
+          "tier": "accessory",
           "notes": "NEW to the block, NOT new to you \u2014 50 logged sessions, median 42.5/hand. This is your 'lunge', already grooved. Unilateral, so you get a leg's worth of quad/glute stimulus at roughly half the spinal load of bilateral squatting. Torso tall, per leg.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 10,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Chest Supported Incline Row",
+          "tier": "accessory",
           "notes": "NEW \u2014 replaces Meadows Row. Same target, ZERO lumbar load (chest supported) on your deadlift day. First exposure: 50 lb/hand is an estimate, the weekly log sync will correct it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 22.6796185,
+              "weight_kg": 22.67964547178199,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 22.6796185,
+              "weight_kg": 22.67964547178199,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 22.6796185,
+              "weight_kg": 22.67964547178199,
               "reps": 10,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Seated Calf Raise",
+          "tier": "accessory",
           "notes": "Calves \u2014 the last uncovered muscle group, now in. SEATED on purpose: a standing/barbell calf raise puts load straight down the spine, a seated one puts zero. Log median 175 over 4 sessions. Swapped in for Incline DB Press rather than added, so D4 stays at 21 sets \u2014 and it pulls a fourth pressing exposure off a shoulder with bursitis and two partial tears. Comp bench, dip and Spoto still cover the press.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 70.30681735,
+              "weight_kg": 70.30690096252415,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 70.30681735,
+              "weight_kg": 70.30690096252415,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 70.30681735,
+              "weight_kg": 70.30690096252415,
               "reps": 15,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Concentration Curl",
+          "tier": "accessory",
           "notes": "Biceps \u2014 back in. Cutting it left the biceps with no direct work at all; pull-ups and rows alone don't cover it. On D4 because nothing follows Friday. Log median 38 lb over 93 sessions, max 45.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 18.1436948,
+              "weight_kg": 18.14371637742559,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 18.1436948,
+              "weight_kg": 18.14371637742559,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 18.1436948,
+              "weight_kg": 18.14371637742559,
               "reps": 12,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Bird Dog",
+          "tier": "core",
           "notes": "CORE (D4) \u2014 anti-rotation plus erector endurance, spine neutral throughout. Per side, slow, no rotation through the hips. The gentlest of the four core patterns, which is why it sits on deadlift day.",
           "sets": [
             {
@@ -1463,8 +1468,7 @@
               "rpe": 7
             }
           ],
-          "display_load": "BW",
-          "rest_seconds": 30
+          "display_load": "BW"
         }
       ]
     },
@@ -1474,134 +1478,137 @@
       "exercises": [
         {
           "name": "Low-bar Squat",
+          "tier": "primary",
           "notes": "LIGHT \u2014 4-week back-protection window (doctor, 2026-08-07). 225 FLAT, no weekly ramp: you asked for a higher floor, so you get a higher floor and a LOWER ceiling (was 185->245). ~48% of your 465. 4 sets, not more reps \u2014 extra work comes from sets done FRESH, never from fatigued reps. This is POSITION WORK. Do NOT add weight.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 5,
               "rpe": 6
             }
           ],
           "display_load": "225",
           "hold": true,
-          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light position work only until ~2026-09-04.",
-          "rest_seconds": 75
+          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light position work only until ~2026-09-04."
         },
         {
           "name": "Comp Bench",
+          "tier": "primary",
           "notes": "Top @7.5 \u2014 hold. Dip peaks this week (horizontal-press overlap).",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 111.13013065,
+              "weight_kg": 111.13026281173174,
               "reps": 3,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "Comp Bench",
+          "tier": "primary",
           "notes": "Backoff \u2014 4 sets @7.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 97.52235955,
+              "weight_kg": 97.52247552866254,
               "reps": 4,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 97.52235955,
+              "weight_kg": 97.52247552866254,
               "reps": 4,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 97.52235955,
+              "weight_kg": 97.52247552866254,
               "reps": 4,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 97.52235955,
+              "weight_kg": 97.52247552866254,
               "reps": 4,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "Leg Press (Machine)",
+          "tier": "accessory",
           "notes": "NEW \u2014 replaces Leg Extension. Quad/glute volume with no bar on your back. HARD ROM RULE: stop the sled well before your hips lift off the pad \u2014 at depth the pelvis tucks under load, and loaded lumbar flexion is exactly the L3-4 mechanism. Run at 315-365, well under your 495 log median: 'moderate if tolerated' is a number here, not a feel, because the injections mask the feel.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 165.56121505,
+              "weight_kg": 165.5614119440085,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 165.56121505,
+              "weight_kg": 165.5614119440085,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 165.56121505,
+              "weight_kg": 165.5614119440085,
               "reps": 10,
               "rpe": 7.5
             }
           ],
-          "rest_seconds": 60
+          "hold": true,
+          "hold_reason": "Deliberately prescribed under the log (315-365 vs a 585 log anchor) for the medical window: the ROM rule is what protects the L3-4 protrusion, and the anesthetic masks the feel. Do not let the log rebase this."
         },
         {
           "name": "Tricep Pushdown",
+          "tier": "accessory",
           "notes": "Lockout for bench. Log anchor 53 lb.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 27.2155422,
+              "weight_kg": 27.215574566138386,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 27.2155422,
+              "weight_kg": 27.215574566138386,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 27.2155422,
+              "weight_kg": 27.215574566138386,
               "reps": 10,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Side Plank",
+          "tier": "core",
           "notes": "CORE (D1) \u2014 anti-lateral-flexion. Every day carries one core movement, each a DIFFERENT pattern. Isometric HOLD, 30-40 SECONDS PER SIDE (logged as duration, not reps). Spine neutral, zero spinal compression. Do it in your rest periods between bench sets.",
           "sets": [
             {
@@ -1623,8 +1630,7 @@
               "duration_seconds": 40
             }
           ],
-          "display_load": "BW",
-          "rest_seconds": 30
+          "display_load": "BW"
         }
       ]
     },
@@ -1634,168 +1640,168 @@
       "exercises": [
         {
           "name": "Weighted Pull-up",
+          "tier": "primary",
           "notes": "Top @8 \u2014 at the cap, not over it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 36.2873896,
+              "weight_kg": 36.28743275485118,
               "reps": 3,
               "rpe": 8
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "Weighted Pull-up",
+          "tier": "primary",
           "notes": "Backoff \u2014 3 sets @7.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 27.2155422,
+              "weight_kg": 27.215574566138386,
               "reps": 5,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 27.2155422,
+              "weight_kg": 27.215574566138386,
               "reps": 5,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 27.2155422,
+              "weight_kg": 27.215574566138386,
               "reps": 5,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "Weighted Back Extension",
+          "tier": "accessory",
           "notes": "Erector capacity, NO spinal compression. BODYWEIGHT ONLY through W2 \u2014 the trigger-point injections went into these exact muscles, so loading them fresh is not smart. SKIP ENTIRELY if the injection sites are sore. Moved D4 -> D2 (replaces Paused RDL).",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 11.33980925,
+              "weight_kg": 11.339822735890994,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 11.33980925,
+              "weight_kg": 11.339822735890994,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 11.33980925,
+              "weight_kg": 11.339822735890994,
               "reps": 12,
               "rpe": 6
             }
           ],
           "hold": true,
-          "hold_reason": "Bodyweight through W2 \u2014 trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this.",
-          "rest_seconds": 60
+          "hold_reason": "Bodyweight through W2 \u2014 trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this."
         },
         {
           "name": "Seated Leg Curl",
+          "tier": "accessory",
           "notes": "Hamstrings / posterior chain with ZERO spinal loading \u2014 this is what replaces Paused RDL for the window, and why a DB RDL was declined: you already hinge on D4 (light sumo), and a second loaded hinge is the thing we removed. Log median 115.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 52.16312255,
+              "weight_kg": 52.16318458509857,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 52.16312255,
+              "weight_kg": 52.16318458509857,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 52.16312255,
+              "weight_kg": 52.16318458509857,
               "reps": 12,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "DB Shoulder Press",
+          "tier": "accessory",
           "notes": "@7 CAP \u2014 shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC \u2014 pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 \u2192 70.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 34.01942775,
+              "weight_kg": 34.01946820767298,
               "reps": 8,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 34.01942775,
+              "weight_kg": 34.01946820767298,
               "reps": 8,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 34.01942775,
+              "weight_kg": 34.01946820767298,
               "reps": 8,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Lateral Raise (Dumbbell)",
+          "tier": "accessory",
           "notes": "Lateral delts \u2014 the one shoulder head nothing else in this block trains (presses hit front, face pull + pec deck hit rear). Log median 40 lb over 68 sessions, but prescribed at 30-35 DELIBERATELY: the MRI shows subacromial bursitis, and 60-120\u00b0 of abduction is the impingement arc this movement lives in. STOP AT SHOULDER HEIGHT, no higher, light and high-rep. Any painful arc \u2014 stop the set and tell me.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 15.87573295,
+              "weight_kg": 15.87575183024739,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 15.87573295,
+              "weight_kg": 15.87575183024739,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 15.87573295,
+              "weight_kg": 15.87575183024739,
               "reps": 15,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Pallof Press",
+          "tier": "core",
           "notes": "CORE (D2) \u2014 anti-rotation. Replaces Hanging Leg Raise, which is hip-flexor dominant; the psoas attaches straight onto L1-L5, so it pulls on the exact segments under treatment. Log median 20 lb. Per side, slow, brace and resist the rotation.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 11.33980925,
+              "weight_kg": 11.339822735890994,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 11.33980925,
+              "weight_kg": 11.339822735890994,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 11.33980925,
+              "weight_kg": 11.339822735890994,
               "reps": 12,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 30
+          ]
         }
       ]
     },
@@ -1805,55 +1811,55 @@
       "exercises": [
         {
           "name": "Weighted Dip",
+          "tier": "primary",
           "notes": "PEAK BW+90\u00d74 @8 \u2014 dip peaks here so it doesn't stack with the W4 bench peak. Depth still capped at pain-free; add load, not ROM.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 40.8233133,
+              "weight_kg": 40.82336184920758,
               "reps": 4,
               "rpe": 8
             },
             {
               "type": "normal",
-              "weight_kg": 40.8233133,
+              "weight_kg": 40.82336184920758,
               "reps": 4,
               "rpe": 8
             },
             {
               "type": "normal",
-              "weight_kg": 40.8233133,
+              "weight_kg": 40.82336184920758,
               "reps": 4,
               "rpe": 8
             },
             {
               "type": "normal",
-              "weight_kg": 40.8233133,
+              "weight_kg": 40.82336184920758,
               "reps": 4,
               "rpe": 8
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "CGB",
+          "tier": "secondary",
           "notes": "HOLD at 175 \u2014 dip peaks this week (BW+90 @8) and this is the same day. Two peaking presses on one day is how the shoulder flares.",
-          "rest_seconds": 60,
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 79.37866475,
+              "weight_kg": 79.37875915123695,
               "reps": 6,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 79.37866475,
+              "weight_kg": 79.37875915123695,
               "reps": 6,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 79.37866475,
+              "weight_kg": 79.37875915123695,
               "reps": 6,
               "rpe": 7
             }
@@ -1864,106 +1870,107 @@
         },
         {
           "name": "Hip Thrust",
+          "tier": "accessory",
           "notes": "MOVED D1 -> D3 to unload a leg-heavy D1. Best hip-extension option with ZERO spinal compression. 0 logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES \u2014 never hyperextend the low back at lockout; a numb back will not warn you. Note this is glute work the day before sumo: acceptable ONLY because sumo is 225 @6 technique work. If Friday's pull feels heavy or the next-day back check is off, this moves to D2.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 83.91458845,
+              "weight_kg": 83.91468824559335,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 83.91458845,
+              "weight_kg": 83.91468824559335,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 83.91458845,
+              "weight_kg": 83.91468824559335,
               "reps": 10,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Lat Pulldown",
+          "tier": "accessory",
           "notes": "Lat width for the pull-up.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 86.1825503,
+              "weight_kg": 86.18265279277155,
               "reps": 8,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 86.1825503,
+              "weight_kg": 86.18265279277155,
               "reps": 8,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 86.1825503,
+              "weight_kg": 86.18265279277155,
               "reps": 8,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Reverse Pec Deck",
+          "tier": "accessory",
           "notes": "RE-ANCHORED 45 \u2192 100 (log median 100). You skipped this 4/4 in B4 \u2014 it was prescribed at less than half your working load. Posterior-cuff/scap support for the torn anterior tendons; keep it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 49.8951607,
+              "weight_kg": 49.895220037920375,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 49.8951607,
+              "weight_kg": 49.895220037920375,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 49.8951607,
+              "weight_kg": 49.895220037920375,
               "reps": 10,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Face Pull",
+          "tier": "accessory",
           "notes": "Shoulder health \u2014 LOAD-BEARING, not filler. Posterior cuff is intact while supraspinatus/subscapularis are torn, so this shares load off them. High rep, never heavy. Do not cut when short on time.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 15,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Dead Bug",
+          "tier": "core",
           "notes": "CORE (D3) \u2014 anti-extension. Teaches the brace that keeps the lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow \u2014 lower back stays flat on the floor. If it arches off the floor, shorten the range.",
           "sets": [
             {
@@ -1985,8 +1992,7 @@
               "rpe": 7
             }
           ],
-          "display_load": "BW",
-          "rest_seconds": 30
+          "display_load": "BW"
         }
       ]
     },
@@ -1996,159 +2002,160 @@
       "exercises": [
         {
           "name": "Sumo Deadlift",
+          "tier": "primary",
           "notes": "LIGHT technique pull \u2014 225 FLAT, 3 sets of 3, no ramp. Triples stay triples: the lever is LOAD and SETS, never reps (rule sumo-back-cap). Sumo is the lift that flares your back, so it does NOT get the 4th set squat gets. Tall lockout, no hitch, every rep crisp. Rounding or bar-speed drop = rack it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 3,
               "rpe": 6
             }
           ],
           "display_load": "225",
           "hold": true,
-          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light technique work only until ~2026-09-04.",
-          "rest_seconds": 75
+          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light technique work only until ~2026-09-04."
         },
         {
           "name": "Spoto Bench Press",
+          "tier": "secondary",
           "notes": "@8 CAP. HELD as the bench secondary \u2014 it added +35 lb across B4 and bench is the strive lift; rotating it now would break something that's working.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 106.59420695,
+              "weight_kg": 106.59433371737533,
               "reps": 4,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 106.59420695,
+              "weight_kg": 106.59433371737533,
               "reps": 4,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 106.59420695,
+              "weight_kg": 106.59433371737533,
               "reps": 4,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Bulgarian Split Squat",
+          "tier": "accessory",
           "notes": "NEW to the block, NOT new to you \u2014 50 logged sessions, median 42.5/hand. This is your 'lunge', already grooved. Unilateral, so you get a leg's worth of quad/glute stimulus at roughly half the spinal load of bilateral squatting. Torso tall, per leg.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 22.6796185,
+              "weight_kg": 22.67964547178199,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 22.6796185,
+              "weight_kg": 22.67964547178199,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 22.6796185,
+              "weight_kg": 22.67964547178199,
               "reps": 10,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Chest Supported Incline Row",
+          "tier": "accessory",
           "notes": "NEW \u2014 replaces Meadows Row. Same target, ZERO lumbar load (chest supported) on your deadlift day. First exposure: 50 lb/hand is an estimate, the weekly log sync will correct it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 24.94758035,
+              "weight_kg": 24.947610018960187,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 24.94758035,
+              "weight_kg": 24.947610018960187,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 24.94758035,
+              "weight_kg": 24.947610018960187,
               "reps": 10,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Seated Calf Raise",
+          "tier": "accessory",
           "notes": "Calves \u2014 the last uncovered muscle group, now in. SEATED on purpose: a standing/barbell calf raise puts load straight down the spine, a seated one puts zero. Log median 175 over 4 sessions. Swapped in for Incline DB Press rather than added, so D4 stays at 21 sets \u2014 and it pulls a fourth pressing exposure off a shoulder with bursitis and two partial tears. Comp bench, dip and Spoto still cover the press.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 79.37866475,
+              "weight_kg": 79.37875915123695,
               "reps": 15,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 79.37866475,
+              "weight_kg": 79.37875915123695,
               "reps": 15,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 79.37866475,
+              "weight_kg": 79.37875915123695,
               "reps": 15,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Concentration Curl",
+          "tier": "accessory",
           "notes": "Biceps \u2014 back in. Cutting it left the biceps with no direct work at all; pull-ups and rows alone don't cover it. On D4 because nothing follows Friday. Log median 38 lb over 93 sessions, max 45.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 10,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Bird Dog",
+          "tier": "core",
           "notes": "CORE (D4) \u2014 anti-rotation plus erector endurance, spine neutral throughout. Per side, slow, no rotation through the hips. The gentlest of the four core patterns, which is why it sits on deadlift day.",
           "sets": [
             {
@@ -2170,8 +2177,7 @@
               "rpe": 7
             }
           ],
-          "display_load": "BW",
-          "rest_seconds": 30
+          "display_load": "BW"
         }
       ]
     },
@@ -2181,129 +2187,132 @@
       "exercises": [
         {
           "name": "Low-bar Squat",
+          "tier": "primary",
           "notes": "LIGHT \u2014 4-week back-protection window (doctor, 2026-08-07). 225 FLAT, no weekly ramp: you asked for a higher floor, so you get a higher floor and a LOWER ceiling (was 185->245). ~48% of your 465. 4 sets, not more reps \u2014 extra work comes from sets done FRESH, never from fatigued reps. This is POSITION WORK. Do NOT add weight.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 5,
               "rpe": 6
             }
           ],
           "display_load": "225",
           "hold": true,
-          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light position work only until ~2026-09-04.",
-          "rest_seconds": 75
+          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light position work only until ~2026-09-04."
         },
         {
           "name": "Comp Bench",
+          "tier": "primary",
           "notes": "PEAK \u2014 WORK UP TO @8. Range 255\u2013270\u00d72: take the heaviest double that stays \u2264@8. The cap is a target to FIND, not a ceiling to sit under. Stop at @8 or 3/10 pain.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 120.20197805,
+              "weight_kg": 120.20212100044454,
               "reps": 2,
               "rpe": 8
             }
           ],
-          "display_load": "255-270",
-          "rest_seconds": 75
+          "display_load": "255-270"
         },
         {
           "name": "Comp Bench",
+          "tier": "primary",
           "notes": "Backoff \u2014 3 sets @7.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 4,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 4,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 4,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "Leg Press (Machine)",
+          "tier": "accessory",
           "notes": "NEW \u2014 replaces Leg Extension. Quad/glute volume with no bar on your back. HARD ROM RULE: stop the sled well before your hips lift off the pad \u2014 at depth the pelvis tucks under load, and loaded lumbar flexion is exactly the L3-4 mechanism. Run at 315-365, well under your 495 log median: 'moderate if tolerated' is a number here, not a feel, because the injections mask the feel.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 165.56121505,
+              "weight_kg": 165.5614119440085,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 165.56121505,
+              "weight_kg": 165.5614119440085,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 165.56121505,
+              "weight_kg": 165.5614119440085,
               "reps": 10,
               "rpe": 7.5
             }
           ],
-          "rest_seconds": 60
+          "hold": true,
+          "hold_reason": "Deliberately prescribed under the log (315-365 vs a 585 log anchor) for the medical window: the ROM rule is what protects the L3-4 protrusion, and the anesthetic masks the feel. Do not let the log rebase this."
         },
         {
           "name": "Tricep Pushdown",
+          "tier": "accessory",
           "notes": "Lockout for bench. Log anchor 53 lb.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 27.2155422,
+              "weight_kg": 27.215574566138386,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 27.2155422,
+              "weight_kg": 27.215574566138386,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 27.2155422,
+              "weight_kg": 27.215574566138386,
               "reps": 10,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Side Plank",
+          "tier": "core",
           "notes": "CORE (D1) \u2014 anti-lateral-flexion. Every day carries one core movement, each a DIFFERENT pattern. Isometric HOLD, 30-40 SECONDS PER SIDE (logged as duration, not reps). Spine neutral, zero spinal compression. Do it in your rest periods between bench sets.",
           "sets": [
             {
@@ -2325,8 +2334,7 @@
               "duration_seconds": 40
             }
           ],
-          "display_load": "BW",
-          "rest_seconds": 30
+          "display_load": "BW"
         }
       ]
     },
@@ -2336,168 +2344,168 @@
       "exercises": [
         {
           "name": "Weighted Pull-up",
+          "tier": "primary",
           "notes": "PEAK BW+85\u00d73 @8. If it exceeds @8, rack it and stay at BW+80.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 38.55535145,
+              "weight_kg": 38.55539730202938,
               "reps": 3,
               "rpe": 8
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "Weighted Pull-up",
+          "tier": "primary",
           "notes": "Backoff \u2014 3 sets @7.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 27.2155422,
+              "weight_kg": 27.215574566138386,
               "reps": 5,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 27.2155422,
+              "weight_kg": 27.215574566138386,
               "reps": 5,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 27.2155422,
+              "weight_kg": 27.215574566138386,
               "reps": 5,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "Weighted Back Extension",
+          "tier": "accessory",
           "notes": "Erector capacity, NO spinal compression. BODYWEIGHT ONLY through W2 \u2014 the trigger-point injections went into these exact muscles, so loading them fresh is not smart. SKIP ENTIRELY if the injection sites are sore. Moved D4 -> D2 (replaces Paused RDL).",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 10,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 10,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 10,
               "rpe": 6
             }
           ],
           "hold": true,
-          "hold_reason": "Bodyweight through W2 \u2014 trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this.",
-          "rest_seconds": 60
+          "hold_reason": "Bodyweight through W2 \u2014 trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this."
         },
         {
           "name": "Seated Leg Curl",
+          "tier": "accessory",
           "notes": "Hamstrings / posterior chain with ZERO spinal loading \u2014 this is what replaces Paused RDL for the window, and why a DB RDL was declined: you already hinge on D4 (light sumo), and a second loaded hinge is the thing we removed. Log median 115.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 52.16312255,
+              "weight_kg": 52.16318458509857,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 52.16312255,
+              "weight_kg": 52.16318458509857,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 52.16312255,
+              "weight_kg": 52.16318458509857,
               "reps": 12,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "DB Shoulder Press",
+          "tier": "accessory",
           "notes": "@7 CAP \u2014 shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC \u2014 pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 \u2192 70.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 34.01942775,
+              "weight_kg": 34.01946820767298,
               "reps": 8,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 34.01942775,
+              "weight_kg": 34.01946820767298,
               "reps": 8,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 34.01942775,
+              "weight_kg": 34.01946820767298,
               "reps": 8,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Lateral Raise (Dumbbell)",
+          "tier": "accessory",
           "notes": "Lateral delts \u2014 the one shoulder head nothing else in this block trains (presses hit front, face pull + pec deck hit rear). Log median 40 lb over 68 sessions, but prescribed at 30-35 DELIBERATELY: the MRI shows subacromial bursitis, and 60-120\u00b0 of abduction is the impingement arc this movement lives in. STOP AT SHOULDER HEIGHT, no higher, light and high-rep. Any painful arc \u2014 stop the set and tell me.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 15.87573295,
+              "weight_kg": 15.87575183024739,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 15.87573295,
+              "weight_kg": 15.87575183024739,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 15.87573295,
+              "weight_kg": 15.87575183024739,
               "reps": 15,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Pallof Press",
+          "tier": "core",
           "notes": "CORE (D2) \u2014 anti-rotation. Replaces Hanging Leg Raise, which is hip-flexor dominant; the psoas attaches straight onto L1-L5, so it pulls on the exact segments under treatment. Log median 20 lb. Per side, slow, brace and resist the rotation.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 11.33980925,
+              "weight_kg": 11.339822735890994,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 11.33980925,
+              "weight_kg": 11.339822735890994,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 11.33980925,
+              "weight_kg": 11.339822735890994,
               "reps": 12,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 30
+          ]
         }
       ]
     },
@@ -2507,55 +2515,55 @@
       "exercises": [
         {
           "name": "Weighted Dip",
+          "tier": "primary",
           "notes": "Pull back @7.5 \u2014 bench peaks this week.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 36.2873896,
+              "weight_kg": 36.28743275485118,
               "reps": 5,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 36.2873896,
+              "weight_kg": 36.28743275485118,
               "reps": 5,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 36.2873896,
+              "weight_kg": 36.28743275485118,
               "reps": 5,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 36.2873896,
+              "weight_kg": 36.28743275485118,
               "reps": 5,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "CGB",
+          "tier": "secondary",
           "notes": "185\u00d75, last real set of the block. Bench peaks Monday this week \u2014 this comes after it, so it stays @7. Do not chase the comp-bench number here.",
-          "rest_seconds": 60,
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 83.91458845,
+              "weight_kg": 83.91468824559335,
               "reps": 5,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 83.91458845,
+              "weight_kg": 83.91468824559335,
               "reps": 5,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 83.91458845,
+              "weight_kg": 83.91468824559335,
               "reps": 5,
               "rpe": 7
             }
@@ -2566,106 +2574,107 @@
         },
         {
           "name": "Hip Thrust",
+          "tier": "accessory",
           "notes": "MOVED D1 -> D3 to unload a leg-heavy D1. Best hip-extension option with ZERO spinal compression. 0 logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES \u2014 never hyperextend the low back at lockout; a numb back will not warn you. Note this is glute work the day before sumo: acceptable ONLY because sumo is 225 @6 technique work. If Friday's pull feels heavy or the next-day back check is off, this moves to D2.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 83.91458845,
+              "weight_kg": 83.91468824559335,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 83.91458845,
+              "weight_kg": 83.91468824559335,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 83.91458845,
+              "weight_kg": 83.91468824559335,
               "reps": 10,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Lat Pulldown",
+          "tier": "accessory",
           "notes": "Lat width for the pull-up.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 86.1825503,
+              "weight_kg": 86.18265279277155,
               "reps": 8,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 86.1825503,
+              "weight_kg": 86.18265279277155,
               "reps": 8,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 86.1825503,
+              "weight_kg": 86.18265279277155,
               "reps": 8,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Reverse Pec Deck",
+          "tier": "accessory",
           "notes": "RE-ANCHORED 45 \u2192 100 (log median 100). You skipped this 4/4 in B4 \u2014 it was prescribed at less than half your working load. Posterior-cuff/scap support for the torn anterior tendons; keep it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 49.8951607,
+              "weight_kg": 49.895220037920375,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 49.8951607,
+              "weight_kg": 49.895220037920375,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 49.8951607,
+              "weight_kg": 49.895220037920375,
               "reps": 10,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Face Pull",
+          "tier": "accessory",
           "notes": "Shoulder health \u2014 LOAD-BEARING, not filler. Posterior cuff is intact while supraspinatus/subscapularis are torn, so this shares load off them. High rep, never heavy. Do not cut when short on time.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 15,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Dead Bug",
+          "tier": "core",
           "notes": "CORE (D3) \u2014 anti-extension. Teaches the brace that keeps the lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow \u2014 lower back stays flat on the floor. If it arches off the floor, shorten the range.",
           "sets": [
             {
@@ -2687,8 +2696,7 @@
               "rpe": 7
             }
           ],
-          "display_load": "BW",
-          "rest_seconds": 30
+          "display_load": "BW"
         }
       ]
     },
@@ -2698,159 +2706,160 @@
       "exercises": [
         {
           "name": "Sumo Deadlift",
+          "tier": "primary",
           "notes": "LIGHT technique pull \u2014 225 FLAT, 3 sets of 3, no ramp. Triples stay triples: the lever is LOAD and SETS, never reps (rule sumo-back-cap). Sumo is the lift that flares your back, so it does NOT get the 4th set squat gets. Tall lockout, no hitch, every rep crisp. Rounding or bar-speed drop = rack it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 3,
               "rpe": 6
             }
           ],
           "display_load": "225",
           "hold": true,
-          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light technique work only until ~2026-09-04.",
-          "rest_seconds": 75
+          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light technique work only until ~2026-09-04."
         },
         {
           "name": "Spoto Bench Press",
+          "tier": "secondary",
           "notes": "@8 CAP. HELD as the bench secondary \u2014 it added +35 lb across B4 and bench is the strive lift; rotating it now would break something that's working.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 111.13013065,
+              "weight_kg": 111.13026281173174,
               "reps": 3,
               "rpe": 8
             },
             {
               "type": "normal",
-              "weight_kg": 111.13013065,
+              "weight_kg": 111.13026281173174,
               "reps": 3,
               "rpe": 8
             },
             {
               "type": "normal",
-              "weight_kg": 111.13013065,
+              "weight_kg": 111.13026281173174,
               "reps": 3,
               "rpe": 8
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Bulgarian Split Squat",
+          "tier": "accessory",
           "notes": "NEW to the block, NOT new to you \u2014 50 logged sessions, median 42.5/hand. This is your 'lunge', already grooved. Unilateral, so you get a leg's worth of quad/glute stimulus at roughly half the spinal load of bilateral squatting. Torso tall, per leg.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 22.6796185,
+              "weight_kg": 22.67964547178199,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 22.6796185,
+              "weight_kg": 22.67964547178199,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 22.6796185,
+              "weight_kg": 22.67964547178199,
               "reps": 10,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Chest Supported Incline Row",
+          "tier": "accessory",
           "notes": "NEW \u2014 replaces Meadows Row. Same target, ZERO lumbar load (chest supported) on your deadlift day. First exposure: 50 lb/hand is an estimate, the weekly log sync will correct it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 24.94758035,
+              "weight_kg": 24.947610018960187,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 24.94758035,
+              "weight_kg": 24.947610018960187,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 24.94758035,
+              "weight_kg": 24.947610018960187,
               "reps": 10,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Seated Calf Raise",
+          "tier": "accessory",
           "notes": "Calves \u2014 the last uncovered muscle group, now in. SEATED on purpose: a standing/barbell calf raise puts load straight down the spine, a seated one puts zero. Log median 175 over 4 sessions. Swapped in for Incline DB Press rather than added, so D4 stays at 21 sets \u2014 and it pulls a fourth pressing exposure off a shoulder with bursitis and two partial tears. Comp bench, dip and Spoto still cover the press.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 79.37866475,
+              "weight_kg": 79.37875915123695,
               "reps": 15,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 79.37866475,
+              "weight_kg": 79.37875915123695,
               "reps": 15,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 79.37866475,
+              "weight_kg": 79.37875915123695,
               "reps": 15,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Concentration Curl",
+          "tier": "accessory",
           "notes": "Biceps \u2014 back in. Cutting it left the biceps with no direct work at all; pull-ups and rows alone don't cover it. On D4 because nothing follows Friday. Log median 38 lb over 93 sessions, max 45.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 10,
               "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 10,
               "rpe": 7.5
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Bird Dog",
+          "tier": "core",
           "notes": "CORE (D4) \u2014 anti-rotation plus erector endurance, spine neutral throughout. Per side, slow, no rotation through the hips. The gentlest of the four core patterns, which is why it sits on deadlift day.",
           "sets": [
             {
@@ -2872,8 +2881,7 @@
               "rpe": 7
             }
           ],
-          "display_load": "BW",
-          "rest_seconds": 30
+          "display_load": "BW"
         }
       ]
     },
@@ -2883,122 +2891,125 @@
       "exercises": [
         {
           "name": "Low-bar Squat",
+          "tier": "primary",
           "notes": "LIGHT \u2014 4-week back-protection window (doctor, 2026-08-07). 225 FLAT, no weekly ramp: you asked for a higher floor, so you get a higher floor and a LOWER ceiling (was 185->245). ~48% of your 465. 4 sets, not more reps \u2014 extra work comes from sets done FRESH, never from fatigued reps. This is POSITION WORK. Do NOT add weight.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 83.91458845,
+              "weight_kg": 83.91468824559335,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 83.91458845,
+              "weight_kg": 83.91468824559335,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 83.91458845,
+              "weight_kg": 83.91468824559335,
               "reps": 5,
               "rpe": 6
             }
           ],
           "display_load": "185",
           "hold": true,
-          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light position work only until ~2026-09-04.",
-          "rest_seconds": 75
+          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light position work only until ~2026-09-04."
         },
         {
           "name": "Comp Bench",
+          "tier": "primary",
           "notes": "Deload @6.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 90.718474,
+              "weight_kg": 90.71858188712795,
               "reps": 4,
               "rpe": 6
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "Comp Bench",
+          "tier": "primary",
           "notes": "Backoff \u2014 3 sets @6.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 81.6466266,
+              "weight_kg": 81.64672369841516,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 81.6466266,
+              "weight_kg": 81.64672369841516,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 81.6466266,
+              "weight_kg": 81.64672369841516,
               "reps": 5,
               "rpe": 6
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "Leg Press (Machine)",
+          "tier": "accessory",
           "notes": "NEW \u2014 replaces Leg Extension. Quad/glute volume with no bar on your back. HARD ROM RULE: stop the sled well before your hips lift off the pad \u2014 at depth the pelvis tucks under load, and loaded lumbar flexion is exactly the L3-4 mechanism. Run at 315-365, well under your 495 log median: 'moderate if tolerated' is a number here, not a feel, because the injections mask the feel.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05828325,
+              "weight_kg": 102.05840462301894,
               "reps": 12,
               "rpe": 6
             }
           ],
-          "rest_seconds": 60
+          "hold": true,
+          "hold_reason": "Deliberately prescribed under the log (315-365 vs a 585 log anchor) for the medical window: the ROM rule is what protects the L3-4 protrusion, and the anesthetic masks the feel. Do not let the log rebase this."
         },
         {
           "name": "Tricep Pushdown",
+          "tier": "accessory",
           "notes": "Lockout for bench. Log anchor 53 lb.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 12,
               "rpe": 6
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Side Plank",
+          "tier": "core",
           "notes": "CORE (D1) \u2014 anti-lateral-flexion. Every day carries one core movement, each a DIFFERENT pattern. Isometric HOLD, 30-40 SECONDS PER SIDE (logged as duration, not reps). Spine neutral, zero spinal compression. Do it in your rest periods between bench sets.",
           "sets": [
             {
@@ -3020,8 +3031,7 @@
               "duration_seconds": 30
             }
           ],
-          "display_load": "BW",
-          "rest_seconds": 30
+          "display_load": "BW"
         }
       ]
     },
@@ -3031,44 +3041,45 @@
       "exercises": [
         {
           "name": "Weighted Pull-up",
+          "tier": "primary",
           "notes": "Deload @6.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 24.94758035,
+              "weight_kg": 24.947610018960187,
               "reps": 4,
               "rpe": 6
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "Weighted Pull-up",
+          "tier": "primary",
           "notes": "Backoff \u2014 3 sets @6.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 15.87573295,
+              "weight_kg": 15.87575183024739,
               "reps": 6,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 15.87573295,
+              "weight_kg": 15.87575183024739,
               "reps": 6,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 15.87573295,
+              "weight_kg": 15.87575183024739,
               "reps": 6,
               "rpe": 6
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "Weighted Back Extension",
+          "tier": "accessory",
           "notes": "Erector capacity, NO spinal compression. BODYWEIGHT ONLY through W2 \u2014 the trigger-point injections went into these exact muscles, so loading them fresh is not smart. SKIP ENTIRELY if the injection sites are sore. Moved D4 -> D2 (replaces Paused RDL).",
           "sets": [
             {
@@ -3091,108 +3102,107 @@
             }
           ],
           "hold": true,
-          "hold_reason": "Bodyweight through W2 \u2014 trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this.",
-          "rest_seconds": 60
+          "hold_reason": "Bodyweight through W2 \u2014 trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this."
         },
         {
           "name": "Seated Leg Curl",
+          "tier": "accessory",
           "notes": "Hamstrings / posterior chain with ZERO spinal loading \u2014 this is what replaces Paused RDL for the window, and why a DB RDL was declined: you already hinge on D4 (light sumo), and a second loaded hinge is the thing we removed. Log median 115.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 40.8233133,
+              "weight_kg": 40.82336184920758,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 40.8233133,
+              "weight_kg": 40.82336184920758,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 40.8233133,
+              "weight_kg": 40.82336184920758,
               "reps": 12,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "DB Shoulder Press",
+          "tier": "accessory",
           "notes": "@7 CAP \u2014 shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC \u2014 pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 \u2192 70.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 24.94758035,
+              "weight_kg": 24.947610018960187,
               "reps": 10,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 24.94758035,
+              "weight_kg": 24.947610018960187,
               "reps": 10,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 24.94758035,
+              "weight_kg": 24.947610018960187,
               "reps": 10,
               "rpe": 6
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Lateral Raise (Dumbbell)",
+          "tier": "accessory",
           "notes": "Lateral delts \u2014 the one shoulder head nothing else in this block trains (presses hit front, face pull + pec deck hit rear). Log median 40 lb over 68 sessions, but prescribed at 30-35 DELIBERATELY: the MRI shows subacromial bursitis, and 60-120\u00b0 of abduction is the impingement arc this movement lives in. STOP AT SHOULDER HEIGHT, no higher, light and high-rep. Any painful arc \u2014 stop the set and tell me.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 11.33980925,
+              "weight_kg": 11.339822735890994,
               "reps": 15,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 11.33980925,
+              "weight_kg": 11.339822735890994,
               "reps": 15,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 11.33980925,
+              "weight_kg": 11.339822735890994,
               "reps": 15,
               "rpe": 6
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Pallof Press",
+          "tier": "core",
           "notes": "CORE (D2) \u2014 anti-rotation. Replaces Hanging Leg Raise, which is hip-flexor dominant; the psoas attaches straight onto L1-L5, so it pulls on the exact segments under treatment. Log median 20 lb. Per side, slow, brace and resist the rotation.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 9.0718474,
+              "weight_kg": 9.071858188712795,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 9.0718474,
+              "weight_kg": 9.071858188712795,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 9.0718474,
+              "weight_kg": 9.071858188712795,
               "reps": 12,
               "rpe": 6
             }
-          ],
-          "rest_seconds": 30
+          ]
         }
       ]
     },
@@ -3202,49 +3212,49 @@
       "exercises": [
         {
           "name": "Weighted Dip",
+          "tier": "primary",
           "notes": "Deload @6.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 22.6796185,
+              "weight_kg": 22.67964547178199,
               "reps": 6,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 22.6796185,
+              "weight_kg": 22.67964547178199,
               "reps": 6,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 22.6796185,
+              "weight_kg": 22.67964547178199,
               "reps": 6,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 22.6796185,
+              "weight_kg": 22.67964547178199,
               "reps": 6,
               "rpe": 6
             }
-          ],
-          "rest_seconds": 75
+          ]
         },
         {
           "name": "CGB",
+          "tier": "secondary",
           "notes": "Deload \u2014 135, two sets, pattern only.",
-          "rest_seconds": 60,
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 61.23496995,
+              "weight_kg": 61.235042773811365,
               "reps": 6,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 61.23496995,
+              "weight_kg": 61.235042773811365,
               "reps": 6,
               "rpe": 6
             }
@@ -3255,106 +3265,107 @@
         },
         {
           "name": "Hip Thrust",
+          "tier": "accessory",
           "notes": "MOVED D1 -> D3 to unload a leg-heavy D1. Best hip-extension option with ZERO spinal compression. 0 logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES \u2014 never hyperextend the low back at lockout; a numb back will not warn you. Note this is glute work the day before sumo: acceptable ONLY because sumo is 225 @6 technique work. If Friday's pull feels heavy or the next-day back check is off, this moves to D2.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 61.23496995,
+              "weight_kg": 61.235042773811365,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 61.23496995,
+              "weight_kg": 61.235042773811365,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 61.23496995,
+              "weight_kg": 61.235042773811365,
               "reps": 12,
               "rpe": 6
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Lat Pulldown",
+          "tier": "accessory",
           "notes": "Lat width for the pull-up.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 68.0388555,
+              "weight_kg": 68.03893641534596,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 68.0388555,
+              "weight_kg": 68.03893641534596,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 68.0388555,
+              "weight_kg": 68.03893641534596,
               "reps": 12,
               "rpe": 6
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Reverse Pec Deck",
+          "tier": "accessory",
           "notes": "RE-ANCHORED 45 \u2192 100 (log median 100). You skipped this 4/4 in B4 \u2014 it was prescribed at less than half your working load. Posterior-cuff/scap support for the torn anterior tendons; keep it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 38.55535145,
+              "weight_kg": 38.55539730202938,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 38.55535145,
+              "weight_kg": 38.55539730202938,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 38.55535145,
+              "weight_kg": 38.55539730202938,
               "reps": 12,
               "rpe": 6
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Face Pull",
+          "tier": "accessory",
           "notes": "Shoulder health \u2014 LOAD-BEARING, not filler. Posterior cuff is intact while supraspinatus/subscapularis are torn, so this shares load off them. High rep, never heavy. Do not cut when short on time.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 15,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 20.41165665,
+              "weight_kg": 20.41168092460379,
               "reps": 15,
               "rpe": 7
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Dead Bug",
+          "tier": "core",
           "notes": "CORE (D3) \u2014 anti-extension. Teaches the brace that keeps the lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow \u2014 lower back stays flat on the floor. If it arches off the floor, shorten the range.",
           "sets": [
             {
@@ -3376,8 +3387,7 @@
               "rpe": 6
             }
           ],
-          "display_load": "BW",
-          "rest_seconds": 30
+          "display_load": "BW"
         }
       ]
     },
@@ -3387,159 +3397,160 @@
       "exercises": [
         {
           "name": "Sumo Deadlift",
+          "tier": "primary",
           "notes": "LIGHT technique pull \u2014 225 FLAT, 3 sets of 3, no ramp. Triples stay triples: the lever is LOAD and SETS, never reps (rule sumo-back-cap). Sumo is the lift that flares your back, so it does NOT get the 4th set squat gets. Tall lockout, no hitch, every rep crisp. Rounding or bar-speed drop = rack it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 83.91458845,
+              "weight_kg": 83.91468824559335,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 83.91458845,
+              "weight_kg": 83.91468824559335,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 83.91458845,
+              "weight_kg": 83.91468824559335,
               "reps": 3,
               "rpe": 6
             }
           ],
           "display_load": "185",
           "hold": true,
-          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light technique work only until ~2026-09-04.",
-          "rest_seconds": 75
+          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light technique work only until ~2026-09-04."
         },
         {
           "name": "Spoto Bench Press",
+          "tier": "secondary",
           "notes": "@8 CAP. HELD as the bench secondary \u2014 it added +35 lb across B4 and bench is the strive lift; rotating it now would break something that's working.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 88.45051215,
+              "weight_kg": 88.45061733994974,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 88.45051215,
+              "weight_kg": 88.45061733994974,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 88.45051215,
+              "weight_kg": 88.45061733994974,
               "reps": 5,
               "rpe": 6
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Bulgarian Split Squat",
+          "tier": "accessory",
           "notes": "NEW to the block, NOT new to you \u2014 50 logged sessions, median 42.5/hand. This is your 'lunge', already grooved. Unilateral, so you get a leg's worth of quad/glute stimulus at roughly half the spinal load of bilateral squatting. Torso tall, per leg.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 15.87573295,
+              "weight_kg": 15.87575183024739,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 15.87573295,
+              "weight_kg": 15.87575183024739,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 15.87573295,
+              "weight_kg": 15.87575183024739,
               "reps": 12,
               "rpe": 6
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Chest Supported Incline Row",
+          "tier": "accessory",
           "notes": "NEW \u2014 replaces Meadows Row. Same target, ZERO lumbar load (chest supported) on your deadlift day. First exposure: 50 lb/hand is an estimate, the weekly log sync will correct it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 18.1436948,
+              "weight_kg": 18.14371637742559,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 18.1436948,
+              "weight_kg": 18.14371637742559,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 18.1436948,
+              "weight_kg": 18.14371637742559,
               "reps": 12,
               "rpe": 6
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Seated Calf Raise",
+          "tier": "accessory",
           "notes": "Calves \u2014 the last uncovered muscle group, now in. SEATED on purpose: a standing/barbell calf raise puts load straight down the spine, a seated one puts zero. Log median 175 over 4 sessions. Swapped in for Incline DB Press rather than added, so D4 stays at 21 sets \u2014 and it pulls a fourth pressing exposure off a shoulder with bursitis and two partial tears. Comp bench, dip and Spoto still cover the press.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 61.23496995,
+              "weight_kg": 61.235042773811365,
               "reps": 15,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 61.23496995,
+              "weight_kg": 61.235042773811365,
               "reps": 15,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 61.23496995,
+              "weight_kg": 61.235042773811365,
               "reps": 15,
               "rpe": 6
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Concentration Curl",
+          "tier": "accessory",
           "notes": "Biceps \u2014 back in. Cutting it left the biceps with no direct work at all; pull-ups and rows alone don't cover it. On D4 because nothing follows Friday. Log median 38 lb over 93 sessions, max 45.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 13.6077711,
+              "weight_kg": 13.607787283069193,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 13.6077711,
+              "weight_kg": 13.607787283069193,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 13.6077711,
+              "weight_kg": 13.607787283069193,
               "reps": 12,
               "rpe": 6
             }
-          ],
-          "rest_seconds": 60
+          ]
         },
         {
           "name": "Bird Dog",
+          "tier": "core",
           "notes": "CORE (D4) \u2014 anti-rotation plus erector endurance, spine neutral throughout. Per side, slow, no rotation through the hips. The gentlest of the four core patterns, which is why it sits on deadlift day.",
           "sets": [
             {
@@ -3561,8 +3572,7 @@
               "rpe": 6
             }
           ],
-          "display_load": "BW",
-          "rest_seconds": 30
+          "display_load": "BW"
         }
       ]
     }
