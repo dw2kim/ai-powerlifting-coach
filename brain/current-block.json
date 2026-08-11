@@ -451,29 +451,30 @@
           "hold_reason": "Third weekly pressing exposure on a shoulder with two partial-thickness tears + bursitis, on the same day as the dip and the day before Spoto. Deliberately below the 205 lb log median \u2014 the sync must not chase it up."
         },
         {
-          "name": "Hip Thrust",
+          "name": "Hip Thrust (Smith Machine)",
           "tier": "accessory",
-          "notes": "MOVED D1 -> D3 to unload a leg-heavy D1. Best hip-extension option with ZERO spinal compression. 0 logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES \u2014 never hyperextend the low back at lockout; a numb back will not warn you. Note this is glute work the day before sumo: acceptable ONLY because sumo is 225 @6 technique work. If Friday's pull feels heavy or the next-day back check is off, this moves to D2.",
+          "notes": "RE-ANCHORED 2026-08-11 \u2014 the 'empty bar, 0 logged sessions' premise was a name-mapping miss. You have SIX barbell sessions (median 225, max 275x12) and a Smith session at 225x8 (2026-05-26). Running it on the SMITH this block, your call. 205 to re-enter the pattern after ~2.5 months off it. Ribs down, chin tucked, finish with the GLUTES \u2014 never hyperextend the low back at lockout. A numb back will not warn you, which is the one reason this is still the cautious end of your history.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 20.41168092460379,
+              "weight_kg": 92.98654643430615,
               "reps": 10,
-              "rpe": 6
+              "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 20.41168092460379,
+              "weight_kg": 92.98654643430615,
               "reps": 10,
-              "rpe": 6
+              "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 20.41168092460379,
+              "weight_kg": 92.98654643430615,
               "reps": 10,
-              "rpe": 6
+              "rpe": 7
             }
-          ]
+          ],
+          "display_load": "205"
         },
         {
           "name": "Lat Pulldown",
@@ -1160,29 +1161,30 @@
           "hold_reason": "Third weekly pressing exposure on a shoulder with two partial-thickness tears + bursitis, on the same day as the dip and the day before Spoto. Deliberately below the 205 lb log median \u2014 the sync must not chase it up."
         },
         {
-          "name": "Hip Thrust",
+          "name": "Hip Thrust (Smith Machine)",
           "tier": "accessory",
-          "notes": "MOVED D1 -> D3 to unload a leg-heavy D1. Best hip-extension option with ZERO spinal compression. 0 logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES \u2014 never hyperextend the low back at lockout; a numb back will not warn you. Note this is glute work the day before sumo: acceptable ONLY because sumo is 225 @6 technique work. If Friday's pull feels heavy or the next-day back check is off, this moves to D2.",
+          "notes": "225 \u2014 the load you logged on the Smith in May. This is your working level, not a build-up.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 61.235042773811365,
+              "weight_kg": 102.05840462301894,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 61.235042773811365,
+              "weight_kg": 102.05840462301894,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 61.235042773811365,
+              "weight_kg": 102.05840462301894,
               "reps": 10,
               "rpe": 7
             }
-          ]
+          ],
+          "display_load": "225"
         },
         {
           "name": "Lat Pulldown",
@@ -1869,29 +1871,30 @@
           "hold_reason": "Third weekly pressing exposure on a shoulder with two partial-thickness tears + bursitis, on the same day as the dip and the day before Spoto. Deliberately below the 205 lb log median \u2014 the sync must not chase it up."
         },
         {
-          "name": "Hip Thrust",
+          "name": "Hip Thrust (Smith Machine)",
           "tier": "accessory",
-          "notes": "MOVED D1 -> D3 to unload a leg-heavy D1. Best hip-extension option with ZERO spinal compression. 0 logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES \u2014 never hyperextend the low back at lockout; a numb back will not warn you. Note this is glute work the day before sumo: acceptable ONLY because sumo is 225 @6 technique work. If Friday's pull feels heavy or the next-day back check is off, this moves to D2.",
+          "notes": "HOLD at 225 (accessory-progression: 2-3 weeks per step, no weekly creep).",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 83.91468824559335,
+              "weight_kg": 102.05840462301894,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 83.91468824559335,
+              "weight_kg": 102.05840462301894,
               "reps": 10,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 83.91468824559335,
+              "weight_kg": 102.05840462301894,
               "reps": 10,
               "rpe": 7
             }
-          ]
+          ],
+          "display_load": "225"
         },
         {
           "name": "Lat Pulldown",
@@ -2573,29 +2576,30 @@
           "hold_reason": "Third weekly pressing exposure on a shoulder with two partial-thickness tears + bursitis, on the same day as the dip and the day before Spoto. Deliberately below the 205 lb log median \u2014 the sync must not chase it up."
         },
         {
-          "name": "Hip Thrust",
+          "name": "Hip Thrust (Smith Machine)",
           "tier": "accessory",
-          "notes": "MOVED D1 -> D3 to unload a leg-heavy D1. Best hip-extension option with ZERO spinal compression. 0 logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES \u2014 never hyperextend the low back at lockout; a numb back will not warn you. Note this is glute work the day before sumo: acceptable ONLY because sumo is 225 @6 technique work. If Friday's pull feels heavy or the next-day back check is off, this moves to D2.",
+          "notes": "245x8 \u2014 a real step past your Smith anchor, still well under the 275x12 you did on the bar. Only if the next-day back check has been clean.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 83.91468824559335,
-              "reps": 10,
-              "rpe": 7
+              "weight_kg": 111.13026281173174,
+              "reps": 8,
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 83.91468824559335,
-              "reps": 10,
-              "rpe": 7
+              "weight_kg": 111.13026281173174,
+              "reps": 8,
+              "rpe": 7.5
             },
             {
               "type": "normal",
-              "weight_kg": 83.91468824559335,
-              "reps": 10,
-              "rpe": 7
+              "weight_kg": 111.13026281173174,
+              "reps": 8,
+              "rpe": 7.5
             }
-          ]
+          ],
+          "display_load": "245"
         },
         {
           "name": "Lat Pulldown",
@@ -3264,29 +3268,30 @@
           "hold_reason": "Third weekly pressing exposure on a shoulder with two partial-thickness tears + bursitis, on the same day as the dip and the day before Spoto. Deliberately below the 205 lb log median \u2014 the sync must not chase it up."
         },
         {
-          "name": "Hip Thrust",
+          "name": "Hip Thrust (Smith Machine)",
           "tier": "accessory",
-          "notes": "MOVED D1 -> D3 to unload a leg-heavy D1. Best hip-extension option with ZERO spinal compression. 0 logged sessions, so W1 is EMPTY BAR pattern work only; load from W2. Ribs down, chin tucked, finish with the GLUTES \u2014 never hyperextend the low back at lockout; a numb back will not warn you. Note this is glute work the day before sumo: acceptable ONLY because sumo is 225 @6 technique work. If Friday's pull feels heavy or the next-day back check is off, this moves to D2.",
+          "notes": "Deload \u2014 185x12 @6.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 61.235042773811365,
+              "weight_kg": 83.91468824559335,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 61.235042773811365,
+              "weight_kg": 83.91468824559335,
               "reps": 12,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 61.235042773811365,
+              "weight_kg": 83.91468824559335,
               "reps": 12,
               "rpe": 6
             }
-          ]
+          ],
+          "display_load": "185"
         },
         {
           "name": "Lat Pulldown",

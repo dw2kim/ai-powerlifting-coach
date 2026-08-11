@@ -354,3 +354,21 @@ habits are the anchor, same as `loads-from-logs` — don't reach for the textboo
 default.** What I kept, in the block prose rather than the field: the timer is a floor, not a
 ceiling, and the W4 bench work-up to @8 is worth ignoring it for, because B4's defining miss was
 peaking @6 against an @8 allowance.
+
+## 2026-08-11 — Hip Thrust re-anchored: the 4th `exercise-name-mapping` catch
+B5 programmed Hip Thrust as a **first exposure — empty bar in W1** on the belief he'd never done
+it. He has: **six barbell sessions** (2023, median 225, **max 275×12**) and a **Smith session at
+225×8** (2026-05-26). The plan's bare name "Hip Thrust" resolved to a stock template with **zero**
+sessions while both real histories sat under other template titles. Re-anchored on the **Smith**
+(his call, 2026-08-11): **205 → 225 → 225 → 245, deload 185**; overrides added so the empty
+template can't be hit again.
+**Fourth instance of this bug** (Reverse Pec Deck / Incline DB Press → Paused RDL → Spoto+Larsen
+orphans → this). Treat it as settled: **"no log history" is a mapping bug until proven otherwise.**
+And note the direction it fails in — it **under-prescribes silently**, and an under-prescription
+looks responsible, so nothing about it feels wrong at review time. The Incline DB Press case
+labelled a 66-session movement "NEW"; this one put 45 lb in front of a 275 lb lift. **Any block
+that calls a movement a first exposure should have its resolution checked before it ships**, not
+after he notices.
+**Also worth keeping: the catch came from the parallel session's review, not from mine.** Two
+agents working the same repo found different things — I found the push couldn't self-correct, it
+found the unheld Leg Press and this. Neither sweep was complete on its own.

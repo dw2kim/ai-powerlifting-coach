@@ -10,6 +10,29 @@
 
 ---
 
+### 2026-08-11 · exercise, load · Hip Thrust re-anchored — 4th `exercise-name-mapping` catch
+**Feedback:** *"Yes, re-anchor it. I will do it with Smith this time as well."* (Coach had
+surfaced that B5's Hip Thrust was programmed as a first exposure when the log said otherwise.)
+**Verified (Hevy):** a bare **"Hip Thrust"** resolves to stock template `92B8C7E1` — **0 logged
+sessions**. His actual history sits under two other templates: **Hip Thrust (Barbell)**, 6 sessions
+2023, median **225**, max **275×12**; and **Hip Thrust (Smith Machine)**, `291ABA92`, **225×8** on
+2026-05-26. So the block's "0 logged sessions → W1 is empty-bar pattern work" premise was a
+**mapping bug, not a training fact** — it prescribed 45 lb to someone who has done 275×12.
+**This is the fourth instance of `exercise-name-mapping`** (after Reverse Pec Deck / Incline DB
+Press, Paused RDL, and the Spoto/Larsen orphans). The pattern is now unambiguous: **"no log
+history" is a mapping bug until proven otherwise**, and it fails in the most expensive direction —
+silently, and toward under-prescribing.
+**Re-anchored on the Smith (his call): 205 → 225 → 225 → 245, deload 185**, 3×10 (W4 3×8 @7.5).
+W1 sits at 205 not because he's weak on it but because it's ~2.5 months since he last did the
+pattern; W2 lands on the 225 he logged. W4's 245 is a real step and is **gated on a clean next-day
+back check** — it's still a loaded hip extension on a back under treatment, and the anesthetic
+means a bad lockout won't announce itself. Added `"hip thrust" → Hip Thrust (Smith Machine)` and
+`"barbell hip thrust" → Hip Thrust (Barbell)` to `OVERRIDES` so the empty template can't be
+resolved to again.
+→ rules: `exercise-name-mapping` (4th instance), `loads-from-logs`, `accessory-progression`
+
+---
+
 ### 2026-08-11 · block, exercise, general · a bench secondary on D3, and correcting a block that's already live
 **Feedback (2 parts, alongside the load/rest fix logged below):** (1) *"Just for Block 5, on D3,
 could we add any secondary movement for bench or any shorter related workout? I don't want to

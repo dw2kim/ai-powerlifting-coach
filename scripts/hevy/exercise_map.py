@@ -58,6 +58,11 @@ OVERRIDES: dict[str, str] = {
     "cable curl": "Bicep Curl (Cable)",
     "lat pulldown": "Lat Pulldown (Cable)",
     "hip abduction": "Hip Abduction (Machine)",
+    # A bare "Hip Thrust" resolves to a stock template with ZERO logged sessions, which is how
+    # B5 prescribed empty-bar "first exposure" work to someone with six barbell sessions
+    # (median 225, max 275) and a Smith session at 225. He's on the Smith from 2026-08-11.
+    "hip thrust": "Hip Thrust (Smith Machine)",
+    "barbell hip thrust": "Hip Thrust (Barbell)",
     "hip adduction": "Hip Adduction (Machine)",
     # Athlete's competition bench is logged under a custom template "POWER Bench Press".
     "comp bench": "POWER Bench Press",
