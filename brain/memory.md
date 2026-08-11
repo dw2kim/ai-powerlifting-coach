@@ -290,6 +290,35 @@ only, because the injury caps sit *below* the log on purpose — sumo's log anch
 mid-block) against a `sumo-back-cap` plan of 345–405. Auto-chasing the log would have undone the
 back restriction. That's the line to keep holding.
 
+## Hevy push fidelity — loads + rest timers (2026-08-11)
+Athlete feedback on the B5 push: **loads showed two decimals in the app** (B5 W1 D2 pull-up read
+**"70.11 lb"** where the Sheet said 70) and **no rest timers were set at all**.
+**The decimals were a real unit bug, not a display quirk.** Hevy stores kg and converts on
+display, and the block JSON stored `weight_kg` rounded to **1 decimal** — 70 lb → `31.8` →
+70.107 lb back out. Compounding it, **Hevy's factor is 2.20462**, not the 2.2046226218 the repo
+used; his own logged 70 lb pull-up is stored as `31.75150366049478` = `70 / 2.20462` exactly.
+Fixed at the boundary (`scripts/hevy/units.py`): full precision, Hevy's constant, and every set
+re-snapped to a 0.5 lb increment on the way out so a stale value can't leak decimals. All 382
+B5 sets re-stored; **`reconcile_loads` was re-introducing the rounding every Saturday** and now
+writes full precision too. Rule `hevy-load-fidelity`.
+**Rest timers: primary 1:15 · secondary/accessory 1:00 · core 0:30**, driven by an explicit
+`tier` on every exercise entry (name classification only as a fallback — `exercise-name-mapping`
+is exactly why you don't infer from names). Rule `hevy-rest-timers`.
+**The durable lesson: the app is the deliverable, not the JSON.** Every guardrail in this repo
+was operating on numbers that were correct in the repo and wrong by the time he read them at
+6am. Verify the artifact he actually trains off — the dry run now prints lb + timers for exactly
+that, and it's a step in the design skill, not an optional check.
+**Caught in passing, same class as the 2026-08-07 Back Extension catch:** **Leg Press** was
+prescribed 315–365 against a **585** log anchor for medical ROM reasons but was never marked
+`hold`, so the next Saturday sync would have auto-raised it to 540→630 and silently undone a
+medical restriction — the `hold` clause was written four days earlier and still got missed on
+the same block. **Sweep `reconcile_loads` against a finished block JSON and confirm every
+deliberately-light lift is pinned** — that's now a step in `designing-training-block`.
+Also: **Hip Thrust is not a first exposure** — logged under "Hip Thrust (Barbell)" (2023, to
+275) and "Hip Thrust (Smith Machine)" (2026-05-26, 225). The block's "0 logged sessions →
+empty bar W1" premise is a name-mapping miss. Left for a coaching call; **"no log history" is a
+mapping bug until proven otherwise** keeps being right.
+
 ## Block 3 review written (2026-07-04) → reviews/2026-Q2-B03.md
 Final Hevy actuals (source of truth): Squat **512** e1RM (480×2 @8, new best, honest RPE) · Comp
 Bench **266** (235×4 @7.5 — reintroduced on the real comp lift, held ≤@7.5 all block, no shoulder

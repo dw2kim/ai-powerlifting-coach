@@ -70,10 +70,23 @@ description: Design a new training block — pull context from prior block + mem
 6. **Write**:
    - `brain/current-block.md` — prose for humans (this is what you read on your phone)
    - `brain/current-block.json` — structured spec for `push_block.py`. Schema in `scripts/hevy/push_block.py` docstring.
+   - **Loads: full-precision kg, never rounded** (rule `hevy-load-fidelity`). Write every
+     `weight_kg` as `scripts.hevy.units.lb_to_kg(<lb>)` — Hevy stores kg and displays lb, and a
+     1-decimal kg makes a 70 lb prescription read **"70.11 lb"** in the app.
+   - **Every exercise entry gets a `tier`** — `primary` / `secondary` / `accessory` / `core`
+     (rule `hevy-rest-timers`). It drives the pushed rest timer (1:15 / 1:00 / 1:00 / 0:30).
+     Don't leave it to the name classifier.
+   - **Mark `hold` on anything deliberately prescribed below the log** (rule `sheet-load-sync`) —
+     medical caps, technique work, first-exposure pattern work. Sweep the finished JSON against
+     `reconcile_loads` output and confirm every under-prescribed lift is pinned; an unheld one
+     gets auto-raised by the next Saturday sync, which is how a restriction quietly dies.
 7. **Archive** the prior block: move `brain/current-block.md` (pre-overwrite) to `data/block-archive/<old-block-id>.md`. Same for the .json if present.
 8. **Commit** atomically with a one-paragraph message explaining the block's theme.
 9. **Offer to push to Hevy**:
-   - Always start with `python -m scripts.hevy.push_block` (dry-run). Show the user the routine titles and a sample payload.
+   - Always start with `python -m scripts.hevy.push_block` (dry-run). It prints, per exercise,
+     the **tier, rest timer and loads in lb** — the same units as the Sheet. **Check that
+     against the Sheet before applying**: whole-pound loads, and a timer on every line
+     (rules `hevy-load-fidelity`, `hevy-rest-timers`). `--json` dumps the raw kg payload.
    - On confirmation: `python -m scripts.hevy.push_block --apply`. Routines land in a folder named after the block id.
    - **⚠️ The push is additive and NOT idempotent** — it only POSTs, never updates or deletes.
      Running it twice for the same block creates a **second** folder and a duplicate set of

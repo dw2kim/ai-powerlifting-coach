@@ -20,6 +20,7 @@ Spec format:
       "exercises": [
         {
           "name": "Low-bar Squat",
+          "tier": "primary",
           "notes": "Top set @ RPE 6, then backoff",
           "sets": [
             {"type": "warmup", "weight_kg": 60, "reps": 5},
@@ -30,6 +31,15 @@ Spec format:
     }
   ]
 }
+
+Two things this module guarantees on the way out, because the app is what the athlete
+actually trains off:
+
+- **Loads match the Google Sheet.** Every weight is re-snapped onto a real loading increment
+  and converted with Hevy's own factor, so a 70 lb prescription reads "70" in the app rather
+  than "70.11". See `units.py`.
+- **Every exercise carries a rest timer** — primary 1:15, secondary/accessory 1:00, core 0:30
+  — from the entry's `tier`. See `rest_times.py`.
 """
 from __future__ import annotations
 
@@ -39,6 +49,8 @@ from pathlib import Path
 
 from .client import HevyClient
 from .exercise_map import Resolver
+from .rest_times import fmt_rest, rest_seconds_for, tier_for
+from .units import fmt_lb, normalize_kg
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SPEC_PATH = REPO_ROOT / "brain" / "current-block.json"
@@ -112,7 +124,9 @@ def build_routine_payload(
             sets.append(
                 {
                     "type": _set_type(s.get("type")),
-                    "weight_kg": s.get("weight_kg"),
+                    # Normalized, not passed through: the app displays lb, and an
+                    # imprecisely-stored kg shows up there as "70.11" instead of "70".
+                    "weight_kg": normalize_kg(s.get("weight_kg")),
                     "reps": s.get("reps"),
                     "distance_meters": s.get("distance_meters"),
                     "duration_seconds": s.get("duration_seconds"),
@@ -123,7 +137,7 @@ def build_routine_payload(
             {
                 "exercise_template_id": template_id,
                 "superset_id": ex.get("superset_id"),
-                "rest_seconds": ex.get("rest_seconds"),
+                "rest_seconds": rest_seconds_for(ex),
                 "notes": _notes_with_scheme(raw_sets, ex.get("notes", "")),
                 "sets": sets,
             }
@@ -137,6 +151,41 @@ def build_routine_payload(
     if folder_id is not None:
         routine["folder_id"] = folder_id
     return {"routine": routine}
+
+
+def _sets_summary(sets: list[dict]) -> str:
+    """Collapse a payload's sets into one lb-denominated line, as the app will show them."""
+    if not sets:
+        return "—"
+    parts = []
+    for s in sets:
+        if s.get("duration_seconds"):
+            rep_txt = f"{s['duration_seconds']}s"
+        else:
+            rep_txt = f"×{s.get('reps')}" if s.get("reps") is not None else "×?"
+        load = fmt_lb(s.get("weight_kg"))
+        tag = "warmup " if s.get("type") == "warmup" else ""
+        parts.append(f"{tag}{load} lb {rep_txt}")
+    # Identical sets collapse to "3 × 225 lb ×5" rather than repeating three times.
+    if len(set(parts)) == 1:
+        return f"{len(parts)} × {parts[0]}"
+    return " | ".join(parts)
+
+
+def print_routine_preview(payload: dict, spec_exercises: list[dict]) -> None:
+    """Human-checkable dry-run view: loads in lb and the rest timer, per exercise.
+
+    The raw payload is kg and unreadable at a glance, which is how a block once went out with
+    "70.11 lb" loads and no rest timers. This is the view to check against the Sheet.
+    """
+    routine = payload["routine"]
+    print(f"  {routine['title']}")
+    for ex, src in zip(routine["exercises"], spec_exercises):
+        rest = fmt_rest(ex["rest_seconds"])
+        print(
+            f"    {src['name']:<32} {tier_for(src):<10} rest {rest:>5}   "
+            f"{_sets_summary(ex['sets'])}"
+        )
 
 
 def load_spec() -> dict:
@@ -169,6 +218,11 @@ def main() -> None:
         help="Push into an existing routine folder instead of creating one. Use this to "
              "resume after a partial failure, so the block doesn't end up with duplicate "
              "folders in the app.",
+    )
+    parser.add_argument(
+        "--json",
+        action="store_true",
+        help="Dry-run: dump the raw kg payload instead of the lb preview.",
     )
     args = parser.parse_args()
 
@@ -209,9 +263,12 @@ def main() -> None:
             resp = client.post("/routines", payload)
             print(f"Created W{week}-{day['label']} -> {_routine_id(resp)}")
             existing.add(title)
-        else:
+        elif args.json:
             print(f"[dry-run] W{week}-{day['label']}:")
             print(json.dumps(payload, indent=2))
+        else:
+            print(f"[dry-run] W{week}-{day['label']}:")
+            print_routine_preview(payload, pres["exercises"])
 
 
 if __name__ == "__main__":
