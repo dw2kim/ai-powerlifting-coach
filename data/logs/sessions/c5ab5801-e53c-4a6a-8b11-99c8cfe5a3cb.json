@@ -1,0 +1,305 @@
+{
+  "created_at": "2026-08-11T12:48:18.203Z",
+  "description": "",
+  "end_time": "2026-08-11T12:48:16+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "729237D1",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 0.45359290943563974
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 5,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 20.41168092460379
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 4,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 31.8013988805327
+        }
+      ],
+      "superset_id": null,
+      "title": "Pull Up (Weighted)"
+    },
+    {
+      "exercise_template_id": "729237D1",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 6,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 22.697789188159412
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 6,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 22.697789188159412
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 6,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 22.697789188159412
+        }
+      ],
+      "superset_id": null,
+      "title": "Pull Up (Weighted)"
+    },
+    {
+      "exercise_template_id": "7B8D84E8",
+      "index": 2,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 5,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 43.091326396385774
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 52.16318458509857
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 6,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 52.16318458509857
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 6,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 52.16318458509857
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 6,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 52.16318458509857
+        }
+      ],
+      "superset_id": null,
+      "title": "Overhead Press (Barbell)"
+    },
+    {
+      "exercise_template_id": "091737FA",
+      "index": 3,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 20.41168092460379
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 20.41168092460379
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 20.41168092460379
+        }
+      ],
+      "superset_id": null,
+      "title": "Back Extension (Weighted Hyperextension)"
+    },
+    {
+      "exercise_template_id": "11A123F3",
+      "index": 4,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 49.895220037920375
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 49.895220037920375
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 49.895220037920375
+        }
+      ],
+      "superset_id": null,
+      "title": "Seated Leg Curl (Machine)"
+    },
+    {
+      "exercise_template_id": "CC55119B",
+      "index": 5,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 6.8038936415345965
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 6.8038936415345965
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 6.8038936415345965
+        }
+      ],
+      "superset_id": null,
+      "title": "Cable Core Pallof Press"
+    },
+    {
+      "exercise_template_id": "422B08F1",
+      "index": 6,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 15,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 14.968566011376112
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 15,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 14.968566011376112
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 15,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 14.968566011376112
+        }
+      ],
+      "superset_id": null,
+      "title": "Lateral Raise (Dumbbell)"
+    }
+  ],
+  "id": "c5ab5801-e53c-4a6a-8b11-99c8cfe5a3cb",
+  "routine_id": null,
+  "start_time": "2026-08-11T10:34:18+00:00",
+  "title": "W1-D2 WPU + Posterior Chain + Shoulders",
+  "updated_at": "2026-08-11T12:48:18.203Z"
+}

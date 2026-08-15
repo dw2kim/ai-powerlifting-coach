@@ -1,0 +1,246 @@
+{
+  "created_at": "2026-08-14T11:34:58.574Z",
+  "description": "",
+  "end_time": "2026-08-14T11:34:56+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "D20D7BBE",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 3,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 3,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 3,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 102.05840462301894
+        }
+      ],
+      "superset_id": null,
+      "title": "Sumo Deadlift"
+    },
+    {
+      "exercise_template_id": "74dfcc13-02b2-4eef-95f3-5abf04a2702b",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 5,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 61.235042773811365
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 83.91468824559335
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 5,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 97.52247552866254
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 5,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 97.52247552866254
+        }
+      ],
+      "superset_id": null,
+      "title": "Spoto Bench"
+    },
+    {
+      "exercise_template_id": "B5D3A742",
+      "index": 2,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 20.41168092460379
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 20.41168092460379
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 20.41168092460379
+        }
+      ],
+      "superset_id": null,
+      "title": "Bulgarian Split Squat (Dumbbell)"
+    },
+    {
+      "exercise_template_id": "914F3A96",
+      "index": 3,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 22.67964547178199
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 22.67964547178199
+        }
+      ],
+      "superset_id": null,
+      "title": "Chest Supported Incline Row (Dumbbell)"
+    },
+    {
+      "exercise_template_id": "724CDE60",
+      "index": 4,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 18.14371637742559
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 18.14371637742559
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 18.14371637742559
+        }
+      ],
+      "superset_id": null,
+      "title": "Concentration Curl"
+    },
+    {
+      "exercise_template_id": "BD0AD077",
+      "index": 5,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": null
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": null
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": null
+        }
+      ],
+      "superset_id": null,
+      "title": "Bird Dog"
+    }
+  ],
+  "id": "5a7c89d9-034f-4b58-a48e-a78d08e00d81",
+  "routine_id": "f3df425b-e044-4d96-a539-09348d2d4b3a",
+  "start_time": "2026-08-14T10:48:56+00:00",
+  "title": "W1-D4 Sumo (light) + Spoto Bench",
+  "updated_at": "2026-08-14T11:34:58.574Z"
+}
