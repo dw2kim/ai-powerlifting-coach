@@ -355,6 +355,40 @@ default.** What I kept, in the block prose rather than the field: the timer is a
 ceiling, and the W4 bench work-up to @8 is worth ignoring it for, because B4's defining miss was
 peaking @6 against an @8 allowance.
 
+## 2026-08-16 — injections go BI-WEEKLY (they did not end), and it buys a clean signal
+Pain-clinic visit **2026-08-14**: trigger-point injections **continue at every 2 weeks** instead of
+weekly, doctor agreeing on the athlete's report that pain has improved. **The repo had this wrong** —
+both `current-block.md` and `active-issues.md` said "Aug 7, Aug 14, then the series ends." Corrected.
+Next slots ~**Aug 28** (W3 D4) and ~**Sep 11** (W5 D4); **W2 and W4 are injection-free weeks.**
+**Zero training changes, and saying so explicitly was the point.** The 4-week no-heavy order still
+runs to ~09-04 and `masked-pain-load-cap` lifts on **doctor clearance only** — the rule already
+anticipated exactly this ("not on the series ending, not on a clean scan, never on how it feels"),
+and a dosing step-down is the same class of non-event. He is primed to read "less treatment" as
+"more recovered"; the block now states the non-change in one line so he can't.
+**The finding worth keeping: his reason and the doctor's reason are different, and neither knows.**
+Doctor stepped him down on *improvement*. He accepted because he's **"not sure the injection itself
+is making it worse"** — a suspicion that the treatment is a driver. Same shape as 2026-08-07, when
+the doctor was *shocked* to learn he lifts heavy: **the clinic keeps making decisions on a partial
+picture because he doesn't volunteer his side of it.** The coaching move is not to adjudicate the
+medicine — it's to make him **say the thing out loud at the visit**. That's now the pattern for any
+clinical update: check whether the doctor is acting on the same story the athlete is.
+**The one genuinely useful consequence: off-weeks are chemically clean.** Anesthetic wears off in
+hours, local flare closes by ~72 h, so an injection-free week is the **first honest back signal
+since 2026-07-03**. That converts the next-day back check from a nagging standing order into the
+instrument that answers *his own* question — off-week checks vs injection-week checks. He has
+**zero entries across all of B4 and B5 W1**, so this is the lever: tie the unloved logging habit to
+something he actually wants to know. Also gave him the benign explanation (trigger-point injections
+cause 24–72 h local soreness in the injected muscles — reads as "worse after the shot" without the
+back being worse), because the alternative is him quietly concluding the treatment is harming him
+and dropping it without telling anyone.
+**Also closed here:** injection agent is **anesthetic only** (steroid is the doctor's next option if
+this course fails) — `active-issues.md` and `current-block.md` had been carrying "corticosteroid"
+since 2026-07-06 and an open "confirm the agent" item after it was already answered. **A resolved
+question left open in one file gets re-asked forever** — close it everywhere the first time.
+**Still open after two visits:** the return-to-heavy number (Aug 28 and Sep 11 are the *only* visits
+before B6 is designed mid-Sep — that's the clearance gate), telling the clinic what he actually
+lifts, and the shoulder injection, now three blocks outstanding.
+
 ## 2026-08-11 — Hip Thrust re-anchored: the 4th `exercise-name-mapping` catch
 B5 programmed Hip Thrust as a **first exposure — empty bar in W1** on the belief he'd never done
 it. He has: **six barbell sessions** (2023, median 225, **max 275×12**) and a **Smith session at
