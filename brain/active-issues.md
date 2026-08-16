@@ -129,16 +129,76 @@ blind). User accepts and proceeds under the rule below. This **overrides** the p
 
 ## Lower back — 🚨 DOCTOR ORDERED 4 WEEKS OFF HEAVY LIFTING (2026-08-07)
 
+### Visit 2026-08-14 — injections CONTINUE, stepped down weekly → **BI-WEEKLY**
+
+**The series does not end.** This file and `current-block.md` both said "Aug 7 and Aug 14, then the
+series ends" — wrong. Trigger-point injections continue, at **every 2 weeks** instead of weekly.
+Doctor agreed to the step-down on the athlete's report that **the pain has improved recently**.
+
+**Athlete's own reason is a different one, and it matters.** He is "still iffy" and wants bi-weekly
+because he is **not sure the injection itself is making things worse.** That is not the doctor's
+rationale (improvement → less treatment); it's a suspicion that the treatment is a driver. Both
+point at the same schedule, so nothing conflicts, but they are different hypotheses and only one of
+them is being tested by the clinic.
+
+- ⚠️ **Say the suspicion out loud at the next visit.** "I think the shots might be making it worse"
+  is a clinical input; routing it through a schedule change instead means the clinic keeps treating
+  on the improvement story. Same failure as the doctor being *shocked* on 2026-08-07 — advice built
+  on a partial picture.
+- **The most likely benign explanation, worth him knowing:** trigger-point injections reliably
+  produce **local post-injection soreness in the injected muscles for ~24–72 h**. That feels like
+  "worse after the shot" and is not the underlying back getting worse. Distinguishing the two is
+  exactly what the new schedule makes possible — see below. Not a diagnosis; the clinic owns it.
+
+**What actually changes in training: nothing.** No load, rep, set or day moves.
+- The **4-week no-heavy-lifting order (→ ~2026-09-04) has not been lifted**, and a dosing-interval
+  change is not a clearance.
+- `masked-pain-load-cap` lifts on **doctor clearance** — explicitly *not* on the series ending, not
+  on a schedule change, not on feeling better. Squat **225 ×5 @6 ×4** and sumo **225 ×3 @6 ×3**
+  stay flat for the rest of B5.
+- Less frequent treatment does not mean less back problem. Do not read "bi-weekly" as "recovered."
+
+**What it does buy — the first clean pain signal since 2026-07-03.** Anesthetic wears off in hours;
+the local flare window closes by ~72 h. On an **off-week there is no injection at all**, so the back
+is chemically honest for the whole week. That makes the **next-day back check** the single highest-
+value thing he can do right now, and it has **zero entries across all of B4 and B5 W1.**
+- **Log it on every squat and sumo day: "back fine / tight / sore."** No check, no progression —
+  and now, no answer to his own question about the injections either.
+- **The comparison to run:** off-week checks vs injection-week checks. If the *injection* weeks are
+  consistently worse and the *clean* weeks are consistently better, his suspicion has evidence and
+  the clinic needs to hear it. If both read the same, it's post-injection soreness, not harm.
+
+**Confirmed schedule going forward** (Fri 1–4 pm or Thu 9 am–12 pm, athlete trains 6–7 am):
+
+| Date | Block slot | Timing read |
+|---|---|---|
+| **Fri 2026-08-14** ✅ given | W1 D4 | Trained 6–7 am, *before* the shot. Clean. |
+| — | **W2 (Aug 17–21)** | **Clean week — no injection. Honest back data. Log the checks.** |
+| **~Fri 2026-08-28** | W3 D4 | D4 trains before the shot. Fine. |
+| — | **W4 (Sep 1–4)** | **Clean week after Mon.** |
+| **~Fri 2026-09-11** | W5 D4 (deload) | Fine. |
+
+- **Monday after an injection is ~64 h post — inside the 24–72 h flare window, at its edge.**
+  Applies to **Mon 2026-08-17** and **Mon 2026-08-31**: if the back is sore, tight or numb that
+  morning, **skip the squat and run bench + accessories only.** Missing one 225 lb squat costs
+  nothing.
+- **If a slot lands on a Thursday instead**, D3 (Thu 6 am) still precedes the shot. Friday's D4
+  then sits ~18 h post — but sumo is 225 @6 technique work now, not the 405 the old rule was
+  written against, so: **run D4 as written unless the injection sites are sore, in which case drop
+  the sumo and do the rest of the day.** No need to slip D4 to Saturday at this load.
+- **Weighted Back Extension (D2) still gets skipped entirely if the sites are sore** — the trigger
+  points are in those exact muscles. That rule is unchanged and now applies every other week.
+
 **Visit 2026-08-07.** 4–5 injections around the mid-left lower back. **The doctor was shocked the
 athlete is still lifting heavy and recommended stopping heavy lifting for 4 weeks**
 (→ ~**2026-09-04**, covering B5 W1–W4). **No shoulder injection given** — he palpated the shoulder
 and said it's okay.
 
-**What the injections are — likely NOT corticosteroid.** The athlete describes a **"freezing"
+**What the injections are — NOT corticosteroid.** The athlete describes a **"freezing"
 injection** (local anesthetic) into 4–5 sites, intended to *loosen the muscle*. That pattern reads
-as a **trigger-point injection** treating **myofascial** pain, not the disc. ⚠️ **This file has
-called them corticosteroid since 2026-07-06 — that may have been wrong the whole time. Confirm the
-agent with the clinic** (anesthetic only, or anesthetic + steroid?).
+as a **trigger-point injection** treating **myofascial** pain, not the disc. ✅ **RESOLVED — agent
+confirmed ANESTHETIC ONLY**; steroid is the doctor's next option if this course fails. This file
+called them corticosteroid from 2026-07-06 and **that was wrong the whole time.**
 **The athlete's stated mechanism** — loosen muscle → less disc compression → faster healing — is
 probably not right; muscle relaxation doesn't meaningfully decompress a disc. Trigger-point
 injections break a **pain–spasm cycle**, which is a real and worthwhile thing. Not a coaching call
@@ -219,13 +279,17 @@ Proceeding under the written loads, which is the safer of the two ways to disagr
   below stays anyway — it's driven by the corticosteroid masking pain, NOT by imaging; a clean MRI
   doesn't un-mask the pain signal. Use this MRI to ask the doctor the return-to-heavy-axial-load
   question and get a concrete window; lift the cap on that clearance.
-- **Treatment**: pain-clinic **corticosteroid injections** — a **weekly series** (first round
-  **2026-07-03**, ~8 sites across the mid-left lower back). Doctor says it needs **multiple visits**
+- **Treatment**: pain-clinic **trigger-point injections, local anesthetic only** (this section said
+  "corticosteroid" until 2026-08-14 — that was wrong; see the correction above). First round
+  **2026-07-03**, ~8 sites across the mid-left lower back. Doctor says it needs **multiple visits**
   to become effective. This is the family-doctor pain-clinic referral (previously logged under the
-  shoulder — the injection was for the back). **Shoulder injection not yet started — ask for it at
+  shoulder — the injection was for the back). **Shoulder injection still not started — ask for it at
   the next visit.**
+- **Cadence: weekly through 2026-08-14, then BI-WEEKLY** (stepped down at the 2026-08-14 visit on
+  reported improvement — see *Visit 2026-08-14* above). The series is **ongoing**, not finished.
 - **Schedule varies week to week** (doctor availability: **Thu 9am–12pm** or **Fri 1pm–4pm**).
-  Confirmed slots: 2026-07-03 (Fri), 2026-07-10 (Fri), **2026-07-16 (Thu 11:50am)**. Athlete always
+  Confirmed slots: 2026-07-03 (Fri), 2026-07-10 (Fri), **2026-07-16 (Thu 11:50am)**, 2026-08-07 (Fri),
+  **2026-08-14 (Fri)**. Next expected **~2026-08-28**, then **~2026-09-11**. Athlete always
   trains **6–7am**, so *same-day* training always precedes the injection — same-day training is fine.
 - **Not a coaching call — this is the clinic's domain.** My job is to manage training *around* it.
 - **Sumo = the back's canary (durable cap, 2026-07-22).** Pain/next-day soreness localize to **L5-S1**

@@ -23,9 +23,10 @@ The real squat/sumo return is **B6**, on clearance.
 
 **What the injections actually are.** The athlete describes a **"freezing" injection** — local
 anesthetic — into 4–5 sites around the mid-left lower back, aimed at loosening the muscle. That
-reads as **trigger-point injection** treating *myofascial* pain, not the disc. (This file called
-them corticosteroid from 2026-07-06; that may have been wrong the whole time. **Confirm the agent
-with the clinic.**) Either way the training conclusion is unchanged and now stronger: an anesthetic
+reads as **trigger-point injection** treating *myofascial* pain, not the disc. (**Confirmed:
+anesthetic only** — steroid is the doctor's next option if this fails. This file called them
+corticosteroid from 2026-07-06; that was wrong.) The training conclusion is unchanged and now
+stronger, because an anesthetic
 produces **profound, immediate numbness for hours**, so pain feedback from that back is *less*
 reliable than under a steroid, not more. `masked-pain-load-cap` binds harder than before.
 
@@ -376,7 +377,9 @@ segments we're protecting; wrong core tool for this block).
 - **Leg press: ROM before load.** Stop the sled well before your hips lift off the pad. A tucked
   pelvis under load is the one thing on this day that can reach the L3-4 protrusion.
 - **Hip thrust: never hyperextend at lockout.** Ribs down, chin tucked, finish with the glutes.
-  W1 is empty bar — you have zero logged sessions and you're learning it on a numb back.
+  **205 → 225 → 225 → 245 on the Smith** (re-anchored 2026-08-11 — the "zero logged sessions,
+  empty bar" line was a name-mapping miss; you have history to 275). W4's step to 245 is gated on
+  a clean next-day back check — a numb back won't warn you.
 - **Log every set.** Skipped = logged as skipped with a reason.
 - **Rest timers are set in the app** (2026-08-11): **primary 1:15 · secondary/accessory 1:00 ·
   core 0:30.** Hevy runs the clock, so you don't have to. Loads in the app now match the Sheet
@@ -390,16 +393,50 @@ segments we're protecting; wrong core tool for this block).
   substitute them for each other, and don't swap any of them for sit-ups, cable crunches or
   hanging leg raises while the back is under treatment.
 
-## Injection schedule + this week
+## Injection schedule — REVISED 2026-08-14: weekly → **bi-weekly**, series continues
 
-- **Fri Aug 7** (4–5 trigger-point sites, mid-left lower back) and **Fri Aug 14** — then the
-  series ends. Fridays 1–4pm; he trains 6–7am, so same-day D4 always *precedes* the shot.
-- **No training this weekend** (athlete confirmed). **Next session is Mon Aug 10 = W1 D1**, roughly
-  **72 h post-injection** — the edge of the 24–72 h avoid-window already in `active-issues.md`.
-  - **If the back is sore, tight, or numb Monday morning: skip the squat, do bench + accessories
-    only.** Missing one 185 lb squat costs nothing. There is no version of this where pushing
-    through on Monday is the right call.
-- **W1 D4 (Fri Aug 14)** runs 6–7am, before that day's injection. Light sumo is fine.
+**The series does not end.** This block was written on "Aug 7, Aug 14, then done." At the
+**2026-08-14 visit the doctor agreed to continue the trigger-point injections every 2 weeks**
+instead of weekly, on the athlete's report that the pain has improved. Full detail and the coaching
+read in `active-issues.md` → *Visit 2026-08-14*.
+
+**No load, rep, set or day in this block changes.** The 4-week no-heavy order still runs to
+~**2026-09-04**, and `masked-pain-load-cap` lifts on **doctor clearance** — not on the series
+ending, not on a dosing change, not on feeling better. Squat **225 ×5 @6 ×4** and sumo
+**225 ×3 @6 ×3** stay flat to the end of the block. Bi-weekly is not a clearance.
+
+| Week | Dates | Injection | What it means for training |
+|---|---|---|---|
+| W1 | Aug 10–14 | **Fri Aug 14** ✅ | D4 trained 6–7am, before the shot. Clean. |
+| **W2** | Aug 17–21 | **none — clean week** | **Mon Aug 17 is ~64 h post** → see the Monday rule. Rest of the week is chemically honest: **best back data available all block. Log every check.** |
+| W3 | Aug 24–28 | **~Fri Aug 28** | D4 trains before the shot. Fine. |
+| **W4** | Aug 31–Sep 4 | **none — clean week** | **Mon Aug 31 is ~64 h post** → Monday rule again. Then clean. |
+| W5 | Sep 7–11 | **~Fri Sep 11** | Deload day, before the shot. Fine. |
+
+- **The Monday rule (Aug 17 and Aug 31): ~64 h post-injection is inside the 24–72 h flare window,
+  at its edge. If the back is sore, tight or numb that morning — skip the squat, run bench +
+  accessories only.** Missing one 225 lb squat costs nothing.
+- **If a slot lands Thursday instead of Friday**, D3 (6am) still precedes it. Friday's D4 then sits
+  ~18 h post — but sumo is 225 @6 technique work now, not the 405 that rule was written against:
+  **run D4 as written unless the injection sites are sore, in which case drop the sumo and do the
+  rest of the day.** No Saturday slip needed at this load.
+- **Weighted Back Extension (D2): still skipped entirely if the sites are sore.** Unchanged — the
+  trigger points are in those exact muscles. Now relevant every other week rather than every week.
+
+### The one thing this schedule is actually good for
+
+He is stepping down partly because he suspects **the injections themselves may be making it worse**.
+Bi-weekly turns that into a testable question, but only if he logs the answer. On an **off-week
+there is no anesthetic in the erectors at all** — the first clean pain signal since 2026-07-03.
+
+**Standing order, now the highest-value line in the block: log the next-day back check
+("back fine / tight / sore") on every squat and sumo day.** Zero entries across all of B4 and
+B5 W1. Off-week checks vs injection-week checks is the comparison that answers his own question —
+and if the injection weeks read consistently worse, the clinic needs to hear it.
+
+(Most likely benign explanation, worth him knowing: trigger-point injections reliably cause local
+soreness in the injected muscles for ~24–72 h. That reads as "worse after the shot" without the
+underlying back being worse. The clean weeks are what separate the two.)
 
 ## Open items
 
@@ -407,16 +444,26 @@ segments we're protecting; wrong core tool for this block).
       athlete declines the stop-heavy advice and holds 225.** See `active-issues.md` → *Training
       decision (2026-08-07)*. The plan is unchanged (it was already 225); what changed is that
       there's no longer a clearance gate waiting to unlock W3–W4. **225 remains a ceiling.**
-- [ ] **Still ask the two informational questions** — these are data, not permission, and they
-      don't depend on taking the advice: (1) **what's actually in the injection** (anesthetic only,
-      or anesthetic + steroid — it sets how long pain stays masked, which is what the back check is
-      working around); (2) **the shoulder injection**, still not started after two blocks.
-- [ ] **Confirm the injection agent** — anesthetic only, or anesthetic + steroid? Changes how long
-      the masking lasts. This file said "corticosteroid" from 2026-07-06 and that may be wrong.
+- [x] ~~**Confirm the injection agent.**~~ **Closed — ANESTHETIC ONLY**, steroid is the doctor's
+      next option if this course fails. The repo said "corticosteroid" from 2026-07-06; that was
+      wrong. Corrected in `active-issues.md`.
+- [ ] 🔴 **Tell the clinic you suspect the injections may be making it worse.** You changed the
+      schedule on that suspicion but the doctor stepped you down on *improvement*. He's treating a
+      different story than the one you're actually reporting — same gap that had him *shocked* on
+      Aug 7. Say it in one sentence at the next visit.
+- [ ] 🔴 **Ask the return-to-heavy question at the ~Aug 28 visit** — the 4-week window expires
+      ~Sep 4 and **B6 is designed mid-September on clearance.** Aug 28 and Sep 11 are the only two
+      visits before that design. Get a **specific load or category**, not "take it easy." Bring the
+      2026-07-22 lumbar MRI — it's reassuring and it's the right document to get a number from.
 - [ ] **Tell the clinic what you actually lift.** He was *shocked* — which means he's been planning
       your treatment without knowing. Give him the real numbers so the advice is built on them.
-- [ ] **Ask about the shoulder injection.** Still not given as of 2026-08-07 (he palpated and said
-      it's okay). If one starts, tell me — bench and dip go to a load cap.
+- [ ] **Ask about the shoulder injection.** Still not given as of 2026-08-14 (he palpated Aug 7 and
+      said it's okay). Now three blocks outstanding. If one starts, tell me — bench and dip go to a
+      load cap under `masked-pain-load-cap`.
+- [ ] **Log the next-day back check every squat and sumo day.** Zero entries across B4 and B5 W1.
+      With bi-weekly injections the off-weeks are clean data — this is now the only way either of
+      us learns anything about the back, and the only way your own "is it the injection?" question
+      gets an answer.
 - [ ] **B4 W5 deload** never synced. Append it to `reviews/2026-Q3-B04.md` when it lands.
 - [ ] **Chest Supported Incline Row load is a guess** (~50/hand, converted from Meadows 80).
       The Saturday sync will re-anchor it after W1.
