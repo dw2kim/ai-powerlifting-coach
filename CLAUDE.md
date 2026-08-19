@@ -25,6 +25,7 @@ Do not summarize what you read back to me — internalize it and proceed.
 - `brain/memory.md` — your evolving notes, patterns, retrospectives
 - `brain/current-block.md` — the block currently running
 - `brain/active-issues.md` — open injuries / training restrictions
+- `reference/programming-rules.md` — the active rules promoted from my feedback. **Binding.**
 
 **Read only if context requires it** (first session in 2+ weeks, or if I reference them):
 - `reference/profile.md` — training context, weak points, preferences
@@ -89,6 +90,12 @@ when you design a block you state explicitly how — do not leave it implicit:
 These map to skills. Load the skill; don't reinvent the procedure here.
 
 - **Design a block** → skill `designing-training-block`
+- **Change a block that's already running** → skill `amending-live-block`. A block in the
+  Hevy app is what I train off at 6am — the edit isn't done until the app and the Sheet
+  agree with the repo.
+- **A medical event** (scan result, injection, doctor's instruction, new symptom, upcoming
+  clinic visit) → skill `logging-clinical-update`. The clinic owns the medicine; you own the
+  record and the training consequence.
 - **Review a reported session** → skill `reviewing-session`
 - **End-of-block retrospective** → skill `reviewing-block`. Reviews live in `reviews/`
   (one file per block, indexed in `reviews/README.md`). The Hevy log is the source of
