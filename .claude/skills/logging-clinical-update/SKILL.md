@@ -95,6 +95,10 @@ The recurring failure is a fact that gets fixed in one file and left wrong in an
 - `brain/current-block.md` — the athlete-facing consequence, in one line, including "nothing
   changes" when that's the answer. Update the medical-override section and any injection
   schedule table.
+- `brain/current-block.json` → `medical.injections` — **when an injection is given or
+  scheduled, add the date here**, not only in the prose. It's what makes the back-check
+  comparison possible (`scripts/review/back_checks.py` reads it to split off-weeks from
+  injection weeks), and a date that lives only in a paragraph can't be computed with.
 - `brain/memory.md` — only if it surfaced a durable pattern.
 - **Close resolved questions everywhere they appear.** `memory.md`, 2026-08-16: *"A resolved
   question left open in one file gets re-asked forever — close it everywhere the first time."*
@@ -105,6 +109,9 @@ The recurring failure is a fact that gets fixed in one file and left wrong in an
 Keep the open items in `brain/active-issues.md` under the relevant section, each with the
 date it was first raised. Items have gone **three blocks** unanswered (the shoulder
 injection; the return-to-heavy-axial number; telling the clinic he still trains heavy).
+
+Before a visit, run `python -m scripts.review.back_checks` — if the injection-week vs
+off-week split has enough data, that comparison *is* clinical input he should bring.
 
 **Pre-visit brief** — when a visit is coming up, produce the short list of what to ask,
 ordered by what actually gates programming. Separate **data** questions (what's in the

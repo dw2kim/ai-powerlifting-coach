@@ -2,6 +2,15 @@
   "block_id": "2026-Q3-B05",
   "weeks": 5,
   "start_date": "2026-08-10",
+  "medical": {
+    "note": "Trigger-point injection series (local anesthetic only), mid-left lower back. Weekly through 2026-08-14, BI-WEEKLY after. Drives the next-day back check comparison in scripts/review/back_checks.py; masked-pain-load-cap lifts on doctor clearance only, never on the series ending.",
+    "injections": [
+      {"date": "2026-08-07", "status": "given", "site": "lower back", "agent": "anesthetic"},
+      {"date": "2026-08-14", "status": "given", "site": "lower back", "agent": "anesthetic"},
+      {"date": "2026-08-28", "status": "expected", "site": "lower back", "agent": "anesthetic"},
+      {"date": "2026-09-11", "status": "expected", "site": "lower back", "agent": "anesthetic"}
+    ]
+  },
   "summary": {
     "goal": "Protect the back, strive upstairs. Doctor ordered 4 weeks off heavy lifting (2026-08-07) after a trigger-point injection series \u2014 so squat and sumo run LIGHT position/technique work all block and the loaded hinges are cut, while bench, pull-up and dip push the full plan.",
     "changes": [

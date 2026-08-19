@@ -4,7 +4,8 @@ Versioned strength-coaching system. Runs in Claude Code; the repo IS the coach.
 
 ## Layout
 - `CLAUDE.md` — persona, standing rules, session-start protocol. Read first, always.
-- `brain/` — state Claude maintains and commits (memory, current block, active issues).
+- `brain/` — state Claude maintains and commits (memory, current block, active issues,
+  daily back checks).
 - `reference/` — static facts (profile, goals, protocols, how-this-works).
 - `data/` — maxes, block archive, session logs.
 - `.claude/skills/` — repeatable procedures (Phase 2).

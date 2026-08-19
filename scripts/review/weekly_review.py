@@ -35,6 +35,7 @@ from zoneinfo import ZoneInfo
 from ..hevy.block_report import DEFAULT_BW, REPO_ROOT
 from ..notifications import telegram
 from ..sheets import reconcile_loads as recon
+from . import back_checks
 from .narrate import gather_context, narrate, render_fallback
 from .render_chart import render
 from .weekly_metrics import BLOCK_JSON, build_stats
@@ -159,6 +160,11 @@ def write_snapshot(stats: dict, message: str) -> Path:
               f"\n\n_Generated {stats['generated_for']} (Sat 11:00 ET). "
               f"Hevy log = source of truth._\n\n---\n\n")
     body = message + "\n"
+    bc = stats.get("back_checks")
+    if bc:
+        # The compliance record is the audit trail behind "no check, no progression" —
+        # keep it with the week it judged, not just in the file it was read from.
+        body += ("\n---\n\n" + back_checks.render(bc) + "\n")
     report = stats.get("load_drift")
     if report:
         # Keep the audit trail of what the sync moved next to the review it moved on.

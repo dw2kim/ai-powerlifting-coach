@@ -8,6 +8,7 @@ Produces, for the current block + week:
   - block/week geometry and a data-readiness check (did the expected days get logged?)
   - this week's Big-5 top working sets (load x reps @rpe, e1RM) + plan + RPE-cap flags
   - this week's accessories (planned vs logged)
+  - the week's next-day back checks: compliance, escalation, injection-week comparison
   - block-to-date e1RM per Big-5 per week (drives the chart trend lines)
   - a long-term e1RM series per Big-5 (drives the cross-block progress panel)
 
@@ -31,6 +32,7 @@ from ..hevy.block_report import (
     e1rm,
 )
 from ..hevy.exercise_map import OVERRIDES, Resolver, _normalize
+from .back_checks import summary as back_check_summary
 
 BLOCK_JSON = REPO_ROOT / "brain" / "current-block.json"
 
@@ -360,6 +362,9 @@ def build_stats(today: date_cls | None = None, bw: float = DEFAULT_BW) -> dict:
         "bodyweight": bw,
         "geometry": geo,
         "readiness": readiness(week_sessions, geo["expected_days"]),
+        # The gate on axial progression. Compliance is scoped to this week; the
+        # escalation run and the injection comparison read the whole history.
+        "back_checks": back_check_summary(geo["week_start"], geo["week_end"], block),
         "big5": big5,
         "accessories": accessories,
         "block_to_date": by_week,

@@ -34,7 +34,15 @@ When you pull from Hevy, also run `python -m scripts.hevy.sync_archive` to keep 
    If a Big-5 lift was trained, tag it with a status emoji per `review-status-emoji` (🟢 great /
    🟡 okay / 🔴 needs attention) and note the e1RM move vs its recent best. Bench gets an explicit
    call-out (priority lift).
-6. **Write back**:
+6. **If this was a squat or sumo session, the next-day back check is owed** — and the
+   morning after *the previous* axial session is owed now. Ask for it in one line ("how was
+   the back yesterday morning — fine, tight or sore?") and record the answer:
+   `python -m scripts.review.back_checks add <session-date> <fine|tight|sore>`.
+   It's the gate on axial progression (`sumo-back-cap`, `masked-pain-load-cap`) and it went
+   unlogged for two entire blocks because nobody asked. `python -m scripts.review.back_checks`
+   shows what's outstanding. **Two "sore" in a row = axial work stops** — not reduces — and
+   he goes back to the clinic; see `brain/daily-checks.md` for the full escalation list.
+7. **Write back**:
    - Append a session note to `brain/memory.md` if there's a pattern worth remembering
    - Update `brain/current-block.md` if next session's load/reps change
    - Update `brain/active-issues.md` if anything flared

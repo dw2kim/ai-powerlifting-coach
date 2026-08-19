@@ -262,7 +262,9 @@
   imaging-consistent). Program it as the **most conservatively loaded Big-5 lift**: working band
   **345–405 lb, RPE cap 7, reps ≤4 and every rep crisp, 405 = hard ceiling** while the back is a
   concern. **Never grind sumo** — any back rounding or bar-speed drop = rack it. Progress toward
-  the ceiling only when RPE holds ≤7 **and** the next-morning back check is clean. This is a
+  the ceiling only when RPE holds ≤7 **and** the next-morning back check is clean (logged in
+  `brain/daily-checks.md`; `python -m scripts.review.back_checks` reports compliance and trips
+  the two-'sore'-in-a-row escalation). This is a
   **durable** rule, distinct from the temporary injection-series axial cap in `active-issues.md`
   (that one lifts on doctor clearance; this stays until a long pain-free stretch). Revisit the band
   upward only on sustained clean pulling. [FB 2026-07-22]
