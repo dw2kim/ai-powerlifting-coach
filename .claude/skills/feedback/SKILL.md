@@ -38,7 +38,12 @@ Two files, two tiers:
    works (e.g. loads pulled from the sheet instead of the log), fix the tool/skill — a written
    rule alone will recur. Note the fix in the entry.
 
-6. **Commit** both files (and any tooling fix) with a coach-voice message.
+6. **If the feedback changes the block that's currently running, apply it** — run the
+   `amending-live-block` skill. Logging the correction and leaving the app wrong means he
+   trains the old numbers on Monday. (If it only changes *future* blocks, the rule is the
+   deliverable and nothing gets pushed.)
+
+7. **Commit** both files (and any tooling fix) with a coach-voice message.
 
 ## Conventions
 
