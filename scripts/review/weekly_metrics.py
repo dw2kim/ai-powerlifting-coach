@@ -364,7 +364,7 @@ def build_stats(today: date_cls | None = None, bw: float = DEFAULT_BW) -> dict:
         "readiness": readiness(week_sessions, geo["expected_days"]),
         # The gate on axial progression. Compliance is scoped to this week; the
         # escalation run and the injection comparison read the whole history.
-        "back_checks": back_check_summary(geo["week_start"], geo["week_end"], block),
+        "back_checks": back_check_summary(geo["week_start"], geo["week_end"]),
         "big5": big5,
         "accessories": accessories,
         "block_to_date": by_week,

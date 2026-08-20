@@ -95,10 +95,12 @@ The recurring failure is a fact that gets fixed in one file and left wrong in an
 - `brain/current-block.md` — the athlete-facing consequence, in one line, including "nothing
   changes" when that's the answer. Update the medical-override section and any injection
   schedule table.
-- `brain/current-block.json` → `medical.injections` — **when an injection is given or
-  scheduled, add the date here**, not only in the prose. It's what makes the back-check
-  comparison possible (`scripts/review/back_checks.py` reads it to split off-weeks from
-  injection weeks), and a date that lives only in a paragraph can't be computed with.
+- `brain/injections.md` — **when an injection is given, scheduled, or cancelled, add or
+  update the row here**, not only in the prose. It's what makes the back-check comparison
+  possible (`scripts/review/back_checks.py` reads it to split post-injection checks from
+  clean ones), and a date that lives only in a paragraph can't be computed with. This file
+  is deliberately **not** block-scoped — the series outlives blocks, and a block-scoped list
+  loses its history at every rollover.
 - `brain/memory.md` — only if it surfaced a durable pattern.
 - **Close resolved questions everywhere they appear.** `memory.md`, 2026-08-16: *"A resolved
   question left open in one file gets re-asked forever — close it everywhere the first time."*

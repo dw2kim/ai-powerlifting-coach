@@ -28,13 +28,14 @@ from __future__ import annotations
 import argparse
 import json
 import re
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass
 from datetime import date as date_cls, timedelta
 from pathlib import Path
 
 from ..hevy.block_report import REPO_ROOT, load_window
 
 CHECKS_MD = REPO_ROOT / "brain" / "back-checks.md"
+INJECTIONS_MD = REPO_ROOT / "brain" / "injections.md"
 BLOCK_JSON = REPO_ROOT / "brain" / "current-block.json"
 
 # The three words the standing order uses. Nothing else is a valid status.
@@ -55,6 +56,15 @@ FLARE_HOURS = 72
 # Checks needed on each side before the injection comparison says anything. Three is
 # not statistics — it's the floor below which one bad morning swings the whole answer.
 MIN_GROUP = 3
+
+INJ_RE = re.compile(
+    r"^\|\s*(?P<date>\d{4}-\d{2}-\d{2})\s*"
+    r"\|\s*(?P<status>given|expected|cancelled)\s*"
+    r"\|\s*(?P<site>[^|]*?)\s*"
+    r"\|\s*(?P<agent>[^|]*?)\s*"
+    r"\|\s*(?P<note>.*?)\s*\|\s*$",
+    re.IGNORECASE,
+)
 
 ROW_RE = re.compile(
     r"^\|\s*(?P<date>\d{4}-\d{2}-\d{2})\s*"
@@ -153,13 +163,31 @@ def axial_sessions(start: str, end: str) -> list[dict]:
     return out
 
 
-def _injection_dates(block: dict | None = None) -> list[dict]:
-    """Injection dates for the running block, from current-block.json's `medical`
-    key. Absent → no comparison, which is the right answer for a block with no series."""
-    if block is None:
-        block = json.loads(BLOCK_JSON.read_text()) if BLOCK_JSON.exists() else {}
-    med = block.get("medical") or {}
-    return med.get("injections") or []
+def load_injections(path: Path = INJECTIONS_MD) -> list[dict]:
+    """The injection series from brain/injections.md.
+
+    Deliberately NOT read from current-block.json: the series started 2026-07-03 and
+    spans B4 and B5, so a block-scoped list drops every prior shot the moment a new
+    block starts. Checks taken inside those dropped windows would silently re-bucket as
+    "clean" and poison the comparison this module exists to produce.
+
+    `cancelled` rows are kept in the file for the record but never mask a check.
+    """
+    if not path.exists():
+        return []
+    out = []
+    for line in path.read_text().splitlines():
+        m = INJ_RE.match(line.strip())
+        if not m or m.group("status").lower() == "cancelled":
+            continue
+        out.append({
+            "date": m.group("date"),
+            "status": m.group("status").lower(),
+            "site": m.group("site").strip(),
+            "agent": m.group("agent").strip(),
+        })
+    out.sort(key=lambda i: i["date"])
+    return out
 
 
 def _in_flare(check_dt: date_cls, injections: list[dict]) -> dict | None:
@@ -175,13 +203,12 @@ def _in_flare(check_dt: date_cls, injections: list[dict]) -> dict | None:
     return None
 
 
-def compliance(start: str, end: str, checks: list[Check] | None = None,
-               block: dict | None = None) -> dict:
+def compliance(start: str, end: str, checks: list[Check] | None = None) -> dict:
     """Join every axial session in the window to its check. This is the gate:
     a session with no check is a session that cannot license progression."""
     checks = load_checks() if checks is None else checks
     by_date = {c.session_date: c for c in checks}
-    injections = _injection_dates(block)
+    injections = load_injections()
 
     rows = []
     for s in axial_sessions(start, end):
@@ -215,31 +242,54 @@ def compliance(start: str, end: str, checks: list[Check] | None = None,
     }
 
 
-def escalation(checks: list[Check] | None = None) -> dict:
-    """Two 'sore' checks in a row stops axial work outright — not 'reduce', stop
-    (brain/active-issues.md, athlete-override conditions 2026-08-07)."""
+def escalation(checks: list[Check] | None = None,
+               sessions: list[dict] | None = None) -> dict:
+    """Two 'sore' checks on consecutive axial days stops axial work outright — not
+    'reduce', stop (brain/active-issues.md, athlete-override conditions 2026-08-07).
+
+    'In a row' means consecutive **axial sessions**, not consecutive rows in the file.
+    An unlogged session between two sore checks breaks the run: those were not two sore
+    days in a row, they were two sore days with an unknown one in between, and halting
+    the block on that would burn the alarm's credibility the first time it fired.
+    """
     checks = load_checks() if checks is None else checks
-    runs = []
-    streak: list[Check] = []
-    for c in checks:
-        if c.status == "sore":
-            streak.append(c)
+    if sessions is None:
+        sessions = axial_sessions("0001-01-01", date_cls.today().isoformat())
+
+    # The timeline is every axial session, plus any check whose session predates the
+    # synced log (added by hand with an explicit --lift) so it still counts.
+    by_date = {c.session_date: c for c in checks}
+    timeline = sorted({s["date"] for s in sessions} | set(by_date))
+    statuses = [by_date[d].status if d in by_date else None for d in timeline]
+
+    runs, streak = [], []
+    for i, st in enumerate(statuses):
+        if st == "sore":
+            streak.append(i)
         else:
             if len(streak) >= 2:
                 runs.append(streak)
-            streak = []
+            streak = []          # a non-sore check OR an unlogged session breaks it
     if len(streak) >= 2:
         runs.append(streak)
+
+    # Tripped only while the run is still the latest word: it must reach the most
+    # recent *checked* session, with no clean check since.
+    checked = [i for i, st in enumerate(statuses) if st is not None]
+    last_checked = checked[-1] if checked else None
+    current = next((r for r in runs if last_checked is not None and r[-1] == last_checked), None)
     latest = runs[-1] if runs else None
     return {
-        "tripped": bool(latest and latest[-1] is checks[-1]),
+        "tripped": current is not None,
         "ever_tripped": bool(runs),
-        "dates": [c.session_date for c in latest] if latest else [],
+        "dates": [timeline[i] for i in (current or latest or [])],
+        "unchecked_since": [
+            timeline[i] for i in range(last_checked + 1, len(timeline))
+        ] if last_checked is not None else [],
     }
 
 
-def injection_comparison(checks: list[Check] | None = None,
-                         block: dict | None = None) -> dict:
+def injection_comparison(checks: list[Check] | None = None) -> dict:
     """Off-week checks vs injection-week checks — the athlete's own question.
 
     If the injection weeks read consistently worse, his suspicion that the shots are
@@ -247,9 +297,9 @@ def injection_comparison(checks: list[Check] | None = None,
     it is ordinary post-injection soreness, not the back getting worse.
     """
     checks = load_checks() if checks is None else checks
-    injections = _injection_dates(block)
+    injections = load_injections()
     if not injections:
-        return {"available": False, "reason": "no injection dates in current-block.json"}
+        return {"available": False, "reason": "no injections recorded in brain/injections.md"}
 
     score = {"fine": 0, "tight": 1, "sore": 2}
     buckets: dict[str, list[Check]] = {"post_injection": [], "clean": []}
@@ -285,13 +335,14 @@ def injection_comparison(checks: list[Check] | None = None,
     }
 
 
-def summary(start: str, end: str, block: dict | None = None) -> dict:
-    """The blob the weekly review consumes."""
+def summary(start: str, end: str) -> dict:
+    """The blob the weekly review consumes. Compliance is scoped to the window;
+    escalation and the injection comparison read the whole history on purpose."""
     checks = load_checks()
     return {
-        "compliance": compliance(start, end, checks, block),
+        "compliance": compliance(start, end, checks),
         "escalation": escalation(checks),
-        "injection_comparison": injection_comparison(checks, block),
+        "injection_comparison": injection_comparison(checks),
         "total_logged": len(checks),
     }
 
