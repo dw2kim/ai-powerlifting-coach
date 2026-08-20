@@ -31,6 +31,11 @@ The date is the **session**, not the morning — the check is the morning after,
 definition. `--note "..."` if there's something worth remembering. To see where you stand:
 `python -m scripts.review.back_checks`.
 
+The **Lift** column fills itself in — from the Hevy log if it's synced, otherwise from the
+block plan. It reads `unknown` when neither can say (a check on a rest day, or a date
+outside the block). That's cosmetic: everything that matters joins on the date, so a check
+is never refused just because the log hasn't caught up yet.
+
 ## Vocabulary — three words, nothing else
 
 | Word | Means |

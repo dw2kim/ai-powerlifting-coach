@@ -49,9 +49,24 @@ AXIAL = {
     "6cee736f-103a-4757-bb8d-e10c614ba473": "sumo",    # paused sumo
 }
 
+# The same lifts by the name the block plan uses, for when the log hasn't synced yet.
+# Matched EXACTLY, never by substring: "Bulgarian Split Squat" is an accessory and must
+# not read as a barbell squat, which is precisely what `"squat" in name` did.
+AXIAL_PLAN_NAMES = {
+    "low-bar squat": "squat",
+    "paused low-bar squat": "squat",
+    "sumo deadlift": "sumo",
+    "paused sumo deadlift": "sumo",
+}
+
 # A trigger-point injection numbs for hours and leaves local soreness for ~24-72 h.
 # A check inside that window is reporting the shot, not the back.
 FLARE_HOURS = 72
+
+# Only a shot into the lower back can explain a sore lower back. The shoulder series
+# (outstanding three blocks and due to land in injections.md the moment it happens) must
+# never mask a back check — different structure, no referred lumbar soreness.
+BACK_SITE_WORDS = ("back", "lumbar", "spine", "erector", "glute")
 
 # Checks needed on each side before the injection comparison says anything. Three is
 # not statistics — it's the floor below which one bad morning swings the whole answer.
@@ -68,7 +83,7 @@ INJ_RE = re.compile(
 
 ROW_RE = re.compile(
     r"^\|\s*(?P<date>\d{4}-\d{2}-\d{2})\s*"
-    r"\|\s*(?P<lift>squat|sumo|both)\s*"
+    r"\|\s*(?P<lift>squat|sumo|both|unknown)\s*"
     r"\|\s*(?P<status>fine|tight|sore)\s*"
     r"\|\s*(?P<note>.*?)\s*\|\s*$",
     re.IGNORECASE,
@@ -117,17 +132,15 @@ def append_check(session_date: str, status: str, lift: str = "",
     if status not in STATUSES:
         raise ValueError(f"status must be one of {STATUSES}, got {status!r}")
     if not lift:
-        found = {s["lift"] for s in axial_sessions(session_date, session_date)}
-        if not found:
-            raise ValueError(
-                f"No squat or sumo session logged on {session_date} — pass an explicit "
-                f"lift if the session predates the synced log."
-            )
-        lift = "both" if len(found) > 1 else found.pop()
+        lift = _infer_lift(session_date)
     if any(c.session_date == session_date for c in load_checks(path)):
         raise ValueError(f"A check for {session_date} is already logged — edit the row instead.")
 
-    check = Check(session_date, lift, status, note.replace("|", "/"))
+    # Collapse ALL whitespace, newlines included: a raw newline splits the row across
+    # two physical lines, neither of which parses, and the check vanishes on the next
+    # read while still looking present in the file.
+    clean_note = " ".join(note.replace("|", "/").split())
+    check = Check(session_date, lift, status, clean_note)
     row = f"| {check.session_date} | {check.lift} | {check.status} | {check.note} |"
     lines = path.read_text().splitlines() if path.exists() else []
     # Insert in date order among the existing rows; otherwise append after the header.
@@ -146,6 +159,55 @@ def append_check(session_date: str, status: str, lift: str = "",
     lines.insert(idx, row)
     path.write_text("\n".join(lines) + "\n")
     return check
+
+
+def _lift_from_plan(session_date: str) -> str:
+    """Which axial lift the block prescribes for this date, from current-block.json.
+
+    The Hevy log is authoritative but is only synced weekly, so the morning after a
+    session it usually has nothing to say about it. The plan does — that's the point of
+    having a plan. Returns "" when the date is outside the block or the day is a rest
+    day, and never guesses beyond what the block actually prescribes.
+    """
+    if not BLOCK_JSON.exists():
+        return ""
+    try:
+        block = json.loads(BLOCK_JSON.read_text())
+        start = date_cls.fromisoformat(block["start_date"])
+    except (ValueError, KeyError, json.JSONDecodeError):
+        return ""
+    d = date_cls.fromisoformat(session_date)
+    days_in = (d - start).days
+    week = days_in // 7 + 1
+    if days_in < 0 or week > block.get("weeks", 0):
+        return ""
+    wd = ("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")[d.weekday()]
+    labels = [day["label"] for day in block.get("days", []) if day.get("weekday") == wd]
+    found = set()
+    for presc in block.get("prescriptions", []):
+        if presc.get("week") != week or presc.get("day") not in labels:
+            continue
+        for ex in presc.get("exercises", []):
+            lift = AXIAL_PLAN_NAMES.get(ex.get("name", "").strip().lower())
+            if lift:
+                found.add(lift)
+    if not found:
+        return ""
+    return "both" if len(found) > 1 else found.pop()
+
+
+def _infer_lift(session_date: str) -> str:
+    """Log first (it's the truth), then the plan (it's available), then `unknown`.
+
+    Never fatal. The lift on a row is documentation — compliance joins on the date, and
+    escalation and the comparison don't read it at all — so refusing to record a check
+    because the log hasn't synced yet would block capture at exactly the moment capture
+    is supposed to be one word long.
+    """
+    from_log = {s["lift"] for s in axial_sessions(session_date, session_date)}
+    if from_log:
+        return "both" if len(from_log) > 1 else from_log.pop()
+    return _lift_from_plan(session_date) or "unknown"
 
 
 def axial_sessions(start: str, end: str) -> list[dict]:
@@ -190,10 +252,25 @@ def load_injections(path: Path = INJECTIONS_MD) -> list[dict]:
     return out
 
 
+def _is_back_site(site: str) -> bool:
+    """Does this injection go into the muscles a back check reports on?"""
+    return any(w in (site or "").lower() for w in BACK_SITE_WORDS)
+
+
 def _in_flare(check_dt: date_cls, injections: list[dict]) -> dict | None:
     """Is this check inside the ~72 h post-injection local-soreness window? If so it
-    reports the shot, not the back — that distinction is the whole point of the split."""
+    reports the shot, not the back — that distinction is the whole point of the split.
+
+    Two filters, both load-bearing:
+    - **`given` only.** An `expected` row is a prediction, and the dates in the record are
+      explicitly approximate ("~Fri 2026-08-28"). Masking a real check with a shot that
+      may not have happened would file a genuinely clean-week `sore` as "just the shot" —
+      hiding the exact signal this comparison exists to surface.
+    - **Back sites only.** A shoulder injection does not make the lower back sore.
+    """
     for inj in injections:
+        if inj.get("status") != "given" or not _is_back_site(inj.get("site", "")):
+            continue
         try:
             given = date_cls.fromisoformat(inj["date"])
         except (KeyError, ValueError):
@@ -243,7 +320,8 @@ def compliance(start: str, end: str, checks: list[Check] | None = None) -> dict:
 
 
 def escalation(checks: list[Check] | None = None,
-               sessions: list[dict] | None = None) -> dict:
+               sessions: list[dict] | None = None,
+               today: str | None = None) -> dict:
     """Two 'sore' checks on consecutive axial days stops axial work outright — not
     'reduce', stop (brain/active-issues.md, athlete-override conditions 2026-08-07).
 
@@ -254,7 +332,9 @@ def escalation(checks: list[Check] | None = None,
     """
     checks = load_checks() if checks is None else checks
     if sessions is None:
-        sessions = axial_sessions("0001-01-01", date_cls.today().isoformat())
+        # Bounded by the caller's review date, not wall-clock today: regenerating a past
+        # week (a documented workflow) must not see sessions that happened after it.
+        sessions = axial_sessions("0001-01-01", today or date_cls.today().isoformat())
 
     # The timeline is every axial session, plus any check whose session predates the
     # synced log (added by hand with an explicit --lift) so it still counts.
@@ -335,13 +415,15 @@ def injection_comparison(checks: list[Check] | None = None) -> dict:
     }
 
 
-def summary(start: str, end: str) -> dict:
+def summary(start: str, end: str, today: str | None = None) -> dict:
     """The blob the weekly review consumes. Compliance is scoped to the window;
-    escalation and the injection comparison read the whole history on purpose."""
+    escalation and the injection comparison read the whole history up to `today` on
+    purpose. `today` defaults to the window end so a past-dated report stays reproducible."""
     checks = load_checks()
+    as_of = today or end
     return {
         "compliance": compliance(start, end, checks),
-        "escalation": escalation(checks),
+        "escalation": escalation(checks, today=as_of),
         "injection_comparison": injection_comparison(checks),
         "total_logged": len(checks),
     }
@@ -425,7 +507,7 @@ def main() -> None:
 
     today = date_cls.fromisoformat(args.date) if args.date else date_cls.today()
     start, end = (args.start, args.end) if args.start and args.end else _current_block_window(today)
-    blob = summary(start, end)
+    blob = summary(start, end, today.isoformat())
     print(json.dumps(blob, indent=2) if args.json else render(blob))
 
 
