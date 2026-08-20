@@ -8,6 +8,7 @@ Produces, for the current block + week:
   - block/week geometry and a data-readiness check (did the expected days get logged?)
   - this week's Big-5 top working sets (load x reps @rpe, e1RM) + plan + RPE-cap flags
   - this week's accessories (planned vs logged)
+  - the week's next-day back checks: compliance, escalation, injection-week comparison
   - block-to-date e1RM per Big-5 per week (drives the chart trend lines)
   - a long-term e1RM series per Big-5 (drives the cross-block progress panel)
 
@@ -31,6 +32,7 @@ from ..hevy.block_report import (
     e1rm,
 )
 from ..hevy.exercise_map import OVERRIDES, Resolver, _normalize
+from .back_checks import summary as back_check_summary
 
 BLOCK_JSON = REPO_ROOT / "brain" / "current-block.json"
 
@@ -268,6 +270,15 @@ def readiness(week_sessions: list[dict], expected_days: list[str]) -> dict:
     }
 
 
+def _safe_back_checks(geo: dict, today: date_cls) -> dict | None:
+    """Back-check blob, or None if it can't be computed. See the call site for why."""
+    try:
+        return back_check_summary(geo["week_start"], geo["week_end"], today.isoformat())
+    except Exception as exc:  # noqa: BLE001 — resilience is the point here
+        print(f"⚠️ Back-check summary failed ({exc}); section omitted from the review.")
+        return None
+
+
 def build_stats(today: date_cls | None = None, bw: float = DEFAULT_BW) -> dict:
     today = today or date_cls.today()
     block = _load_block()
@@ -360,6 +371,12 @@ def build_stats(today: date_cls | None = None, bw: float = DEFAULT_BW) -> dict:
         "bodyweight": bw,
         "geometry": geo,
         "readiness": readiness(week_sessions, geo["expected_days"]),
+        # The gate on axial progression. Compliance is scoped to this week; the
+        # escalation run and the injection comparison read the whole history.
+        # Best-effort, like the sync and the load reconcile: this is a reporting layer
+        # over two hand-editable markdown files, and the Saturday review runs unattended.
+        # A malformed row must cost the back-check section, never the whole review.
+        "back_checks": _safe_back_checks(geo, today),
         "big5": big5,
         "accessories": accessories,
         "block_to_date": by_week,

@@ -366,8 +366,13 @@ segments we're protecting; wrong core tool for this block).
 - **Reps do not go up.** Extra work comes from an extra SET, done fresh. See above.
 - **Sumo: back rounding or bar-speed drop = rack it.** Still true at 185.
 - **Log the next-day back check** ("back fine / tight / sore") on **every squat and sumo day**.
-  Zero entries in all of B4, which is why nothing can progress. **No check, no progression.**
-  It matters more now than ever: it's the only honest signal while the area is being anesthetized.
+  **No check, no progression.** It's the only honest signal while the area is being anesthetized.
+  It goes in **`brain/back-checks.md`** — tell me and I'll write the row, or
+  `python -m scripts.review.back_checks add <session-date> <fine|tight|sore>`. Saturday's
+  review reports what's outstanding, and once there are a few weeks of them it answers your
+  own question about whether the injections are making things worse.
+  *(Zero entries across all of B4 and B5 W1 — because until 2026-08-19 there was nowhere to
+  put them. That excuse is gone.)*
 - **Comp bench: @8 cap is a TARGET at the W4 peak, not a ceiling to avoid.** ≤3/10 shoulder pain
   overrides everything. Moderate the **arch** before the weight if the back complains.
 - **Pull-up: @8 is still a hard stop.** It's what fixed this lift. Earn load inside it.
@@ -460,7 +465,8 @@ underlying back being worse. The clean weeks are what separate the two.)
 - [ ] **Ask about the shoulder injection.** Still not given as of 2026-08-14 (he palpated Aug 7 and
       said it's okay). Now three blocks outstanding. If one starts, tell me — bench and dip go to a
       load cap under `masked-pain-load-cap`.
-- [ ] **Log the next-day back check every squat and sumo day.** Zero entries across B4 and B5 W1.
+- [ ] **Log the next-day back check every squat and sumo day** → `brain/back-checks.md`
+      (`python -m scripts.review.back_checks` shows what's owed). W1's two are still outstanding.
       With bi-weekly injections the off-weeks are clean data — this is now the only way either of
       us learns anything about the back, and the only way your own "is it the injection?" question
       gets an answer.

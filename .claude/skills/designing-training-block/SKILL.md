@@ -92,11 +92,9 @@ description: Design a new training block — pull context from prior block + mem
      against the Sheet before applying**: whole-pound loads, and a timer on every line
      (rules `hevy-load-fidelity`, `hevy-rest-timers`). `--json` dumps the raw kg payload.
    - On confirmation: `python -m scripts.hevy.push_block --apply`. Routines land in a folder named after the block id.
-   - **Correcting a block that is already live** (rule `push-is-idempotent-with-update`): use
-     `python -m scripts.hevy.push_block --update --start W<n>-D<n> --apply`. `--update` PUTs over
-     the routines whose titles match (keeping their folder) and `--start` leaves sessions already
-     trained alone. **Never ask the athlete to delete routines in the app** — the Hevy API has no
-     routine DELETE, which is exactly why the update path exists.
+   - **Correcting a block that is already live** — that's a different job with its own traps
+     (the `hold` sweep, the mapping check, the Sheet re-render). **Use the
+     `amending-live-block` skill**, which owns that path end to end; don't improvise it here.
    - **⚠️ Without `--update` the push is additive** — a plain re-push POSTs again and creates a
      **second** folder plus a duplicate set of routines, which then can only be cleared by hand.
    - **No credentials in the session?** A Claude Code session usually has no `HEVY_API_KEY` (and

@@ -45,9 +45,20 @@ athlete's planning surface (planned loads, RPE targets, athlete notes) — usefu
    - **4. Action items** — concrete, carried into the next block. Check off ones already addressed.
    - **Coach's notes — power & health** — one short paragraph each. Tie to the Big-5 weak points
      and to `brain/active-issues.md` (shoulder).
-5. **Update the index** `reviews/README.md`: add the row with window + one-line verdict + link.
-6. **Append a one-line pointer** to `brain/memory.md` if the review surfaced a durable pattern.
-7. **Commit** with a coach-voice message.
+5. **Write the block's maxes back to `data/maxes.md`.** The review is the only place real
+   e1RMs get computed, and `designing-training-block` anchors prescriptions off that file —
+   if the review doesn't write them, nothing does. (It sat at "values as of Block 2 start"
+   for three blocks, still claiming the dip was removed and comp bench untrained.)
+   - Update each Big-5 lift whose block best **exceeds** the recorded max, from the step-2
+     e1RMs. Bump the `Last updated:` line to `<YYYY-MM-DD> (<block-id>)` and delete prose
+     notes the block has made false.
+   - **Guard — skip any lift whose numbers were suppressed by an active cap.** B5's squat and
+     sumo ran at ~48% under `masked-pain-load-cap`; writing those back would record a
+     regression that never happened. A capped lift **keeps its prior max**, with a dated note
+     saying which cap held it and until when. Check `brain/active-issues.md` before writing.
+6. **Update the index** `reviews/README.md`: add the row with window + one-line verdict + link.
+7. **Append a one-line pointer** to `brain/memory.md` if the review surfaced a durable pattern.
+8. **Commit** with a coach-voice message.
 
 ## Tone
 

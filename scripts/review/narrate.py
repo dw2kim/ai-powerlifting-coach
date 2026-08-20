@@ -36,6 +36,16 @@ You are writing the athlete's WEEKLY check-in, delivered to Telegram. It must:
 - Cover: data readiness, each Big-5 lift (top set vs plan + trend), an RPE watch, a one-line
   accessory note, this-block and long-term (cross-block) progress, and one sharp directive
   for next week.
+- ALWAYS cover `back_checks` — the next-day back check is the gate on axial progression
+  ("no check, no progression"), and it went unlogged for two whole blocks. Name the
+  sessions in `compliance.missing` by date and ask for them in one blunt line. If
+  `compliance.all_in` is true, say so and credit it — this is the habit being built, and
+  it is the only honest signal while the back is anesthetized. If `escalation.tripped`,
+  that leads the entire message: two "sore" checks in a row means axial work STOPS (not
+  reduces) and he goes back to the clinic. If `injection_comparison.available` and both
+  groups have n>=3, give the comparison and its verdict — that is HIS question (he suspects
+  the injections are making it worse) and it is why the logging is worth doing; below n=3,
+  say how many more checks it needs rather than reporting a number.
 - If `load_drift` is present, add ONE short line on the plan-vs-log load sync: name the
   accessories whose Sheet numbers were corrected (`changes`) and say the Sheet now matches
   what he actually lifts. If `load_drift.items` flags drift on a PRIMARY or SECONDARY
@@ -126,6 +136,19 @@ def render_fallback(stats: dict) -> str:
     lines += ["", f"<b>Accessories</b>: {len(logged)}/{len(stats['accessories'])} logged."]
     if rd["rpe_gaps"]:
         lines.append(f"⚠️ Top sets missing RPE: {', '.join(rd['rpe_gaps'])}.")
+
+    bc = stats.get("back_checks")
+    if bc:
+        comp, esc = bc["compliance"], bc["escalation"]
+        lines += ["", f"<b>Back checks</b>: {comp['logged']}/{comp['expected']} axial sessions."]
+        if esc["tripped"]:
+            lines.append(f"🚨 <b>Two 'sore' in a row</b> ({', '.join(esc['dates'])}) — "
+                         "axial work STOPS. Back to the clinic.")
+        elif comp["missing"]:
+            lines.append(f"⬜ Owed: {', '.join(comp['missing'])}. "
+                         "<b>No check, no progression.</b>")
+        elif comp["expected"]:
+            lines.append("🟢 All in — that's the signal everything axial depends on.")
     return "\n".join(lines)
 
 
