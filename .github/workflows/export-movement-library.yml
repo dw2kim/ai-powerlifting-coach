@@ -1,0 +1,51 @@
+name: Export movement library to Google Sheet
+
+# Manual: renders data/movement-library.csv (joined against the Hevy log) to the
+# "Movement Library" tab on the spreadsheet in SHEETS_SPREADSHEET_ID.
+#
+# Same reason as export-block.yml: the library is curated in a Claude Code session with no
+# Google credentials. Re-run this after editing data/movement-library.csv, or whenever the
+# log has moved enough that the set counts and last-used dates are stale.
+on:
+  workflow_dispatch:
+    inputs:
+      tab:
+        description: "Tab name to write"
+        type: string
+        default: Movement Library
+      dry_run:
+        description: "Print the grid to the job log instead of writing the Sheet"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: export-movement-library
+  cancel-in-progress: false
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Render
+        env:
+          GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
+          SHEETS_SPREADSHEET_ID: ${{ secrets.SHEETS_SPREADSHEET_ID }}
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python -m scripts.sheets.export_movement_library --dry-run
+          else
+            python -m scripts.sheets.export_movement_library --tab "${{ inputs.tab }}"
+          fi
