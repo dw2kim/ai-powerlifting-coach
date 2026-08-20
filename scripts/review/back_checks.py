@@ -6,7 +6,7 @@ tight / sore**. It is the only honest signal while the area is being anesthetize
 it gates axial progression ("no check, no progression").
 
 It had zero entries across all of B4 and B5 W1 — because there was nowhere to write it.
-This module is that place: `brain/daily-checks.md` holds the rows, and everything here
+This module is that place: `brain/back-checks.md` holds the rows, and everything here
 reads them.
 
 What it computes:
@@ -34,7 +34,7 @@ from pathlib import Path
 
 from ..hevy.block_report import REPO_ROOT, load_window
 
-CHECKS_MD = REPO_ROOT / "brain" / "daily-checks.md"
+CHECKS_MD = REPO_ROOT / "brain" / "back-checks.md"
 BLOCK_JSON = REPO_ROOT / "brain" / "current-block.json"
 
 # The three words the standing order uses. Nothing else is a valid status.
@@ -79,7 +79,7 @@ class Check:
 
 
 def load_checks(path: Path = CHECKS_MD) -> list[Check]:
-    """Parse the check rows out of brain/daily-checks.md. Unparseable lines are
+    """Parse the check rows out of brain/back-checks.md. Unparseable lines are
     ignored on purpose — the file is prose plus a table, and the prose is the point."""
     if not path.exists():
         return []

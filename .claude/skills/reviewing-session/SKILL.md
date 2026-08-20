@@ -41,7 +41,7 @@ When you pull from Hevy, also run `python -m scripts.hevy.sync_archive` to keep 
    It's the gate on axial progression (`sumo-back-cap`, `masked-pain-load-cap`) and it went
    unlogged for two entire blocks because nobody asked. `python -m scripts.review.back_checks`
    shows what's outstanding. **Two "sore" in a row = axial work stops** — not reduces — and
-   he goes back to the clinic; see `brain/daily-checks.md` for the full escalation list.
+   he goes back to the clinic; see `brain/back-checks.md` for the full escalation list.
 7. **Write back**:
    - Append a session note to `brain/memory.md` if there's a pattern worth remembering
    - Update `brain/current-block.md` if next session's load/reps change

@@ -164,7 +164,7 @@ is chemically honest for the whole week. That makes the **next-day back check** 
 value thing he can do right now, and it has **zero entries across all of B4 and B5 W1.**
 - **Log it on every squat and sumo day: "back fine / tight / sore."** No check, no progression —
   and now, no answer to his own question about the injections either.
-  **It goes in `brain/daily-checks.md`** (`python -m scripts.review.back_checks add <date> <word>`);
+  **It goes in `brain/back-checks.md`** (`python -m scripts.review.back_checks add <date> <word>`);
   the Saturday review reports what's outstanding and runs the comparison below automatically.
   Until 2026-08-19 there was no file to write it in, which is the likeliest reason for the zero.
 - **The comparison to run:** off-week checks vs injection-week checks. If the *injection* weeks are
