@@ -7,8 +7,11 @@ tagged with its role and whether it's available for the secondary-rotation slot
 of scope by athlete request — the library exists to serve rotation decisions, not
 curl selection.
 
-The curated part lives in `data/movement-library.csv` (pattern, role, pool, verdict,
-note). The *factual* part — done or not, set count, first/last exposure — is never
+The curated part lives in `data/movement-library.csv` (pattern, role, pool, note). The
+rotation verdict is *derived* from role + pool + medical status + what the current block
+is running — hand-typing it alongside the role let the two drift, and after one editing
+pass 21 of 77 rows contradicted themselves ("Not for me" carrying "Add now"). The role is
+the athlete's call; the verdict follows from it. The *factual* part — done or not, set count, first/last exposure — is never
 hand-maintained: it is recomputed from `data/logs/workouts.csv` on every run, so the
 tab re-renders current instead of drifting. "In current block" comes from
 `brain/current-block.json`.
@@ -50,6 +53,23 @@ HEADERS = [
     "Pattern", "Movement", "Done", "In Current Block", "Role",
     "Secondary Pool", "Rotation Verdict", "Sets Logged", "First Used", "Last Used", "Note",
 ]
+
+
+def verdict(role: str, done: bool, active: bool, medical: bool, block: str) -> str:
+    """The rotation call, derived so it can never contradict the role beside it."""
+    if role == "Primary":
+        return "Fixed — never rotates"
+    if role == "Injury log":
+        return "—"
+    if role in ("Not for me", "Retired"):
+        return "No"
+    if active:
+        return f"In use — {block}"
+    if medical:
+        return "Blocked — medical"
+    if not done:
+        return "Needs first exposure"
+    return "Available now"
 COL_PX = [90, 260, 60, 130, 100, 120, 150, 90, 100, 100, 520]
 
 # Hevy timestamps: "Jan 21, 2023, 1:21 PM".
@@ -88,7 +108,7 @@ def log_stats() -> dict[str, dict]:
 
 
 def current_block_names() -> tuple[set[str], str]:
-    """Exercise names prescribed anywhere in the current block, plus the block id."""
+    """Exercise names prescribed anywhere in the current block, plus its id and short label."""
     block = json.loads(CURRENT_BLOCK.read_text())
     names = {
         ex.get("name")
@@ -96,12 +116,16 @@ def current_block_names() -> tuple[set[str], str]:
         for ex in entry.get("exercises", [])
         if ex.get("name")
     }
-    return names, block.get("block_id", "current block")
+    block_id = block.get("block_id", "current block")
+    # "2026-Q3-B05" -> "B5": the label the athlete actually uses for a block.
+    tail = block_id.rsplit("-", 1)[-1]
+    short = f"B{int(tail[1:])}" if tail[:1] == "B" and tail[1:].isdigit() else block_id
+    return names, block_id, short
 
 
 def build_grid() -> tuple[list[list[str]], list[dict]]:
     stats = log_stats()
-    block_names, block_id = current_block_names()
+    block_names, block_id, short = current_block_names()
 
     rows = list(csv.DictReader(LIBRARY_CSV.open(newline="")))
     # A typo in a hevy_name would silently render a real movement as "never done" — the
@@ -123,7 +147,7 @@ def build_grid() -> tuple[list[list[str]], list[dict]]:
             active,
             r["role"],
             r["pool"] or "—",
-            r["verdict"],
+            verdict(r["role"], bool(st), active == "Yes", r["medical_block"] == "yes", short),
             str(st["sets"]) if st else "",
             st["first"].date().isoformat() if st and st["first"] else "",
             st["last"].date().isoformat() if st and st["last"] else "",
