@@ -113,6 +113,14 @@ def load_checks(path: Path = CHECKS_MD) -> list[Check]:
         m = ROW_RE.match(line.strip())
         if not m:
             continue
+        # ROW_RE only checks the SHAPE of the date; "2026-99-99" matches it and then
+        # explodes downstream. Skip a row we can't date rather than let one typo take
+        # out the whole section.
+        try:
+            date_cls.fromisoformat(m.group("date"))
+        except ValueError:
+            print(f"⚠️ back-checks: skipping row with an impossible date {m.group('date')!r}")
+            continue
         out.append(Check(
             session_date=m.group("date"),
             lift=m.group("lift").lower(),
@@ -241,6 +249,11 @@ def load_injections(path: Path = INJECTIONS_MD) -> list[dict]:
     for line in path.read_text().splitlines():
         m = INJ_RE.match(line.strip())
         if not m or m.group("status").lower() == "cancelled":
+            continue
+        try:
+            date_cls.fromisoformat(m.group("date"))
+        except ValueError:
+            print(f"⚠️ injections: skipping row with an impossible date {m.group('date')!r}")
             continue
         out.append({
             "date": m.group("date"),
