@@ -40,10 +40,11 @@ WORKOUTS_CSV = REPO_ROOT / "data" / "logs" / "workouts.csv"
 CURRENT_BLOCK = REPO_ROOT / "brain" / "current-block.json"
 
 TAB_TITLE = "Movement Library"
-SCOPES = [
-    "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/drive",
-]
+# Deliberately narrower than export_block.py's scopes: this script only ever opens an
+# existing spreadsheet by key and writes one tab. It never creates a file, so it never
+# needs Drive. Anything holding this key can then touch the spreadsheets shared with the
+# service account and nothing else in Drive.
+SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
 
 HEADERS = [
     "Pattern", "Movement", "Done", "In Current Block", "Role",
