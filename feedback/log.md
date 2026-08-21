@@ -10,6 +10,39 @@
 
 ---
 
+### 2026-08-21 · exercise, load · equipment limits and conservative re-entry loads
+
+**Feedback (two decisions):**
+
+1. **Seal Row · Floor Press · Pin Press · Safety Squat Bar Squat are equipment-blocked**, not
+   rejected on merit — "it doesn't have an environment or setup for those four movements, so I
+   can't add this one now for a long time unless I move the gym." LA Fitness lacks a seal-row
+   bench, a rack setup for floor/pin pressing, and an SSB.
+2. **Front Squat and High-bar Squat stay squat secondaries** — "as long as we keep it
+   conservative on the weight load."
+
+**Why this matters:** the first four had been sitting under role `Not for me`, which reads as
+preference and loses the reason. The coach had re-pitched Seal Row and Floor Press across three
+consecutive turns because nothing recorded *why* they were out. They now carry an
+`equipment_block` flag rendering as **"No — no equipment"**, so a gym change is a one-flag
+revisit instead of a rediscovery, and until then they stop being suggested.
+
+**Grounded (Hevy):** High-bar Squats — 25 sessions, median top **345 lb**, max 375, last trained
+**2025-12-08**. Front Squat — 3 sessions ever, 135 lb (2023) and 115×5 (2025-12-23). Low-bar sits
+at 405 median / 465×3 as recently as 2026-07-27. The gap is the point: converting a high-bar
+re-entry off the low-bar number would put him near 345 on a lift he hasn't touched in ten months,
+with a back under treatment.
+
+**Still standing:** the underlying need Seal Row was picked for — chest-supported rowing with zero
+lumbar load while the back is treated — is real and now unmet in this table. It's served outside
+it by Chest Supported Incline Row (DB) and Iso-Lateral Row (Machine), both already in his log.
+
+**Actions taken:** (1) `equipment_block` column + derived verdict; (2) notes on all six rows record
+the reason; (3) new rule `secondary-first-exposure`.
+→ rules: `secondary-first-exposure`, `secondary-rotation`
+
+---
+
 ### 2026-08-21 · general, exercise · movement library drives block design
 
 **Feedback:** Build the barbell movement library into a table that block design actually pulls

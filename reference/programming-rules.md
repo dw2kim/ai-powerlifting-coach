@@ -51,6 +51,20 @@
     at bodyweight because trigger-point injections went into those exact muscles, and the sync
     would have rebased it to 45 lb the following Saturday, silently undoing a medical restriction.
     A hold is only lifted by a human. [FB 2026-08-07]
+- **secondary-first-exposure** — A secondary rotated in with **no recent log anchor** — never
+  trained, or last trained more than ~6 months ago — is prescribed **conservatively from what he
+  completes**, never converted from the primary's load. Athlete's own words: fine to run these
+  "as long as we keep it conservative on the weight load".
+  - **No anchor at all** (Front Squat: 3 sessions ever, 135 lb in 2023, 115×5 Dec 2025) — treat
+    as a first exposure. Start light enough to own the position, build from the logged result.
+  - **Stale anchor** (High-bar Squat: 345 median / 375 max top set, but last trained Dec 2025 and
+    before the back went under treatment) — the number is history, not a starting point. Open
+    well under it and let the log re-establish the level.
+  - **Never** derive the load by converting from the current primary. High-bar is not low-bar
+    minus a percentage, and a 405 lb low-bar does not authorize a 345 lb high-bar re-entry.
+  This is the prescription-time counterpart to `sheet-load-sync`'s first-exposure rebasing:
+  that one fixes a wrong anchor mid-block, this one avoids setting a wrong anchor at design
+  time. [FB 2026-08-21]
 - **accessory-progression** — Accessories progress *gradually*: hold a load for 2–3 weeks,
   then small bumps. Do **not** apply the primary/secondary "+5 lb each week" default to
   accessories. They should still trend up across blocks, just slowly. [FB 2026-06-14]

@@ -67,12 +67,18 @@ def pool_for(pattern: str, role: str) -> str:
     return POOL_BY_PATTERN.get(pattern, "—") if role == "Secondary" else "—"
 
 
-def verdict(role: str, done: bool, active: bool, medical: bool, block: str) -> str:
+def verdict(role: str, done: bool, active: bool, medical: bool, block: str,
+            equipment: bool = False) -> str:
     """The rotation call, derived so it can never contradict the role beside it."""
     if role == "Primary":
         return "Fixed — never rotates"
     if role == "Injury log":
         return "—"
+    # Equipment beats preference: these are movements he would train if the gym had the
+    # kit. Saying so stops them being re-pitched every block, and makes a gym change a
+    # one-flag revisit rather than a rediscovery.
+    if equipment:
+        return "No — no equipment"
     if role in ("Not for me", "Retired"):
         return "No"
     if active:
@@ -167,7 +173,8 @@ def build_grid() -> tuple[list[list[str]], list[dict]]:
             active,
             r["role"],
             pool_for(r["pattern"], r["role"]),
-            verdict(r["role"], bool(st), active == "Yes", r["medical_block"] == "yes", short),
+            verdict(r["role"], bool(st), active == "Yes", r["medical_block"] == "yes", short,
+                    r["equipment_block"] == "yes"),
             str(st["sets"]) if st else "",
             st["first"].date().isoformat() if st and st["first"] else "",
             st["last"].date().isoformat() if st and st["last"] else "",
@@ -267,7 +274,8 @@ def pools() -> str:
     def line(r: dict) -> str:
         st = stats.get(r["hevy_name"]) if r["hevy_name"] else None
         active = r["block_alias"] and r["block_alias"] in block_names
-        v = verdict(r["role"], bool(st), bool(active), r["medical_block"] == "yes", short)
+        v = verdict(r["role"], bool(st), bool(active), r["medical_block"] == "yes", short,
+                    r["equipment_block"] == "yes")
         return f"    {r['movement']:38s} {v}"
 
     out = [f"Movement library · block {block_id}", ""]
