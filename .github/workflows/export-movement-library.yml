@@ -50,7 +50,10 @@ jobs:
         if: ${{ inputs.skip_pull == false }}
         env:
           GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
-          SHEETS_SPREADSHEET_ID: ${{ secrets.SHEETS_SPREADSHEET_ID }}
+          # The spreadsheet id is not a credential — it is the id in the sheet's URL — so it
+          # is just as valid as a repo Variable as a Secret. Run #1 failed with "not set"
+          # against the secret alone; read both so either placement works.
+          SHEETS_SPREADSHEET_ID: ${{ secrets.SHEETS_SPREADSHEET_ID || vars.SHEETS_SPREADSHEET_ID }}
         run: python -m scripts.sheets.export_movement_library --pull --tab "${{ inputs.tab }}"
 
       - name: Commit any role changes
@@ -69,7 +72,10 @@ jobs:
       - name: Render the tab
         env:
           GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
-          SHEETS_SPREADSHEET_ID: ${{ secrets.SHEETS_SPREADSHEET_ID }}
+          # The spreadsheet id is not a credential — it is the id in the sheet's URL — so it
+          # is just as valid as a repo Variable as a Secret. Run #1 failed with "not set"
+          # against the secret alone; read both so either placement works.
+          SHEETS_SPREADSHEET_ID: ${{ secrets.SHEETS_SPREADSHEET_ID || vars.SHEETS_SPREADSHEET_ID }}
         run: |
           if [ "${{ inputs.dry_run }}" = "true" ]; then
             python -m scripts.sheets.export_movement_library --dry-run
