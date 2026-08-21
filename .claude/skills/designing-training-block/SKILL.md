@@ -16,6 +16,12 @@ description: Design a new training block — pull context from prior block + mem
 - `brain/active-issues.md` — anything to work around
 - `reference/programming-rules.md` — **active rules from athlete feedback. Binding.** Read
   before prescribing. Check `feedback/log.md` for any exercise-level notes too.
+- **`python -m scripts.sheets.export_movement_library --pools`** — the movement library:
+  primaries, the three secondary pools, and the barbell accessories, each with a live verdict.
+  **Run it before choosing any primary, secondary or barbell accessory.** The secondary pools
+  are complete — nothing outside them is legal — and a movement marked `Blocked — medical` is
+  not selectable while that holds. The accessory list is only the barbell subset; DB/cable/
+  machine accessories are still chosen under `accessory-rotation`. See `secondary-rotation`.
 
 ## Procedure
 

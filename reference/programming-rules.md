@@ -51,6 +51,20 @@
     at bodyweight because trigger-point injections went into those exact muscles, and the sync
     would have rebased it to 45 lb the following Saturday, silently undoing a medical restriction.
     A hold is only lifted by a human. [FB 2026-08-07]
+- **secondary-first-exposure** — A secondary rotated in with **no recent log anchor** — never
+  trained, or last trained more than ~6 months ago — is prescribed **conservatively from what he
+  completes**, never converted from the primary's load. Athlete's own words: fine to run these
+  "as long as we keep it conservative on the weight load".
+  - **No anchor at all** (Front Squat: 3 sessions ever, 135 lb in 2023, 115×5 Dec 2025) — treat
+    as a first exposure. Start light enough to own the position, build from the logged result.
+  - **Stale anchor** (High-bar Squat: 345 median / 375 max top set, but last trained Dec 2025 and
+    before the back went under treatment) — the number is history, not a starting point. Open
+    well under it and let the log re-establish the level.
+  - **Never** derive the load by converting from the current primary. High-bar is not low-bar
+    minus a percentage, and a 405 lb low-bar does not authorize a 345 lb high-bar re-entry.
+  This is the prescription-time counterpart to `sheet-load-sync`'s first-exposure rebasing:
+  that one fixes a wrong anchor mid-block, this one avoids setting a wrong anchor at design
+  time. [FB 2026-08-21]
 - **accessory-progression** — Accessories progress *gradually*: hold a load for 2–3 weeks,
   then small bumps. Do **not** apply the primary/secondary "+5 lb each week" default to
   accessories. They should still trend up across blocks, just slowly. [FB 2026-06-14]
@@ -82,13 +96,27 @@
   Hold a secondary when a weak point is better served by staying on it — don't rotate for its
   own sake. Distinct from `accessory-rotation` (accessories + the 1–2 new-movement expansion);
   this governs only the barbell-lift secondary slot. **Primaries never change; pull-up & dip
-  secondaries are out of scope.** Draw a rotated-in secondary from the athlete's approved pools:
-  - **Squat:** 3-1-0 Tempo Squat · Paused (low-bar) Squat
-  - **Bench:** Spoto Bench Press · Larsen Press (No Feet) · Close Grip Bench (CGB)
-  - **Deadlift:** Paused Deadlift · Romanian Deadlift (RDL) · Paused RDL
+  secondaries are out of scope.**
+
+  **The pools live in `data/movement-library.csv`, not in this rule.** Read them with
+  `python -m scripts.sheets.export_movement_library --pools`, which prints each pool with a
+  live verdict per movement (`Available now` · `In use — B<n>` · `Blocked — medical`). The
+  athlete maintains the roles in the **Movement Library** tab of the Sheet; the pools follow
+  from them. The old hard-coded list is gone — it had drifted from what he actually trains
+  (it named a 3-1-0 Tempo *Squat* he has never logged, and omitted six variants he has).
+
+  - **Secondary pools are complete.** A movement not listed as a `Secondary` for that lift is
+    not a legal secondary. Don't invent one; add it to the library first.
+  - **`Blocked — medical` is not selectable** while it holds. It's set per movement in the
+    library for the loaded hinges, the repeat-axial squat variants and the erector-taxing rows,
+    for as long as the low back is under treatment.
+  - **Accessories in the library are a subset, not the pool.** It lists only barbell options —
+    optional, good to have. Dumbbell, cable and machine accessories are chosen as before, under
+    `accessory-rotation`; the library never claimed to cover them.
 
   When you rotate, apply the variant/implement load-conversion step of `loads-from-logs`. The
-  Sheet colour-codes each lift's primary + secondary with one shared tint. [FB 2026-07-03]
+  Sheet colour-codes each lift's primary + secondary with one shared tint.
+  [FB 2026-07-03, pools moved to the library 2026-08-21]
 - **core-every-day** — **Every training day carries at least one core/abs accessory**, and each
   day gets a **different pattern** so they aren't redundant: anti-lateral-flexion (side plank) ·
   anti-rotation (Pallof press) · anti-extension (dead bug) · spine-neutral endurance (bird dog).
