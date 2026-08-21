@@ -213,7 +213,10 @@ def pull(tab: str) -> bool:
 
     sheet_id = os.environ.get("SHEETS_SPREADSHEET_ID")
     if not sheet_id:
-        raise SystemExit("SHEETS_SPREADSHEET_ID not set.")
+        raise SystemExit(
+            "SHEETS_SPREADSHEET_ID not set — the id in the spreadsheet URL. In CI set it as a "
+            "repo Secret or Variable (it is not a credential); locally put it in .env."
+        )
     ws = _client().open_by_key(sheet_id).worksheet(tab)
     records = ws.get_all_records()
     roles = {r["Movement"]: str(r["Role"]).strip() for r in records if r.get("Movement")}
@@ -284,7 +287,10 @@ def write_tab(grid: list[list[str]], fmts: list[dict], tab: str) -> str:
 
     sheet_id = os.environ.get("SHEETS_SPREADSHEET_ID")
     if not sheet_id:
-        raise SystemExit("SHEETS_SPREADSHEET_ID not set — the spreadsheet shared with the service account.")
+        raise SystemExit(
+            "SHEETS_SPREADSHEET_ID not set — the id in the spreadsheet URL. In CI set it as a "
+            "repo Secret or Variable (it is not a credential); locally put it in .env."
+        )
     sh = _client().open_by_key(sheet_id)
 
     need_rows, need_cols = len(grid) + 5, len(HEADERS)
