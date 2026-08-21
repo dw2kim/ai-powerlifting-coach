@@ -1,78 +1,78 @@
-pattern,movement,hevy_name,block_alias,role,pool,medical_block,note
-Squat,Low-bar Squat,Low-bar Squat,Low-bar Squat,Primary,,,Comp squat. Light position work only under the medical override.
-Squat,Paused Low-bar Squat,Paused Low Bar Squat,,Secondary,Squat,yes,Cut in B5 — it was the second weekly axial session.
-Squat,3-0-0 Tempo Low-bar Squat,3-0-0 Tempo Low Bar Squat,,Secondary,Squat,yes,"Approved pool says ""3-1-0 Tempo Squat""; the log only has 3-0-0. Naming needs reconciling."
-Squat,Squat (Barbell) — generic,Squat (Barbell),,Retired,,,Pre-low-bar generic log entry. Superseded.
-Squat,High-bar Squat,High-bar Squats,,Secondary,,yes,Dropped when low-bar became the comp lift.
-Squat,POWER Squat,POWER Squat,,Retired,,,2023 only.
-Squat,Front Squat,Front Squat,,Secondary,,yes,9 sets in three years. Not a real exposure.
-Squat,Full Squat,Full Squat,,Retired,,,Single session.
-Squat,3-0-2 Tempo Squat,3-0-2 tempo Squat,,Secondary,,yes,Single session.
-Squat,Barbell Lunge,Lunge (Barbell),,Accessory,,,Lunges are DB-loaded now.
-Squat,Injured Low-bar Squat,Injured Low-bar Squat,,Injury log,,,Log tag for training around a flare — not a movement choice.
-Squat,Safety Squat Bar Squat,,,Not for me,,,Less shoulder external rotation than low-bar and a more upright torso. Only if the gym has the bar — check.
-Squat,Barbell Reverse Lunge,,,Not for me,,,You have only ever loaded lunges with dumbbells.
-Squat,Barbell Split Squat,,,Not for me,,,Same gap as the reverse lunge.
-Squat,Box Squat,,,Not for me,,,Situational tool for a problem you do not have.
-Squat,Pin / Anderson Squat,,,Not for me,,,No weak point it addresses.
-Squat,Zercher Squat,,,Not for me,,,Noise.
-Squat,Overhead Squat,,,Not for me,,,Noise.
-Squat,Barbell Step-up,,,Not for me,,,Noise.
-Hinge,Sumo Deadlift,Sumo Deadlift,Sumo Deadlift,Primary,,,Comp deadlift. Light technique work only under the medical override.
-Hinge,Paused Sumo Deadlift,Paused Sumo Deadlift,,Secondary,Deadlift,yes,"The pool's ""Paused Deadlift"". Loaded hinge — out until B6 clearance."
-Hinge,Paused RDL,Paused RDL,,Secondary,Deadlift,yes,Cut in B5. Loaded hinge.
-Hinge,Romanian Deadlift (Barbell),Romanian Deadlift (Barbell),,Secondary,Deadlift,yes,Loaded hinge — out until B6 clearance.
-Hinge,Conventional Deadlift,Deadlift (Barbell),,Primary,,yes,Retired in favour of sumo.
-Hinge,Tempo RDL,Tempo RDL,,Retired,,,2024 only.
-Hinge,POWER Sumo Deadlift,POWER Sumo Deadlift,,Retired,,,2023 only.
-Hinge,Barbell Hip Thrust,Hip Thrust (Barbell),,Retired,,,Now run on the Smith machine.
-Hinge,Tempo Sumo,Tempo Sumo,,Not for me,,,Minor exposure.
-Hinge,3-1-3 Tempo RDL,3-1-3 Tempo RDL,,Secondary,,yes,Minor exposure.
-Hinge,3-0-3 Tempo Sumo,3-0-3 Tempo Sumo,,Not for me,,,Minor exposure.
-Hinge,Injured Paused Sumo,Injured Paused Sumo,,Injury log,,,Log tag for training around a flare.
-Hinge,Injured RDL,Injured RDL,,Injury log,,,Log tag for training around a flare.
-Hinge,Rack Pull / Block Pull (above knee),,,Accessory,,yes,Direct fix for the sumo hitch past the knees — the one position you have never trained in isolation. B6+ on clearance.
-Hinge,Halting Deadlift,,,Not for me,,yes,Same target as the rack pull. B6+ on clearance.
-Hinge,Good Morning,,,Accessory,,yes,Real erector value but heavy axial load. Not while the low back is under treatment.
-Hinge,Deficit Deadlift,,,Not for me,,,Your problem is past the knees not off the floor.
-Hinge,Snatch-grip Deadlift,,,Not for me,,,No carryover to sumo.
-Hinge,Stiff-Leg Deadlift,,,Not for me,,,Redundant with the RDL.
-Hinge,Trap-Bar Deadlift,,,Not for me,,,Does not serve sumo.
-Hinge,Barbell Glute Bridge,,,Not for me,,,Redundant with the hip thrust.
-Press,Comp Bench (POWER Bench Press),POWER Bench Press,Comp Bench,Primary,,,Priority lift.
-Press,Close Grip Bench (CGB),Bench Press - Close Grip (Barbell),CGB,Secondary,Bench,,Running on D3.
-Press,Spoto Bench,Spoto Bench,Spoto Bench Press,Secondary,Bench,,Running on D4.
-Press,Larsen Bench Press,Larsen Bench Press,,Secondary,Bench,,Feet-off variant. Out of rotation since Feb 2026.
-Press,Paused Larsen Bench Press,Paused Larsen Bench Press,,Secondary,Bench,,Out of rotation since May 2026.
-Press,3ct Pause Bench,3ct Pause Bench,,Secondary,,,Long-pause work superseded by Spoto.
-Press,2ct Paused Bench,2ct Paused Bench,,Retired,,,Superseded by Spoto.
-Press,3-1-0 Tempo Bench,3-1-0 Tempo Bench,,Secondary,,,Out since Dec 2025.
-Press,Bench Press (Barbell) — generic,Bench Press (Barbell),,Retired,,,Generic log entry. Superseded by the named variants.
-Press,Incline Bench Press (Barbell),Incline Bench Press (Barbell),,Accessory,,,Incline is dumbbell-only now.
-Press,Decline Bench Press (Barbell),Decline Bench Press (Barbell),,Accessory,,,Out since 2024.
-Press,Wide Grip Bench Press,Bench Press - Wide Grip (Barbell),,Not for me,,,One session in 2023.
-Press,Floor Press,,,Not for me,,,Top candidate. Cuts the bottom third of the ROM — the range that hurts — and loads triceps and lockout. Extending the bench pool needs a feedback entry.
-Press,Pin Press,,,Not for me,,,Strong second to the floor press. Shoulder-safe overload.
-Press,Board Press,,,Not for me,,,Same job as the pin press — pick one.
-Press,Reverse-Grip Bench,,,Not for me,,,Wrong bet with your shoulder history.
-Press,Feet-Up Bench,,,Not for me,,,Redundant with the Larsen.
-Press,Bench with chains or bands,,,Not for me,,,LA Fitness will not have them.
-Overhead,Overhead Press (Barbell),Overhead Press (Barbell),,Accessory,,,Accessory only. Not a goal lift.
-Overhead,Upright Row (Barbell),Upright Row (Barbell),,Accessory,,,Minor. Impingement-adjacent — not worth expanding.
-Overhead,Front Raise (Barbell),Front Raise (Barbell),,Accessory,,,Delt work is DB and cable now.
-Overhead,Push Press,,,Not for me,,,Chronic shoulder.
-Overhead,Push Jerk,,,Not for me,,,Chronic shoulder.
-Overhead,Behind-the-Neck Press,,,Not for me,,,Worst available option for your shoulder.
-Overhead,Seated Barbell OHP,,,Not for me,,,No gap it fills.
-Overhead,Z-Press,,,Not for me,,,No gap it fills.
-Overhead,Bradford Press,,,Not for me,,,No gap it fills.
-Overhead,Landmine Press,,,Not for me,,,No gap it fills.
-Row/Pull,Meadows Row (Barbell),Meadows Rows (Barbell),,Accessory,,,Landmine-style — not a straight bar.
-Row/Pull,Pendlay Row (Barbell),Pendlay Row (Barbell),,Accessory,,yes,Erector-taxing. Bad fit while the low back is under treatment.
-Row/Pull,Bent Over Row (Barbell),Bent Over Row (Barbell),,Accessory,,yes,Erector-taxing. Same objection as the Pendlay.
-Row/Pull,T-Bar Row,T Bar Row,,Accessory,,,Landmine-style — not a straight bar.
-Row/Pull,Landmine Row,Landmine Row,,Not for me,,,Single session.
-Row/Pull,Seal Row,,,Not for me,,,Best fit for right now — chest-supported so zero lumbar load. Feeds bench stability and the weighted pull-up.
-Row/Pull,Yates / Underhand Row,,,Not for me,,,Marginal over the Pendlay.
-Row/Pull,Barbell High Pull,,,Not for me,,,Noise.
-Row/Pull,Olympic lifts (clean / snatch / jerk),,,Not for me,,,No carryover to the Big 5 for the time they cost.
+pattern,movement,hevy_name,block_alias,role,medical_block,note
+Squat,Low-bar Squat,Low-bar Squat,Low-bar Squat,Primary,,Comp squat. Light position work only under the medical override.
+Squat,Paused Low-bar Squat,Paused Low Bar Squat,,Secondary,yes,Cut in B5 — it was the second weekly axial session.
+Squat,3-0-0 Tempo Low-bar Squat,3-0-0 Tempo Low Bar Squat,,Secondary,yes,"Approved pool says ""3-1-0 Tempo Squat""; the log only has 3-0-0. Naming needs reconciling."
+Squat,Squat (Barbell) — generic,Squat (Barbell),,Retired,,Pre-low-bar generic log entry. Superseded.
+Squat,High-bar Squat,High-bar Squats,,Secondary,yes,Dropped when low-bar became the comp lift.
+Squat,POWER Squat,POWER Squat,,Retired,,2023 only.
+Squat,Front Squat,Front Squat,,Secondary,yes,9 sets in three years. Not a real exposure.
+Squat,Full Squat,Full Squat,,Retired,,Single session.
+Squat,3-0-2 Tempo Squat,3-0-2 tempo Squat,,Secondary,yes,Single session.
+Squat,Barbell Lunge,Lunge (Barbell),,Accessory,,Lunges are DB-loaded now.
+Squat,Injured Low-bar Squat,Injured Low-bar Squat,,Injury log,,Log tag for training around a flare — not a movement choice.
+Squat,Safety Squat Bar Squat,,,Not for me,,Less shoulder external rotation than low-bar and a more upright torso. Only if the gym has the bar — check.
+Squat,Barbell Reverse Lunge,,,Not for me,,You have only ever loaded lunges with dumbbells.
+Squat,Barbell Split Squat,,,Not for me,,Same gap as the reverse lunge.
+Squat,Box Squat,,,Not for me,,Situational tool for a problem you do not have.
+Squat,Pin / Anderson Squat,,,Not for me,,No weak point it addresses.
+Squat,Zercher Squat,,,Not for me,,Noise.
+Squat,Overhead Squat,,,Not for me,,Noise.
+Squat,Barbell Step-up,,,Not for me,,Noise.
+Hinge,Sumo Deadlift,Sumo Deadlift,Sumo Deadlift,Primary,,Comp deadlift. Light technique work only under the medical override.
+Hinge,Paused Sumo Deadlift,Paused Sumo Deadlift,,Secondary,yes,"The pool's ""Paused Deadlift"". Loaded hinge — out until B6 clearance."
+Hinge,Paused RDL,Paused RDL,,Secondary,yes,Cut in B5. Loaded hinge.
+Hinge,Romanian Deadlift (Barbell),Romanian Deadlift (Barbell),,Secondary,yes,Loaded hinge — out until B6 clearance.
+Hinge,Conventional Deadlift,Deadlift (Barbell),,Secondary,yes,Retired in favour of sumo.
+Hinge,Tempo RDL,Tempo RDL,,Retired,,2024 only.
+Hinge,POWER Sumo Deadlift,POWER Sumo Deadlift,,Retired,,2023 only.
+Hinge,Barbell Hip Thrust,Hip Thrust (Barbell),,Retired,,Now run on the Smith machine.
+Hinge,Tempo Sumo,Tempo Sumo,,Not for me,,Minor exposure.
+Hinge,3-1-3 Tempo RDL,3-1-3 Tempo RDL,,Secondary,yes,Minor exposure.
+Hinge,3-0-3 Tempo Sumo,3-0-3 Tempo Sumo,,Not for me,,Minor exposure.
+Hinge,Injured Paused Sumo,Injured Paused Sumo,,Injury log,,Log tag for training around a flare.
+Hinge,Injured RDL,Injured RDL,,Injury log,,Log tag for training around a flare.
+Hinge,Rack Pull / Block Pull (above knee),,,Accessory,yes,Direct fix for the sumo hitch past the knees — the one position you have never trained in isolation. B6+ on clearance.
+Hinge,Halting Deadlift,,,Not for me,yes,Same target as the rack pull. B6+ on clearance.
+Hinge,Good Morning,,,Accessory,yes,Real erector value but heavy axial load. Not while the low back is under treatment.
+Hinge,Deficit Deadlift,,,Not for me,,Your problem is past the knees not off the floor.
+Hinge,Snatch-grip Deadlift,,,Not for me,,No carryover to sumo.
+Hinge,Stiff-Leg Deadlift,,,Not for me,,Redundant with the RDL.
+Hinge,Trap-Bar Deadlift,,,Not for me,,Does not serve sumo.
+Hinge,Barbell Glute Bridge,,,Not for me,,Redundant with the hip thrust.
+Press,Comp Bench (POWER Bench Press),POWER Bench Press,Comp Bench,Primary,,Priority lift.
+Press,Close Grip Bench (CGB),Bench Press - Close Grip (Barbell),CGB,Secondary,,Running on D3.
+Press,Spoto Bench,Spoto Bench,Spoto Bench Press,Secondary,,Running on D4.
+Press,Larsen Bench Press,Larsen Bench Press,,Secondary,,Feet-off variant. Out of rotation since Feb 2026.
+Press,Paused Larsen Bench Press,Paused Larsen Bench Press,,Secondary,,Out of rotation since May 2026.
+Press,3ct Pause Bench,3ct Pause Bench,,Secondary,,Long-pause work superseded by Spoto.
+Press,2ct Paused Bench,2ct Paused Bench,,Retired,,Superseded by Spoto.
+Press,3-1-0 Tempo Bench,3-1-0 Tempo Bench,,Secondary,,Out since Dec 2025.
+Press,Bench Press (Barbell) — generic,Bench Press (Barbell),,Retired,,Generic log entry. Superseded by the named variants.
+Press,Incline Bench Press (Barbell),Incline Bench Press (Barbell),,Accessory,,Incline is dumbbell-only now.
+Press,Decline Bench Press (Barbell),Decline Bench Press (Barbell),,Accessory,,Out since 2024.
+Press,Wide Grip Bench Press,Bench Press - Wide Grip (Barbell),,Not for me,,One session in 2023.
+Press,Floor Press,,,Not for me,,Top candidate. Cuts the bottom third of the ROM — the range that hurts — and loads triceps and lockout. Extending the bench pool needs a feedback entry.
+Press,Pin Press,,,Not for me,,Strong second to the floor press. Shoulder-safe overload.
+Press,Board Press,,,Not for me,,Same job as the pin press — pick one.
+Press,Reverse-Grip Bench,,,Not for me,,Wrong bet with your shoulder history.
+Press,Feet-Up Bench,,,Not for me,,Redundant with the Larsen.
+Press,Bench with chains or bands,,,Not for me,,LA Fitness will not have them.
+Overhead,Overhead Press (Barbell),Overhead Press (Barbell),,Accessory,,Accessory only. Not a goal lift.
+Overhead,Upright Row (Barbell),Upright Row (Barbell),,Accessory,,Minor. Impingement-adjacent — not worth expanding.
+Overhead,Front Raise (Barbell),Front Raise (Barbell),,Accessory,,Delt work is DB and cable now.
+Overhead,Push Press,,,Not for me,,Chronic shoulder.
+Overhead,Push Jerk,,,Not for me,,Chronic shoulder.
+Overhead,Behind-the-Neck Press,,,Not for me,,Worst available option for your shoulder.
+Overhead,Seated Barbell OHP,,,Not for me,,No gap it fills.
+Overhead,Z-Press,,,Not for me,,No gap it fills.
+Overhead,Bradford Press,,,Not for me,,No gap it fills.
+Overhead,Landmine Press,,,Not for me,,No gap it fills.
+Row/Pull,Meadows Row (Barbell),Meadows Rows (Barbell),,Accessory,,Landmine-style — not a straight bar.
+Row/Pull,Pendlay Row (Barbell),Pendlay Row (Barbell),,Accessory,yes,Erector-taxing. Bad fit while the low back is under treatment.
+Row/Pull,Bent Over Row (Barbell),Bent Over Row (Barbell),,Accessory,yes,Erector-taxing. Same objection as the Pendlay.
+Row/Pull,T-Bar Row,T Bar Row,,Accessory,,Landmine-style — not a straight bar.
+Row/Pull,Landmine Row,Landmine Row,,Not for me,,Single session.
+Row/Pull,Seal Row,,,Not for me,,Best fit for right now — chest-supported so zero lumbar load. Feeds bench stability and the weighted pull-up.
+Row/Pull,Yates / Underhand Row,,,Not for me,,Marginal over the Pendlay.
+Row/Pull,Barbell High Pull,,,Not for me,,Noise.
+Row/Pull,Olympic lifts (clean / snatch / jerk),,,Not for me,,No carryover to the Big 5 for the time they cost.

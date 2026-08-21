@@ -10,6 +10,41 @@
 
 ---
 
+### 2026-08-21 · general, exercise · movement library drives block design
+
+**Feedback:** Build the barbell movement library into a table that block design actually pulls
+from — primaries, secondaries and accessories — instead of picking secondaries from memory.
+The athlete set the `Role` on all 77 movements himself in the Sheet's **Movement Library** tab.
+
+**Two semantics he specified, and they differ:**
+- **Secondary = the complete set.** If a movement isn't in the library as a `Secondary` for
+  that lift, it is not a legal choice for the secondary slot.
+- **Accessory = a subset.** The library holds only the *barbell* accessories — "optional but
+  good to have". DB/cable/machine accessories are still chosen under `accessory-rotation`.
+
+**Root cause it fixed:** `secondary-rotation` carried a hand-written pool list that had drifted
+from the training log — it named a "3-1-0 Tempo Squat" with zero logged sets while omitting six
+variants with real history. Same class of bug as sheet-derived loads: a list maintained by hand
+beside the data it describes.
+
+**Actions taken:** (1) roles synced from the Sheet into `data/movement-library.csv`;
+(2) the secondary pool is now *derived* from the movement's pattern, and the rotation verdict
+from role + medical status + the running block, so neither can contradict the role beside it —
+one editing pass had already produced 21 self-contradicting rows; (3) added
+`export_movement_library --pools`, the view block design reads; (4) `secondary-rotation` now
+points at the library instead of listing pools.
+
+**Also decided:** Conventional Deadlift enters the **Deadlift secondary** pool. The athlete
+first proposed alternating it with sumo as a *primary* each block; that was declined and he
+agreed — conventional is more lumbar-demanding than sumo with the back under trigger-point
+treatment, it doesn't address the past-the-knee hitch (the rack pull does), and alternating
+primaries halves specific exposure on the lift the 235 kg target is measured against. As a
+secondary it earns its stimulus without costing sumo specificity. Earliest exposure B7, and
+`Blocked — medical` until clearance.
+→ rules: `secondary-rotation`
+
+---
+
 ### 2026-08-11 · exercise, load · Hip Thrust re-anchored — 4th `exercise-name-mapping` catch
 **Feedback:** *"Yes, re-anchor it. I will do it with Smith this time as well."* (Coach had
 surfaced that B5's Hip Thrust was programmed as a first exposure when the log said otherwise.)

@@ -82,13 +82,27 @@
   Hold a secondary when a weak point is better served by staying on it — don't rotate for its
   own sake. Distinct from `accessory-rotation` (accessories + the 1–2 new-movement expansion);
   this governs only the barbell-lift secondary slot. **Primaries never change; pull-up & dip
-  secondaries are out of scope.** Draw a rotated-in secondary from the athlete's approved pools:
-  - **Squat:** 3-1-0 Tempo Squat · Paused (low-bar) Squat
-  - **Bench:** Spoto Bench Press · Larsen Press (No Feet) · Close Grip Bench (CGB)
-  - **Deadlift:** Paused Deadlift · Romanian Deadlift (RDL) · Paused RDL
+  secondaries are out of scope.**
+
+  **The pools live in `data/movement-library.csv`, not in this rule.** Read them with
+  `python -m scripts.sheets.export_movement_library --pools`, which prints each pool with a
+  live verdict per movement (`Available now` · `In use — B<n>` · `Blocked — medical`). The
+  athlete maintains the roles in the **Movement Library** tab of the Sheet; the pools follow
+  from them. The old hard-coded list is gone — it had drifted from what he actually trains
+  (it named a 3-1-0 Tempo *Squat* he has never logged, and omitted six variants he has).
+
+  - **Secondary pools are complete.** A movement not listed as a `Secondary` for that lift is
+    not a legal secondary. Don't invent one; add it to the library first.
+  - **`Blocked — medical` is not selectable** while it holds. It's set per movement in the
+    library for the loaded hinges, the repeat-axial squat variants and the erector-taxing rows,
+    for as long as the low back is under treatment.
+  - **Accessories in the library are a subset, not the pool.** It lists only barbell options —
+    optional, good to have. Dumbbell, cable and machine accessories are chosen as before, under
+    `accessory-rotation`; the library never claimed to cover them.
 
   When you rotate, apply the variant/implement load-conversion step of `loads-from-logs`. The
-  Sheet colour-codes each lift's primary + secondary with one shared tint. [FB 2026-07-03]
+  Sheet colour-codes each lift's primary + secondary with one shared tint.
+  [FB 2026-07-03, pools moved to the library 2026-08-21]
 - **core-every-day** — **Every training day carries at least one core/abs accessory**, and each
   day gets a **different pattern** so they aren't redundant: anti-lateral-flexion (side plank) ·
   anti-rotation (Pallof press) · anti-extension (dead bug) · spine-neutral endurance (bird dog).

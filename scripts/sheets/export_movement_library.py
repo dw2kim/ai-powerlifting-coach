@@ -7,7 +7,9 @@ tagged with its role and whether it's available for the secondary-rotation slot
 of scope by athlete request — the library exists to serve rotation decisions, not
 curl selection.
 
-The curated part lives in `data/movement-library.csv` (pattern, role, pool, note). The
+The curated part lives in `data/movement-library.csv` (pattern, role, note). The secondary
+pool follows from the pattern — a squat-pattern secondary is a squat secondary — so it is
+derived too rather than typed twice. The
 rotation verdict is *derived* from role + pool + medical status + what the current block
 is running — hand-typing it alongside the role let the two drift, and after one editing
 pass 21 of 77 rows contradicted themselves ("Not for me" carrying "Add now"). The role is
@@ -53,6 +55,16 @@ HEADERS = [
     "Pattern", "Movement", "Done", "In Current Block", "Role",
     "Secondary Pool", "Rotation Verdict", "Sets Logged", "First Used", "Last Used", "Note",
 ]
+
+
+# Which primary a secondary backs up. A pattern maps to exactly one Big-5 barbell lift, so
+# the pool follows from the pattern instead of being a second column to keep in sync.
+POOL_BY_PATTERN = {"Squat": "Squat", "Hinge": "Deadlift", "Press": "Bench"}
+
+
+def pool_for(pattern: str, role: str) -> str:
+    """The secondary pool a row belongs to, or an em dash when the row isn't a secondary."""
+    return POOL_BY_PATTERN.get(pattern, "—") if role == "Secondary" else "—"
 
 
 def verdict(role: str, done: bool, active: bool, medical: bool, block: str) -> str:
@@ -134,6 +146,14 @@ def build_grid() -> tuple[list[list[str]], list[dict]]:
     if unknown:
         raise SystemExit(f"hevy_name not found in the log: {unknown}")
 
+    orphans = sorted(r["movement"] for r in rows
+                     if r["role"] == "Secondary" and r["pattern"] not in POOL_BY_PATTERN)
+    if orphans:
+        raise SystemExit(
+            f"Secondary rows in a pattern with no Big-5 primary to back up: {orphans}. "
+            "Either the pattern is wrong or the role should be Accessory."
+        )
+
     grid: list[list[str]] = [HEADERS]
     fmts: list[dict] = []
     for i, r in enumerate(rows, start=2):  # row 1 is the header
@@ -146,7 +166,7 @@ def build_grid() -> tuple[list[list[str]], list[dict]]:
             done,
             active,
             r["role"],
-            r["pool"] or "—",
+            pool_for(r["pattern"], r["role"]),
             verdict(r["role"], bool(st), active == "Yes", r["medical_block"] == "yes", short),
             str(st["sets"]) if st else "",
             st["first"].date().isoformat() if st and st["first"] else "",
@@ -233,12 +253,47 @@ def write_tab(grid: list[list[str]], fmts: list[dict], tab: str) -> str:
     return sh.url
 
 
+def pools() -> str:
+    """The selectable movements, grouped the way block design consumes them.
+
+    Secondaries are the *complete* legal set for the secondary slot — if it isn't listed,
+    it isn't an option. Accessories are only the barbell subset; the real accessory pool
+    also holds dumbbell, cable and machine work this table never claimed to cover.
+    """
+    stats = log_stats()
+    block_names, block_id, short = current_block_names()
+    rows = list(csv.DictReader(LIBRARY_CSV.open(newline="")))
+
+    def line(r: dict) -> str:
+        st = stats.get(r["hevy_name"]) if r["hevy_name"] else None
+        active = r["block_alias"] and r["block_alias"] in block_names
+        v = verdict(r["role"], bool(st), bool(active), r["medical_block"] == "yes", short)
+        return f"    {r['movement']:38s} {v}"
+
+    out = [f"Movement library · block {block_id}", ""]
+    out.append("PRIMARIES (never rotate)")
+    out += [line(r) for r in rows if r["role"] == "Primary"]
+    for pool in ("Squat", "Bench", "Deadlift"):
+        out += ["", f"{pool.upper()} SECONDARY POOL — complete; nothing outside it is legal"]
+        out += [line(r) for r in rows
+                if r["role"] == "Secondary" and pool_for(r["pattern"], r["role"]) == pool]
+    out += ["", "BARBELL ACCESSORIES — a subset; DB/cable/machine options live outside this table"]
+    out += [line(r) for r in rows if r["role"] == "Accessory"]
+    return "\n".join(out)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--dry-run", action="store_true", help="print the grid, no Google calls")
     ap.add_argument("--csv", metavar="PATH", help="write the grid to a CSV for manual import")
+    ap.add_argument("--pools", action="store_true",
+                    help="print the selectable movements for block design; no Google calls")
     ap.add_argument("--tab", default=TAB_TITLE, help=f"tab name (default: {TAB_TITLE})")
     args = ap.parse_args()
+
+    if args.pools:
+        print(pools())
+        return
 
     grid, fmts = build_grid()
 
