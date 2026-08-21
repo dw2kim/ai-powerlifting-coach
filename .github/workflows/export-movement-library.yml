@@ -1,32 +1,39 @@
-name: Export movement library to Google Sheet
+name: Sync movement library with Google Sheet
 
-# Manual: renders data/movement-library.csv (joined against the Hevy log) to the
-# "Movement Library" tab on the spreadsheet in SHEETS_SPREADSHEET_ID.
+# Manual. Round-trips the "Movement Library" tab:
 #
-# Same reason as export-block.yml: the library is curated in a Claude Code session with no
-# Google credentials. Re-run this after editing data/movement-library.csv, or whenever the
-# log has moved enough that the set counts and last-used dates are stale.
+#   1. PULL  — the athlete's Role edits in the Sheet are the source of truth. Read them back
+#              into data/movement-library.csv and commit, so the repo carries the history.
+#   2. RENDER — re-derive the pool, the verdict and the Hevy-sourced columns, and write the tab.
+#
+# The pull must come first. Rendering straight from the repo would overwrite role edits made in
+# the Sheet since the last sync — the Sheet is where they are made, so they have to come back
+# before anything is written over them.
 on:
   workflow_dispatch:
     inputs:
       tab:
-        description: "Tab name to write"
+        description: "Tab name to sync"
         type: string
         default: Movement Library
       dry_run:
         description: "Print the grid to the job log instead of writing the Sheet"
         type: boolean
         default: false
+      skip_pull:
+        description: "Skip the pull (render only) — discards unsynced Role edits in the Sheet"
+        type: boolean
+        default: false
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: export-movement-library
   cancel-in-progress: false
 
 jobs:
-  export:
+  sync:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -39,7 +46,27 @@ jobs:
       - name: Install
         run: pip install -e .
 
-      - name: Render
+      - name: Pull roles from the Sheet
+        if: ${{ inputs.skip_pull == false }}
+        env:
+          GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
+          SHEETS_SPREADSHEET_ID: ${{ secrets.SHEETS_SPREADSHEET_ID }}
+        run: python -m scripts.sheets.export_movement_library --pull --tab "${{ inputs.tab }}"
+
+      - name: Commit any role changes
+        if: ${{ inputs.skip_pull == false }}
+        run: |
+          if git diff --quiet -- data/movement-library.csv; then
+            echo "No role changes to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/movement-library.csv
+          git commit -m "library: pull role edits from the Movement Library tab"
+          git push
+
+      - name: Render the tab
         env:
           GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
           SHEETS_SPREADSHEET_ID: ${{ secrets.SHEETS_SPREADSHEET_ID }}

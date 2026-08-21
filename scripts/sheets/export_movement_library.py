@@ -24,8 +24,15 @@ athlete filters it himself: Done = No, Verdict = Available now, Pool = Bench, an
 Auth: the same service account as export_block.py (GOOGLE_SA_JSON + SHEETS_SPREADSHEET_ID).
 This script only ever touches its own tab — it never deletes or reorders the block tabs.
 
+**The Sheet tab is the source of truth for the `Role` column.** The athlete edits roles there;
+`--pull` reads them back into the CSV. Every other column is derived or coach-curated and is
+overwritten on each render, so editing those in the Sheet accomplishes nothing. Always `--pull`
+before rendering — a render without it overwrites role edits that were never brought back.
+
 CLI:
   python -m scripts.sheets.export_movement_library [--dry-run] [--csv PATH] [--tab NAME]
+  python -m scripts.sheets.export_movement_library --pull [--tab NAME]   # Sheet roles -> CSV
+  python -m scripts.sheets.export_movement_library --pools               # what block design reads
 
 `--dry-run` prints the grid; `--csv` writes it to a file for a manual File > Import.
 Neither needs credentials.
@@ -191,6 +198,63 @@ def build_grid() -> tuple[list[list[str]], list[dict]]:
     return grid, fmts
 
 
+VALID_ROLES = {"Primary", "Secondary", "Accessory", "Retired", "Not for me", "Injury log"}
+
+
+def pull(tab: str) -> bool:
+    """Read the Sheet's Role column back into the CSV. Returns True if anything changed.
+
+    Only `role` is taken. The athlete owns that column; everything else in the tab is
+    rendered output, so trusting the Sheet for it would let a stale render overwrite
+    curated data.
+    """
+    from dotenv import load_dotenv
+    load_dotenv()
+
+    sheet_id = os.environ.get("SHEETS_SPREADSHEET_ID")
+    if not sheet_id:
+        raise SystemExit("SHEETS_SPREADSHEET_ID not set.")
+    ws = _client().open_by_key(sheet_id).worksheet(tab)
+    records = ws.get_all_records()
+    roles = {r["Movement"]: str(r["Role"]).strip() for r in records if r.get("Movement")}
+
+    rows = list(csv.DictReader(LIBRARY_CSV.open(newline="")))
+    known = {r["movement"] for r in rows}
+
+    # A row added or renamed in the Sheet has no curated data behind it, and a render would
+    # silently drop it. Fail loudly instead of losing the athlete's edit.
+    unknown = sorted(set(roles) - known)
+    missing = sorted(known - set(roles))
+    if unknown:
+        raise SystemExit(f"Movements in the Sheet but not the CSV: {unknown}. Add them to "
+                         f"{LIBRARY_CSV.name} with a pattern and note, then pull again.")
+    if missing:
+        raise SystemExit(f"Movements in the CSV but not the Sheet: {missing}. The tab looks "
+                         "partial — refusing to pull rather than guess.")
+    bad = sorted({m for m, role in roles.items() if role not in VALID_ROLES})
+    if bad:
+        raise SystemExit(f"Unrecognised roles in the Sheet: "
+                         f"{ {m: roles[m] for m in bad} }. Valid: {sorted(VALID_ROLES)}")
+
+    changed = []
+    for r in rows:
+        new_role = roles[r["movement"]]
+        if new_role != r["role"]:
+            changed.append(f"  {r['movement']}: {r['role']} -> {new_role}")
+            r["role"] = new_role
+    if not changed:
+        print("No role changes in the Sheet.")
+        return False
+
+    with LIBRARY_CSV.open("w", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
+        w.writeheader()
+        w.writerows(rows)
+    print(f"Pulled {len(changed)} role change(s) from '{tab}':")
+    print("\n".join(changed))
+    return True
+
+
 def _client():
     try:
         import gspread
@@ -294,10 +358,16 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--dry-run", action="store_true", help="print the grid, no Google calls")
     ap.add_argument("--csv", metavar="PATH", help="write the grid to a CSV for manual import")
+    ap.add_argument("--pull", action="store_true",
+                    help="read the Sheet's Role column back into the CSV, then exit")
     ap.add_argument("--pools", action="store_true",
                     help="print the selectable movements for block design; no Google calls")
     ap.add_argument("--tab", default=TAB_TITLE, help=f"tab name (default: {TAB_TITLE})")
     args = ap.parse_args()
+
+    if args.pull:
+        pull(args.tab)
+        return
 
     if args.pools:
         print(pools())
