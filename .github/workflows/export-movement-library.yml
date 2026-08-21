@@ -46,6 +46,25 @@ jobs:
       - name: Install
         run: pip install -e .
 
+      # Both Google keys are checked up front. Without this the job fails on the first
+      # missing one, gets fixed, then fails on the second — runs #1 and #2 were exactly
+      # that. One run should name everything that is missing.
+      - name: Preflight — required configuration
+        env:
+          GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
+          SHEETS_SPREADSHEET_ID: ${{ secrets.SHEETS_SPREADSHEET_ID || vars.SHEETS_SPREADSHEET_ID }}
+        run: |
+          missing=""
+          [ -n "$GOOGLE_SA_JSON" ]        || missing="$missing GOOGLE_SA_JSON(secret)"
+          [ -n "$SHEETS_SPREADSHEET_ID" ] || missing="$missing SHEETS_SPREADSHEET_ID(secret-or-variable)"
+          if [ -n "$missing" ]; then
+            echo "::error::Missing required configuration:$missing"
+            echo "Add them under Settings > Secrets and variables > Actions."
+            echo "See docs/actions-configuration.md for what each one is and where it goes."
+            exit 1
+          fi
+          echo "All required configuration present."
+
       - name: Pull roles from the Sheet
         if: ${{ inputs.skip_pull == false }}
         env:
