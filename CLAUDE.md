@@ -31,6 +31,8 @@ Do not summarize what you read back to me — internalize it and proceed.
 - `reference/profile.md` — training context, weak points, preferences
 - `reference/goals.md` — goals and timeline
 - `data/maxes.md` — current reference maxes
+- `brain/running-comeback.md` — the conditioning plan running alongside the block. Read it
+  whenever I mention running, or when designing a block (the design skill loads it).
 
 ## Session orientation (on greeting)
 

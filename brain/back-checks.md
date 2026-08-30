@@ -1,13 +1,17 @@
 # Back Checks
 
-> **Twice a week, not daily.** The morning after every squat or sumo session — so Tuesday
-> and Saturday while B5 runs squat on D1 and sumo on D4. One word for how the back feels:
-> **fine · tight · sore**. That's the whole ask. Nothing to log on the other five days.
+> **The morning after every session that loads the back** — squat, sumo, **and (from
+> 2026-09-02) every run.** While B5 runs squat on D1 and sumo on D4 and running sits on Wed +
+> Sun, that's four: Tue, Sat, Thu and Mon. One word for how the back feels:
+> **fine · tight · sore**. That's the whole ask. Nothing to log on the other days.
+>
+> **Running counts because repetitive axial impact is real loading** on a spine under treatment,
+> and it's a brand-new stimulus with no history in this file. See `brain/running-comeback.md`.
 >
 > It's tied to a *session*, not to a calendar. That's the entire point: it answers "did
 > loading the back on Monday leave a mark?", which a general "how's your back this week?"
 > cannot. If a block ever runs three axial days, it's three checks; if axial work stops,
-> it's zero.
+> it's zero. Adding running added two.
 >
 > It exists because the anesthetic makes the in-session signal useless. RPE and the ≤3/10
 > pain rule can't protect a chemically quiet back, so the morning after is the only honest

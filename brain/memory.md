@@ -389,6 +389,37 @@ question left open in one file gets re-asked forever** — close it everywhere t
 before B6 is designed mid-Sep — that's the clearance gate), telling the clinic what he actually
 lifts, and the shoulder injection, now three blocks outstanding.
 
+## 2026-08-30 — running comeback started; a new domain, and the same failure mode
+
+He asked where to restart running after ~5 years off (was at a hard 10k 4–5 years ago; remembers a
+1:1 run/walk on-ramp, which is right — that's essentially C25K). **No running or cardio history
+existed anywhere in this repo.** Plan written to `brain/running-comeback.md`: **Wed + Sun, 24-min
+interval block, ratio steps every 2 weeks** (1:1 → 2:1 → 3:1 → 5:1), first run **2026-09-02**.
+**The timing argument is the whole call, and it's counterintuitive: start now *because* the
+lifting is light.** Squat and sumo are 225 flat with both hinges cut, so interference is near zero
+today — and **B6 is where axial load returns**. Starting in September would land the fragile weeks
+of a running on-ramp (3–6) directly on top of the squat/sumo comeback. Doing the fragile weeks now
+is the only version where they don't overlap. Generalizes: **a medical downtime window on one
+system is the cheapest time to on-ramp a different one.**
+**The failure mode transfers exactly, and naming it was the point.** A running comeback fails at
+week 6 because week 3 felt easy — the aerobic system recovers in ~3 weeks and connective tissue
+takes 3–6 months, so "it felt easy" is the engine reporting on something that isn't the limiter.
+That is **B4 W1 sumo (planned 345, pulled 425)** in a different sport. So the same medicine:
+`clinical-override`'s "write the light numbers down" applied to minutes-per-week, two-week holds
+borrowed from `accessory-progression`, and **treadmill for weeks 1–4 specifically because it
+enforces pace mechanically** rather than trusting him to hold it. Reach for the existing rules when
+a new domain shows up — the athlete doesn't change between sports.
+**Two days, not three.** C25K says three; he lifts 4×/week with a treated lumbar spine, and Wed is
+the only slot with zero interference on either side (after pull-up day, before dip day). Saturday
+was rejected on purpose — Friday's Bulgarian Split Squat is the DOMS generator.
+**Wired so B6 can't miss it**: the design skill's context list now loads the file, and the binding
+constraint is one line — **when squat or sumo steps up, the running holds flat that week.**
+**Also worth keeping:** Seated Calf Raise (D4) quietly became load-bearing — it went in as a
+muscle-coverage hole-filler and is now Achilles prep. Don't cut it in B6 on the old rationale.
+**Left open deliberately** (didn't block on it — the 8-week on-ramp is identical either way): what
+running is *for*. That answer decides week 9, not week 1. And this is the **third** activity the
+clinic doesn't know about — same gap that had the doctor *shocked* on Aug 7.
+
 ## 2026-08-11 — Hip Thrust re-anchored: the 4th `exercise-name-mapping` catch
 B5 programmed Hip Thrust as a **first exposure — empty bar in W1** on the belief he'd never done
 it. He has: **six barbell sessions** (2023, median 225, **max 275×12**) and a **Smith session at

@@ -14,6 +14,11 @@ description: Design a new training block — pull context from prior block + mem
 - `reference/goals.md` — 3-month / 12-month targets to drive periodization
 - `reference/profile.md` — weak points, preferences
 - `brain/active-issues.md` — anything to work around
+- `brain/running-comeback.md` — **active conditioning running alongside the block. Binding.**
+  Running is not one of the Big 5 and is not programmed here, but it competes for the same
+  connective tissue and recovery. **When squat or sumo steps up in a week, the running holds flat
+  that week** — never progress axial load and running volume together. Check the on-ramp's week
+  numbers against the block's wave before finalizing.
 - `reference/programming-rules.md` — **active rules from athlete feedback. Binding.** Read
   before prescribing. Check `feedback/log.md` for any exercise-level notes too.
 - **`python -m scripts.sheets.export_movement_library --pools`** — the movement library:
