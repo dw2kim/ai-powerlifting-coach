@@ -24,6 +24,14 @@ on:
         description: "Bypass the Sat-11:00-ET time guard"
         type: boolean
         default: true
+      review_date:
+        description: "Review the week containing this date (YYYY-MM-DD). Blank = today."
+        type: string
+        default: ""
+      reconcile_report_only:
+        description: "Report load drift only — do not edit the plan or push the Sheet"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -62,9 +70,27 @@ jobs:
           # Sheet push is skipped, with a warning in the job log.
           GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
           SHEETS_SPREADSHEET_ID: ${{ secrets.SHEETS_SPREADSHEET_ID }}
+          # Via env, not ${{ }} interpolated into the script: a dispatch input spliced
+          # straight into a shell line is a command-injection seam, and the validation
+          # below can only do its job if the value reaches the shell as data.
+          REVIEW_DATE: ${{ inputs.review_date }}
+          RECONCILE_REPORT: ${{ inputs.reconcile_report_only }}
         run: |
           ARGS=""
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force }}" = "true" ]; then
             ARGS="--force"
           fi
+          if [ -n "$REVIEW_DATE" ]; then
+            case "$REVIEW_DATE" in
+              [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9])
+                ARGS="$ARGS --date $REVIEW_DATE" ;;
+              *)
+                echo "review_date must be YYYY-MM-DD, got: $REVIEW_DATE" >&2
+                exit 1 ;;
+            esac
+          fi
+          if [ "$RECONCILE_REPORT" = "true" ]; then
+            ARGS="$ARGS --reconcile-report"
+          fi
+          echo "Running: weekly_review $ARGS"
           python -m scripts.review.weekly_review $ARGS
