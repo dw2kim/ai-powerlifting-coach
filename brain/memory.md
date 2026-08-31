@@ -406,3 +406,33 @@ after he notices.
 **Also worth keeping: the catch came from the parallel session's review, not from mine.** Two
 agents working the same repo found different things — I found the push couldn't self-correct, it
 found the unheld Leg Press and this. Neither sweep was complete on its own.
+
+## 2026-08-28–30 — graded clearance, athlete-directed return, and the gate that keeps it honest
+
+The Aug 28 visit superseded the four-week no-heavy order: injection given, pain much improved,
+and the doctor said to *"start with a 25% weight increase and see how it goes."* The base and
+whether this meant one step were not specified. The safe operational read is one fixed increase
+from the trained 225, rounded down to **275**, then reassess—never compound 25% and never resume
+RPE-based loading while injections continue.
+
+I preferred waiting until B6 because Aug 31 is ~64 hours post-injection and shares the bench peak,
+and Sep 4 puts the first increase on the canary lift. The athlete chose W4. Apply the decision once,
+without re-litigating it, while keeping the terms: bench first; fine → 275, tight → 225, sore → no
+squat; sumo follows only if squat ran as planned. His later 315 request was outside the reported
+clearance and was declined.
+
+The first back check was **tight** about 18 hours post-injection. An off-day report was tighter
+after new run/walk intervals, leaving injection soreness, impact exposure, and the underlying back
+confounded. The useful pattern starts with the Sep 1/5/8 checks. Tie the return ladder to those
+checks: fine advances, tight holds, two consecutive sore readings stop axial work.
+
+The athlete's alternating-block proposal is sound: heavy squat/moderate sumo, then heavy
+sumo/moderate squat. It keeps only one axial lift heavy at a time. His B6 targets (squat 445, sumo
+365) are returns rather than PRs when checked against the log; the risk is the rate of return, so
+the ladder—not a fixed weekly schedule—governs them. This reverses the earlier decision to keep
+sumo permanently as a skill lift; retain skill-lift treatment only in sumo's moderate blocks.
+
+Standing clinic pattern: advice is still being given without the actual training numbers. Sep 11
+must include 225 current / 465 squat / 485 deadlift and the back-check record.
+
+The repo is amended, but the Hevy and Sheet updates still require the credentialed workflows.

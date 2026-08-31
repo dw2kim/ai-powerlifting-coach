@@ -21,8 +21,8 @@
 | 2026-07-16 | given | lower back | anesthetic | Thu 11:50am. |
 | 2026-08-07 | given | lower back | anesthetic | 4–5 sites. Doctor ordered 4 weeks off heavy lifting. No shoulder injection. |
 | 2026-08-14 | given | lower back | anesthetic | Stepped down weekly → bi-weekly. Agent confirmed anesthetic only. |
-| 2026-08-28 | expected | lower back | anesthetic | W3 D4. Trains 6–7am, before the shot. |
-| 2026-09-11 | expected | lower back | anesthetic | W5 D4 (deload). |
+| 2026-08-28 | given | lower back | anesthetic | W3 D4. Trained 6–7am, before the shot. **Pain much improved. Doctor cleared a graded load increase — "start with a 25% weight increase and see how it goes."** Supersedes the 4-week no-heavy order. |
+| 2026-09-11 | expected | lower back | anesthetic | W5 D4 (deload). Confirmed by the athlete 2026-08-28. **Last visit before B6 is designed.** |
 
 **Shoulder: still none given** — outstanding since 2026-07-07, now three blocks. When one
 happens, add it here with site `shoulder`, and `masked-pain-load-cap` starts binding bench and

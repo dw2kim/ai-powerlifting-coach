@@ -3,11 +3,11 @@
   "weeks": 5,
   "start_date": "2026-08-10",
   "summary": {
-    "goal": "Protect the back, strive upstairs. Doctor ordered 4 weeks off heavy lifting (2026-08-07) after a trigger-point injection series — so squat and sumo run LIGHT position/technique work all block and the loaded hinges are cut, while bench, pull-up and dip push the full plan.",
+    "goal": "Protect the back, strive upstairs. Squat and sumo ran at a fixed 225 through W3, take one graded step to 275 in W4, and deload at 225 in W5. Loaded hinges stay cut while bench, pull-up and dip push the full plan.",
     "changes": [
-      "MEDICAL OVERRIDE (2026-08-07): doctor was shocked the athlete is still lifting heavy and recommended 4 weeks off heavy lifting. That window (to ~2026-09-04) covers B5 W1-W4, so the axial lifts run light for the whole block. Real squat/sumo return is B6, on clearance.",
-      "Squat: 435-465 @7.5 -> 225 x5 @6, 4 sets, FLAT W1-W4 (athlete asked for a 225 floor; granted as a flat load, so the ceiling drops from the planned 245). ~48% of top.",
-      "Sumo: 345-365 @7 -> 225 x3 @6, 3 sets, FLAT W1-W4. Triples stay triples — the lever is load and sets, never reps (sumo-back-cap). No 4th set: sumo is the canary.",
+      "GRADED CLEARANCE (2026-08-28): the prior no-heavy order was superseded by a 25% increase instruction. W4 uses a fixed 275 lb cap (+22% from the trained 225); W5 deloads at 225.",
+      "Squat: 225 x5 @6 for W1-W3; W4 275 x5 @6 only through the symptom gate; W5 225 x5 @6.",
+      "Sumo: 225 x3 @6 for W1-W3; W4 275 x3 @6 only if Monday squat ran as planned; W5 225 x3 @6. Triples stay triples and sumo remains the canary.",
       "CUT for the window: Paused RDL (loaded hinge) and Paused Low-bar Squat (2nd weekly axial session). Neither is worth its risk right now.",
       "Weighted Back Extension moved D4 -> D2 and held at BODYWEIGHT through W2 — the injections go into these exact muscles. Skip it if the sites are sore.",
       "Bench, pull-up and dip UNCHANGED — full strive plan. No shoulder injection was given (2026-08-07), so masked-pain-load-cap does not bind them.",
@@ -2191,41 +2191,41 @@
         {
           "name": "Low-bar Squat",
           "tier": "primary",
-          "notes": "LIGHT — 4-week back-protection window (doctor, 2026-08-07). 225 FLAT, no weekly ramp: you asked for a higher floor, so you get a higher floor and a LOWER ceiling (was 185->245). ~48% of your 465. 4 sets, not more reps — extra work comes from sets done FRESH, never from fatigued reps. This is POSITION WORK. Do NOT add weight.",
+          "notes": "FIXED CAP 275 (+22% from 225; doctor cleared a 25% increase on 2026-08-28). MONDAY GATE: fine = 275, tight = 225, sore = no squat. Run bench first. Do not autoregulate above 275; 315 was declined. Log Tuesday's back check.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 102.05840462301894,
+              "weight_kg": 124.73805009480093,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05840462301894,
+              "weight_kg": 124.73805009480093,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05840462301894,
+              "weight_kg": 124.73805009480093,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05840462301894,
+              "weight_kg": 124.73805009480093,
               "reps": 5,
               "rpe": 6
             }
           ],
-          "display_load": "225",
+          "display_load": "275",
           "hold": true,
-          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light position work only until ~2026-09-04."
+          "hold_reason": "Graded clearance: fixed 275 lb cap for W4, not a log anchor. Sync must not rebase it."
         },
         {
           "name": "Comp Bench",
           "tier": "primary",
-          "notes": "PEAK — WORK UP TO @8. Range 255–270×2: take the heaviest double that stays ≤@8. The cap is a target to FIND, not a ceiling to sit under. Stop at @8 or 3/10 pain.",
+          "notes": "BENCH FIRST. Work up to @8 within 255-270 x2; take the heaviest double that stays at or under the cap. Rest as needed. Priority lift; ≤3/10 shoulder pain. Squat 275 follows, with less arch if the back complains.",
           "sets": [
             {
               "type": "normal",
@@ -2239,7 +2239,7 @@
         {
           "name": "Comp Bench",
           "tier": "primary",
-          "notes": "Backoff — 3 sets @7.",
+          "notes": "BENCH FIRST. Backoff work after the @8 double; 3 sets @7. Priority lift; ≤3/10 shoulder pain. Squat 275 follows, with less arch if the back complains.",
           "sets": [
             {
               "type": "normal",
@@ -2711,30 +2711,30 @@
         {
           "name": "Sumo Deadlift",
           "tier": "primary",
-          "notes": "LIGHT technique pull — 225 FLAT, 3 sets of 3, no ramp. Triples stay triples: the lever is LOAD and SETS, never reps (rule sumo-back-cap). Sumo is the lift that flares your back, so it does NOT get the 4th set squat gets. Tall lockout, no hitch, every rep crisp. Rounding or bar-speed drop = rack it.",
+          "notes": "FIXED CAP 275 (+22% from 225; doctor cleared a 25% increase on 2026-08-28). Crisp triples, no PR intent. If Monday's squat was reduced or skipped, use 225. Back rounding or bar-speed drop = rack it. Log Saturday's back check.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 102.05840462301894,
+              "weight_kg": 124.73805009480093,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05840462301894,
+              "weight_kg": 124.73805009480093,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05840462301894,
+              "weight_kg": 124.73805009480093,
               "reps": 3,
               "rpe": 6
             }
           ],
-          "display_load": "225",
+          "display_load": "275",
           "hold": true,
-          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light technique work only until ~2026-09-04."
+          "hold_reason": "Graded clearance: fixed 275 lb cap for W4, not a log anchor. Sync must not rebase it."
         },
         {
           "name": "Spoto Bench Press",
@@ -2896,30 +2896,30 @@
         {
           "name": "Low-bar Squat",
           "tier": "primary",
-          "notes": "LIGHT — 4-week back-protection window (doctor, 2026-08-07). 225 FLAT, no weekly ramp: you asked for a higher floor, so you get a higher floor and a LOWER ceiling (was 185->245). ~48% of your 465. 4 sets, not more reps — extra work comes from sets done FRESH, never from fatigued reps. This is POSITION WORK. Do NOT add weight.",
+          "notes": "Deload 225, about 18% below W4's 275. @6, load-driven. Do not chase W4's number.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 83.91468824559335,
+              "weight_kg": 102.05840462301894,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 83.91468824559335,
+              "weight_kg": 102.05840462301894,
               "reps": 5,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 83.91468824559335,
+              "weight_kg": 102.05840462301894,
               "reps": 5,
               "rpe": 6
             }
           ],
-          "display_load": "185",
+          "display_load": "225",
           "hold": true,
-          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light position work only until ~2026-09-04."
+          "hold_reason": "Deload below both the log and W4's 275. Sync must not rebase it."
         },
         {
           "name": "Comp Bench",
@@ -3403,30 +3403,30 @@
         {
           "name": "Sumo Deadlift",
           "tier": "primary",
-          "notes": "LIGHT technique pull — 225 FLAT, 3 sets of 3, no ramp. Triples stay triples: the lever is LOAD and SETS, never reps (rule sumo-back-cap). Sumo is the lift that flares your back, so it does NOT get the 4th set squat gets. Tall lockout, no hitch, every rep crisp. Rounding or bar-speed drop = rack it.",
+          "notes": "Deload 225, about 18% below W4's 275. @6, crisp triples. Train before the scheduled injection.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 83.91468824559335,
+              "weight_kg": 102.05840462301894,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 83.91468824559335,
+              "weight_kg": 102.05840462301894,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 83.91468824559335,
+              "weight_kg": 102.05840462301894,
               "reps": 3,
               "rpe": 6
             }
           ],
-          "display_load": "185",
+          "display_load": "225",
           "hold": true,
-          "hold_reason": "Doctor ordered 4 weeks off heavy lifting (2026-08-07). Light technique work only until ~2026-09-04."
+          "hold_reason": "Deload below both the log and W4's 275. Sync must not rebase it."
         },
         {
           "name": "Spoto Bench Press",

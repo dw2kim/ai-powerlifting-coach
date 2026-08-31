@@ -6,11 +6,11 @@ name: Push block to Hevy
 # Exists for the same reason as export-block.yml: a block is authored in a Claude Code
 # session that has no HEVY_API_KEY, so it needs a credentialled place to run from.
 #
-# ⚠️ THIS IS ADDITIVE AND NOT IDEMPOTENT. push_block only ever POSTs — it never updates or
-# deletes. Running it twice for the same block leaves you with TWO folders named
-# "<block-id>" and 40 routines. That is why `apply` defaults to false: the safe click is a
-# dry run, and pushing for real is a deliberate second action. If you do double-push,
-# delete the duplicate folder in the Hevy app; nothing here will clean it up for you.
+# A plain push is additive. For a live block, `update: true` and `start: W<n>-D<n>`
+# overwrite matching routines in place while preserving already-trained sessions.
+#
+# `apply` defaults to false: the safe click is a dry run, and writing is a deliberate second
+# action.
 on:
   workflow_dispatch:
     inputs:
@@ -20,6 +20,14 @@ on:
         default: false
       week:
         description: "Push a single week only (1-5). Blank = all weeks."
+        type: string
+        default: ""
+      update:
+        description: "Correct a LIVE block: overwrite matching routines (PUT) instead of adding duplicates"
+        type: boolean
+        default: false
+      start:
+        description: "Start from this session, e.g. W4-D1. Leaves already-trained sessions untouched."
         type: string
         default: ""
 
@@ -48,14 +56,36 @@ jobs:
       - name: Push
         env:
           HEVY_API_KEY: ${{ secrets.HEVY_API_KEY }}
+          APPLY: ${{ inputs.apply }}
+          WEEK: ${{ inputs.week }}
+          UPDATE: ${{ inputs.update }}
+          START: ${{ inputs.start }}
         run: |
-          ARGS=""
-          [ "${{ inputs.apply }}" = "true" ] && ARGS="$ARGS --apply"
-          [ -n "${{ inputs.week }}" ] && ARGS="$ARGS --week ${{ inputs.week }}"
-          if [ "${{ inputs.apply }}" = "true" ]; then
-            echo "::warning::Writing to Hevy for real. This is additive — re-running duplicates the folder."
+          args=()
+          [ "$APPLY" = "true" ] && args+=(--apply)
+          [ -n "$WEEK" ] && args+=(--week "$WEEK")
+          [ "$UPDATE" = "true" ] && args+=(--update)
+          [ -n "$START" ] && args+=(--start "$START")
+
+          if [ "$UPDATE" = "true" ] && [ -z "$START" ]; then
+            echo "::error::Update mode requires a start session so trained routines are preserved."
+            exit 1
+          fi
+          if [ -n "$START" ] && [ "$UPDATE" != "true" ]; then
+            echo "::error::A start session is only safe in update mode."
+            exit 1
+          fi
+
+          if [ "$APPLY" = "true" ]; then
+            if [ "$UPDATE" = "true" ]; then
+              echo "::warning::Writing to Hevy for real, in UPDATE mode — overwrites matching routines in place."
+            else
+              echo "::warning::Writing to Hevy for real, ADDITIVE — re-running duplicates the folder. For a live block use update:true."
+            fi
           else
             echo "Dry run — no Hevy calls. Flip 'apply' on to write."
           fi
-          echo "Running: python -m scripts.hevy.push_block $ARGS"
-          python -m scripts.hevy.push_block $ARGS
+          printf 'Running: python -m scripts.hevy.push_block'
+          printf ' %q' "${args[@]}"
+          printf '\n'
+          python -m scripts.hevy.push_block "${args[@]}"
