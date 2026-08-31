@@ -21,15 +21,17 @@ Flags:
   --no-reconcile      skip the load reconciliation entirely
   --reconcile-report  reconcile in report-only mode (no plan edits, no Sheet push)
   --date         override 'today' (YYYY-MM-DD) for testing
+  --assert-shipped  fail the job if the week still has no review after this firing
 """
 from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 import tempfile
-from datetime import date as date_cls, datetime
+from datetime import date as date_cls, datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -58,8 +60,40 @@ def snapshot_path_for(day: date_cls) -> Path:
     return WEEKLY_DIR / f"{iso_year}-W{iso_week:02d}.md"
 
 
-def time_guard(force: bool) -> bool:
-    """True if we should run.
+LOOKBACK_WEEKS = 8
+
+
+def missed_weeks(today: date_cls, lookback: int = LOOKBACK_WEEKS) -> list[str]:
+    """Past Saturdays in the lookback window that never got a review.
+
+    A run can only ever speak for itself, and a week is lost precisely when no run
+    happens: if GitHub drops every firing there is nobody left to raise the alarm.
+    So the alarm has to be raised afterwards, by the next review that does ship.
+
+    This is the check that would have caught 2026-W30 on 2026-08-01 instead of five
+    weeks later, and W35 on 2026-09-05 instead of by the athlete noticing his phone
+    was quiet.
+
+    Floored at the earliest snapshot on disk so it never flags the weeks before the
+    review job existed.
+    """
+    existing = sorted(p.stem for p in WEEKLY_DIR.glob("*-W*.md"))
+    if not existing:
+        return []
+    floor = existing[0]
+    saturday = today - timedelta(days=(today.weekday() - 5) % 7)
+    gaps = []
+    for i in range(1, lookback + 1):   # from 1: the week being shipped is not a gap
+        d = saturday - timedelta(weeks=i)
+        iso_year, iso_week, _ = d.isocalendar()
+        key = f"{iso_year}-W{iso_week:02d}"
+        if key >= floor and not (WEEKLY_DIR / f"{key}.md").exists():
+            gaps.append(key)
+    return sorted(gaps)
+
+
+def time_guard(force: bool) -> tuple[bool, str]:
+    """(should we run, why).
 
     The job is scheduled several times on Saturday so that one firing lands at or after
     11:00 Eastern in either EDT or EST. This guard decides which firing does the work.
@@ -84,19 +118,39 @@ def time_guard(force: bool) -> bool:
     missing one — the right way round.
     """
     if force:
-        return True
+        print("Time guard bypassed (--force).")
+        return True, "forced"
     now = _eastern_now()
     is_saturday = now.weekday() == 5
     past_11 = now.hour >= 11
     done = snapshot_path_for(now.date()).exists()
     ok = is_saturday and past_11 and not done
-    reason = ("proceed" if ok else
-              "skip — not Saturday" if not is_saturday else
-              "skip — before 11:00 ET" if not past_11 else
-              "skip — this week's review already shipped")
+    reason = ("this firing does the work" if ok else
+              "not Saturday" if not is_saturday else
+              "before 11:00 ET" if not past_11 else
+              "this week's review already shipped")
     print(f"Eastern now = {now:%Y-%m-%d %H:%M %Z} (Sat? {is_saturday}, hour {now.hour}, "
-          f"already shipped? {done}) → {reason}")
-    return ok
+          f"already shipped? {done}) → {'proceed' if ok else 'skip'} — {reason}")
+    return ok, reason
+
+
+def summary(*lines: str) -> None:
+    """Write the run's outcome to the Actions run page.
+
+    In the runs list a green check that shipped a review and a green check that
+    skipped one are the same pixel. That is how 2026-W30 sat unnoticed for five
+    weeks and W35 for two days — the status was never wrong, it just never said
+    what happened. This puts the outcome where it is read without opening a log.
+    """
+    print("\n".join(lines))
+    path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if not path:
+        return
+    try:
+        with open(path, "a", encoding="utf-8") as fh:
+            fh.write("\n".join(lines) + "\n")
+    except OSError as exc:  # noqa: BLE001 — a summary is never worth failing a send over
+        print(f"⚠️ Could not write the job summary ({exc}).")
 
 
 def sync_log(skip: bool) -> bool:
@@ -241,9 +295,31 @@ def main() -> None:
                     help="Reconcile in report-only mode — no plan edits, no Sheet push")
     ap.add_argument("--date")
     ap.add_argument("--bw", type=float, default=DEFAULT_BW)
+    ap.add_argument("--assert-shipped", action="store_true",
+                    help="Fail the job if this Saturday still has no review after "
+                         "this firing. Wire it to the last scheduled firing of the day.")
     args = ap.parse_args()
 
-    if not time_guard(args.force):
+    proceed, why = time_guard(args.force)
+    if not proceed:
+        # A skip is the correct outcome for every firing but the one that does the
+        # work, so it stays green — turning the second firing red every Saturday
+        # would train us to ignore a red Saturday, which is the actual failure mode
+        # we are trying to fix. It must simply stop LOOKING like a shipped review.
+        summary(f"### ⏭️ Weekly review skipped", "", f"**Reason:** {why}.", "",
+                "No Telegram message was sent by this run.")
+        if args.assert_shipped and not snapshot_path_for(_eastern_now().date()).exists():
+            # Last firing of the day, and the week still has nothing. Every earlier
+            # firing was delayed, dropped or refused: that is a lost review, and a
+            # lost review must never be green.
+            summary("", "### ❌ No review shipped this week",
+                    "", "This was the last scheduled firing and "
+                    f"`{snapshot_path_for(_eastern_now().date()).name}` does not exist. "
+                    "Re-run this workflow with `review_date` set to this Saturday.")
+            raise SystemExit(
+                "FAILED: the week is over and no review was ever sent. "
+                "Failing loudly rather than exiting green."
+            )
         return
 
     synced = sync_log(args.skip_sync or args.dry_run)
@@ -263,6 +339,12 @@ def main() -> None:
     message = build_message(stats)
     cap = caption(stats, synced)
 
+    # Surface lost weeks where he actually looks — his phone — not only in a job log.
+    gaps = missed_weeks(date_cls.fromisoformat(stats["generated_for"]))
+    if gaps:
+        message += ("\n\n⚠️ <b>No review was ever sent for: "
+                    + ", ".join(gaps) + "</b>")
+
     if args.dry_run:
         print("\n===== CAPTION =====\n" + cap)
         print("\n===== MESSAGE =====\n" + message)
@@ -270,6 +352,7 @@ def main() -> None:
             print("\n===== LOAD SYNC (report only in --dry-run) =====\n"
                   + recon.render_md(report, report.get("changes")))
         print(f"\n===== CHART =====\n{CHART_PATH}")
+        summary("### 🔍 Dry run — nothing sent, nothing committed")
         return
 
     telegram.send_photo(CHART_PATH, caption=cap)
@@ -279,6 +362,23 @@ def main() -> None:
     snapshot = write_snapshot(stats, message)
     if not args.no_commit:
         commit([REPO_ROOT / "data" / "logs", REPO_ROOT / "brain" / "current-block.json", snapshot])
+
+    geo = stats["geometry"]
+    summary(f"### ✅ Weekly review shipped — {geo['block_id']} W{geo['week_no']}/{geo['weeks']}",
+            "", f"- Telegram: **sent**",
+            f"- Hevy sync: {'ok' if synced else '**failed** — ran on last-known data'}",
+            f"- Snapshot: `{snapshot.relative_to(REPO_ROOT)}`")
+
+    if gaps:
+        # Shipped first, complain second: a past gap must never withhold this week's
+        # review. But it must not leave a green check either — green is what let W30
+        # sit unnoticed for five weeks.
+        summary("", "### ❌ Weeks that never got a review", "",
+                *[f"- `{g}`" for g in gaps], "",
+                "Re-run this workflow with `review_date` set to that Saturday.")
+        raise SystemExit(
+            "This week shipped, but these weeks never did: " + ", ".join(gaps)
+        )
 
 
 if __name__ == "__main__":

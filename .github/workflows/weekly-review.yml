@@ -75,6 +75,11 @@ jobs:
           # below can only do its job if the value reaches the shell as data.
           REVIEW_DATE: ${{ inputs.review_date }}
           RECONCILE_REPORT: ${{ inputs.reconcile_report_only }}
+          # github.event.schedule names the cron that fired this run, so the day's LAST
+          # firing can be the one that checks the week actually shipped. Earlier firings
+          # skip silently-and-green because a skip is correct for them; by 20:00 UTC it
+          # is not correct any more, it is a lost review, and it goes red.
+          ASSERT_SHIPPED: ${{ github.event.schedule == '0 20 * * 6' }}
         run: |
           ARGS=""
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force }}" = "true" ]; then
@@ -91,6 +96,9 @@ jobs:
           fi
           if [ "$RECONCILE_REPORT" = "true" ]; then
             ARGS="$ARGS --reconcile-report"
+          fi
+          if [ "$ASSERT_SHIPPED" = "true" ]; then
+            ARGS="$ARGS --assert-shipped"
           fi
           echo "Running: weekly_review $ARGS"
           python -m scripts.review.weekly_review $ARGS
