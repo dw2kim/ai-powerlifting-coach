@@ -13,6 +13,11 @@
   bench progress** (frequency, volume, variant choice, and supporting accessories like triceps
   and upper-back) without neglecting the others. Re-check "weakest lift" each block from the
   Big-5 e1RM trend; update this rule when it changes. [FB 2026-06-18]
+- **alternating-axial-emphasis** — **Blocks alternate which axial lift is heavy.** One block runs
+  **heavy squat / moderate sumo**, the next **heavy sumo / moderate squat**. The moderate lift
+  keeps its day and pattern but does not peak. This satisfies the project overlap rule by keeping
+  only one axial lift heavy at a time. Every block states the current and prior axial emphasis;
+  bench, pull-up, and dip keep their own waves. [FB 2026-08-29]
 
 ## Loads & progression
 
@@ -65,6 +70,16 @@
   This is the prescription-time counterpart to `sheet-load-sync`'s first-exposure rebasing:
   that one fixes a wrong anchor mid-block, this one avoids setting a wrong anchor at design
   time. [FB 2026-08-21]
+- **axial-return-ladder** — Coming back to heavy squat/sumo after a medical restriction, the load
+  climbs on a **gate, not a schedule**:
+  - **Advance** to the next rung only when the previous session's **next-day back check reads
+    "fine"** (`brain/back-checks.md`).
+  - **"tight" → hold the rung**, repeat the same load next session. A hold is not a failure; it's
+    the ladder working.
+  - **"sore" twice in a row → stop axial work** and back to the clinic (unchanged escalation).
+  Set the destination from the Hevy log, but treat the **ramp rate** as the exposure. While
+  injections continue, every rung remains an absolute load under `masked-pain-load-cap`, never an
+  RPE target. [FB 2026-08-29]
 - **accessory-progression** — Accessories progress *gradually*: hold a load for 2–3 weeks,
   then small bumps. Do **not** apply the primary/secondary "+5 lb each week" default to
   accessories. They should still trend up across blocks, just slowly. [FB 2026-06-14]
@@ -167,7 +182,15 @@
   worse case, not the milder one**: it produces profound, immediate numbness for hours, where a
   steroid dulls pain gradually over days. Established for the lower back / squat + sumo; **applies
   to the shoulder and bench the moment a shoulder injection starts** (still not given as of
-  2026-08-07 — the athlete must report it so bench and dip get the same treatment). [FB 2026-08-07]
+  2026-08-07 — the athlete must report it so bench and dip get the same treatment).
+  **A clearance can be GRADED, and a graded clearance moves the cap rather than removing it**
+  (added 2026-08-28 after *"start with a 25% weight increase and see how it goes"*). Convert it to
+  one conservative **absolute-load step**, still not autoregulated while the region is masked.
+  If the percentage base or repeat rate is unclear, record that uncertainty, use the current
+  trained load as the conservative base, round down to a loadable number, and confirm it at the
+  next visit. Never compound a one-step percentage.
+  The cap is only fully removed by an unambiguous, unconditional clearance. [FB 2026-08-07,
+  extended by the 2026-08-28 clinical update]
 
 ## RPE conventions
 
@@ -271,12 +294,12 @@
 - **Bench secondary** — **CGB is the default secondary** for bench improvement, but it can
   **rotate** (per `accessory-rotation`) among CGB / paused bench / incline bench / similar.
   Pick the secondary that best serves the bench weak point for that block. [FB 2026-06-18]
-- **sumo-skill-lift** — **Sumo is programmed as a SKILL lift, not a strength lift** (athlete
-  decision 2026-08-07). It stays one of the Big 5 and keeps its day, but it is **not periodized
-  for progression**: no PR intent, no intensity wave, no autoregulating up, no "felt easy so I
-  added weight." Prescribe a **fixed low band, crisp low reps, technique focus** (tall lockout,
-  no hitch) and hold it. This sits *inside* `sumo-back-cap` and is tighter still — B5 runs
-  345–365 @7 and does not touch the 405 ceiling at all.
+- **sumo-skill-lift** — **Applies when sumo is the moderate lift** under
+  `alternating-axial-emphasis` (athlete reversed the permanent skill-lift treatment on 2026-08-29).
+  In moderate blocks, keep sumo on its day at a fixed low band: crisp low reps, technique focus,
+  no PR intent, no intensity wave, and no autoregulating upward. In heavy-sumo blocks it may wave,
+  but only through `axial-return-ladder` and inside `sumo-back-cap`; back rounding or bar-speed
+  loss always ends the set.
   **Why keep it rather than drop it:** detraining a hinge makes returning to it more dangerous;
   light crisp pulling keeps erectors and glutes doing protective work; and the above-the-knee
   hitch only gets fixed with reps at an ownable load.

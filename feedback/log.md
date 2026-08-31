@@ -10,6 +10,43 @@
 
 ---
 
+### 2026-08-29–30 · block, load · graded return and alternating axial emphasis
+
+**Context:** the Aug 28 clinic visit cleared *"start with a 25% weight increase and see how it
+goes."* The athlete chose to use the step in B5 W4 rather than wait for B6: *"I WILL DO 280 for W4
+for both SUMO and SQUAT. period."* He then corrected the load to **275** for practical plate loading
+and asked for 315; 315 was declined because it is +40% from 225, outside the reported clearance.
+
+**Applied:** W4 squat and sumo **275**; W5 deload **225**. The cap stays absolute. On Aug 31,
+bench runs first and the morning gate is fine → 275, tight → 225, sore → no squat. Sep 4 sumo
+uses 275 only if the squat ran as planned.
+
+**B6 targets:** squat 445, sumo 365. Verified against the Hevy log:
+
+| Lift | Sessions | Median | Max | Last real load before the cap |
+|---|---|---|---|---|
+| Low-bar Squat | 47 | **425** | 485 | 465x3 @7.5 (2026-07-27) |
+| Sumo Deadlift | 48 | **415** | 485 | 405x3 @7 (2026-07-31); 365x4 @6 (2026-08-07) |
+
+The destinations are returns, not PRs. The exposure is the ramp from 275, so each rung requires a
+fine next-day back check; tight holds the rung and two consecutive sore readings stop axial work.
+
+**Block structure:** *"one block will hit Heavy squats
+while moderate [sumo], and the other block will hit the heavy Sumo while moderate squat."*
+Adopted as `alternating-axial-emphasis`: only one axial lift peaks per block. This reverses the
+Aug 7 decision to keep sumo permanently as a skill lift; skill-lift treatment now applies when
+sumo is the moderate lift.
+
+**Back check:** first entry logged for the Aug 28 session: **tight**, read ~18 hours after the
+injection. Clean-window checks now gate further progression.
+
+**Actions:** amended W4/W5 and re-pinned holds; updated the block/clinical record; logged the
+check. Hevy and Sheet updates still require the credentialed workflows.
+→ rules: `axial-return-ladder` (new), `alternating-axial-emphasis` (new), `sumo-skill-lift`
+(amended), `masked-pain-load-cap`
+
+---
+
 ### 2026-08-21 · exercise, load · equipment limits and conservative re-entry loads
 
 **Feedback (two decisions):**

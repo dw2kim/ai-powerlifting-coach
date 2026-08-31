@@ -127,7 +127,36 @@ blind). User accepts and proceeds under the rule below. This **overrides** the p
   bench and dip the same way it binds squat and sumo: the ≤3/10 pain rule **cannot** protect a
   chemically quiet joint, so those lifts go to an absolute-load cap for the masking window.
 
-## Lower back — 🚨 DOCTOR ORDERED 4 WEEKS OFF HEAVY LIFTING (2026-08-07)
+## Lower back — ✅ graded return cleared 2026-08-28; current cap 275
+
+### Visit 2026-08-28
+
+**Clinical fact (athlete report):** injection given. Pain had *"improved quite a lot."* The doctor
+said to *"start with a 25% weight increase and see how it goes."* Next injection confirmed for
+**2026-09-11**. This supersedes the 2026-08-07 four-week no-heavy order.
+
+**Unconfirmed:** the doctor did not specify the percentage base or whether 25% was a single step.
+The plan therefore applies one conservative step to the trained load: 225 → **275 lb** (+22%,
+rounded down from 281.25), then reassesses. Confirm the interpretation on Sep 11 using the actual
+225 training load and 465/485 best lifts.
+
+**Training consequence:**
+
+- `masked-pain-load-cap` moves but does not lift: 275 is a fixed W4 ceiling, not an RPE target.
+- W4 squat and sumo move to 275; W5 deloads at 225. **315 was declined** because it is a 40% jump.
+- Mon Aug 31 gate: fine → 275, tight → 225, sore/numb → no squat. Bench runs first.
+- Fri Sep 4 sumo runs 275 only if Monday's squat ran as planned; otherwise it stays at 225.
+- Existing hard stops remain: new leg symptoms, night/rest pain, pain not settling within 24 hours,
+  or two consecutive "sore" axial checks → stop axial work and return to the clinic.
+
+**Back-check data:** Aug 29 was **tight**, about 18 hours after the injection. Aug 30 was *tighter*
+after about 20 minutes of new run/walk intervals; this was not a next-day axial check and stays out
+of `back-checks.md`. Post-injection soreness, running, and the underlying back remain confounded.
+Log Sep 1, Sep 5, and Sep 8; these gate the B6 return ladder.
+
+**Sep 11 questions:** confirm what the 25% applies to and that it was one step; tell the clinic the
+real training/max numbers; report the back-check pattern and the prior concern that injections may
+be worsening symptoms.
 
 ### Visit 2026-08-14 — injections CONTINUE, stepped down weekly → **BI-WEEKLY**
 
@@ -150,12 +179,8 @@ them is being tested by the clinic.
   "worse after the shot" and is not the underlying back getting worse. Distinguishing the two is
   exactly what the new schedule makes possible — see below. Not a diagnosis; the clinic owns it.
 
-**What actually changes in training: nothing.** No load, rep, set or day moves.
-- The **4-week no-heavy-lifting order (→ ~2026-09-04) has not been lifted**, and a dosing-interval
-  change is not a clearance.
-- `masked-pain-load-cap` lifts on **doctor clearance** — explicitly *not* on the series ending, not
-  on a schedule change, not on feeling better. Squat **225 ×5 @6 ×4** and sumo **225 ×3 @6 ×3**
-  stay flat for the rest of B5.
+**Training consequence as of Aug 14: none.** The dosing-interval change was not clearance; the
+separate Aug 28 visit later superseded the no-heavy order and changed W4/W5 as recorded above.
 - Less frequent treatment does not mean less back problem. Do not read "bi-weekly" as "recovered."
 
 **What it does buy — the first clean pain signal since 2026-07-03.** Anesthetic wears off in hours;
@@ -177,9 +202,9 @@ value thing he can do right now, and it has **zero entries across all of B4 and 
 |---|---|---|
 | **Fri 2026-08-14** ✅ given | W1 D4 | Trained 6–7 am, *before* the shot. Clean. |
 | — | **W2 (Aug 17–21)** | **Clean week — no injection. Honest back data. Log the checks.** |
-| **~Fri 2026-08-28** | W3 D4 | D4 trains before the shot. Fine. |
-| — | **W4 (Sep 1–4)** | **Clean week after Mon.** |
-| **~Fri 2026-09-11** | W5 D4 (deload) | Fine. |
+| **Fri 2026-08-28** ✅ given | W3 D4 | Trained before the shot. **Graded return cleared at this visit — see above.** |
+| — | **W4 (Sep 1–4)** | **Clean week after Mon.** Both checks land here. |
+| **Fri 2026-09-11** | W5 D4 (deload) | Confirmed. **Last visit before B6 is designed.** |
 
 - **Monday after an injection is ~64 h post — inside the 24–72 h flare window, at its edge.**
   Applies to **Mon 2026-08-17** and **Mon 2026-08-31**: if the back is sore, tight or numb that
@@ -221,7 +246,8 @@ decision**, for three reasons he hadn't weighed:
 3. **Complying costs almost nothing** — squat was already capped and flat, sumo already demoted by
    the athlete's own call, and bench/pull-up/dip don't load the back.
 
-**Resulting training restriction (in force to ~2026-09-04):**
+**Resulting training restriction** — **SUPERSEDED 2026-08-28 by the graded-return clearance
+above.** Kept as the record of what ran W1–W3; W4/W5 now follow the 275/225 amendment.
 - **Squat: 185–245 ×5 @6, 3 sets.** Position work. ~40–53% of top.
 - **Sumo: 185–225 ×3 @6, 3 sets.** Technique only.
 - **CUT: Paused RDL** (loaded hinge) and **Paused Low-bar Squat** (2nd weekly axial session).
@@ -234,10 +260,15 @@ decision**, for three reasons he hadn't weighed:
 - **Numbers are written down, not left to feel** — his self-defined "light" has a documented failure
   rate (B4 W1 sumo planned 345, pulled **425**; squat backoffs **@8.5** under a cap).
 
-**Revisit 2026-08-14** with the "what does heavy mean" question. The real squat/sumo return is
-**B6**, mid-September, on clearance.
+The later Aug 28 clearance started the graded return in B5 W4; extra hinges remain out until they
+are reconsidered for B6.
 
-### ⚠️ Athlete override — training against advice (2026-08-07, athlete-confirmed)
+### ⚠️ Athlete override — training against advice (2026-08-07) — **LAPSED 2026-08-28**
+
+> **Closed by the 2026-08-28 clearance.** The instruction being overridden (stop heavy lifting for
+> four weeks) no longer exists — the doctor now wants load *added*. Training is back inside medical
+> advice, and the athlete was substantively right on the mechanism. **The unresolved question below
+> is retired with it** — it no longer gates anything. Kept as the record of the decision.
 **The instruction escalated on re-telling.** First account: *"stop doing the heavy lifting for four
 weeks."* Second, same evening: *"he said I need to completely stop working on any of the
 exercises."* Those are **different instructions** — no heavy lifting vs no exercise at all.
@@ -280,8 +311,10 @@ Proceeding under the written loads, which is the safer of the two ways to disagr
   mid-left pain location (consistency, not a coaching diagnosis — clinical read stays with the clinic).
   **Training takeaway: nothing here structurally contraindicates loaded squat/pull.** The axial cap
   below stays anyway — it's driven by the corticosteroid masking pain, NOT by imaging; a clean MRI
-  doesn't un-mask the pain signal. Use this MRI to ask the doctor the return-to-heavy-axial-load
-  question and get a concrete window; lift the cap on that clearance.
+  doesn't un-mask the pain signal. ~~Use this MRI to ask the doctor the return-to-heavy-axial-load
+  question and get a concrete window; lift the cap on that clearance.~~ **✅ Answered 2026-08-28** —
+  graded increase cleared and implemented as 225 → 275 in B5 W4. The cap **moved, it did not lift**; see
+  *Visit 2026-08-28* above.
 - **Treatment**: pain-clinic **trigger-point injections, local anesthetic only** (this section said
   "corticosteroid" until 2026-08-14 — that was wrong; see the correction above). First round
   **2026-07-03**, ~8 sites across the mid-left lower back. Doctor says it needs **multiple visits**
@@ -292,7 +325,7 @@ Proceeding under the written loads, which is the safer of the two ways to disagr
   reported improvement — see *Visit 2026-08-14* above). The series is **ongoing**, not finished.
 - **Schedule varies week to week** (doctor availability: **Thu 9am–12pm** or **Fri 1pm–4pm**).
   Confirmed slots: 2026-07-03 (Fri), 2026-07-10 (Fri), **2026-07-16 (Thu 11:50am)**, 2026-08-07 (Fri),
-  **2026-08-14 (Fri)**. Next expected **~2026-08-28**, then **~2026-09-11**. Athlete always
+  **2026-08-14 (Fri)**, **2026-08-28 (Fri)**. Next confirmed **2026-09-11 (Fri)**. Athlete always
   trains **6–7am**, so *same-day* training always precedes the injection — same-day training is fine.
 - **Not a coaching call — this is the clinic's domain.** My job is to manage training *around* it.
 - **Sumo = the back's canary (durable cap, 2026-07-22).** Pain/next-day soreness localize to **L5-S1**

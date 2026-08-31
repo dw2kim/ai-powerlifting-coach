@@ -62,3 +62,4 @@ _The check is the morning after the session date. Newest at the bottom._
 
 | Session date | Lift | Back | Note |
 |---|---|---|---|
+| 2026-08-28 | sumo | tight | First check ever logged. ~18h post-injection (2026-08-28 shot). On W3 D4 sumo 225. |
