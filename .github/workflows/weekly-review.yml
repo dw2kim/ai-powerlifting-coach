@@ -1,13 +1,23 @@
 name: Weekly training review
 
 # Fires Saturday 11:00 America/New_York. GitHub cron is UTC and has no DST, so we
-# schedule BOTH 15:00 and 16:00 UTC and let the in-script Eastern time guard pass
-# exactly one through: 15:00 UTC = 11:00 EDT (summer), 16:00 UTC = 11:00 EST (winter).
+# schedule BOTH 15:00 and 16:00 UTC so one of them is 11:00 Eastern: 15:00 UTC = 11:00 EDT
+# (summer), 16:00 UTC = 11:00 EST (winter). The in-script Eastern guard picks the first
+# firing at/after 11:00 local and no-ops the rest against the week's snapshot file.
+#
+# The 20:00 UTC entry is a backstop, and it exists because scheduled runs are best-effort:
+# GitHub queues them behind runner load and can delay them by hours or skip them outright.
+# On 2026-08-29 both firings landed 3+ hours late (14:10 and 15:20 ET). Under the old
+# exact-hour guard that dropped the review silently; under the snapshot guard a late or
+# extra firing is a ~20s no-op, so a backstop costs almost nothing and buys a second
+# chance at actually shipping.
+#
 # Manual runs use workflow_dispatch and default to bypassing the guard.
 on:
   schedule:
     - cron: "0 15 * * 6"
     - cron: "0 16 * * 6"
+    - cron: "0 20 * * 6"
   workflow_dispatch:
     inputs:
       force:

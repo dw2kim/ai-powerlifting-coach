@@ -1,7 +1,8 @@
 """Weekly Saturday review — the entrypoint the GitHub Action runs.
 
 Pipeline:
-  1. Time guard — only proceed at Saturday 11:00 America/New_York (DST-safe).
+  1. Time guard — proceed on the first Saturday firing at/after 11:00
+     America/New_York (DST-safe); later firings no-op on the week's snapshot.
   2. Sync the Hevy log so the data is fresh (best-effort; a sync failure degrades
      to last-known data with a readiness warning rather than skipping the review).
   3. Compute the weekly metrics.
@@ -50,16 +51,51 @@ def _eastern_now() -> datetime:
     return datetime.now(EASTERN)
 
 
+def snapshot_path_for(day: date_cls) -> Path:
+    """The week's snapshot file. Also the idempotency key for the time guard —
+    one review per ISO week, whichever firing gets there first."""
+    iso_year, iso_week, _ = day.isocalendar()
+    return WEEKLY_DIR / f"{iso_year}-W{iso_week:02d}.md"
+
+
 def time_guard(force: bool) -> bool:
-    """True if we should run. The job is scheduled at both 15:00 and 16:00 UTC on
-    Saturday so that exactly one firing lands on 11:00 Eastern in either EDT or EST;
-    this guard is what picks the right one."""
+    """True if we should run.
+
+    The job is scheduled several times on Saturday so that one firing lands at or after
+    11:00 Eastern in either EDT or EST. This guard decides which firing does the work.
+
+    It used to decide by matching the hour exactly (`now.hour == 11`), which assumed
+    GitHub fires scheduled workflows on time. It does not — cron runs are best-effort and
+    queue behind runner load, routinely by tens of minutes and occasionally by hours. Any
+    firing that slipped past 11:59 Eastern missed the window, the job returned cleanly,
+    and the review was dropped with a green check and no Telegram. That silently ate
+    2026-W30 (both firings landed 12:02 and 13:06 ET) and 2026-W35 (14:10 and 15:20 ET),
+    and 2026-W31 survived by 58 seconds.
+
+    So the clock is no longer the thing that has to be exact. Run on any Saturday firing
+    from 11:00 Eastern onward, and let the week's snapshot be the idempotency key — the
+    later firings become the no-op instead of the delay becoming a dropped review. A
+    delayed run still ships, just late. In EST the 15:00 UTC firing lands at 10:00 and is
+    still correctly held back for the 16:00 one.
+
+    The snapshot is committed and pushed by the run that writes it, and the workflow's
+    concurrency group serialises firings, so a later firing checks out a tree that already
+    carries it. If that push ever fails, this degrades to a duplicate review rather than a
+    missing one — the right way round.
+    """
     if force:
         return True
     now = _eastern_now()
-    ok = now.weekday() == 5 and now.hour == 11
-    print(f"Eastern now = {now:%Y-%m-%d %H:%M %Z} (Sat? {now.weekday()==5}, "
-          f"hour {now.hour}) → {'proceed' if ok else 'skip'}")
+    is_saturday = now.weekday() == 5
+    past_11 = now.hour >= 11
+    done = snapshot_path_for(now.date()).exists()
+    ok = is_saturday and past_11 and not done
+    reason = ("proceed" if ok else
+              "skip — not Saturday" if not is_saturday else
+              "skip — before 11:00 ET" if not past_11 else
+              "skip — this week's review already shipped")
+    print(f"Eastern now = {now:%Y-%m-%d %H:%M %Z} (Sat? {is_saturday}, hour {now.hour}, "
+          f"already shipped? {done}) → {reason}")
     return ok
 
 
@@ -153,11 +189,10 @@ def build_message(stats: dict) -> str:
 def write_snapshot(stats: dict, message: str) -> Path:
     WEEKLY_DIR.mkdir(parents=True, exist_ok=True)
     today = date_cls.fromisoformat(stats["generated_for"])
-    iso_year, iso_week, _ = today.isocalendar()
-    path = WEEKLY_DIR / f"{iso_year}-W{iso_week:02d}.md"
+    path = snapshot_path_for(today)
     geo = stats["geometry"]
     header = (f"# Weekly review — {geo['block_id']} · Week {geo['week_no']}/{geo['weeks']}"
-              f"\n\n_Generated {stats['generated_for']} (Sat 11:00 ET). "
+              f"\n\n_Generated {stats['generated_for']} (Saturday review). "
               f"Hevy log = source of truth._\n\n---\n\n")
     body = message + "\n"
     bc = stats.get("back_checks")
