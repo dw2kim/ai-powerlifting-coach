@@ -475,17 +475,21 @@ underlying back being worse. The clean weeks are what separate the two.)
       The Saturday sync will re-anchor it after W1.
 - [ ] **B6 (mid-Sep)** is where squat and sumo come back, on clearance. Paused RDL and Paused
       Low-bar Squat return then too.
-- [ ] 🏃 **Running comeback started Sat 2026-08-29** — **Wed night + Sun daytime**, 24-min
-      run/walk block, see `brain/running-comeback.md`. **Nothing in this block changes**:
+- [ ] 🏃 **Running comeback started Sat 2026-08-29** — **Tue ~8:30pm + Sun daytime**, see
+      `brain/running-comeback.md`. **Nothing in this block's loads, reps or days changes**:
       bench/pull-up/dip are shoulder-limited and untouched, squat and sumo are 225 technique work.
-      Three consequences for B5's remaining two weeks — (1) **the next-day back check now applies
-      to run days too**, (2) **if Thursday's dip day runs flat two weeks running, the Wednesday
-      run shrinks — not the dip**, and (3) see the knee item below.
-- [ ] ⚠️ **Right knee — mild pain the morning after run 1 (2026-08-29→30).** Running is held at
-      1:1 ×10 until two clean mornings. **Nothing in this block changes yet at "a very little
-      bit"** — but if it escalates, the **Leg Press ROM rule (D1)** and the **Bulgarian Split
-      Squat (D4)** are the two items to look at first; both load the patellofemoral joint at
-      depth. Location not yet reported — that's the next thing to ask.
+      Two consequences for B5's last two weeks — (1) **the next-day back check now applies to run
+      days too**, and (2) see the knee item below.
+- [ ] ⚠️ **Right PATELLAR TENDON — sore the morning after run 1 (2026-08-29→30).** Running is
+      paused (vehicle swapped to bike/incline walk) and restarts at 1:1 ×6 on two clean days.
+      **Two changes land in this block, and neither is a cut** — heavy *slow* loading is the
+      treatment for a patellar tendon, so the squat and leg press are doing rehab work as written:
+      - **Bulgarian Split Squat (D4): slow and controlled, NO bounce out of the bottom.** Biggest
+        patellar tendon load in the block. Controlled it's therapy; bounced it's the injury.
+        **First thing cut if the tendon escalates past "a very little bit."**
+      - **Leg Press (D1): existing ROM rule already covers it.** Unchanged.
+      - **Add isometrics daily** — wall sit or leg-extension hold, **5 × 45 s**. Best-evidenced
+        treatment for patellar tendon pain. Not a block exercise; it's a standing order.
 - [ ] 🔴 **Add to the ~Sep 11 clinic list: "I'm adding 20–30 min of easy run/walk twice a week,
       and my right knee was sore the day after the first one."** Third activity he's doing that
       the clinic doesn't know about. Cheapest of the disclosure items to ask.

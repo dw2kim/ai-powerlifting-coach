@@ -1,8 +1,8 @@
 # Back Checks
 
 > **The morning after every session that loads the back** — squat, sumo, **and (from
-> 2026-08-29) every run.** While B5 runs squat on D1 and sumo on D4 and running sits on Wed
-> night + Sun daytime, that's four: Tue, Sat, Thu and Mon. One word for how the back feels:
+> 2026-08-29) every run.** While B5 runs squat on D1 and sumo on D4 and running sits on Tue
+> night + Sun daytime, that's four: Tue, Sat, Wed and Mon. One word for how the back feels:
 > **fine · tight · sore**. That's the whole ask. Nothing to log on the other days.
 >
 > **Running counts because repetitive axial impact is real loading** on a spine under treatment,

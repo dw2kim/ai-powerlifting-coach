@@ -454,10 +454,55 @@ impact while the session count looks flat. Kept the walk on non-run days. **The 
 already keeps, with zero schedule change. Best adherence signal in the plan.
 **Gym hours researched, and the finding inverted his worry.** GTA LA Fitness: **Mon–Thu 5am–11pm,
 Fri 5am–10pm, Sat–Sun 8am–8pm.** He feared winter; the real constraint is **Sunday, year-round** —
-weekends close at 8pm, so his 9:30pm Sunday slot never had a treadmill option, while Wednesday
-9:30pm is fine with 90 minutes to spare. **Sunday moved to daytime**, which is better anyway (it
-was compressing the night before Monday's squat + bench). **When he names a constraint, check it
+weekends close at 8pm, so his evening Sunday slot never had a treadmill option, while a weeknight
+run is fine with hours to spare. **Sunday moved to daytime**, which is better anyway (it was
+compressing the night before Monday's squat + bench). **When he names a constraint, check it
 rather than designing around his version of it** — his was off by both a day and a season.
+
+### Third revision, same day — it's the PATELLAR TENDON, and the goal isn't running
+
+**Knee located: below the kneecap, on the tendon.** His reasoning — *"I know for sure it's not
+muscle soreness because I have trained the muscle for 10 years"* — is **half right, and the wrong
+half is the important one.** Right: it isn't DOMS. Wrong: **tendons adapt mode-specifically.** Ten
+years of squatting conditioned that tendon for slow high-force loading; running loads it fast and
+repetitively through a stretch-shortening cycle, so a 465 lb squat buys almost nothing against
+rate of loading in a jog. **The strongest structure in the chain was the one that hadn't seen the
+input** — which is exactly why the quads were fine and the tendon wasn't. He will repeat this
+reasoning; correct it each time. (Also ruled out his "maybe a nerve": the L3-4 protrusion is
+**left**, the knee is **right**, and the MRI found no root impingement.)
+**The treatment was already in the block, which is the useful part.** Heavy *slow* resistance
+rehabilitates a patellar tendon, so squat and leg press are doing rehab as written — **nothing
+gets cut.** Two changes only: **BSS slow with no bounce out of the bottom** (biggest patellar
+load in the block; controlled it's therapy, bounced it's the injury) and **daily isometrics,
+5 × 45 s wall sit / leg-extension hold**, the best-evidenced intervention with a real acute
+analgesic effect. **Reach for what's already in the program before adding anything** — and note
+how well this lands with him: he hears "your squat is the treatment," not "stop training."
+
+**He answered what running is FOR: heart health, brain health, circulation, habit/identity.** No
+race, no distance, no date. **This decouples the goal from the movement and is the most useful
+fact in the file.** If the objective is cardiac and cognitive, the distance is irrelevant and
+*running is not required* — a bike or an incline walk delivers the same aerobic dose with zero
+patellar tendon stress. **New operating principle: when the tendon is symptomatic, keep the slot
+and change the vehicle.** He loses nothing he actually wants. **Ask what a goal is for before
+optimizing the vehicle he named** — "get back to running" looked like a running problem for two
+revisions and was a cardio problem the whole time.
+Two supporting reframes that landed: **he is not starting from sedentary** (a 30-min nightly walk
+is already ~150 min/wk, the public-health target — he undersells it), and **the daily habit he
+wants already exists** — habits are built by frequency and low friction, so his instinct toward
+daily is right for the *habit* and wrong for the *tissue*; all that changes over a year is what
+happens in the 8:30pm slot on more days. Much smaller ask than "become a runner."
+**Weight loss he raised → nutrition's lane, said in one line.** In-scope part only: bodyweight is
+the BW in BW+80 pull-up / BW+90 dip *and* the load per footstrike, so it cuts both ways.
+
+**Days moved again — Wed night + Sun daytime → TUE ~8:30pm + Sun daytime.** He refused evening
+running before a 6am lift ("my heartbeat will be so high") — correct instinct, **and the days he
+himself picked contained exactly that conflict**: Wed night feeds straight into Thursday's 6am
+dip day. The only nights followed by a non-lifting morning are **Tue, Fri, Sat**; Tuesday wins
+because Wednesday is a rest day, so nothing at 6am depends on that night's sleep. **When he
+raises a constraint, check whether his own plan already violates it** — twice now he has named a
+real limit and not noticed his proposal breached it (the 8pm weekend close, then this).
+Also: 10-min walk cooldown on night runs, not 5. And he agreed to **hold 2 days/week through the
+autumn**, which is the right ask and matches the roadmap.
 
 ## 2026-08-11 — Hip Thrust re-anchored: the 4th `exercise-name-mapping` catch
 B5 programmed Hip Thrust as a **first exposure — empty bar in W1** on the belief he'd never done
