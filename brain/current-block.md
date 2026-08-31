@@ -475,13 +475,13 @@ underlying back being worse. The clean weeks are what separate the two.)
       The Saturday sync will re-anchor it after W1.
 - [ ] **B6 (mid-Sep)** is where squat and sumo come back, on clearance. Paused RDL and Paused
       Low-bar Squat return then too.
-- [ ] 🏃 **Running comeback started Sat 2026-08-29** — **Tue ~8:30pm + Sun daytime**, see
+- [ ] 🏃 **Running comeback started Sat 2026-08-29** — **Tue + Sat, both ~8:30pm**, see
       `brain/running-comeback.md`. **Nothing in this block's loads, reps or days changes**:
       bench/pull-up/dip are shoulder-limited and untouched, squat and sumo are 225 technique work.
       Two consequences for B5's last two weeks — (1) **the next-day back check now applies to run
       days too**, and (2) see the knee item below.
-- [ ] ⚠️ **Right PATELLAR TENDON — sore the morning after run 1 (2026-08-29→30).** Running is
-      paused (vehicle swapped to bike/incline walk) and restarts at 1:1 ×6 on two clean days.
+- [ ] ⚠️ **Right PATELLAR TENDON — reactive tendinopathy, confirmed 2026-08-31** (focal ✓,
+      warm-up phenomenon ✓; cleared at ~48 h). Running restarts at 1:1 ×8.
       **Two changes land in this block, and neither is a cut** — heavy *slow* loading is the
       treatment for a patellar tendon, so the squat and leg press are doing rehab work as written:
       - **Bulgarian Split Squat (D4): slow and controlled, NO bounce out of the bottom.** Biggest

@@ -504,6 +504,35 @@ real limit and not noticed his proposal breached it (the 8pm weekend close, then
 Also: 10-min walk cooldown on night runs, not 5. And he agreed to **hold 2 days/week through the
 autumn**, which is the right ask and matches the roadmap.
 
+### 2026-08-31 — tendinopathy confirmed, and the warm-up phenomenon is the thing to keep saying
+
+**Both signs positive: focal one spot ✓, eases as he warms up ✓.** Reactive patellar tendinopathy,
+mild, caught on day one. Cleared by Monday (~48 h) — note that's **over the 24 h return-to-baseline
+threshold**, so it's real, not nothing.
+**The durable coaching line: the warm-up phenomenon is a trap, not reassurance.** A tendon that
+feels *better* as the run goes on is exactly how this becomes chronic — warm up, feel fine, finish
+feeling good, repeat. **The tendon's report during the run is worthless.**
+**And the framing that landed: this is `masked-pain-load-cap` in a different tissue.** His own rule
+already says that when the pain signal is muffled, feel- and RPE-based guardrails stop protecting
+the structure, so you cap by an absolute number. Anesthetic muffles his back; the warm-up
+phenomenon muffles this tendon. **Reaching for a rule he already accepts, in a new tissue, beats
+arguing the new case from scratch** — same move as "your squat is already the treatment."
+**He negotiated ×8 over ×6 ("six seems to be too small") — granted, ceiling taken back in the
+gate.** Third instance of the pattern (225 squat floor, CGB on D3, now this): **grant the number
+he cares about, take it back in the shape he doesn't notice.** Here the shape was the gate —
+step 1 needs **three** clean mornings instead of two, because he's starting above where I'd have
+put him. Price stated explicitly: daily isometrics (plus a set *before* the run), the cadence fix,
+and a 10-min warm-up. Hard line written down: **sore into a second morning → drop to ×6, not a
+negotiation.**
+**Days moved a third time — Tue + Sun daytime → TUE + SAT, both 8:30pm.** He wants *both* runs at
+night replacing the walk, which breaks Sunday: Sun night runs into Monday's 6am squat + bench.
+**Third time he has named a constraint his own proposal violated** (weekend gym close → Wed-night
+→ Sun-night). Friday night rejected: ~14 h after that morning's BSS. Saturday works at ~36 h post,
+with a winter caveat (no weekend-evening treadmill) and a slip rule (D4 on Sat → run moves to Sun).
+**Also: he read the summary artifact as prescribing a morning run.** It never did — "next morning"
+means the *check*. **When he misreads a document, fix the document's wording rather than correcting
+him** — the sheet now says so explicitly at the top of the schedule section.
+
 ## 2026-08-11 — Hip Thrust re-anchored: the 4th `exercise-name-mapping` catch
 B5 programmed Hip Thrust as a **first exposure — empty bar in W1** on the belief he'd never done
 it. He has: **six barbell sessions** (2023, median 225, **max 275×12**) and a **Smith session at

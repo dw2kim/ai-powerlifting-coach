@@ -81,21 +81,40 @@ the muscle for 10 years"* — is **half right and the wrong half is the importan
 - **Almost certainly not nerve** (he wondered). The L3-4 protrusion is **left**-sided, this is the
   **right** knee, and the lumbar MRI found no nerve-root impingement. Don't chase it.
 
-**Two confirmations to get:**
-1. **Focality** — patellar tendinopathy is startlingly focal; one fingertip on the inferior pole
-   of the patella reproduces it. Diffuse and hard to localize is a better sign.
-2. **The warm-up phenomenon** — pain at the *start* of activity that **eases as it warms up** and
-   is **worse the next morning**. That pattern is close to diagnostic.
+### ✅ Confirmed 2026-08-31 — both signs positive
+
+Athlete reports: **focal, one spot** ✓ and **eases as he warms up** ✓. Symptom **cleared by
+Monday** (~48 h). That is **reactive patellar tendinopathy**, mild and early — caught on day one,
+which is the best position available with this injury.
+
+> ⚠️ **The warm-up phenomenon is a trap, not reassurance — say this to him whenever it comes up.**
+> A tendon that feels *better* as the run goes on is the mechanism by which this becomes chronic:
+> warm up, feel fine, finish feeling good, do it again. **The tendon's report during the run is
+> worthless.**
+>
+> **This is `masked-pain-load-cap` in a different tissue, and framing it that way lands with him.**
+> His own rule already says: when the pain signal is muffled, feel-based and RPE-based guardrails
+> stop protecting the structure, so cap by an **absolute number**. Anesthetic muffles his back;
+> the warm-up phenomenon muffles this tendon. Same problem, same medicine.
+>
+> **The operative rule: judge by the next morning, never by the run.**
+
+**Tolerance threshold:** the standard is pain back to baseline within **24 h**. Run 1 took ~48 h.
+That is over the line, and it is why the restart dose is below where he'd like it.
 
 ### What we do about it
 
-- **No run on the next scheduled day.** Keep the slot, **change the vehicle** — 30 min incline
-  walk or bike at conversational effort. Full aerobic dose, zero patellar tendon stress.
-- **The next run is gated on two consecutive pain-free days**, and restarts at **1:1 ×6 (12 min)**
-  — *below* the dose that provoked it, not at it.
+- **Skip the run on the next scheduled day.** Keep the slot, **change the vehicle** — 30 min
+  incline walk or bike at conversational effort. Full aerobic dose, zero patellar tendon stress.
+- **Restart at 1:1 ×8 (16 min)** — see *The ladder*. He asked for ×8 over ×6 ("six seems too
+  small"); granted, with the price below.
 - **Isometrics, daily — this is the actual treatment.** Wall sit or leg-extension hold,
   **5 × 45 s, 1–2 min between.** Best-evidenced intervention for patellar tendon pain, with a
   genuine acute analgesic effect, and it loads the tendon in the mode it tolerates. Five minutes.
+  **Also do a set immediately before each run** — analgesia plus tendon priming.
+- **Warm-up walk goes to 10 min, not 5.** With tendinopathy the warm-up is part of the treatment,
+  not a formality.
+- 🔴 **Hard line: sore into a SECOND morning after an ×8 run → drop to ×6.** Not a negotiation.
 - **He already owns the rest of the treatment.** Heavy *slow* resistance is what rehabilitates a
   patellar tendon, and that is his squat and his leg press. **Nothing gets cut.** Two adjustments:
   - **Bulgarian Split Squat (D4): slow and controlled, no bounce out of the bottom.** It's the
@@ -119,38 +138,51 @@ after (see *Sleep*) — **~30–35 min door to door**, which is the night-walk s
 
 | Step | Interval | Reps | Running/session | Advance when |
 |---|---|---|---|---|
-| **1** *(restart here)* | 1 run : 1 walk | **×6** | 12 min | **2 consecutive clean next-mornings** |
-| 2 | 1 run : 1 walk | ×10 | 10→20 min | 2 consecutive clean next-mornings |
-| 3 | 2 run : 1 walk | ×8 | 16 min | 2 consecutive clean next-mornings |
-| 4 | 3 run : 1 walk | ×6 | 18 min | 2 consecutive clean next-mornings |
-| 5 | 5 run : 1 walk | ×4 | 20 min | — end of the on-ramp |
+| **1** *(restart here)* | 1 run : 1 walk | **×8** | 16 min | 🔒 **3 consecutive clean next-mornings** |
+| 2 | 1 run : 1 walk | ×10 | 20 min | 2 consecutive clean next-mornings |
+| 3 | 2 run : 1 walk | ×8 | 16 min running | 2 consecutive clean next-mornings |
+| 4 | 3 run : 1 walk | ×6 | 18 min running | 2 consecutive clean next-mornings |
+| 5 | 5 run : 1 walk | ×4 | 20 min running | — end of the on-ramp |
 
 > **Revised from a calendar to a gate (2026-08-30).** The first draft ran fixed two-week steps.
-> Session 1 produced a tendon symptom, so steps are now **earned, not dated**: held until **two
-> consecutive sessions leave a clean next morning.** If a step takes six weeks, it takes six
-> weeks. **A calendar-based progression is a promise the tissue never agreed to.**
+> Session 1 produced a tendon symptom, so steps are now **earned, not dated**: held until two
+> consecutive sessions leave a clean next morning. If a step takes six weeks, it takes six weeks.
+> **A calendar-based progression is a promise the tissue never agreed to.**
+
+> **Step 1 raised ×6 → ×8 on his ask (2026-08-31), and the ceiling taken back in the gate.**
+> His words: *"six seems to be too small."* Same negotiation as the 225 squat floor and the CGB
+> ask — **grant the number he cares about, take it back in the shape he doesn't notice.** He is
+> starting above where I'd have put him, so **step 1 needs THREE clean mornings, not two.**
+> Higher floor, slower climb. The daily isometrics, the cadence fix and the 10-min warm-up are
+> the stated price and are not optional.
 
 After step 5 the next goal is continuous 20–25 min. **There is no distance target** — see *What
 the running is FOR*.
 
 ### Where it goes in the week
 
-**Tuesday ~8:30pm · Sunday daytime.**
+**Tuesday ~8:30pm · Saturday ~8:30pm.** Both at night, both replacing the walk — which is what he
+asked for and the only structure he'll actually keep.
 
-> **Revised 2026-08-30 — he was right to refuse a night run before a 6am lift, and the days he
-> picked contained exactly that conflict.** He trains 6–6:30am on **Mon, Tue, Thu, Fri**, so a
-> **Wed night run feeds straight into Thursday's 6am dip day.** Moving it 9:30pm → 8:30pm buys an
-> hour; it doesn't remove the conflict. The only nights followed by a **non-lifting morning** are
+> ⚠️ **NOTHING IN THIS PLAN IS A MORNING RUN.** He misread the summary sheet on 2026-08-31 and
+> thought one was prescribed. **"Next morning" everywhere in this file means the CHECK, not a
+> session.** Both runs are at night. Fix the wording, not his understanding.
+
+> **Revised twice, because he named a constraint his own plan kept breaking.** He trains
+> 6–6:30am on **Mon, Tue, Thu, Fri** and rightly refuses a night run before a 6am lift. But
+> **Wed night feeds Thursday's dip day**, and **Sun night feeds Monday's squat + bench** — the
+> heaviest session of the week. The only nights followed by a **non-lifting morning** are
 > **Tue, Fri and Sat.**
 
-- **Tue ~8:30pm** — his existing walk slot, and **Wednesday is a rest day**, so nothing at 6am
-  depends on that night's sleep. Sits after D2 (pull-up + posterior chain): no leg conflict.
-  Winter: club open to **11pm** Mon–Thu.
-- **Sun daytime** — **not** evening. Two reasons: the club closes **8pm on weekends** year-round,
-  so there's no winter treadmill option; and a Sunday-night run compresses the night before
-  Monday's squat + bench, the heaviest day of the week.
-- **Saturday is deliberately not used.** Friday's Bulgarian Split Squat is the block's DOMS
-  generator, and Saturday is the day D4 slips to when it slips.
+- **Tue ~8:30pm** — his existing walk slot; **Wednesday is a rest day**, so nothing at 6am depends
+  on that night's sleep. Follows D2 (pull-up + posterior chain), so the legs are fresh. Club open
+  to **11pm** Mon–Thu, so it's treadmill-capable all year.
+- **Sat ~8:30pm** — Sunday is a rest day. Sits **~36 h after Friday's Bulgarian Split Squat**,
+  past the worst of it. ⚠️ **Winter caveat: the club shuts at 8pm on weekends**, so around
+  December this run moves to Saturday daytime or he buys a cheap treadmill. **And if D4 slips to
+  Saturday morning that week, the run moves to Sunday.**
+- **Friday night is rejected** — it lands ~14 h after that morning's Bulgarian Split Squat, the
+  worst available surface for an irritated patellar tendon.
 - **Never on a lifting morning.** A second session at 6am will not happen.
 
 ### Sleep — his binding constraint, in his own words
@@ -158,13 +190,13 @@ the running is FOR*.
 He refuses a 9:30pm run because *"my heartbeat will be so high"* and he needs early sleep for a
 6am start. Correct instinct. Handled three ways:
 
-1. **Tuesday, not Wednesday** — the night that isn't followed by a lift (above). This is the fix;
-   the rest is hygiene.
+1. **Tuesday and Saturday, not Wednesday and Sunday** — the nights that aren't followed by a lift
+   (above). This is the fix; the rest is hygiene.
 2. **10-minute walk cooldown**, not 5, on night runs — heart rate down *before* he goes inside.
 3. **Genuinely easy intervals.** The pace rule now has a second reason behind it.
 
-**If sleep degrades even once, the Tuesday run moves to daytime too.** Sleep is where a shoulder
-with two tears and a back under treatment gets paid for.
+**If sleep degrades even once, the run moves to daytime.** Sleep is where a shoulder with two
+tears and a back under treatment gets paid for.
 
 ### The night walk stays
 
@@ -197,7 +229,7 @@ loading. Swapping them raises the weekly impact dose while the session count loo
 
 | # | Date | Session | Next morning | Note |
 |---|---|---|---|---|
-| 1 | Sat 2026-08-29 | 1:1 ×10 (20 min) | ⚠️ **mild R knee, walking** | Fine during. Located 08-30: **below the kneecap, on the patellar tendon.** |
+| 1 | Sat 2026-08-29 | 1:1 ×10 (20 min) | ⚠️ **mild R knee, walking** | Fine during. Located 08-30: **below the kneecap, patellar tendon.** Confirmed 08-31: **focal ✓, warm-up phenomenon ✓** → reactive tendinopathy. **Cleared Mon 08-31 (~48 h)** — over the 24 h tolerance threshold. |
 
 ## Gym hours — researched 2026-08-30
 
@@ -205,9 +237,9 @@ GTA LA Fitness clubs, consistent across sources; nearest is **Vaughan, 9350 Bath
 
 | Days | Hours | Consequence |
 |---|---|---|
-| **Mon – Thu** | **5:00 am – 11:00 pm** | **Tue 8:30pm treadmill works**, with hours to spare. Winter solved, no purchase needed. |
-| Fri | 5:00 am – 10:00 pm | A Friday-night run would also fit. |
-| **Sat – Sun** | **8:00 am – 8:00 pm** | **A Sunday evening treadmill is impossible — year-round, not just winter.** Why Sunday is daytime. |
+| **Mon – Thu** | **5:00 am – 11:00 pm** | **Tue 8:30pm treadmill works**, with hours to spare. Winter solved for that run, no purchase needed. |
+| Fri | 5:00 am – 10:00 pm | Would fit, but Friday night is rejected on the BSS-same-day grounds above. |
+| **Sat – Sun** | **8:00 am – 8:00 pm** | ⚠️ **No weekend-evening treadmill — year-round, not just winter.** The Saturday run is outdoors-only; around December it moves to daytime or he buys a treadmill. |
 
 Weeknights close at 10–11pm, so the gym covers every future added day **except weekend evenings**.
 Hours vary by club and change — **he should confirm his own club.**
@@ -253,8 +285,8 @@ Stated explicitly, per CLAUDE.md's overlap requirement:
 | Running × **Bench / Pull-up / Dip** | **No cost.** Different tissue, different limiter (shoulder), different days. |
 | Running × **Squat / Sumo @ 225 @6** | **No meaningful cost** while the medical override holds — technique work. |
 | **Knee × Squat / Leg Press / BSS** | ⚠️ **Live.** Slow heavy loading is *treatment*, not risk — nothing is cut. **BSS goes slow, no bounce**; Leg Press keeps its ROM rule. BSS is the first cut if the tendon escalates. |
-| Running × **sleep** | The binding constraint. Tue night is chosen *because* Wednesday is a rest day. Moves to daytime if sleep degrades. |
-| Running × **Wednesday rest** | Now preserved — the run moved to Tuesday. |
+| Running × **sleep** | The binding constraint. Tue and Sat are chosen *because* Wed and Sun are rest days. Moves to daytime if sleep degrades. |
+| Running × **D4 slipping to Sat** | On a week D4 slips to Saturday morning, the Saturday run moves to **Sunday**. |
 | Running × **Seated Calf Raise (D4)** | Now **load-bearing** — Achilles/calf preparation for running, not a coverage hole-filler. **Keep it in B6.** |
 
 ### 🔴 The collision to plan for: B6
@@ -268,8 +300,8 @@ progressions on the same tissue at once is how this goes wrong.
 
 ## Open questions
 
-- [ ] **Is the knee pain focal, and does it show the warm-up phenomenon?** Both confirm patellar
-      tendinopathy vs. a passing novel-load response. Ask before the next run.
+- [x] ~~Is the knee pain focal, and does it show the warm-up phenomenon?~~ **Both confirmed
+      2026-08-31 — reactive patellar tendinopathy.** Cleared at ~48 h.
 - [x] ~~What is running for?~~ **Answered 2026-08-30** — heart, brain, circulation, habit. No
       race, no distance. See *What the running is FOR*; it's why modality substitution is free.
 - [ ] **Tell the clinic at the ~2026-09-11 visit**: "I'm adding easy run/walk twice a week, and my
