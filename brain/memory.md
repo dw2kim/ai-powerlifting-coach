@@ -416,9 +416,48 @@ was rejected on purpose — Friday's Bulgarian Split Squat is the DOMS generator
 constraint is one line — **when squat or sumo steps up, the running holds flat that week.**
 **Also worth keeping:** Seated Calf Raise (D4) quietly became load-bearing — it went in as a
 muscle-coverage hole-filler and is now Achilles prep. Don't cut it in B6 on the old rationale.
-**Left open deliberately** (didn't block on it — the 8-week on-ramp is identical either way): what
-running is *for*. That answer decides week 9, not week 1. And this is the **third** activity the
-clinic doesn't know about — same gap that had the doctor *shocked* on Aug 7.
+**Left open deliberately** (didn't block on it — the on-ramp is identical either way): what
+running is *for*. That answer decides the frequency ramp, not week 1. And this is the **third**
+activity the clinic doesn't know about — same gap that had the doctor *shocked* on Aug 7.
+
+### Same day, revised twice more — he'd already run, and the plan met reality inside an hour
+
+**He ran session 1 on Sat 2026-08-29 before asking the question** (1:1 ×10, 20 min) and woke with
+**mild right-knee pain on walking.** Read: **10 minutes of running was enough to provoke a
+symptom** — a very low dose, and exactly the tissue-lag prediction arriving faster than I'd have
+guessed. Not alarming at that magnitude (run #1 knee soreness is near-universal), but it is the
+strongest available argument against the frequency ramp he wants, and it came from him, not me.
+**The structural fix: the ladder went from dated to gated.** The first draft ran fixed two-week
+steps; it now advances only on **two consecutive clean next-mornings**, and is held at ×10 rather
+than the ×12 originally written. **A calendar-based progression is a promise the tissue never
+agreed to** — when the first data point contradicts the schedule, convert the schedule into a
+gate rather than editing the dates. Generalizes past running.
+**Knee location was the one thing I couldn't proceed without and asked for** — front/under the
+cap (patellofemoral) vs below it (patellar tendon) vs outside (ITB) vs diffuse (novel-load) are
+different problems. Also gave the one mechanical cue worth giving: **quicker, shorter steps, land
+under the hips.** Overstriding is the primary driver of knee load in returning runners, and he is
+a 465 lb squat bolted to zero impact conditioning — the strength is fine, the shock absorption is
+what's missing.
+**He wants to run "almost every day" and asked for evidence. The honest answer is yes-eventually
+and the evidence favours him**: Alentorn-Geli 2017 (JOSPT, ~114k people) — hip/knee OA **3.5%
+recreational runners · 10.2% sedentary · 13.3% competitive.** U-shaped; recreational running
+*protects* joints. **But that's the wrong question** — what injures returning runners is **rate of
+change**, not frequency (bone resorption phase before remodeling; tendon collagen synthesis peaks
+~24–72 h), which is why habitual daily runners are fine and a month-one daily runner is not.
+Roadmap written: 2 days now → 3 at ~month 3 → 4 at ~month 5–6 → 5 ceiling. **Don't answer a
+folk-belief question ("does running wreck knees") by hedging — answer it with the number, then
+redirect to the risk that's actually his.**
+**Correcting the walk swap mattered.** He wanted running to *replace* his ~30 min nightly walk.
+It's not like-for-like — the walk is recovery, the run is loading, and swapping raises weekly
+impact while the session count looks flat. Kept the walk on non-run days. **The happy accident:
+5 walk + 20 intervals + 5 walk = exactly 30 min**, so the session drops into a habit slot he
+already keeps, with zero schedule change. Best adherence signal in the plan.
+**Gym hours researched, and the finding inverted his worry.** GTA LA Fitness: **Mon–Thu 5am–11pm,
+Fri 5am–10pm, Sat–Sun 8am–8pm.** He feared winter; the real constraint is **Sunday, year-round** —
+weekends close at 8pm, so his 9:30pm Sunday slot never had a treadmill option, while Wednesday
+9:30pm is fine with 90 minutes to spare. **Sunday moved to daytime**, which is better anyway (it
+was compressing the night before Monday's squat + bench). **When he names a constraint, check it
+rather than designing around his version of it** — his was off by both a day and a season.
 
 ## 2026-08-11 — Hip Thrust re-anchored: the 4th `exercise-name-mapping` catch
 B5 programmed Hip Thrust as a **first exposure — empty bar in W1** on the belief he'd never done

@@ -1,12 +1,14 @@
 # Back Checks
 
 > **The morning after every session that loads the back** — squat, sumo, **and (from
-> 2026-09-02) every run.** While B5 runs squat on D1 and sumo on D4 and running sits on Wed +
-> Sun, that's four: Tue, Sat, Thu and Mon. One word for how the back feels:
+> 2026-08-29) every run.** While B5 runs squat on D1 and sumo on D4 and running sits on Wed
+> night + Sun daytime, that's four: Tue, Sat, Thu and Mon. One word for how the back feels:
 > **fine · tight · sore**. That's the whole ask. Nothing to log on the other days.
 >
 > **Running counts because repetitive axial impact is real loading** on a spine under treatment,
-> and it's a brand-new stimulus with no history in this file. See `brain/running-comeback.md`.
+> and it's a brand-new stimulus with no history in this file. See `brain/running-comeback.md` —
+> **the knee is tracked separately**, in that file's session log, not here. This file stays
+> about the back and keeps its three words.
 >
 > It's tied to a *session*, not to a calendar. That's the entire point: it answers "did
 > loading the back on Monday leave a mark?", which a general "how's your back this week?"

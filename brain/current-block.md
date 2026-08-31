@@ -475,12 +475,17 @@ underlying back being worse. The clean weeks are what separate the two.)
       The Saturday sync will re-anchor it after W1.
 - [ ] **B6 (mid-Sep)** is where squat and sumo come back, on clearance. Paused RDL and Paused
       Low-bar Squat return then too.
-- [ ] 🏃 **Running comeback starts Wed 2026-09-02** (W4 D-mid) — Wed + Sun, 24-min run/walk block,
-      see `brain/running-comeback.md`. **Nothing in this block changes**: bench/pull-up/dip are
-      shoulder-limited and untouched, squat and sumo are 225 technique work. Two consequences for
-      B5's remaining two weeks — (1) **the next-day back check now applies to run days too**
-      (Thu + Mon, on top of Tue + Sat), and (2) **if Thursday's dip day runs flat two weeks
-      running, the Wednesday run shrinks — not the dip.**
-- [ ] 🔴 **Add to the ~Sep 11 clinic list: "I'm adding 20–25 min of easy run/walk twice a week —
-      any objection?"** Third activity he's doing that the clinic doesn't know about. Cheapest of
-      the disclosure items to ask and the answer is almost certainly yes.
+- [ ] 🏃 **Running comeback started Sat 2026-08-29** — **Wed night + Sun daytime**, 24-min
+      run/walk block, see `brain/running-comeback.md`. **Nothing in this block changes**:
+      bench/pull-up/dip are shoulder-limited and untouched, squat and sumo are 225 technique work.
+      Three consequences for B5's remaining two weeks — (1) **the next-day back check now applies
+      to run days too**, (2) **if Thursday's dip day runs flat two weeks running, the Wednesday
+      run shrinks — not the dip**, and (3) see the knee item below.
+- [ ] ⚠️ **Right knee — mild pain the morning after run 1 (2026-08-29→30).** Running is held at
+      1:1 ×10 until two clean mornings. **Nothing in this block changes yet at "a very little
+      bit"** — but if it escalates, the **Leg Press ROM rule (D1)** and the **Bulgarian Split
+      Squat (D4)** are the two items to look at first; both load the patellofemoral joint at
+      depth. Location not yet reported — that's the next thing to ask.
+- [ ] 🔴 **Add to the ~Sep 11 clinic list: "I'm adding 20–30 min of easy run/walk twice a week,
+      and my right knee was sore the day after the first one."** Third activity he's doing that
+      the clinic doesn't know about. Cheapest of the disclosure items to ask.
