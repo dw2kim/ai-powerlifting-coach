@@ -1,50 +1,11 @@
 {
-  "created_at": "2026-08-21T12:13:17.570Z",
+  "created_at": "2026-08-25T12:58:59.883Z",
   "description": "",
-  "end_time": "2026-08-21T12:13:14+00:00",
+  "end_time": "2026-08-25T12:58:57+00:00",
   "exercises": [
     {
-      "exercise_template_id": "D20D7BBE",
+      "exercise_template_id": "729237D1",
       "index": 0,
-      "notes": "",
-      "sets": [
-        {
-          "custom_metric": null,
-          "distance_meters": null,
-          "duration_seconds": null,
-          "index": 0,
-          "reps": 3,
-          "rpe": null,
-          "type": "normal",
-          "weight_kg": 102.05840462301894
-        },
-        {
-          "custom_metric": null,
-          "distance_meters": null,
-          "duration_seconds": null,
-          "index": 1,
-          "reps": 3,
-          "rpe": null,
-          "type": "normal",
-          "weight_kg": 102.05840462301894
-        },
-        {
-          "custom_metric": null,
-          "distance_meters": null,
-          "duration_seconds": null,
-          "index": 2,
-          "reps": 3,
-          "rpe": null,
-          "type": "normal",
-          "weight_kg": 102.05840462301894
-        }
-      ],
-      "superset_id": null,
-      "title": "Sumo Deadlift"
-    },
-    {
-      "exercise_template_id": "74dfcc13-02b2-4eef-95f3-5abf04a2702b",
-      "index": 1,
       "notes": "",
       "sets": [
         {
@@ -55,44 +16,73 @@
           "reps": 8,
           "rpe": null,
           "type": "warmup",
-          "weight_kg": 61.235042773811365
+          "weight_kg": 0.45359290943563974
         },
         {
           "custom_metric": null,
           "distance_meters": null,
           "duration_seconds": null,
           "index": 1,
-          "reps": 4,
-          "rpe": 7,
-          "type": "normal",
-          "weight_kg": 102.05840462301894
+          "reps": 5,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 20.41168092460379
         },
         {
           "custom_metric": null,
           "distance_meters": null,
           "duration_seconds": null,
           "index": 2,
-          "reps": 4,
+          "reps": 3,
           "rpe": 7.5,
           "type": "normal",
-          "weight_kg": 102.05840462301894
+          "weight_kg": 36.28743275485118
+        }
+      ],
+      "superset_id": null,
+      "title": "Pull Up (Weighted)"
+    },
+    {
+      "exercise_template_id": "729237D1",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 5,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 27.215574566138386
         },
         {
           "custom_metric": null,
           "distance_meters": null,
           "duration_seconds": null,
-          "index": 3,
-          "reps": 4,
+          "index": 1,
+          "reps": 5,
           "rpe": 7.5,
           "type": "normal",
-          "weight_kg": 102.05840462301894
+          "weight_kg": 27.215574566138386
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 5,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 27.215574566138386
         }
       ],
       "superset_id": null,
-      "title": "Spoto Bench"
+      "title": "Pull Up (Weighted)"
     },
     {
-      "exercise_template_id": "B5D3A742",
+      "exercise_template_id": "08A2974E",
       "index": 2,
       "notes": "",
       "sets": [
@@ -101,37 +91,37 @@
           "distance_meters": null,
           "duration_seconds": null,
           "index": 0,
-          "reps": 10,
-          "rpe": 7.5,
+          "reps": 12,
+          "rpe": 7,
           "type": "normal",
-          "weight_kg": 20.41168092460379
+          "weight_kg": 43.091326396385774
         },
         {
           "custom_metric": null,
           "distance_meters": null,
           "duration_seconds": null,
           "index": 1,
-          "reps": 10,
-          "rpe": 7.5,
+          "reps": 12,
+          "rpe": 7,
           "type": "normal",
-          "weight_kg": 20.41168092460379
+          "weight_kg": 43.091326396385774
         },
         {
           "custom_metric": null,
           "distance_meters": null,
           "duration_seconds": null,
           "index": 2,
-          "reps": 10,
-          "rpe": 8.5,
+          "reps": 12,
+          "rpe": 7.5,
           "type": "normal",
-          "weight_kg": 20.41168092460379
+          "weight_kg": 43.091326396385774
         }
       ],
       "superset_id": null,
-      "title": "Bulgarian Split Squat (Dumbbell)"
+      "title": "T Bar Row"
     },
     {
-      "exercise_template_id": "914F3A96",
+      "exercise_template_id": "091737FA",
       "index": 3,
       "notes": "",
       "sets": [
@@ -140,37 +130,37 @@
           "distance_meters": null,
           "duration_seconds": null,
           "index": 0,
-          "reps": 10,
-          "rpe": null,
+          "reps": 12,
+          "rpe": 6,
           "type": "normal",
-          "weight_kg": 22.67964547178199
+          "weight_kg": 20.41168092460379
         },
         {
           "custom_metric": null,
           "distance_meters": null,
           "duration_seconds": null,
           "index": 1,
-          "reps": 10,
-          "rpe": 7.5,
+          "reps": 12,
+          "rpe": 7,
           "type": "normal",
-          "weight_kg": 22.67964547178199
+          "weight_kg": 20.41168092460379
         },
         {
           "custom_metric": null,
           "distance_meters": null,
           "duration_seconds": null,
           "index": 2,
-          "reps": 10,
-          "rpe": 8.5,
+          "reps": 12,
+          "rpe": 7,
           "type": "normal",
-          "weight_kg": 22.67964547178199
+          "weight_kg": 20.41168092460379
         }
       ],
       "superset_id": null,
-      "title": "Chest Supported Incline Row (Dumbbell)"
+      "title": "Back Extension (Weighted Hyperextension)"
     },
     {
-      "exercise_template_id": "062AB91A",
+      "exercise_template_id": "878CD1D0",
       "index": 4,
       "notes": "",
       "sets": [
@@ -179,10 +169,49 @@
           "distance_meters": null,
           "duration_seconds": null,
           "index": 0,
-          "reps": 15,
+          "reps": 10,
           "rpe": 7,
           "type": "normal",
-          "weight_kg": 40.82336184920758
+          "weight_kg": 31.75150366049478
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": 8.5,
+          "type": "normal",
+          "weight_kg": 31.75150366049478
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 5,
+          "rpe": 9,
+          "type": "normal",
+          "weight_kg": 31.75150366049478
+        }
+      ],
+      "superset_id": null,
+      "title": "Shoulder Press (Dumbbell)"
+    },
+    {
+      "exercise_template_id": "422B08F1",
+      "index": 5,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 15,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 14.968566011376112
         },
         {
           "custom_metric": null,
@@ -192,63 +221,24 @@
           "reps": 15,
           "rpe": 8.5,
           "type": "normal",
-          "weight_kg": 40.82336184920758
+          "weight_kg": 14.968566011376112
         },
         {
           "custom_metric": null,
           "distance_meters": null,
           "duration_seconds": null,
           "index": 2,
-          "reps": 13,
+          "reps": 15,
           "rpe": 9.5,
           "type": "normal",
-          "weight_kg": 40.82336184920758
+          "weight_kg": 14.968566011376112
         }
       ],
       "superset_id": null,
-      "title": "Seated Calf Raise"
+      "title": "Lateral Raise (Dumbbell)"
     },
     {
-      "exercise_template_id": "D8281C62",
-      "index": 5,
-      "notes": "",
-      "sets": [
-        {
-          "custom_metric": null,
-          "distance_meters": null,
-          "duration_seconds": null,
-          "index": 0,
-          "reps": 12,
-          "rpe": null,
-          "type": "normal",
-          "weight_kg": 45.35929094356398
-        },
-        {
-          "custom_metric": null,
-          "distance_meters": null,
-          "duration_seconds": null,
-          "index": 1,
-          "reps": 12,
-          "rpe": null,
-          "type": "normal",
-          "weight_kg": 45.35929094356398
-        },
-        {
-          "custom_metric": null,
-          "distance_meters": null,
-          "duration_seconds": null,
-          "index": 2,
-          "reps": 12,
-          "rpe": null,
-          "type": "normal",
-          "weight_kg": 45.35929094356398
-        }
-      ],
-      "superset_id": null,
-      "title": "Rear Delt Reverse Fly (Machine)"
-    },
-    {
-      "exercise_template_id": "724CDE60",
+      "exercise_template_id": "11A123F3",
       "index": 6,
       "notes": "",
       "sets": [
@@ -260,7 +250,7 @@
           "reps": 12,
           "rpe": null,
           "type": "normal",
-          "weight_kg": 19.50449510573251
+          "weight_kg": 52.16318458509857
         },
         {
           "custom_metric": null,
@@ -270,26 +260,65 @@
           "reps": 12,
           "rpe": null,
           "type": "normal",
-          "weight_kg": 19.50449510573251
+          "weight_kg": 52.16318458509857
         },
         {
           "custom_metric": null,
           "distance_meters": null,
           "duration_seconds": null,
           "index": 2,
-          "reps": 10,
-          "rpe": 9.5,
+          "reps": 12,
+          "rpe": null,
           "type": "normal",
-          "weight_kg": 19.50449510573251
+          "weight_kg": 52.16318458509857
         }
       ],
       "superset_id": null,
-      "title": "Concentration Curl"
+      "title": "Seated Leg Curl (Machine)"
+    },
+    {
+      "exercise_template_id": "CC55119B",
+      "index": 7,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 9.071858188712795
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 9.071858188712795
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 9.071858188712795
+        }
+      ],
+      "superset_id": null,
+      "title": "Cable Core Pallof Press"
     }
   ],
-  "id": "c3c6430e-a11d-41c4-a8ff-d2998d878550",
+  "id": "c46cb770-2c7f-4c55-9d86-dbe2921e98f7",
   "routine_id": null,
-  "start_time": "2026-08-21T10:45:57+00:00",
-  "title": "W2-D4 Sumo (light) + Spoto Bench",
-  "updated_at": "2026-08-21T12:13:17.570Z"
+  "start_time": "2026-08-25T10:34:58+00:00",
+  "title": "W3-D2 WPU + Posterior Chain + Shoulders",
+  "updated_at": "2026-08-25T12:58:59.883Z"
 }

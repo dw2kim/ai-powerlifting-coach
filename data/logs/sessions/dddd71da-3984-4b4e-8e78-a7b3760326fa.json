@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-08-21T12:13:17.570Z",
+  "created_at": "2026-08-28T12:21:51.412Z",
   "description": "",
-  "end_time": "2026-08-21T12:13:14+00:00",
+  "end_time": "2026-08-28T12:21:49+00:00",
   "exercises": [
     {
       "exercise_template_id": "D20D7BBE",
@@ -62,10 +62,10 @@
           "distance_meters": null,
           "duration_seconds": null,
           "index": 1,
-          "reps": 4,
-          "rpe": 7,
-          "type": "normal",
-          "weight_kg": 102.05840462301894
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 83.91468824559335
         },
         {
           "custom_metric": null,
@@ -75,7 +75,7 @@
           "reps": 4,
           "rpe": 7.5,
           "type": "normal",
-          "weight_kg": 102.05840462301894
+          "weight_kg": 106.59433371737533
         },
         {
           "custom_metric": null,
@@ -85,7 +85,17 @@
           "reps": 4,
           "rpe": 7.5,
           "type": "normal",
-          "weight_kg": 102.05840462301894
+          "weight_kg": 106.59433371737533
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 4,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 106.59433371737533
         }
       ],
       "superset_id": null,
@@ -102,7 +112,7 @@
           "duration_seconds": null,
           "index": 0,
           "reps": 10,
-          "rpe": 7.5,
+          "rpe": 7,
           "type": "normal",
           "weight_kg": 20.41168092460379
         },
@@ -112,7 +122,7 @@
           "duration_seconds": null,
           "index": 1,
           "reps": 10,
-          "rpe": 7.5,
+          "rpe": 8,
           "type": "normal",
           "weight_kg": 20.41168092460379
         },
@@ -122,7 +132,7 @@
           "duration_seconds": null,
           "index": 2,
           "reps": 10,
-          "rpe": 8.5,
+          "rpe": null,
           "type": "normal",
           "weight_kg": 20.41168092460379
         }
@@ -143,7 +153,7 @@
           "reps": 10,
           "rpe": null,
           "type": "normal",
-          "weight_kg": 22.67964547178199
+          "weight_kg": 24.947610018960187
         },
         {
           "custom_metric": null,
@@ -151,9 +161,9 @@
           "duration_seconds": null,
           "index": 1,
           "reps": 10,
-          "rpe": 7.5,
+          "rpe": null,
           "type": "normal",
-          "weight_kg": 22.67964547178199
+          "weight_kg": 24.947610018960187
         },
         {
           "custom_metric": null,
@@ -161,9 +171,9 @@
           "duration_seconds": null,
           "index": 2,
           "reps": 10,
-          "rpe": 8.5,
+          "rpe": null,
           "type": "normal",
-          "weight_kg": 22.67964547178199
+          "weight_kg": 24.947610018960187
         }
       ],
       "superset_id": null,
@@ -179,10 +189,10 @@
           "distance_meters": null,
           "duration_seconds": null,
           "index": 0,
-          "reps": 15,
-          "rpe": 7,
+          "reps": 8,
+          "rpe": null,
           "type": "normal",
-          "weight_kg": 40.82336184920758
+          "weight_kg": 63.50300732098956
         },
         {
           "custom_metric": null,
@@ -190,26 +200,26 @@
           "duration_seconds": null,
           "index": 1,
           "reps": 15,
-          "rpe": 8.5,
+          "rpe": null,
           "type": "normal",
-          "weight_kg": 40.82336184920758
+          "weight_kg": 45.35929094356398
         },
         {
           "custom_metric": null,
           "distance_meters": null,
           "duration_seconds": null,
           "index": 2,
-          "reps": 13,
-          "rpe": 9.5,
+          "reps": 15,
+          "rpe": null,
           "type": "normal",
-          "weight_kg": 40.82336184920758
+          "weight_kg": 45.35929094356398
         }
       ],
       "superset_id": null,
       "title": "Seated Calf Raise"
     },
     {
-      "exercise_template_id": "D8281C62",
+      "exercise_template_id": "724CDE60",
       "index": 5,
       "notes": "",
       "sets": [
@@ -218,59 +228,20 @@
           "distance_meters": null,
           "duration_seconds": null,
           "index": 0,
-          "reps": 12,
+          "reps": 10,
           "rpe": null,
           "type": "normal",
-          "weight_kg": 45.35929094356398
+          "weight_kg": 21.772459652910708
         },
         {
           "custom_metric": null,
           "distance_meters": null,
           "duration_seconds": null,
           "index": 1,
-          "reps": 12,
+          "reps": 10,
           "rpe": null,
           "type": "normal",
-          "weight_kg": 45.35929094356398
-        },
-        {
-          "custom_metric": null,
-          "distance_meters": null,
-          "duration_seconds": null,
-          "index": 2,
-          "reps": 12,
-          "rpe": null,
-          "type": "normal",
-          "weight_kg": 45.35929094356398
-        }
-      ],
-      "superset_id": null,
-      "title": "Rear Delt Reverse Fly (Machine)"
-    },
-    {
-      "exercise_template_id": "724CDE60",
-      "index": 6,
-      "notes": "",
-      "sets": [
-        {
-          "custom_metric": null,
-          "distance_meters": null,
-          "duration_seconds": null,
-          "index": 0,
-          "reps": 12,
-          "rpe": null,
-          "type": "normal",
-          "weight_kg": 19.50449510573251
-        },
-        {
-          "custom_metric": null,
-          "distance_meters": null,
-          "duration_seconds": null,
-          "index": 1,
-          "reps": 12,
-          "rpe": null,
-          "type": "normal",
-          "weight_kg": 19.50449510573251
+          "weight_kg": 21.772459652910708
         },
         {
           "custom_metric": null,
@@ -278,18 +249,18 @@
           "duration_seconds": null,
           "index": 2,
           "reps": 10,
-          "rpe": 9.5,
+          "rpe": null,
           "type": "normal",
-          "weight_kg": 19.50449510573251
+          "weight_kg": 21.772459652910708
         }
       ],
       "superset_id": null,
       "title": "Concentration Curl"
     }
   ],
-  "id": "c3c6430e-a11d-41c4-a8ff-d2998d878550",
+  "id": "dddd71da-3984-4b4e-8e78-a7b3760326fa",
   "routine_id": null,
-  "start_time": "2026-08-21T10:45:57+00:00",
-  "title": "W2-D4 Sumo (light) + Spoto Bench",
-  "updated_at": "2026-08-21T12:13:17.570Z"
+  "start_time": "2026-08-28T10:48:38+00:00",
+  "title": "W3-D4 Sumo (light) + Spoto Bench",
+  "updated_at": "2026-08-28T12:21:51.412Z"
 }
