@@ -1,23 +1,31 @@
-# Powerlifting Coach
+# AI Powerlifting Coach
 
-Versioned strength-coaching system. Runs in Claude Code; the repo IS the coach.
+Versioned strength-coaching system for Claude Code and OpenAI Codex. The repo is the
+coach: its files hold the instructions, athlete context, current plan, and history.
 
 ## Layout
-- `CLAUDE.md` — persona, standing rules, session-start protocol. Read first, always.
-- `brain/` — state Claude maintains and commits (memory, current block, active issues,
-  back checks, injection series).
+
+- `CLAUDE.md` / `AGENTS.md` — matching agent instructions: persona, standing rules,
+  and the session-start protocol.
+- `brain/` — state the coaching agent maintains and commits (memory, current block,
+  active issues, back checks, injection series).
 - `reference/` — static facts (profile, goals, protocols, how-this-works).
 - `data/` — maxes, block archive, session logs.
-- `.claude/skills/` — repeatable procedures (Phase 2).
+- `.claude/skills/` — canonical repeatable procedures.
+- `.agents/skills/` — Codex link to those same procedures, preventing agent-specific drift.
+- `.codex/hooks.json` — Codex project automation.
 
-## Migration status (updated 2026-06-10)
+## Migration status (updated 2026-08-31)
+
+- DONE: Codex compatibility — `AGENTS.md` supplies the project instructions,
+  `.agents/skills` exposes the shared procedures, and the Codex hook refreshes this
+  README's generated skills table after edits.
 - Migrated: memory, current-block, active-issues, profile, maxes, goals, protocols,
   how-this-works. Notion is no longer the source of anything.
-- DONE: training-day discrepancy — CLAUDE.md orientation reads days from
+- DONE: training-day discrepancy — agent orientation reads days from
   brain/current-block.md; nothing hardcoded. Block file is canonical.
-- DONE (Phase 2): reviewing-session + designing-training-block skills authored.
-  Further skills (e.g. end-of-block retrospective) deliberately deferred until
-  these two survive real use.
+- DONE (Phase 2): six procedures cover block design and amendment, session and block
+  review, clinical updates, and durable athlete feedback.
 - DONE: CSV reconciliation — no real conflict. Both files are snapshots of the same
   Hevy export series: workouts_source_of_truth.csv (11,016 rows) is a 2026-03-15
   snapshot; rows on/before that date in the current export = exactly 11,016. The
@@ -31,7 +39,7 @@ Versioned strength-coaching system. Runs in Claude Code; the repo IS the coach.
 
 ## Skills
 
-_Auto-generated from `.claude/skills/*/SKILL.md` by `scripts/gen_skills_readme.py` (via a PostToolUse hook). Do not edit this table by hand — edit the SKILL.md frontmatter._
+_Auto-generated from the shared `.claude/skills/*/SKILL.md` source by `scripts/gen_skills_readme.py`. Codex accesses the same procedures through `.agents/skills`. Do not edit this table by hand — edit the SKILL.md frontmatter._
 
 | Skill | Trigger | What it does |
 |---|---|---|

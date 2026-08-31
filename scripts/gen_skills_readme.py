@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate the Skills table in README.md from .claude/skills/*/SKILL.md frontmatter.
+"""Regenerate the Skills table in README.md from the shared skill frontmatter.
 
 Idempotent. Run by the PostToolUse hook whenever a SKILL.md is created/edited, or by
 hand: `python3 scripts/gen_skills_readme.py`. Stdlib only — no venv needed, so the hook
@@ -58,8 +58,9 @@ def build_block() -> str:
         "",
         "## Skills",
         "",
-        "_Auto-generated from `.claude/skills/*/SKILL.md` by `scripts/gen_skills_readme.py` "
-        "(via a PostToolUse hook). Do not edit this table by hand — edit the SKILL.md frontmatter._",
+        "_Auto-generated from the shared `.claude/skills/*/SKILL.md` source by "
+        "`scripts/gen_skills_readme.py`. Codex accesses the same procedures through "
+        "`.agents/skills`. Do not edit this table by hand — edit the SKILL.md frontmatter._",
         "",
         "| Skill | Trigger | What it does |",
         "|---|---|---|",
