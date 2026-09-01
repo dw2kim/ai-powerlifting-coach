@@ -74,7 +74,7 @@ MIN_GROUP = 3
 
 INJ_RE = re.compile(
     r"^\|\s*(?P<date>\d{4}-\d{2}-\d{2})\s*"
-    r"\|\s*(?P<status>given|expected|cancelled)\s*"
+    r"\|\s*(?P<status>[^|]*?)\s*"
     r"\|\s*(?P<site>[^|]*?)\s*"
     r"\|\s*(?P<agent>[^|]*?)\s*"
     r"\|\s*(?P<note>.*?)\s*\|\s*$",
@@ -233,6 +233,11 @@ def axial_sessions(start: str, end: str) -> list[dict]:
     return out
 
 
+def _plain(cell: str) -> str:
+    """Normalize a Markdown table cell before matching on its value."""
+    return (cell or "").replace("*", "").replace("_", "").strip().lower()
+
+
 def load_injections(path: Path = INJECTIONS_MD) -> list[dict]:
     """The injection series from brain/injections.md.
 
@@ -248,7 +253,10 @@ def load_injections(path: Path = INJECTIONS_MD) -> list[dict]:
     out = []
     for line in path.read_text().splitlines():
         m = INJ_RE.match(line.strip())
-        if not m or m.group("status").lower() == "cancelled":
+        if not m:
+            continue
+        status = _plain(m.group("status"))
+        if status not in {"given", "expected", "cancelled"} or status == "cancelled":
             continue
         try:
             date_cls.fromisoformat(m.group("date"))
@@ -257,9 +265,9 @@ def load_injections(path: Path = INJECTIONS_MD) -> list[dict]:
             continue
         out.append({
             "date": m.group("date"),
-            "status": m.group("status").lower(),
-            "site": m.group("site").strip(),
-            "agent": m.group("agent").strip(),
+            "status": status,
+            "site": _plain(m.group("site")),
+            "agent": _plain(m.group("agent")),
         })
     out.sort(key=lambda i: i["date"])
     return out

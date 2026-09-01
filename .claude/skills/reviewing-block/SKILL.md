@@ -62,5 +62,5 @@ athlete's planning surface (planned loads, RPE targets, athlete notes) — usefu
 
 ## Tone
 
-Soft but honest (per CLAUDE.md). It's a review to learn from, not a scolding — but if a cap was
+Soft but honest (per the active project instructions). It's a review to learn from, not a scolding — but if a cap was
 blown or a deload was skipped, say so plainly. Always include the WHY.

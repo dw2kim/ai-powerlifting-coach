@@ -96,7 +96,7 @@ python -m scripts.hevy.push_block --update --start W<n>-D<n> --apply
 `--update` PUTs over the routines whose titles match, keeping their existing folder;
 `--start` leaves already-trained sessions alone.
 
-**No credentials in the session?** A Claude Code session usually has no `HEVY_API_KEY` or
+**No credentials in the session?** An agent session usually has no `HEVY_API_KEY` or
 `GOOGLE_SA_JSON`. **Say so — do not claim the push happened.** Point at the
 `workflow_dispatch` workflows that run with the repo secrets: **Actions → "Push block to
 Hevy"** (dry run by default; flip `apply`) and **Actions → "Export block to Google Sheet"**.

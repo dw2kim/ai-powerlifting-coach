@@ -407,6 +407,36 @@ after he notices.
 agents working the same repo found different things — I found the push couldn't self-correct, it
 found the unheld Leg Press and this. Neither sweep was complete on its own.
 
+## 2026-08-28–30 — graded clearance, athlete-directed return, and the gate that keeps it honest
+
+The Aug 28 visit superseded the four-week no-heavy order: injection given, pain much improved,
+and the doctor said to *"start with a 25% weight increase and see how it goes."* The base and
+whether this meant one step were not specified. The safe operational read is one fixed increase
+from the trained 225, rounded down to **275**, then reassess—never compound 25% and never resume
+RPE-based loading while injections continue.
+
+I preferred waiting until B6 because Aug 31 is ~64 hours post-injection and shares the bench peak,
+and Sep 4 puts the first increase on the canary lift. The athlete chose W4. Apply the decision once,
+without re-litigating it, while keeping the terms: bench first; fine → 275, tight → 225, sore → no
+squat; sumo follows only if squat ran as planned. His later 315 request was outside the reported
+clearance and was declined.
+
+The first back check was **tight** about 18 hours post-injection. An off-day report was tighter
+after new run/walk intervals, leaving injection soreness, impact exposure, and the underlying back
+confounded. The useful pattern starts with the Sep 1/5/8 checks. Tie the return ladder to those
+checks: fine advances, tight holds, two consecutive sore readings stop axial work.
+
+The athlete's alternating-block proposal is sound: heavy squat/moderate sumo, then heavy
+sumo/moderate squat. It keeps only one axial lift heavy at a time. His B6 targets (squat 445, sumo
+365) are returns rather than PRs when checked against the log; the risk is the rate of return, so
+the ladder—not a fixed weekly schedule—governs them. This reverses the earlier decision to keep
+sumo permanently as a skill lift; retain skill-lift treatment only in sumo's moderate blocks.
+
+Standing clinic pattern: advice is still being given without the actual training numbers. Sep 11
+must include 225 current / 465 squat / 485 deadlift and the back-check record.
+
+The repo is amended, but the Hevy and Sheet updates still require the credentialed workflows.
+
 ## 2026-08-31 — Two weekly reviews were silently dropped: W30 and W35
 `reviews/weekly/` is missing **2026-W30 (Jul 25)** and **2026-W35 (Aug 29)**. Not lost — never
 generated. The Saturday job's time guard demanded the *exact* Eastern hour (`now.hour == 11`), and
@@ -414,11 +444,12 @@ GitHub fires scheduled workflows late as a matter of course. Both firings on tho
 landed past noon ET (12:02/13:06, then 14:10/15:20), so the job returned cleanly, sent nothing, and
 reported **green**. W31 passed the guard with **58 seconds** to spare, so this was always going to
 happen; it had been happening since July. Fixed by making the guard `hour >= 11` with the week's
-snapshot as the idempotency key, plus a 20:00 UTC backstop firing.
+snapshot as the idempotency key.
 **The training cost, and it isn't the missing narrative:** the weekly `sheet-load-sync` never ran
 on those Saturdays either. W35 was the **end of B5 W3**, so the corrections that should have landed
-on **W4 — the week now being trained** — were never applied, and the Sheet he trains off is running
-uncorrected. Same story for W30 against B4.
+on **W4 — the week now being trained** — were never applied. A manual run on 2026-08-31 finally
+applied them; the holds all held. Same story for W30 against B4, which is unrecoverable: B4 is
+archived, so that week is acknowledged in `reviews/weekly/.gap-ack` rather than backfilled wrong.
 **The lesson worth keeping is about the shape of the failure, not the cron.** A skipped run that
 exits 0 is indistinguishable from a successful one on the Actions page — I read "all green since
 Aug 21" off that list and it was wrong. **A scheduled job whose whole purpose is to send something

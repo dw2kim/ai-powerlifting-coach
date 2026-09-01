@@ -37,7 +37,7 @@ description: Design a new training block — pull context from prior block + mem
    sentence. **Bench is the standing priority lift** (rule `big5-priority`) — bias the theme
    and structure toward bench unless the Big-5 trend shows a weaker lift; re-check from the
    e1RM trend and update the rule if the weakest lift has changed.
-3. **Choose the split** (4 day default; 3-day variant noted). Show how it manages overlap per CLAUDE.md's "Managing Training Overlap" rules — explicitly call out which pairs are staggered and why.
+3. **Choose the split** (4 day default; 3-day variant noted). Show how it manages overlap per the active project instructions' "Managing Training Overlap" rules — explicitly call out which pairs are staggered and why.
 4. **Build the weekly wave** (W1–W4 + W5 = deload or peak): top-set RPE target and rep scheme per week, per primary lift.
    - **Backoff volume** (rule `primary-backoff-volume`): backoff sets match the athlete's
      logged working-set norm, tapering one at the W4 peak — squat **4·4·4·3·3**, sumo
@@ -103,7 +103,7 @@ description: Design a new training block — pull context from prior block + mem
      `amending-live-block` skill**, which owns that path end to end; don't improvise it here.
    - **⚠️ Without `--update` the push is additive** — a plain re-push POSTs again and creates a
      **second** folder plus a duplicate set of routines, which then can only be cleared by hand.
-   - **No credentials in the session?** A Claude Code session usually has no `HEVY_API_KEY` (and
+   - **No credentials in the session?** An agent session usually has no `HEVY_API_KEY` (and
      no `GOOGLE_SA_JSON`). Don't claim the push happened — say so, and point at the
      `workflow_dispatch` workflows that run with the repo secrets:
      **Actions → "Push block to Hevy"** (defaults to a dry run; flip `apply` to write) and
