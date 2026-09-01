@@ -41,10 +41,8 @@ def _et(iso_utc: str) -> datetime:
 
 
 def guard_at(iso_utc: str, already_shipped: bool) -> bool:
-    fake = mock.MagicMock()
-    fake.exists.return_value = already_shipped
     with mock.patch.object(wr, "_eastern_now", return_value=_et(iso_utc)), \
-         mock.patch.object(wr, "snapshot_path_for", return_value=fake):
+         mock.patch.object(wr, "week_already_reviewed", return_value=already_shipped):
         return wr.time_guard(force=False)[0]
 
 
@@ -86,6 +84,36 @@ class TimeGuard(unittest.TestCase):
         """Guards against a fix that silently changes which firing does the work."""
         old = [(_et(ts).weekday() == 5 and _et(ts).hour == 11) for ts, _ in FIRINGS]
         self.assertEqual(old, [expected for _, expected in FIRINGS])
+
+
+class WeekAlreadyReviewed(unittest.TestCase):
+    """Monday 2026-08-31 and Saturday 2026-09-05 are both 2026-W36. A Monday manual
+    run must not consume the Saturday slot."""
+
+    def setUp(self):
+        self.dir = Path(tempfile.mkdtemp())
+        patcher = mock.patch.object(wr, "WEEKLY_DIR", self.dir)
+        patcher.start(); self.addCleanup(patcher.stop)
+
+    def _snapshot(self, key: str, generated: str) -> None:
+        (self.dir / f"{key}.md").write_text(
+            f"# Weekly review\n\n_Generated {generated} (Saturday review)._\n")
+
+    def test_no_snapshot_means_not_reviewed(self):
+        self.assertFalse(wr.week_already_reviewed(date(2026, 9, 5)))
+
+    def test_monday_snapshot_does_not_satisfy_the_saturday(self):
+        self._snapshot("2026-W36", "2026-08-31")            # the real run #22
+        self.assertFalse(wr.week_already_reviewed(date(2026, 9, 5)))
+        self.assertFalse(wr.week_already_reviewed(date(2026, 8, 31)))
+
+    def test_saturday_snapshot_satisfies_the_week(self):
+        self._snapshot("2026-W36", "2026-09-05")
+        self.assertTrue(wr.week_already_reviewed(date(2026, 9, 5)))
+
+    def test_snapshot_without_a_header_is_trusted(self):
+        (self.dir / "2026-W36.md").write_text("no header here")
+        self.assertTrue(wr.week_already_reviewed(date(2026, 9, 5)))
 
 
 class MissedWeeks(unittest.TestCase):

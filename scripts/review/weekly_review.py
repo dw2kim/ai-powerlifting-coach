@@ -27,6 +27,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -57,6 +58,30 @@ def snapshot_path_for(day: date_cls) -> Path:
     one review per ISO week, whichever firing gets there first."""
     iso_year, iso_week, _ = day.isocalendar()
     return WEEKLY_DIR / f"{iso_year}-W{iso_week:02d}.md"
+
+
+# The snapshot header, used to tell a Saturday review from an off-Saturday manual one.
+_GENERATED_RE = re.compile(r"_Generated (\d{4}-\d{2}-\d{2})")
+
+
+def week_already_reviewed(day: date_cls) -> bool:
+    """Has this week's SATURDAY review shipped?
+
+    The snapshot is keyed on the ISO week, and an off-Saturday manual run lands in the
+    same ISO week as the Saturday that follows it — Monday 2026-08-31 and Saturday
+    2026-09-05 are both 2026-W36. A Monday catch-up would otherwise consume the slot
+    and make Saturday's scheduled run skip as "already shipped", losing the very
+    review this branch exists to protect. So a snapshot only satisfies the week once
+    it was generated on or after that week's Saturday.
+    """
+    path = snapshot_path_for(day)
+    if not path.exists():
+        return False
+    found = _GENERATED_RE.search(path.read_text(encoding="utf-8"))
+    if not found:
+        return True          # pre-header snapshot: take it at face value
+    saturday = day + timedelta(days=(5 - day.weekday()) % 7)
+    return date_cls.fromisoformat(found.group(1)) >= saturday
 
 
 LOOKBACK_WEEKS = 8
@@ -158,12 +183,12 @@ def time_guard(force: bool) -> tuple[bool, str]:
     now = _eastern_now()
     is_saturday = now.weekday() == 5
     past_11 = now.hour >= 11
-    done = snapshot_path_for(now.date()).exists()
+    done = week_already_reviewed(now.date())
     ok = is_saturday and past_11 and not done
     reason = ("this firing does the work" if ok else
               "not Saturday" if not is_saturday else
               "before 11:00 ET" if not past_11 else
-              "this week's review already shipped")
+              "this week's Saturday review already shipped")
     print(f"Eastern now = {now:%Y-%m-%d %H:%M %Z} (Sat? {is_saturday}, hour {now.hour}, "
           f"already shipped? {done}) → {'proceed' if ok else 'skip'} — {reason}")
     return ok, reason
