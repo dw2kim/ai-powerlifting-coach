@@ -436,3 +436,22 @@ Standing clinic pattern: advice is still being given without the actual training
 must include 225 current / 465 squat / 485 deadlift and the back-check record.
 
 The repo is amended, but the Hevy and Sheet updates still require the credentialed workflows.
+
+## 2026-08-31 — Two weekly reviews were silently dropped: W30 and W35
+`reviews/weekly/` is missing **2026-W30 (Jul 25)** and **2026-W35 (Aug 29)**. Not lost — never
+generated. The Saturday job's time guard demanded the *exact* Eastern hour (`now.hour == 11`), and
+GitHub fires scheduled workflows late as a matter of course. Both firings on those two Saturdays
+landed past noon ET (12:02/13:06, then 14:10/15:20), so the job returned cleanly, sent nothing, and
+reported **green**. W31 passed the guard with **58 seconds** to spare, so this was always going to
+happen; it had been happening since July. Fixed by making the guard `hour >= 11` with the week's
+snapshot as the idempotency key.
+**The training cost, and it isn't the missing narrative:** the weekly `sheet-load-sync` never ran
+on those Saturdays either. W35 was the **end of B5 W3**, so the corrections that should have landed
+on **W4 — the week now being trained** — were never applied. A manual run on 2026-08-31 finally
+applied them; the holds all held. Same story for W30 against B4, which is unrecoverable: B4 is
+archived, so that week is acknowledged in `reviews/weekly/.gap-ack` rather than backfilled wrong.
+**The lesson worth keeping is about the shape of the failure, not the cron.** A skipped run that
+exits 0 is indistinguishable from a successful one on the Actions page — I read "all green since
+Aug 21" off that list and it was wrong. **A scheduled job whose whole purpose is to send something
+must fail loudly when it sends nothing, or its own status page will lie about it.** The athlete
+noticed a missing Telegram message; the monitoring never did.

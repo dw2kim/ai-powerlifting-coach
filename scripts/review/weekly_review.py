@@ -1,7 +1,8 @@
 """Weekly Saturday review — the entrypoint the GitHub Action runs.
 
 Pipeline:
-  1. Time guard — only proceed at Saturday 11:00 America/New_York (DST-safe).
+  1. Time guard — proceed on the first Saturday firing at/after 11:00
+     America/New_York (DST-safe); later firings no-op on the week's snapshot.
   2. Sync the Hevy log so the data is fresh (best-effort; a sync failure degrades
      to last-known data with a readiness warning rather than skipping the review).
   3. Compute the weekly metrics.
@@ -19,16 +20,18 @@ Flags:
   --skip-sync    don't hit the Hevy API (offline testing)
   --no-reconcile      skip the load reconciliation entirely
   --reconcile-report  reconcile in report-only mode (no plan edits, no Sheet push)
-  --date         override 'today' (YYYY-MM-DD) for testing
+  --date         review the week containing this date (YYYY-MM-DD)
 """
 from __future__ import annotations
 
 import argparse
 import json
+import os
+import re
 import subprocess
 import sys
 import tempfile
-from datetime import date as date_cls, datetime
+from datetime import date as date_cls, datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -50,17 +53,185 @@ def _eastern_now() -> datetime:
     return datetime.now(EASTERN)
 
 
-def time_guard(force: bool) -> bool:
-    """True if we should run. The job is scheduled at both 15:00 and 16:00 UTC on
-    Saturday so that exactly one firing lands on 11:00 Eastern in either EDT or EST;
-    this guard is what picks the right one."""
+def snapshot_path_for(day: date_cls) -> Path:
+    """The week's snapshot file. Also the idempotency key for the time guard —
+    one review per ISO week, whichever firing gets there first."""
+    iso_year, iso_week, _ = day.isocalendar()
+    return WEEKLY_DIR / f"{iso_year}-W{iso_week:02d}.md"
+
+
+# The snapshot header, used to tell a Saturday review from an off-Saturday manual one.
+_GENERATED_RE = re.compile(r"_Generated (\d{4}-\d{2}-\d{2})")
+
+
+def week_already_reviewed(day: date_cls) -> bool:
+    """Has this week's SATURDAY review shipped?
+
+    The snapshot is keyed on the ISO week, and an off-Saturday manual run lands in the
+    same ISO week as the Saturday that follows it — Monday 2026-08-31 and Saturday
+    2026-09-05 are both 2026-W36. A Monday catch-up would otherwise consume the slot
+    and make Saturday's scheduled run skip as "already shipped", losing the very
+    review this branch exists to protect. So a snapshot only satisfies the week once
+    it was generated on or after that week's Saturday.
+    """
+    path = snapshot_path_for(day)
+    if not path.exists():
+        return False
+    found = _GENERATED_RE.search(path.read_text(encoding="utf-8"))
+    if not found:
+        return True          # pre-header snapshot: take it at face value
+    saturday = day + timedelta(days=(5 - day.weekday()) % 7)
+    return date_cls.fromisoformat(found.group(1)) >= saturday
+
+
+LOOKBACK_WEEKS = 8
+# Weeks that will never get a review — the block they belong to is archived, so a
+# backfill would be wrong content (see _require_date_in_block). Listing one here is
+# how a permanent gap stops re-firing the alarm every Saturday for eight weeks.
+GAP_ACK = WEEKLY_DIR / ".gap-ack"
+
+
+def _rel(path: Path) -> str:
+    """Repo-relative path for display, never raising. A crash inside an error message
+    would replace the message with a traceback about the message."""
+    try:
+        return str(path.relative_to(REPO_ROOT))
+    except ValueError:
+        return str(path)
+
+
+def acknowledged_gaps() -> set[str]:
+    if not GAP_ACK.exists():
+        return set()
+    return {line.split("#")[0].strip() for line in GAP_ACK.read_text().splitlines()
+            if line.split("#")[0].strip()}
+
+
+def missed_weeks(today: date_cls, lookback: int = LOOKBACK_WEEKS) -> list[str]:
+    """Past Saturdays in the lookback window that never got a review.
+
+    A run can only ever speak for itself, and a week is lost precisely when no run
+    happens: if GitHub drops every firing there is nobody left to raise the alarm.
+    So the alarm has to be raised afterwards, by the next review that does ship.
+
+    This is the check that would have caught 2026-W30 on 2026-08-01 instead of five
+    weeks later, and W35 on 2026-09-05 instead of by the athlete noticing his phone
+    was quiet.
+
+    Floored at the earliest snapshot on disk so it never flags the weeks before the
+    review job existed.
+    """
+    existing = sorted(p.stem for p in WEEKLY_DIR.glob("*-W*.md"))
+    if not existing:
+        return []
+    floor = existing[0]
+    saturday = today - timedelta(days=(today.weekday() - 5) % 7)
+    gaps = []
+    for i in range(1, lookback + 1):   # from 1: the week being shipped is not a gap
+        d = saturday - timedelta(weeks=i)
+        iso_year, iso_week, _ = d.isocalendar()
+        key = f"{iso_year}-W{iso_week:02d}"
+        if key >= floor and not (WEEKLY_DIR / f"{key}.md").exists():
+            gaps.append(key)
+    return sorted(set(gaps) - acknowledged_gaps())
+
+
+def _fail_on_gaps(gaps: list[str]) -> None:
+    """Report unfilled weeks and exit non-zero. Called by EVERY firing, shipping or
+    skipping, so a later green skip cannot repaint the day."""
+    if not gaps:
+        return
+    summary("", "### ❌ Weeks that never got a review", "",
+            *[f"- `{g}`" for g in gaps], "",
+            "Backfill one with `review_date` set to that Saturday — only if it falls "
+            "inside the running block. Otherwise add it to "
+            f"`{_rel(GAP_ACK)}` to acknowledge it.")
+    raise SystemExit("Weeks with no review: " + ", ".join(gaps))
+
+
+def time_guard(force: bool) -> tuple[bool, str]:
+    """(should we run, why).
+
+    The job is scheduled several times on Saturday so that one firing lands at or after
+    11:00 Eastern in either EDT or EST. This guard decides which firing does the work.
+
+    It used to decide by matching the hour exactly (`now.hour == 11`), which assumed
+    GitHub fires scheduled workflows on time. It does not — cron runs are best-effort and
+    queue behind runner load, routinely by tens of minutes and occasionally by hours. Any
+    firing that slipped past 11:59 Eastern missed the window, the job returned cleanly,
+    and the review was dropped with a green check and no Telegram. That silently ate
+    2026-W30 (both firings landed 12:02 and 13:06 ET) and 2026-W35 (14:10 and 15:20 ET),
+    and 2026-W31 survived by 58 seconds.
+
+    So the clock is no longer the thing that has to be exact. Run on any Saturday firing
+    from 11:00 Eastern onward, and let the week's snapshot be the idempotency key — the
+    later firings become the no-op instead of the delay becoming a dropped review. A
+    delayed run still ships, just late. In EST the 15:00 UTC firing lands at 10:00 and is
+    still correctly held back for the 16:00 one.
+
+    The key is only as good as the tree it is read from. The concurrency group
+    serialises firings but does NOT refresh a checkout, and a bare actions/checkout
+    pins to the SHA that triggered the event — so a firing queued behind a delayed one
+    would read a tree from before that run pushed, and re-send the review it is meant
+    to skip. The workflow therefore checks out the branch tip by name, not the event
+    SHA. If a push ever fails anyway this degrades to a duplicate review rather than a
+    missing one — the right way round.
+    """
     if force:
-        return True
+        print("Time guard bypassed (--force).")
+        return True, "forced"
     now = _eastern_now()
-    ok = now.weekday() == 5 and now.hour == 11
-    print(f"Eastern now = {now:%Y-%m-%d %H:%M %Z} (Sat? {now.weekday()==5}, "
-          f"hour {now.hour}) → {'proceed' if ok else 'skip'}")
-    return ok
+    is_saturday = now.weekday() == 5
+    past_11 = now.hour >= 11
+    done = week_already_reviewed(now.date())
+    ok = is_saturday and past_11 and not done
+    reason = ("this firing does the work" if ok else
+              "not Saturday" if not is_saturday else
+              "before 11:00 ET" if not past_11 else
+              "this week's Saturday review already shipped")
+    print(f"Eastern now = {now:%Y-%m-%d %H:%M %Z} (Sat? {is_saturday}, hour {now.hour}, "
+          f"already shipped? {done}) → {'proceed' if ok else 'skip'} — {reason}")
+    return ok, reason
+
+
+def _require_date_in_block(day: date_cls) -> None:
+    """Refuse a --date the running block does not cover.
+
+    geometry() and current_week() both CLAMP to the current block, so backfilling a
+    Saturday from an EARLIER block does not fail — it quietly reviews week 1 of the
+    block running now, files it under the old week's name, and permanently silences
+    the gap alarm for that week. Wrong content that also destroys the evidence of
+    being wrong is worse than no content.
+    """
+    block = recon.load_block()
+    start = date_cls.fromisoformat(block["start_date"])
+    end = start + timedelta(days=block.get("weeks", 0) * 7 - 1)
+    if not start <= day <= end:
+        raise SystemExit(
+            f"--date {day} is outside the running block {block.get('block_id')} "
+            f"({start} → {end}). Reviewing it would clamp to a week of the CURRENT "
+            f"block and file it under the wrong name. Add it to "
+            f"{_rel(GAP_ACK)} instead."
+        )
+
+
+def summary(*lines: str) -> None:
+    """Write the run's outcome to the Actions run page.
+
+    In the runs list a green check that shipped a review and a green check that
+    skipped one are the same pixel. That is how 2026-W30 sat unnoticed for five
+    weeks and W35 for two days — the status was never wrong, it just never said
+    what happened. This puts the outcome where it is read without opening a log.
+    """
+    print("\n".join(lines))
+    path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if not path:
+        return
+    try:
+        with open(path, "a", encoding="utf-8") as fh:
+            fh.write("\n".join(lines) + "\n")
+    except OSError as exc:  # noqa: BLE001 — a summary is never worth failing a send over
+        print(f"⚠️ Could not write the job summary ({exc}).")
 
 
 def sync_log(skip: bool) -> bool:
@@ -153,11 +324,10 @@ def build_message(stats: dict) -> str:
 def write_snapshot(stats: dict, message: str) -> Path:
     WEEKLY_DIR.mkdir(parents=True, exist_ok=True)
     today = date_cls.fromisoformat(stats["generated_for"])
-    iso_year, iso_week, _ = today.isocalendar()
-    path = WEEKLY_DIR / f"{iso_year}-W{iso_week:02d}.md"
+    path = snapshot_path_for(today)
     geo = stats["geometry"]
     header = (f"# Weekly review — {geo['block_id']} · Week {geo['week_no']}/{geo['weeks']}"
-              f"\n\n_Generated {stats['generated_for']} (Sat 11:00 ET). "
+              f"\n\n_Generated {stats['generated_for']} (Saturday review). "
               f"Hevy log = source of truth._\n\n---\n\n")
     body = message + "\n"
     bc = stats.get("back_checks")
@@ -208,8 +378,34 @@ def main() -> None:
     ap.add_argument("--bw", type=float, default=DEFAULT_BW)
     args = ap.parse_args()
 
-    if not time_guard(args.force):
+    backfill = False
+    if args.date:
+        _require_date_in_block(date_cls.fromisoformat(args.date))
+        backfill = date_cls.fromisoformat(args.date) < date_cls.today()
+
+    # An explicit --date IS the instruction to run; making it also depend on --force
+    # means a dispatch that sets one and forgets the other skips green and does
+    # nothing, which is the failure this whole branch exists to stop.
+    proceed, why = time_guard(args.force or bool(args.date))
+    if not proceed:
+        # A skip is the correct outcome for every firing but the one that does the
+        # work, so it stays green — turning the second firing red every Saturday
+        # would train us to ignore a red Saturday, which is the actual failure mode
+        # we are trying to fix. It must simply stop LOOKING like a shipped review.
+        summary("### ⏭️ Weekly review skipped", "", f"**Reason:** {why}.", "",
+                "No Telegram message was sent by this run.")
+        # A skip must not repaint the day green. The firing that shipped may have
+        # exited red over an unfilled gap; if the later firings returned 0 the
+        # workflow's latest status — the thing actually glanced at — goes back to
+        # green and hides it. So every firing reports the same gaps.
+        _fail_on_gaps(missed_weeks(_eastern_now().date()))
         return
+
+    if backfill:
+        # reconcile derives from_week from the date it is given, so a backfill would
+        # rewrite weeks already trained and push them to the live Sheet. A recovered
+        # report never edits the plan.
+        print(f"Backfilling {args.date}: load corrections are report-only.")
 
     synced = sync_log(args.skip_sync or args.dry_run)
     today = date_cls.fromisoformat(args.date) if args.date else None
@@ -219,7 +415,7 @@ def main() -> None:
     report = reconcile_step(
         today, args.bw,
         enabled=not args.no_reconcile,
-        apply_changes=not (args.dry_run or args.reconcile_report),
+        apply_changes=not (args.dry_run or args.reconcile_report or backfill),
     )
     if report:
         stats["load_drift"] = report
@@ -228,6 +424,12 @@ def main() -> None:
     message = build_message(stats)
     cap = caption(stats, synced)
 
+    # Surface lost weeks where he actually looks — his phone — not only in a job log.
+    gaps = missed_weeks(date_cls.fromisoformat(stats["generated_for"]))
+    if gaps:
+        message += ("\n\n⚠️ <b>No review was ever sent for: "
+                    + ", ".join(gaps) + "</b>")
+
     if args.dry_run:
         print("\n===== CAPTION =====\n" + cap)
         print("\n===== MESSAGE =====\n" + message)
@@ -235,6 +437,7 @@ def main() -> None:
             print("\n===== LOAD SYNC (report only in --dry-run) =====\n"
                   + recon.render_md(report, report.get("changes")))
         print(f"\n===== CHART =====\n{CHART_PATH}")
+        summary("### 🔍 Dry run — nothing sent, nothing committed")
         return
 
     telegram.send_photo(CHART_PATH, caption=cap)
@@ -244,6 +447,16 @@ def main() -> None:
     snapshot = write_snapshot(stats, message)
     if not args.no_commit:
         commit([REPO_ROOT / "data" / "logs", REPO_ROOT / "brain" / "current-block.json", snapshot])
+
+    geo = stats["geometry"]
+    summary(f"### ✅ Weekly review shipped — {geo['block_id']} W{geo['week_no']}/{geo['weeks']}",
+            "", f"- Telegram: **sent**",
+            f"- Hevy sync: {'ok' if synced else '**failed** — ran on last-known data'}",
+            f"- Snapshot: `{_rel(snapshot)}`")
+
+    # Shipped first, complain second: a past gap must never withhold this week's
+    # review, but it must not leave a green check either.
+    _fail_on_gaps(gaps)
 
 
 if __name__ == "__main__":

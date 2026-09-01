@@ -1,0 +1,9 @@
+# Weeks that will never get a review. missed_weeks() stops flagging these.
+#
+# Only put a week here when a backfill is impossible, not when it is inconvenient:
+# `review_date` clamps to the RUNNING block, so a Saturday from an archived block
+# cannot be regenerated without filing wrong content under the right name.
+
+2026-W30   # Sat 2026-07-25, block B04 — archived before the gap was found (both
+           # firings landed 12:02 and 13:06 ET and the old exact-hour guard dropped
+           # them). B05 started 2026-08-10, so --date 2026-07-25 is refused.
