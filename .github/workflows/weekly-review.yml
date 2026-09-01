@@ -5,19 +5,15 @@ name: Weekly training review
 # (summer), 16:00 UTC = 11:00 EST (winter). The in-script Eastern guard picks the first
 # firing at/after 11:00 local and no-ops the rest against the week's snapshot file.
 #
-# The 20:00 UTC entry is a backstop, and it exists because scheduled runs are best-effort:
-# GitHub queues them behind runner load and can delay them by hours or skip them outright.
-# On 2026-08-29 both firings landed 3+ hours late (14:10 and 15:20 ET). Under the old
-# exact-hour guard that dropped the review silently; under the snapshot guard a late or
-# extra firing is a ~20s no-op, so a backstop costs almost nothing and buys a second
-# chance at actually shipping.
+# A firing that arrives late still ships: the guard takes the first Saturday firing at
+# or after 11:00 local, so the 3h+ delays seen on 2026-08-29 (14:10 and 15:20 ET) are no
+# longer fatal. A week that gets no review at all is caught afterwards by missed_weeks().
 #
 # Manual runs use workflow_dispatch and default to bypassing the guard.
 on:
   schedule:
     - cron: "0 15 * * 6"
     - cron: "0 16 * * 6"
-    - cron: "0 20 * * 6"
   workflow_dispatch:
     inputs:
       force:
@@ -46,6 +42,12 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The branch tip, not the event SHA. A scheduled run pins to the tip as of
+          # scheduling time, so a firing queued behind a delayed one would check out a
+          # tree from before that run pushed its snapshot — and re-send the review it
+          # is supposed to skip. The concurrency group serialises; it does not refresh.
+          ref: ${{ github.ref_name }}
 
       - uses: actions/setup-python@v5
         with:
@@ -75,11 +77,6 @@ jobs:
           # below can only do its job if the value reaches the shell as data.
           REVIEW_DATE: ${{ inputs.review_date }}
           RECONCILE_REPORT: ${{ inputs.reconcile_report_only }}
-          # github.event.schedule names the cron that fired this run, so the day's LAST
-          # firing can be the one that checks the week actually shipped. Earlier firings
-          # skip silently-and-green because a skip is correct for them; by 20:00 UTC it
-          # is not correct any more, it is a lost review, and it goes red.
-          ASSERT_SHIPPED: ${{ github.event.schedule == '0 20 * * 6' }}
         run: |
           ARGS=""
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force }}" = "true" ]; then
@@ -96,9 +93,6 @@ jobs:
           fi
           if [ "$RECONCILE_REPORT" = "true" ]; then
             ARGS="$ARGS --reconcile-report"
-          fi
-          if [ "$ASSERT_SHIPPED" = "true" ]; then
-            ARGS="$ARGS --assert-shipped"
           fi
           echo "Running: weekly_review $ARGS"
           python -m scripts.review.weekly_review $ARGS

@@ -20,8 +20,7 @@ Flags:
   --skip-sync    don't hit the Hevy API (offline testing)
   --no-reconcile      skip the load reconciliation entirely
   --reconcile-report  reconcile in report-only mode (no plan edits, no Sheet push)
-  --date         override 'today' (YYYY-MM-DD) for testing
-  --assert-shipped  fail the job if the week still has no review after this firing
+  --date         review the week containing this date (YYYY-MM-DD)
 """
 from __future__ import annotations
 
@@ -61,6 +60,26 @@ def snapshot_path_for(day: date_cls) -> Path:
 
 
 LOOKBACK_WEEKS = 8
+# Weeks that will never get a review — the block they belong to is archived, so a
+# backfill would be wrong content (see _require_date_in_block). Listing one here is
+# how a permanent gap stops re-firing the alarm every Saturday for eight weeks.
+GAP_ACK = WEEKLY_DIR / ".gap-ack"
+
+
+def _rel(path: Path) -> str:
+    """Repo-relative path for display, never raising. A crash inside an error message
+    would replace the message with a traceback about the message."""
+    try:
+        return str(path.relative_to(REPO_ROOT))
+    except ValueError:
+        return str(path)
+
+
+def acknowledged_gaps() -> set[str]:
+    if not GAP_ACK.exists():
+        return set()
+    return {line.split("#")[0].strip() for line in GAP_ACK.read_text().splitlines()
+            if line.split("#")[0].strip()}
 
 
 def missed_weeks(today: date_cls, lookback: int = LOOKBACK_WEEKS) -> list[str]:
@@ -89,7 +108,20 @@ def missed_weeks(today: date_cls, lookback: int = LOOKBACK_WEEKS) -> list[str]:
         key = f"{iso_year}-W{iso_week:02d}"
         if key >= floor and not (WEEKLY_DIR / f"{key}.md").exists():
             gaps.append(key)
-    return sorted(gaps)
+    return sorted(set(gaps) - acknowledged_gaps())
+
+
+def _fail_on_gaps(gaps: list[str]) -> None:
+    """Report unfilled weeks and exit non-zero. Called by EVERY firing, shipping or
+    skipping, so a later green skip cannot repaint the day."""
+    if not gaps:
+        return
+    summary("", "### ❌ Weeks that never got a review", "",
+            *[f"- `{g}`" for g in gaps], "",
+            "Backfill one with `review_date` set to that Saturday — only if it falls "
+            "inside the running block. Otherwise add it to "
+            f"`{_rel(GAP_ACK)}` to acknowledge it.")
+    raise SystemExit("Weeks with no review: " + ", ".join(gaps))
 
 
 def time_guard(force: bool) -> tuple[bool, str]:
@@ -112,9 +144,12 @@ def time_guard(force: bool) -> tuple[bool, str]:
     delayed run still ships, just late. In EST the 15:00 UTC firing lands at 10:00 and is
     still correctly held back for the 16:00 one.
 
-    The snapshot is committed and pushed by the run that writes it, and the workflow's
-    concurrency group serialises firings, so a later firing checks out a tree that already
-    carries it. If that push ever fails, this degrades to a duplicate review rather than a
+    The key is only as good as the tree it is read from. The concurrency group
+    serialises firings but does NOT refresh a checkout, and a bare actions/checkout
+    pins to the SHA that triggered the event — so a firing queued behind a delayed one
+    would read a tree from before that run pushed, and re-send the review it is meant
+    to skip. The workflow therefore checks out the branch tip by name, not the event
+    SHA. If a push ever fails anyway this degrades to a duplicate review rather than a
     missing one — the right way round.
     """
     if force:
@@ -132,6 +167,27 @@ def time_guard(force: bool) -> tuple[bool, str]:
     print(f"Eastern now = {now:%Y-%m-%d %H:%M %Z} (Sat? {is_saturday}, hour {now.hour}, "
           f"already shipped? {done}) → {'proceed' if ok else 'skip'} — {reason}")
     return ok, reason
+
+
+def _require_date_in_block(day: date_cls) -> None:
+    """Refuse a --date the running block does not cover.
+
+    geometry() and current_week() both CLAMP to the current block, so backfilling a
+    Saturday from an EARLIER block does not fail — it quietly reviews week 1 of the
+    block running now, files it under the old week's name, and permanently silences
+    the gap alarm for that week. Wrong content that also destroys the evidence of
+    being wrong is worse than no content.
+    """
+    block = recon.load_block()
+    start = date_cls.fromisoformat(block["start_date"])
+    end = start + timedelta(days=block.get("weeks", 0) * 7 - 1)
+    if not start <= day <= end:
+        raise SystemExit(
+            f"--date {day} is outside the running block {block.get('block_id')} "
+            f"({start} → {end}). Reviewing it would clamp to a week of the CURRENT "
+            f"block and file it under the wrong name. Add it to "
+            f"{_rel(GAP_ACK)} instead."
+        )
 
 
 def summary(*lines: str) -> None:
@@ -295,32 +351,36 @@ def main() -> None:
                     help="Reconcile in report-only mode — no plan edits, no Sheet push")
     ap.add_argument("--date")
     ap.add_argument("--bw", type=float, default=DEFAULT_BW)
-    ap.add_argument("--assert-shipped", action="store_true",
-                    help="Fail the job if this Saturday still has no review after "
-                         "this firing. Wire it to the last scheduled firing of the day.")
     args = ap.parse_args()
 
-    proceed, why = time_guard(args.force)
+    backfill = False
+    if args.date:
+        _require_date_in_block(date_cls.fromisoformat(args.date))
+        backfill = date_cls.fromisoformat(args.date) < date_cls.today()
+
+    # An explicit --date IS the instruction to run; making it also depend on --force
+    # means a dispatch that sets one and forgets the other skips green and does
+    # nothing, which is the failure this whole branch exists to stop.
+    proceed, why = time_guard(args.force or bool(args.date))
     if not proceed:
         # A skip is the correct outcome for every firing but the one that does the
         # work, so it stays green — turning the second firing red every Saturday
         # would train us to ignore a red Saturday, which is the actual failure mode
         # we are trying to fix. It must simply stop LOOKING like a shipped review.
-        summary(f"### ⏭️ Weekly review skipped", "", f"**Reason:** {why}.", "",
+        summary("### ⏭️ Weekly review skipped", "", f"**Reason:** {why}.", "",
                 "No Telegram message was sent by this run.")
-        if args.assert_shipped and not snapshot_path_for(_eastern_now().date()).exists():
-            # Last firing of the day, and the week still has nothing. Every earlier
-            # firing was delayed, dropped or refused: that is a lost review, and a
-            # lost review must never be green.
-            summary("", "### ❌ No review shipped this week",
-                    "", "This was the last scheduled firing and "
-                    f"`{snapshot_path_for(_eastern_now().date()).name}` does not exist. "
-                    "Re-run this workflow with `review_date` set to this Saturday.")
-            raise SystemExit(
-                "FAILED: the week is over and no review was ever sent. "
-                "Failing loudly rather than exiting green."
-            )
+        # A skip must not repaint the day green. The firing that shipped may have
+        # exited red over an unfilled gap; if the later firings returned 0 the
+        # workflow's latest status — the thing actually glanced at — goes back to
+        # green and hides it. So every firing reports the same gaps.
+        _fail_on_gaps(missed_weeks(_eastern_now().date()))
         return
+
+    if backfill:
+        # reconcile derives from_week from the date it is given, so a backfill would
+        # rewrite weeks already trained and push them to the live Sheet. A recovered
+        # report never edits the plan.
+        print(f"Backfilling {args.date}: load corrections are report-only.")
 
     synced = sync_log(args.skip_sync or args.dry_run)
     today = date_cls.fromisoformat(args.date) if args.date else None
@@ -330,7 +390,7 @@ def main() -> None:
     report = reconcile_step(
         today, args.bw,
         enabled=not args.no_reconcile,
-        apply_changes=not (args.dry_run or args.reconcile_report),
+        apply_changes=not (args.dry_run or args.reconcile_report or backfill),
     )
     if report:
         stats["load_drift"] = report
@@ -367,18 +427,11 @@ def main() -> None:
     summary(f"### ✅ Weekly review shipped — {geo['block_id']} W{geo['week_no']}/{geo['weeks']}",
             "", f"- Telegram: **sent**",
             f"- Hevy sync: {'ok' if synced else '**failed** — ran on last-known data'}",
-            f"- Snapshot: `{snapshot.relative_to(REPO_ROOT)}`")
+            f"- Snapshot: `{_rel(snapshot)}`")
 
-    if gaps:
-        # Shipped first, complain second: a past gap must never withhold this week's
-        # review. But it must not leave a green check either — green is what let W30
-        # sit unnoticed for five weeks.
-        summary("", "### ❌ Weeks that never got a review", "",
-                *[f"- `{g}`" for g in gaps], "",
-                "Re-run this workflow with `review_date` set to that Saturday.")
-        raise SystemExit(
-            "This week shipped, but these weeks never did: " + ", ".join(gaps)
-        )
+    # Shipped first, complain second: a past gap must never withhold this week's
+    # review, but it must not leave a green check either.
+    _fail_on_gaps(gaps)
 
 
 if __name__ == "__main__":
