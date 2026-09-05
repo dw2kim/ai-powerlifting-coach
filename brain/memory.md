@@ -455,3 +455,96 @@ exits 0 is indistinguishable from a successful one on the Actions page — I rea
 Aug 21" off that list and it was wrong. **A scheduled job whose whole purpose is to send something
 must fail loudly when it sends nothing, or its own status page will lie about it.** The athlete
 noticed a missing Telegram message; the monitoring never did.
+
+## 2026-09-05 — B5 extended to 6 weeks; the written ceiling stopped holding
+Athlete travels to **Korea Sep 17–21** (sister's wedding, whole family, long-haul + jet lag). He
+asked to extend B5 so **W5 (Sep 7–11) peaks before Friday's injection** and **W6 (Sep 14–18)
+deloads into the trip**. Granted — the calendar logic is genuinely good and I'd have proposed it:
+you lose those days anyway, so spend the ones that cost least, and Mon Sep 7 is **10 days
+post-injection**, the cleanest back signal of the block.
+
+**What changed the numbers was the sync, not the argument.** W4 D2/D3/D4 were sitting unpulled.
+Once synced, **three caps had been run hot in one week**: sumo **295** against a written 275, WPU
+**@8.5** against an @8 *hard stop*, and **barbell OHP to @9.5** substituted for a DB press under a
+@7 shoulder cap — on a shoulder with two partial-thickness tears and bursitis. Plus Incline DB
+Press back on D2, a movement cut specifically to reduce pressing exposure.
+
+**This is `clinical-override`'s corollary happening in real time** — *he follows a number on a page
+reliably and cannot reliably generate one in the moment.* B4 W1 was planned 345 / pulled 425. This
+is the same event at smaller scale, and it arrived **four days before he asked for 405 squat and
+355 sumo on the strength of respecting a ceiling.** The right response was not to refuse the block
+change — it was to price the breach into the numbers and say so plainly.
+
+Given: **squat 365×3 @≤7** (405 declined — it was conditional on *clean* checks and the checks
+read tight), **sumo held at 295** (his own Sep 4 number written down, not raised: injection
+morning, canary lift, 4 days after a 365 squat), bench 265–275×2 @8, WPU **BW+90×3 @8 — repeat the
+load, fix the RPE**, dip BW+105×3 @8. Overhead pressing cut from W5 entirely; both bench and dip
+peak that week and overhead is the most bursitis-provocative pattern he owns.
+
+**Three things worth keeping:**
+
+1. **`pull_latest` does not write to disk — `sync_archive` does.** I read "no sessions since Aug 31"
+   off a stale local mirror and nearly answered a load question on four-day-old data. Any question
+   that turns on what he actually lifted starts with `sync_archive`, not `pull_latest`.
+2. **"fine-tight in the middle" is not a back check.** He answered both Sep 1 and Sep 5 with a
+   fourth word. `back-checks.md` says three words on purpose, and this is exactly why. **Recorded
+   both as `tight`** — an ambiguous read has to round down, because his documented bias runs the
+   other way. Worth telling him once more that the vocabulary is the whole instrument; a run of
+   consistent words is the only thing that means anything.
+3. **A whole-week deload must be pinned `hold` on every entry.** W6 is deliberately far below the
+   log across the board, which is precisely what the Saturday sync exists to "correct". Unpinned it
+   would have rebased the entire week back to log level and silently deleted the deload — the same
+   `sheet-load-sync` failure that already bit Weighted Back Extension and Leg Press. The `hold`
+   clause is written for single deliberately-light *exercises*; a deload **week** needs it applied
+   wholesale, and nothing in the rules said so until now.
+
+**Compliance cuts both ways, and it's worth naming.** Dip is the one lift he ran exactly to plan
+all block, and it's the one that got a PR shot (BW+105) — that's not a coincidence and he was told
+so. **405 squat is owed to him**: on a genuinely clean Sep 8 check it's a realistic B6 W2–W3 rep.
+
+## 2026-09-05 — the log is "what the equipment allowed", not "what he chose"
+Athlete, unprompted, after I queried a rear-delt discrepancy: *"there are only a few machines, so if
+they're all allocated/full, then most of the time I go for the alternative movement... time to time
+only when the machine/tool are not available."* 60-minute sessions at a busy LA Fitness.
+
+**I had just called compliant work a data problem.** I read one session (Sep 3, DB Rear Delt Fly
+@28), compared it to a written Reverse Pec Deck @110, and raised it as a plan/log disagreement
+needing a mapping fix. The machine version had actually run **100 / 100 / 115 against a prescribed
+110** for three straight weeks. He was on prescription the whole time; I generalised from a single
+fallback session.
+
+**Worse, I'd used the same misreading in an accusation.** Hours earlier I listed "barbell OHP @9.5
+substituted for DB press" as one of three caps run hot, framed as ignoring the shoulder rule. He ran
+the prescribed DB press at the prescribed 70 in **two of four weeks** — the barbell weeks are almost
+certainly the 70s being occupied. The swap was probably forced and the framing was unfair. **The
+@9.5 against a @7 cap stands** — an implement you didn't choose doesn't carry the RPE cap away with
+it — but that's a much narrower charge than the one I made, and I retracted the rest in writing.
+
+**The systemic error, which is the part worth keeping:** every log-grounded rule I have
+(`loads-from-logs`, `sheet-load-sync`, `exercise-name-mapping`) silently assumed the log records
+*decisions*. It records **decisions constrained by what was free at 6am.** Under the wrong
+assumption a fallback session reads as drift, a mapping bug, or defiance — and the right response to
+each of those is different from the right response to a busy machine. It also would have poisoned
+the sync: `reconcile_loads` medians the last 3 sessions in a slot, so a 110 lb machine fly and a
+28 lb DB fly in one slot produce a garbage anchor that drags the prescription *down*.
+
+Produced `equipment-fallbacks`. The design obligation it creates is the useful half: **every
+machine-dependent accessory now ships with a named fallback and its own written load**, because the
+`clinical-override` corollary applies to equipment too — picking a substitute at 6am under time
+pressure is exactly "in the moment", which is where his numbers go wrong. And some fallbacks are
+**forbidden** and the plan has to say so on the line, since a substitution can quietly reinstate
+what a restriction removed: no standing calf raise for the seated one, no RDL for a leg curl, no
+barbell OHP for a DB press.
+
+**The lesson under the lesson: ask before inferring intent from a log.** One anomalous session is a
+question, not a finding. I had four weeks of context available and read one row.
+
+## 2026-09-05 — PR review correction: keep the deliberate 365 squat
+Athlete explicitly reconfirmed 365, citing the mental value of heavier lifting and his body
+awareness. Record this as a B5-specific choice despite tight checks; do not repeatedly flag
+it as an accidental increase or imply new clinical clearance. Existing stops remain.
+The two 275×3 backoffs were already in JSON; the Sheet renderer omitted the second squat
+occurrence. Fixed the row union and added explicit W5 PEAK / W6 DELOAD phase metadata.
+Live verification: Hevy W5-D1 already had 365×3 and both 275×3 backoffs with 75-second
+rest timers, so no routine write was needed. Re-rendered the existing Google Sheet and
+read back the 2×3 @275 row and W5 PEAK / W6 DELOAD headers successfully. All 28 tests pass.

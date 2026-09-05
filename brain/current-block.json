@@ -1,13 +1,13 @@
 {
   "block_id": "2026-Q3-B05",
-  "weeks": 5,
+  "weeks": 6,
   "start_date": "2026-08-10",
   "summary": {
-    "goal": "Protect the back, strive upstairs. Squat and sumo ran at a fixed 225 through W3, take one graded step to 275 in W4, and deload at 225 in W5. Loaded hinges stay cut while bench, pull-up and dip push the full plan.",
+    "goal": "Protect the back, strive upstairs. Six weeks: W5 peaks with squat 365x3 plus two 275x3 backoffs and sumo held at 295; W6 deloads into Korea travel. Loaded hinges stay cut.",
     "changes": [
-      "GRADED CLEARANCE (2026-08-28): the prior no-heavy order was superseded by a 25% increase instruction. W4 uses a fixed 275 lb cap (+22% from the trained 225); W5 deloads at 225.",
-      "Squat: 225 x5 @6 for W1-W3; W4 275 x5 @6 only through the symptom gate; W5 225 x5 @6.",
-      "Sumo: 225 x3 @6 for W1-W3; W4 275 x3 @6 only if Monday squat ran as planned; W5 225 x3 @6. Triples stay triples and sumo remains the canary.",
+      "GRADED CLEARANCE (2026-08-28): W4 used 275 after the initial 25% instruction. ATHLETE DECISION (2026-09-05): keep the deliberate W5 365 squat peak; W6 is the travel deload. This is a specific exception to the back-check progression gate, not new clinical clearance.",
+      "Squat: W1-W3 225x5; W4 275x5; W5 365x3 @7 cap plus 275x3 x2 @6; W6 225x5 x3 @6.",
+      "Sumo: W1-W3 225x3; W4 prescribed 275x3; W5 held at 295x3 x3 @6; W6 D4 dropped for travel.",
       "CUT for the window: Paused RDL (loaded hinge) and Paused Low-bar Squat (2nd weekly axial session). Neither is worth its risk right now.",
       "Weighted Back Extension moved D4 -> D2 and held at BODYWEIGHT through W2 — the injections go into these exact muscles. Skip it if the sites are sore.",
       "Bench, pull-up and dip UNCHANGED — full strive plan. No shoulder injection was given (2026-08-07), so masked-pain-load-cap does not bind them.",
@@ -2896,143 +2896,126 @@
         {
           "name": "Low-bar Squat",
           "tier": "primary",
-          "notes": "Deload 225, about 18% below W4's 275. @6, load-driven. Do not chase W4's number.",
+          "notes": "PEAK — TOP SET 365x3 @7 CAP. Heaviest bar on your back since July. SQUAT RUNS FIRST today, bench second. 405 is OFF this week: both back checks read tight (not fine), and the Sep 4 sumo went 295 against a written 275. Earn 405 in B6. HARD STOPS — any back rounding, any bar-speed loss, any low-back sensation: squat is DONE for the day, no backoff. Do not exceed 365 for any reason. LOG TUESDAY'S BACK CHECK — it sets B6.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 102.05840462301894,
-              "reps": 5,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 102.05840462301894,
-              "reps": 5,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 102.05840462301894,
-              "reps": 5,
-              "rpe": 6
+              "weight_kg": 165.5614119440085,
+              "rpe": 7,
+              "reps": 3
             }
           ],
-          "display_load": "225",
+          "display_load": "365",
           "hold": true,
-          "hold_reason": "Deload below both the log and W4's 275. Sync must not rebase it."
+          "hold_reason": "Peak-week ceiling under masked-pain-load-cap: 365 is a gated rung, not a log anchor (log e1RM ~511). Injections are ongoing. Sync must not rebase it."
+        },
+        {
+          "name": "Low-bar Squat",
+          "tier": "primary",
+          "notes": "Backoff — 2 sets of 3 at 275 @6, the load you owned at @6x4 on Aug 31. Volume tapers at the peak (primary-backoff-volume). Skip these entirely if the top set was anything but clean.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 124.73805009480093,
+              "rpe": 6,
+              "reps": 3
+            },
+            {
+              "type": "normal",
+              "weight_kg": 124.73805009480093,
+              "rpe": 6,
+              "reps": 3
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Backoff pinned to the peak's ceiling, not to the log. Medical window."
         },
         {
           "name": "Comp Bench",
           "tier": "primary",
-          "notes": "Deload @6.",
+          "notes": "PEAK — work up to @8 within 265-275x2; take the heaviest double that stays at or under the cap. You hit 265x2 @8 on Aug 31 (e1RM 283) — 275 is a real PR at 293. Rest as long as this set needs; the timer is a floor. <=3/10 shoulder pain. Runs AFTER the squat today: if the squat took a lot out of you, repeat 265 rather than chasing 275.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 90.71858188712795,
-              "reps": 4,
-              "rpe": 6
+              "weight_kg": 124.73805009480093,
+              "rpe": 8,
+              "reps": 2
             }
-          ]
+          ],
+          "display_load": "265-275"
         },
         {
           "name": "Comp Bench",
           "tier": "primary",
-          "notes": "Backoff — 3 sets @6.",
+          "notes": "Backoff — 3 sets of 4 @7 after the double.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 81.64672369841516,
-              "reps": 5,
-              "rpe": 6
+              "weight_kg": 102.05840462301894,
+              "rpe": 7,
+              "reps": 4
             },
             {
               "type": "normal",
-              "weight_kg": 81.64672369841516,
-              "reps": 5,
-              "rpe": 6
+              "weight_kg": 102.05840462301894,
+              "rpe": 7,
+              "reps": 4
             },
             {
               "type": "normal",
-              "weight_kg": 81.64672369841516,
-              "reps": 5,
-              "rpe": 6
+              "weight_kg": 102.05840462301894,
+              "rpe": 7,
+              "reps": 4
             }
           ]
-        },
-        {
-          "name": "Leg Press (Machine)",
-          "tier": "accessory",
-          "notes": "NEW — replaces Leg Extension. Quad/glute volume with no bar on your back. HARD ROM RULE: stop the sled well before your hips lift off the pad — at depth the pelvis tucks under load, and loaded lumbar flexion is exactly the L3-4 mechanism. Run at 315-365, well under your 495 log median: 'moderate if tolerated' is a number here, not a feel, because the injections mask the feel.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 102.05840462301894,
-              "reps": 12,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 102.05840462301894,
-              "reps": 12,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 102.05840462301894,
-              "reps": 12,
-              "rpe": 6
-            }
-          ],
-          "hold": true,
-          "hold_reason": "Deliberately prescribed under the log (315-365 vs a 585 log anchor) for the medical window: the ROM rule is what protects the L3-4 protrusion, and the anesthetic masks the feel. Do not let the log rebase this."
         },
         {
           "name": "Tricep Pushdown",
           "tier": "accessory",
-          "notes": "Lockout for bench. Log anchor 53 lb.",
+          "notes": "Lockout for bench. Log anchor 55 lb.  ⟳ IF OCCUPIED: Overhead DB Extension @30, same reps.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 20.41168092460379,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 24.947610018960187,
+              "rpe": 7.5,
+              "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 20.41168092460379,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 24.947610018960187,
+              "rpe": 7.5,
+              "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 20.41168092460379,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 24.947610018960187,
+              "rpe": 7.5,
+              "reps": 10
             }
           ]
         },
         {
           "name": "Side Plank",
           "tier": "core",
-          "notes": "CORE (D1) — anti-lateral-flexion. Every day carries one core movement, each a DIFFERENT pattern. Isometric HOLD, 30-40 SECONDS PER SIDE (logged as duration, not reps). Spine neutral, zero spinal compression. Do it in your rest periods between bench sets.",
+          "notes": "CORE (D1) — anti-lateral-flexion. Isometric hold, 40s PER SIDE. Spine neutral, zero compression. Do it in the rest between bench sets. LEG PRESS IS CUT this week — peak day, and it's the named first cut when D1 runs long. It's back in W6.",
           "sets": [
             {
               "type": "duration",
               "weight_kg": 0.0,
-              "rpe": 6,
-              "duration_seconds": 30
+              "rpe": 7,
+              "duration_seconds": 40
             },
             {
               "type": "duration",
               "weight_kg": 0.0,
-              "rpe": 6,
-              "duration_seconds": 30
+              "rpe": 7,
+              "duration_seconds": 40
             },
             {
               "type": "duration",
               "weight_kg": 0.0,
-              "rpe": 6,
-              "duration_seconds": 30
+              "rpe": 7,
+              "duration_seconds": 40
             }
           ],
           "display_load": "BW"
@@ -3046,165 +3029,139 @@
         {
           "name": "Weighted Pull-up",
           "tier": "primary",
-          "notes": "Deload @6.",
+          "notes": "REPEAT THE LOAD, FIX THE RPE. BW+90x3 @8 — you already did BW+90x3 on Sep 1 but took it to @8.5, past a hard stop. @8 is a hard stop, not a target; it is the thing that fixed this lift. If rep 3 is going to cost you more than @8, stop at 2. No 95 this week.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 24.947610018960187,
-              "reps": 4,
-              "rpe": 6
+              "weight_kg": 40.82336184920758,
+              "rpe": 8,
+              "reps": 3
             }
-          ]
+          ],
+          "display_load": "BW+90"
         },
         {
           "name": "Weighted Pull-up",
           "tier": "primary",
-          "notes": "Backoff — 3 sets @6.",
+          "notes": "Backoff — 3 sets of 5 @7.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 15.87575183024739,
-              "reps": 6,
-              "rpe": 6
+              "weight_kg": 27.215574566138386,
+              "rpe": 7,
+              "reps": 5
             },
             {
               "type": "normal",
-              "weight_kg": 15.87575183024739,
-              "reps": 6,
-              "rpe": 6
+              "weight_kg": 27.215574566138386,
+              "rpe": 7,
+              "reps": 5
             },
             {
               "type": "normal",
-              "weight_kg": 15.87575183024739,
-              "reps": 6,
-              "rpe": 6
+              "weight_kg": 27.215574566138386,
+              "rpe": 7,
+              "reps": 5
             }
           ]
         },
         {
           "name": "Weighted Back Extension",
           "tier": "accessory",
-          "notes": "Erector capacity, NO spinal compression. BODYWEIGHT ONLY through W2 — the trigger-point injections went into these exact muscles, so loading them fresh is not smart. SKIP ENTIRELY if the injection sites are sore. Moved D4 -> D2 (replaces Paused RDL).",
+          "notes": "Erector capacity, ZERO spinal compression. 55 lb, your logged working load. Tuesday is 11 days post-injection so the sites should be quiet — but SKIP ENTIRELY if they are sore.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 24.947610018960187,
+              "rpe": 7,
+              "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 24.947610018960187,
+              "rpe": 7,
+              "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 0.0,
-              "reps": 12,
-              "rpe": 6
-            }
-          ],
-          "hold": true,
-          "hold_reason": "Bodyweight through W2 — trigger-point injections went into these exact muscles (2026-08-07). Do not let the log rebase this."
-        },
-        {
-          "name": "Seated Leg Curl",
-          "tier": "accessory",
-          "notes": "Hamstrings / posterior chain with ZERO spinal loading — this is what replaces Paused RDL for the window, and why a DB RDL was declined: you already hinge on D4 (light sumo), and a second loaded hinge is the thing we removed. Log median 115.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 40.82336184920758,
-              "reps": 12,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 40.82336184920758,
-              "reps": 12,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 40.82336184920758,
-              "reps": 12,
-              "rpe": 7
+              "weight_kg": 24.947610018960187,
+              "rpe": 7,
+              "reps": 12
             }
           ]
         },
         {
-          "name": "DB Shoulder Press",
+          "name": "Seated Leg Curl",
           "tier": "accessory",
-          "notes": "@7 CAP — shoulder. Overhead is the most bursitis-provocative pattern you own (MRI: mild subacromial-subdeltoid bursitis). Stop on any PAINFUL ARC — pain through the middle range that eases overhead. Two sessions running with that = tell coach, swap to neutral-grip/landmine. Re-anchored 50 → 70.",
+          "notes": "Hamstrings, zero spinal loading. Log anchor 115. Three sets, not two.  ⟳ IF OCCUPIED: Lying Leg Curl at the same load. If every curl station is busy, SKIP IT — do NOT substitute an RDL or any loaded hinge. Hinges are cut for medical reasons and a fallback must never smuggle back what a restriction removed.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 24.947610018960187,
-              "reps": 10,
-              "rpe": 6
+              "weight_kg": 52.16318458509857,
+              "rpe": 7,
+              "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 24.947610018960187,
-              "reps": 10,
-              "rpe": 6
+              "weight_kg": 52.16318458509857,
+              "rpe": 7,
+              "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 24.947610018960187,
-              "reps": 10,
-              "rpe": 6
+              "weight_kg": 52.16318458509857,
+              "rpe": 7,
+              "reps": 12
             }
           ]
         },
         {
           "name": "Lateral Raise (Dumbbell)",
           "tier": "accessory",
-          "notes": "Lateral delts — the one shoulder head nothing else in this block trains (presses hit front, face pull + pec deck hit rear). Log median 40 lb over 68 sessions, but prescribed at 30-35 DELIBERATELY: the MRI shows subacromial bursitis, and 60-120° of abduction is the impingement arc this movement lives in. STOP AT SHOULDER HEIGHT, no higher, light and high-rep. Any painful arc — stop the set and tell me.",
+          "notes": "STOP AT SHOULDER HEIGHT, no higher — 60-120 degrees of abduction is the impingement arc and you have subacromial bursitis in it. 35 lb, light and high-rep. Sep 1 ran this to @8.5; keep it at @7 this week, the shoulder is carrying a bench peak and a dip peak.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
-              "reps": 15,
-              "rpe": 6
+              "weight_kg": 15.87575183024739,
+              "rpe": 7,
+              "reps": 15
             },
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
-              "reps": 15,
-              "rpe": 6
+              "weight_kg": 15.87575183024739,
+              "rpe": 7,
+              "reps": 15
             },
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
-              "reps": 15,
-              "rpe": 6
+              "weight_kg": 15.87575183024739,
+              "rpe": 7,
+              "reps": 15
             }
           ]
         },
         {
           "name": "Pallof Press",
           "tier": "core",
-          "notes": "CORE (D2) — anti-rotation. Replaces Hanging Leg Raise, which is hip-flexor dominant; the psoas attaches straight onto L1-L5, so it pulls on the exact segments under treatment. Log median 20 lb. Per side, slow, brace and resist the rotation.",
+          "notes": "CORE (D2) — anti-rotation. Per side, slow, brace and resist. DB SHOULDER PRESS IS CUT this week, deliberately: bench peaks Monday and dip peaks Thursday, and overhead is the most bursitis-provocative pattern you own. Do NOT substitute barbell OHP — that swap on Sep 1 ran to @9.5 against a @7 cap, on a shoulder with two partial-thickness tears. It's back in W6 at deload load.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 9.071858188712795,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 11.339822735890994,
+              "rpe": 7,
+              "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 9.071858188712795,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 11.339822735890994,
+              "rpe": 7,
+              "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 9.071858188712795,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 11.339822735890994,
+              "rpe": 7,
+              "reps": 12
             }
           ]
         }
@@ -3217,179 +3174,192 @@
         {
           "name": "Weighted Dip",
           "tier": "primary",
-          "notes": "Deload @6.",
+          "notes": "PEAK — BW+105x3 @8. This is your PR shot and you earned it: dip is the one lift you ran exactly to plan all block, and Aug 27's BW+95x4 came in at @7 with room left. DEPTH IS STILL THE PRIMARY VARIABLE — stop above the pinch; full depth buys nothing and costs the bursa. <=3/10 shoulder pain. If the shoulder complains at all, 95 and done.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 22.67964547178199,
-              "reps": 6,
-              "rpe": 6
+              "weight_kg": 47.62725549074217,
+              "rpe": 8,
+              "reps": 3
+            }
+          ],
+          "display_load": "BW+105"
+        },
+        {
+          "name": "Weighted Dip",
+          "tier": "primary",
+          "notes": "Backoff — 3 sets of 5 @7.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 36.28743275485118,
+              "rpe": 7,
+              "reps": 5
             },
             {
               "type": "normal",
-              "weight_kg": 22.67964547178199,
-              "reps": 6,
-              "rpe": 6
+              "weight_kg": 36.28743275485118,
+              "rpe": 7,
+              "reps": 5
             },
             {
               "type": "normal",
-              "weight_kg": 22.67964547178199,
-              "reps": 6,
-              "rpe": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 22.67964547178199,
-              "reps": 6,
-              "rpe": 6
+              "weight_kg": 36.28743275485118,
+              "rpe": 7,
+              "reps": 5
             }
           ]
         },
         {
           "name": "CGB",
           "tier": "secondary",
-          "notes": "Deload — 135, two sets, pattern only.",
+          "notes": "SUPPORT WORK, HARD @7 — this is not a lift you test, and it does not get cap-is-a-target treatment. Fixed 185. Elbows tucked. Dip peaks today: two peaking presses on one day is how the shoulder flares.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 61.235042773811365,
-              "reps": 6,
-              "rpe": 6
+              "weight_kg": 83.91468824559335,
+              "rpe": 7,
+              "reps": 5
             },
             {
               "type": "normal",
-              "weight_kg": 61.235042773811365,
-              "reps": 6,
-              "rpe": 6
+              "weight_kg": 83.91468824559335,
+              "rpe": 7,
+              "reps": 5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.91468824559335,
+              "rpe": 7,
+              "reps": 5
             }
           ],
-          "display_load": "135",
+          "display_load": "185",
           "hold": true,
-          "hold_reason": "Third weekly pressing exposure on a shoulder with two partial-thickness tears + bursitis, on the same day as the dip and the day before Spoto. Deliberately below the 205 lb log median — the sync must not chase it up."
+          "hold_reason": "Fixed support load at a hard @7 — deliberately under the 205 log median so it cannot steal from Friday's Spoto or stack on the dip peak."
         },
         {
           "name": "Hip Thrust (Smith Machine)",
           "tier": "accessory",
-          "notes": "Deload — 185x12 @6.",
+          "notes": "245 on the Smith, your logged load. Ribs down, chin tucked, finish with the GLUTES — never hyperextend the low back at lockout. A numb back won't warn you.  ⟳ IF OCCUPIED: Barbell Hip Thrust @225 (6 logged sessions, median 225). Same rule either way — ribs down, finish with the glutes, never hyperextend at lockout.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 83.91468824559335,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 111.13026281173174,
+              "rpe": 7.5,
+              "reps": 8
             },
             {
               "type": "normal",
-              "weight_kg": 83.91468824559335,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 111.13026281173174,
+              "rpe": 7.5,
+              "reps": 8
             },
             {
               "type": "normal",
-              "weight_kg": 83.91468824559335,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 111.13026281173174,
+              "rpe": 7.5,
+              "reps": 8
             }
-          ],
-          "display_load": "185"
+          ]
         },
         {
           "name": "Lat Pulldown",
           "tier": "accessory",
-          "notes": "Lat width for the pull-up.",
+          "notes": "Lat width for the pull-up. Log anchor 190.  ⟳ IF OCCUPIED: Natural Grip Lat Pulldown @165 (your logged fallback, 165 on Aug 20) or Seated Cable Row V-Grip @140.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 68.03893641534596,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 86.18265279277155,
+              "rpe": 7.5,
+              "reps": 8
             },
             {
               "type": "normal",
-              "weight_kg": 68.03893641534596,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 86.18265279277155,
+              "rpe": 7.5,
+              "reps": 8
             },
             {
               "type": "normal",
-              "weight_kg": 68.03893641534596,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 86.18265279277155,
+              "rpe": 7.5,
+              "reps": 8
             }
           ]
         },
         {
           "name": "Reverse Pec Deck",
           "tier": "accessory",
-          "notes": "RE-ANCHORED 45 → 100 (log median 100). You skipped this 4/4 in B4 — it was prescribed at less than half your working load. Posterior-cuff/scap support for the torn anterior tendons; keep it.",
+          "notes": "Rear delts. You've been running this ON PRESCRIPTION — machine at 100/100/115 against a written 110. My earlier note claiming the plan and your log disagreed was wrong; it read one busy-gym fallback session as drift. Nothing to change.  ⟳ IF OCCUPIED: DB Rear Delt Fly @30, same reps. Sanctioned fallback — you've run it (28 lb, Sep 3). Chest on the incline bench, thumbs down, squeeze the rear delt, no swing.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 38.55539730202938,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 49.895220037920375,
+              "rpe": 7.5,
+              "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 38.55539730202938,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 49.895220037920375,
+              "rpe": 7.5,
+              "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 38.55539730202938,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 49.895220037920375,
+              "rpe": 7.5,
+              "reps": 12
             }
           ]
         },
         {
           "name": "Face Pull",
           "tier": "accessory",
-          "notes": "Shoulder health — LOAD-BEARING, not filler. Posterior cuff is intact while supraspinatus/subscapularis are torn, so this shares load off them. High rep, never heavy. Do not cut when short on time.",
+          "notes": "Shoulder health, and it is load-bearing work not filler — the posterior cuff is intact and the anterior tendons aren't, so this shares load off the torn structures. Don't cut it when the clock runs out.  ⟳ IF OCCUPIED: band pull-apart, double the reps. Don't skip it — the posterior cuff is intact and the anterior tendons aren't, so this work shares load off the torn structures.",
           "sets": [
             {
               "type": "normal",
               "weight_kg": 20.41168092460379,
-              "reps": 15,
-              "rpe": 7
+              "rpe": 7.5,
+              "reps": 15
             },
             {
               "type": "normal",
               "weight_kg": 20.41168092460379,
-              "reps": 15,
-              "rpe": 7
+              "rpe": 7.5,
+              "reps": 15
             },
             {
               "type": "normal",
               "weight_kg": 20.41168092460379,
-              "reps": 15,
-              "rpe": 7
+              "rpe": 7.5,
+              "reps": 15
             }
           ]
         },
         {
           "name": "Dead Bug",
           "tier": "core",
-          "notes": "CORE (D3) — anti-extension. Teaches the brace that keeps the lumbar spine neutral under load, which is the whole game right now. Bodyweight, per side, slow — lower back stays flat on the floor. If it arches off the floor, shorten the range.",
+          "notes": "CORE (D3) — anti-extension. Low back stays FLAT on the floor; if it arches, shorten the range. Sep 3 ran these to @9.5 — that's a core accessory, keep it at @7.",
           "sets": [
             {
               "type": "normal",
               "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 6
+              "rpe": 7,
+              "reps": 10
             },
             {
               "type": "normal",
               "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 6
+              "rpe": 7,
+              "reps": 10
             },
             {
               "type": "normal",
               "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 6
+              "rpe": 7,
+              "reps": 10
             }
           ],
           "display_load": "BW"
@@ -3403,183 +3373,671 @@
         {
           "name": "Sumo Deadlift",
           "tier": "primary",
-          "notes": "Deload 225, about 18% below W4's 275. @6, crisp triples. Train before the scheduled injection.",
+          "notes": "FIXED 295 — HELD, NOT STEPPED. 295 is the number YOU chose on Sep 4 against a written 275; your back tolerated it, so it gets written down rather than pretended away. But you do not get a raise on a load you took without asking. 325-355 was declined: this is INJECTION MORNING, four days after a 365 squat, on your canary lift — the one session in the week where the post-set signal gets buried under 24-72h of trigger-point soreness. Crisp triples @6, no PR intent, no autoregulating. Back rounding or bar-speed drop = rack it. LOG SATURDAY'S BACK CHECK.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 102.05840462301894,
-              "reps": 3,
-              "rpe": 6
+              "weight_kg": 133.80990828351372,
+              "rpe": 6,
+              "reps": 3
             },
             {
               "type": "normal",
-              "weight_kg": 102.05840462301894,
-              "reps": 3,
-              "rpe": 6
+              "weight_kg": 133.80990828351372,
+              "rpe": 6,
+              "reps": 3
             },
             {
               "type": "normal",
-              "weight_kg": 102.05840462301894,
-              "reps": 3,
-              "rpe": 6
+              "weight_kg": 133.80990828351372,
+              "rpe": 6,
+              "reps": 3
             }
           ],
-          "display_load": "225",
+          "display_load": "295",
           "hold": true,
-          "hold_reason": "Deload below both the log and W4's 275. Sync must not rebase it."
+          "hold_reason": "Injection-day ceiling under masked-pain-load-cap + sumo-back-cap. Deliberately below the 345-405 band while the back is under treatment. Sync must not rebase."
         },
         {
           "name": "Spoto Bench Press",
           "tier": "secondary",
-          "notes": "@8 CAP. HELD as the bench secondary — it added +35 lb across B4 and bench is the strive lift; rotating it now would break something that's working.",
+          "notes": "@8 CAP. 255 — up 10 from Sep 4's 245x3 @7.5-8. Your bench secondary is working; keep it moving.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 88.45061733994974,
-              "reps": 5,
-              "rpe": 6
+              "weight_kg": 115.66619190608813,
+              "rpe": 8,
+              "reps": 3
             },
             {
               "type": "normal",
-              "weight_kg": 88.45061733994974,
-              "reps": 5,
-              "rpe": 6
+              "weight_kg": 115.66619190608813,
+              "rpe": 8,
+              "reps": 3
             },
             {
               "type": "normal",
-              "weight_kg": 88.45061733994974,
-              "reps": 5,
-              "rpe": 6
+              "weight_kg": 115.66619190608813,
+              "rpe": 8,
+              "reps": 3
             }
           ]
         },
         {
           "name": "Bulgarian Split Squat",
           "tier": "accessory",
-          "notes": "NEW to the block, NOT new to you — 50 logged sessions, median 42.5/hand. This is your 'lunge', already grooved. Unilateral, so you get a leg's worth of quad/glute stimulus at roughly half the spinal load of bilateral squatting. Torso tall, per leg.",
+          "notes": "Unilateral quad/glute at roughly half the spinal load of bilateral squatting. Torso tall, per leg. Log anchor 50/hand.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 15.87575183024739,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 22.67964547178199,
+              "rpe": 7.5,
+              "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 15.87575183024739,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 22.67964547178199,
+              "rpe": 7.5,
+              "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 15.87575183024739,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 22.67964547178199,
+              "rpe": 7.5,
+              "reps": 10
             }
           ]
         },
         {
           "name": "Chest Supported Incline Row",
           "tier": "accessory",
-          "notes": "NEW — replaces Meadows Row. Same target, ZERO lumbar load (chest supported) on your deadlift day. First exposure: 50 lb/hand is an estimate, the weekly log sync will correct it.",
+          "notes": "Upper back, ZERO lumbar load on deadlift day. Re-anchored onto your log: 55/hand (the original 50 was a first-exposure guess).",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 18.14371637742559,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 24.947610018960187,
+              "rpe": 7.5,
+              "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 18.14371637742559,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 24.947610018960187,
+              "rpe": 7.5,
+              "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 18.14371637742559,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 24.947610018960187,
+              "rpe": 7.5,
+              "reps": 10
             }
           ]
         },
         {
           "name": "Seated Calf Raise",
           "tier": "accessory",
-          "notes": "Calves — the last uncovered muscle group, now in. SEATED on purpose: a standing/barbell calf raise puts load straight down the spine, a seated one puts zero. Log median 175 over 4 sessions. Swapped in for Incline DB Press rather than added, so D4 stays at 21 sets — and it pulls a fourth pressing exposure off a shoulder with bursitis and two partial tears. Comp bench, dip and Spoto still cover the press.",
+          "notes": "Calves. RE-ANCHORED DOWN to 90 — that's what you've actually been doing; the 155-175 in the plan came from a 4-session median that didn't hold. Seated on purpose: zero spinal load.  ⟳ IF OCCUPIED: calf press on the leg press sled, same load. NOT a standing or barbell calf raise — that runs load straight down the spine, which is the thing we're protecting.",
           "sets": [
             {
               "type": "normal",
               "weight_kg": 40.82336184920758,
-              "reps": 15,
-              "rpe": 6
+              "rpe": 7.5,
+              "reps": 15
             },
             {
               "type": "normal",
               "weight_kg": 40.82336184920758,
-              "reps": 15,
-              "rpe": 6
+              "rpe": 7.5,
+              "reps": 15
             },
             {
               "type": "normal",
               "weight_kg": 40.82336184920758,
-              "reps": 15,
-              "rpe": 6
+              "rpe": 7.5,
+              "reps": 15
             }
           ]
         },
         {
           "name": "Concentration Curl",
           "tier": "accessory",
-          "notes": "Biceps — back in. Cutting it left the biceps with no direct work at all; pull-ups and rows alone don't cover it. On D4 because nothing follows Friday. Log median 38 lb over 93 sessions, max 45.",
+          "notes": "Biceps — the only direct biceps work in the block. Log median 38, max 45.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 13.607787283069193,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 18.14371637742559,
+              "rpe": 7.5,
+              "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 13.607787283069193,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 18.14371637742559,
+              "rpe": 7.5,
+              "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 13.607787283069193,
-              "reps": 12,
-              "rpe": 6
+              "weight_kg": 18.14371637742559,
+              "rpe": 7.5,
+              "reps": 10
             }
           ]
         },
         {
           "name": "Bird Dog",
           "tier": "core",
-          "notes": "CORE (D4) — anti-rotation plus erector endurance, spine neutral throughout. Per side, slow, no rotation through the hips. The gentlest of the four core patterns, which is why it sits on deadlift day.",
+          "notes": "CORE (D4) — anti-rotation plus erector endurance, spine neutral throughout. Per side, slow, no rotation through the hips. Gentlest of the four patterns, which is why it sits on deadlift day.",
           "sets": [
             {
               "type": "normal",
               "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 6
+              "rpe": 7,
+              "reps": 10
             },
             {
               "type": "normal",
               "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 6
+              "rpe": 7,
+              "reps": 10
             },
             {
               "type": "normal",
               "weight_kg": 0.0,
-              "reps": 10,
-              "rpe": 6
+              "rpe": 7,
+              "reps": 10
             }
           ],
           "display_load": "BW"
         }
       ]
+    },
+    {
+      "week": 6,
+      "day": "D1",
+      "exercises": [
+        {
+          "name": "Low-bar Squat",
+          "tier": "primary",
+          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. 225x5 x3 @6 — back to the load you ran W1-W3. This is a movement day, not a training day.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 102.05840462301894,
+              "rpe": 6,
+              "reps": 5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 102.05840462301894,
+              "rpe": 6,
+              "reps": 5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 102.05840462301894,
+              "rpe": 6,
+              "reps": 5
+            }
+          ],
+          "display_load": "225",
+          "hold": true,
+          "hold_reason": "Deload load, deliberately far below the log and below W5's 365 peak."
+        },
+        {
+          "name": "Comp Bench",
+          "tier": "primary",
+          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. 200x4 x3 @6. Easy, fast, done.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 90.71858188712795,
+              "rpe": 6,
+              "reps": 4
+            },
+            {
+              "type": "normal",
+              "weight_kg": 90.71858188712795,
+              "rpe": 6,
+              "reps": 4
+            },
+            {
+              "type": "normal",
+              "weight_kg": 90.71858188712795,
+              "rpe": 6,
+              "reps": 4
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
+        },
+        {
+          "name": "Leg Press (Machine)",
+          "tier": "accessory",
+          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. Back in after being cut for the peak. 315, light. HARD ROM RULE: stop the sled well before your hips lift off the pad — a tucked pelvis under load is the L3-4 mechanism.  ⟳ IF OCCUPIED: Bulgarian Split Squat @50/hand (50 logged sessions; D4 is dropped this week so it's free). NOT a goblet or back squat — still axial.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 142.88176647222653,
+              "rpe": 6,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 142.88176647222653,
+              "rpe": 6,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 142.88176647222653,
+              "rpe": 6,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Deliberately under the log (315 vs a 585 anchor) for the medical ROM rule."
+        },
+        {
+          "name": "Tricep Pushdown",
+          "tier": "accessory",
+          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. 45, light.  ⟳ IF OCCUPIED: Overhead DB Extension @25, same reps.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 20.41168092460379,
+              "rpe": 6,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.41168092460379,
+              "rpe": 6,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.41168092460379,
+              "rpe": 6,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
+        },
+        {
+          "name": "Side Plank",
+          "tier": "core",
+          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. CORE (D1) — anti-lateral-flexion. 30s per side.",
+          "sets": [
+            {
+              "type": "duration",
+              "weight_kg": 0.0,
+              "rpe": 6,
+              "duration_seconds": 30
+            },
+            {
+              "type": "duration",
+              "weight_kg": 0.0,
+              "rpe": 6,
+              "duration_seconds": 30
+            },
+            {
+              "type": "duration",
+              "weight_kg": 0.0,
+              "rpe": 6,
+              "duration_seconds": 30
+            }
+          ],
+          "display_load": "BW",
+          "hold": true,
+          "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "day": "D2",
+      "exercises": [
+        {
+          "name": "Weighted Pull-up",
+          "tier": "primary",
+          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. BW+55x4 x3 @6. No top set this week. @6 means @6.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 24.947610018960187,
+              "rpe": 6,
+              "reps": 4
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.947610018960187,
+              "rpe": 6,
+              "reps": 4
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.947610018960187,
+              "rpe": 6,
+              "reps": 4
+            }
+          ],
+          "display_load": "BW+55",
+          "hold": true,
+          "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
+        },
+        {
+          "name": "Weighted Back Extension",
+          "tier": "accessory",
+          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. BODYWEIGHT ONLY. Friday Sep 11 was an injection day — the trigger points go into these exact muscles. SKIP ENTIRELY if the sites are sore.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "rpe": 6,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "rpe": 6,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "rpe": 6,
+              "reps": 12
+            }
+          ],
+          "display_load": "BW",
+          "hold": true,
+          "hold_reason": "Bodyweight only — 4 days post trigger-point injection into these exact muscles. Medical restriction; sync must not rebase to the 55 lb log."
+        },
+        {
+          "name": "Seated Leg Curl",
+          "tier": "accessory",
+          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. 95, light.  ⟳ IF OCCUPIED: Lying Leg Curl at the same load. If every curl station is busy, SKIP IT — do NOT substitute an RDL or any loaded hinge. Hinges are cut for medical reasons and a fallback must never smuggle back what a restriction removed.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 43.091326396385774,
+              "rpe": 6,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 43.091326396385774,
+              "rpe": 6,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 43.091326396385774,
+              "rpe": 6,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
+        },
+        {
+          "name": "DB Shoulder Press",
+          "tier": "accessory",
+          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. BACK IN at deload load — 50 lb, HARD @7 CAP, dumbbells. This is the movement, not barbell OHP: DBs let the shoulders find their own path, a barbell forces the arc. Stop on any painful arc.  ⟳ IF THE 50s ARE TAKEN: go lighter and add reps, or landmine press. **NEVER the barbell.** DBs are prescribed *because* your shoulder has two partial-thickness tears and needs to choose its own path; a barbell fixes your hands and forces the arc. Aug 11 and Sep 1 both went barbell — if the DBs are gone, that's a lighter pair, not a different lift.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "rpe": 6,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "rpe": 6,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "rpe": 6,
+              "reps": 10
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Deload + a standing @7 shoulder cap (MRI: two partial-thickness tears, subacromial bursitis). Deliberately under the log."
+        },
+        {
+          "name": "Lateral Raise (Dumbbell)",
+          "tier": "accessory",
+          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. 25, light and high-rep. STOP AT SHOULDER HEIGHT.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 11.339822735890994,
+              "rpe": 6,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 11.339822735890994,
+              "rpe": 6,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 11.339822735890994,
+              "rpe": 6,
+              "reps": 15
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
+        },
+        {
+          "name": "Pallof Press",
+          "tier": "core",
+          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. CORE (D2) — anti-rotation.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 9.071858188712795,
+              "rpe": 6,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 9.071858188712795,
+              "rpe": 6,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 9.071858188712795,
+              "rpe": 6,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "day": "D3",
+      "exercises": [
+        {
+          "name": "Weighted Dip",
+          "tier": "primary",
+          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. *** THIS ONE IS OPTIONAL, AND IT RUNS WEDNESDAY SEP 16, NOT THURSDAY *** — you fly Thursday. Morning or evening, your call. Skipping it entirely is a fine answer. BW+50x6 x3 @6. Depth rule still applies.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "rpe": 6,
+              "reps": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "rpe": 6,
+              "reps": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "rpe": 6,
+              "reps": 6
+            }
+          ],
+          "display_load": "BW+50",
+          "hold": true,
+          "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
+        },
+        {
+          "name": "CGB",
+          "tier": "secondary",
+          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. 135x6 x2 @6.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 61.235042773811365,
+              "rpe": 6,
+              "reps": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 61.235042773811365,
+              "rpe": 6,
+              "reps": 6
+            }
+          ],
+          "display_load": "135",
+          "hold": true,
+          "hold_reason": "Deload support load, fixed and deliberately under the 205 log median."
+        },
+        {
+          "name": "Hip Thrust (Smith Machine)",
+          "tier": "accessory",
+          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. 185, light. Ribs down, finish with the glutes, never hyperextend.  ⟳ IF OCCUPIED: Barbell Hip Thrust @175 (6 logged sessions, median 225). Same rule either way — ribs down, finish with the glutes, never hyperextend at lockout.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 83.91468824559335,
+              "rpe": 6,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.91468824559335,
+              "rpe": 6,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.91468824559335,
+              "rpe": 6,
+              "reps": 10
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
+        },
+        {
+          "name": "Lat Pulldown",
+          "tier": "accessory",
+          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. 150, light.  ⟳ IF OCCUPIED: Natural Grip Lat Pulldown @135 (your logged fallback, 165 on Aug 20) or Seated Cable Row V-Grip @120.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 68.03893641534596,
+              "rpe": 6,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 68.03893641534596,
+              "rpe": 6,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 68.03893641534596,
+              "rpe": 6,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
+        },
+        {
+          "name": "Face Pull",
+          "tier": "accessory",
+          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. 35, shoulder health.  ⟳ IF OCCUPIED: band pull-apart, double the reps. Don't skip it — the posterior cuff is intact and the anterior tendons aren't, so this work shares load off the torn structures.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "rpe": 6,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "rpe": 6,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "rpe": 6,
+              "reps": 15
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
+        },
+        {
+          "name": "Dead Bug",
+          "tier": "core",
+          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. CORE (D3) — anti-extension. Low back FLAT. *** D4 IS DROPPED THIS WEEK *** — that's your standing 3-day fallback order (D1, D2, D3; sumo is the most expendable session). Nothing after this until you're home. Korea is ZERO training, by your call and mine.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "rpe": 6,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "rpe": 6,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "rpe": 6,
+              "reps": 10
+            }
+          ],
+          "display_load": "BW",
+          "hold": true,
+          "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
+        }
+      ]
     }
-  ]
+  ],
+  "week_phases": {
+    "5": {
+      "label": "PEAK",
+      "description": "Final peak week before the travel deload."
+    },
+    "6": {
+      "label": "DELOAD",
+      "description": "Recover into Korea travel; D1/D2 and optional Wednesday D3, D4 dropped."
+    }
+  }
 }
