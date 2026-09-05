@@ -13,7 +13,8 @@ secondary + accessory / 0:30 core**. See *Rest times* below.
 **Extended to 6 weeks 2026-09-05** (athlete's ask, granted): **W5 becomes a peak week**, **W6
 becomes the deload** and absorbs the Korea trip. Pushed W5-D1 → W6-D3 the same day.
 **Theme**: Bench, pull-up and dip push the full plan. Squat and sumo ran at 225 through W3,
-then take one medically cleared step in W4 before a 225 deload. Loaded hinges stay cut.
+then 275 in W4, the deliberate 365 squat peak in W5, and a 225 squat deload in W6.
+Loaded hinges stay cut.
 
 ---
 
@@ -53,6 +54,12 @@ Athlete reported **"fine-tight in the middle"** for both Sep 1 (after the 275 sq
 read has to round down, and this athlete's bias is documented. Both are **pain-free and
 non-escalating**, and both read better than the Aug 29/30 post-injection reads, which is the
 argument that earned the squat step at all.
+
+**PR review clarification (2026-09-05):** athlete explicitly reconfirmed the deliberate
+365 lb squat choice, citing the mental value of returning to heavier lifting and his own body
+awareness. Keep 365×3 @≤7 plus two 275×3 @6 backoffs. This is a B5-specific athlete decision
+despite the recorded `tight` checks, not a passed progression gate or new clinical clearance.
+Existing hard stops and the next-day check remain as written.
 
 ### The numbers
 

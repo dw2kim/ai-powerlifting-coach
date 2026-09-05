@@ -663,3 +663,18 @@ higher, assume accessory work is around RPE 7–8.
 **Feedback:** Accessory progression should be more gradual than primary/secondary lifts.
 Still progress over time, but not aggressively — no default +5 lb every week.
 → rules: `accessory-progression`
+
+### 2026-09-05 · block, load · PR review corrections · 2026-Q3-B05
+
+**Feedback:** athlete confirms 365 lb was deliberate: mentally valuable after time away
+from heavier lifting, with confidence in his own body awareness. Accepts the two rendering
+findings: include the existing 275×3 backoffs, label W5 peak and W6 deload.
+
+**Log check:** 90-day squat history: 13 sessions, median 425 lb, max 480 lb; latest
+Aug 31 top working load 275×5 @6. History is context, not new clearance.
+
+**Actions:** retain the 365×3 prescription as a specific athlete decision; record it in
+current-block and active-issues. Fix missing exercise occurrences in the Sheet exporter,
+add per-week phase overrides and correct the summary. No standing progression rule changed.
+
+→ rules: one-off B5 exception to `axial-return-ladder`; no new general rule.

@@ -3,11 +3,11 @@
   "weeks": 6,
   "start_date": "2026-08-10",
   "summary": {
-    "goal": "Protect the back, strive upstairs. Squat and sumo ran at a fixed 225 through W3, take one graded step to 275 in W4, and deload at 225 in W5. Loaded hinges stay cut while bench, pull-up and dip push the full plan.",
+    "goal": "Protect the back, strive upstairs. Six weeks: W5 peaks with squat 365x3 plus two 275x3 backoffs and sumo held at 295; W6 deloads into Korea travel. Loaded hinges stay cut.",
     "changes": [
-      "GRADED CLEARANCE (2026-08-28): the prior no-heavy order was superseded by a 25% increase instruction. W4 uses a fixed 275 lb cap (+22% from the trained 225); W5 deloads at 225.",
-      "Squat: 225 x5 @6 for W1-W3; W4 275 x5 @6 only through the symptom gate; W5 225 x5 @6.",
-      "Sumo: 225 x3 @6 for W1-W3; W4 275 x3 @6 only if Monday squat ran as planned; W5 225 x3 @6. Triples stay triples and sumo remains the canary.",
+      "GRADED CLEARANCE (2026-08-28): W4 used 275 after the initial 25% instruction. ATHLETE DECISION (2026-09-05): keep the deliberate W5 365 squat peak; W6 is the travel deload. This is a specific exception to the back-check progression gate, not new clinical clearance.",
+      "Squat: W1-W3 225x5; W4 275x5; W5 365x3 @7 cap plus 275x3 x2 @6; W6 225x5 x3 @6.",
+      "Sumo: W1-W3 225x3; W4 prescribed 275x3; W5 held at 295x3 x3 @6; W6 D4 dropped for travel.",
       "CUT for the window: Paused RDL (loaded hinge) and Paused Low-bar Squat (2nd weekly axial session). Neither is worth its risk right now.",
       "Weighted Back Extension moved D4 -> D2 and held at BODYWEIGHT through W2 — the injections go into these exact muscles. Skip it if the sites are sore.",
       "Bench, pull-up and dip UNCHANGED — full strive plan. No shoulder injection was given (2026-08-07), so masked-pain-load-cap does not bind them.",
@@ -4029,5 +4029,15 @@
         }
       ]
     }
-  ]
+  ],
+  "week_phases": {
+    "5": {
+      "label": "PEAK",
+      "description": "Final peak week before the travel deload."
+    },
+    "6": {
+      "label": "DELOAD",
+      "description": "Recover into Korea travel; D1/D2 and optional Wednesday D3, D4 dropped."
+    }
+  }
 }

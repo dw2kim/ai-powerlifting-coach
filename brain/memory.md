@@ -538,3 +538,13 @@ barbell OHP for a DB press.
 
 **The lesson under the lesson: ask before inferring intent from a log.** One anomalous session is a
 question, not a finding. I had four weeks of context available and read one row.
+
+## 2026-09-05 — PR review correction: keep the deliberate 365 squat
+Athlete explicitly reconfirmed 365, citing the mental value of heavier lifting and his body
+awareness. Record this as a B5-specific choice despite tight checks; do not repeatedly flag
+it as an accidental increase or imply new clinical clearance. Existing stops remain.
+The two 275×3 backoffs were already in JSON; the Sheet renderer omitted the second squat
+occurrence. Fixed the row union and added explicit W5 PEAK / W6 DELOAD phase metadata.
+Live verification: Hevy W5-D1 already had 365×3 and both 275×3 backoffs with 75-second
+rest timers, so no routine write was needed. Re-rendered the existing Google Sheet and
+read back the 2×3 @275 row and W5 PEAK / W6 DELOAD headers successfully. All 28 tests pass.

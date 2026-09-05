@@ -471,7 +471,8 @@ def build_plan(block: dict, final: bool = False) -> tuple[list[list[str]], list[
     r = _row(); banner_rows.append(r); row = blank_row()
     for w in order:
         date = wk_date(w)
-        head = f"WEEK {w} — {_WK_PHASE.get(w, '')}".strip()
+        phase = block.get("week_phases", {}).get(str(w), {})
+        head = f"WEEK {w} — {phase.get('label', _WK_PHASE.get(w, ''))}".strip()
         row[wk_start(w) - 1] = f"{head}  ·  {date}" if date else head
     rows.append(row)
     for w in order:
@@ -480,7 +481,8 @@ def build_plan(block: dict, final: bool = False) -> tuple[list[list[str]], list[
                      "format": _cell_fmt(bg=_WEEK_BG, bold=True, white=True)})
     r = _row(); banner_rows.append(r); row = blank_row()
     for w in order:
-        row[wk_start(w) - 1] = _WK_SUB.get(w, "")
+        phase = block.get("week_phases", {}).get(str(w), {})
+        row[wk_start(w) - 1] = phase.get("description", _WK_SUB.get(w, ""))
     rows.append(row)
 
     # Column-header row
@@ -506,6 +508,16 @@ def build_plan(block: dict, final: bool = False) -> tuple[list[list[str]], list[
             continue
         canon_order = list(_keyed(canon_exs).keys())
         per_week = {w: _keyed(exs) for w, exs in weeks_exs}
+        # A later amendment can introduce a second occurrence (e.g. squat backoffs)
+        # without becoming the fullest week. Keep every occurrence across weeks.
+        for keyed in per_week.values():
+            for key in keyed:
+                if key not in canon_order:
+                    siblings = [i for i, old in enumerate(canon_order) if old[0] == key[0]]
+                    if siblings:
+                        canon_order.insert(siblings[-1] + 1, key)
+                    else:
+                        canon_order.append(key)
 
         # Day band — full-width coloured row; "Dn · focus" overflows across the frozen cols.
         r = _row(); banner_rows.append(r); row = blank_row()
