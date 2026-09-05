@@ -455,3 +455,49 @@ exits 0 is indistinguishable from a successful one on the Actions page — I rea
 Aug 21" off that list and it was wrong. **A scheduled job whose whole purpose is to send something
 must fail loudly when it sends nothing, or its own status page will lie about it.** The athlete
 noticed a missing Telegram message; the monitoring never did.
+
+## 2026-09-05 — B5 extended to 6 weeks; the written ceiling stopped holding
+Athlete travels to **Korea Sep 17–21** (sister's wedding, whole family, long-haul + jet lag). He
+asked to extend B5 so **W5 (Sep 7–11) peaks before Friday's injection** and **W6 (Sep 14–18)
+deloads into the trip**. Granted — the calendar logic is genuinely good and I'd have proposed it:
+you lose those days anyway, so spend the ones that cost least, and Mon Sep 7 is **10 days
+post-injection**, the cleanest back signal of the block.
+
+**What changed the numbers was the sync, not the argument.** W4 D2/D3/D4 were sitting unpulled.
+Once synced, **three caps had been run hot in one week**: sumo **295** against a written 275, WPU
+**@8.5** against an @8 *hard stop*, and **barbell OHP to @9.5** substituted for a DB press under a
+@7 shoulder cap — on a shoulder with two partial-thickness tears and bursitis. Plus Incline DB
+Press back on D2, a movement cut specifically to reduce pressing exposure.
+
+**This is `clinical-override`'s corollary happening in real time** — *he follows a number on a page
+reliably and cannot reliably generate one in the moment.* B4 W1 was planned 345 / pulled 425. This
+is the same event at smaller scale, and it arrived **four days before he asked for 405 squat and
+355 sumo on the strength of respecting a ceiling.** The right response was not to refuse the block
+change — it was to price the breach into the numbers and say so plainly.
+
+Given: **squat 365×3 @≤7** (405 declined — it was conditional on *clean* checks and the checks
+read tight), **sumo held at 295** (his own Sep 4 number written down, not raised: injection
+morning, canary lift, 4 days after a 365 squat), bench 265–275×2 @8, WPU **BW+90×3 @8 — repeat the
+load, fix the RPE**, dip BW+105×3 @8. Overhead pressing cut from W5 entirely; both bench and dip
+peak that week and overhead is the most bursitis-provocative pattern he owns.
+
+**Three things worth keeping:**
+
+1. **`pull_latest` does not write to disk — `sync_archive` does.** I read "no sessions since Aug 31"
+   off a stale local mirror and nearly answered a load question on four-day-old data. Any question
+   that turns on what he actually lifted starts with `sync_archive`, not `pull_latest`.
+2. **"fine-tight in the middle" is not a back check.** He answered both Sep 1 and Sep 5 with a
+   fourth word. `back-checks.md` says three words on purpose, and this is exactly why. **Recorded
+   both as `tight`** — an ambiguous read has to round down, because his documented bias runs the
+   other way. Worth telling him once more that the vocabulary is the whole instrument; a run of
+   consistent words is the only thing that means anything.
+3. **A whole-week deload must be pinned `hold` on every entry.** W6 is deliberately far below the
+   log across the board, which is precisely what the Saturday sync exists to "correct". Unpinned it
+   would have rebased the entire week back to log level and silently deleted the deload — the same
+   `sheet-load-sync` failure that already bit Weighted Back Extension and Leg Press. The `hold`
+   clause is written for single deliberately-light *exercises*; a deload **week** needs it applied
+   wholesale, and nothing in the rules said so until now.
+
+**Compliance cuts both ways, and it's worth naming.** Dip is the one lift he ran exactly to plan
+all block, and it's the one that got a PR shot (BW+105) — that's not a coincidence and he was told
+so. **405 squat is owed to him**: on a genuinely clean Sep 8 check it's a realistic B6 W2–W3 rep.

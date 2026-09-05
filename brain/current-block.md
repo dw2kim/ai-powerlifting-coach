@@ -3,15 +3,93 @@
 # Block 5 — 2026-Q3-B05 (Protect the back, strive upstairs)
 
 **Block ID**: 2026-Q3-B05
-**Dates**: 2026-08-10 → 2026-09-13 (5 weeks, 4 days/week)
+**Dates**: 2026-08-10 → **2026-09-18** (**6 weeks**, 4 days/week — extended 2026-09-05)
 **Source**: Designed 2026-08-07 from the B4 review (`reviews/2026-Q3-B04.md`) + athlete direction.
 **Revised same day** after the 2026-08-07 pain-clinic visit — see the medical override below.
 **Re-pushed 2026-08-11 (W1-D3 → W5-D4)**: clean whole-pound loads in Hevy, rest times on every
 exercise, and **CGB added to D3**. No load, rep, RPE or day changed anywhere else.
 **Rest times reset same day (W1-D2 → W5-D4)** to the athlete's own rule — **1:15 primary / 1:00
 secondary + accessory / 0:30 core**. See *Rest times* below.
+**Extended to 6 weeks 2026-09-05** (athlete's ask, granted): **W5 becomes a peak week**, **W6
+becomes the deload** and absorbs the Korea trip. Pushed W5-D1 → W6-D3 the same day.
 **Theme**: Bench, pull-up and dip push the full plan. Squat and sumo ran at 225 through W3,
 then take one medically cleared step in W4 before a 225 deload. Loaded hinges stay cut.
+
+---
+
+## ✅ 2026-09-05 — extended to 6 weeks: W5 peaks, W6 deloads into the Korea trip
+
+Athlete travels to Korea **Sep 17–21** for his sister's wedding — whole family, long-haul flight,
+jet lag. He asked to extend the block so the peak lands **next week (W5, Sep 7–11) before Friday's
+injection**, and the deload lands on the week he'd lose to travel anyway.
+
+**Granted on the shape, cut on two of the four numbers.** The calendar logic is sound and I'd have
+proposed it myself: you lose those days regardless, so make them the ones that cost least, and
+Mon Sep 7 is **10 days post-injection** — the most chemically honest back signal in the whole block.
+
+### What the log said when I checked (and why it moved the numbers)
+
+W4 D2/D3/D4 were sitting unsynced (`pull_latest` only prints; **`sync_archive` is what writes** —
+that's the trap). Once synced, three caps had been run hot in one week:
+
+| Written | Actual | |
+|---|---|---|
+| Sumo **275**×3 ×3 | **295**×3 ×3 | +20 lb over a medical cap |
+| WPU BW+85×3 **@8 hard stop** | BW+**90**×3 **@8.5** | past the stop that fixed the lift |
+| **DB** Shoulder Press 75 **@7 cap** | **Barbell OHP** 115×8 → **@9.5** | wrong movement, +2.5 RPE, on a torn shoulder |
+
+Plus Incline DB Press reappeared on D2 — it was cut on purpose to take a pressing exposure *off*
+that shoulder. Week ran six pressing movements.
+
+**This is the documented failure mode, live** (`clinical-override`: *he follows a number on a page
+reliably and cannot reliably generate one in the moment*). It is the whole reason squat and sumo
+are written as fixed absolutes. He asked for 405 squat / 355 sumo on the strength of respecting a
+ceiling, four days after a 275 ceiling came back 295.
+
+### Back checks — two logged, both `tight`
+
+Athlete reported **"fine-tight in the middle"** for both Sep 1 (after the 275 squat) and Sep 5
+(after the 295 sumo). That is not one of the three words. **Recorded as `tight`** — an ambiguous
+read has to round down, and this athlete's bias is documented. Both are **pain-free and
+non-escalating**, and both read better than the Aug 29/30 post-injection reads, which is the
+argument that earned the squat step at all.
+
+### The numbers
+
+| Lift | Asked | Given | Why |
+|---|---|---|---|
+| **Squat** | 365 **or 405** | **365×3 @≤7** | 405 was conditional on *clean* checks **and** 365 moving like 275. Checks read tight → condition failed. 365 is still the heaviest bar since July (71% of a 511 e1RM). |
+| **Sumo** | **325–355** | **295×3 @6** | Held, not stepped. 295 is the number *he* chose on Sep 4 and tolerated — so it gets written down instead of pretended away. But **no raise on a load taken without asking**, on **injection morning**, four days after a 365 squat, on the canary lift. |
+| **Bench** | — | **265–275×2 @8** | Free — costs the back nothing. 265×2 @8 on Aug 31 = e1RM 283; 275 = **293, a real PR**. |
+| **WPU** | — | **BW+90×3 @8** | **Repeat the load, fix the RPE.** He already did 90×3, at @8.5. No 95. |
+| **Dip** | — | **BW+105×3 @8** | His PR shot, and **earned by compliance** — dip is the one lift he ran exactly to plan all block (Aug 27's 95×4 came in @7 with room). |
+
+**Overhead pressing cut from W5-D2** (DB Shoulder Press out, Incline DB stays out). Not punishment:
+bench peaks Monday, dip peaks Thursday, and overhead is the most bursitis-provocative pattern he
+owns. Both return in W6 at deload load. **Leg Press cut from W5-D1** — peak day, and it's the named
+first cut when D1 runs long.
+
+**405 is B6's, and it's close.** If 365 comes in @6–7 and Tuesday's check reads genuinely *fine*,
+B6 opens around 365–385 and 405 is a W2–W3 rep under `axial-return-ladder`.
+
+### W6 (Sep 14–18) — deload at LA Fitness, then nothing
+
+Athlete will train at the gym, not at home (corrected my assumption). **D1 Mon 14 · D2 Tue 15 ·
+D3 optional Wed 16** (morning or evening, his call) — **D4 dropped**, which is his standing 3-day
+fallback order (sumo is the most expendable session). Thu 17 he flies. **Korea is zero training,
+his call and mine.** Lands Mon Sep 21.
+
+> ⚠️ **Every W6 entry is pinned `hold`.** A whole-week deload is deliberately far below the log,
+> which is exactly what the Saturday sync exists to "fix". Unpinned, it would rebase the entire
+> week back up to log level and silently delete the deload — the `sheet-load-sync` failure mode
+> that has now bitten twice on medical loads.
+
+> **Routine titles still read "Squat (light)" for W5.** Deliberate: titles are the `--update` match
+> key, so renaming `days[].focus` would strand duplicates in the app (`push-is-idempotent-with-update`).
+> Cosmetic only — the per-exercise notes carry the real prescription.
+
+**Labor Day, Mon Sep 7**: LA Fitness opens 8am, athlete training then. An 8am peak squat is
+*better* than 6am — more time awake, warmer.
 
 ---
 
@@ -171,10 +249,18 @@ because a loaded standing raise compresses the spine and a seated one doesn't.
 | W2 | **225×5 @6 ×4** | 240×4 @7.5 | **225×3 @6 ×3** | BW+75×4 @7.5 | BW+75×5 @7.5 |
 | W3 | **225×5 @6 ×4** | 245×3 @7.5 *(hold)* | **225×3 @6 ×3** | BW+80×3 @8 | **BW+90×4 @8 (dip peak)** |
 | W4 | **275×5 @6 ×4** 🔓 | **255–270×2 — work up to @8** | **275×3 @6 ×3** 🔓 | **BW+85×3 @8** | BW+80×5 @7.5 |
-| W5 deload | **225×5 @6 ×3** 🔓 | 200×4 @6 | **225×3 @6 ×3** 🔓 | BW+55×4 @6 | BW+50×6 @6 |
+| **W5 PEAK** ⛰️ | **365×3 @≤7** + 275×3 ×2 | **265–275×2 → @8** | **295×3 @6 ×3** | **BW+90×3 @8** | **BW+105×3 @8** |
+| **W6 deload** 🛫 | **225×5 @6 ×3** | 200×4 @6 | **— (D4 dropped)** | BW+55×4 @6 | BW+50×6 @6 *(opt. Wed)* |
 
 🔓 **Amended 2026-08-29** under the 2026-08-28 graded clearance (+25%), athlete's call — see the
 clearance section at the top. **W1–W3 ran 225 flat as originally written.**
+
+⛰️🛫 **Amended 2026-09-05** — block extended to 6 weeks; W5 became the peak, W6 the travel deload.
+See the top section. **W4 ran as written except sumo, which the athlete took to 295.**
+
+**W4 actuals** (synced 2026-09-05): squat 275×5 @6 ×4 ✅ · **bench 265×2 @8 ✅** (the block's one
+test, and he found the cap — B4's miss is closed) · WPU BW+90×3 **@8.5** ⚠️ · dip BW+80×5 ×4 @7.5 ✅
+· **sumo 295×3 ×3** ⚠️ (prescribed 275).
 
 **W1–W3 context:** 225 was the fixed medical cap, with no top-set/backoff split. The Aug 28
 clearance changed only W4 and the W5 deload as shown in the table.
@@ -441,7 +527,9 @@ and sumo are capped at 275 and W5 deloads at 225. `masked-pain-load-cap` was rel
 | **W2** | Aug 17–21 | **none — clean week** | **Mon Aug 17 is ~64 h post** → see the Monday rule. Rest of the week is chemically honest: **best back data available all block. Log every check.** |
 | W3 | Aug 24–28 | **Fri Aug 28** ✅ | D4 trained before the shot. **Graded return cleared at this visit.** Sat Aug 29's check is a **post-injection** one. |
 | **W4** | Aug 31–Sep 4 | **none — clean week** | **Mon Aug 31 is ~64 h post** → Monday rule again. Then clean. **Both checks (Tue Sep 1, Sat Sep 5) are clean-week data — these are the two that gate B6's ramp.** |
-| W5 | Sep 7–11 | **Fri Sep 11** | Deload day, before the shot. **Last visit before B6 is designed — bring the checks and the real numbers.** |
+| **W5** | Sep 7–11 | **Fri Sep 11** | **PEAK week now, not a deload.** Mon Sep 7 is **10 days post** — the cleanest back signal of the block, which is why the squat peak sits there. D4 sumo trains 8am before the shot and is **held at 295 precisely because it's injection morning** — a heavy pull here would bury its own signal under 24–72 h of trigger-point soreness. **Last visit before B6 — bring the checks and the real numbers.** |
+| **W6** | Sep 14–18 | **none** | Deload + travel. Mon 3 days post-injection (inside the flare window) — everything is @6 anyway. **Back Extension is bodyweight only**; skip if the sites are sore. **Flies Thu Sep 17.** |
+| — | Sep 17–21 | **Korea** | **Zero training.** Ask the clinic on Sep 11 whether the next slot (~Sep 25) still works or needs moving. |
 
 - **The Monday rule (Aug 17 and Aug 31): ~64 h post-injection is inside the 24–72 h flare window.**
   On Aug 31: fine → 275, tight → 225, sore/numb → skip squat and run bench + accessories.
@@ -478,6 +566,18 @@ underlying back being worse. The clean weeks are what separate the two.)
       answered.** Graded increase cleared, *"start with a 25% weight increase and see how it
       goes."* Taken as **275 in W4** (athlete's call; 315 asked for and declined). See the clearance
       section at the top.
+- [ ] 🔴 **Three caps run hot in W4 — settled 2026-09-05, but watch it.** Sumo 295 vs a written 275;
+      WPU @8.5 vs an @8 hard stop; barbell OHP @9.5 substituted for DB press under a @7 shoulder cap.
+      All three were priced into the W5 numbers (405 declined, sumo held at 295, overhead cut). **If
+      W5 comes back over any written number again, the axial ladder stops and B6 opens at 275**, not
+      365. Not a threat — a written ceiling that gets exceeded isn't a ceiling, and the whole
+      injury-management scheme is built on it holding.
+- [ ] 🟡 **Reverse Pec Deck vs DB Rear Delt Fly — the plan and the log disagree.** Plan says Reverse
+      Pec Deck @110; he's been logging **DB Rear Delt Fly @28**. Pick one and fix the plan (and the
+      `OVERRIDES` map if needed) — right now the Sheet, the app and the log say three things
+      (`exercise-name-mapping`).
+- [ ] 🟡 **Ask the clinic on Sep 11 about the trip.** Korea Sep 17–21; the next injection slot is
+      ~Sep 25. Does it move, and does he need anything for a 14 h flight?
 - [ ] 🔴 **Tell the clinic what you actually lift — this is now the #1 item, Sep 11.** Open since
       Aug 7, **four visits**. He just set a percentage without knowing the base: he doesn't know
       225 is what you're doing or that 465 is what you squat. One sentence: *"I've been squatting
@@ -494,17 +594,27 @@ underlying back being worse. The clean weeks are what separate the two.)
       load cap under `masked-pain-load-cap`.
 - [ ] 🔴 **Log the next-day back check every squat and sumo day** → `brain/back-checks.md`
       (`python -m scripts.review.back_checks` shows what's owed). **First one ever logged
-      2026-08-29: "tight"** — plus an off-day report of "tighter" on Sun 08-30 (see
-      `active-issues.md` → *Symptom note 2026-08-30*). Still owed, and these **gate B6's ramp**:
-      **Tue Sep 1**, **Sat Sep 5**, **Tue Sep 8** — all clean-week. The doctor cleared you
+      2026-08-29: "tight"**. **Sep 1 and Sep 5 now logged (2026-09-05), both `tight`** — athlete
+      said "fine-tight in the middle" both times; recorded as `tight` because an ambiguous read
+      rounds down. Pain-free and not escalating. **Still owed and now the highest-value row in the
+      block: Tue Sep 8 — the morning after the 365 squat.** That one check decides B6's opening
+      load and whether 405 is a W2 rep. The doctor cleared you
       to increase *and see how it goes*; the check is how it goes. It's also what you hand him on
       Sep 11 and what answers your own "is it the injection?" question. **Sore two axial days in a
       row → axial work stops.**
 - [ ] **B4 W5 deload** never synced. Append it to `reviews/2026-Q3-B04.md` when it lands.
 - [ ] **Chest Supported Incline Row load is a guess** (~50/hand, converted from Meadows 80).
       The Saturday sync will re-anchor it after W1.
-- [ ] **B6 (starts ~Sep 14)** — the step has moved into B5 W4, so B6 picks up **from 275**.
-      Athlete's targets (2026-08-29): **squat ramps to 445, sumo to 365.** Both are *returns*, not
+- [ ] **B6 (starts ~Sep 21–22, after Korea)** — **he lands Mon Sep 21**, so W1-D1 can't be that
+      morning; either W1 runs 3 days from Tue Sep 22 or the whole block shifts a day. Decide when
+      B6 is designed (after the Sep 11 visit). Expect 2–4 rough days from eastward jet lag —
+      **W1 is a re-entry week, write it that way.**
+      B6 picks up **from the W5 peak (365 squat / 295 sumo), not from 275**.
+      Athlete's targets (2026-08-29): **squat ramps to 445, sumo to 365** — and **405 squat is
+      owed to him**, declined in W5 only because the checks read tight; on a clean Sep 8 check it's
+      a realistic W2–W3 rep. **Sumo's return is B6's whole job** — it was held all of B5 and B6 is
+      the first block under `alternating-axial-emphasis`, so if sumo is the heavy lift, 385–405 is
+      the destination, earned rung by rung. Both are *returns*, not
       PRs — squat median is 425 (465×3 @7.5 as recently as 07-27) and 365 sumo is inside the
       345–405 `sumo-back-cap` band. **Build the wave as `axial-return-ladder`** — each rung gated
       on a clean back check, hold on "tight" — not as a fixed weekly climb; 275 → 445 is +62% in

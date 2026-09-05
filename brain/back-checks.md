@@ -63,3 +63,5 @@ _The check is the morning after the session date. Newest at the bottom._
 | Session date | Lift | Back | Note |
 |---|---|---|---|
 | 2026-08-28 | sumo | tight | First check ever logged. ~18h post-injection (2026-08-28 shot). On W3 D4 sumo 225. |
+| 2026-08-31 | squat | tight | Athlete reported "fine-tight in the middle" — recorded as tight (conservative read of an out-of-vocab word). Clean week, 10d post-injection. Squat 275x5 @6 x4. |
+| 2026-09-04 | sumo | tight | Athlete reported "fine-tight in the middle" — same as Sep 1, not escalating. Clean week. Sumo ran 295x3 x3 (prescribed 275). |
