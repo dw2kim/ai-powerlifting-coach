@@ -1,0 +1,335 @@
+{
+  "created_at": "2026-09-03T12:22:19.600Z",
+  "description": "",
+  "end_time": "2026-09-03T12:22:17+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "10347BAC",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 0.45359290943563974
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 5,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 22.67964547178199
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 5,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 36.28743275485118
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 5,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 36.28743275485118
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 5,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 36.28743275485118
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 5,
+          "reps": 5,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 36.28743275485118
+        }
+      ],
+      "superset_id": null,
+      "title": "Triceps Dip (Weighted)"
+    },
+    {
+      "exercise_template_id": "6A6C31A5",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 86.18265279277155
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 86.18265279277155
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 86.18265279277155
+        }
+      ],
+      "superset_id": null,
+      "title": "Lat Pulldown (Cable)"
+    },
+    {
+      "exercise_template_id": "35B51B87",
+      "index": 2,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 5,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 83.91468824559335
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 5,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 83.91468824559335
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 5,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 83.91468824559335
+        }
+      ],
+      "superset_id": null,
+      "title": "Bench Press - Close Grip (Barbell)"
+    },
+    {
+      "exercise_template_id": "291ABA92",
+      "index": 3,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 61.235042773811365
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 5,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 8,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 111.13026281173174
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 8,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 111.13026281173174
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 8,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 111.13026281173174
+        }
+      ],
+      "superset_id": null,
+      "title": "Hip Thrust (Smith Machine)"
+    },
+    {
+      "exercise_template_id": "BE640BA0",
+      "index": 4,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 15,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 19.50449510573251
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 15,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 19.50449510573251
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 15,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 19.50449510573251
+        }
+      ],
+      "superset_id": null,
+      "title": "Face Pull"
+    },
+    {
+      "exercise_template_id": "E5988A0A",
+      "index": 5,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 12.700601464197913
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 12.700601464197913
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 12.700601464197913
+        }
+      ],
+      "superset_id": null,
+      "title": "Rear Delt Reverse Fly (Dumbbell)"
+    },
+    {
+      "exercise_template_id": "D8911FC4",
+      "index": 6,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": null
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": 8.5,
+          "type": "normal",
+          "weight_kg": null
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": 9.5,
+          "type": "normal",
+          "weight_kg": null
+        }
+      ],
+      "superset_id": null,
+      "title": "Dead Bug"
+    }
+  ],
+  "id": "9fae206d-79b3-4319-8445-f4d51bbfa4ab",
+  "routine_id": null,
+  "start_time": "2026-09-03T10:44:50+00:00",
+  "title": "W4-D3 Dip + Glutes + Upper Back",
+  "updated_at": "2026-09-03T12:22:19.600Z"
+}
