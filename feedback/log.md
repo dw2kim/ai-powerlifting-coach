@@ -10,6 +10,65 @@
 
 ---
 
+### 2026-09-05 · general, exercise · equipment substitution is not non-compliance
+
+**Feedback (athlete):** *"I have limited time at the gym, and there are only a few machines, so if
+they're all allocated / full, then most of the time I go for the alternative movement like: Reverse
+Pec Deck machine → DB Rear Delt Fly. I will do that time to time only when the machine/tool are not
+available."*
+
+**Context — I flagged this wrong.** On 2026-09-05 I read the Sep 3 session, saw *Rear Delt Reverse
+Fly (Dumbbell) @28* where the plan says *Reverse Pec Deck @110*, and raised it as a plan/log
+disagreement needing an `exercise-name-mapping` fix. **There was no disagreement.** Verified:
+
+| | Sessions | Loads |
+|---|---|---|
+| Rear Delt Reverse Fly (**Machine**) — the prescribed movement | 3 in B5 (7 in 120 d) | **100 · 100 · 115** against a prescribed **110** |
+| Rear Delt Reverse Fly (**Dumbbell**) — the fallback | 1 (Sep 3) | 28 |
+
+`OVERRIDES` already resolves "reverse pec deck" → `Rear Delt Reverse Fly (Machine)` correctly. He
+has been **on prescription**, and the one odd session was a busy-gym fallback. I generalised from a
+single session and called compliant work a data problem.
+
+**The same pattern across B5, now that I know to look for it:**
+
+| Slot | Prescribed, and run on plan | Fallback taken when occupied |
+|---|---|---|
+| Rear delts (D3) | Rear Delt Reverse Fly (Machine) 100–115 | DB Rear Delt Fly 28 (Sep 3) |
+| Lat Pulldown (D3) | Lat Pulldown (Cable) 180–190 | Natural Grip Lat Pulldown 165 (Aug 20) |
+| DB Shoulder Press (D2) | Shoulder Press (Dumbbell) **70, on plan, Aug 18 + Aug 25** | **Barbell OHP 115 (Aug 11, Sep 1)** |
+
+**This partially retracts a 2026-09-05 call.** I listed the barbell-OHP-for-DB-press swap as one of
+three "caps run hot", framed as ignoring the shoulder rule. He ran the prescribed DB press at the
+prescribed 70 in **two of four weeks**; the two barbell weeks are very likely the 70s/75s being
+taken. **The movement swap was probably forced and my framing was unfair.** What is *not* retracted:
+taking it to **@9.5 against a @7 cap**. A forced implement change does not carry the RPE cap away
+with it — and of the three flags, this is the one where the fallback is genuinely worse for the
+injury (a barbell fixes the hands and forces the shoulder through an arc it can't choose, which is
+precisely why dumbbells were prescribed for a shoulder with two partial-thickness tears).
+
+**Root cause (mine, systemic):** the log was being read as *"what he chose to do"* when it is
+really *"what he did with the equipment that was free."* Every log-grounded rule — `loads-from-logs`,
+`sheet-load-sync`, `exercise-name-mapping` — silently assumed the first. A fallback session in a
+slot then looks like drift, a mapping bug, or defiance, and the correct response to all three is
+different from the correct response to a busy squat rack.
+
+**Second-order bug this would have caused:** `reconcile_loads` anchors on the median of the last 3
+sessions in a slot. A slot mixing a 110 lb machine fly with a 28 lb DB fly produces a meaningless
+anchor and would have rebased the prescription toward the fallback. Nothing in the sync knew the
+difference between a movement and its stand-in.
+
+**Actions taken:** (1) promoted `equipment-fallbacks`; (2) amended B5 W5–W6 so every
+machine-dependent accessory carries a **named fallback with its own load**, since the athlete
+follows a written number reliably and improvises one badly (`clinical-override` corollary);
+(3) corrected the W5-D3 Reverse Pec Deck note, which wrongly told him the plan and his log
+disagreed; (4) recorded the OHP retraction above.
+
+**Still on him, unchanged:** sumo 295 against a written 275, and WPU @8.5 against an @8 hard stop.
+Neither is an equipment story — the bar and the pull-up belt were his own choice.
+
+→ rules: `equipment-fallbacks`
+
 ### 2026-08-29–30 · block, load · graded return and alternating axial emphasis
 
 **Context:** the Aug 28 clinic visit cleared *"start with a 25% weight increase and see how it

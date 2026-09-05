@@ -566,16 +566,22 @@ underlying back being worse. The clean weeks are what separate the two.)
       answered.** Graded increase cleared, *"start with a 25% weight increase and see how it
       goes."* Taken as **275 in W4** (athlete's call; 315 asked for and declined). See the clearance
       section at the top.
-- [ ] 🔴 **Three caps run hot in W4 — settled 2026-09-05, but watch it.** Sumo 295 vs a written 275;
-      WPU @8.5 vs an @8 hard stop; barbell OHP @9.5 substituted for DB press under a @7 shoulder cap.
-      All three were priced into the W5 numbers (405 declined, sumo held at 295, overhead cut). **If
+- [ ] 🔴 **Two caps run hot in W4 — settled 2026-09-05, but watch it.** Sumo 295 vs a written 275;
+      WPU @8.5 vs an @8 hard stop. **The third flag is partly retracted:** the barbell-OHP-for-DB-press
+      swap was probably *forced* (he ran the prescribed DB press at the prescribed 70 in two of four
+      weeks — the barbell weeks are the 70s being taken), so calling it defiance was unfair. **The
+      @9.5 against a @7 cap is not retracted** — a forced implement change doesn't carry the RPE cap
+      away with it, and a barbell is the worse implement for a torn shoulder precisely because it
+      fixes the arc. W6-D2 now names the legal fallbacks and bans the barbell explicitly.
+      Both were priced into the W5 numbers (405 declined, sumo held at 295, overhead cut). **If
       W5 comes back over any written number again, the axial ladder stops and B6 opens at 275**, not
       365. Not a threat — a written ceiling that gets exceeded isn't a ceiling, and the whole
       injury-management scheme is built on it holding.
-- [ ] 🟡 **Reverse Pec Deck vs DB Rear Delt Fly — the plan and the log disagree.** Plan says Reverse
-      Pec Deck @110; he's been logging **DB Rear Delt Fly @28**. Pick one and fix the plan (and the
-      `OVERRIDES` map if needed) — right now the Sheet, the app and the log say three things
-      (`exercise-name-mapping`).
+- [x] ~~🟡 **Reverse Pec Deck vs DB Rear Delt Fly — the plan and the log disagree.**~~ **CLOSED
+      2026-09-05 — I was wrong, there was no disagreement.** He runs the machine at 100/100/115
+      against a written 110 and has all block; the one DB session (Sep 3, 28 lb) was a busy-gym
+      fallback. `OVERRIDES` already resolved the name correctly. Produced rule `equipment-fallbacks`
+      and named fallbacks on every machine accessory in W5–W6.
 - [ ] 🟡 **Ask the clinic on Sep 11 about the trip.** Korea Sep 17–21; the next injection slot is
       ~Sep 25. Does it move, and does he need anything for a 14 h flight?
 - [ ] 🔴 **Tell the clinic what you actually lift — this is now the #1 item, Sep 11.** Open since

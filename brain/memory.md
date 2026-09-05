@@ -501,3 +501,40 @@ peak that week and overhead is the most bursitis-provocative pattern he owns.
 **Compliance cuts both ways, and it's worth naming.** Dip is the one lift he ran exactly to plan
 all block, and it's the one that got a PR shot (BW+105) — that's not a coincidence and he was told
 so. **405 squat is owed to him**: on a genuinely clean Sep 8 check it's a realistic B6 W2–W3 rep.
+
+## 2026-09-05 — the log is "what the equipment allowed", not "what he chose"
+Athlete, unprompted, after I queried a rear-delt discrepancy: *"there are only a few machines, so if
+they're all allocated/full, then most of the time I go for the alternative movement... time to time
+only when the machine/tool are not available."* 60-minute sessions at a busy LA Fitness.
+
+**I had just called compliant work a data problem.** I read one session (Sep 3, DB Rear Delt Fly
+@28), compared it to a written Reverse Pec Deck @110, and raised it as a plan/log disagreement
+needing a mapping fix. The machine version had actually run **100 / 100 / 115 against a prescribed
+110** for three straight weeks. He was on prescription the whole time; I generalised from a single
+fallback session.
+
+**Worse, I'd used the same misreading in an accusation.** Hours earlier I listed "barbell OHP @9.5
+substituted for DB press" as one of three caps run hot, framed as ignoring the shoulder rule. He ran
+the prescribed DB press at the prescribed 70 in **two of four weeks** — the barbell weeks are almost
+certainly the 70s being occupied. The swap was probably forced and the framing was unfair. **The
+@9.5 against a @7 cap stands** — an implement you didn't choose doesn't carry the RPE cap away with
+it — but that's a much narrower charge than the one I made, and I retracted the rest in writing.
+
+**The systemic error, which is the part worth keeping:** every log-grounded rule I have
+(`loads-from-logs`, `sheet-load-sync`, `exercise-name-mapping`) silently assumed the log records
+*decisions*. It records **decisions constrained by what was free at 6am.** Under the wrong
+assumption a fallback session reads as drift, a mapping bug, or defiance — and the right response to
+each of those is different from the right response to a busy machine. It also would have poisoned
+the sync: `reconcile_loads` medians the last 3 sessions in a slot, so a 110 lb machine fly and a
+28 lb DB fly in one slot produce a garbage anchor that drags the prescription *down*.
+
+Produced `equipment-fallbacks`. The design obligation it creates is the useful half: **every
+machine-dependent accessory now ships with a named fallback and its own written load**, because the
+`clinical-override` corollary applies to equipment too — picking a substitute at 6am under time
+pressure is exactly "in the moment", which is where his numbers go wrong. And some fallbacks are
+**forbidden** and the plan has to say so on the line, since a substitution can quietly reinstate
+what a restriction removed: no standing calf raise for the seated one, no RDL for a leg curl, no
+barbell OHP for a DB press.
+
+**The lesson under the lesson: ask before inferring intent from a log.** One anomalous session is a
+question, not a finding. I had four weeks of context available and read one row.
