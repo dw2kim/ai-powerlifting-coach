@@ -146,6 +146,37 @@
   movements while another day ran thin. **Balance days by working-set volume, not accessory
   count** — a day with two primary lifts needs fewer accessories than a day with one.
   [FB 2026-08-07]
+- **equipment-fallbacks** — **The gym is busy and the session is capped at 60 minutes. When a
+  machine or implement is occupied he substitutes an equivalent movement rather than waiting, and
+  that is correct behaviour — not non-compliance, not drift, not a mapping bug.** Athlete's own
+  words: *"there are only a few machines, so if they're all allocated/full, then most of the time I
+  go for the alternative movement... time to time only when the machine/tool are not available."*
+  - **Reading the log:** a session showing a different movement in a known slot is an **equipment
+    substitution until proven otherwise.** Do not flag it, do not "fix" the mapping, and do not
+    read it as a rule breach. B5 had me call a compliant 3-session run (Rear Delt Reverse Fly
+    Machine at 100/100/115 against a prescribed 110) a plan/log disagreement, off one fallback
+    session at 28 lb.
+  - **Anchoring:** `sheet-load-sync` anchors a slot on the **primary movement's** sessions only.
+    **Never blend a fallback's load into the median** — a 110 lb machine fly and a 28 lb dumbbell
+    fly in one slot produce a garbage anchor that drags the prescription down.
+  - **Design-time obligation:** every **machine-dependent accessory** ships with a **named fallback
+    and its own written load.** This is the `clinical-override` corollary applied to equipment — he
+    follows a number on a page reliably and generates one badly in the moment, and a fallback picked
+    at 6am under time pressure is exactly "in the moment". Ground the fallback's load in the log
+    where he has history for it; where he doesn't, prescribe it conservatively
+    (`secondary-first-exposure`).
+  - **The fallback inherits every constraint of the slot it fills** — RPE caps, ROM rules, shoulder
+    and back restrictions, `accessory-day-interference`. A forced implement change does not carry
+    the cap away with it. B5, 2026-09-01: DB Shoulder Press (@7 cap, dumbbells prescribed
+    *because* the shoulder has two partial-thickness tears and needs to choose its own path)
+    became **Barbell OHP at @9.5**. The swap was likely forced; the @9.5 was not.
+  - **Primaries and secondaries have no fallbacks.** A busy rack means wait, not substitute. This
+    applies to accessories only.
+  - **Some fallbacks are forbidden, and the plan must say so** — a substitution can quietly
+    reintroduce exactly what a restriction removed. Standing examples while the back is under
+    treatment: **no standing/barbell calf raise** for the seated one (axial compression), **no
+    loaded hinge** for a leg curl, **no barbell OHP** for a DB press. Name the ban next to the
+    fallback, not in a separate document. [FB 2026-09-05]
 - **accessory-day-interference** — Accessories must not compromise the *next* training day.
   Schedule: D1 Mon · D2 Tue · D3 Thu · D4 Fri. D1→D2 and D3→D4 are back-to-back (no rest):
   **D1 accessories must not pre-fatigue D2** (esp. back work vs D2 pull-up), and **D3

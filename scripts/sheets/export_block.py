@@ -397,6 +397,28 @@ def _role_suffix(note: str | None) -> str:
     return ""
 
 
+def _row_role(key: tuple, occurrences: int, per_week_exs: list) -> str:
+    """Role suffix for one Sheet row — structure first, prose only as a fallback.
+
+    `_role_suffix` reads free coaching prose, and prose lies about structure. B5's W5 squat
+    top set carries the hard stop *"squat is DONE for the day, no backoff"*, so a note scan
+    labelled the 365 peak **"(backoff)"** — directly above the row that actually is one. Same
+    class of bug as the "stop"/"top" case in `_role_suffix`, and unfixable by more regex: the
+    word genuinely appears in a sentence that isn't declaring this row's role.
+
+    Occurrence position cannot lie. Within a day, a lift written twice is a top set followed
+    by its backoff, so when a lift owns more than one row the position decides. Notes are
+    consulted only for AMRAP (which position can't express) and for lifts with a single row,
+    where there is no pair to infer from.
+    """
+    notes = [ex.get("notes") for ex in per_week_exs if ex is not None]
+    if any(_role_suffix(n) == " (AMRAP)" for n in notes):
+        return " (AMRAP)"
+    if occurrences > 1:
+        return " (top set)" if key[1] == 0 else " (backoff)"
+    return next((s for n in notes if (s := _role_suffix(n))), "")
+
+
 def _keyed(exs: list) -> dict:
     """(name, occurrence-within-day) -> exercise, so a lift's top/backoff stay distinct."""
     seen: dict[str, int] = {}
@@ -471,7 +493,8 @@ def build_plan(block: dict, final: bool = False) -> tuple[list[list[str]], list[
     r = _row(); banner_rows.append(r); row = blank_row()
     for w in order:
         date = wk_date(w)
-        head = f"WEEK {w} — {_WK_PHASE.get(w, '')}".strip()
+        phase = block.get("week_phases", {}).get(str(w), {})
+        head = f"WEEK {w} — {phase.get('label', _WK_PHASE.get(w, ''))}".strip()
         row[wk_start(w) - 1] = f"{head}  ·  {date}" if date else head
     rows.append(row)
     for w in order:
@@ -480,7 +503,8 @@ def build_plan(block: dict, final: bool = False) -> tuple[list[list[str]], list[
                      "format": _cell_fmt(bg=_WEEK_BG, bold=True, white=True)})
     r = _row(); banner_rows.append(r); row = blank_row()
     for w in order:
-        row[wk_start(w) - 1] = _WK_SUB.get(w, "")
+        phase = block.get("week_phases", {}).get(str(w), {})
+        row[wk_start(w) - 1] = phase.get("description", _WK_SUB.get(w, ""))
     rows.append(row)
 
     # Column-header row
@@ -506,6 +530,16 @@ def build_plan(block: dict, final: bool = False) -> tuple[list[list[str]], list[
             continue
         canon_order = list(_keyed(canon_exs).keys())
         per_week = {w: _keyed(exs) for w, exs in weeks_exs}
+        # A later amendment can introduce a second occurrence (e.g. squat backoffs)
+        # without becoming the fullest week. Keep every occurrence across weeks.
+        for keyed in per_week.values():
+            for key in keyed:
+                if key not in canon_order:
+                    siblings = [i for i, old in enumerate(canon_order) if old[0] == key[0]]
+                    if siblings:
+                        canon_order.insert(siblings[-1] + 1, key)
+                    else:
+                        canon_order.append(key)
 
         # Day band — full-width coloured row; "Dn · focus" overflows across the frozen cols.
         r = _row(); banner_rows.append(r); row = blank_row()
@@ -513,13 +547,20 @@ def build_plan(block: dict, final: bool = False) -> tuple[list[list[str]], list[
         rows.append(row)
         fmts.append({"range": _a1(r, 1, r, total), "format": _cell_fmt(bg=_DAYBAND_BG, bold=True, white=True)})
 
+        # How many rows each lift occupies in this day — a lift with more than one is a
+        # top-set/backoff pair, which is what lets the positional fallback below be safe.
+        occurrences: dict[str, int] = {}
+        for k in canon_order:
+            occurrences[k[0]] = occurrences.get(k[0], 0) + 1
+
         for key in canon_order:
             name = key[0]
             fam = _family(name)
-            ref = next((per_week[w][key] for w in order if key in per_week.get(w, {})), None)
+            role = _row_role(key, occurrences[name],
+                             [per_week.get(w, {}).get(key) for w in order])
             r = _row(); row = blank_row()
             row[1] = fam
-            row[2] = f"{name}{_role_suffix((ref or {}).get('notes'))}"
+            row[2] = f"{name}{role}"
             for w in order:
                 ex = per_week.get(w, {}).get(key)
                 if not ex:

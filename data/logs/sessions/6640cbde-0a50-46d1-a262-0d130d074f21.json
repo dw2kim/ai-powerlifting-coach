@@ -1,0 +1,226 @@
+{
+  "created_at": "2026-09-07T13:40:28.313Z",
+  "description": "",
+  "end_time": "2026-09-07T13:40:26+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "57e29496-c8d7-4f8b-9bca-d1401504cbc8",
+      "index": 0,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 3,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 165.5614119440085
+        }
+      ],
+      "superset_id": null,
+      "title": "Low-bar Squat"
+    },
+    {
+      "exercise_template_id": "57e29496-c8d7-4f8b-9bca-d1401504cbc8",
+      "index": 1,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 3,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 3,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        }
+      ],
+      "superset_id": null,
+      "title": "Low-bar Squat"
+    },
+    {
+      "exercise_template_id": "d8218be2-977f-4000-ac42-66cb11986863",
+      "index": 2,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 5,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 61.235042773811365
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 2,
+          "rpe": 8.5,
+          "type": "normal",
+          "weight_kg": 124.73805009480093
+        }
+      ],
+      "superset_id": null,
+      "title": "POWER Bench Press"
+    },
+    {
+      "exercise_template_id": "d8218be2-977f-4000-ac42-66cb11986863",
+      "index": 3,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 4,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 4,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 4,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 102.05840462301894
+        }
+      ],
+      "superset_id": null,
+      "title": "POWER Bench Press"
+    },
+    {
+      "exercise_template_id": "C7973E0E",
+      "index": 4,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 183.7051283214341
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 183.7051283214341
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 183.7051283214341
+        }
+      ],
+      "superset_id": null,
+      "title": "Leg Press (Machine)"
+    },
+    {
+      "exercise_template_id": "E3EDA509",
+      "index": 5,
+      "notes": "",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": 90,
+          "index": 0,
+          "reps": null,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": null
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": 91,
+          "index": 1,
+          "reps": null,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": null
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": 95,
+          "index": 2,
+          "reps": null,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": null
+        }
+      ],
+      "superset_id": null,
+      "title": "Side Plank"
+    }
+  ],
+  "id": "6640cbde-0a50-46d1-a262-0d130d074f21",
+  "routine_id": null,
+  "start_time": "2026-09-07T12:22:26+00:00",
+  "title": "W5-D1 Squat (light) + Comp Bench",
+  "updated_at": "2026-09-07T13:40:28.313Z"
+}

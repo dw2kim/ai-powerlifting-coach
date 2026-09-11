@@ -127,7 +127,16 @@ blind). User accepts and proceeds under the rule below. This **overrides** the p
   bench and dip the same way it binds squat and sumo: the ≤3/10 pain rule **cannot** protect a
   chemically quiet joint, so those lifts go to an absolute-load cap for the masking window.
 
-## Lower back — ✅ graded return cleared 2026-08-28; current cap 275
+## Lower back — graded return; B5 W5 athlete-directed 365 squat ceiling
+
+### B5 W5–W6 plan confirmed 2026-09-05
+
+Athlete explicitly retains W5 squat **365×3 @≤7**, followed by **275×3 ×2 @6**,
+citing the mental value of heavier lifting and his body awareness. This is a specific athlete
+exception to `axial-return-ladder` despite the two `tight` checks, not new clinical clearance.
+Sumo remains **295×3 ×3 @6**. W6 deloads: squat **225×5 ×3 @6**, D4 sumo dropped
+for travel. Existing hard stops and next-day checks remain in force. The Aug 28 plan below
+is the historical W4 amendment; its original W5 deload moved to W6.
 
 ### Visit 2026-08-28
 

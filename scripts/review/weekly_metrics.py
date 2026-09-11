@@ -226,8 +226,13 @@ def geometry(block: dict, today: date_cls) -> dict:
     week_no = max(1, min(weeks, days_elapsed // 7 + 1))
     week_mon = start_d + timedelta(days=(week_no - 1) * 7)
     week_sun = week_mon + timedelta(days=6)
-    expected = [d for d, wd in DAY_WEEKDAY.items() if wd <= today.weekday()] \
-        if week_mon <= today <= week_sun else list(DAY_WEEKDAY)
+    # Only the days this week actually prescribes. A travel or deload week that drops
+    # sessions (B5 W6 runs D1 + D2 only) must not report the dropped days as missed. A week
+    # with no prescriptions at all falls back to the full split.
+    planned = {p.get("day") for p in block.get("prescriptions", []) if p.get("week") == week_no}
+    days = [d for d in DAY_WEEKDAY if d in planned] or list(DAY_WEEKDAY)
+    expected = [d for d in days if DAY_WEEKDAY[d] <= today.weekday()] \
+        if week_mon <= today <= week_sun else days
     return {
         "block_id": block.get("block_id"),
         "weeks": weeks,
