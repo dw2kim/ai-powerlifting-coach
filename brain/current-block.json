@@ -6,8 +6,8 @@
     "goal": "Protect the back, strive upstairs. Six weeks: W5 peaks with squat 365x3 plus two 275x3 backoffs and sumo held at 295; W6 deloads into Korea travel. Loaded hinges stay cut.",
     "changes": [
       "GRADED CLEARANCE (2026-08-28): W4 used 275 after the initial 25% instruction. ATHLETE DECISION (2026-09-05): keep the deliberate W5 365 squat peak; W6 is the travel deload. This is a specific exception to the back-check progression gate, not new clinical clearance.",
-      "Squat: W1-W3 225x5; W4 275x5; W5 365x3 @7 cap plus 275x3 x2 @6; W6 225x5 x3 @6.",
-      "Sumo: W1-W3 225x3; W4 prescribed 275x3; W5 held at 295x3 x3 @6; W6 D4 dropped for travel.",
+      "Squat: W1-W3 225x5; W4 275x5; W5 365x3 @7 cap plus 275x3 x2 @6; W6 225x5 x3 @6; W6 runs two days only — D1 squat/bench/pull-up, D2 sumo/dip.",
+      "Sumo: W1-W3 225x3; W4 prescribed 275x3; W5 held at 295x3 x3 @6; W6 225x3 x3 @6 on D2 (Tue).",
       "CUT for the window: Paused RDL (loaded hinge) and Paused Low-bar Squat (2nd weekly axial session). Neither is worth its risk right now.",
       "Weighted Back Extension moved D4 -> D2 and held at BODYWEIGHT through W2 — the injections go into these exact muscles. Skip it if the sites are sore.",
       "Bench, pull-up and dip UNCHANGED — full strive plan. No shoulder injection was given (2026-08-07), so masked-pain-load-cap does not bind them.",
@@ -3554,6 +3554,7 @@
     {
       "week": 6,
       "day": "D1",
+      "notes": "TRAVEL WEEK, 2 days only. Today also carries the PULL-UP (moved from Tuesday).",
       "exercises": [
         {
           "name": "Low-bar Squat",
@@ -3611,54 +3612,55 @@
           "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
         },
         {
-          "name": "Leg Press (Machine)",
-          "tier": "accessory",
-          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. Back in after being cut for the peak. 315, light. HARD ROM RULE: stop the sled well before your hips lift off the pad — a tucked pelvis under load is the L3-4 mechanism.  ⟳ IF OCCUPIED: Bulgarian Split Squat @50/hand (50 logged sessions; D4 is dropped this week so it's free). NOT a goblet or back squat — still axial.",
+          "name": "Weighted Pull-up",
+          "tier": "primary",
+          "notes": "DELOAD + TRAVEL WEEK — TWO DAYS ONLY (Korea Sep 17-21). Every primary is still touched once; everything @6. Do not add weight, sets or days. Moved to Monday so Tuesday's sumo isn't stacked on pull-up grip and lats. BW+55x4 x3 @6. No top set this week.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 142.88176647222653,
+              "weight_kg": 24.947610018960187,
               "rpe": 6,
-              "reps": 12
+              "reps": 4
             },
             {
               "type": "normal",
-              "weight_kg": 142.88176647222653,
+              "weight_kg": 24.947610018960187,
               "rpe": 6,
-              "reps": 12
+              "reps": 4
             },
             {
               "type": "normal",
-              "weight_kg": 142.88176647222653,
+              "weight_kg": 24.947610018960187,
               "rpe": 6,
-              "reps": 12
+              "reps": 4
             }
           ],
           "hold": true,
-          "hold_reason": "Deliberately under the log (315 vs a 585 anchor) for the medical ROM rule."
+          "hold_reason": "W6 is a two-day travel deload — every load deliberately far below the log. The Saturday sync must not rebase any of it.",
+          "display_load": "BW+55"
         },
         {
-          "name": "Tricep Pushdown",
+          "name": "Face Pull",
           "tier": "accessory",
-          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. 45, light.  ⟳ IF OCCUPIED: Overhead DB Extension @25, same reps.",
+          "notes": "DELOAD + TRAVEL WEEK — TWO DAYS ONLY (Korea Sep 17-21). Every primary is still touched once; everything @6. Do not add weight, sets or days. Shoulder health, 35 x15. The posterior cuff is intact and the anterior tendons aren't, so this shares load off the torn structures.  ⟳ IF OCCUPIED: band pull-apart, double the reps.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 20.41168092460379,
+              "weight_kg": 15.87575183024739,
               "rpe": 6,
-              "reps": 12
+              "reps": 15
             },
             {
               "type": "normal",
-              "weight_kg": 20.41168092460379,
+              "weight_kg": 15.87575183024739,
               "rpe": 6,
-              "reps": 12
+              "reps": 15
             },
             {
               "type": "normal",
-              "weight_kg": 20.41168092460379,
+              "weight_kg": 15.87575183024739,
               "rpe": 6,
-              "reps": 12
+              "reps": 15
             }
           ],
           "hold": true,
@@ -3697,62 +3699,63 @@
     {
       "week": 6,
       "day": "D2",
+      "notes": "TRAVEL WEEK, 2 days only. Today is SUMO + DIP — the routine title is historical; the pull-up moved to Monday. Last session before Korea.",
       "exercises": [
         {
-          "name": "Weighted Pull-up",
+          "name": "Sumo Deadlift",
           "tier": "primary",
-          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. BW+55x4 x3 @6. No top set this week. @6 means @6.",
+          "notes": "DELOAD + TRAVEL WEEK — TWO DAYS ONLY (Korea Sep 17-21). Every primary is still touched once; everything @6. Do not add weight, sets or days. 225x3 x3 @6 — the load you ran W1-W3, a clear deload from last week's 295. Moved from Friday to TUESDAY: ~4 days after Friday's injection, outside the 24-72h flare window, so this is an honest read on your canary lift. Crisp triples, no autoregulating. Back rounding or bar-speed drop = rack it. LOG WEDNESDAY'S BACK CHECK.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 24.947610018960187,
+              "weight_kg": 102.05840462301894,
               "rpe": 6,
-              "reps": 4
+              "reps": 3
             },
             {
               "type": "normal",
-              "weight_kg": 24.947610018960187,
+              "weight_kg": 102.05840462301894,
               "rpe": 6,
-              "reps": 4
+              "reps": 3
             },
             {
               "type": "normal",
-              "weight_kg": 24.947610018960187,
+              "weight_kg": 102.05840462301894,
               "rpe": 6,
-              "reps": 4
+              "reps": 3
             }
           ],
-          "display_load": "BW+55",
           "hold": true,
-          "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
+          "hold_reason": "W6 is a two-day travel deload — every load deliberately far below the log. The Saturday sync must not rebase any of it.",
+          "display_load": "225"
         },
         {
-          "name": "Weighted Back Extension",
-          "tier": "accessory",
-          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. BODYWEIGHT ONLY. Friday Sep 11 was an injection day — the trigger points go into these exact muscles. SKIP ENTIRELY if the sites are sore.",
+          "name": "Weighted Dip",
+          "tier": "primary",
+          "notes": "DELOAD + TRAVEL WEEK — TWO DAYS ONLY (Korea Sep 17-21). Every primary is still touched once; everything @6. Do not add weight, sets or days. Moved from Thursday. BW+50x6 x3 @6. DEPTH IS THE PRIMARY VARIABLE — stop above the pinch. Bench was yesterday, so this is the week's second and last press.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 0.0,
+              "weight_kg": 22.67964547178199,
               "rpe": 6,
-              "reps": 12
+              "reps": 6
             },
             {
               "type": "normal",
-              "weight_kg": 0.0,
+              "weight_kg": 22.67964547178199,
               "rpe": 6,
-              "reps": 12
+              "reps": 6
             },
             {
               "type": "normal",
-              "weight_kg": 0.0,
+              "weight_kg": 22.67964547178199,
               "rpe": 6,
-              "reps": 12
+              "reps": 6
             }
           ],
-          "display_load": "BW",
           "hold": true,
-          "hold_reason": "Bodyweight only — 4 days post trigger-point injection into these exact muscles. Medical restriction; sync must not rebase to the 55 lb log."
+          "hold_reason": "W6 is a two-day travel deload — every load deliberately far below the log. The Saturday sync must not rebase any of it.",
+          "display_load": "BW+50"
         },
         {
           "name": "Seated Leg Curl",
@@ -3780,33 +3783,6 @@
           ],
           "hold": true,
           "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
-        },
-        {
-          "name": "DB Shoulder Press",
-          "tier": "accessory",
-          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. BACK IN at deload load — 50 lb, HARD @7 CAP, dumbbells. This is the movement, not barbell OHP: DBs let the shoulders find their own path, a barbell forces the arc. Stop on any painful arc.  ⟳ IF THE 50s ARE TAKEN: go lighter and add reps, or landmine press. **NEVER the barbell.** DBs are prescribed *because* your shoulder has two partial-thickness tears and needs to choose its own path; a barbell fixes your hands and forces the arc. Aug 11 and Sep 1 both went barbell — if the DBs are gone, that's a lighter pair, not a different lift.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 22.67964547178199,
-              "rpe": 6,
-              "reps": 10
-            },
-            {
-              "type": "normal",
-              "weight_kg": 22.67964547178199,
-              "rpe": 6,
-              "reps": 10
-            },
-            {
-              "type": "normal",
-              "weight_kg": 22.67964547178199,
-              "rpe": 6,
-              "reps": 10
-            }
-          ],
-          "hold": true,
-          "hold_reason": "Deload + a standing @7 shoulder cap (MRI: two partial-thickness tears, subacromial bursitis). Deliberately under the log."
         },
         {
           "name": "Lateral Raise (Dumbbell)",
@@ -3863,171 +3839,6 @@
           "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
         }
       ]
-    },
-    {
-      "week": 6,
-      "day": "D3",
-      "exercises": [
-        {
-          "name": "Weighted Dip",
-          "tier": "primary",
-          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. *** THIS ONE IS OPTIONAL, AND IT RUNS WEDNESDAY SEP 16, NOT THURSDAY *** — you fly Thursday. Morning or evening, your call. Skipping it entirely is a fine answer. BW+50x6 x3 @6. Depth rule still applies.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 22.67964547178199,
-              "rpe": 6,
-              "reps": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 22.67964547178199,
-              "rpe": 6,
-              "reps": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 22.67964547178199,
-              "rpe": 6,
-              "reps": 6
-            }
-          ],
-          "display_load": "BW+50",
-          "hold": true,
-          "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
-        },
-        {
-          "name": "CGB",
-          "tier": "secondary",
-          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. 135x6 x2 @6.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 61.235042773811365,
-              "rpe": 6,
-              "reps": 6
-            },
-            {
-              "type": "normal",
-              "weight_kg": 61.235042773811365,
-              "rpe": 6,
-              "reps": 6
-            }
-          ],
-          "display_load": "135",
-          "hold": true,
-          "hold_reason": "Deload support load, fixed and deliberately under the 205 log median."
-        },
-        {
-          "name": "Hip Thrust (Smith Machine)",
-          "tier": "accessory",
-          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. 185, light. Ribs down, finish with the glutes, never hyperextend.  ⟳ IF OCCUPIED: Barbell Hip Thrust @175 (6 logged sessions, median 225). Same rule either way — ribs down, finish with the glutes, never hyperextend at lockout.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 83.91468824559335,
-              "rpe": 6,
-              "reps": 10
-            },
-            {
-              "type": "normal",
-              "weight_kg": 83.91468824559335,
-              "rpe": 6,
-              "reps": 10
-            },
-            {
-              "type": "normal",
-              "weight_kg": 83.91468824559335,
-              "rpe": 6,
-              "reps": 10
-            }
-          ],
-          "hold": true,
-          "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
-        },
-        {
-          "name": "Lat Pulldown",
-          "tier": "accessory",
-          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. 150, light.  ⟳ IF OCCUPIED: Natural Grip Lat Pulldown @135 (your logged fallback, 165 on Aug 20) or Seated Cable Row V-Grip @120.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 68.03893641534596,
-              "rpe": 6,
-              "reps": 12
-            },
-            {
-              "type": "normal",
-              "weight_kg": 68.03893641534596,
-              "rpe": 6,
-              "reps": 12
-            },
-            {
-              "type": "normal",
-              "weight_kg": 68.03893641534596,
-              "rpe": 6,
-              "reps": 12
-            }
-          ],
-          "hold": true,
-          "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
-        },
-        {
-          "name": "Face Pull",
-          "tier": "accessory",
-          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. 35, shoulder health.  ⟳ IF OCCUPIED: band pull-apart, double the reps. Don't skip it — the posterior cuff is intact and the anterior tendons aren't, so this work shares load off the torn structures.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 15.87575183024739,
-              "rpe": 6,
-              "reps": 15
-            },
-            {
-              "type": "normal",
-              "weight_kg": 15.87575183024739,
-              "rpe": 6,
-              "reps": 15
-            },
-            {
-              "type": "normal",
-              "weight_kg": 15.87575183024739,
-              "rpe": 6,
-              "reps": 15
-            }
-          ],
-          "hold": true,
-          "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
-        },
-        {
-          "name": "Dead Bug",
-          "tier": "core",
-          "notes": "DELOAD + TRAVEL WEEK. Korea Sep 17-21 (sister's wedding). The deload is the POINT — you peaked last week and you're about to fly. Everything here is @6. Do not add weight, do not add sets, do not chase last week's numbers. CORE (D3) — anti-extension. Low back FLAT. *** D4 IS DROPPED THIS WEEK *** — that's your standing 3-day fallback order (D1, D2, D3; sumo is the most expendable session). Nothing after this until you're home. Korea is ZERO training, by your call and mine.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "rpe": 6,
-              "reps": 10
-            },
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "rpe": 6,
-              "reps": 10
-            },
-            {
-              "type": "normal",
-              "weight_kg": 0.0,
-              "rpe": 6,
-              "reps": 10
-            }
-          ],
-          "display_load": "BW",
-          "hold": true,
-          "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
-        }
-      ]
     }
   ],
   "week_phases": {
@@ -4037,7 +3848,7 @@
     },
     "6": {
       "label": "DELOAD",
-      "description": "Recover into Korea travel; D1/D2 and optional Wednesday D3, D4 dropped."
+      "description": "Two-day travel deload: D1 squat/bench/pull-up, D2 sumo/dip. D3 and D4 dropped for Korea."
     }
   }
 }

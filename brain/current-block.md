@@ -12,9 +12,42 @@ exercise, and **CGB added to D3**. No load, rep, RPE or day changed anywhere els
 secondary + accessory / 0:30 core**. See *Rest times* below.
 **Extended to 6 weeks 2026-09-05** (athlete's ask, granted): **W5 becomes a peak week**, **W6
 becomes the deload** and absorbs the Korea trip. Pushed W5-D1 → W6-D3 the same day.
+**Compressed 2026-09-11**: W6 runs two days only — D1 squat/bench/pull-up, D2 sumo/dip.
 **Theme**: Bench, pull-up and dip push the full plan. Squat and sumo ran at 225 through W3,
 then 275 in W4, the deliberate 365 squat peak in W5, and a 225 squat deload in W6.
 Loaded hinges stay cut.
+
+---
+
+## ✅ 2026-09-11 — W6 compressed to two days (athlete's call)
+
+He trains only **Mon Sep 14** and **Tue Sep 15** before flying Thursday, and asked that the four
+non-bench primaries — **squat, sumo, pull-up, dip** — all land in those two days. Bench stays on D1.
+
+| Day | Primaries | Accessories |
+|---|---|---|
+| **D1 Mon 14** | Squat 225×5 ×3 · Bench 200×4 ×3 · **Pull-up BW+55×4 ×3** | Face Pull · Side Plank |
+| **D2 Tue 15** | **Sumo 225×3 ×3** · **Dip BW+50×6 ×3** | Seated Leg Curl · Lateral Raise · Pallof |
+
+**Why this pairing:** it's the only split where no conflicting pair shares a day — bench (Mon) /
+dip (Tue), sumo (Tue) / pull-up (Mon). Squat and sumo sit 24 h apart, under the 48 h guideline,
+acceptable only because both are deloaded (squat −38% from 365, sumo −24% from 295). And it puts
+**sumo on Tuesday, ~88 h after Friday's injection** — outside the 24–72 h flare window, so the
+canary lift gets an honest read. **Wednesday's back check is the one to log.**
+
+**Cut for the week:** Leg Press and Tricep Pushdown (they'd pre-fatigue Tuesday's sumo and dip), DB
+Shoulder Press (no overhead pressing in W6 at all), Back Extension (sumo already loads the erectors
+and the injection sites are four days old), CGB, Hip Thrust, Lat Pulldown, Dead Bug, and all of D4.
+**Deliberately uncovered for one deload week** (`muscle-coverage-audit` — named, not omitted):
+calves, mid-back, direct biceps, erectors beyond the sumo.
+
+**In the app:** W6-D1 and W6-D2 overwritten in place. Titles are the `--update` match key, so
+**W6-D2 still reads "WPU + Posterior Chain + Shoulders" but carries sumo + dip** — its routine note
+says so. **W6-D3 can't be deleted** (no routine DELETE, and Hevy rejects an empty routine), so it was
+retitled **"W6-D3 — DROPPED (travel week, nothing to train)"** with a one-line placeholder.
+
+**The weekly review** now builds expected days from the plan (`weekly_metrics.geometry`), so the
+Sep 19 review expects D1 + D2 instead of reporting D3 and D4 missed while he's in Korea.
 
 ---
 
@@ -81,9 +114,10 @@ B6 opens around 365–385 and 405 is a W2–W3 rep under `axial-return-ladder`.
 
 ### W6 (Sep 14–18) — deload at LA Fitness, then nothing
 
-Athlete will train at the gym, not at home (corrected my assumption). **D1 Mon 14 · D2 Tue 15 ·
-D3 optional Wed 16** (morning or evening, his call) — **D4 dropped**, which is his standing 3-day
-fallback order (sumo is the most expendable session). Thu 17 he flies. **Korea is zero training,
+> **Superseded 2026-09-11:** W6 is now **two days** (D1 Mon, D2 Tue) — see the top section.
+
+Athlete will train at the gym, not at home (corrected my assumption). ~~D1 Mon 14 · D2 Tue 15 ·
+D3 optional Wed 16 — D4 dropped~~. Thu 17 he flies. **Korea is zero training,
 his call and mine.** Lands Mon Sep 21.
 
 > ⚠️ **Every W6 entry is pinned `hold`.** A whole-week deload is deliberately far below the log,
@@ -257,7 +291,7 @@ because a loaded standing raise compresses the spine and a seated one doesn't.
 | W3 | **225×5 @6 ×4** | 245×3 @7.5 *(hold)* | **225×3 @6 ×3** | BW+80×3 @8 | **BW+90×4 @8 (dip peak)** |
 | W4 | **275×5 @6 ×4** 🔓 | **255–270×2 — work up to @8** | **275×3 @6 ×3** 🔓 | **BW+85×3 @8** | BW+80×5 @7.5 |
 | **W5 PEAK** ⛰️ | **365×3 @≤7** + 275×3 ×2 | **265–275×2 → @8** | **295×3 @6 ×3** | **BW+90×3 @8** | **BW+105×3 @8** |
-| **W6 deload** 🛫 | **225×5 @6 ×3** | 200×4 @6 | **— (D4 dropped)** | BW+55×4 @6 | BW+50×6 @6 *(opt. Wed)* |
+| **W6 deload** 🛫 | **225×5 @6 ×3** *(Mon)* | 200×4 @6 *(Mon)* | **225×3 @6 ×3** *(Tue)* | BW+55×4 @6 *(Mon)* | BW+50×6 @6 *(Tue)* |
 
 🔓 **Amended 2026-08-29** under the 2026-08-28 graded clearance (+25%), athlete's call — see the
 clearance section at the top. **W1–W3 ran 225 flat as originally written.**
@@ -535,7 +569,7 @@ and sumo are capped at 275 and W5 deloads at 225. `masked-pain-load-cap` was rel
 | W3 | Aug 24–28 | **Fri Aug 28** ✅ | D4 trained before the shot. **Graded return cleared at this visit.** Sat Aug 29's check is a **post-injection** one. |
 | **W4** | Aug 31–Sep 4 | **none — clean week** | **Mon Aug 31 is ~64 h post** → Monday rule again. Then clean. **Both checks (Tue Sep 1, Sat Sep 5) are clean-week data — these are the two that gate B6's ramp.** |
 | **W5** | Sep 7–11 | **Fri Sep 11** | **PEAK week now, not a deload.** Mon Sep 7 is **10 days post** — the cleanest back signal of the block, which is why the squat peak sits there. D4 sumo trains 8am before the shot and is **held at 295 precisely because it's injection morning** — a heavy pull here would bury its own signal under 24–72 h of trigger-point soreness. **Last visit before B6 — bring the checks and the real numbers.** |
-| **W6** | Sep 14–18 | **none** | Deload + travel. Mon 3 days post-injection (inside the flare window) — everything is @6 anyway. **Back Extension is bodyweight only**; skip if the sites are sore. **Flies Thu Sep 17.** |
+| **W6** | Sep 14–15 | **none** | Two-day deload. Mon is ~64 h post-injection (inside the flare window) — squat at 225 @6 anyway. **Sumo moved to Tue**, ~88 h post and outside the window: the honest read. Back Extension cut for the week. **Flies Thu Sep 17.** |
 | — | Sep 17–21 | **Korea** | **Zero training.** Ask the clinic on Sep 11 whether the next slot (~Sep 25) still works or needs moving. |
 
 - **The Monday rule (Aug 17 and Aug 31): ~64 h post-injection is inside the 24–72 h flare window.**
@@ -579,7 +613,7 @@ underlying back being worse. The clean weeks are what separate the two.)
       weeks — the barbell weeks are the 70s being taken), so calling it defiance was unfair. **The
       @9.5 against a @7 cap is not retracted** — a forced implement change doesn't carry the RPE cap
       away with it, and a barbell is the worse implement for a torn shoulder precisely because it
-      fixes the arc. W6-D2 now names the legal fallbacks and bans the barbell explicitly.
+      fixes the arc. (W6 now carries no overhead pressing at all — the DB press was cut when W6 went to two days.)
       Both were priced into the W5 numbers (405 declined, sumo held at 295, overhead cut). **If
       W5 comes back over any written number again, the axial ladder stops and B6 opens at 275**, not
       365. Not a threat — a written ceiling that gets exceeded isn't a ceiling, and the whole
