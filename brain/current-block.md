@@ -19,6 +19,58 @@ Loaded hinges stay cut.
 
 ---
 
+## ✅ 2026-09-14 — deload load queried and HELD at 225
+
+Athlete asked, the morning of W6-D1: *"if my max is 500lbs squats what should i do for deload..?
+currently it is 225lbs too light."* **Answer: 225 stands.** No change to the block.
+
+**The premise is the error, not the number.** 500 is not the right denominator:
+`data/maxes.md` says 501.5 and is stamped **2026-06-03** — a Block-2-era figure. The honest
+current reference is the B4 e1RM ~511 (465×3 @7.5, 2026-07-27), and he has not had a bar above
+**365** on his back since July. **A deload anchors on what you've been training, not on a stale
+1RM.** Against last week's 365 top, 225 is **62%** — squarely in band. Against a number he hasn't
+touched in seven weeks it reads like 45%, which is the whole illusion.
+
+**Three reasons it holds this week specifically, none of them the percentage:**
+1. **W6 is not a taper into a training week.** He flies Thursday; Korea is zero training. The trip
+   dissipates the fatigue. W6's job is to keep the pattern and put a *known* load through the back
+   — not to train.
+2. **225 is the comparability load.** It's exactly what ran W1–W3. Repeating it makes Tuesday's
+   back check directly comparable to three prior weeks. At 315 the check is confounded by a new
+   load **and** by the flare window — Mon Sep 14 is **~64 h after Friday's injection**, inside 24–72 h.
+3. **A 14-hour flight after a loaded lumbar spine.** Thursday is long-haul with a back under
+   treatment. Arriving at it freshly loaded is a bad trade for one heavier Monday.
+
+**And the part that decides it: he is not eligible to progress today.** Standing order is *no
+check, no progression* — **Sep 8 and Sep 12 are both still unlogged**, and Sep 8 (the morning
+after the 365) is the single highest-value row in the block. Plus the W5-D1 backoff overage below.
+
+**What he gets instead of load: intent.** Move 225 fast — treat it as speed work, own the
+position. And the actual lever is the two back checks: send both words and B6 opens at 365 with
+405 live in W2–W3. That trade was stated to him.
+
+---
+
+## ⚠️ 2026-09-14 — W5-D1 backoffs ran 315×3 ×3 against a written 275×3 ×2
+
+Found on the Hevy log while answering the deload question; **the Sep 12 weekly review missed it**
+(it reported the top set only). The 365×3 top came in **@6, under the @≤7 cap** — that part is
+genuinely good, and it's the number he was promised would open B6. But underneath it:
+
+| | Written | Actual |
+|---|---|---|
+| W5-D1 squat top | 365×3 @≤7 | **365×3 @6** ✅ |
+| W5-D1 squat backoffs | **275×3 ×2 @6** | **315×3 ×3** ⚠️ (+40 lb, +1 set) |
+
+That is the **fourth** written ceiling run hot this block (sumo 295 vs 275 · WPU @8.5 vs an @8
+hard stop · bench 275×2 @8.5 vs an @8 cap · now this). It is also the direct trigger for the
+standing open item below — *if W5 comes back over any written number again, the axial ladder stops
+and B6 opens at 275, not 365.* **Not executed unilaterally.** The 365 came in under cap and the
+backoff overage is the least severe of the four, so the call goes with the Sep 8 check when it
+lands: **`fine` → B6 opens at 365 as promised; no check, or `tight` → 275.** He was told this.
+
+---
+
 ## ✅ 2026-09-11 — W6 compressed to two days (athlete's call)
 
 He trains only **Mon Sep 14** and **Tue Sep 15** before flying Thursday, and asked that the four
@@ -607,6 +659,10 @@ underlying back being worse. The clean weeks are what separate the two.)
       answered.** Graded increase cleared, *"start with a 25% weight increase and see how it
       goes."* Taken as **275 in W4** (athlete's call; 315 asked for and declined). See the clearance
       section at the top.
+- [ ] 🔴 **A fourth written number ran hot — W5-D1 backoffs, 315×3 ×3 vs a written 275×3 ×2.**
+      Found 2026-09-14; see the section above. The ladder is **not** stopped on it, because the
+      365 top came in @6 under cap and this is the mildest of the four. **B6's opening squat now
+      turns entirely on the Sep 8 check**: `fine` → 365, no check or `tight` → 275.
 - [ ] 🔴 **Two caps run hot in W4 — settled 2026-09-05, but watch it.** Sumo 295 vs a written 275;
       WPU @8.5 vs an @8 hard stop. **The third flag is partly retracted:** the barbell-OHP-for-DB-press
       swap was probably *forced* (he ran the prescribed DB press at the prescribed 70 in two of four
