@@ -19,6 +19,57 @@ Loaded hinges stay cut.
 
 ---
 
+## ✅ 2026-09-14 — two optional accessories offered for W6-D1 (finished early)
+
+Athlete confirmed 225×5 ×3 and asked for 1–2 accessories in case D1 runs short. W6-D1 is only
+3 primaries + Face Pull + Side Plank, so it will. **Offered, not prescribed — not pushed to Hevy**
+(a deload week's instruction is *do not add*; these are permission, not a target):
+
+| Movement | Load | Why it's the safe pick |
+|---|---|---|
+| **Seated Calf Raise** | **90 ×12–15, 2–3 sets** | Calves are on W6's deliberately-uncovered list. **Seated** = zero spinal compression, and sumo tomorrow doesn't touch calves. |
+| **Concentration Curl** | **40 ×10–12, 2 sets** | Direct biceps, also on the uncovered list. Elbow-only; nothing on D2 needs it. |
+
+**Ruled out and why** — D1→D2 is back-to-back into sumo + dip, so `accessory-day-interference`
+kills most of the menu: no rows or lat work (upper back holds tomorrow's pull), no chest/triceps
+(dip tomorrow), no hamstring/glute work (sumo + leg curl tomorrow), **no overhead** (cut from all
+of W6), and **no erector work at all** — Back Extension is cut for the week and Monday is ~64 h
+post-injection.
+
+**If both are logged, Saturday's review should read them as an authorized add, not drift.**
+
+---
+
+## ⚠️ 2026-09-14 — Seated Calf Raise was written 70–85 lb over what he actually lifts
+
+Caught while pricing the accessory above. The block prescribes **155 → 175** citing a "log median
+175 over 4 sessions." **That anchor is 2023 data on a different machine.** Every session since
+has run far lighter:
+
+| Date | Session | Actual |
+|---|---|---|
+| 2026-08-17 | W2-D1 | 50 / 90 / 90 / 90 ×10 |
+| 2026-08-21 | W2-D4 | 90 ×15 ×3 |
+| 2026-08-28 | W3-D4 | 140 ×8, then **100 ×15 ×2** |
+| 2026-09-04 | W4-D4 | 90 ×15 ×3 |
+
+**Current working load is 90–100, not 175.** He ran it four times in B5 against a written number
+nearly double, and neither the weekly sync nor any review flagged it.
+
+**This is `exercise-name-mapping` inverted — the failure mode the repo has only ever seen
+*under*-prescribing.** Every prior catch (Reverse Pec Deck, Incline DB Press, Hip Thrust, Back
+Extension) put too *little* weight in front of him because a name resolved to an empty template.
+This one resolved to a **real history that's three years stale on different equipment**, and
+over-prescribed. "No log history is a mapping bug" now has a sibling: **a log anchor with a
+three-year gap in it is a different movement until proven otherwise — check the recency of the
+sessions the median is built from, not just the count.**
+
+**Not corrected in the block JSON here** — D4 is dropped this week so nothing trains off it, and
+rewriting a prescription belongs in `amending-live-block`. **Fix the anchor when B6 is designed**,
+and prescribe ~90–100 there.
+
+---
+
 ## ✅ 2026-09-14 — deload load queried and HELD at 225
 
 Athlete asked, the morning of W6-D1: *"if my max is 500lbs squats what should i do for deload..?

@@ -539,6 +539,29 @@ barbell OHP for a DB press.
 **The lesson under the lesson: ask before inferring intent from a log.** One anomalous session is a
 question, not a finding. I had four weeks of context available and read one row.
 
+## 2026-09-14 — the stale-anchor bug finally fired in the OTHER direction
+
+Pricing an optional calf raise for W6-D1 turned up **Seated Calf Raise written at 155 → 175
+against an actual 2026 working load of 90–100.** The block cited a "log median 175 over 4
+sessions" — built from **2023** sessions on what is almost certainly a different machine
+(plate-loaded then, weight stack now). He ran it four times in B5 at 90–100 and neither the
+Saturday sync nor any review said a word.
+
+**Every previous `exercise-name-mapping` catch under-prescribed** — Reverse Pec Deck at 45 against
+~100, Incline DB Press labelled "NEW" with 66 sessions, Hip Thrust at an empty bar against a 275
+max, Back Extension at ~1 lb. The note in this file even says the bug "**under-prescribes
+silently**, and an under-prescription looks responsible, so nothing about it feels wrong at review
+time." **That's now only half true.** A name can also resolve to a *real* history that is three
+years and one equipment change out of date, and then it over-prescribes just as silently.
+
+**The generalisation worth keeping: check the recency spread of the sessions a median is built
+from, not just the count.** "4 sessions" reads like a solid anchor and says nothing about whether
+they're from this month or three years ago. A median over a multi-year gap is describing a
+movement he no longer does. Same shape as `equipment-fallbacks` — the log records what the gym
+allowed on the day, and which machine that was changes over years, not just week to week.
+
+Left the JSON alone (D4 is dropped this week, nothing trains off it) and flagged it for B6.
+
 ## 2026-09-14 — "my max is 500, the deload is too light": the stale-1RM denominator
 
 Asked on W6-D1 morning whether a 225 deload makes sense off a 500 squat. **Held at 225**, and the
