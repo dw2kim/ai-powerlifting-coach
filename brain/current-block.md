@@ -28,7 +28,13 @@ current log, not the block's written numbers (`loads-from-logs`):
 |---|---|---|---|
 | **Chest Supported Incline Row** | **45–50/hand ×12, 3 sets** | 55×10 ×3 for 3 straight sessions | **Mid-back — the last uncovered group.** Chest-supported = zero lumbar load, which is exactly why it replaced Meadows Row on pull day. |
 | **Rear Delt Reverse Fly (Machine)** | **100 ×15, 3 sets** | 115/110/110 ×12 (09-10) | Posterior cuff. Per the MRI read this is **load-bearing, not filler** — cuff intact behind two torn anterior tendons, so it shares load off them. Also the best thing he can do for 14 h in a plane seat. |
-| **Concentration Curl** | **40 ×10–12, 2 sets** | 40×10 ×2 (09-11) | Biceps, the other uncovered group. Skipped yesterday; safer today with nothing after it. |
+| ~~Concentration Curl~~ → **Lat Pulldown** | **165 ×12, 3 sets** *(cable version: 170)* | Natural Grip 170×10 ×3 (09-10); Cable 190×8 ×3 (09-03) | **Swapped 09-15** — athlete thinks he ran the curl Monday but didn't log it. Lats got only Monday's pull-up this week (D3 dropped), then a week off. Seated and supported, no axial load. |
+
+> **The swap's own lesson: an unlogged set is invisible to every rule in this repo.**
+> `loads-from-logs`, `sheet-load-sync` and `reconcile_loads` all read the Hevy log and nothing
+> else, so unlogged work doesn't just lose a row — it silently drags the next anchor. Same class as
+> the Seated Calf Raise anchor error found 09-14, from the other direction. Not worth nagging over
+> a curl; worth stating once because it's the mechanism the whole system runs on.
 
 **What changed since yesterday, and it's the whole reason the menu is bigger:**
 **`accessory-day-interference` is inert today.** D3 and D4 are dropped and Korea is zero training,
