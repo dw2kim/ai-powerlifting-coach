@@ -1,10 +1,10 @@
 {
-  "created_at": "2026-09-11T12:50:20.583Z",
+  "created_at": "2026-09-14T11:42:25.467Z",
   "description": "",
-  "end_time": "2026-09-11T12:50:18+00:00",
+  "end_time": "2026-09-14T11:42:23+00:00",
   "exercises": [
     {
-      "exercise_template_id": "D20D7BBE",
+      "exercise_template_id": "57e29496-c8d7-4f8b-9bca-d1401504cbc8",
       "index": 0,
       "notes": "",
       "sets": [
@@ -13,37 +13,37 @@
           "distance_meters": null,
           "duration_seconds": null,
           "index": 0,
-          "reps": 3,
+          "reps": 5,
           "rpe": null,
           "type": "normal",
-          "weight_kg": 133.80990828351372
+          "weight_kg": 102.05840462301894
         },
         {
           "custom_metric": null,
           "distance_meters": null,
           "duration_seconds": null,
           "index": 1,
-          "reps": 3,
-          "rpe": 6,
+          "reps": 5,
+          "rpe": null,
           "type": "normal",
-          "weight_kg": 133.80990828351372
+          "weight_kg": 111.13026281173174
         },
         {
           "custom_metric": null,
           "distance_meters": null,
           "duration_seconds": null,
           "index": 2,
-          "reps": 3,
-          "rpe": 6,
+          "reps": 5,
+          "rpe": null,
           "type": "normal",
-          "weight_kg": 133.80990828351372
+          "weight_kg": 111.13026281173174
         }
       ],
       "superset_id": null,
-      "title": "Sumo Deadlift"
+      "title": "Low-bar Squat"
     },
     {
-      "exercise_template_id": "74dfcc13-02b2-4eef-95f3-5abf04a2702b",
+      "exercise_template_id": "729237D1",
       "index": 1,
       "notes": "",
       "sets": [
@@ -52,47 +52,37 @@
           "distance_meters": null,
           "duration_seconds": null,
           "index": 0,
-          "reps": 3,
+          "reps": 4,
           "rpe": null,
-          "type": "warmup",
-          "weight_kg": 102.05840462301894
+          "type": "normal",
+          "weight_kg": 24.947610018960187
         },
         {
           "custom_metric": null,
           "distance_meters": null,
           "duration_seconds": null,
           "index": 1,
-          "reps": 3,
-          "rpe": 7.5,
+          "reps": 4,
+          "rpe": null,
           "type": "normal",
-          "weight_kg": 113.39822735890993
+          "weight_kg": 24.947610018960187
         },
         {
           "custom_metric": null,
           "distance_meters": null,
           "duration_seconds": null,
           "index": 2,
-          "reps": 3,
-          "rpe": 7.5,
+          "reps": 4,
+          "rpe": null,
           "type": "normal",
-          "weight_kg": 113.39822735890993
-        },
-        {
-          "custom_metric": null,
-          "distance_meters": null,
-          "duration_seconds": null,
-          "index": 3,
-          "reps": 3,
-          "rpe": 7.5,
-          "type": "normal",
-          "weight_kg": 113.39822735890993
+          "weight_kg": 24.947610018960187
         }
       ],
       "superset_id": null,
-      "title": "Spoto Bench"
+      "title": "Pull Up (Weighted)"
     },
     {
-      "exercise_template_id": "B5D3A742",
+      "exercise_template_id": "d8218be2-977f-4000-ac42-66cb11986863",
       "index": 2,
       "notes": "",
       "sets": [
@@ -101,27 +91,37 @@
           "distance_meters": null,
           "duration_seconds": null,
           "index": 0,
-          "reps": 10,
-          "rpe": 7,
+          "reps": 4,
+          "rpe": 6,
           "type": "normal",
-          "weight_kg": 22.67964547178199
+          "weight_kg": 92.98654643430615
         },
         {
           "custom_metric": null,
           "distance_meters": null,
           "duration_seconds": null,
           "index": 1,
-          "reps": 10,
-          "rpe": 7.5,
+          "reps": 4,
+          "rpe": 6,
           "type": "normal",
-          "weight_kg": 22.67964547178199
+          "weight_kg": 92.98654643430615
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 4,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 92.98654643430615
         }
       ],
       "superset_id": null,
-      "title": "Bulgarian Split Squat (Dumbbell)"
+      "title": "POWER Bench Press"
     },
     {
-      "exercise_template_id": "914F3A96",
+      "exercise_template_id": "BE640BA0",
       "index": 3,
       "notes": "",
       "sets": [
@@ -130,66 +130,76 @@
           "distance_meters": null,
           "duration_seconds": null,
           "index": 0,
-          "reps": 10,
-          "rpe": 7,
+          "reps": 15,
+          "rpe": 6,
           "type": "normal",
-          "weight_kg": 24.947610018960187
+          "weight_kg": 15.87575183024739
         },
         {
           "custom_metric": null,
           "distance_meters": null,
           "duration_seconds": null,
           "index": 1,
-          "reps": 10,
-          "rpe": 7.5,
+          "reps": 15,
+          "rpe": null,
           "type": "normal",
-          "weight_kg": 24.947610018960187
+          "weight_kg": 15.87575183024739
         },
         {
           "custom_metric": null,
           "distance_meters": null,
           "duration_seconds": null,
           "index": 2,
-          "reps": 10,
-          "rpe": 7.5,
+          "reps": 15,
+          "rpe": null,
           "type": "normal",
-          "weight_kg": 24.947610018960187
+          "weight_kg": 15.87575183024739
         }
       ],
       "superset_id": null,
-      "title": "Chest Supported Incline Row (Dumbbell)"
+      "title": "Face Pull"
     },
     {
-      "exercise_template_id": "724CDE60",
+      "exercise_template_id": "E3EDA509",
       "index": 4,
       "notes": "",
       "sets": [
         {
           "custom_metric": null,
           "distance_meters": null,
-          "duration_seconds": null,
+          "duration_seconds": 74,
           "index": 0,
-          "reps": 10,
-          "rpe": 7,
+          "reps": null,
+          "rpe": null,
           "type": "normal",
-          "weight_kg": 18.14371637742559
+          "weight_kg": null
         },
         {
           "custom_metric": null,
           "distance_meters": null,
-          "duration_seconds": null,
+          "duration_seconds": 77,
           "index": 1,
-          "reps": 10,
-          "rpe": 8,
+          "reps": null,
+          "rpe": null,
           "type": "normal",
-          "weight_kg": 18.14371637742559
+          "weight_kg": null
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": 81,
+          "index": 2,
+          "reps": null,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": null
         }
       ],
       "superset_id": null,
-      "title": "Concentration Curl"
+      "title": "Side Plank"
     },
     {
-      "exercise_template_id": "BD0AD077",
+      "exercise_template_id": "062AB91A",
       "index": 5,
       "notes": "",
       "sets": [
@@ -198,39 +208,39 @@
           "distance_meters": null,
           "duration_seconds": null,
           "index": 0,
-          "reps": 10,
-          "rpe": null,
+          "reps": 12,
+          "rpe": 6,
           "type": "normal",
-          "weight_kg": null
+          "weight_kg": 40.82336184920758
         },
         {
           "custom_metric": null,
           "distance_meters": null,
           "duration_seconds": null,
           "index": 1,
-          "reps": 10,
-          "rpe": null,
+          "reps": 12,
+          "rpe": 6,
           "type": "normal",
-          "weight_kg": null
+          "weight_kg": 40.82336184920758
         },
         {
           "custom_metric": null,
           "distance_meters": null,
           "duration_seconds": null,
           "index": 2,
-          "reps": 10,
+          "reps": 12,
           "rpe": null,
           "type": "normal",
-          "weight_kg": null
+          "weight_kg": 40.82336184920758
         }
       ],
       "superset_id": null,
-      "title": "Bird Dog"
+      "title": "Seated Calf Raise"
     }
   ],
-  "id": "a19bd7c7-ef5b-4e4b-8e60-71368ba9555e",
-  "routine_id": null,
-  "start_time": "2026-09-11T10:48:21+00:00",
-  "title": "W5-D4 Sumo (light) + Spoto Bench",
-  "updated_at": "2026-09-11T12:50:20.583Z"
+  "id": "d9cf70b3-7bc7-4d8f-8907-14ac9ca9cd9f",
+  "routine_id": "904d06a9-be0a-47b5-b2b1-0fb0fa17bab5",
+  "start_time": "2026-09-14T10:54:46+00:00",
+  "title": "W6-D1 Squat (light) + Comp Bench",
+  "updated_at": "2026-09-14T11:42:25.467Z"
 }
