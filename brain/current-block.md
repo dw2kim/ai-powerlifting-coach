@@ -19,6 +19,53 @@ Loaded hinges stay cut.
 
 ---
 
+## 🔴 2026-09-15 — W6-D1 actuals: the squat ran 245 after he confirmed 225 in writing
+
+Synced overnight. **Fifth written number run hot this block, and the first one he had explicitly
+agreed to in the same conversation.**
+
+| Written | Actual | |
+|---|---|---|
+| Squat **225**×5 ×3 @6 | **225×5, then 245×5, 245×5** | ⚠️ +20 lb on sets 2–3 |
+| Bench 200×4 ×3 | **205×4 ×3 @6** | ⚠️ +5 lb (trivial, but over) |
+| Pull-up BW+55×4 ×3 | BW+55×4 ×3 | ✅ exact |
+| Face Pull 35×15 ×3 · Side Plank ×3 | as written | ✅ |
+| *(optional)* Seated Calf Raise | **90×12 ×3 @6** | ✅ took the recommendation at the given load |
+| *(optional)* Concentration Curl | not done | — asked "why bicep?", declined. Fine. |
+
+**The load is not the problem and saying otherwise would be dishonest.** 245×5 four days after a
+365×3 @6 is physically nothing; the back risk is ~zero. Three things are the problem:
+
+1. **It broke the instrument.** Comparability *was the entire argument* for 225 — it's what W1–W3
+   ran, so today's check would have joined three weeks of data. At 245 it doesn't. He has now
+   confounded the one reading that decides B6's opening squat, on the session whose only real job
+   was producing it.
+2. **A ceiling that doesn't hold at 225 on a deload will not hold at 405.** The whole
+   injury-management scheme is built on written numbers holding, and this is the cheapest possible
+   week to hold one. Five for five the wrong way on the axial lift.
+3. **He agreed to it first.** *"kk. i will keep 225 lbs x 5 x 3"*, then ran 245 the same morning.
+   `clinical-override`'s corollary said he follows a number on a page and can't generate one in the
+   moment — **this extends it: an agreement is not a page.** Verbal assent predicts nothing; only
+   the written prescription does, and apparently not always that.
+
+**The precise shape, which is worth keeping because it's narrower than "non-compliant":** he ran
+pull-up, face pull, side plank and the optional calf raise **exactly** as written, including a load
+I gave him in chat an hour earlier. **It is specifically the axial/primary number that creeps** —
+never the accessories. That's a targeted problem with a targeted fix, not a discipline lecture.
+
+**B6 consequence — not re-litigated, deliberately.** I already ruled that the 365 @6 under cap
+earns 365, and reversing that over a 20 lb deload creep would be disproportionate and would teach
+that compliance never pays. **The gate stays the back checks — now three owed (Sep 8, Sep 12,
+Sep 15).** What changes is *how* B6 is written: a bare number on a page is demonstrably not enough
+on this lift, so B6's squat needs the ladder's rungs tied to something that costs him when skipped.
+Decide the mechanism when B6 is designed.
+
+**Today (W6-D2, Tue Sep 15): sumo 225×3 ×3, dip BW+50×6 ×3. Hold 225.** It is ~88 h post-injection
+and outside the flare window — the honest read on the canary lift, and the last axial session
+before the flight. Creeping this one costs the sumo signal the same way yesterday cost the squat's.
+
+---
+
 ## ✅ 2026-09-14 — two optional accessories offered for W6-D1 (finished early)
 
 Athlete confirmed 225×5 ×3 and asked for 1–2 accessories in case D1 runs short. W6-D1 is only

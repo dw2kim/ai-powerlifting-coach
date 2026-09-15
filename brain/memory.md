@@ -539,6 +539,38 @@ barbell OHP for a DB press.
 **The lesson under the lesson: ask before inferring intent from a log.** One anomalous session is a
 question, not a finding. I had four weeks of context available and read one row.
 
+## 2026-09-15 — an agreement is not a page
+
+He asked why the 225 deload was so light, got the full argument, replied **"kk. i will keep 225 lbs
+x 5 x 3"** — and ran **225×5, 245×5, 245×5** the same morning. Fifth written number exceeded in B5,
+and the first he'd explicitly assented to in conversation.
+
+**The load is irrelevant and framing it as a safety issue would be dishonest** — 245×5 four days
+after 365×3 @6 is nothing. What it cost is the **instrument**. Comparability with W1–W3 was the
+entire argument for 225; at 245 today's back check no longer joins that series, so the one reading
+that decides B6's opening squat is confounded — on the session whose only job was producing it.
+**When a load is prescribed for a measurement reason rather than a stimulus reason, say so in the
+prescription.** The note said "do not add weight, do not chase last week's numbers"; it never said
+*this number exists so tomorrow's check means something*. He was given the reason in chat and the
+Hevy note carried the instruction without it. **Put the why in the field he actually reads at 6am.**
+
+**The corollary this extends:** `clinical-override` says he follows a number on a page reliably and
+cannot generate one in the moment. Now sharpened — **verbal agreement predicts nothing.** "kk, I'll
+keep 225" and the 245 are four hours apart. Only the written prescription has ever correlated, and
+this week not even that. Do not treat assent in conversation as a control.
+
+**The precise shape, narrower than "he's non-compliant":** same session, he ran pull-up, face pull,
+side plank and an **optional calf raise at a load I gave him in chat an hour earlier** — all exact.
+**It is specifically the axial primary that creeps, never the accessories.** He complies fine with
+numbers he has no ego in. That's a targeted problem and it deserves a targeted mechanism rather
+than another lecture, which is the fourth one this block and has now failed four times.
+
+**Did not re-open B6's opening squat over it.** I'd already ruled the 365 @6 under cap earns 365;
+reversing that on a 20 lb deload creep is disproportionate and teaches that compliance never pays —
+the exact lesson the dip PR was meant to teach in the other direction. Gate stays the back checks
+(three owed). What changes is **how B6's squat is written**: a bare number on a page is empirically
+insufficient on this one lift, so the rungs need to be tied to something whose absence costs him.
+
 ## 2026-09-14 — the stale-anchor bug finally fired in the OTHER direction
 
 Pricing an optional calf raise for W6-D1 turned up **Seated Calf Raise written at 155 → 175
