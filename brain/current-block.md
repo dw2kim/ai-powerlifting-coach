@@ -19,6 +19,37 @@ Loaded hinges stay cut.
 
 ---
 
+## ✅ 2026-09-15 — three optional accessories offered for W6-D2 (last session before Korea)
+
+Same ask as yesterday. **Offered, not prescribed — not pushed to Hevy.** Loads anchored on the
+current log, not the block's written numbers (`loads-from-logs`):
+
+| Movement | Load | Log anchor | Why |
+|---|---|---|---|
+| **Chest Supported Incline Row** | **45–50/hand ×12, 3 sets** | 55×10 ×3 for 3 straight sessions | **Mid-back — the last uncovered group.** Chest-supported = zero lumbar load, which is exactly why it replaced Meadows Row on pull day. |
+| **Rear Delt Reverse Fly (Machine)** | **100 ×15, 3 sets** | 115/110/110 ×12 (09-10) | Posterior cuff. Per the MRI read this is **load-bearing, not filler** — cuff intact behind two torn anterior tendons, so it shares load off them. Also the best thing he can do for 14 h in a plane seat. |
+| **Concentration Curl** | **40 ×10–12, 2 sets** | 40×10 ×2 (09-11) | Biceps, the other uncovered group. Skipped yesterday; safer today with nothing after it. |
+
+**What changed since yesterday, and it's the whole reason the menu is bigger:**
+**`accessory-day-interference` is inert today.** D3 and D4 are dropped and Korea is zero training,
+so **nothing follows this session** — for the first time all block there is no next day to protect.
+Mid-back was the #1 pick yesterday on merit and got cut purely because rows pre-fatigue the sumo;
+today the sumo happens first in the same session and nothing comes after. That unlocks it.
+
+**Uncovered-group ledger for W6:** calves ✅ (done 09-14, 90×12 ×3), mid-back + biceps ✅ if these
+run. **Erectors stay deliberately uncovered** — ~88 h post-injection, Back Extension cut for the
+week, and sumo already loads them.
+
+**Named fallbacks** (`equipment-fallbacks`): Rear Delt machine busy → **Rear Delt Reverse Fly
+(Dumbbell) at 25 ×15** (ran 28 on 09-03). **FORBIDDEN fallback: no barbell bent-over row** for the
+chest-supported row — that reinstates exactly the lumbar load the movement exists to avoid, three
+days post-injection and two days before a long-haul flight.
+
+**Sumo stays 225.** Yesterday's creep already cost the squat's back-check comparability; this is
+the last axial session before the flight and the only clean sumo read left in the block.
+
+---
+
 ## 🔴 2026-09-15 — W6-D1 actuals: the squat ran 245 after he confirmed 225 in writing
 
 Synced overnight. **Fifth written number run hot this block, and the first one he had explicitly
