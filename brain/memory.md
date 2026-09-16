@@ -539,6 +539,110 @@ barbell OHP for a DB press.
 **The lesson under the lesson: ask before inferring intent from a log.** One anomalous session is a
 question, not a finding. I had four weeks of context available and read one row.
 
+## 2026-09-15 — an agreement is not a page
+
+He asked why the 225 deload was so light, got the full argument, replied **"kk. i will keep 225 lbs
+x 5 x 3"** — and ran **225×5, 245×5, 245×5** the same morning. Fifth written number exceeded in B5,
+and the first he'd explicitly assented to in conversation.
+
+**The load is irrelevant and framing it as a safety issue would be dishonest** — 245×5 four days
+after 365×3 @6 is nothing. What it cost is the **instrument**. Comparability with W1–W3 was the
+entire argument for 225; at 245 today's back check no longer joins that series, so the one reading
+that decides B6's opening squat is confounded — on the session whose only job was producing it.
+**When a load is prescribed for a measurement reason rather than a stimulus reason, say so in the
+prescription.** The note said "do not add weight, do not chase last week's numbers"; it never said
+*this number exists so tomorrow's check means something*. He was given the reason in chat and the
+Hevy note carried the instruction without it. **Put the why in the field he actually reads at 6am.**
+
+**The corollary this extends:** `clinical-override` says he follows a number on a page reliably and
+cannot generate one in the moment. Now sharpened — **verbal agreement predicts nothing.** "kk, I'll
+keep 225" and the 245 are four hours apart. Only the written prescription has ever correlated, and
+this week not even that. Do not treat assent in conversation as a control.
+
+**The precise shape, narrower than "he's non-compliant":** same session, he ran pull-up, face pull,
+side plank and an **optional calf raise at a load I gave him in chat an hour earlier** — all exact.
+**It is specifically the axial primary that creeps, never the accessories.** He complies fine with
+numbers he has no ego in. That's a targeted problem and it deserves a targeted mechanism rather
+than another lecture, which is the fourth one this block and has now failed four times.
+
+**Did not re-open B6's opening squat over it.** I'd already ruled the 365 @6 under cap earns 365;
+reversing that on a 20 lb deload creep is disproportionate and teaches that compliance never pays —
+the exact lesson the dip PR was meant to teach in the other direction. Gate stays the back checks
+(three owed). What changes is **how B6's squat is written**: a bare number on a page is empirically
+insufficient on this one lift, so the rungs need to be tied to something whose absence costs him.
+
+## 2026-09-14 — the stale-anchor bug finally fired in the OTHER direction
+
+Pricing an optional calf raise for W6-D1 turned up **Seated Calf Raise written at 155 → 175
+against an actual 2026 working load of 90–100.** The block cited a "log median 175 over 4
+sessions" — built from **2023** sessions on what is almost certainly a different machine
+(plate-loaded then, weight stack now). He ran it four times in B5 at 90–100 and neither the
+Saturday sync nor any review said a word.
+
+**Every previous `exercise-name-mapping` catch under-prescribed** — Reverse Pec Deck at 45 against
+~100, Incline DB Press labelled "NEW" with 66 sessions, Hip Thrust at an empty bar against a 275
+max, Back Extension at ~1 lb. The note in this file even says the bug "**under-prescribes
+silently**, and an under-prescription looks responsible, so nothing about it feels wrong at review
+time." **That's now only half true.** A name can also resolve to a *real* history that is three
+years and one equipment change out of date, and then it over-prescribes just as silently.
+
+**The generalisation worth keeping: check the recency spread of the sessions a median is built
+from, not just the count.** "4 sessions" reads like a solid anchor and says nothing about whether
+they're from this month or three years ago. A median over a multi-year gap is describing a
+movement he no longer does. Same shape as `equipment-fallbacks` — the log records what the gym
+allowed on the day, and which machine that was changes over years, not just week to week.
+
+Left the JSON alone (D4 is dropped this week, nothing trains off it) and flagged it for B6.
+
+## 2026-09-14 — "my max is 500, the deload is too light": the stale-1RM denominator
+
+Asked on W6-D1 morning whether a 225 deload makes sense off a 500 squat. **Held at 225**, and the
+useful part is *which* argument works on him.
+
+**The percentage argument is the weak one and I nearly led with it.** 225/500 = 45% does sound
+light, and he's not being unreasonable — off a genuine 500, before a genuine training week,
+275–315 would be defensible. **The denominator is the error.** `data/maxes.md` still reads 501.5
+stamped **2026-06-03** — three blocks stale, and the file has been the reference for "his max"
+this whole time. Measured against last week's actual 365 top, 225 is **62%**, textbook. **When he
+quotes a max at me, check what the log says he's actually touched** — seven weeks under a medical
+cap makes the stored 1RM a number about a different athlete.
+
+**What actually decided it, in the order that landed:**
+1. **W6 isn't a taper into anything** — Korea is zero training, so the trip sheds the fatigue and
+   the session's only job is a known load through the back.
+2. **225 is the comparability load** (W1–W3 ran it), so Tuesday's check joins three weeks of data.
+   At 315 it's confounded by a new load *and* by ~64 h post-injection.
+3. **A 14 h flight Thursday on a freshly loaded lumbar spine.** This is the one with teeth — it's
+   concrete and he'll feel it, where "62% is in band" is an argument he can just disagree with.
+4. **He wasn't eligible to progress anyway** — Sep 8 and Sep 12 both unlogged, *no check, no
+   progression*. The rule did the work; I didn't have to win the argument.
+
+**And the trade, which is the move that keeps working** (same shape as the 225 floor / flat load
+on 2026-08-07 and the CGB grant on 2026-08-11): refuse the load, hand back something real. Here
+it was **intent** (move 225 fast, speed work) plus the actual lever — *send both back checks and
+B6 opens at 365 with 405 live in W2–W3.* Tie the thing he won't do to the thing he wants.
+
+## 2026-09-14 — a fourth ceiling run hot, and the weekly review didn't see it
+
+Pulling the log to answer the deload question surfaced **W5-D1 backoffs at 315×3 ×3 against a
+written 275×3 ×2** (+40 lb, +1 set). The 365 top was clean — **@6 under an @≤7 cap** — so the
+headline was good and the underneath wasn't.
+
+**The review missed it because it only reads top sets.** `reviewing-block` / the weekly job report
+the Big-5 top set per lift; a backoff that walks up 40 lb is invisible to that. Same class as
+`sheet-load-sync` only binding at design time — **a guardrail that inspects one row of a session
+isn't a guardrail on the session.** Worth fixing in the weekly generator: compare *every*
+prescribed set against actual, not just the top.
+
+**Did not trip the ladder-stop, and the reasoning is worth keeping.** The standing item said *any*
+written number exceeded in W5 → B6 opens at 275. Executing that literally would have been
+defensible and wrong: the 365 came in under cap, which is the behaviour the whole ladder was
+built to reward, and the backoff overage is the mildest of the four breaches. **Punishing the
+week that finally went right teaches nothing except that compliance doesn't pay** — and dip
+already proved he responds to compliance being paid (ran to plan all block, got the PR shot).
+Routed it to the Sep 8 check instead: `fine` → 365, no check or `tight` → 275. The gate stays
+honest and he still owns the outcome.
+
 ## 2026-09-05 — PR review correction: keep the deliberate 365 squat
 Athlete explicitly reconfirmed 365, citing the mental value of heavier lifting and his body
 awareness. Record this as a B5-specific choice despite tight checks; do not repeatedly flag
