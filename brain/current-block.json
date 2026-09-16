@@ -3839,6 +3839,155 @@
           "hold_reason": "W6 is a deliberate travel-week deload — every load is set far below the log on purpose (peak week behind it, Korea Sep 17-21 ahead). The Saturday sync must not rebase any of it back up."
         }
       ]
+    },
+    {
+      "week": 6,
+      "day": "D3",
+      "focus": "Incline + Upper Back (added)",
+      "replaces_title": "W6-D3 — DROPPED (travel week, nothing to train)",
+      "notes": "ADDED 2026-09-16 at the athlete's request — W6-D3 was dropped on 2026-09-11 and this puts a 45-minute session back in its place. NOT a training stimulus: you fly to Korea tomorrow and this is still the deload week. NOTHING AXIAL — squat was Monday, sumo was Tuesday, and a 14 h flight follows. SHOULDER WARM-UP FIRST, no cold pressing: band pull-aparts, face pulls, scap push-ups. This is the THIRD pressing day in three days (bench Mon, dip Tue, incline today) on a shoulder with two low-grade partial-thickness tears and subacromial bursitis — every load here is a ceiling, not a target. Pain >3/10 in the shoulder ends the lift for the day. RECONCILED 2026-09-16 against a parallel session that declined incline on the shoulder mechanism: incline stays because the athlete re-asked after being told no, but it is contained (60/hand, hard @7, dumbbells only) and the Reverse Pec Deck is a mandatory counterweight, not filler.",
+      "exercises": [
+        {
+          "name": "Incline DB Press",
+          "tier": "secondary",
+          "display_load": "60/hand",
+          "hold": true,
+          "hold_reason": "Deload week + third pressing day in three days on a torn shoulder. Log anchor is 65x10 flat (7/31, 8/7, 9/1); 60 is deliberately one notch under it. Do not let the Saturday sync rebase this to 65.",
+          "notes": "THE ASK, granted — and it's a legal bench secondary (rules: CGB is the default, incline is in the rotation). DUMBBELLS, not the barbell: you have 68 logged sessions on the DB incline (flat at 65x10 since July) against 14 barbell sessions last touched March 2024 — a stale anchor. Dumbbells also let the shoulder choose its own path, which is the point with two partial-thickness tears. 60/hand x8, @7 HARD CAP — a ceiling, not a target. Incline puts the shoulder in more flexion than flat bench, which is the bursitis arc. Stop on any painful arc.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 27.215574566138386,
+              "reps": 8,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 27.215574566138386,
+              "reps": 8,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 27.215574566138386,
+              "reps": 8,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Lat Pulldown",
+          "tier": "accessory",
+          "display_load": "165",
+          "hold": true,
+          "hold_reason": "Deload week, pre-flight. Log anchor is 165-190 (Natural Grip 170x10 on 09-10, Cable 190x8 on 09-03); 165 is the conservative end on purpose.",
+          "notes": "Replaces the Tricep Pushdown this slot originally carried — a triceps movement behind an incline press is a fifth press-pattern set, and this day must not stack pressing exposure. You missed this Tuesday. Seated, zero axial load, and the best thing you can do for a back about to spend 14 h in a seat. 165 x12 @7.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 74.84283005688056,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 74.84283005688056,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 74.84283005688056,
+              "reps": 12,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Reverse Pec Deck",
+          "tier": "accessory",
+          "display_load": "100",
+          "hold": true,
+          "hold_reason": "Deload week. Log anchor is 110-115 (2026-09-10: 110/110/115). 100 is deliberately under it for a travel-week filler.",
+          "notes": "NOT filler — load-bearing. The posterior cuff is intact and the two torn tendons are anterior/superior, so this shares load off them. It is the reason the incline above is allowed at all. FALLBACK if the machine is taken: Rear Delt Reverse Fly (Dumbbell) at 25/hand x15 (your Sep 3 fallback was 28 — go one notch under, it's a deload).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 45.35929094356398,
+              "reps": 15,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 45.35929094356398,
+              "reps": 15,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 45.35929094356398,
+              "reps": 15,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Concentration Curl",
+          "tier": "accessory",
+          "display_load": "40",
+          "hold": true,
+          "hold_reason": "Deliberately flat at the athlete's last logged load for an added travel-week session. Not a progression slot.",
+          "notes": "Fills the one muscle group W6 left genuinely uncovered — direct biceps (mid-back went in with Tuesday's row, calves with Monday's calf raise, erectors with the sumo). 40 x10, your Sep 11 load, flat.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 10,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 10,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Dead Bug",
+          "tier": "core",
+          "display_load": "BW",
+          "hold": true,
+          "hold_reason": "Bodyweight core, never loaded while the back is under treatment.",
+          "notes": "Anti-extension — the D3 core pattern, and the one you haven't run this week (Mon side plank = anti-lateral-flexion, Tue Pallof = anti-rotation). 10/side. LOW BACK STAYS FLAT ON THE FLOOR; if it arches, shorten the range.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10,
+              "rpe": 6
+            }
+          ]
+        }
+      ]
     }
   ],
   "week_phases": {
@@ -3848,7 +3997,7 @@
     },
     "6": {
       "label": "DELOAD",
-      "description": "Two-day travel deload: D1 squat/bench/pull-up, D2 sumo/dip. D3 and D4 dropped for Korea."
+      "description": "Three-day travel deload: D1 squat/bench/pull-up, D2 sumo/dip, D3 added 2026-09-16 (incline + upper back, nothing axial). D4 dropped for Korea."
     }
   }
 }

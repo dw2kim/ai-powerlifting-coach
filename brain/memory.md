@@ -652,3 +652,77 @@ occurrence. Fixed the row union and added explicit W5 PEAK / W6 DELOAD phase met
 Live verification: Hevy W5-D1 already had 365×3 and both 275×3 backoffs with 75-second
 rest timers, so no routine write was needed. Re-rendered the existing Google Sheet and
 read back the 2×3 @275 row and W5 PEAK / W6 DELOAD headers successfully. All 28 tests pass.
+
+## 2026-09-16 — a dropped day came back, and the app had no slot to put it in
+He asked on the gym floor, Wed of the travel week, for **45 minutes including incline bench
+press**. W6-D3 had been dropped five days earlier and the Hevy routine retitled *"W6-D3 —
+DROPPED"*, so the honest first sentence was **"there was no D3 to suggest — you're adding one"**,
+not a silent yes. Granted: it's a deload week, the ask was modest, and a written session beats
+whatever he'd have improvised (`clinical-override` corollary, which is now the most reliably
+predictive line in this repo).
+
+**What the log changed about the answer — again.** The plan said W6 deliberately left calves,
+mid-back, biceps and erectors uncovered, so my first draft filled all four. The log said he had
+**already** run Seated Calf Raise Monday and Chest Supported Incline Row Tuesday, neither of them
+prescribed. Two of five exercises deleted before they were written. **A block note about what a
+week doesn't cover goes stale the moment he trains the week — check the log, not the plan, for
+coverage.**
+
+**"Incline bench press" is a DB lift for him**: 68 sessions, flat at 65×10 since July, vs 14
+barbell sessions last touched **March 2024**. Prescribing the barbell would have been
+`secondary-first-exposure`'s stale anchor with a torn shoulder on top, off the literal wording of
+the ask. **Resolve the ask against the log before taking its implement literally.**
+
+**The push had no way to express this.** `push_block` built titles from the block-wide `days`
+list, so retitling one session meant renaming D3 in **every** week and stranding five routines —
+and the DROPPED placeholder could never be matched, so a plain push would have left it sitting
+next to the real session. Added a per-prescription **`focus`** (title override) and
+**`replaces_title`** (match a routine that was renamed in the app, PUT the new title over its id).
+Hevy still has no DELETE, so **reclaiming an orphaned routine is the only cleanup available** —
+worth reaching for before accepting a duplicate.
+
+**Mon/Tue ran over three written numbers again** — squat 245 against 225, bench 205 against 200,
+first dip set +55 against +50; sumo exact. Tiny on a deload, and it did not change today's
+session. But it is the third consecutive block entry recording it, four days after the W5 breach
+was priced into the numbers, and B6's opening load is the place it has to land. **Say it once,
+in one table, and move on — he was standing in the gym.**
+
+**Back checks are now four deep** (Sep 7, 11, 14, 15) including the 365-squat morning that the
+block calls its highest-value row. The instrument keeps losing to the fact that nobody is in front
+of him at 7am. Worth trying: ask for all four in one line at the *end* of a session he's happy
+with, rather than as a standing order he reads on Saturday.
+**Corrected on the merge below: Sep 15 came back `fine` in a parallel session** — the first
+non-tight reading ever logged. Sep 8/12/14 are unrecoverable.
+
+## 2026-09-16 — two sessions answered the same day and gave opposite answers on incline
+A parallel session answered *"I need to add some chest workout — maybe incline/decline"* at 11:09
+UTC and **declined incline**, then wrote W6-D3 as a prose-only pre-flight flush (lat pulldown,
+rear delt fly, face pull, dead bug + bird dog). Five hours later, this session got *"45 minutes,
+W6-D3, include the incline bench press at least"* and **granted it**, wrote it into the JSON and
+pushed it. Neither knew about the other. Found only because he asked for a `git pull`.
+
+**Both were defensible and the merge kept the better half of each.** Their shoulder mechanism is
+right and was never in dispute — incline is the most subacromial-compressive bench angle, the
+bursitis and AC changes live in that space, it's the closest variant to the overhead pressing cut
+from all of W6, and this was a third pressing day in three days. This session had written that
+same mechanism into its own block note *and granted the lift anyway*. What tips it is that **he
+re-asked after being told no**, and the documented pattern with him is grant-and-contain, not
+refuse: 60/hand under his flat 65, hard @7, dumbbells only, with the Reverse Pec Deck reframed
+from filler into the mandatory counterweight that pays for it. Their Lat Pulldown replaced this
+session's Tricep Pushdown outright — they were right that the day must not stack pressing
+exposure, and a triceps movement behind an incline press is a fifth press-pattern set.
+
+**Three durable things:**
+1. **A declined request that comes back is not the same request.** The second ask carries
+   information the first didn't — he heard the reason and wants it anyway. Re-running the original
+   refusal ignores that; so does granting it as if no one had objected. Grant it *contained*, and
+   say whose call it was.
+2. **Parallel sessions collide on coaching, not just on text.** `memory.md` already noted two
+   agents finding different things on 2026-08-11 and called neither sweep complete. This is the
+   sharper version: they produced **contradictory prescriptions for the same hour of the same
+   day**. Before answering anything that changes what he trains today, **`git fetch` first** — the
+   repo is the only place the other session exists.
+3. **An offer in chat is not the artifact.** Their W6-D3 was prose, never pushed; this one is in
+   the JSON, pinned `hold`, and goes to Hevy over the DROPPED placeholder. If both had been pushed
+   he'd have had two contradictory routines at the gym. **Whoever writes to the app owns the
+   answer** — which is why the app, not the chat log, is the thing to reconcile against.

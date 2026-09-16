@@ -157,7 +157,11 @@ def build_routine_payload(
                 "sets": sets,
             }
         )
-    title = f"W{week}-{day['label']} {day['focus']}"
+    # A prescription may override the day's shared focus. The `days` list is block-wide, so
+    # editing it to retitle one session would rename that day in *every* week and strand the
+    # rest as duplicates — the exact `push-is-idempotent-with-update` failure this avoids.
+    focus = prescription.get("focus") or day["focus"]
+    title = f"W{week}-{day['label']} {focus}"
     routine = {
         "title": title,
         "notes": prescription.get("notes", ""),
@@ -298,7 +302,10 @@ def main() -> None:
         )
         title = payload["routine"]["title"]
         if args.apply:
-            routine_id = existing.get(title)
+            # `replaces_title` is how a routine that was retitled in the app gets reused
+            # instead of orphaned. Hevy has no DELETE, so a routine whose title no longer
+            # matches the plan can only be reclaimed by PUTting the new title over its id.
+            routine_id = existing.get(title) or existing.get(pres.get("replaces_title", ""))
             if routine_id and args.update:
                 # folder_id isn't part of the update payload — the routine keeps the folder
                 # it's already filed under.
