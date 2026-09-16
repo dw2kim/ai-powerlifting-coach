@@ -3845,7 +3845,7 @@
       "day": "D3",
       "focus": "Incline + Upper Back (added)",
       "replaces_title": "W6-D3 — DROPPED (travel week, nothing to train)",
-      "notes": "ADDED 2026-09-16 at the athlete's request — W6-D3 was dropped on 2026-09-11 and this puts a 45-minute session back in its place. NOT a training stimulus: you fly to Korea tomorrow and this is still the deload week. NOTHING AXIAL — squat was Monday, sumo was Tuesday, and a 14 h flight follows. SHOULDER WARM-UP FIRST, no cold pressing: band pull-aparts, face pulls, scap push-ups. This is the THIRD pressing day in three days (bench Mon, dip Tue, incline today) on a shoulder with two low-grade partial-thickness tears and subacromial bursitis — every load here is a ceiling, not a target. Pain >3/10 in the shoulder ends the lift for the day.",
+      "notes": "ADDED 2026-09-16 at the athlete's request — W6-D3 was dropped on 2026-09-11 and this puts a 45-minute session back in its place. NOT a training stimulus: you fly to Korea tomorrow and this is still the deload week. NOTHING AXIAL — squat was Monday, sumo was Tuesday, and a 14 h flight follows. SHOULDER WARM-UP FIRST, no cold pressing: band pull-aparts, face pulls, scap push-ups. This is the THIRD pressing day in three days (bench Mon, dip Tue, incline today) on a shoulder with two low-grade partial-thickness tears and subacromial bursitis — every load here is a ceiling, not a target. Pain >3/10 in the shoulder ends the lift for the day. RECONCILED 2026-09-16 against a parallel session that declined incline on the shoulder mechanism: incline stays because the athlete re-asked after being told no, but it is contained (60/hand, hard @7, dumbbells only) and the Reverse Pec Deck is a mandatory counterweight, not filler.",
       "exercises": [
         {
           "name": "Incline DB Press",
@@ -3876,6 +3876,34 @@
           ]
         },
         {
+          "name": "Lat Pulldown",
+          "tier": "accessory",
+          "display_load": "165",
+          "hold": true,
+          "hold_reason": "Deload week, pre-flight. Log anchor is 165-190 (Natural Grip 170x10 on 09-10, Cable 190x8 on 09-03); 165 is the conservative end on purpose.",
+          "notes": "Replaces the Tricep Pushdown this slot originally carried — a triceps movement behind an incline press is a fifth press-pattern set, and this day must not stack pressing exposure. You missed this Tuesday. Seated, zero axial load, and the best thing you can do for a back about to spend 14 h in a seat. 165 x12 @7.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 74.84283005688056,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 74.84283005688056,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 74.84283005688056,
+              "reps": 12,
+              "rpe": 7
+            }
+          ]
+        },
+        {
           "name": "Reverse Pec Deck",
           "tier": "accessory",
           "display_load": "100",
@@ -3899,34 +3927,6 @@
               "type": "normal",
               "weight_kg": 45.35929094356398,
               "reps": 15,
-              "rpe": 7
-            }
-          ]
-        },
-        {
-          "name": "Tricep Pushdown",
-          "tier": "accessory",
-          "display_load": "50",
-          "hold": true,
-          "hold_reason": "Deload week. Log anchor is 53-58 on Triceps Extension (Cable) (8/24, 8/31). 50 is a deliberate step under.",
-          "notes": "Bench lockout, and the only elbow-driven work today. Resolves to your Triceps Extension (Cable) template, not the pushdown you stopped logging in January. 50 x12 @7 — elbows tucked.",
-          "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 22.67964547178199,
-              "reps": 12,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 22.67964547178199,
-              "reps": 12,
-              "rpe": 7
-            },
-            {
-              "type": "normal",
-              "weight_kg": 22.67964547178199,
-              "reps": 12,
               "rpe": 7
             }
           ]

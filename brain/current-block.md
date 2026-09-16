@@ -21,48 +21,53 @@ Loaded hinges stay cut.
 
 ---
 
-## ✅ 2026-09-16 — W6-D3 put back as a 45-minute non-axial session (athlete's ask)
+## ⚠️ 2026-09-16 — W6-D3: TWO sessions answered this, and they disagreed on incline
 
-**There was no W6-D3 to suggest.** It was dropped on 2026-09-11 — his call, my agreement — and
-the routine in the app literally reads *"W6-D3 — DROPPED"*. He asked on the gym floor Wed Sep 16
-for a **45-minute session including incline bench press**. Granted, and written down rather than
-left to feel, because that is the documented failure mode (`clinical-override` corollary).
+**Read this before the two sections below it — they are both about today and they contradict
+each other.** A parallel coaching session answered a chest/incline ask at 11:09 UTC and
+**declined incline on the shoulder mechanism**, then wrote W6-D3 as a pre-flight flush. A second
+session answered *"45 minutes, W6-D3, include the incline bench press at least"* at ~16:15 UTC and
+**granted incline, contained**. Both sections are kept below — neither gets deleted, the repo is
+the audit trail.
 
-| Exercise | Load | Sets × reps | RPE | Rest |
-|---|---|---|---|---|
-| **Incline DB Press** | **60/hand** | 3 × 8 | **@7 hard cap** | 1:00 |
-| Reverse Pec Deck | 100 | 3 × 15 | @7 | 1:00 |
-| Tricep Pushdown *(→ Triceps Extension (Cable))* | 50 | 3 × 12 | @7 | 1:00 |
-| Concentration Curl | 40 | 3 × 10 | @7 | 1:00 |
-| Dead Bug *(core)* | BW | 3 × 10/side | — | 0:30 |
+**Reconciled, and this is what the app and the JSON now carry:**
 
-**Nothing axial, and that is not negotiable.** Squat Monday, sumo Tuesday, a ~14 h flight
-Thursday. No squat, no hinge, no loaded carry, no standing calf raise.
+| Exercise | Load | Sets × reps | RPE | Rest | From |
+|---|---|---|---|---|---|
+| **Incline DB Press** | **60/hand** | 3 × 8 | **@7 hard cap** | 1:00 | the re-ask, contained |
+| Lat Pulldown | 165 | 3 × 12 | @7 | 1:00 | the flush session |
+| Reverse Pec Deck | 100 | 3 × 15 | @7 | 1:00 | **both agreed** |
+| Concentration Curl | 40 | 3 × 10 | @7 | 1:00 | **both agreed** |
+| Dead Bug *(core)* | BW | 3 × 10/side | — | 0:30 | **both agreed** |
 
-**The cost, stated:** this is the **third pressing day in three days** (bench Mon, dip Tue,
-incline today) on a shoulder with two low-grade partial-thickness tears and subacromial
-bursitis, and **incline sits the shoulder in more flexion than flat bench** — closer to the
-bursitis arc. That is why every load is a ceiling, the Reverse Pec Deck is load-bearing rather
-than filler, and the shoulder warm-up is in the routine note, not assumed.
+**Why incline stays, against the other session's call.** Its mechanism is right and is not
+softened here: more shoulder flexion means more subacromial compression, the bursitis and AC
+degeneration both sit in that space, incline is the bench variant closest to the overhead pressing
+cut from all of W6, and today is the **third pressing day in three days**. That argument was
+already in the second session's own notes before it granted the lift. What decides it is that
+**he asked for incline again, after being told no** — a reaffirmed request is his call, and the
+pattern that works with this athlete is *grant the movement, take the ceiling back in the shape he
+does not notice*. So: **60/hand, one notch under his flat 65, hard @7, dumbbells only** (his own
+movement library says incline is dumbbell-only; barbell incline is 2.5 years stale), with the
+Reverse Pec Deck as a **mandatory counterweight, not filler** — the posterior cuff is intact and
+the two torn tendons are anterior, so that set is what pays for the incline. Shoulder warm-up
+first, no cold pressing. Pain over 3/10 ends the lift for the day.
 
-**Dumbbells, not the barbell.** 68 logged DB incline sessions, flat at **65×10** since July
-(7/31, 8/7, 9/1) — against 14 barbell sessions last touched **March 2024**, a stale anchor under
-`secondary-first-exposure`. Dumbbells also let the shoulder pick its own path. 60 is one notch
-under his flat 65 because it is still the deload week. **Incline is a legal bench secondary**
-(rule `Bench secondary`) — worth remembering when B6 picks its bench secondary.
+**What changed from the second session's first draft:** **Tricep Pushdown is out.** The other
+session was right that this day should not stack pressing exposure, and a triceps movement behind
+an incline press is a fifth press-pattern set. **Lat Pulldown 165×12 takes the slot instead** — its
+number, its reasoning: he missed it Tuesday, it is seated with no axial load, and it is the better
+thing to do the day before 14 h in a seat.
 
-**What it covers:** direct biceps was the one group W6 genuinely left uncovered. The other
-three named holes closed themselves — he added **Seated Calf Raise** on Mon (90×12) and
-**Chest Supported Incline Row** on Tue (48×12), and the sumo covered the erectors. Dead Bug is
-the anti-extension pattern, the one `core-every-day` slot he hadn't run this week.
+**Unchanged and not negotiable:** nothing axial. No squat, no hinge of any kind, no loaded carry,
+no standing calf raise, no overhead pressing. The point is to reach the plane loose, not
+stimulated. If it starts feeling like work, stop.
 
-**Every entry is pinned `hold`** — an added deload session is exactly what the Saturday sync
-would rebase back to log level.
-
-**In the app:** pushed with `--update --start W6-D3`, PUTting over the DROPPED placeholder via
-the new `replaces_title` key, so no duplicate is stranded (`push-is-idempotent-with-update`).
-`push_block` now takes an optional per-prescription `focus` — the `days` list is block-wide, so
-retitling one session through it would have renamed D3 in **every** week.
+> **Structural difference worth keeping:** the flush session was *offered in prose and never
+> pushed*. This one is in `current-block.json`, every entry pinned `hold`, and goes to Hevy via
+> `--update --start W6-D3` over the DROPPED placeholder (new `replaces_title` key), so no duplicate
+> is stranded. **An offer he reads in chat is not the artifact he trains off at the gym** — that
+> lesson is already in `memory.md` and it applies here.
 
 ### ⚠️ Three written numbers ran over again on Mon/Tue
 
@@ -72,10 +77,309 @@ retitling one session through it would have renamed D3 in **every** week.
 | Comp Bench **200**×4 ×3 | **205**×4 ×3 | +5 |
 | Dip BW+**50**×6 ×3 | BW+**55**, then 50 ×2 | +5 on the first set |
 
-Sumo ran 225 exactly ✅. The magnitudes are small and it is a deload week, so nothing changes
-today — but this is the **third block-file entry in a row** recording the same pattern, and it
-is the pattern the whole axial scheme depends on not existing. **It goes into the B6 opening-load
-call**, alongside the open item from 2026-09-05.
+Sumo ran 225 exactly ✅ — and the W6-D2 section below makes the sharper point: **the creep is
+squat specifically, not axial primaries in general.** Nothing changed today. It goes into the B6
+opening-load call.
+
+---
+## ✅ 2026-09-16 — W6-D2 actuals: sumo HELD at 225. **B5 is complete.**
+
+| Written | Actual | |
+|---|---|---|
+| **Sumo 225×3 ×3 @6** | **225×3 ×3 @6** | ✅ **exact — the ceiling held on the canary lift** |
+| Dip BW+50×6 ×3 | BW+**55**×6, 50×6, 50×6 @6 | 🟡 +5 on set 1, corrected himself |
+| Seated Leg Curl 95×12 ×3 | 95×12 ×3 @6 | ✅ exact |
+| Lateral Raise 25×15 ×3 | **28**×15 ×3 | 🟡 +3 (still far under his 40 log median, which is the point of that one) |
+| Pallof 20×12 ×3 | 20×12 ×3 @6 | ✅ exact |
+| *(optional)* CS Incline Row | **48×12 ×3** | ✅ took it, inside the 45–50 band given |
+| *(optional)* Rear Delt Fly · Lat Pulldown | not done | — 1 of 3 taken. Fine; they were optional. |
+
+**This is the result that matters, and it should be said to him plainly: the day after the squat
+crept to 245, the sumo held exactly.** The canary lift, ~88 h post-injection and outside the flare
+window, at the same 225 it ran in W1–W3 — which makes **today's back check the one genuinely clean,
+comparable axial reading in the entire back half of this block.** Monday's is confounded; this one
+isn't.
+
+**It also narrows the creep diagnosis further.** The pattern isn't "axial primaries creep" — sumo
+is axial and held. It's **squat specifically**, which is the lift he has the most ego in and the
+one he was told 405 was waiting on. Worth carrying into how B6's squat ladder is written.
+
+**Back checks now owed: Sep 8, Sep 12, Sep 14, Sep 15 — four.** He flies **Thursday Sep 17**, so
+today is the last chance before a week of nothing. The Sep 15 one (after this sumo) is the
+highest-value row in the block.
+
+## 🟢 2026-09-16 — FIRST `fine` back check ever logged (Sep 15 sumo)
+
+Athlete: *"back was not tight this morning."* **Recorded `fine`** against the Sep 15 sumo session
+(`back_checks add 2026-09-15 fine`). Record now reads **tight · tight · tight · fine**.
+
+**Why `fine` and not a conservative round-down.** Sep 1 and Sep 5 were *"fine-tight in the middle"*
+— genuinely between two words, so they rounded down. **"Not tight" is an explicit negation of the
+word he'd used for three straight checks**, which is an affirmative improvement claim, not an
+ambiguous one. Rounding that down would be miscoding the data in the other direction. **And the
+habit matters more than the precision here** — four checks were owed because he dislikes doing
+them; rejecting the one he finally volunteered on a phrasing technicality is how the instrument
+dies. Took it, told him what was recorded, invited a correction.
+
+**What it buys, stated honestly — less than the gate I named.** It's the cleanest axial read of the
+block (~88 h post-injection, outside the flare window, sumo 225 = the W1–W3 comparable) and the
+first non-tight reading in the entire record. **But the gate I set was the Sep 8 check after the
+365 squat, and that one is permanently gone.** This says his back tolerates *225 sumo* well; it
+says nothing about how it answered a 365 squat.
+
+**B6 consequence:** 365 stays live and the trend supports it, but the opening rung gets set in the
+B6 design off the block review, not promised here. The ramp is the exposure —
+`axial-return-ladder` governs, and **405 needs checks logged *during* B6**, not a retro-fit.
+
+**Still missing: 8 of 12.** Sep 8, Sep 12 and Sep 14 are unrecoverable. Injection-vs-clean
+comparison is 1 post-injection / 3 clean — still not callable, needs 2 more post-injection.
+
+---
+
+## 🔴 2026-09-16 — chest work / incline · decline asked for. Incline declined, with the mechanism.
+
+Athlete: *"I need to add some chest workout — thinking maybe incline/decline bench press."*
+
+**He is not missing incline. He ran Incline DB Press 65/hand ×10 ×3 on 2026-09-01** — 68 logged
+sessions, and that one was *off-plan*, in the W4 week already flagged for carrying six pressing
+movements on a torn shoulder. The gap is perceived, not real.
+
+**Incline is the wrong pick for this specific shoulder, and the MRI names why.** More shoulder
+flexion = more subacromial compression, and the **bursitis + AC degeneration both sit in the
+subacromial space**. Incline is the bench variant closest to overhead pressing — the pattern cut
+from all of W6 as the most provocative one he owns. Also: **his own movement library already says
+"Incline is dumbbell-only now"**, and barbell incline is 2.5 years stale (last 2024-03-19).
+
+**Decline is the opposite — genuinely the safest bench angle for him** (least shoulder flexion) —
+**and close to pointless for his goals.** Near-zero carryover to comp bench, and he dropped it
+himself (library: *"Out since 2024"*; last logged 2024-11-24 at 185×8).
+
+**The deeper answer: there is no chest gap.** He runs comp bench + Spoto + CGB + weighted dip =
+**four pressing exposures a week**. His bench weak points are the **lockout** (which is what CGB
+exists for) and **losing arch under fatigue** — neither is a chest-capacity problem. The limiter on
+bench is the shoulder, and this repo already declined "strive more upstairs" on exactly that
+ground (2026-08-07): recovery is not one pool, and more pressing loads the *tears*.
+
+**What was offered instead, pending his answer on the goal:** if the want is **chest size**, a
+**Chest Fly (Machine)** — 32 logged sessions, last 115×11 — self-selected arc, no barbell fixing
+the shoulder path, and a **fly not a press**, so it doesn't add a fifth pressing exposure. **As a
+swap into B6, not an add.** If the want is **bench**, the answer is the lockout and the arch, and
+it's already in the program.
+
+**Asked him which it is** — the two goals have different answers and he didn't say. Nothing for
+today either way: bench Monday, dip Tuesday, flight tomorrow.
+
+---
+
+### 2026-09-16 — optional 30–45 min noon session (athlete's ask), day before the flight
+
+W6-D3 was dropped as "nothing to train". He asked for a short noon session anyway. **Granted as a
+flush, not a training day** — he is ~5 days past the Sep 11 injection, well outside the flare
+window, and a light upper-back session the day before 14 h in a seat is net positive.
+
+| Movement | Load | Why |
+|---|---|---|
+| **Lat Pulldown** | 165 ×12, 3 sets | Missed yesterday. Seated, no axial load. |
+| **Rear Delt Reverse Fly (Machine)** | 100 ×15, 3 sets | Missed yesterday. Best single thing for a plane seat; protective for the torn anterior tendons. |
+| **Face Pull** | 35 ×15, 2–3 sets | Cheap posterior-shoulder volume. |
+| **Dead Bug + Bird Dog** | BW ×10/side each | The two core patterns W6 dropped with D3/D4. Spine-neutral, good pre-flight. |
+| *(optional)* Concentration Curl | 40 ×10–12, 2 sets | Only if the biceps really didn't get done Monday. |
+
+**Hard nos, stated on the line:** no squat, no deadlift, **no hinge of any kind** — zero axial
+load the day before the flight; **no overhead pressing** (cut from all of W6, bursitis); nothing
+heavy on bench or dip (both trained Mon/Tue). **The point is to arrive at the plane loose, not
+stimulated.** If anything feels like work, stop — this session has no stimulus job at all.
+
+> **B5 ended here.** Per CLAUDE.md the block gets **exactly one review before B6 is designed**
+> (`reviewing-block`, grounded in the Hevy log via `block_report.py`). B6 starts ~Sep 21–22 — he
+> lands Mon Sep 21, so W1-D1 can't be that morning. **Not started unprompted:** he is packing.
+
+---
+
+## ✅ 2026-09-15 — three optional accessories offered for W6-D2 (last session before Korea)
+
+Same ask as yesterday. **Offered, not prescribed — not pushed to Hevy.** Loads anchored on the
+current log, not the block's written numbers (`loads-from-logs`):
+
+| Movement | Load | Log anchor | Why |
+|---|---|---|---|
+| **Chest Supported Incline Row** | **45–50/hand ×12, 3 sets** | 55×10 ×3 for 3 straight sessions | **Mid-back — the last uncovered group.** Chest-supported = zero lumbar load, which is exactly why it replaced Meadows Row on pull day. |
+| **Rear Delt Reverse Fly (Machine)** | **100 ×15, 3 sets** | 115/110/110 ×12 (09-10) | Posterior cuff. Per the MRI read this is **load-bearing, not filler** — cuff intact behind two torn anterior tendons, so it shares load off them. Also the best thing he can do for 14 h in a plane seat. |
+| ~~Concentration Curl~~ → **Lat Pulldown** | **165 ×12, 3 sets** *(cable version: 170)* | Natural Grip 170×10 ×3 (09-10); Cable 190×8 ×3 (09-03) | **Swapped 09-15** — athlete thinks he ran the curl Monday but didn't log it. Lats got only Monday's pull-up this week (D3 dropped), then a week off. Seated and supported, no axial load. |
+
+> **The swap's own lesson: an unlogged set is invisible to every rule in this repo.**
+> `loads-from-logs`, `sheet-load-sync` and `reconcile_loads` all read the Hevy log and nothing
+> else, so unlogged work doesn't just lose a row — it silently drags the next anchor. Same class as
+> the Seated Calf Raise anchor error found 09-14, from the other direction. Not worth nagging over
+> a curl; worth stating once because it's the mechanism the whole system runs on.
+
+**What changed since yesterday, and it's the whole reason the menu is bigger:**
+**`accessory-day-interference` is inert today.** D3 and D4 are dropped and Korea is zero training,
+so **nothing follows this session** — for the first time all block there is no next day to protect.
+Mid-back was the #1 pick yesterday on merit and got cut purely because rows pre-fatigue the sumo;
+today the sumo happens first in the same session and nothing comes after. That unlocks it.
+
+**Uncovered-group ledger for W6:** calves ✅ (done 09-14, 90×12 ×3), mid-back + biceps ✅ if these
+run. **Erectors stay deliberately uncovered** — ~88 h post-injection, Back Extension cut for the
+week, and sumo already loads them.
+
+**Named fallbacks** (`equipment-fallbacks`): Rear Delt machine busy → **Rear Delt Reverse Fly
+(Dumbbell) at 25 ×15** (ran 28 on 09-03). **FORBIDDEN fallback: no barbell bent-over row** for the
+chest-supported row — that reinstates exactly the lumbar load the movement exists to avoid, three
+days post-injection and two days before a long-haul flight.
+
+**Sumo stays 225.** Yesterday's creep already cost the squat's back-check comparability; this is
+the last axial session before the flight and the only clean sumo read left in the block.
+
+---
+
+## 🔴 2026-09-15 — W6-D1 actuals: the squat ran 245 after he confirmed 225 in writing
+
+Synced overnight. **Fifth written number run hot this block, and the first one he had explicitly
+agreed to in the same conversation.**
+
+| Written | Actual | |
+|---|---|---|
+| Squat **225**×5 ×3 @6 | **225×5, then 245×5, 245×5** | ⚠️ +20 lb on sets 2–3 |
+| Bench 200×4 ×3 | **205×4 ×3 @6** | ⚠️ +5 lb (trivial, but over) |
+| Pull-up BW+55×4 ×3 | BW+55×4 ×3 | ✅ exact |
+| Face Pull 35×15 ×3 · Side Plank ×3 | as written | ✅ |
+| *(optional)* Seated Calf Raise | **90×12 ×3 @6** | ✅ took the recommendation at the given load |
+| *(optional)* Concentration Curl | not done | — asked "why bicep?", declined. Fine. |
+
+**The load is not the problem and saying otherwise would be dishonest.** 245×5 four days after a
+365×3 @6 is physically nothing; the back risk is ~zero. Three things are the problem:
+
+1. **It broke the instrument.** Comparability *was the entire argument* for 225 — it's what W1–W3
+   ran, so today's check would have joined three weeks of data. At 245 it doesn't. He has now
+   confounded the one reading that decides B6's opening squat, on the session whose only real job
+   was producing it.
+2. **A ceiling that doesn't hold at 225 on a deload will not hold at 405.** The whole
+   injury-management scheme is built on written numbers holding, and this is the cheapest possible
+   week to hold one. Five for five the wrong way on the axial lift.
+3. **He agreed to it first.** *"kk. i will keep 225 lbs x 5 x 3"*, then ran 245 the same morning.
+   `clinical-override`'s corollary said he follows a number on a page and can't generate one in the
+   moment — **this extends it: an agreement is not a page.** Verbal assent predicts nothing; only
+   the written prescription does, and apparently not always that.
+
+**The precise shape, which is worth keeping because it's narrower than "non-compliant":** he ran
+pull-up, face pull, side plank and the optional calf raise **exactly** as written, including a load
+I gave him in chat an hour earlier. **It is specifically the axial/primary number that creeps** —
+never the accessories. That's a targeted problem with a targeted fix, not a discipline lecture.
+
+**B6 consequence — not re-litigated, deliberately.** I already ruled that the 365 @6 under cap
+earns 365, and reversing that over a 20 lb deload creep would be disproportionate and would teach
+that compliance never pays. **The gate stays the back checks — now three owed (Sep 8, Sep 12,
+Sep 15).** What changes is *how* B6 is written: a bare number on a page is demonstrably not enough
+on this lift, so B6's squat needs the ladder's rungs tied to something that costs him when skipped.
+Decide the mechanism when B6 is designed.
+
+**Today (W6-D2, Tue Sep 15): sumo 225×3 ×3, dip BW+50×6 ×3. Hold 225.** It is ~88 h post-injection
+and outside the flare window — the honest read on the canary lift, and the last axial session
+before the flight. Creeping this one costs the sumo signal the same way yesterday cost the squat's.
+
+---
+
+## ✅ 2026-09-14 — two optional accessories offered for W6-D1 (finished early)
+
+Athlete confirmed 225×5 ×3 and asked for 1–2 accessories in case D1 runs short. W6-D1 is only
+3 primaries + Face Pull + Side Plank, so it will. **Offered, not prescribed — not pushed to Hevy**
+(a deload week's instruction is *do not add*; these are permission, not a target):
+
+| Movement | Load | Why it's the safe pick |
+|---|---|---|
+| **Seated Calf Raise** | **90 ×12–15, 2–3 sets** | Calves are on W6's deliberately-uncovered list. **Seated** = zero spinal compression, and sumo tomorrow doesn't touch calves. |
+| **Concentration Curl** | **40 ×10–12, 2 sets** | Direct biceps, also on the uncovered list. Elbow-only; nothing on D2 needs it. |
+
+**Ruled out and why** — D1→D2 is back-to-back into sumo + dip, so `accessory-day-interference`
+kills most of the menu: no rows or lat work (upper back holds tomorrow's pull), no chest/triceps
+(dip tomorrow), no hamstring/glute work (sumo + leg curl tomorrow), **no overhead** (cut from all
+of W6), and **no erector work at all** — Back Extension is cut for the week and Monday is ~64 h
+post-injection.
+
+**If both are logged, Saturday's review should read them as an authorized add, not drift.**
+
+---
+
+## ⚠️ 2026-09-14 — Seated Calf Raise was written 70–85 lb over what he actually lifts
+
+Caught while pricing the accessory above. The block prescribes **155 → 175** citing a "log median
+175 over 4 sessions." **That anchor is 2023 data on a different machine.** Every session since
+has run far lighter:
+
+| Date | Session | Actual |
+|---|---|---|
+| 2026-08-17 | W2-D1 | 50 / 90 / 90 / 90 ×10 |
+| 2026-08-21 | W2-D4 | 90 ×15 ×3 |
+| 2026-08-28 | W3-D4 | 140 ×8, then **100 ×15 ×2** |
+| 2026-09-04 | W4-D4 | 90 ×15 ×3 |
+
+**Current working load is 90–100, not 175.** He ran it four times in B5 against a written number
+nearly double, and neither the weekly sync nor any review flagged it.
+
+**This is `exercise-name-mapping` inverted — the failure mode the repo has only ever seen
+*under*-prescribing.** Every prior catch (Reverse Pec Deck, Incline DB Press, Hip Thrust, Back
+Extension) put too *little* weight in front of him because a name resolved to an empty template.
+This one resolved to a **real history that's three years stale on different equipment**, and
+over-prescribed. "No log history is a mapping bug" now has a sibling: **a log anchor with a
+three-year gap in it is a different movement until proven otherwise — check the recency of the
+sessions the median is built from, not just the count.**
+
+**Not corrected in the block JSON here** — D4 is dropped this week so nothing trains off it, and
+rewriting a prescription belongs in `amending-live-block`. **Fix the anchor when B6 is designed**,
+and prescribe ~90–100 there.
+
+---
+
+## ✅ 2026-09-14 — deload load queried and HELD at 225
+
+Athlete asked, the morning of W6-D1: *"if my max is 500lbs squats what should i do for deload..?
+currently it is 225lbs too light."* **Answer: 225 stands.** No change to the block.
+
+**The premise is the error, not the number.** 500 is not the right denominator:
+`data/maxes.md` says 501.5 and is stamped **2026-06-03** — a Block-2-era figure. The honest
+current reference is the B4 e1RM ~511 (465×3 @7.5, 2026-07-27), and he has not had a bar above
+**365** on his back since July. **A deload anchors on what you've been training, not on a stale
+1RM.** Against last week's 365 top, 225 is **62%** — squarely in band. Against a number he hasn't
+touched in seven weeks it reads like 45%, which is the whole illusion.
+
+**Three reasons it holds this week specifically, none of them the percentage:**
+1. **W6 is not a taper into a training week.** He flies Thursday; Korea is zero training. The trip
+   dissipates the fatigue. W6's job is to keep the pattern and put a *known* load through the back
+   — not to train.
+2. **225 is the comparability load.** It's exactly what ran W1–W3. Repeating it makes Tuesday's
+   back check directly comparable to three prior weeks. At 315 the check is confounded by a new
+   load **and** by the flare window — Mon Sep 14 is **~64 h after Friday's injection**, inside 24–72 h.
+3. **A 14-hour flight after a loaded lumbar spine.** Thursday is long-haul with a back under
+   treatment. Arriving at it freshly loaded is a bad trade for one heavier Monday.
+
+**And the part that decides it: he is not eligible to progress today.** Standing order is *no
+check, no progression* — **Sep 8 and Sep 12 are both still unlogged**, and Sep 8 (the morning
+after the 365) is the single highest-value row in the block. Plus the W5-D1 backoff overage below.
+
+**What he gets instead of load: intent.** Move 225 fast — treat it as speed work, own the
+position. And the actual lever is the two back checks: send both words and B6 opens at 365 with
+405 live in W2–W3. That trade was stated to him.
+
+---
+
+## ⚠️ 2026-09-14 — W5-D1 backoffs ran 315×3 ×3 against a written 275×3 ×2
+
+Found on the Hevy log while answering the deload question; **the Sep 12 weekly review missed it**
+(it reported the top set only). The 365×3 top came in **@6, under the @≤7 cap** — that part is
+genuinely good, and it's the number he was promised would open B6. But underneath it:
+
+| | Written | Actual |
+|---|---|---|
+| W5-D1 squat top | 365×3 @≤7 | **365×3 @6** ✅ |
+| W5-D1 squat backoffs | **275×3 ×2 @6** | **315×3 ×3** ⚠️ (+40 lb, +1 set) |
+
+That is the **fourth** written ceiling run hot this block (sumo 295 vs 275 · WPU @8.5 vs an @8
+hard stop · bench 275×2 @8.5 vs an @8 cap · now this). It is also the direct trigger for the
+standing open item below — *if W5 comes back over any written number again, the axial ladder stops
+and B6 opens at 275, not 365.* **Not executed unilaterally.** The 365 came in under cap and the
+backoff overage is the least severe of the four, so the call goes with the Sep 8 check when it
+lands: **`fine` → B6 opens at 365 as promised; no check, or `tight` → 275.** He was told this.
 
 ---
 
@@ -667,6 +971,10 @@ underlying back being worse. The clean weeks are what separate the two.)
       answered.** Graded increase cleared, *"start with a 25% weight increase and see how it
       goes."* Taken as **275 in W4** (athlete's call; 315 asked for and declined). See the clearance
       section at the top.
+- [ ] 🔴 **A fourth written number ran hot — W5-D1 backoffs, 315×3 ×3 vs a written 275×3 ×2.**
+      Found 2026-09-14; see the section above. The ladder is **not** stopped on it, because the
+      365 top came in @6 under cap and this is the mildest of the four. **B6's opening squat now
+      turns entirely on the Sep 8 check**: `fine` → 365, no check or `tight` → 275.
 - [ ] 🔴 **Two caps run hot in W4 — settled 2026-09-05, but watch it.** Sumo 295 vs a written 275;
       WPU @8.5 vs an @8 hard stop. **The third flag is partly retracted:** the barbell-OHP-for-DB-press
       swap was probably *forced* (he ran the prescribed DB press at the prescribed 70 in two of four
@@ -703,10 +1011,11 @@ underlying back being worse. The clean weeks are what separate the two.)
       (`python -m scripts.review.back_checks` shows what's owed). **First one ever logged
       2026-08-29: "tight"**. **Sep 1 and Sep 5 now logged (2026-09-05), both `tight`** — athlete
       said "fine-tight in the middle" both times; recorded as `tight` because an ambiguous read
-      rounds down. Pain-free and not escalating. **FOUR now owed, as of 2026-09-16 — Sep 7
-      (the 365 squat), Sep 11 (sumo), Sep 14 (squat), Sep 15 (sumo).** The Sep 7 row is the
-      highest-value one in the block: that one check decides B6's opening
-      load and whether 405 is a W2 rep. The doctor cleared you
+      rounds down. Pain-free and not escalating. **Sep 15 logged `fine` (2026-09-16) — the first
+      non-tight reading ever**; record reads tight · tight · tight · fine. **Sep 8, Sep 12 and
+      Sep 14 are unrecoverable**, including the Sep 7/8 row after the 365 squat that was named as
+      B6's gate — that one is permanently gone, so **B6's opening rung gets set in the design off
+      the block review, not promised now.** The doctor cleared you
       to increase *and see how it goes*; the check is how it goes. It's also what you hand him on
       Sep 11 and what answers your own "is it the injection?" question. **Sore two axial days in a
       row → axial work stops.**
