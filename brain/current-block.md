@@ -45,6 +45,69 @@ one he was told 405 was waiting on. Worth carrying into how B6's squat ladder is
 today is the last chance before a week of nothing. The Sep 15 one (after this sumo) is the
 highest-value row in the block.
 
+## 🟢 2026-09-16 — FIRST `fine` back check ever logged (Sep 15 sumo)
+
+Athlete: *"back was not tight this morning."* **Recorded `fine`** against the Sep 15 sumo session
+(`back_checks add 2026-09-15 fine`). Record now reads **tight · tight · tight · fine**.
+
+**Why `fine` and not a conservative round-down.** Sep 1 and Sep 5 were *"fine-tight in the middle"*
+— genuinely between two words, so they rounded down. **"Not tight" is an explicit negation of the
+word he'd used for three straight checks**, which is an affirmative improvement claim, not an
+ambiguous one. Rounding that down would be miscoding the data in the other direction. **And the
+habit matters more than the precision here** — four checks were owed because he dislikes doing
+them; rejecting the one he finally volunteered on a phrasing technicality is how the instrument
+dies. Took it, told him what was recorded, invited a correction.
+
+**What it buys, stated honestly — less than the gate I named.** It's the cleanest axial read of the
+block (~88 h post-injection, outside the flare window, sumo 225 = the W1–W3 comparable) and the
+first non-tight reading in the entire record. **But the gate I set was the Sep 8 check after the
+365 squat, and that one is permanently gone.** This says his back tolerates *225 sumo* well; it
+says nothing about how it answered a 365 squat.
+
+**B6 consequence:** 365 stays live and the trend supports it, but the opening rung gets set in the
+B6 design off the block review, not promised here. The ramp is the exposure —
+`axial-return-ladder` governs, and **405 needs checks logged *during* B6**, not a retro-fit.
+
+**Still missing: 8 of 12.** Sep 8, Sep 12 and Sep 14 are unrecoverable. Injection-vs-clean
+comparison is 1 post-injection / 3 clean — still not callable, needs 2 more post-injection.
+
+---
+
+## 🔴 2026-09-16 — chest work / incline · decline asked for. Incline declined, with the mechanism.
+
+Athlete: *"I need to add some chest workout — thinking maybe incline/decline bench press."*
+
+**He is not missing incline. He ran Incline DB Press 65/hand ×10 ×3 on 2026-09-01** — 68 logged
+sessions, and that one was *off-plan*, in the W4 week already flagged for carrying six pressing
+movements on a torn shoulder. The gap is perceived, not real.
+
+**Incline is the wrong pick for this specific shoulder, and the MRI names why.** More shoulder
+flexion = more subacromial compression, and the **bursitis + AC degeneration both sit in the
+subacromial space**. Incline is the bench variant closest to overhead pressing — the pattern cut
+from all of W6 as the most provocative one he owns. Also: **his own movement library already says
+"Incline is dumbbell-only now"**, and barbell incline is 2.5 years stale (last 2024-03-19).
+
+**Decline is the opposite — genuinely the safest bench angle for him** (least shoulder flexion) —
+**and close to pointless for his goals.** Near-zero carryover to comp bench, and he dropped it
+himself (library: *"Out since 2024"*; last logged 2024-11-24 at 185×8).
+
+**The deeper answer: there is no chest gap.** He runs comp bench + Spoto + CGB + weighted dip =
+**four pressing exposures a week**. His bench weak points are the **lockout** (which is what CGB
+exists for) and **losing arch under fatigue** — neither is a chest-capacity problem. The limiter on
+bench is the shoulder, and this repo already declined "strive more upstairs" on exactly that
+ground (2026-08-07): recovery is not one pool, and more pressing loads the *tears*.
+
+**What was offered instead, pending his answer on the goal:** if the want is **chest size**, a
+**Chest Fly (Machine)** — 32 logged sessions, last 115×11 — self-selected arc, no barbell fixing
+the shoulder path, and a **fly not a press**, so it doesn't add a fifth pressing exposure. **As a
+swap into B6, not an add.** If the want is **bench**, the answer is the lockout and the arch, and
+it's already in the program.
+
+**Asked him which it is** — the two goals have different answers and he didn't say. Nothing for
+today either way: bench Monday, dip Tuesday, flight tomorrow.
+
+---
+
 ### 2026-09-16 — optional 30–45 min noon session (athlete's ask), day before the flight
 
 W6-D3 was dropped as "nothing to train". He asked for a short noon session anyway. **Granted as a
