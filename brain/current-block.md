@@ -13,9 +13,69 @@ secondary + accessory / 0:30 core**. See *Rest times* below.
 **Extended to 6 weeks 2026-09-05** (athlete's ask, granted): **W5 becomes a peak week**, **W6
 becomes the deload** and absorbs the Korea trip. Pushed W5-D1 → W6-D3 the same day.
 **Compressed 2026-09-11**: W6 runs two days only — D1 squat/bench/pull-up, D2 sumo/dip.
+**W6-D3 added back 2026-09-16** (athlete's ask, on the gym floor): a 45-minute non-axial
+session — incline DB press + upper back. See the section below.
 **Theme**: Bench, pull-up and dip push the full plan. Squat and sumo ran at 225 through W3,
 then 275 in W4, the deliberate 365 squat peak in W5, and a 225 squat deload in W6.
 Loaded hinges stay cut.
+
+---
+
+## ✅ 2026-09-16 — W6-D3 put back as a 45-minute non-axial session (athlete's ask)
+
+**There was no W6-D3 to suggest.** It was dropped on 2026-09-11 — his call, my agreement — and
+the routine in the app literally reads *"W6-D3 — DROPPED"*. He asked on the gym floor Wed Sep 16
+for a **45-minute session including incline bench press**. Granted, and written down rather than
+left to feel, because that is the documented failure mode (`clinical-override` corollary).
+
+| Exercise | Load | Sets × reps | RPE | Rest |
+|---|---|---|---|---|
+| **Incline DB Press** | **60/hand** | 3 × 8 | **@7 hard cap** | 1:00 |
+| Reverse Pec Deck | 100 | 3 × 15 | @7 | 1:00 |
+| Tricep Pushdown *(→ Triceps Extension (Cable))* | 50 | 3 × 12 | @7 | 1:00 |
+| Concentration Curl | 40 | 3 × 10 | @7 | 1:00 |
+| Dead Bug *(core)* | BW | 3 × 10/side | — | 0:30 |
+
+**Nothing axial, and that is not negotiable.** Squat Monday, sumo Tuesday, a ~14 h flight
+Thursday. No squat, no hinge, no loaded carry, no standing calf raise.
+
+**The cost, stated:** this is the **third pressing day in three days** (bench Mon, dip Tue,
+incline today) on a shoulder with two low-grade partial-thickness tears and subacromial
+bursitis, and **incline sits the shoulder in more flexion than flat bench** — closer to the
+bursitis arc. That is why every load is a ceiling, the Reverse Pec Deck is load-bearing rather
+than filler, and the shoulder warm-up is in the routine note, not assumed.
+
+**Dumbbells, not the barbell.** 68 logged DB incline sessions, flat at **65×10** since July
+(7/31, 8/7, 9/1) — against 14 barbell sessions last touched **March 2024**, a stale anchor under
+`secondary-first-exposure`. Dumbbells also let the shoulder pick its own path. 60 is one notch
+under his flat 65 because it is still the deload week. **Incline is a legal bench secondary**
+(rule `Bench secondary`) — worth remembering when B6 picks its bench secondary.
+
+**What it covers:** direct biceps was the one group W6 genuinely left uncovered. The other
+three named holes closed themselves — he added **Seated Calf Raise** on Mon (90×12) and
+**Chest Supported Incline Row** on Tue (48×12), and the sumo covered the erectors. Dead Bug is
+the anti-extension pattern, the one `core-every-day` slot he hadn't run this week.
+
+**Every entry is pinned `hold`** — an added deload session is exactly what the Saturday sync
+would rebase back to log level.
+
+**In the app:** pushed with `--update --start W6-D3`, PUTting over the DROPPED placeholder via
+the new `replaces_title` key, so no duplicate is stranded (`push-is-idempotent-with-update`).
+`push_block` now takes an optional per-prescription `focus` — the `days` list is block-wide, so
+retitling one session through it would have renamed D3 in **every** week.
+
+### ⚠️ Three written numbers ran over again on Mon/Tue
+
+| Written | Actual | |
+|---|---|---|
+| Squat **225**×5 ×3 | 225 then **245×5 ×2** | +20 on a deload |
+| Comp Bench **200**×4 ×3 | **205**×4 ×3 | +5 |
+| Dip BW+**50**×6 ×3 | BW+**55**, then 50 ×2 | +5 on the first set |
+
+Sumo ran 225 exactly ✅. The magnitudes are small and it is a deload week, so nothing changes
+today — but this is the **third block-file entry in a row** recording the same pattern, and it
+is the pattern the whole axial scheme depends on not existing. **It goes into the B6 opening-load
+call**, alongside the open item from 2026-09-05.
 
 ---
 
@@ -643,8 +703,9 @@ underlying back being worse. The clean weeks are what separate the two.)
       (`python -m scripts.review.back_checks` shows what's owed). **First one ever logged
       2026-08-29: "tight"**. **Sep 1 and Sep 5 now logged (2026-09-05), both `tight`** — athlete
       said "fine-tight in the middle" both times; recorded as `tight` because an ambiguous read
-      rounds down. Pain-free and not escalating. **Still owed and now the highest-value row in the
-      block: Tue Sep 8 — the morning after the 365 squat.** That one check decides B6's opening
+      rounds down. Pain-free and not escalating. **FOUR now owed, as of 2026-09-16 — Sep 7
+      (the 365 squat), Sep 11 (sumo), Sep 14 (squat), Sep 15 (sumo).** The Sep 7 row is the
+      highest-value one in the block: that one check decides B6's opening
       load and whether 405 is a W2 rep. The doctor cleared you
       to increase *and see how it goes*; the check is how it goes. It's also what you hand him on
       Sep 11 and what answers your own "is it the injection?" question. **Sore two axial days in a

@@ -548,3 +548,42 @@ occurrence. Fixed the row union and added explicit W5 PEAK / W6 DELOAD phase met
 Live verification: Hevy W5-D1 already had 365×3 and both 275×3 backoffs with 75-second
 rest timers, so no routine write was needed. Re-rendered the existing Google Sheet and
 read back the 2×3 @275 row and W5 PEAK / W6 DELOAD headers successfully. All 28 tests pass.
+
+## 2026-09-16 — a dropped day came back, and the app had no slot to put it in
+He asked on the gym floor, Wed of the travel week, for **45 minutes including incline bench
+press**. W6-D3 had been dropped five days earlier and the Hevy routine retitled *"W6-D3 —
+DROPPED"*, so the honest first sentence was **"there was no D3 to suggest — you're adding one"**,
+not a silent yes. Granted: it's a deload week, the ask was modest, and a written session beats
+whatever he'd have improvised (`clinical-override` corollary, which is now the most reliably
+predictive line in this repo).
+
+**What the log changed about the answer — again.** The plan said W6 deliberately left calves,
+mid-back, biceps and erectors uncovered, so my first draft filled all four. The log said he had
+**already** run Seated Calf Raise Monday and Chest Supported Incline Row Tuesday, neither of them
+prescribed. Two of five exercises deleted before they were written. **A block note about what a
+week doesn't cover goes stale the moment he trains the week — check the log, not the plan, for
+coverage.**
+
+**"Incline bench press" is a DB lift for him**: 68 sessions, flat at 65×10 since July, vs 14
+barbell sessions last touched **March 2024**. Prescribing the barbell would have been
+`secondary-first-exposure`'s stale anchor with a torn shoulder on top, off the literal wording of
+the ask. **Resolve the ask against the log before taking its implement literally.**
+
+**The push had no way to express this.** `push_block` built titles from the block-wide `days`
+list, so retitling one session meant renaming D3 in **every** week and stranding five routines —
+and the DROPPED placeholder could never be matched, so a plain push would have left it sitting
+next to the real session. Added a per-prescription **`focus`** (title override) and
+**`replaces_title`** (match a routine that was renamed in the app, PUT the new title over its id).
+Hevy still has no DELETE, so **reclaiming an orphaned routine is the only cleanup available** —
+worth reaching for before accepting a duplicate.
+
+**Mon/Tue ran over three written numbers again** — squat 245 against 225, bench 205 against 200,
+first dip set +55 against +50; sumo exact. Tiny on a deload, and it did not change today's
+session. But it is the third consecutive block entry recording it, four days after the W5 breach
+was priced into the numbers, and B6's opening load is the place it has to land. **Say it once,
+in one table, and move on — he was standing in the gym.**
+
+**Back checks are now four deep** (Sep 7, 11, 14, 15) including the 365-squat morning that the
+block calls its highest-value row. The instrument keeps losing to the fact that nobody is in front
+of him at 7am. Worth trying: ask for all four in one line at the *end* of a session he's happy
+with, rather than as a standing order he reads on Saturday.
