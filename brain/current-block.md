@@ -19,6 +19,57 @@ Loaded hinges stay cut.
 
 ---
 
+## ✅ 2026-09-16 — W6-D2 actuals: sumo HELD at 225. **B5 is complete.**
+
+| Written | Actual | |
+|---|---|---|
+| **Sumo 225×3 ×3 @6** | **225×3 ×3 @6** | ✅ **exact — the ceiling held on the canary lift** |
+| Dip BW+50×6 ×3 | BW+**55**×6, 50×6, 50×6 @6 | 🟡 +5 on set 1, corrected himself |
+| Seated Leg Curl 95×12 ×3 | 95×12 ×3 @6 | ✅ exact |
+| Lateral Raise 25×15 ×3 | **28**×15 ×3 | 🟡 +3 (still far under his 40 log median, which is the point of that one) |
+| Pallof 20×12 ×3 | 20×12 ×3 @6 | ✅ exact |
+| *(optional)* CS Incline Row | **48×12 ×3** | ✅ took it, inside the 45–50 band given |
+| *(optional)* Rear Delt Fly · Lat Pulldown | not done | — 1 of 3 taken. Fine; they were optional. |
+
+**This is the result that matters, and it should be said to him plainly: the day after the squat
+crept to 245, the sumo held exactly.** The canary lift, ~88 h post-injection and outside the flare
+window, at the same 225 it ran in W1–W3 — which makes **today's back check the one genuinely clean,
+comparable axial reading in the entire back half of this block.** Monday's is confounded; this one
+isn't.
+
+**It also narrows the creep diagnosis further.** The pattern isn't "axial primaries creep" — sumo
+is axial and held. It's **squat specifically**, which is the lift he has the most ego in and the
+one he was told 405 was waiting on. Worth carrying into how B6's squat ladder is written.
+
+**Back checks now owed: Sep 8, Sep 12, Sep 14, Sep 15 — four.** He flies **Thursday Sep 17**, so
+today is the last chance before a week of nothing. The Sep 15 one (after this sumo) is the
+highest-value row in the block.
+
+### 2026-09-16 — optional 30–45 min noon session (athlete's ask), day before the flight
+
+W6-D3 was dropped as "nothing to train". He asked for a short noon session anyway. **Granted as a
+flush, not a training day** — he is ~5 days past the Sep 11 injection, well outside the flare
+window, and a light upper-back session the day before 14 h in a seat is net positive.
+
+| Movement | Load | Why |
+|---|---|---|
+| **Lat Pulldown** | 165 ×12, 3 sets | Missed yesterday. Seated, no axial load. |
+| **Rear Delt Reverse Fly (Machine)** | 100 ×15, 3 sets | Missed yesterday. Best single thing for a plane seat; protective for the torn anterior tendons. |
+| **Face Pull** | 35 ×15, 2–3 sets | Cheap posterior-shoulder volume. |
+| **Dead Bug + Bird Dog** | BW ×10/side each | The two core patterns W6 dropped with D3/D4. Spine-neutral, good pre-flight. |
+| *(optional)* Concentration Curl | 40 ×10–12, 2 sets | Only if the biceps really didn't get done Monday. |
+
+**Hard nos, stated on the line:** no squat, no deadlift, **no hinge of any kind** — zero axial
+load the day before the flight; **no overhead pressing** (cut from all of W6, bursitis); nothing
+heavy on bench or dip (both trained Mon/Tue). **The point is to arrive at the plane loose, not
+stimulated.** If anything feels like work, stop — this session has no stimulus job at all.
+
+> **B5 ended here.** Per CLAUDE.md the block gets **exactly one review before B6 is designed**
+> (`reviewing-block`, grounded in the Hevy log via `block_report.py`). B6 starts ~Sep 21–22 — he
+> lands Mon Sep 21, so W1-D1 can't be that morning. **Not started unprompted:** he is packing.
+
+---
+
 ## ✅ 2026-09-15 — three optional accessories offered for W6-D2 (last session before Korea)
 
 Same ask as yesterday. **Offered, not prescribed — not pushed to Hevy.** Loads anchored on the
