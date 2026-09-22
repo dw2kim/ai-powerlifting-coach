@@ -726,3 +726,37 @@ exposure, and a triceps movement behind an incline press is a fifth press-patter
    the JSON, pinned `hold`, and goes to Hevy over the DROPPED placeholder. If both had been pushed
    he'd have had two contradictory routines at the gym. **Whoever writes to the app owns the
    answer** — which is why the app, not the chat log, is the thing to reconcile against.
+
+## Block 5 retrospective (2026-Q3-B05, completed 2026-09-18) — see `reviews/2026-Q3-B05.md`
+
+**Verdict:** the strive half delivered (comp bench 293 e1RM, +26.6, closing B4's named under-reach;
+pull-up 297; dip 313.5; 23/23 sessions, best adherence on record). The protect half held where it
+was watched and leaked where it wasn't.
+
+**The durable finding, and it's a new class:** **every check in this repo reads loads for exercises
+the plan already names. Nothing reads the set of exercises in a session and asks whether they belong
+there.** `reconcile_loads` sweeps prescribed movements, `block_report` tracks the Big 5, the weekly
+review compares planned days to logged days — **a substitution is invisible to all of them.** Five
+off-plan movements ran across B5 and not one was flagged: barbell OHP twice in place of a capped DB
+Shoulder Press, **barbell upright row 90×8 ×3 on a shoulder with subacromial bursitis and AC
+degeneration**, Inverted Row twice on D1 (a day structurally barred from back work), T Bar Row, and
+a barbell incline on W6-D3 against a prescription that said dumbbells-only in bold. Found five weeks
+late, by reading the raw log during the block review. Fix is an off-plan movement check in the
+weekly review; it should have existed before the upright row ran.
+
+**Correction to a claim this repo made on 2026-09-15/16:** "it is specifically the axial/primary
+number that creeps — never the accessories" is **wrong**, and it was written from two days of data.
+Over the full block the worst RPE breaches are all on accessories — DB Shoulder Press to **@10**
+against a hard @7 cap, Seated Calf Raise @9.5 twice, CS Incline Row @9.5. The real shape is **load
+creeps on the primaries; RPE runs away on the accessories** — two failure modes, and only the first
+was ever being watched. Generalizing a behavioral pattern from one week of one lift is how that
+happened.
+
+**A pin protects the plan from the sync, not from the gym.** CGB was pinned `hold` so the Saturday
+sync couldn't rebase it up from its 165→185 ramp. It ran **185 flat for all five sessions** anyway,
+including the W5 deload written at 135. The pin worked perfectly and changed nothing.
+
+**What the correction loop proves, though:** W4's pull-up ran BW+90×3 @8.5 against an @8 hard stop;
+the amendment said *repeat the load, fix the RPE, no 95*; W5 came back **BW+90×3 @8 exactly.** A
+specific, recent, self-explaining correction lands with this athlete. A number written five weeks
+ago in a block file does not. That asymmetry is the thing to design B6's axial ladder around.
