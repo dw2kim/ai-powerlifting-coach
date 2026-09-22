@@ -21,6 +21,43 @@ Loaded hinges stay cut.
 
 ---
 
+## 🔴 2026-09-22 — the Sep 11 visit finally got reported, and it came with a prescription
+
+**B5 is closed and reviewed** (`reviews/2026-Q3-B05.md`). This entry is here because it changes what
+B6 can be, and B6 isn't written yet.
+
+Athlete, 2026-09-22: *"All good. My doctor said I'm doing great, and he also gave me a prescription
+for pain and muscle relaxation. I'm taking that for, I think, 3 weeks."*
+
+**The assessment is good news and should be read as good news.** The prescription is a new
+restriction, and it was reported as a footnote to it.
+
+**What it means for training, in one line each:**
+- **Squat and sumo: capped by absolute load until the course finishes (~Oct 2) and one clean
+  unmedicated back check lands.** No ladder rungs, no PR attempts, no autoregulating up. Known
+  loads only. `masked-pain-load-cap`, extended 2026-09-22 to cover oral analgesia.
+- **Bench, pull-up and dip: nothing changes.** The prescription is for the back, there is still no
+  shoulder injection, and those three lifts are not gated on a back check. **Being on medication is
+  not a reason to train less upstairs.**
+- **Back checks: keep logging them, but every one inside the window is a `medicated` row** and is
+  not comparable to the four clean checks on file.
+- **Muscle relaxant + 6am barbell is its own problem**, separate from pain — drowsiness and
+  coordination, with a night dose still active in the morning. Another reason the axial ceiling
+  stays put for three weeks rather than climbing.
+
+**Consequence for B6, and it is the whole scheduling answer:** B6's entire job is the sumo return
+under `axial-return-ladder` — a wave whose every rung is gated on a back check. **That gate does not
+work while the signal is medicated.** Opening B6 now would spend its first two weeks writing rungs
+against readings we already know we can't trust. **So B6 starts when the course ends** — target
+**Mon 2026-10-05**, and the two weeks in between run as a written calibration block, not as a
+holding pattern. Recommended to the athlete 2026-09-22.
+
+**Five things still unconfirmed** — drug names, actual course dates, whether the Sep 11 injection
+was even given, whether there's a next appointment, and whether the doctor knows he is back under a
+loaded barbell. Full list in `active-issues.md` → *Visit 2026-09-11*.
+
+---
+
 ## ⚠️ 2026-09-16 — W6-D3: TWO sessions answered this, and they disagreed on incline
 
 **Read this before the two sections below it — they are both about today and they contradict

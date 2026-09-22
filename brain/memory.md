@@ -760,3 +760,29 @@ including the W5 deload written at 135. The pin worked perfectly and changed not
 the amendment said *repeat the load, fix the RPE, no 95*; W5 came back **BW+90×3 @8 exactly.** A
 specific, recent, self-explaining correction lands with this athlete. A number written five weeks
 ago in a block file does not. That asymmetry is the thing to design B6's axial ladder around.
+
+## 2026-09-22 — good news and a restriction arrive in the same sentence, and only the good news gets reported
+
+The Sep 11 clinic visit went unreported for **eleven days**, through a block review that named it as
+a blocker. When it finally came, it came as: *"All good. My doctor said I'm doing great, and he also
+gave me a prescription for pain and muscle relaxation."* The restriction is in the second clause,
+delivered as an afterthought to the first.
+
+**The pattern, and it is now three for three:** every genuinely good clinical update he has reported
+has had a constraint attached that he did not lead with. Aug 14 — "the series ends" (it stepped down
+and continued). Aug 28 — "pain much improved" (with a *graded* 25% clearance, which he read as
+clearance). Sep 11 — "doing great" (with three weeks of analgesia and a muscle relaxant). **His
+headline is always the prognosis; the instruction is always in the subordinate clause.** So: when he
+reports a good visit, ask what else was said, what was prescribed, and what the next appointment is
+— every time, as procedure, not as suspicion.
+
+**The rule extension it forced:** `masked-pain-load-cap` named injections, because injections were
+all we'd seen. The mechanism was never the needle — it is that a chemically muffled pain signal stops
+protecting the structure. **A three-week oral course masks continuously, where an injection masks for
+hours**, which makes it the *worse* case for a gate that reads "how does your back feel the morning
+after." Extended 2026-09-22. The general lesson: when a rule names an instrument rather than a
+mechanism, the first novel instrument walks straight past it.
+
+**And the scheduling consequence, which is the real cost:** B6's whole design is
+`axial-return-ladder` — rungs gated on back checks. You cannot open that block while the gate is
+medicated. A prescription nobody mentioned for eleven days moved a block start by a week.

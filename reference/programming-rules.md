@@ -214,6 +214,15 @@
   steroid dulls pain gradually over days. Established for the lower back / squat + sumo; **applies
   to the shoulder and bench the moment a shoulder injection starts** (still not given as of
   2026-08-07 — the athlete must report it so bench and dip get the same treatment).
+  **EXTENDED 2026-09-22 to systemic analgesia.** The mechanism is masked pain, not the needle: a
+  prescribed **oral analgesic and/or muscle relaxant** masks the same signal **continuously for the
+  whole course**, where an injection masks for hours. While such a course is active, the affected
+  region's lifts are capped by absolute load exactly as under an injection, back checks logged
+  inside the window are tagged **medicated** and are not comparable to unmedicated ones, and the cap
+  lifts on the course finishing **plus** a clean unmedicated check — never on "doing great".
+  **Muscle relaxants carry a second, non-pain problem**: drowsiness and reduced coordination under a
+  loaded bar, which is a reason to hold maximal axial attempts regardless of how the back feels.
+  [Sep 11 visit, reported 2026-09-22]
   **A clearance can be GRADED, and a graded clearance moves the cap rather than removing it**
   (added 2026-08-28 after *"start with a 25% weight increase and see how it goes"*). Convert it to
   one conservative **absolute-load step**, still not autoregulated while the region is masked.

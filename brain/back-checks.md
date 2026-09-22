@@ -56,6 +56,13 @@ Any one of these: cut squat and sumo entirely and get back to the clinic.
 - **Night pain or pain at rest**
 - Pain that **doesn't settle within 24 h**
 
+## ⚠️ Medicated window 2026-09-11 → ~2026-10-02
+
+A ~3-week course of analgesia + muscle relaxant started on or about **2026-09-11** (reported
+2026-09-22). Checks logged inside it read through medication — **tag the row `medicated`** and do
+not pool them with the four clean checks on file. `back_checks.py` splits post-injection from clean
+by injection date only; it does not know about this course.
+
 ## Checks
 
 _The check is the morning after the session date. Newest at the bottom._
