@@ -726,3 +726,43 @@ exposure, and a triceps movement behind an incline press is a fifth press-patter
    the JSON, pinned `hold`, and goes to Hevy over the DROPPED placeholder. If both had been pushed
    he'd have had two contradictory routines at the gym. **Whoever writes to the app owns the
    answer** — which is why the app, not the chat log, is the thing to reconcile against.
+
+## 2026-09-22 — the trip log was 100% Smith machine, and that is a data outage
+
+Back from Korea, asked for today's session on the way out the door. Pulled the log first: two
+sessions, Sep 19 and Sep 20, **every primary set on a Smith machine and not one RPE recorded.**
+Squat 275×8 ×3, bench 225×8 ×3, and a 4×8 Smith RDL — the loaded hinge class that B5 **cut** —
+two days before a 14-hour flight.
+
+**The instinct to read Smith numbers as progress is the trap.** Smith squat 275×8 looks like
+evidence he's past the 275 graded-return cap; it is evidence of nothing, because the bar path is
+fixed and no free-bar comparable exists. Treated the trip as a **data outage** rather than as
+data, and that is what justified the whole calibration week. Wrote `brain/calibration-week.md`.
+
+**He named the week before I did.** `current-block.md` had already said *"W1 is a re-entry week,
+write it that way"*; he independently asked for calibration. When the athlete and the standing
+plan arrive at the same structure separately, stop negotiating and go — he was standing in the
+doorway.
+
+**D1 written as squat 275 top / bench 245 / pull-up BW+55, no sumo, no hinge, no arms.**
+Two calls worth keeping:
+1. **No loaded hinge on the first day back.** 14 h compressed in a seat, preceded by 4×8 Smith
+   RDL. Sumo is the canary and deserves a fresh day with its own check — moved to Thursday.
+2. **`muscle-coverage-audit` ran against the log, not the plan** — the 2026-09-16 lesson held.
+   He did curls and triceps on *both* Korea days, so arms were deleted before they were written.
+   Sixty minutes went to the Big 5.
+
+**One night of good sleep is not recovery from a 13–16 h circadian shift.** He reported ~6.5 h
+and "slept quite well" as if it settled the question. Wrote the session with a stop rule — drop
+the 275, keep the 245 backoffs — instead of arguing the point. Same grant-and-contain shape that
+keeps working with him.
+
+**No `HEVY_API_KEY` in the session container**, so nothing reached the app and he trained off the
+chat message. Worth noting as a recurring failure mode: **the answer shipped, the artifact
+didn't.** Per the 2026-09-16 rule — *whoever writes to the app owns the answer* — this session
+does not own it. If a parallel session pushes something to Hevy for this week, that one wins and
+this file is the thing to reconcile against.
+
+**Thursday and Friday deliberately left unwritten**, at his request. They should not be written
+until D1's actuals are in Hevy — the week exists to produce exactly that data, and guessing D2
+off D1's *prescription* would reproduce the outage this week was called to fix.
