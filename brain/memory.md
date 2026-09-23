@@ -786,3 +786,27 @@ mechanism, the first novel instrument walks straight past it.
 **And the scheduling consequence, which is the real cost:** B6's whole design is
 `axial-return-ladder` — rungs gated on back checks. You cannot open that block while the gate is
 medicated. A prescription nobody mentioned for eleven days moved a block start by a week.
+
+
+## 2026-09-23 — a planning note outlived the evidence that produced it, and the athlete caught it
+
+I recommended B6 be **sumo-heavy** on the strength of one line written in the old block file on
+2026-08-29: *"Sumo's return is B6's whole job."* He asked me to justify it. **I couldn't, and
+reversed to squat-heavy.**
+
+**The mechanism, which is the durable part:** that note was written before the 365×3 @6 squat, before
+the baclofen/pregabalin course, and before the B5 review — and it assumed a Sep 8 back check that was
+never logged. Every input it rested on had changed or evaporated, but the sentence was still sitting
+in `current-block.md` reading like a decision. **A forward-looking note is an argument with a
+timestamp, not a conclusion.** When one is cited in a later decision, re-derive it against what is
+true now rather than treating it as settled — especially a note that says what the *next* block
+should do, since those are written at exactly the moment we know least about the next block.
+
+**The substance, for the record:** `sumo-back-cap` caps a heavy-sumo block at 405 (~81% of his sumo
+e1RM), so it cannot actually be a heavy block; sumo is the lift that provokes this back and the squat
+is not; and B5's only real axial data point is a squat. Squat-heavy was the better call on all three.
+
+**And the meta-point worth keeping: he challenged a recommendation and was right.** The right response
+to *"convince me"* is to re-run the argument, not to defend the position. This is the second
+self-correction in two days (the other: overstating the drug masking). Both were caught because he
+pushed back rather than complied — which is worth more than a coach who is never questioned.

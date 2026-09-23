@@ -66,6 +66,47 @@ changes the risk rather than just the reading. It comes back in B6 once the cour
 
 ---
 
+## 🏋️ 2026-09-23 — B6 is **SQUAT-heavy**, not sumo-heavy. Athlete challenged my call; he was right.
+
+I recommended sumo-heavy earlier today. **He asked me to justify it and the justification does not
+hold.** Recording the reversal and the reasoning, because the rule says every block states its axial
+emphasis and the *why* is the part that gets lost.
+
+**What I was leaning on:** the 2026-08-29 note in the old block file — *"Sumo's return is B6's whole
+job."* **That note predates the 365 squat, the medication, and the B5 review.** It was written when
+the assumption was that B6 would open off a clean Sep 8 back check — the one that was never logged
+and is now permanently gone. `alternating-axial-emphasis` itself says blocks alternate; **it does not
+say which lift goes first.**
+
+**Why squat is the right first emphasis:**
+
+1. **`sumo-back-cap` makes a sumo-heavy block structurally small.** The band is 345–405 with 405 a
+   hard ceiling — ~81% of his 501 sumo e1RM. A "heavy" block that cannot pass 405 is not a heavy
+   block. Squat has no equivalent ceiling once cleared, against a 511 e1RM.
+2. **Sumo is the lift that provokes this back; the squat is not.** The repo's own words: sumo
+   *"reproducibly fatigues your back"*, and *"a deadlift set costs more lumbar exposure per rep than
+   a squat set."* Making the provocative lift the emphasis in the first block back — with baclofen
+   running through W1 and the last check reading `tight` — is the wrong order of operations.
+3. **The squat is where the data is.** B5's one genuine axial signal is **365×3 @6** (09-07). Sumo
+   has 225 and 295 and nothing else. You build a ladder from the rung you are standing on.
+4. **405 squat is owed to him** — declined in W5 *only* because the checks read tight. It is a live,
+   earned target with a number attached. Sumo has no equivalent.
+
+**The one honest argument for sumo-first, stated rather than buried:** if the goal were a competition
+total, the weaker lift is the bigger gain. But sumo is not his weak lift — 501 vs 511 e1RM, they are
+historically level — it is merely *detrained*, and there is no meet scheduled. So
+`weak-point-priority` does not pick sumo either.
+
+**What sumo gets instead — and this is not neglect.** Under `sumo-skill-lift` the moderate lift keeps
+its day and its pattern at a fixed low band: crisp low reps, no wave, no PR intent, no autoregulating
+upward. That is the rule working as written, and it keeps the hinge from detraining while the squat
+takes the load.
+
+**So B6 states: current axial emphasis = SQUAT. Prior = none (B5 froze both under a medical cap).**
+B7 then runs heavy sumo, which is when `axial-return-ladder` walks it toward 385–405.
+
+---
+
 ## 📅 2026-09-23 — B6 starts **Mon Sep 28**, not Oct 5 — revised on the actual drug names
 
 **Yesterday I said Oct 5 and that was written before I knew what he is taking.** Two facts moved it:
