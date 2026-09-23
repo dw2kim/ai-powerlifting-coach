@@ -1,5 +1,83 @@
 # Current Block
 
+> ## 🔶 BETWEEN BLOCKS — B5 is closed and reviewed; B6 is not written yet.
+> **Two bridge sessions run Thu 2026-09-24 and Fri 2026-09-25. B6 starts Mon 2026-09-28.**
+> Everything below the bridge section is the B5 record, kept until B6 replaces this file.
+
+---
+
+## 🌉 2026-09-23 — the two bridge sessions (Thu Sep 24 · Fri Sep 25)
+
+**These belong to no block.** B5 ended Sep 18; B6 starts Mon Sep 28. Their job is not stimulus —
+it is to **produce the two readings B6's axial ladder has to be written from**, and to put the
+pattern back after ~10 days of almost nothing (2-day W6 deload → Korea → one off-plan session).
+
+> ⚠️ **NOT PUSHED TO HEVY.** `push_block.py` reads `brain/current-block.json`, which still holds
+> B5 — pushing these means the B6 rollover (archive B5, replace the JSON), which happens in the
+> B6 design pass. **Until then these live in the repo and in chat only.** `memory.md` is explicit
+> that an offer in chat is not the artifact he trains off at 6 am, so this gap is named, not hidden.
+
+### Thu 2026-09-24 — Dip + Upper Back *(D3 shape)*
+
+| Exercise | Load | Sets × reps | RPE | Why this number |
+|---|---|---|---|---|
+| **Weighted Dip** | **BW+70** | 3 × 5 | @7 | Re-entry, deliberately far under the BW+105 @8 peak (09-10). Strive lift, unaffected by the medication. **Stop above the pinch — depth is the dip variable, ahead of load.** |
+| **Close-Grip Bench** | **185** | 3 × 5 | @7 | His *actual* load — B5 prescribed 165→185 and he ran **185 flat for all five sessions**. Writing 175 would just be ignored again (`loads-from-logs`). |
+| **Lat Pulldown** | 165 | 3 × 12 | @7 | Log anchor 165–190. |
+| **Reverse Pec Deck** | 110 | 3 × 15 | @7 | **Load-bearing, not filler.** Posterior cuff is intact behind two torn anterior tendons; this shares load off them. |
+| **Face Pull** | 35 | 3 × 15 | @7 | Same reason. |
+| **Dead Bug** *(core)* | BW | 3 × 10/side | — | Anti-extension. |
+
+**Explicitly not on this day**, all three named because the B5 review found them running unnoticed:
+**no overhead pressing** (DB *or* barbell — it hit **@10** under a hard @7 cap in B5, on a bursitic
+shoulder), **no upright row** (the most impingement-provocative thing in the building for this
+shoulder), **no barbell incline**.
+
+### Fri 2026-09-25 — Sumo + Spoto *(D4 shape)* — **the session that matters**
+
+| Exercise | Load | Sets × reps | RPE | Why this number |
+|---|---|---|---|---|
+| **Sumo Deadlift** | **225 — fixed, a ceiling not a target** | 3 × 3 | @6 | **This is the whole point of the week.** 225 is the comparability load — it is what ran W1–W3 and W6-D2, so this triple joins four weeks of data instead of starting a new series. Untouched since Sep 15. **The number B6's opening rung is written from.** |
+| **Spoto Bench** | **235** | 3 × 4 | @7 | Re-entry under the 250×3 @7.5 of 09-11. Spoto is the one lift that progressed every single session of B5 — protect that. |
+| **Seated Leg Curl** | 95 | 3 × 12 | @7 | What he actually ran in W6. |
+| **Seated Calf Raise** | **90** | 3 × 12 | @7 | **The corrected anchor.** B5 prescribed 155→175 off a 2023 median on different equipment; his real working load is 90–100. |
+| **Bird Dog** *(core)* | BW | 3 × 10/side | — | Spine-neutral, no axial load. |
+
+**Not on this day: no loaded hinge other than the sumo.** RDL is still cut — and he ran a Smith RDL
+185×8 ×4 in Korea on Sep 20, so this is worth saying out loud rather than assuming.
+
+### The three rules on these two days
+
+1. **Sumo 225 does not move.** Five written axial numbers ran hot in B5, including one he had agreed
+   to in writing that same morning. This is the cheapest possible week to hold one, and the reading
+   is worthless at 245.
+2. **Back check Saturday morning** after the sumo — `back_checks add 2026-09-25 <fine|tight|sore>`.
+   It is a **medicated** row (course runs to ~Sep 30) but it is still the sumo comparable.
+3. **Stop on any new leg symptom**, night or rest pain, or pain not settling in 24 h. Standing hard
+   stops, unchanged.
+
+---
+
+## 📅 2026-09-23 — B6 starts **Mon Sep 28**, not Oct 5 — revised on the actual drug names
+
+**Yesterday I said Oct 5 and that was written before I knew what he is taking.** Two facts moved it:
+
+1. **The course ends ~Sep 30, not ~Oct 2** — *"I have one more week to consume"* (2026-09-23).
+2. **The drugs are baclofen 10 mg BID + pregabalin 25 mg BID.** Pregabalin at 25 mg BID is the low
+   end of a *starting* dose; the pain-masking effect is modest, not the blackout I described on
+   09-22. *(The stronger objection turns out to be baclofen and trunk tone — see `active-issues.md`.)*
+
+**Why Sep 28 works and the "can't open a block on medicated checks" objection doesn't apply to W1.**
+The gate problem is real for the **ladder rungs** — and W1 has no rungs. W1 is the calibration week
+by design (fixed loads, RPE cap 7). The course ends **Wednesday of W1**, so W1-D3 and W1-D4 are
+already unmedicated and **every check from W2 onward — the ones the ladder is actually gated on — is
+clean.** W1 absorbs the tail of the medication at fixed light loads. That is better than waiting.
+
+**What still binds through W1:** squat and sumo at fixed absolute loads, no rung claimed before W2,
+and the W1 checks tagged `medicated`.
+
+---
+
 # Block 5 — 2026-Q3-B05 (Protect the back, strive upstairs)
 
 **Block ID**: 2026-Q3-B05

@@ -138,66 +138,66 @@ Sumo remains **295×3 ×3 @6**. W6 deloads: squat **225×5 ×3 @6**, D4 sumo dro
 for travel. Existing hard stops and next-day checks remain in force. The Aug 28 plan below
 is the historical W4 amendment; its original W5 deload moved to W6.
 
-### Visit 2026-09-11 — reported 2026-09-22, eleven days late
+### Visit 2026-09-11 — reported 2026-09-22, eleven days late · **details filled in 2026-09-23**
 
 **Clinical fact (athlete report, 2026-09-22):** *"All good. My doctor said I'm doing great, and he
 also gave me a prescription for pain and muscle relaxation. I'm taking that for, I think, 3 weeks."*
 
-**❓ Unconfirmed — do not treat any of this as fact until answered:**
-- **Which drugs.** "Pain and muscle relaxation" is not a prescription. Analgesic name and the
-  muscle relaxant's name both unknown. *(His medical vocabulary has been wrong three times —
-  anesthetic recorded as corticosteroid for five weeks, an ultrasound called an MRI, a series
-  called finished that wasn't. Ask, don't infer.)*
-- **Was the Sep 11 injection actually given?** He said the visit was "all good" and described a
-  prescription. He did **not** say he got the shot. `injections.md` still carries it as expected.
-- **Start and end dates.** "I think 3 weeks" from a Sep 11 prescription reads as ~Sep 11 → **~Oct 2**,
-  but the fill date is unknown and "I think" is doing real work in that sentence.
-- **Is there a next appointment?** Unknown. The injection series' status past Sep 11 is unknown.
-- **Does the doctor know he is back under a barbell?** He was *shocked* on 2026-08-07 to learn it.
-  A muscle relaxant prescribed for someone who lifts is a different conversation than one for
-  someone who doesn't.
+**Confirmed 2026-09-23 — the five open questions, four now answered:**
 
-**Athlete's interpretation:** "all good" / "doing great" — he is reading this visit as unambiguously
-positive, which is why the prescription arrived as an afterthought in the same sentence.
+| | Answer |
+|---|---|
+| **Injection given?** | ✅ **Yes.** *"I did get the same pain trigger point injections a few times. It was pretty similar, just on the lower back."* `injections.md` row updated expected → **given**. |
+| **Which drugs?** | ✅ **apo-baclofen 10 mg** and **pms-pregabalin 25 mg**, **both twice daily.** |
+| **Course dates?** | ✅ *"I have one more week to consume"* (said 2026-09-23) → **ends ~2026-09-30**, two days earlier than the ~Oct 2 estimate. |
+| **Steroid?** | ✅ **Never given, and now ruled out** — see `injections.md` for the athlete's wording and the one caveat on it. |
+| **Next appointment?** | ❌ **Still unknown.** Ask. |
+| **Does the doctor know he lifts heavy?** | ❌ **Still unknown, fourth block running.** He prescribed a muscle relaxant to someone who squats at 6 am. |
 
-**Coach's read — the good news and the restriction arrived together, and only the good news got
-reported.** The doctor's assessment is genuinely good and worth taking at face value. But a
-three-week course of analgesia plus a muscle relaxant is a **new training constraint**, not a
-footnote to a clean bill of health:
+**Coach's read — revised on the drug names, and one thing I said on 09-22 was overstated.**
 
-1. **`masked-pain-load-cap` binds, on mechanism.** The rule's letter names injections; its mechanism
-   is that pain-based and RPE-based guardrails stop protecting a structure whose pain signal is
-   chemically muffled. **A daily oral analgesic does exactly that, and does it continuously** —
-   an injection masks for hours, a prescription masks for three weeks straight, including every
-   training morning inside the window. Rule extended 2026-09-22 in `programming-rules.md`.
-2. **The back check is compromised for the duration.** *"How does your back feel the morning
-   after?"* is the instrument that gates every axial load, and it is now reading through
-   medication. Checks logged inside this window are **not comparable** to the four already on
-   file and must be marked as medicated rows, or the one data series we have gets quietly poisoned.
-3. **Muscle relaxants are a direct mechanical problem under a loaded bar**, separate from pain.
-   The common ones cause drowsiness and reduced coordination — he trains at 6am, and a dose taken
-   the night before is still active. This is not a reason to stop training; it is a reason not to
-   be under a maximal squat while it is on board.
+On 09-22 I told him he was on *"three weeks of painkillers"* and that his back would *"feel fine
+whether or not it is."* **With the actual prescriptions that is too strong, and the record should
+say so.** Neither drug is a conventional analgesic — no NSAID, no opioid — and **pregabalin at
+25 mg BID is the low end of a starting dose** (the usual therapeutic range is many times that).
+The pain-masking effect is real but modest, not the blackout I implied.
 
-**Restriction — in force 2026-09-11 → ~2026-10-02 (confirm the end date):**
-- **Squat and sumo capped by absolute load.** No axial PR attempts, no ladder rungs claimed, no
-  autoregulating upward inside the medication window. Known loads only.
-- **Bench, pull-up and dip are unaffected.** No shoulder injection, and the prescription is for the
-  back. The strive lifts run normally. *(Stated explicitly so "I'm on medication" doesn't
-  quietly become "I shouldn't train.")*
-- **Back checks continue** — but every check inside the window is tagged **medicated**.
-- **Expiry: on the course finishing AND a clean unmedicated check** — not on how it feels, and not
-  on the "doing great."
+**What the actual drugs change, which matters more than the masking:**
+
+1. **Baclofen is the one with a direct mechanical consequence, and it is not about pain.** It is a
+   muscle relaxant that reduces motor-neuron excitability and muscle tone. **Trunk stiffness under a
+   loaded bar is the brace** — the exact quality this athlete is told to hold on every axial rep. A
+   drug whose job is to lower muscle tone is a reason to keep the axial ceiling fixed that stands
+   on its own, even if pain perception were untouched. This is now the primary argument, ahead of
+   masking.
+2. **Both are CNS depressants** — sedation and reduced coordination are the common effects, and he
+   trains at 6 am on a dose taken the night before.
+3. **❓ Pregabalin is a nerve-pain drug, and nothing in this record mentions leg symptoms.** Not a
+   diagnosis and not alarming at this dose — it is also used for general musculoskeletal pain — but
+   the choice is worth one question: *is the doctor treating a nerve component, or is this a
+   low-dose adjunct?* The answer would tell us whether "new or worsening leg symptoms" (already a
+   hard stop) is being watched for a reason.
+4. **The masking still binds the instrument**, just less severely than stated: the back check is the
+   gate on every axial load, and a check taken on these two drugs is not comparable to an
+   unmedicated one. **2026-09-22 (squat) — `tight`** is logged as the first medicated row.
+
+**Restriction — in force 2026-09-11 → ~2026-09-30 (course end, athlete-reported):**
+- **Squat and sumo capped by absolute load.** No PR attempts, no ladder rungs claimed, no
+  autoregulating upward. Known loads only. `masked-pain-load-cap`, extended 2026-09-22.
+- **Bench, pull-up and dip are unaffected.** The prescription is for the back, there is still no
+  shoulder injection, and those lifts are not gated on a back check.
+- **Back checks continue**, each tagged `medicated`.
+- **Expiry: course finished AND one clean unmedicated check.** Not on how it feels.
 
 **Hard stops unchanged:** new or worsening leg symptoms, night or rest pain, pain not settling
 within 24 h, or two consecutive `sore` axial checks → axial work stops, back to the clinic.
 
-**Open questions for the next visit** *(raised 2026-09-22)*:
-- [ ] Drug names and the actual course length — write them down this time.
-- [ ] Was the Sep 11 injection given? Does the series continue, and when is the next one?
-- [ ] **Tell him you are squatting and deadlifting again, and at what weight.** Third block this
-      has been owed. He prescribed a muscle relaxant; he should know what you do at 6am on it.
+**Open questions for the next visit** *(raised 2026-09-22, trimmed 2026-09-23)*:
+- [ ] **Is there a next appointment, and does the injection series continue past 2026-09-11?**
+- [ ] **Tell him you are squatting and deadlifting again, and at what weight.** Fourth block owed.
+- [ ] **Why pregabalin?** Nerve component being treated, or a low-dose adjunct?
 - [ ] Is there a clearance to progress axial load past 365 squat / 295 sumo, and on what evidence?
+- [ ] Confirm the steroid reasoning — what exactly was the concern, so the record is right.
 
 ### Visit 2026-08-28
 

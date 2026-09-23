@@ -220,9 +220,16 @@
   region's lifts are capped by absolute load exactly as under an injection, back checks logged
   inside the window are tagged **medicated** and are not comparable to unmedicated ones, and the cap
   lifts on the course finishing **plus** a clean unmedicated check — never on "doing great".
-  **Muscle relaxants carry a second, non-pain problem**: drowsiness and reduced coordination under a
-  loaded bar, which is a reason to hold maximal axial attempts regardless of how the back feels.
-  [Sep 11 visit, reported 2026-09-22]
+  **Muscle relaxants carry a second problem that has nothing to do with pain, and it is usually the
+  stronger objection**: they lower muscle tone and motor-neuron excitability — the same quality the
+  **brace** depends on — on top of drowsiness and reduced coordination under a loaded bar. Hold
+  maximal axial attempts for the course regardless of what the back check says.
+  **Read the dose before sizing the masking claim**: a low starting dose (e.g. pregabalin 25 mg BID,
+  the bottom of a range that runs many times higher) masks modestly, and overstating it costs
+  credibility the next time a real restriction is needed. Name the drug and the dose in
+  `active-issues.md`, never just "painkillers".
+  [Sep 11 visit, reported 2026-09-22; drugs confirmed 2026-09-23 — baclofen 10 mg BID +
+  pregabalin 25 mg BID]
   **A clearance can be GRADED, and a graded clearance moves the cap rather than removing it**
   (added 2026-08-28 after *"start with a 25% weight increase and see how it goes"*). Convert it to
   one conservative **absolute-load step**, still not autoregulated while the region is masked.
