@@ -1,0 +1,384 @@
+{
+  "block_id": "2026-Q3-BRIDGE",
+  "start_date": "2026-09-24",
+  "weeks": 1,
+  "summary": "Two bridge sessions between B5 (ended 2026-09-18) and B6 (opens Mon 2026-09-28). Not a block. Their job is to put the pattern back after ~10 days of almost nothing and to produce the sumo 225 reading B6's opening axial rung is written from. Athlete is on baclofen 10mg BID + pregabalin 25mg BID until ~2026-09-30, so every axial load is a fixed absolute under masked-pain-load-cap.",
+  "days": [
+    {
+      "label": "D1",
+      "focus": "Thu Sep 24 — Dip + Upper Back",
+      "weekday": "Thu"
+    },
+    {
+      "label": "D2",
+      "focus": "Fri Sep 25 — Sumo + Spoto",
+      "weekday": "Fri"
+    }
+  ],
+  "week_phases": {
+    "1": "bridge"
+  },
+  "prescriptions": [
+    {
+      "week": 1,
+      "day": "D1",
+      "exercises": [
+        {
+          "name": "Weighted Dip",
+          "tier": "primary",
+          "notes": "RE-ENTRY. BW+70, deliberately far under the BW+105 @8 peak (09-10). Strive lift — the medication does not touch this one. STOP ABOVE THE PINCH: depth is the dip variable ahead of load, the bursitis and AC changes sit in the space that closes at the bottom.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 0.0,
+              "reps": 8
+            },
+            {
+              "type": "normal",
+              "weight_kg": 31.75146590070248,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 31.75146590070248,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 31.75146590070248,
+              "reps": 5,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "CGB",
+          "tier": "secondary",
+          "notes": "185 is your ACTUAL load — B5 prescribed 165->185 and you ran 185 flat all five sessions, so this is written where you lift. Hard @7. Lockout work, not a test.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.234969951354785,
+              "reps": 5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.91458845185656,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.91458845185656,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.91458845185656,
+              "reps": 5,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Lat Pulldown",
+          "tier": "accessory",
+          "notes": "Log anchor 165-190. Seated, no axial load.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 74.84274105165585,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 74.84274105165585,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 74.84274105165585,
+              "reps": 12,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Reverse Pec Deck",
+          "tier": "accessory",
+          "notes": "LOAD-BEARING, NOT FILLER. Posterior cuff is intact behind two torn anterior tendons — this set shares load off them. Do not cut it when the clock runs out.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 49.8951607011039,
+              "reps": 15,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 49.8951607011039,
+              "reps": 15,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 49.8951607011039,
+              "reps": 15,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Face Pull",
+          "tier": "accessory",
+          "notes": "Same job as the pec deck. Shoulder health work, not a finisher.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 15.87573295035124,
+              "reps": 15,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.87573295035124,
+              "reps": 15,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.87573295035124,
+              "reps": 15,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Dead Bug",
+          "tier": "core",
+          "notes": "Anti-extension. 10 per side. NOT on this day: no overhead pressing (DB or barbell — it hit @10 under a hard @7 cap in B5), no upright row, no barbell incline.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "day": "D2",
+      "exercises": [
+        {
+          "name": "Sumo Deadlift",
+          "tier": "primary",
+          "notes": "225 IS A CEILING, NOT A TARGET. This is the whole point of the week: 225 is what ran W1-W3 and Sep 15, so this triple joins four weeks of comparable data and B6's opening rung gets written from it. At 245 it compares to nothing and the reading is wasted. Crisp triples @6, no autoregulating. BACK CHECK SATURDAY MORNING.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.234969951354785,
+              "reps": 5
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 83.91458845185656,
+              "reps": 3
+            },
+            {
+              "type": "normal",
+              "weight_kg": 102.05828325225797,
+              "reps": 3,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 102.05828325225797,
+              "reps": 3,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 102.05828325225797,
+              "reps": 3,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Spoto Bench Press",
+          "tier": "secondary",
+          "notes": "Re-entry under the 250x3 @7.5 of 09-11. Spoto progressed every single session of B5 — the one lift with a perfect record. Protect that, do not chase it today.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.234969951354785,
+              "reps": 5
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 83.91458845185656,
+              "reps": 3
+            },
+            {
+              "type": "normal",
+              "weight_kg": 106.59420695235832,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 106.59420695235832,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 106.59420695235832,
+              "reps": 4,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Leg Press (Machine)",
+          "tier": "accessory",
+          "notes": "ADDED 09-23 (athlete: day was too light). Quads are the genuinely uncovered group this week — Thursday is all upper. 315 is deliberately well under your 585 log anchor. ROM RULE IS WHAT MAKES THIS SAFE: stop the descent BEFORE your hips roll off the pad. That posterior pelvic tilt at depth is what loads the L3-4 protrusion, and you are on a muscle relaxant, so the end-range feedback you would normally get is blunted.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 142.88159655316116,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 142.88159655316116,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 142.88159655316116,
+              "reps": 12,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Chest Supported Incline Row",
+          "tier": "accessory",
+          "notes": "ADDED 09-23. Mid-back, the other uncovered group. Chest-supported = ZERO lumbar load, which is exactly why this replaced Meadows Row on pull day. 50/hand. FORBIDDEN fallback if the bench is taken: no barbell bent-over row — that reinstates the lumbar load this movement exists to avoid.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 22.67961850050177,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.67961850050177,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.67961850050177,
+              "reps": 12,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Seated Leg Curl",
+          "tier": "accessory",
+          "notes": "95 is what you actually ran in W6.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 43.091275150953365,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 43.091275150953365,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 43.091275150953365,
+              "reps": 12,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Seated Calf Raise",
+          "tier": "accessory",
+          "notes": "90 IS THE CORRECTED ANCHOR. B5 prescribed 155->175 off a 2023 median on different equipment; your real working load is 90-100. Seated, so zero spinal compression.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 40.82331330090319,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 40.82331330090319,
+              "reps": 12,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 40.82331330090319,
+              "reps": 12,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Bird Dog",
+          "tier": "core",
+          "notes": "Spine-neutral, no axial load. 10 per side. NOT on this day: no loaded hinge other than the sumo. RDL is still cut — including the Smith version you ran in Korea on Sep 20.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

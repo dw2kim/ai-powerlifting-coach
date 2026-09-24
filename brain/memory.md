@@ -810,3 +810,14 @@ is not; and B5's only real axial data point is a squat. Squat-heavy was the bett
 to *"convince me"* is to re-run the argument, not to defend the position. This is the second
 self-correction in two days (the other: overstating the drug masking). Both were caught because he
 pushed back rather than complied — which is worth more than a coach who is never questioned.
+
+## 2026-09-24 — B6 designed: the check is the key, not the number
+
+B6 (2026-Q4-B06, Sep 28 → Oct 30) is squat-heavy. The design answer to B5's action item #5 — *a bare
+number on a page fails on the axial primaries* — is to stop relying on the number: **each squat rung
+is unlocked by a logged `fine` back check, and an unlogged morning, a `tight`, running hot the week
+before, or a top triple past @8 all forfeit the next rung.** The instrument he kept skipping (4/13 in
+B5) is now the thing standing between him and the 405 he wants. If it works, it fixes compliance and
+creep with one mechanism; if the check log is still thin by W3, that's the finding to carry into B7.
+Also: `hold` in the block JSON is name-scoped, not week-scoped — a W5 deload pin freezes every
+exercise for the whole block. Same as B5; now written down.
