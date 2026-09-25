@@ -257,25 +257,27 @@
           ]
         },
         {
-          "name": "Leg Press (Machine)",
+          "name": "Leg Extension (Machine)",
           "tier": "accessory",
-          "notes": "ADDED 09-23 (athlete: day was too light). Quads are the genuinely uncovered group this week — Thursday is all upper. 315 is deliberately well under your 585 log anchor. ROM RULE IS WHAT MAKES THIS SAFE: stop the descent BEFORE your hips roll off the pad. That posterior pelvic tilt at depth is what loads the L3-4 protrusion, and you are on a muscle relaxant, so the end-range feedback you would normally get is blunted.",
+          "notes": "REPLACED LEG PRESS 09-24 (athlete asked). Thursday already took quads to 415x10x3 on the press, so today keeps the day whole-body with the lowest-cost quad movement there is: no spinal load, no hip flexion under load, so no pelvic roll-off to police while the baclofen dulls end-range feedback. 130 is under your 140 median on purpose - quads are 24h off a heavy press. AFTER the sumo, never before: nothing gets to pre-fatigue the 225 read.",
+          "hold": true,
+          "hold_reason": "Deliberately under the 140 log median: day after an unplanned 415x10x3 leg press, and bridge loads are fixed while on baclofen.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 142.88159655316116,
+              "weight_kg": 58.96707822663317,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 142.88159655316116,
+              "weight_kg": 58.96707822663317,
               "reps": 12,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 142.88159655316116,
+              "weight_kg": 58.96707822663317,
               "reps": 12,
               "rpe": 7
             }
