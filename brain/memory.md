@@ -830,3 +830,14 @@ whole-body every session and always has. The B5 upright rows were a restriction 
 a hole filled. **Before calling a logged movement off-plan, ask whether the day left a region
 empty.** New rule `whole-body-every-day`: lower · push · pull · core in every session, with
 emphasis allowed. B6 D1 (no pull) and D3 (no lower) were amended before the push.
+
+## 2026-09-25 — Bridge Friday: the ceiling became a target again
+
+Sumo was written as **225, "a ceiling, not a target"**, the comparability load for B6's entry. He
+pulled **235×3 ×3 and logged no RPE**, while on baclofen. It's not dangerous (he pulled 295×3 @6 on
+09-04 and 09-11), but it's the ninth-plus time a written axial number was treated as a starting
+point, and the one set with no RPE is the one that mattered. Everything else was clean: Spoto
+235×4 @7/7/7.5 as written, leg extension 130×12 after the sumo as written, leg curl 105 @6. Two small
+changes: CS Incline Row → Iso-Lateral Row 115×12 (noted "one hand"), and seated calf raise skipped.
+**B6 sumo W1 stays 225.** The bridge read is 235 with no RPE, so the back check is the only usable
+signal left from this session.
