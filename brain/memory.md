@@ -821,3 +821,12 @@ B5) is now the thing standing between him and the 405 he wants. If it works, it 
 creep with one mechanism; if the check log is still thin by W3, that's the finding to carry into B7.
 Also: `hold` in the block JSON is name-scoped, not week-scoped — a W5 deload pin freezes every
 exercise for the whole block. Same as B5; now written down.
+
+## 2026-09-24 — "Off-plan" can be the plan's fault
+
+I flagged Thursday's 415 leg press as the B5 off-plan pattern recurring. It wasn't the same thing.
+The bridge Thursday had **no lower body at all**, and he filled it himself because he trains
+whole-body every session and always has. The B5 upright rows were a restriction ignored. This was
+a hole filled. **Before calling a logged movement off-plan, ask whether the day left a region
+empty.** New rule `whole-body-every-day`: lower · push · pull · core in every session, with
+emphasis allowed. B6 D1 (no pull) and D3 (no lower) were amended before the push.

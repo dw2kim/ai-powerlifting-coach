@@ -188,6 +188,7 @@ item #2) — an accessory at @9+ gets flagged like a primary would.
 |---|---|---|---|---|
 | D1 | Tricep Pushdown | 50 → 55×12 (45) | Lockout (bench weak point) → triceps → pushdown → finishing reps | Cable Triceps Extension |
 | D1 | **Chest Fly (Machine)** 🆕 | 100 → 105×12 (85) | Chest only trained by presses → pec isolation, no pressing exposure | Seated Cable Fly |
+| D1 | **Iso-Lateral Row (Machine)** ➕ | 125 → 130×12 (110) *(hold)* | **Pull on Monday** (`whole-body-every-day`) → mid-back, chest-supported, zero lumbar load. Under the 145 median so it doesn't pre-fatigue Tuesday's pull-up; **first cut** if the WPU backoffs suffer | CS Incline Row (DB) 45/hand. **Never T-bar or bent-over.** |
 | D2 | Hip Thrust (Smith) | 225×10 → 245×8 (185) | Sumo lockout / squat out of the hole → glutes | Glute Bridge (Barbell) |
 | D2 | Seated Leg Curl | 105 → 115×12 (95) | Hamstrings (knee-flexion side) | Lying Leg Curl |
 | D2 | **Single Arm Landmine Press** 🔄 | 25 → 35×10/arm (25) | Front delts → shoulder-friendly press path | Neutral-grip DB Press (seated, @7) |
@@ -195,6 +196,7 @@ item #2) — an accessory at @9+ gets flagged like a primary would.
 | D3 | Lat Pulldown | 165 → 170×12 (145) | Pull-up → lats, seated, no axial load | Natural Grip Pulldown |
 | D3 | Reverse Pec Deck | 110 → 115×15 (100) | **Load-bearing**: intact posterior cuff shares load off two torn anterior tendons | Rear Delt Fly (DB) 25 |
 | D3 | Face Pull | 40 → 45×15 (35) | Same — external rotation, scapular control | Band pull-apart |
+| D3 | **Leg Extension (Machine)** ➕ | 130 → 140×12 (115) *(hold)* | **Lower body on Thursday** (`whole-body-every-day`) → quads, the lowest-cost option before Friday: no spinal load, no loaded hip flexion, no adductor cost for sumo | Leg Press 270×12, ROM-capped. **No squat pattern.** |
 | D4 | Bulgarian Split Squat | 40 → 50×10 (35) | Quads/glutes unilateral, non-axial | Leg Press (ROM-capped) |
 | D4 | CS Incline Row | 50 → 55×12 (45) | Mid-back, zero lumbar load | Seated Cable Row. **Never barbell bent-over.** |
 | D4 | Seated Calf Raise | 90 → 100×12 (80) | Calves — **corrected anchor** (not 155–175) | — |
@@ -223,13 +225,18 @@ loaded lumbar flexion, no hanging leg raise** while the back is under treatment.
 - **Dropped: Weighted Back Extension.** Erectors are covered by a heavy squat, sumo and Bird Dog, and
   direct loaded lumbar extension the day after a 385–405 squat is the wrong trade on a treated back.
 - **Still out: Incline DB Press, all overhead barbell work, upright row.**
+- **➕ Added 09-24: Iso-Lateral Row (D1) and Leg Extension (D3)**, per the athlete's feedback that
+  **every session hits the whole body** (`whole-body-every-day`). D1 had no pull and D3 had no
+  lower body, the same hole that sent him to a 415 leg press on the bridge Thursday. Each was picked
+  for the lowest cost to the next day: D1 → D2 is back-to-back with the pull-up, and D3 → D4 is
+  back-to-back with sumo + BSS. Neither is an emphasis; each gives that region its dose for the day.
 
 ### Muscle coverage audit (`muscle-coverage-audit`)
 
 | Group | Where | Group | Where |
 |---|---|---|---|
-| Quads | Squat (D1) · BSS (D4) | Lats | Pull-up (D2) · Lat Pulldown (D3) |
-| Hamstrings | Leg Curl (D2) · sumo | Mid-back | CS Incline Row (D4) |
+| Quads | Squat (D1) · Leg Ext (D3) · BSS (D4) | Lats | Pull-up (D2) · Lat Pulldown (D3) |
+| Hamstrings | Leg Curl (D2) · sumo | Mid-back | Iso-Lateral Row (D1) · CS Incline Row (D4) |
 | Glutes | Hip Thrust (D2) · BSS (D4) · squat · sumo | Front delts | Landmine Press (D2) · all pressing |
 | Erectors | Squat · sumo · Bird Dog — **no direct loaded work, by decision** (above) | Lateral delts | Lateral Raise (D2) |
 | Chest | Bench (D1) · **Chest Fly (D1)** · Dip (D3) · Spoto (D4) | Rear delts | Reverse Pec Deck · Face Pull (D3) |
@@ -237,6 +244,16 @@ loaded lumbar flexion, no hanging leg raise** while the back is under treatment.
 | Calves | Seated Calf Raise (D4) | Core | All four days, four patterns |
 
 **Every group covered.** The one deliberate gap is direct erector loading, named above.
+
+**Per-day check (`whole-body-every-day`)** — lower · push · pull · core in every session:
+
+| Day | Lower | Push | Pull | Core |
+|---|---|---|---|---|
+| D1 | **Squat** | **Bench** · Fly · Pushdown | Iso-Lateral Row | Side Plank |
+| D2 | Hip Thrust · Leg Curl | Landmine Press · Lateral Raise | **Pull-up** | Pallof |
+| D3 | Leg Extension | **Dip** · CGB | Pulldown · Pec Deck · Face Pull | Dead Bug |
+| D4 | **Sumo** · BSS · Calf | Spoto | CS Row · Curl | Bird Dog |
+
 
 ---
 

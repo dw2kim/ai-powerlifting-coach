@@ -187,6 +187,30 @@
           "hold_reason": "First exposure / long-gap re-entry — deliberately under any log anchor until two sessions set a real one."
         },
         {
+          "name": "Iso-Lateral Row (Machine)",
+          "tier": "accessory",
+          "notes": "PULL FOR MONDAY (whole-body-every-day, FB 2026-09-24). Chest-supported machine: zero lumbar load. Aim for mid-back, not lats: elbows about 45° out, squeeze the shoulder blades, and stop there. D1 must not pre-fatigue Tuesday's pull-up (accessory-day-interference), so 125 sits under your 145 median on purpose. If Tuesday's pull-up backoffs suffer, this is cut first. FALLBACK if the machine is taken: Chest Supported Incline Row (DB) 45/hand x12. FORBIDDEN fallback: no T-bar, barbell or bent-over row (erector load).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 56.69911367945497,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 56.69911367945497,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 56.69911367945497,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Deliberately under the 145 median: D1 row must not pre-fatigue D2 weighted pull-up."
+        },
+        {
           "name": "Side Plank",
           "tier": "core",
           "notes": "Anti-lateral-flexion. 30–45 s per side.",
@@ -504,6 +528,30 @@
               "reps": 15
             }
           ]
+        },
+        {
+          "name": "Leg Extension (Machine)",
+          "tier": "accessory",
+          "notes": "LOWER BODY FOR THURSDAY (whole-body-every-day, FB 2026-09-24). This day had none, which is why you added a 415 leg press on 09-24. Leg extension is the lowest-cost quad work available: no spinal load, no loaded hip flexion, and no adductor or lat cost for Friday's sumo (accessory-day-interference). Held a notch under your 140 median because Friday also has BSS. FALLBACK if the machine is taken: Leg Press 270x12, ROM-capped (stop before the hips roll off the pad). FORBIDDEN fallback: no squat pattern, no hack squat, no goblet squat.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 58.96707822663317,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 58.96707822663317,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 58.96707822663317,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "At/under the 140 median: D3 quad work must not pre-fatigue D4 (sumo + BSS)."
         },
         {
           "name": "Dead Bug",
@@ -867,6 +915,30 @@
           "hold_reason": "First exposure / long-gap re-entry — deliberately under any log anchor until two sessions set a real one."
         },
         {
+          "name": "Iso-Lateral Row (Machine)",
+          "tier": "accessory",
+          "notes": "PULL FOR MONDAY (whole-body-every-day, FB 2026-09-24). Chest-supported machine: zero lumbar load. Aim for mid-back, not lats: elbows about 45° out, squeeze the shoulder blades, and stop there. D1 must not pre-fatigue Tuesday's pull-up (accessory-day-interference), so 125 sits under your 145 median on purpose. If Tuesday's pull-up backoffs suffer, this is cut first. FALLBACK if the machine is taken: Chest Supported Incline Row (DB) 45/hand x12. FORBIDDEN fallback: no T-bar, barbell or bent-over row (erector load).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 56.69911367945497,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 56.69911367945497,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 56.69911367945497,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Deliberately under the 145 median: D1 row must not pre-fatigue D2 weighted pull-up."
+        },
+        {
           "name": "Side Plank",
           "tier": "core",
           "notes": "Anti-lateral-flexion. 30–45 s per side.",
@@ -1184,6 +1256,30 @@
               "reps": 15
             }
           ]
+        },
+        {
+          "name": "Leg Extension (Machine)",
+          "tier": "accessory",
+          "notes": "LOWER BODY FOR THURSDAY (whole-body-every-day, FB 2026-09-24). This day had none, which is why you added a 415 leg press on 09-24. Leg extension is the lowest-cost quad work available: no spinal load, no loaded hip flexion, and no adductor or lat cost for Friday's sumo (accessory-day-interference). Held a notch under your 140 median because Friday also has BSS. FALLBACK if the machine is taken: Leg Press 270x12, ROM-capped (stop before the hips roll off the pad). FORBIDDEN fallback: no squat pattern, no hack squat, no goblet squat.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 61.235042773811365,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 61.235042773811365,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 61.235042773811365,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "At/under the 140 median: D3 quad work must not pre-fatigue D4 (sumo + BSS)."
         },
         {
           "name": "Dead Bug",
@@ -1547,6 +1643,30 @@
           "hold_reason": "First exposure / long-gap re-entry — deliberately under any log anchor until two sessions set a real one."
         },
         {
+          "name": "Iso-Lateral Row (Machine)",
+          "tier": "accessory",
+          "notes": "PULL FOR MONDAY (whole-body-every-day, FB 2026-09-24). Chest-supported machine: zero lumbar load. Aim for mid-back, not lats: elbows about 45° out, squeeze the shoulder blades, and stop there. D1 must not pre-fatigue Tuesday's pull-up (accessory-day-interference), so 125 sits under your 145 median on purpose. If Tuesday's pull-up backoffs suffer, this is cut first. FALLBACK if the machine is taken: Chest Supported Incline Row (DB) 45/hand x12. FORBIDDEN fallback: no T-bar, barbell or bent-over row (erector load).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 58.96707822663317,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 58.96707822663317,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 58.96707822663317,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Deliberately under the 145 median: D1 row must not pre-fatigue D2 weighted pull-up."
+        },
+        {
           "name": "Side Plank",
           "tier": "core",
           "notes": "Anti-lateral-flexion. 30–45 s per side.",
@@ -1869,6 +1989,30 @@
               "reps": 15
             }
           ]
+        },
+        {
+          "name": "Leg Extension (Machine)",
+          "tier": "accessory",
+          "notes": "LOWER BODY FOR THURSDAY (whole-body-every-day, FB 2026-09-24). This day had none, which is why you added a 415 leg press on 09-24. Leg extension is the lowest-cost quad work available: no spinal load, no loaded hip flexion, and no adductor or lat cost for Friday's sumo (accessory-day-interference). Held a notch under your 140 median because Friday also has BSS. FALLBACK if the machine is taken: Leg Press 270x12, ROM-capped (stop before the hips roll off the pad). FORBIDDEN fallback: no squat pattern, no hack squat, no goblet squat.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 61.235042773811365,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 61.235042773811365,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 61.235042773811365,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "At/under the 140 median: D3 quad work must not pre-fatigue D4 (sumo + BSS)."
         },
         {
           "name": "Dead Bug",
@@ -2220,6 +2364,30 @@
           "hold_reason": "First exposure / long-gap re-entry — deliberately under any log anchor until two sessions set a real one."
         },
         {
+          "name": "Iso-Lateral Row (Machine)",
+          "tier": "accessory",
+          "notes": "PULL FOR MONDAY (whole-body-every-day, FB 2026-09-24). Chest-supported machine: zero lumbar load. Aim for mid-back, not lats: elbows about 45° out, squeeze the shoulder blades, and stop there. D1 must not pre-fatigue Tuesday's pull-up (accessory-day-interference), so 125 sits under your 145 median on purpose. If Tuesday's pull-up backoffs suffer, this is cut first. FALLBACK if the machine is taken: Chest Supported Incline Row (DB) 45/hand x12. FORBIDDEN fallback: no T-bar, barbell or bent-over row (erector load).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 58.96707822663317,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 58.96707822663317,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 58.96707822663317,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Deliberately under the 145 median: D1 row must not pre-fatigue D2 weighted pull-up."
+        },
+        {
           "name": "Side Plank",
           "tier": "core",
           "notes": "Anti-lateral-flexion. 30–45 s per side.",
@@ -2537,6 +2705,30 @@
               "reps": 15
             }
           ]
+        },
+        {
+          "name": "Leg Extension (Machine)",
+          "tier": "accessory",
+          "notes": "LOWER BODY FOR THURSDAY (whole-body-every-day, FB 2026-09-24). This day had none, which is why you added a 415 leg press on 09-24. Leg extension is the lowest-cost quad work available: no spinal load, no loaded hip flexion, and no adductor or lat cost for Friday's sumo (accessory-day-interference). Held a notch under your 140 median because Friday also has BSS. FALLBACK if the machine is taken: Leg Press 270x12, ROM-capped (stop before the hips roll off the pad). FORBIDDEN fallback: no squat pattern, no hack squat, no goblet squat.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 63.50300732098956,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 63.50300732098956,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 63.50300732098956,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "At/under the 140 median: D3 quad work must not pre-fatigue D4 (sumo + BSS)."
         },
         {
           "name": "Dead Bug",
@@ -2887,6 +3079,30 @@
           "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
         },
         {
+          "name": "Iso-Lateral Row (Machine)",
+          "tier": "accessory",
+          "notes": "PULL FOR MONDAY (whole-body-every-day, FB 2026-09-24). Chest-supported machine: zero lumbar load. Aim for mid-back, not lats: elbows about 45° out, squeeze the shoulder blades, and stop there. D1 must not pre-fatigue Tuesday's pull-up (accessory-day-interference), so 125 sits under your 145 median on purpose. If Tuesday's pull-up backoffs suffer, this is cut first. FALLBACK if the machine is taken: Chest Supported Incline Row (DB) 45/hand x12. FORBIDDEN fallback: no T-bar, barbell or bent-over row (erector load). W5 deload.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 49.895220037920375,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 49.895220037920375,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 49.895220037920375,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+        },
+        {
           "name": "Side Plank",
           "tier": "core",
           "notes": "Anti-lateral-flexion. 30–45 s per side. W5 deload.",
@@ -3216,6 +3432,30 @@
               "type": "normal",
               "weight_kg": 15.87575183024739,
               "reps": 15
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+        },
+        {
+          "name": "Leg Extension (Machine)",
+          "tier": "accessory",
+          "notes": "LOWER BODY FOR THURSDAY (whole-body-every-day, FB 2026-09-24). This day had none, which is why you added a 415 leg press on 09-24. Leg extension is the lowest-cost quad work available: no spinal load, no loaded hip flexion, and no adductor or lat cost for Friday's sumo (accessory-day-interference). Held a notch under your 140 median because Friday also has BSS. FALLBACK if the machine is taken: Leg Press 270x12, ROM-capped (stop before the hips roll off the pad). FORBIDDEN fallback: no squat pattern, no hack squat, no goblet squat. W5 deload.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 52.16318458509857,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.16318458509857,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.16318458509857,
+              "reps": 12
             }
           ],
           "hold": true,

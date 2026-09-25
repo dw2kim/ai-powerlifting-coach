@@ -146,6 +146,19 @@
   movements while another day ran thin. **Balance days by working-set volume, not accessory
   count** — a day with two primary lifts needs fewer accessories than a day with one.
   [FB 2026-08-07]
+- **whole-body-every-day** — **Every session hits the whole body: at least one lower-body, one
+  upper push, one upper pull and one core movement, every day.** Emphasis is allowed and expected. A
+  bench day can lean chest and a pull day can lean back; the rule is **coverage, not even
+  distribution**. The off-emphasis regions get a *dose* (one accessory, ~3 working sets), not parity.
+  This is the per-day check; `muscle-coverage-audit` stays the per-block check across the 13 groups.
+  The dose **inherits every constraint of its day**: `accessory-day-interference` picks the
+  movement (lowest cost to the next day, e.g. leg extension rather than leg press before sumo,
+  and a chest-supported mid-back row rather than a lat-heavy pull before the pull-up), and medical
+  caps still apply (no loaded hinge or axial squat pattern just to fill the lower slot). State the
+  per-day table in the block file. **Why it exists:** the 2026-09-24 bridge Thursday had no lower
+  body at all, and the athlete filled it himself with an off-plan 415×10 ×3 leg press, 24 h before
+  the sumo read. A hole in the plan gets filled at 6am, by feel, at a load nobody chose.
+  [FB 2026-09-24]
 - **equipment-fallbacks** — **The gym is busy and the session is capped at 60 minutes. When a
   machine or implement is occupied he substitutes an equivalent movement rather than waiting, and
   that is correct behaviour — not non-compliance, not drift, not a mapping bug.** Athlete's own
