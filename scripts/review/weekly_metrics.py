@@ -244,7 +244,7 @@ def geometry(block: dict, today: date_cls) -> dict:
 
 
 def readiness(week_sessions: list[dict], expected_days: list[str]) -> dict:
-    """Which expected training days have a logged session, and any sets missing RPE."""
+    """Which expected training days have a logged session, and which top sets have a blank (sub-@6) RPE."""
     taken: set = set()
     by_label: dict[str, str] = {}
     for w in week_sessions:
@@ -254,8 +254,9 @@ def readiness(week_sessions: list[dict], expected_days: list[str]) -> dict:
             taken.add(label)
             by_label[label] = (w.get("start_time") or "")[:10]
     missing = [d for d in expected_days if d not in taken]
-    # A Big-5 *top* set logged this week without an RPE = a real data gap to flag.
-    # (Backoff sets are often logged without RPE — only the working top matters.)
+    # A Big-5 *top* set logged without an RPE. Hevy's ladder starts at @6, so a blank means
+    # "below 6, roughly @5" (`blank-rpe-below-6`). It gets listed so it's read that way, not
+    # flagged as a data gap.
     rpe_gaps = []
     for w in week_sessions:
         for ex in w.get("exercises", []):

@@ -258,6 +258,13 @@
   set as **RPE 7–8**, not as missing data — do not flag it. Only an explicitly logged **RPE 9+**
   on an accessory is a signal worth reacting to. Applies both to `reviewing-session` and to
   reading the log during block design. [FB 2026-06-14]
+- **blank-rpe-below-6** — On a **primary or secondary** lift, a working set logged with **no RPE
+  means below @6, roughly @5.** Hevy's ladder starts at 6, so a blank is the only way to record an
+  easy set. It is not missing data. Don't flag it as a gap, don't ask for it, and read it as ~@5
+  when judging a cap, a ladder rung or a trend. *Applied first:* bridge sumo 2026-09-25, 235×3 ×3
+  blank = @5. **Accessories keep `accessory-rpe`** (blank = 7–8, a separate 2026-06-14 convention)
+  unless he says otherwise. The weekly review lists blank top sets as "read as below @6" rather
+  than warning. [FB 2026-09-25]
 - **rpe-hevy-ladder** — Every prescribed RPE must be a value the Hevy app can actually record:
   **{6, 7, 7.5, 8, 8.5, 9, 9.5, 10}**. There is **no 6.5, and nothing below 6** — never program
   @6.5 / @5.5 / @5. Round submax (backoff / calibration) targets **down** to the nearest ladder

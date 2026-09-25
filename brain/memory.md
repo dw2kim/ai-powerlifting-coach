@@ -841,3 +841,8 @@ point, and the one set with no RPE is the one that mattered. Everything else was
 changes: CS Incline Row → Iso-Lateral Row 115×12 (noted "one hand"), and seated calf raise skipped.
 **B6 sumo W1 stays 225.** The bridge read is 235 with no RPE, so the back check is the only usable
 signal left from this session.
+
+**Correction, same day:** the 235 sumo was **@5**. He confirmed it, and a blank RPE on a main lift
+now means below @6 by rule (`blank-rpe-below-6`). So the "no RPE, unusable read" above was my
+misreading of the log. 235 @5 is a usable bridge read, and a good one: 10 lb over the ceiling at
+the easiest effort the app can't even record. The ceiling overrun still counts, but it's small.

@@ -701,3 +701,16 @@ Iso-Lateral Row 125→130** (no pull on Monday) and **D3 + Leg Extension 130→1
 body on Thursday), both pinned `hold`, with a per-day coverage table added to
 `brain/current-block.md`. B6 isn't in Hevy yet, so nothing else to push.
 → rules: `whole-body-every-day`
+
+### 2026-09-25 · general · blank RPE on main lifts · bridge
+**Feedback:** "If there is no RPE set, you can assume it's below 6, roughly around 5." Asked
+because bridge Friday's sumo 235×3 ×3 had no RPE; he confirmed it was **@5**.
+**Why it fits:** Hevy's RPE ladder starts at 6 (`rpe-hevy-ladder`), so a blank is the only way to
+log an easy set. The coach had been treating it as a gap. The weekly review's narration printed
+"⚠️ Top sets missing RPE", which was wrong under this convention.
+**Scope decision:** applied to primaries and secondaries. Accessories keep `accessory-rpe` (blank =
+7–8, his 2026-06-14 convention). That's a direct conflict, so it goes back to him to confirm.
+**Actions taken:** (1) rule `blank-rpe-below-6`; (2) `scripts/review/narrate.py` now reports blank
+top sets as "read as below @6 (~@5)" instead of warning, and the `weekly_metrics.readiness`
+comment is updated. Tests: 40 passed. (3) Friday sumo re-read as 235 @5.
+→ rules: `blank-rpe-below-6`

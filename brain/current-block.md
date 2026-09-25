@@ -188,7 +188,7 @@ item #2) — an accessory at @9+ gets flagged like a primary would.
 |---|---|---|---|---|
 | D1 | Tricep Pushdown | 50 → 55×12 (45) | Lockout (bench weak point) → triceps → pushdown → finishing reps | Cable Triceps Extension |
 | D1 | **Chest Fly (Machine)** 🆕 | 100 → 105×12 (85) | Chest only trained by presses → pec isolation, no pressing exposure | Seated Cable Fly |
-| D1 | **Iso-Lateral Row (Machine)** ➕ | 125 → 130×12 (110) *(hold)* | **Pull on Monday** (`whole-body-every-day`) → mid-back, chest-supported, zero lumbar load. Under the 145 median so it doesn't pre-fatigue Tuesday's pull-up; **first cut** if the WPU backoffs suffer | CS Incline Row (DB) 45/hand. **Never T-bar or bent-over.** |
+| D1 | **Iso-Lateral Row (Machine)** ➕ | 125 → 130×12 (110) *(hold)*, **per arm, one at a time** | **Pull on Monday** (`whole-body-every-day`) → mid-back, chest-supported, zero lumbar load. Under the 145 median so it doesn't pre-fatigue Tuesday's pull-up; **first cut** if the WPU backoffs suffer | CS Incline Row (DB) 45/hand. **Never T-bar or bent-over.** |
 | D2 | Hip Thrust (Smith) | 225×10 → 245×8 (185) | Sumo lockout / squat out of the hole → glutes | Glute Bridge (Barbell) |
 | D2 | Seated Leg Curl | 105 → 115×12 (95) | Hamstrings (knee-flexion side) | Lying Leg Curl |
 | D2 | **Single Arm Landmine Press** 🔄 | 25 → 35×10/arm (25) | Front delts → shoulder-friendly press path | Neutral-grip DB Press (seated, @7) |
