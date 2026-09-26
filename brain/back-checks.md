@@ -56,6 +56,18 @@ Any one of these: cut squat and sumo entirely and get back to the clinic.
 - **Night pain or pain at rest**
 - Pain that **doesn't settle within 24 h**
 
+## ⚠️ Medicated window 2026-09-11 → ~2026-09-30
+
+**apo-baclofen 10 mg BID + pms-pregabalin 25 mg BID**, started on or about **2026-09-11**
+(drug names and the end date confirmed by the athlete 2026-09-23 — *"one more week to consume"*).
+Checks logged inside it read through medication — **tag the row `medicated`** and do not pool them
+with the four unmedicated checks on file. `back_checks.py` splits post-injection from clean by
+injection date only; it does not know about this course.
+
+**Baclofen is the one that matters beyond pain.** It lowers muscle tone, which is the same quality
+the brace depends on — so it is a reason to hold the axial ceiling regardless of what the check
+says. Pregabalin at 25 mg BID is a low starting dose; its masking effect is modest.
+
 ## Checks
 
 _The check is the morning after the session date. Newest at the bottom._
@@ -66,3 +78,4 @@ _The check is the morning after the session date. Newest at the bottom._
 | 2026-08-31 | squat | tight | Athlete reported "fine-tight in the middle" — recorded as tight (conservative read of an out-of-vocab word). Clean week, 10d post-injection. Squat 275x5 @6 x4. |
 | 2026-09-04 | sumo | tight | Athlete reported "fine-tight in the middle" — same as Sep 1, not escalating. Clean week. Sumo ran 295x3 x3 (prescribed 275). |
 | 2026-09-15 | sumo | fine | Athlete reported 'back was not tight this morning' (Sep 16). Recorded fine: an explicit negation of 'tight' after three consecutive tight reads, not the ambiguous 'fine-tight in the middle' of Sep 1/5. Sumo 225x3 x3 @6, ~88h post 09-11 injection, outside the flare window — the clean comparable axial read of W6. |
+| 2026-09-22 | squat | tight | MEDICATED ROW - athlete on baclofen 10mg BID + pregabalin 25mg BID. Reported 'a little tight, almost fine' (2026-09-23) - ambiguous, rounds down to tight per standing rule. First check after Korea; session was off-plan squat 275/245/245x3. NOT comparable to the four unmedicated rows. |

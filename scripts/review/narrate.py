@@ -135,7 +135,8 @@ def render_fallback(stats: dict) -> str:
     logged = [a["name"] for a in stats["accessories"] if a["logged"]]
     lines += ["", f"<b>Accessories</b>: {len(logged)}/{len(stats['accessories'])} logged."]
     if rd["rpe_gaps"]:
-        lines.append(f"⚠️ Top sets missing RPE: {', '.join(rd['rpe_gaps'])}.")
+        # A blank RPE means below the app's @6 floor, not missing data (`blank-rpe-below-6`).
+        lines.append(f"ℹ️ Top sets with no RPE, read as below @6 (~@5): {', '.join(rd['rpe_gaps'])}.")
 
     bc = stats.get("back_checks")
     if bc:

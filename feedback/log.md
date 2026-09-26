@@ -678,3 +678,39 @@ current-block and active-issues. Fix missing exercise occurrences in the Sheet e
 add per-week phase overrides and correct the summary. No standing progression rule changed.
 
 → rules: one-off B5 exception to `axial-return-ladder`; no new general rule.
+
+### 2026-09-24 · general, block · whole-body sessions · bridge + 2026-Q4-B06
+**Feedback:** "For each workout I want to target the whole body, not necessarily distribute effort
+evenly across every muscle. I can focus more on the chest or push, but ultimately I aim to hit all
+the major muscle groups. I noticed that Thursday's session today omitted the lower-body workout
+entirely, which is why I added the leg press."
+
+**Verified (Hevy):** bridge Thu 09-24 ran exactly the written upper-only day (Dip, CGB, Pulldown, Reverse Pec
+Deck, Face Pull, Dead Bug) plus an off-plan **Leg Press 415×10 ×3**. Leg Press over the last 90 days: 6 sessions, median **405**, max 415. So 415 was his normal working
+load, not a reckless one. The problem was that it was unplanned and came the day before the sumo 225
+read, during the baclofen course.
+
+**Root cause:** a design gap, not an athlete one. `muscle-coverage-audit` checks coverage
+**across the week**, so a day with no lower body passed as long as another day had quads. The
+coach flagged the leg press as "off-plan", but the plan was what had the hole.
+
+**Actions taken:** (1) new rule `whole-body-every-day`; (2) bridge Friday: Leg Press 315 →
+**Leg Extension 130×12 ×3** (quads already took the Thursday press), pushed to Hevy with
+`--update --start W1-D2` and verified in the app; (3) B6 amended before its push: **D1 +
+Iso-Lateral Row 125→130** (no pull on Monday) and **D3 + Leg Extension 130→140** (no lower
+body on Thursday), both pinned `hold`, with a per-day coverage table added to
+`brain/current-block.md`. B6 isn't in Hevy yet, so nothing else to push.
+→ rules: `whole-body-every-day`
+
+### 2026-09-25 · general · blank RPE on main lifts · bridge
+**Feedback:** "If there is no RPE set, you can assume it's below 6, roughly around 5." Asked
+because bridge Friday's sumo 235×3 ×3 had no RPE; he confirmed it was **@5**.
+**Why it fits:** Hevy's RPE ladder starts at 6 (`rpe-hevy-ladder`), so a blank is the only way to
+log an easy set. The coach had been treating it as a gap. The weekly review's narration printed
+"⚠️ Top sets missing RPE", which was wrong under this convention.
+**Scope decision:** applied to primaries and secondaries. Accessories keep `accessory-rpe` (blank =
+7–8, his 2026-06-14 convention). That's a direct conflict, so it goes back to him to confirm.
+**Actions taken:** (1) rule `blank-rpe-below-6`; (2) `scripts/review/narrate.py` now reports blank
+top sets as "read as below @6 (~@5)" instead of warning, and the `weekly_metrics.readiness`
+comment is updated. Tests: 40 passed. (3) Friday sumo re-read as 235 @5.
+→ rules: `blank-rpe-below-6`

@@ -48,7 +48,7 @@ Press,3ct Pause Bench,3ct Pause Bench,,Secondary,,,Long-pause work superseded by
 Press,2ct Paused Bench,2ct Paused Bench,,Retired,,,Superseded by Spoto.
 Press,3-1-0 Tempo Bench,3-1-0 Tempo Bench,,Secondary,,,Out since Dec 2025.
 Press,Bench Press (Barbell) — generic,Bench Press (Barbell),,Retired,,,Generic log entry. Superseded by the named variants.
-Press,Incline Bench Press (Barbell),Incline Bench Press (Barbell),,Accessory,,,Incline is dumbbell-only now.
+Press,Incline Bench Press (Barbell),Incline Bench Press (Barbell),,Accessory,yes,,"BLOCKED 2026-09-23 (B5 review): incline is dumbbell-only — most subacromial-compressive bench angle, barbell fixes the path. Ran as barbell 185 on W6-D3 against a dumbbell-only prescription."
 Press,Decline Bench Press (Barbell),Decline Bench Press (Barbell),,Accessory,,,Out since 2024.
 Press,Wide Grip Bench Press,Bench Press - Wide Grip (Barbell),,Not for me,,,One session in 2023.
 Press,Floor Press,,,Not for me,,yes,Would cut the bottom third of the ROM — the range that hurts. LA Fitness has no rack setup for it. Blocked on equipment until the gym changes.
@@ -57,8 +57,8 @@ Press,Board Press,,,Not for me,,,Same job as the pin press — pick one.
 Press,Reverse-Grip Bench,,,Not for me,,,Wrong bet with your shoulder history.
 Press,Feet-Up Bench,,,Not for me,,,Redundant with the Larsen.
 Press,Bench with chains or bands,,,Not for me,,,LA Fitness will not have them.
-Overhead,Overhead Press (Barbell),Overhead Press (Barbell),,Accessory,,,Accessory only. Not a goal lift.
-Overhead,Upright Row (Barbell),Upright Row (Barbell),,Accessory,,,Minor. Impingement-adjacent — not worth expanding.
+Overhead,Overhead Press (Barbell),Overhead Press (Barbell),,Accessory,yes,,"BLOCKED 2026-09-23 (B5 review): overhead is the most bursitis-provocative pattern he owns. Substituted twice for the capped DB press in B5 (08-11, 09-01 to @9.5). B6 front-delt slot is Single Arm Landmine Press."
+Overhead,Upright Row (Barbell),Upright Row (Barbell),,Accessory,yes,,"BLOCKED 2026-09-23 (B5 review): internal rotation + abduction together closes the subacromial space — exactly where the bursitis and AC changes sit. Ran off-plan 90x8x3 on 08-17, undetected for five weeks."
 Overhead,Front Raise (Barbell),Front Raise (Barbell),,Accessory,,,Delt work is DB and cable now.
 Overhead,Push Press,,,Not for me,,,Chronic shoulder.
 Overhead,Push Jerk,,,Not for me,,,Chronic shoulder.

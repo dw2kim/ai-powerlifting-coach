@@ -146,6 +146,19 @@
   movements while another day ran thin. **Balance days by working-set volume, not accessory
   count** — a day with two primary lifts needs fewer accessories than a day with one.
   [FB 2026-08-07]
+- **whole-body-every-day** — **Every session hits the whole body: at least one lower-body, one
+  upper push, one upper pull and one core movement, every day.** Emphasis is allowed and expected. A
+  bench day can lean chest and a pull day can lean back; the rule is **coverage, not even
+  distribution**. The off-emphasis regions get a *dose* (one accessory, ~3 working sets), not parity.
+  This is the per-day check; `muscle-coverage-audit` stays the per-block check across the 13 groups.
+  The dose **inherits every constraint of its day**: `accessory-day-interference` picks the
+  movement (lowest cost to the next day, e.g. leg extension rather than leg press before sumo,
+  and a chest-supported mid-back row rather than a lat-heavy pull before the pull-up), and medical
+  caps still apply (no loaded hinge or axial squat pattern just to fill the lower slot). State the
+  per-day table in the block file. **Why it exists:** the 2026-09-24 bridge Thursday had no lower
+  body at all, and the athlete filled it himself with an off-plan 415×10 ×3 leg press, 24 h before
+  the sumo read. A hole in the plan gets filled at 6am, by feel, at a load nobody chose.
+  [FB 2026-09-24]
 - **equipment-fallbacks** — **The gym is busy and the session is capped at 60 minutes. When a
   machine or implement is occupied he substitutes an equivalent movement rather than waiting, and
   that is correct behaviour — not non-compliance, not drift, not a mapping bug.** Athlete's own
@@ -214,6 +227,22 @@
   steroid dulls pain gradually over days. Established for the lower back / squat + sumo; **applies
   to the shoulder and bench the moment a shoulder injection starts** (still not given as of
   2026-08-07 — the athlete must report it so bench and dip get the same treatment).
+  **EXTENDED 2026-09-22 to systemic analgesia.** The mechanism is masked pain, not the needle: a
+  prescribed **oral analgesic and/or muscle relaxant** masks the same signal **continuously for the
+  whole course**, where an injection masks for hours. While such a course is active, the affected
+  region's lifts are capped by absolute load exactly as under an injection, back checks logged
+  inside the window are tagged **medicated** and are not comparable to unmedicated ones, and the cap
+  lifts on the course finishing **plus** a clean unmedicated check — never on "doing great".
+  **Muscle relaxants carry a second problem that has nothing to do with pain, and it is usually the
+  stronger objection**: they lower muscle tone and motor-neuron excitability — the same quality the
+  **brace** depends on — on top of drowsiness and reduced coordination under a loaded bar. Hold
+  maximal axial attempts for the course regardless of what the back check says.
+  **Read the dose before sizing the masking claim**: a low starting dose (e.g. pregabalin 25 mg BID,
+  the bottom of a range that runs many times higher) masks modestly, and overstating it costs
+  credibility the next time a real restriction is needed. Name the drug and the dose in
+  `active-issues.md`, never just "painkillers".
+  [Sep 11 visit, reported 2026-09-22; drugs confirmed 2026-09-23 — baclofen 10 mg BID +
+  pregabalin 25 mg BID]
   **A clearance can be GRADED, and a graded clearance moves the cap rather than removing it**
   (added 2026-08-28 after *"start with a 25% weight increase and see how it goes"*). Convert it to
   one conservative **absolute-load step**, still not autoregulated while the region is masked.
@@ -229,6 +258,13 @@
   set as **RPE 7–8**, not as missing data — do not flag it. Only an explicitly logged **RPE 9+**
   on an accessory is a signal worth reacting to. Applies both to `reviewing-session` and to
   reading the log during block design. [FB 2026-06-14]
+- **blank-rpe-below-6** — On a **primary or secondary** lift, a working set logged with **no RPE
+  means below @6, roughly @5.** Hevy's ladder starts at 6, so a blank is the only way to record an
+  easy set. It is not missing data. Don't flag it as a gap, don't ask for it, and read it as ~@5
+  when judging a cap, a ladder rung or a trend. *Applied first:* bridge sumo 2026-09-25, 235×3 ×3
+  blank = @5. **Accessories keep `accessory-rpe`** (blank = 7–8, a separate 2026-06-14 convention)
+  unless he says otherwise. The weekly review lists blank top sets as "read as below @6" rather
+  than warning. [FB 2026-09-25]
 - **rpe-hevy-ladder** — Every prescribed RPE must be a value the Hevy app can actually record:
   **{6, 7, 7.5, 8, 8.5, 9, 9.5, 10}**. There is **no 6.5, and nothing below 6** — never program
   @6.5 / @5.5 / @5. Round submax (backoff / calibration) targets **down** to the nearest ladder
