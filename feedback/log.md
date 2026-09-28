@@ -733,3 +733,10 @@ squat W2–W4 → floor/range/ceiling **365→385 · 385→405 · 405→435**, w
 Sumo **255 · 265 · 275 · 285 · 235** (was 225 · 275 · 275 · 275 · 225). Landmine **50 · 50 · 55 · 55 · 50**.
 New rule `axial-floor-range-ceiling`; `sumo-skill-lift` amended (a gentle gated climb is allowed).
 → rules: `axial-floor-range-ceiling`, `sumo-skill-lift` (amended)
+
+### 2026-09-27 · general · blank RPE on accessories
+**Feedback:** "For accessories that have a blank RPE, you can treat them as 5 or less." This answers
+the open question from `blank-rpe-below-6`: a blank now means below the app's @6 floor on every lift.
+**Actions taken:** `accessory-rpe` revised (blank = @5 or less, replacing the 2026-06-14 "7–8").
+`blank-rpe-below-6` no longer carves out accessories. The `designing-training-block` skill wording is updated.
+→ rules: `accessory-rpe` (revised), `blank-rpe-below-6`
