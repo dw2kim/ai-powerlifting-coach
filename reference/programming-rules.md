@@ -266,17 +266,19 @@
 
 ## RPE conventions
 
-- **accessory-rpe** — Accessories usually have **no logged RPE**. **A blank-RPE accessory set is
-  @5 or less** (superseded 2026-09-27: it used to be read as 7–8). It is not missing data, so don't
-  flag it. Only an explicitly logged RPE is a signal, and **@9+ on an accessory** is the one worth
-  reacting to. Applies both to `reviewing-session` and to reading the log during block design.
-  [FB 2026-06-14, revised FB 2026-09-27]
-- **blank-rpe-below-6** — On a **primary or secondary** lift, a working set logged with **no RPE
-  means below @6, roughly @5.** Hevy's ladder starts at 6, so a blank is the only way to record an
-  easy set. It is not missing data. Don't flag it as a gap, don't ask for it, and read it as ~@5
-  when judging a cap, a ladder rung or a trend. *Applied first:* bridge sumo 2026-09-25, 235×3 ×3
-  blank = @5. **Accessories too:** blank = @5 or less (`accessory-rpe`, revised 2026-09-27). The weekly review lists blank top sets as "read as below @6" rather
-  than warning. [FB 2026-09-25]
+- **blank-rpe** — A blank RPE is read **with common sense, by context**, on every lift (primary,
+  secondary and accessory alike). Hevy's ladder starts at @6, so a blank is often the only way to
+  log an easy set, but it can also be a missed tap.
+  - **Some sets of the exercise rated, later ones blank** → a missed tap. Read the blanks as about the
+    last logged RPE.
+  - **No set of the exercise rated that session** → **@5 or less**. He'll usually raise the load next
+    time and rate it then.
+  - **Load raised and still blank** → still **@5**. The app has no number below 6 for him to enter.
+  Never flag a blank as missing data or ask him to fill it in. Only a **logged** RPE is a cap signal,
+  and **@9+ on an accessory** is the one worth reacting to. The weekly review implements this
+  (`scripts/review/weekly_metrics.effective_rpes`: logged / carried `*` / floor `@≤5`).
+  [FB 2026-06-14 as `accessory-rpe`; FB 2026-09-25 `blank-rpe-below-6`; replaced by this, FB 2026-09-27]
+- **accessory-rpe** — *Superseded by `blank-rpe`.* (Was: a blank accessory = @7–8.)
 - **rpe-hevy-ladder** — Every prescribed RPE must be a value the Hevy app can actually record:
   **{6, 7, 7.5, 8, 8.5, 9, 9.5, 10}**. There is **no 6.5, and nothing below 6** — never program
   @6.5 / @5.5 / @5. Round submax (backoff / calibration) targets **down** to the nearest ladder

@@ -124,12 +124,44 @@ def _match_accessory(name: str, index: list[dict], resolver) -> dict | None:
     return None
 
 
+BLANK_RPE_FLOOR = 5.0  # Hevy's RPE ladder starts at 6, so a set he couldn't rate reads as @5
+
+
+def effective_rpes(sets: list[dict]) -> list[tuple[float | None, str]]:
+    """Per working set: (rpe, source), reading blanks the way the athlete logs (`blank-rpe`).
+
+    - "logged":  he entered it.
+    - "carried": blank, but other sets of this exercise are rated. A trailing blank takes the
+                 last logged RPE (he forgot to tap it); a leading blank takes the next one.
+    - "floor":   no set of this exercise is rated, so the whole thing was @5 or less.
+    """
+    work = [s for s in sets if s.get("type") != "warmup"]
+    logged = [s.get("rpe") for s in work]
+    if all(r is None for r in logged):
+        return [(BLANK_RPE_FLOOR, "floor") for _ in work]
+    out: list[tuple[float | None, str]] = []
+    last = None
+    for i, r in enumerate(logged):
+        if r is not None:
+            last = r
+            out.append((r, "logged"))
+        elif last is not None:
+            out.append((last, "carried"))
+        else:
+            nxt = next(x for x in logged[i:] if x is not None)
+            out.append((nxt, "carried"))
+    return out
+
+
 def _best_working_set(ex: dict, is_bw: bool, bw: float) -> dict | None:
-    """Heaviest non-warmup set in an exercise block, by e1RM."""
+    """Heaviest non-warmup set in an exercise block, by e1RM. Its RPE is the effective one
+    (`effective_rpes`), with `rpe_src` saying whether it was logged, carried or the floor."""
     best = None
+    eff = iter(effective_rpes(ex.get("sets", [])))
     for s in ex.get("sets", []):
         if s.get("type") == "warmup":
             continue
+        rpe, src = next(eff)
         wt, reps = s.get("weight_kg"), s.get("reps")
         if wt is None or reps is None or reps == 0:
             continue
@@ -139,7 +171,8 @@ def _best_working_set(ex: dict, is_bw: bool, bw: float) -> dict | None:
         cand = {
             "added_lb": lbs,
             "reps": reps,
-            "rpe": s.get("rpe"),
+            "rpe": rpe,
+            "rpe_src": src,
             "e1rm": round(est, 1),
             "is_bw": is_bw,
         }
@@ -244,7 +277,7 @@ def geometry(block: dict, today: date_cls) -> dict:
 
 
 def readiness(week_sessions: list[dict], expected_days: list[str]) -> dict:
-    """Which expected training days have a logged session, and which top sets have a blank (sub-@6) RPE."""
+    """Which expected training days have a logged session, and how any blank top-set RPE was read."""
     taken: set = set()
     by_label: dict[str, str] = {}
     for w in week_sessions:
@@ -254,18 +287,19 @@ def readiness(week_sessions: list[dict], expected_days: list[str]) -> dict:
             taken.add(label)
             by_label[label] = (w.get("start_time") or "")[:10]
     missing = [d for d in expected_days if d not in taken]
-    # A Big-5 *top* set logged without an RPE. Hevy's ladder starts at @6, so a blank means
-    # "below 6, roughly @5" (`blank-rpe-below-6`). It gets listed so it's read that way, not
-    # flagged as a data gap.
-    rpe_gaps = []
+    # A Big-5 top set logged without an RPE (`blank-rpe`). Nothing rated on the exercise = @5
+    # or less ("rpe_gaps"). Other sets rated = a missed tap, read as those sets ("rpe_carried").
+    rpe_gaps, rpe_carried = [], []
     for w in week_sessions:
         for ex in w.get("exercises", []):
             tid = ex.get("exercise_template_id")
             if tid not in LIFTS:
                 continue
             best = _best_working_set(ex, LIFTS[tid][1], 0.0)
-            if best and best["rpe"] is None:
+            if best and best["rpe_src"] == "floor":
                 rpe_gaps.append(LIFTS[tid][0])
+            elif best and best["rpe_src"] == "carried":
+                rpe_carried.append(LIFTS[tid][0])
     return {
         "expected": expected_days,
         "logged": sorted(taken, key=lambda d: DAY_WEEKDAY[d]),
@@ -273,6 +307,7 @@ def readiness(week_sessions: list[dict], expected_days: list[str]) -> dict:
         "missing": missing,
         "all_in": not missing,
         "rpe_gaps": sorted(set(rpe_gaps)),
+        "rpe_carried": sorted(set(rpe_carried)),
     }
 
 

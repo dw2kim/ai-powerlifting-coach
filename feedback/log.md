@@ -740,3 +740,15 @@ the open question from `blank-rpe-below-6`: a blank now means below the app's @6
 **Actions taken:** `accessory-rpe` revised (blank = @5 or less, replacing the 2026-06-14 "7–8").
 `blank-rpe-below-6` no longer carves out accessories. The `designing-training-block` skill wording is updated.
 → rules: `accessory-rpe` (revised), `blank-rpe-below-6`
+
+### 2026-09-27 · general · blank RPE, by context (replaces the two entries above)
+**Feedback:** "Ignore what I just said… use your common sense." (1) If the first one or two sets are
+rated (@6–7) and the last one or two are blank, that's a mistake: read them as about the same RPE.
+(2) If no set of the exercise is rated, it's @5 or less, and he'll probably raise the load next time and
+rate it. (3) If the load went up and it's still blank, it's @5, because the app has no number below 6.
+**Actions taken:** `accessory-rpe` and `blank-rpe-below-6` are replaced by one rule, `blank-rpe`, which
+covers every lift. The weekly review now uses `effective_rpes`: a trailing blank carries the last
+logged RPE (shown `*`), an exercise with nothing rated reads `@≤5`, and the cap flags use the
+effective value. Three tests added (43 pass).
+**Open (asked):** a *leading* blank (set 1 blank, set 2 rated) currently takes the next logged value.
+→ rules: `blank-rpe`
