@@ -325,21 +325,21 @@
         {
           "name": "Single Arm Landmine Press (Barbell)",
           "tier": "accessory",
-          "notes": "ROTATED from DB Shoulder Press. Front delts on a diagonal path — less shoulder flexion, less subacromial compression than overhead. B5's DB press ran to @10 under a hard @7 cap and got swapped for barbell OHP twice; both are now blocked. LOAD = PLATES ON THE SLEEVE ONLY, not counting the bar; log it that way. First exposure — hard @7, 10 per arm. Painful arc (pain mid-range that eases at the top) = stop the set and tell me.",
+          "notes": "50 lb of PLATES on the sleeve, not counting the bar, per arm. Floor 50 per the athlete (FB 2026-09-27): 25 was too light. Press to a stop just short of lockout if the front of the shoulder talks. RPE cap @7: this slot ran to @10 as the DB press in B5.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
+              "weight_kg": 22.67964547178199,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
+              "weight_kg": 22.67964547178199,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
+              "weight_kg": 22.67964547178199,
               "reps": 10
             }
           ],
@@ -584,10 +584,10 @@
         {
           "name": "Sumo Deadlift",
           "tier": "primary",
-          "display_load": "225",
+          "display_load": "255",
           "hold": true,
-          "hold_reason": "Moderate lift under sumo-skill-lift + sumo-back-cap: fixed band, no wave, no autoregulating upward.",
-          "notes": "W1: 225 — first UNMEDICATED axial read of the block (course ends ~Sep 30). The comparable load to Sep 25. A CEILING, NOT A TARGET. Any rounding or bar-speed loss racks it. Back check the next morning.",
+          "hold_reason": "Moderate lift this block (alternating-axial-emphasis): a gentle +10/week climb set by the athlete (FB 2026-09-27), gated on the sumo back check. Written below the log on purpose; the sync must not rebase it.",
+          "notes": "255x3 x3 @6: a small step up from Friday's bridge 235 @5. The climb is +10/week to 285 in W4, deliberately staying under B5's 295: this is the MODERATE lift while the squat peaks. A fixed load, not a floor: no range, no autoregulating up (the squat gets the range this block, the sumo gets it in B7). Any rounding or bar-speed loss racks it. Back check the next morning.",
           "sets": [
             {
               "type": "warmup",
@@ -601,19 +601,19 @@
             },
             {
               "type": "normal",
-              "weight_kg": 102.05840462301894,
+              "weight_kg": 115.66619190608813,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05840462301894,
+              "weight_kg": 115.66619190608813,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05840462301894,
+              "weight_kg": 115.66619190608813,
               "reps": 3,
               "rpe": 6
             }
@@ -768,8 +768,8 @@
         {
           "name": "Low-bar Squat",
           "tier": "primary",
-          "notes": "RUNG 365 — ONLY IF the morning after last week's squat (W1) was logged FINE. 'tight', or NO CHECK LOGGED → repeat last week's squat exactly. Ran heavier than written last week → this rung is forfeited, repeat. Top triple harder than @8 → next week holds. SQUAT FIRST on D1 — never squat heavy pre-fatigued. Backoffs 4x4 @ 295: crisp, every set started fresh. If the rung holds, the backoffs hold with it.",
-          "display_load": "365",
+          "notes": "FLOOR 365x3 (the app shows the floor) · RANGE 365–385 · CEILING 385, hard. The floor is gated: 365 ONLY IF the morning after last week's squat was logged FINE. 'tight', or NO CHECK LOGGED -> repeat last week's floor. THE RANGE ABOVE THE FLOOR IS EARNED ON THE DAY, only if ALL hold: (a) last squat's morning check logged FINE; (b) off the meds with a clean unmedicated check on file; (c) last week's top triple was <=@7.5; (d) warm-up bar speed is crisp. Any one missing -> take the floor and stop there. Jump in 10s from the floor, one triple per jump, and stop at the first triple that reads @7.5 or the ceiling, whichever comes first. Above 385 forfeits next week's rung. Top triple harder than @8 -> next week holds. Next week's floor does NOT move with what you hit today. SQUAT FIRST on D1. Backoffs @ 295 stay keyed to the FLOOR, not to the top you hit: crisp, every set started fresh.",
+          "display_load": "365–385",
           "hold": true,
           "hold_reason": "Squat is on axial-return-ladder: every rung is an absolute load gated on the prior squat day's next-morning back check. Written below the log on purpose; the sync must not rebase it.",
           "sets": [
@@ -1053,21 +1053,21 @@
         {
           "name": "Single Arm Landmine Press (Barbell)",
           "tier": "accessory",
-          "notes": "ROTATED from DB Shoulder Press. Front delts on a diagonal path — less shoulder flexion, less subacromial compression than overhead. B5's DB press ran to @10 under a hard @7 cap and got swapped for barbell OHP twice; both are now blocked. LOAD = PLATES ON THE SLEEVE ONLY, not counting the bar; log it that way. First exposure — hard @7, 10 per arm. Painful arc (pain mid-range that eases at the top) = stop the set and tell me.",
+          "notes": "50 lb of PLATES on the sleeve, not counting the bar, per arm. Floor 50 per the athlete (FB 2026-09-27): 25 was too light. Press to a stop just short of lockout if the front of the shoulder talks. RPE cap @7: this slot ran to @10 as the DB press in B5.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
+              "weight_kg": 22.67964547178199,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
+              "weight_kg": 22.67964547178199,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
+              "weight_kg": 22.67964547178199,
               "reps": 10
             }
           ],
@@ -1312,10 +1312,10 @@
         {
           "name": "Sumo Deadlift",
           "tier": "primary",
-          "display_load": "275",
+          "display_load": "265",
           "hold": true,
-          "hold_reason": "Moderate lift under sumo-skill-lift + sumo-back-cap: fixed band, no wave, no autoregulating upward.",
-          "notes": "275 — ONLY IF the morning after the previous sumo day was logged FINE; else stay at 225. Fixed all of W2–W4: this is the MODERATE lift this block. No wave, no PR intent, no autoregulating up. A CEILING, NOT A TARGET. Any rounding or bar-speed loss racks it. Back check the next morning.",
+          "hold_reason": "Moderate lift this block (alternating-axial-emphasis): a gentle +10/week climb set by the athlete (FB 2026-09-27), gated on the sumo back check. Written below the log on purpose; the sync must not rebase it.",
+          "notes": "265x3 x3 @6: a small step up from 255. The climb is +10/week to 285 in W4, deliberately staying under B5's 295: this is the MODERATE lift while the squat peaks. 265 ONLY IF the morning after last week's sumo was logged FINE; tight or no check -> repeat last week's load. A fixed load, not a floor: no range, no autoregulating up (the squat gets the range this block, the sumo gets it in B7). Any rounding or bar-speed loss racks it. Back check the next morning.",
           "sets": [
             {
               "type": "warmup",
@@ -1328,20 +1328,25 @@
               "reps": 3
             },
             {
+              "type": "warmup",
+              "weight_kg": 102.05840462301894,
+              "reps": 2
+            },
+            {
               "type": "normal",
-              "weight_kg": 124.73805009480093,
+              "weight_kg": 120.20212100044454,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 124.73805009480093,
+              "weight_kg": 120.20212100044454,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 124.73805009480093,
+              "weight_kg": 120.20212100044454,
               "reps": 3,
               "rpe": 6
             }
@@ -1496,8 +1501,8 @@
         {
           "name": "Low-bar Squat",
           "tier": "primary",
-          "notes": "RUNG 385 — ONLY IF the morning after last week's squat (W2) was logged FINE. 'tight', or NO CHECK LOGGED → repeat last week's squat exactly. Ran heavier than written last week → this rung is forfeited, repeat. Top triple harder than @8 → next week holds. SQUAT FIRST on D1 — never squat heavy pre-fatigued. Backoffs 4x4 @ 315: crisp, every set started fresh. If the rung holds, the backoffs hold with it.",
-          "display_load": "385",
+          "notes": "FLOOR 385x3 (the app shows the floor) · RANGE 385–405 · CEILING 405, hard. The floor is gated: 385 ONLY IF the morning after last week's squat was logged FINE. 'tight', or NO CHECK LOGGED -> repeat last week's floor. THE RANGE ABOVE THE FLOOR IS EARNED ON THE DAY, only if ALL hold: (a) last squat's morning check logged FINE; (b) off the meds with a clean unmedicated check on file; (c) last week's top triple was <=@7.5; (d) warm-up bar speed is crisp. Any one missing -> take the floor and stop there. Jump in 10s from the floor, one triple per jump, and stop at the first triple that reads @8 or the ceiling, whichever comes first. Above 405 forfeits next week's rung. Top triple harder than @8 -> next week holds. Next week's floor does NOT move with what you hit today. SQUAT FIRST on D1. Backoffs @ 315 stay keyed to the FLOOR, not to the top you hit: crisp, every set started fresh.",
+          "display_load": "385–405",
           "hold": true,
           "hold_reason": "Squat is on axial-return-ladder: every rung is an absolute load gated on the prior squat day's next-morning back check. Written below the log on purpose; the sync must not rebase it.",
           "sets": [
@@ -1781,21 +1786,21 @@
         {
           "name": "Single Arm Landmine Press (Barbell)",
           "tier": "accessory",
-          "notes": "ROTATED from DB Shoulder Press. Front delts on a diagonal path — less shoulder flexion, less subacromial compression than overhead. B5's DB press ran to @10 under a hard @7 cap and got swapped for barbell OHP twice; both are now blocked. LOAD = PLATES ON THE SLEEVE ONLY, not counting the bar; log it that way. First exposure — hard @7, 10 per arm. Painful arc (pain mid-range that eases at the top) = stop the set and tell me.",
+          "notes": "55 lb of PLATES on the sleeve, not counting the bar, per arm. Floor 50 per the athlete (FB 2026-09-27): 25 was too light. Press to a stop just short of lockout if the front of the shoulder talks. RPE cap @7: this slot ran to @10 as the DB press in B5.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 15.87575183024739,
+              "weight_kg": 24.947610018960187,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 15.87575183024739,
+              "weight_kg": 24.947610018960187,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 15.87575183024739,
+              "weight_kg": 24.947610018960187,
               "reps": 10
             }
           ],
@@ -2047,8 +2052,8 @@
           "tier": "primary",
           "display_load": "275",
           "hold": true,
-          "hold_reason": "Moderate lift under sumo-skill-lift + sumo-back-cap: fixed band, no wave, no autoregulating upward.",
-          "notes": "275 — ONLY IF the morning after the previous sumo day was logged FINE; else stay at 225. Fixed all of W2–W4: this is the MODERATE lift this block. No wave, no PR intent, no autoregulating up. A CEILING, NOT A TARGET. Any rounding or bar-speed loss racks it. Back check the next morning.",
+          "hold_reason": "Moderate lift this block (alternating-axial-emphasis): a gentle +10/week climb set by the athlete (FB 2026-09-27), gated on the sumo back check. Written below the log on purpose; the sync must not rebase it.",
+          "notes": "275x3 x3 @6: a small step up from 265. The climb is +10/week to 285 in W4, deliberately staying under B5's 295: this is the MODERATE lift while the squat peaks. 275 ONLY IF the morning after last week's sumo was logged FINE; tight or no check -> repeat last week's load. A fixed load, not a floor: no range, no autoregulating up (the squat gets the range this block, the sumo gets it in B7). Any rounding or bar-speed loss racks it. Back check the next morning.",
           "sets": [
             {
               "type": "warmup",
@@ -2059,6 +2064,11 @@
               "type": "warmup",
               "weight_kg": 83.91468824559335,
               "reps": 3
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 102.05840462301894,
+              "reps": 2
             },
             {
               "type": "normal",
@@ -2229,8 +2239,8 @@
         {
           "name": "Low-bar Squat",
           "tier": "primary",
-          "notes": "RUNG 405 — ONLY IF the morning after last week's squat (W3) was logged FINE. 'tight', or NO CHECK LOGGED → repeat last week's squat exactly. Ran heavier than written last week → this rung is forfeited, repeat. Top triple harder than @8 → next week holds. This is the 405 you were owed in B5. Longer rest before it is fine — take 3 min, the timer is a floor. SQUAT FIRST on D1 — never squat heavy pre-fatigued. Backoffs 3x4 @ 335: crisp, every set started fresh. If the rung holds, the backoffs hold with it.",
-          "display_load": "405",
+          "notes": "PEAK — work up to @8. FLOOR 405x3 (the app shows the floor) · RANGE 405–435 · CEILING 435, hard. The floor is gated: 405 ONLY IF the morning after last week's squat was logged FINE. 'tight', or NO CHECK LOGGED -> repeat last week's floor. THE RANGE ABOVE THE FLOOR IS EARNED ON THE DAY, only if ALL hold: (a) last squat's morning check logged FINE; (b) off the meds with a clean unmedicated check on file; (c) last week's top triple was <=@7.5; (d) warm-up bar speed is crisp. Any one missing -> take the floor and stop there. Jump in 10s from the floor, one triple per jump, and stop at the first triple that reads @8 or the ceiling, whichever comes first. Above 435 forfeits next week's rung. Top triple harder than @8 -> next week holds. Next week's floor does NOT move with what you hit today. Longer rest before the top set is fine, take 3 min. SQUAT FIRST on D1. Backoffs @ 335 stay keyed to the FLOOR, not to the top you hit: crisp, every set started fresh.",
+          "display_load": "405–435",
           "hold": true,
           "hold_reason": "Squat is on axial-return-ladder: every rung is an absolute load gated on the prior squat day's next-morning back check. Written below the log on purpose; the sync must not rebase it.",
           "sets": [
@@ -2502,21 +2512,21 @@
         {
           "name": "Single Arm Landmine Press (Barbell)",
           "tier": "accessory",
-          "notes": "ROTATED from DB Shoulder Press. Front delts on a diagonal path — less shoulder flexion, less subacromial compression than overhead. B5's DB press ran to @10 under a hard @7 cap and got swapped for barbell OHP twice; both are now blocked. LOAD = PLATES ON THE SLEEVE ONLY, not counting the bar; log it that way. First exposure — hard @7, 10 per arm. Painful arc (pain mid-range that eases at the top) = stop the set and tell me.",
+          "notes": "55 lb of PLATES on the sleeve, not counting the bar, per arm. Floor 50 per the athlete (FB 2026-09-27): 25 was too light. Press to a stop just short of lockout if the front of the shoulder talks. RPE cap @7: this slot ran to @10 as the DB press in B5.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 15.87575183024739,
+              "weight_kg": 24.947610018960187,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 15.87575183024739,
+              "weight_kg": 24.947610018960187,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 15.87575183024739,
+              "weight_kg": 24.947610018960187,
               "reps": 10
             }
           ],
@@ -2761,10 +2771,10 @@
         {
           "name": "Sumo Deadlift",
           "tier": "primary",
-          "display_load": "275",
+          "display_load": "285",
           "hold": true,
-          "hold_reason": "Moderate lift under sumo-skill-lift + sumo-back-cap: fixed band, no wave, no autoregulating upward.",
-          "notes": "275 — ONLY IF the morning after the previous sumo day was logged FINE; else stay at 225. Fixed all of W2–W4: this is the MODERATE lift this block. No wave, no PR intent, no autoregulating up. A CEILING, NOT A TARGET. Any rounding or bar-speed loss racks it. Back check the next morning.",
+          "hold_reason": "Moderate lift this block (alternating-axial-emphasis): a gentle +10/week climb set by the athlete (FB 2026-09-27), gated on the sumo back check. Written below the log on purpose; the sync must not rebase it.",
+          "notes": "285x3 x3 @6: a small step up from 275. The climb is +10/week to 285 in W4, deliberately staying under B5's 295: this is the MODERATE lift while the squat peaks. 285 ONLY IF the morning after last week's sumo was logged FINE; tight or no check -> repeat last week's load. A fixed load, not a floor: no range, no autoregulating up (the squat gets the range this block, the sumo gets it in B7). Any rounding or bar-speed loss racks it. Back check the next morning.",
           "sets": [
             {
               "type": "warmup",
@@ -2777,20 +2787,25 @@
               "reps": 3
             },
             {
+              "type": "warmup",
+              "weight_kg": 102.05840462301894,
+              "reps": 2
+            },
+            {
               "type": "normal",
-              "weight_kg": 124.73805009480093,
+              "weight_kg": 129.27397918915733,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 124.73805009480093,
+              "weight_kg": 129.27397918915733,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 124.73805009480093,
+              "weight_kg": 129.27397918915733,
               "reps": 3,
               "rpe": 6
             }
@@ -3225,21 +3240,21 @@
         {
           "name": "Single Arm Landmine Press (Barbell)",
           "tier": "accessory",
-          "notes": "ROTATED from DB Shoulder Press. Front delts on a diagonal path — less shoulder flexion, less subacromial compression than overhead. B5's DB press ran to @10 under a hard @7 cap and got swapped for barbell OHP twice; both are now blocked. LOAD = PLATES ON THE SLEEVE ONLY, not counting the bar; log it that way. First exposure — hard @7, 10 per arm. Painful arc (pain mid-range that eases at the top) = stop the set and tell me. W5 deload.",
+          "notes": "50 lb of PLATES on the sleeve, not counting the bar, per arm. Floor 50 per the athlete (FB 2026-09-27): 25 was too light. Press to a stop just short of lockout if the front of the shoulder talks. RPE cap @7: this slot ran to @10 as the DB press in B5. W5 deload stays at the 50 floor.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
+              "weight_kg": 22.67964547178199,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
+              "weight_kg": 22.67964547178199,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
+              "weight_kg": 22.67964547178199,
               "reps": 10
             }
           ],
@@ -3494,10 +3509,10 @@
         {
           "name": "Sumo Deadlift",
           "tier": "primary",
-          "display_load": "225",
+          "display_load": "235",
           "hold": true,
-          "hold_reason": "Moderate lift under sumo-skill-lift + sumo-back-cap: fixed band, no wave, no autoregulating upward.",
-          "notes": "W5 deload. A CEILING, NOT A TARGET. Any rounding or bar-speed loss racks it. Back check the next morning.",
+          "hold_reason": "Moderate lift this block (alternating-axial-emphasis): a gentle +10/week climb set by the athlete (FB 2026-09-27), gated on the sumo back check. Written below the log on purpose; the sync must not rebase it.",
+          "notes": "DELOAD 235x3 x3 @6. Crisp. Back check the next morning.",
           "sets": [
             {
               "type": "warmup",
@@ -3511,19 +3526,19 @@
             },
             {
               "type": "normal",
-              "weight_kg": 102.05840462301894,
+              "weight_kg": 106.59433371737533,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05840462301894,
+              "weight_kg": 106.59433371737533,
               "reps": 3,
               "rpe": 6
             },
             {
               "type": "normal",
-              "weight_kg": 102.05840462301894,
+              "weight_kg": 106.59433371737533,
               "reps": 3,
               "rpe": 6
             }

@@ -89,13 +89,13 @@ morning-after back check — while bench, pull-up and dip keep climbing on stagg
 
 | Week | Squat *(ladder)* | Comp Bench | Sumo *(moderate)* | Pull-up | Dip |
 |---|---|---|---|---|---|
-| **W1** calibration | **315×3** fixed, @≤7 | 240×4 @7 | **225×3 ×3** @6 | BW+60×4 @7 | BW+70×5 ×4 @7 |
-| **W2** establish | **365×3** 🔒 | 250×3 @7.5 | **275×3 ×3** 🔒 | BW+75×4 @7.5 | BW+85×5 ×4 @7.5 |
-| **W3** push | **385×3** 🔒 | 255×3 @7.5 *(hold)* | 275×3 ×3 | BW+85×3 @8 | **⛰️ work up to @8: BW+105–110×3** |
-| **W4** peak | **405×3** 🔒 ⛰️ | **⛰️ work up to @8: 275–285×2** | 275×3 ×3 | **⛰️ work up to @8 HARD STOP: BW+90–95×3** | BW+85×5 ×4 *(hold)* |
-| **W5** deload | 275×3 @6 | 225×4 @6 | 225×3 ×3 @6 | BW+50×4 @6 | BW+60×5 ×3 @6 |
+| **W1** calibration | **315×3** fixed, @≤7 | 240×4 @7 | **255×3 ×3** @6 | BW+60×4 @7 | BW+70×5 ×4 @7 |
+| **W2** establish | **365** 🔒 → ≤385 | 250×3 @7.5 | **265×3 ×3** 🔒 | BW+75×4 @7.5 | BW+85×5 ×4 @7.5 |
+| **W3** push | **385** 🔒 → ≤405 | 255×3 @7.5 *(hold)* | 275×3 ×3 🔒 | BW+85×3 @8 | **⛰️ work up to @8: BW+105–110×3** |
+| **W4** peak | **405** 🔒 → ≤**435** ⛰️ | **⛰️ work up to @8: 275–285×2** | 285×3 ×3 🔒 | **⛰️ work up to @8 HARD STOP: BW+90–95×3** | BW+85×5 ×4 *(hold)* |
+| **W5** deload | 275×3 @6 | 225×4 @6 | 235×3 ×3 @6 | BW+50×4 @6 | BW+60×5 ×3 @6 |
 
-🔒 = gated rung (see the ladder rules). ⛰️ = that lift's peak week.
+🔒 = gated rung (see the ladder rules). ⛰️ = that lift's peak week. **Squat W2–W4 = floor → ceiling** (FB 2026-09-27): the app shows the floor, and the range above it is earned on the day.
 
 **Backoffs**
 - **Squat** (`primary-backoff-volume` 4·4·4·3·3): 275×4 ×4 · 295×4 ×4 · 315×4 ×4 · 335×4 ×3 · 245×4 ×3.
@@ -119,23 +119,32 @@ the thing you want.**
 | Rung | Load | Unlocked by |
 |---|---|---|
 | W1 | **315×3** | — calibration, fixed. Medicated day, no rung claimed. |
-| W2 | **365×3** | W1 check (Tue Sep 29) logged **fine**. A return to a load you've already done @6 on Sep 7 — medicated check is acceptable here. |
-| W3 | **385×3** | W2 check (Tue Oct 6) logged **fine**. **The first genuinely new rung**, on an unmedicated check. |
-| W4 | **405×3** | W3 check (Tue Oct 13) logged **fine**. **The 405 you were owed.** |
+| W2 | **365×3**, range to **385** | W1 check (Tue Sep 29) logged **fine**. A return to a load you've already done @6 on Sep 7 — medicated check is acceptable for the floor. |
+| W3 | **385×3**, range to **405** | W2 check (Tue Oct 6) logged **fine**. **The first genuinely new rung**, on an unmedicated check. |
+| W4 | **405×3**, work up to @8 → **435** ceiling | W3 check (Tue Oct 13) logged **fine**. **The 405 you were owed, and up to 435 if the day is there.** |
 
 **The four ways a rung is lost — every one of them means repeat last week's squat, top and backoffs:**
 1. The check reads **tight**.
 2. **No check is logged.** Silence is not "fine". This is the lever: in B5 you logged 4 of 13. In B6,
    an unlogged morning costs you the next rung — directly, the same week.
-3. **You ran heavier than written** the week before. Creep forfeits the next rung.
+3. **You went above the week's ceiling.** Anything inside the range is the plan working. Above the ceiling is creep, and creep forfeits the next rung.
 4. The top triple came in **harder than @8**.
+
+**Floor → range → ceiling (added 2026-09-27, athlete's call).** The floor is the rung, gated as above, and
+it's what the app shows. The range above it is **earned on the day**, only if all four hold: the last squat
+morning check was *fine*; you're off the meds with a clean unmedicated check on file; last week's top triple
+was ≤@7.5; and the warm-ups move fast. Then climb in 10s, one triple per jump, and stop at the first triple
+that hits the week's RPE or the ceiling. **Next week's floor doesn't move with what you hit**, so a good day
+doesn't become next week's minimum. Backoffs stay keyed to the floor. W1 has no range: it's today, and
+you're still on baclofen (`masked-pain-load-cap`: no maximal axial work during the course).
 
 **If a rung holds, tell me and I'll re-push that week's squat at the held load** (`amending-live-block`)
 so the app always shows the true number. The app never shows a rung you haven't earned.
 
 **Why not 445** (your stated target in August): 315 → 405 is already +90 lb in four weeks coming off a
 medical restriction, and `axial-return-ladder` says the ramp rate *is* the exposure. 405 is 79% of your
-511 e1RM — a return, not a PR. **445 is a B8 conversation**, after B7's sumo block.
+511 e1RM — a return, not a PR. The W4 range to **435** (85%) is the most this block will sign off on,
+and only on a day that earns it. **445+ is a B8 conversation**, after B7's sumo block.
 
 **Why no squat secondary**: the entire squat secondary pool (Paused, Tempo, High-bar, Front) is
 **Blocked — medical**, and a graded return is not clearance for a second weekly axial session.
@@ -145,10 +154,12 @@ Same for the deadlift secondary pool. Revisit both when the clinic clears axial 
 
 ## Sumo — moderate, on purpose
 
-**225 in W1** (the first unmedicated axial read — comparable to Sep 25), **275 fixed W2–W4** if the
-W1 sumo check reads fine (else stay at 225), **225 in W5**. Crisp triples @6, no wave, no PR intent,
-no autoregulating upward (`sumo-skill-lift`). 275 is below the 345–405 `sumo-back-cap` band — that
-band is the heavy-block ceiling, and this isn't the heavy block. **B7 is.**
+**255 → 265 → 275 → 285, then 235 in W5**: crisp triples @6, +10 a week, each step gated on the sumo
+morning check (tight or no check → repeat last week's load). **Re-set 2026-09-27 at the athlete's call**
+(`FB 2026-09-27`): the original 225 → 275-flat started below what he'd just pulled at @5 (235 on Sep 25).
+The gentle climb is his preference too. It tops out at 285, **under B5's 295**, so the squat still peaks
+alone in W4 (`alternating-axial-emphasis`). A fixed load, not a floor: the squat gets the range this
+block, and sumo gets it in **B7**, the heavy-sumo block. All of it sits below the 345–405 `sumo-back-cap` band.
 
 Keeping it at all matters: detraining a hinge makes returning to it more dangerous, and light crisp
 pulling keeps the erectors and glutes doing protective work while the squat takes the load.
@@ -191,7 +202,7 @@ item #2) — an accessory at @9+ gets flagged like a primary would.
 | D1 | **Iso-Lateral Row (Machine)** ➕ | 125 → 130×12 (110) *(hold)*, **per arm, one at a time** | **Pull on Monday** (`whole-body-every-day`) → mid-back, chest-supported, zero lumbar load. Under the 145 median so it doesn't pre-fatigue Tuesday's pull-up; **first cut** if the WPU backoffs suffer | CS Incline Row (DB) 45/hand. **Never T-bar or bent-over.** |
 | D2 | Hip Thrust (Smith) | 225×10 → 245×8 (185) | Sumo lockout / squat out of the hole → glutes | Glute Bridge (Barbell) |
 | D2 | Seated Leg Curl | 105 → 115×12 (95) | Hamstrings (knee-flexion side) | Lying Leg Curl |
-| D2 | **Single Arm Landmine Press** 🔄 | 25 → 35×10/arm (25) | Front delts → shoulder-friendly press path | Neutral-grip DB Press (seated, @7) |
+| D2 | **Single Arm Landmine Press** 🔄 | **50** → 55×10/arm (50) — floor 50, athlete FB 09-27 | Front delts → shoulder-friendly press path | Neutral-grip DB Press (seated, @7) |
 | D2 | Lateral Raise (DB) | 30 → 35×15 (25) | Lateral delts — was a hole in B4 | Cable Lateral Raise |
 | D3 | Lat Pulldown | 165 → 170×12 (145) | Pull-up → lats, seated, no axial load | Natural Grip Pulldown |
 | D3 | Reverse Pec Deck | 110 → 115×15 (100) | **Load-bearing**: intact posterior cuff shares load off two torn anterior tendons | Rear Delt Fly (DB) 25 |
@@ -212,7 +223,7 @@ loaded lumbar flexion, no hanging leg raise** while the back is under treatment.
   implement. The DB press ran to @10 under a hard @7 cap and was swapped for barbell OHP twice.
   **First exposure: the load is plates on the sleeve, not counting the bar** — log it that way.
   There's no reliable DB→landmine conversion (published guidance only says landmine allows *more*
-  load on a friendlier path), so it starts at 25 and W1–W2 set the real anchor.
+  load on a friendlier path), so it was written at 25; **the athlete re-set the floor at 50 (FB 2026-09-27)** — 25 was too light.
 - **🆕 Expansion: Chest Fly (Machine)** — chest isolation, the group the program only reaches through
   presses. It answers your Sep 16 ask for chest work **as a fly, not a fifth press**. Stop the handles
   before the elbows travel behind the torso — the stretched bottom loads the anterior capsule where

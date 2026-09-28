@@ -846,3 +846,12 @@ signal left from this session.
 now means below @6 by rule (`blank-rpe-below-6`). So the "no RPE, unusable read" above was my
 misreading of the log. 235 @5 is a usable bridge read, and a good one: 10 lb over the ceiling at
 the easiest effort the app can't even record. The ceiling overrun still counts, but it's small.
+
+## 2026-09-27 — His worry about the 405 was fair
+
+He's peaked at 475–485, so a hard 405 read to him as "lose strength, lose the groove". The honest answer
+is that 3 weeks of triples at 80–85% with weekly squatting keeps strength and skill; detraining at
+that intensity over one block is small. But a single number also taught him that a good day doesn't
+count. Now the floor is the gate and the range is the reward: floor 405, ceiling 435 in W4. Watch
+whether he takes the range on marginal days. The four conditions exist for exactly that. Sumo re-set
+to 255 → 285 at his call.

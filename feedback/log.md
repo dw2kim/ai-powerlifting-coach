@@ -714,3 +714,22 @@ log an easy set. The coach had been treating it as a gap. The weekly review's na
 top sets as "read as below @6 (~@5)" instead of warning, and the `weekly_metrics.readiness`
 comment is updated. Tests: 40 passed. (3) Friday sumo re-read as 235 @5.
 → rules: `blank-rpe-below-6`
+
+### 2026-09-27 · block, load · squat peak, sumo start, landmine floor · 2026-Q4-B06
+**Feedback:** (1) Back check: "lower back seems to be fine eventually" (after the Sep 25 sumo).
+(2) Landmine press minimum should be **50 lb**; 25 is too light. (3) "I usually hit 475 or 485 for
+the peak and this block's peak is 405, about 80%. I'm worried I'll lose strength, skills, form or
+tempo." He asked for a **range depending on the day**, a **minimum load** for each day, and the
+**range and ceiling in the notes**. (4) Sumo is too light at the start. He likes the slight weekly
+climb and is fine with squat-now, sumo-next-block, but not with the starting point.
+**Interpretation note:** the transcription read "minimum load for squats … at least 15 lbs … right now
+it's 25". The only 25 lb press load in B6 is the Single Arm Landmine Press (plates on the sleeve), and
+15 < 25 doesn't parse, so this was read as **landmine, 50 lb**. Confirm with the athlete.
+**Verified (Hevy):** DB Shoulder Press ran 70/hand (B5), so 50 lb of plates on a single-arm landmine is
+conservative. Sumo: 235×3 ×3 @5 on 09-25, 295×3 @6 on 09-04 and 09-11. Squat: 90-day max 480 and median
+425 as of 09-05; B5 top 365×3 @6.
+**Actions taken:** back check logged *fine* (medicated). B6 amended before its first push:
+squat W2–W4 → floor/range/ceiling **365→385 · 385→405 · 405→435**, with W1 315 fixed (still medicated).
+Sumo **255 · 265 · 275 · 285 · 235** (was 225 · 275 · 275 · 275 · 225). Landmine **50 · 50 · 55 · 55 · 50**.
+New rule `axial-floor-range-ceiling`; `sumo-skill-lift` amended (a gentle gated climb is allowed).
+→ rules: `axial-floor-range-ceiling`, `sumo-skill-lift` (amended)

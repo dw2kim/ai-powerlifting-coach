@@ -80,6 +80,18 @@
   Set the destination from the Hevy log, but treat the **ramp rate** as the exposure. While
   injections continue, every rung remains an absolute load under `masked-pain-load-cap`, never an
   RPE target. [FB 2026-08-29]
+- **axial-floor-range-ceiling** — Once an axial lift is out of a medical course (injection or
+  medication window) but still on `axial-return-ladder`, write each gated rung as a **floor → range →
+  ceiling**, not a single number. The **floor** is the rung: gated by the ladder, the load the app shows,
+  and the backoffs key off it. The **range** above it is earned on the day, only when the last morning
+  check was *fine*, a clean unmedicated check is on file, last week's top was ≤@7.5 and the warm-ups move
+  fast. Climb in 10s and stop at the week's RPE or the ceiling. The **ceiling** is hard: above it is creep
+  and forfeits the next rung. Going above the floor inside the range is not creep. **Next week's floor
+  never moves with what the range reached.** State the floor, range and ceiling in the Hevy notes and
+  `display_load`. Inside a medical window the rung stays a single fixed load (`masked-pain-load-cap`).
+  **Why:** the athlete peaks at 475–485 historically and a single 405 read as a cap on a good day, with a
+  real worry about losing strength, groove and tempo. A range lets a good day count without letting a
+  good day reset the ladder. [FB 2026-09-27]
 - **accessory-progression** — Accessories progress *gradually*: hold a load for 2–3 weeks,
   then small bumps. Do **not** apply the primary/secondary "+5 lb each week" default to
   accessories. They should still trend up across blocks, just slowly. [FB 2026-06-14]
@@ -364,7 +376,11 @@
 - **sumo-skill-lift** — **Applies when sumo is the moderate lift** under
   `alternating-axial-emphasis` (athlete reversed the permanent skill-lift treatment on 2026-08-29).
   In moderate blocks, keep sumo on its day at a fixed low band: crisp low reps, technique focus,
-  no PR intent, no intensity wave, and no autoregulating upward. In heavy-sumo blocks it may wave,
+  no PR intent, no intensity wave, and no autoregulating upward.
+  **Amended 2026-09-27:** the fixed band may **climb gently, about +10 lb/week**, each step gated on
+  the sumo back check and topping out under the prior block's sumo peak. The athlete wants a visible
+  trend, and a start **no lower than his most recent easy pull** (B6: 255 → 285, after 235 @5).
+  Still no range and no autoregulating up. [FB 2026-09-27] In heavy-sumo blocks it may wave,
   but only through `axial-return-ladder` and inside `sumo-back-cap`; back rounding or bar-speed
   loss always ends the set.
   **Why keep it rather than drop it:** detraining a hinge makes returning to it more dangerous;
