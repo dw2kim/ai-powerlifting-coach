@@ -2,7 +2,25 @@
   "block_id": "2026-Q4-B06",
   "start_date": "2026-09-28",
   "weeks": 5,
-  "summary": "Squat-heavy block. Squat climbs a gated ladder 315→365→385→405; sumo is the moderate lift at a fixed 225/275. Bench, pull-up and dip keep strive waves with staggered peaks (dip W3, bench + pull-up W4).",
+  "summary": {
+    "goal": "Squat-heavy block, sumo moderate (alternating-axial-emphasis). The squat climbs a gated ladder, 315 -> 365 -> 385 -> 405, where each floor is unlocked by a FINE morning back check, and W2-W4 carry a range above the floor up to a hard ceiling (385 / 405 / 435). Bench, pull-up and dip keep strive waves with staggered peaks: dip in W3, bench and pull-up in W4. W5 deloads.",
+    "changes": [
+      "SQUAT floor -> range -> ceiling (athlete, 2026-09-27): W1 315x3 fixed (still on baclofen). W2 365 up to 385, W3 385 up to 405, W4 405 working up to @8, ceiling 435. The range is earned on the day: last check FINE, off meds with a clean unmedicated check, last week's top <=@7.5, crisp warm-ups. Next week's floor never moves with the range. Above the ceiling forfeits the next rung.",
+      "SUMO re-set (athlete, 2026-09-27): 255 / 265 / 275 / 285 / 235, triples x3 @6, +10 a week, each step gated on the sumo back check. It stays under B5's 295 so the squat peaks alone in W4. B7 is the heavy-sumo block.",
+      "Comp bench W4 is 'work up to @8: 275-285x2' (cap-is-a-target); it holds at 255 in W3 so it doesn't peak with the dip.",
+      "Dip peaks in W3 (work up to @8: BW+105-110x3) and holds in W4. Pull-up peaks in W4 with a hard stop at @8 (BW+90-95x3).",
+      "Squat and deadlift secondary pools are fully Blocked - medical, so there is no squat or sumo secondary. Spoto (D4) and CGB (D3) are held.",
+      "Squat backoffs are fours, not fives (4-4-4-3-3 sets), keyed to the floor."
+    ],
+    "accessory_changes": [
+      "WHOLE-BODY EVERY DAY (athlete, 2026-09-24): D1 + Iso-Lateral Row (Machine) 125 -> 130 per arm (a pull on Monday); D3 + Leg Extension 130 -> 140 (lower body on Thursday).",
+      "ROTATED: DB Shoulder Press -> Single Arm Landmine Press, plates-only floor 50 lb (athlete, 2026-09-27; 25 was too light).",
+      "EXPANSION: Chest Fly (Machine) on D1, chest isolation rather than a fifth press.",
+      "BACK after the medication course: Bulgarian Split Squat (D4). MOVED: Hip Thrust D3 -> D2, off the day before sumo.",
+      "DROPPED: Leg Press and Weighted Back Extension. STILL OUT: Incline DB Press, all overhead barbell work, upright row.",
+      "Core every day, a different pattern each day: Side Plank, Pallof, Dead Bug, Bird Dog."
+    ]
+  },
   "days": [
     {
       "label": "D1",
@@ -26,11 +44,26 @@
     }
   ],
   "week_phases": {
-    "1": "calibration",
-    "2": "establish",
-    "3": "push",
-    "4": "peak",
-    "5": "deload"
+    "1": {
+      "label": "CALIBRATION",
+      "description": "Squat 315x3 fixed (still on baclofen until ~Sep 30). Sumo 255. Every lift re-enters under its old working load."
+    },
+    "2": {
+      "label": "ESTABLISH",
+      "description": "Squat floor 365, range to 385 if the day earns it. Sumo 265, gated on the sumo check."
+    },
+    "3": {
+      "label": "PUSH",
+      "description": "Squat floor 385, range to 405. DIP PEAK (work up to @8). Bench holds at 255."
+    },
+    "4": {
+      "label": "PEAK",
+      "description": "Squat floor 405, work up to @8, ceiling 435. Bench and pull-up peak (work up to @8). Dip holds. Sumo 285, still moderate."
+    },
+    "5": {
+      "label": "DELOAD",
+      "description": "Loads drop, @6. Squat 275, sumo 235."
+    }
   },
   "prescriptions": [
     {
