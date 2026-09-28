@@ -6,6 +6,8 @@
 **Dates**: **Mon 2026-09-28 → Fri 2026-10-30** (5 weeks, 4 days/week)
 **Source**: Designed 2026-09-24 from the B5 review (`reviews/2026-Q3-B05.md`), the Sep 11 clinical
 update, and the athlete's call on axial emphasis (2026-09-23).
+**Live in Hevy**: pushed **2026-09-28 01:14 UTC**, folder `2026-Q4-B06` (id 3744659), 20 routines, athlete-approved
+after a Sheet review. Changes from here go through `amending-live-block` (`--update --start`).
 **Prior block**: `data/block-archive/2026-Q3-B05.{md,json}` · bridge sessions in
 `data/block-archive/2026-Q3-BRIDGE.{md,json}`
 
