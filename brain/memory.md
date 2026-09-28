@@ -855,3 +855,13 @@ that intensity over one block is small. But a single number also taught him that
 count. Now the floor is the gate and the range is the reward: floor 405, ceiling 435 in W4. Watch
 whether he takes the range on marginal days. The four conditions exist for exactly that. Sumo re-set
 to 255 → 285 at his call.
+
+## 2026-09-28 — B6 W1-D1: main work exact, half the accessories gone
+
+Squat 315×3 then 275×4 ×4, exactly as written, nothing rated (= @5 or less, `blank-rpe`), on baclofen.
+Bench 240×4 @7 exact (e1RM ~296, level with the B5 best). Backoffs 205×5 @6/6/7, but **three, not
+four**. Iso-Lateral Row 125/arm ran **@7.5 → 8.5**, hotter than the @7 it was written for (a
+Tuesday-pull-up interference slot), so hold 125 until it reads ≤@7.5. **Skipped:** pushdown, chest
+fly, side plank. The session ran **80 min** against a 60-min cap. Likely D1 is overstuffed for his
+clock, not skipped by choice: squat + bench are 10 working sets before any accessory. **Core was
+the casualty**, which breaks `core-every-day`. Asked him why before trimming D1.
