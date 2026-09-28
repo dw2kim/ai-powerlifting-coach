@@ -752,3 +752,6 @@ logged RPE (shown `*`), an exercise with nothing rated reads `@≤5`, and the ca
 effective value. Three tests added (43 pass).
 **Open (asked):** a *leading* blank (set 1 blank, set 2 rated) currently takes the next logged value.
 → rules: `blank-rpe`
+**Answered 2026-09-27:** (1) A leading blank reads as the next set, which confirms the default. (2) "For the
+backoff, I usually put the RPE, so if it is blank, it probably meant RPE 5 or less." A blank set lighter than a
+rated set is now the floor (@5 or less), not carried. `effective_rpes` is updated and has a 4th test.

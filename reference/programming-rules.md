@@ -269,8 +269,11 @@
 - **blank-rpe** — A blank RPE is read **with common sense, by context**, on every lift (primary,
   secondary and accessory alike). Hevy's ladder starts at @6, so a blank is often the only way to
   log an easy set, but it can also be a missed tap.
-  - **Some sets of the exercise rated, later ones blank** → a missed tap. Read the blanks as about the
-    last logged RPE.
+  - **Some sets of the exercise rated, later ones blank at the same load** → a missed tap. Read the
+    blanks as the last logged RPE. A **leading** blank (set 1 blank, set 2 rated) reads as the next
+    logged set.
+  - **A blank backoff** (lighter than a rated top set) → **@5 or less**. He rates his backoffs, so a
+    blank one was too easy to rate.
   - **No set of the exercise rated that session** → **@5 or less**. He'll usually raise the load next
     time and rate it then.
   - **Load raised and still blank** → still **@5**. The app has no number below 6 for him to enter.

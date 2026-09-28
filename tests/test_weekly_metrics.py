@@ -71,3 +71,11 @@ def test_blank_rpe_all_sets_blank_is_the_floor():
 def test_blank_rpe_leading_blank_takes_the_next_logged():
     from scripts.review.weekly_metrics import effective_rpes
     assert effective_rpes(_sets(None, 7)) == [(7, "carried"), (7, "logged")]
+
+
+def test_blank_rpe_blank_backoff_under_a_rated_top_is_the_floor():
+    from scripts.review.weekly_metrics import effective_rpes
+    sets = [{"type": "normal", "weight_kg": 143, "reps": 3, "rpe": 7},
+            {"type": "normal", "weight_kg": 125, "reps": 4, "rpe": None},
+            {"type": "normal", "weight_kg": 125, "reps": 4, "rpe": None}]
+    assert effective_rpes(sets) == [(7, "logged"), (5.0, "floor"), (5.0, "floor")]

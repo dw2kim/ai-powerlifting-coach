@@ -131,20 +131,25 @@ def effective_rpes(sets: list[dict]) -> list[tuple[float | None, str]]:
     """Per working set: (rpe, source), reading blanks the way the athlete logs (`blank-rpe`).
 
     - "logged":  he entered it.
-    - "carried": blank, but other sets of this exercise are rated. A trailing blank takes the
-                 last logged RPE (he forgot to tap it); a leading blank takes the next one.
-    - "floor":   no set of this exercise is rated, so the whole thing was @5 or less.
+    - "carried": blank, at the same load as rated sets. A missed tap, so it takes the last
+                 logged RPE, or for a leading blank the next one.
+    - "floor":   @5 or less. Either no set of the exercise is rated, or it's a blank backoff
+                 (lighter than a rated set). He rates his backoffs, so a blank one was too easy
+                 to rate on Hevy's 6-and-up ladder.
     """
     work = [s for s in sets if s.get("type") != "warmup"]
     logged = [s.get("rpe") for s in work]
     if all(r is None for r in logged):
         return [(BLANK_RPE_FLOOR, "floor") for _ in work]
+    top_rated = max((s.get("weight_kg") or 0) for s in work if s.get("rpe") is not None)
     out: list[tuple[float | None, str]] = []
     last = None
-    for i, r in enumerate(logged):
+    for i, (s, r) in enumerate(zip(work, logged)):
         if r is not None:
             last = r
             out.append((r, "logged"))
+        elif (s.get("weight_kg") or 0) < top_rated:
+            out.append((BLANK_RPE_FLOOR, "floor"))
         elif last is not None:
             out.append((last, "carried"))
         else:
