@@ -865,3 +865,13 @@ Tuesday-pull-up interference slot), so hold 125 until it reads ≤@7.5. **Skippe
 fly, side plank. The session ran **80 min** against a 60-min cap. Likely D1 is overstuffed for his
 clock, not skipped by choice: squat + bench are 10 working sets before any accessory. **Core was
 the casualty**, which breaks `core-every-day`. Asked him why before trimming D1.
+
+## 2026-09-29 — B6 W1-D2: landmine 50 was wrong, the rest clean
+
+WPU BW+60×4 @6, then 3× BW+45×5 @6/7/7.5, as written. Hip thrust 225×10 @6–7, leg curl 105 @6,
+lateral raise 33 (30 written) @6–7, Pallof 25 @7.5/8/**9**. **Chest Fly 100×12 moved here from
+Monday**, where it was skipped. **Landmine: he ran 45, not 50, @8/9/9.5** — "too heavy with 50lbs,
+even 45lbs was 8rpe for the first set". So the 50 floor I set from his "25 is too light" message
+put a torn-tendon shoulder slot at @9.5 against a @7 cap. The right load is between 25 and 45:
+**35 proposed**. The session ran ~2 h on the clock (10:47–12:43), so check whether the timer was
+left running. Monday's squat back check has not been reported yet.
