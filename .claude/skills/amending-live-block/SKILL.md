@@ -62,6 +62,8 @@ cut.
   — which drives the rest timer, 1:15 / 1:00 / 1:00 / 0:30 (`hevy-rest-timers`). Don't leave
   it to the name classifier and don't re-inflate the numbers; they're his.
 - Keep week/day numbering intact so `--update` matches routines by title.
+- **Changed a primary's load? Re-run `python -m scripts.hevy.warmups --apply`** so its
+  warm-up ramp follows the new top set (`primary-warmup-ramp`). It only touches warm-ups.
 
 ### 4. Sweep for holds — the step that gets skipped
 
@@ -121,6 +123,7 @@ Commit atomically, coach voice, naming the change and the numbers, e.g.
 - [ ] Start point = next **untrained** session
 - [ ] Every new/changed load anchored on the log; any "no history" treated as a mapping bug
 - [ ] Full-precision kg; `tier` on every entry
+- [ ] Big-5 warm-up ramps regenerated (`scripts.hevy.warmups --apply`)
 - [ ] `reconcile_loads` swept; every deliberately-light load pinned with `hold` + reason
 - [ ] Dry run checked against the Sheet — whole pounds, timer on every line
 - [ ] Pushed with `--update --start`, never additive

@@ -299,6 +299,22 @@
   set genuinely wants longer (a peak, an @8 test — B5's W4 bench work-up and W3 dip peak), **say
   so in the block prose** rather than overriding the field. Changing these takes new feedback from
   him. [FB 2026-08-11]
+- **primary-warmup-ramp** — **Every Big-5 primary ships with a real warm-up ramp scaled to
+  that day's top set** — never a lone bodyweight set, never one ramp copied into every week.
+  Athlete: *"I mostly see you only add one single basic warmup set but I usually have more than
+  just one for primary movement."* The log agrees — he was adding his own bridges (B6 W1 dip:
+  plan BW×8 → he did BW×8, +35×8; pull-up: plan BW×6 → BW×6, +45×3), and the static B6 ramp
+  leapt from a 275 warm-up to a 405 W4 squat.
+  - **Barbell (squat / sumo / bench):** 135 opener for 5–8 reps, climb on plate landmarks, last
+    warm-up ≤92% of the top **and** ≥20 lb under it; small jumps near the work, bigger at the
+    bottom. Reps taper 8 → 5 → 3 → 2 → 1 with %-of-top.
+  - **Pull-up / dip:** BW set (×6 / ×8), then a loaded bridge ×3 at ~60% of the top added load;
+    two bridges (~45% / ~75%) from +80 up.
+  - **Generated, not hand-written:** `python -m scripts.hevy.warmups --apply` rewrites warm-ups
+    on every `primary`; re-run it whenever a primary's load changes. Secondaries/accessories
+    keep whatever the plan wrote.
+  - Warm-ups are **not counted** in the `[sets×reps]` note prefix — that describes the work.
+  [FB 2026-10-01]
 - **push-is-idempotent-with-update** — A block that's already live gets **corrected in place**:
   `push_block --update --start W<n>-D<n>` PUTs over the routines whose titles match and leaves
   everything before the start point alone. **Hevy has no DELETE for routines**, so a plain re-push

@@ -10,6 +10,33 @@
 
 ---
 
+### 2026-10-01 · general, exercise · Big-5 warm-ups · 2026-Q4-B06
+
+**Feedback (athlete):** two notes on the B6 routines in Hevy. (1) The `[sets×reps]` prefix on
+the exercise note counted the warm-up — the dip read **[5×8]** for BW×8 + 4×5. Leave warm-ups
+out. (2) *"I mostly see you only add one single basic warmup set but I usually have more than
+just one for primary movement."*
+
+**Verified (Hevy, Mar–Sep 2026):** median logged warm-up sets — squat 1.5, sumo 2, bench 2,
+pull-up 2, dip 1 (and his lightest bar sets often go unlogged, so the real count runs higher).
+His shape: squat/sumo 315 → 365 → 415 ahead of a 455; bench 135×8 → 185×5 ahead of 235;
+pull-up BW×8 → +45×2–5; dip BW×8 → +35–45. **B6 so far:** the plan gave dips and pull-ups a
+single BW set and he added his own bridge both days (dip +35×8, pull-up +45×3). The squat/sumo/
+bench ramps were one fixed ramp pasted into every week, so W4 jumps 275 → **405** squat and
+185 → **275** bench.
+
+**Root cause:** tooling. (1) `_notes_with_scheme` counted all sets and read reps off the first
+one — the warm-up. (2) Warm-ups were hand-written once per block with no relation to the top set.
+
+**Actions taken:** prefix now counts working sets only (top set + backoffs read
+`1×3 @7 + 4×4 @6`); new `scripts/hevy/warmups.py` generates each primary's ramp from that
+day's top set; wired into `designing-training-block` and `amending-live-block`; tests added.
+Rule promoted.
+
+→ rules: `primary-warmup-ramp`
+
+---
+
 ### 2026-09-05 · general, exercise · equipment substitution is not non-compliance
 
 **Feedback (athlete):** *"I have limited time at the gym, and there are only a few machines, so if
