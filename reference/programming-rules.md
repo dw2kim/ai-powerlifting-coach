@@ -305,16 +305,18 @@
   just one for primary movement."* The log agrees — he was adding his own bridges (B6 W1 dip:
   plan BW×8 → he did BW×8, +35×8; pull-up: plan BW×6 → BW×6, +45×3), and the static B6 ramp
   leapt from a 275 warm-up to a 405 W4 squat.
-  - **Barbell (squat / sumo / bench):** 135 opener for 5–8 reps, climb on plate landmarks, last
-    warm-up ≤92% of the top **and** ≥20 lb under it; small jumps near the work, bigger at the
-    bottom. Reps taper 8 → 5 → 3 → 2 → 1 with %-of-top.
-  - **Pull-up / dip:** BW set (×6 / ×8), then a loaded bridge ×3 at ~60% of the top added load;
-    two bridges (~45% / ~75%) from +80 up.
+  - **Barbell — his ramp, in his words (2026-10-01):** every lift **opens at 135×8**.
+    **Squat / sumo climb +90, one plate a side:** 135 → 225 → 315 → 405 → 495. **Bench climbs
+    135 → 185 → 225 → 275 → 315 …** A step counts as a warm-up only if it sits **≥20 lb under
+    the top set**. Reps after the opener taper 5 → 3 → 2 → 1 with %-of-top.
+  - **Pull-up / dip:** bodyweight first, **written as 1 lb** (how he logs BW in Hevy), ×8. Then
+    one loaded set: **pull-up +45×3**; **dip +35×5 up to a +70 top, +45×5 above** (he sometimes
+    takes +50 — his call on the day). A pull-up top of **+90 or more adds +70×1**.
   - **Generated, not hand-written:** `python -m scripts.hevy.warmups --apply` rewrites warm-ups
     on every `primary`; re-run it whenever a primary's load changes. Secondaries/accessories
     keep whatever the plan wrote.
   - Warm-ups are **not counted** in the `[sets×reps]` note prefix — that describes the work.
-  [FB 2026-10-01]
+  [FB 2026-10-01 ×2]
 - **push-is-idempotent-with-update** — A block that's already live gets **corrected in place**:
   `push_block --update --start W<n>-D<n>` PUTs over the routines whose titles match and leaves
   everything before the start point alone. **Hevy has no DELETE for routines**, so a plain re-push

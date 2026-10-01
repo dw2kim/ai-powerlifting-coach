@@ -10,41 +10,41 @@ def _lb(sets):
 
 
 class BarbellRampTests(unittest.TestCase):
-    def test_matches_his_logged_315_ramp(self):
-        self.assertEqual(barbell_ramp(315), [(135, 8), (225, 3), (275, 2)])
+    def test_every_barbell_lift_opens_at_135_for_8(self):
+        for kind in ("squat", "deadlift", "bench"):
+            for top in range(185, 600, 5):
+                self.assertEqual(barbell_ramp(kind, top)[0], (135, 8), (kind, top))
 
-    def test_last_warmup_stays_close_to_a_heavy_top_set(self):
-        """The old static ramp leapt 275 → 405."""
-        ramp = barbell_ramp(405)
-        self.assertEqual(ramp[-1][0], 365)
-        self.assertGreaterEqual(len(ramp), 4)
+    def test_squat_and_sumo_climb_one_plate_a_side(self):
+        """+90 per step, as he loads it: 135 → 225 → 315 → 405."""
+        self.assertEqual([l for l, _ in barbell_ramp("squat", 455)], [135, 225, 315, 405])
+        self.assertEqual([l for l, _ in barbell_ramp("deadlift", 285)], [135, 225])
+
+    def test_bench_climbs_185_then_225(self):
+        self.assertEqual([l for l, _ in barbell_ramp("bench", 275)], [135, 185, 225])
 
     def test_last_warmup_is_always_clear_of_the_top_set(self):
-        for top in range(150, 600, 5):
-            last = barbell_ramp(top)[-1][0]
-            self.assertLessEqual(last, top - 20, top)
-            self.assertLessEqual(last, top * 0.92, top)
-
-    def test_jumps_shrink_toward_the_top(self):
-        loads = [l for l, _ in barbell_ramp(455)]
-        gaps = [b - a for a, b in zip(loads, loads[1:])]
-        self.assertLessEqual(gaps[-1], gaps[0])
-
-    def test_opener_is_never_a_triple(self):
-        for top in range(150, 600, 5):
-            self.assertGreaterEqual(barbell_ramp(top)[0][1], 5, top)
+        for kind in ("squat", "deadlift", "bench"):
+            for top in range(155, 600, 5):
+                self.assertLessEqual(barbell_ramp(kind, top)[-1][0], top - 20, (kind, top))
 
 
 class BodyweightRampTests(unittest.TestCase):
-    def test_dip_gets_a_loaded_bridge(self):
+    def test_bodyweight_is_logged_as_1_lb(self):
+        self.assertEqual(bodyweight_ramp("dip", 70)[0], (1, 8))
+        self.assertEqual(bodyweight_ramp("pullup", 60)[0], (1, 8))
+
+    def test_dip_bridges_at_35_then_45_above_a_70_top(self):
         """B6 W1: plan said BW×8 only; he added +35×8 himself before 70×5."""
-        self.assertEqual(bodyweight_ramp("dip", 70), [(0.0, 8), (40.0, 3)])
+        self.assertEqual(bodyweight_ramp("dip", 70)[1][0], 35)
+        self.assertEqual(bodyweight_ramp("dip", 85)[1][0], 45)
 
-    def test_heavy_top_gets_two_bridges(self):
-        self.assertEqual(bodyweight_ramp("pullup", 90), [(0.0, 6), (40.0, 3), (65.0, 3)])
+    def test_pullup_bridges_at_45_and_adds_70_from_a_90_top(self):
+        self.assertEqual(bodyweight_ramp("pullup", 60), [(1, 8), (45, 3)])
+        self.assertEqual(bodyweight_ramp("pullup", 90), [(1, 8), (45, 3), (70, 1)])
 
-    def test_light_top_is_bodyweight_only(self):
-        self.assertEqual(bodyweight_ramp("dip", 15), [(0.0, 8)])
+    def test_bridge_never_sits_on_a_light_top_set(self):
+        self.assertEqual(bodyweight_ramp("pullup", 45)[1][0], 35)
 
 
 class ApplyToSpecTests(unittest.TestCase):
@@ -61,7 +61,7 @@ class ApplyToSpecTests(unittest.TestCase):
         spec = self.spec()
         apply_to_spec(spec)
         dip = spec["prescriptions"][0]["exercises"][0]["sets"]
-        self.assertEqual(_lb(dip), [(0, 8), (40, 3)] + [(70, 5)] * 4)
+        self.assertEqual(_lb(dip), [(1, 8), (35, 5)] + [(70, 5)] * 4)
 
     def test_leaves_secondaries_alone(self):
         spec = self.spec()

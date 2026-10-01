@@ -10,6 +10,26 @@
 
 ---
 
+### 2026-10-01 (later) · general · Big-5 warm-up ramp — his exact steps
+
+**Feedback (athlete):** *"Start the barbell movements at 135 lb for 8 reps. For squats or sumo,
+I usually increase by 90 lb, which is one plate on each side. For the bench, I typically progress
+to 185 lb, then 225 lb, and so on. For pull-ups and dips, check the history. I usually start with
+body weight (1 lb), then add 35 lb, or sometimes 45 lb or 50 lb for the first warm-up set."*
+
+**Verified (Hevy):** pull-up — every 2026 session with a ramp is BW(1 lb)×5–8 → **+45**×3–5,
+plus +70/+90×1 ahead of +90/+100 tops. Dip — **+35** ahead of 45–70 tops (Jul–Sep 2026),
+**+45/+50** ahead of 75–105 tops. Bodyweight is entered as **1 lb**, not blank.
+
+**What changed:** my first generator picked plate landmarks by %-of-top (135/225/315/365
+for a 405) and put bodyweight at 0. Replaced with his steps: +90 for squat/sumo, 185 → 225 →
+275 for bench, 135×8 opener everywhere; BW at 1 lb; pull-up +45 (+70×1 from a +90 top), dip
++35 to a +70 top and +45 above.
+
+→ rules: `primary-warmup-ramp` (rewritten)
+
+---
+
 ### 2026-10-01 · general, exercise · Big-5 warm-ups · 2026-Q4-B06
 
 **Feedback (athlete):** two notes on the B6 routines in Hevy. (1) The `[sets×reps]` prefix on
