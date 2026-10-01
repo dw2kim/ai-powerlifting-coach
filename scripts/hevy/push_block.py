@@ -77,20 +77,40 @@ def _notes_with_scheme(sets: list[dict], notes: str) -> str:
     'rpe'"), so the prescribed RPE has nowhere to live in the payload. Without this it would
     simply vanish on the way into the app — and RPE is the whole autoregulation contract on a
     capped block. Folding it into the note keeps it in front of the athlete mid-session.
+
+    Warm-ups are left out: the scheme is the work. A bodyweight warm-up ×8 ahead of 4×5 read
+    as "[5×8]" — wrong set count, and the warm-up's reps in place of the working reps. Runs of
+    identical working sets collapse, so a top set + backoffs reads "1×3 @8 + 4×5 @7".
     """
-    if not sets:
+    working = [s for s in sets if s.get("type") != "warmup"]
+    if not working:
         return notes
-    first = sets[0]
-    if first.get("duration_seconds"):
-        scheme = f"{len(sets)}×{first['duration_seconds']}s"
-    elif first.get("reps") is not None:
-        scheme = f"{len(sets)}×{first['reps']}"
-    else:
-        scheme = f"{len(sets)} sets"
-    rpe = first.get("rpe")
-    if rpe is not None:
-        rpe_txt = int(rpe) if float(rpe).is_integer() else rpe
-        scheme += f" @{rpe_txt}"
+
+    def _unit(s: dict) -> tuple:
+        return (s.get("duration_seconds"), s.get("reps"), s.get("rpe"))
+
+    groups: list[list[dict]] = []
+    for s in working:
+        if groups and _unit(groups[-1][0]) == _unit(s):
+            groups[-1].append(s)
+        else:
+            groups.append([s])
+
+    def _fmt(group: list[dict]) -> str:
+        first, n = group[0], len(group)
+        if first.get("duration_seconds"):
+            txt = f"{n}×{first['duration_seconds']}s"
+        elif first.get("reps") is not None:
+            txt = f"{n}×{first['reps']}"
+        else:
+            txt = f"{n} sets"
+        rpe = first.get("rpe")
+        if rpe is not None:
+            rpe_txt = int(rpe) if float(rpe).is_integer() else rpe
+            txt += f" @{rpe_txt}"
+        return txt
+
+    scheme = " + ".join(_fmt(g) for g in groups)
     return f"[{scheme}] {notes}".strip()
 
 
