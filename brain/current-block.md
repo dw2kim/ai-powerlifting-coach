@@ -284,6 +284,17 @@ long-gap re-entry), and **all of W5** (deload).
 
 ---
 
+## Amendments
+
+- **2026-10-02 — warm-ups rebuilt, W1-D4 → W5-D4 re-pushed** (`primary-warmup-ramp`). Every Big-5
+  primary now carries your ramp, scaled to that day's top set: barbell opens 135×8, squat/sumo climb
+  +90 (225, 315, 405), bench 185 → 225 → 275; pull-up BW(1 lb)×8 → +45×3 (+70×1 from a +90 top),
+  dip BW×8 → +35×5 to a +70 top, +45×5 above. The note prefix now counts working sets only — the
+  dip read `[5×8]` off the warm-up. **No working set changed.** W1-D1..D3 were already trained and
+  stay as prescribed.
+
+---
+
 ## Open items carried into B6
 
 - [ ] **B5 action #1 — off-plan movement check in the weekly review.** Not built yet. Until it

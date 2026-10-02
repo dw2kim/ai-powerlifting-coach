@@ -81,17 +81,12 @@
             {
               "type": "warmup",
               "weight_kg": 61.235042773811365,
-              "reps": 5
+              "reps": 8
             },
             {
               "type": "warmup",
               "weight_kg": 102.05840462301894,
               "reps": 3
-            },
-            {
-              "type": "warmup",
-              "weight_kg": 124.73805009480093,
-              "reps": 1
             },
             {
               "type": "normal",
@@ -134,7 +129,7 @@
             {
               "type": "warmup",
               "weight_kg": 61.235042773811365,
-              "reps": 5
+              "reps": 8
             },
             {
               "type": "warmup",
@@ -282,8 +277,13 @@
           "sets": [
             {
               "type": "warmup",
-              "weight_kg": 0.0,
-              "reps": 6
+              "weight_kg": 0.45359290943563974,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 20.41168092460379,
+              "reps": 3
             },
             {
               "type": "normal",
@@ -437,8 +437,13 @@
           "sets": [
             {
               "type": "warmup",
-              "weight_kg": 0.0,
+              "weight_kg": 0.45359290943563974,
               "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 15.87575183024739,
+              "reps": 5
             },
             {
               "type": "normal",
@@ -625,12 +630,12 @@
             {
               "type": "warmup",
               "weight_kg": 61.235042773811365,
-              "reps": 5
+              "reps": 8
             },
             {
               "type": "warmup",
-              "weight_kg": 83.91468824559335,
-              "reps": 3
+              "weight_kg": 102.05840462301894,
+              "reps": 2
             },
             {
               "type": "normal",
@@ -809,17 +814,17 @@
             {
               "type": "warmup",
               "weight_kg": 61.235042773811365,
-              "reps": 5
+              "reps": 8
             },
             {
               "type": "warmup",
               "weight_kg": 102.05840462301894,
-              "reps": 3
+              "reps": 5
             },
             {
               "type": "warmup",
-              "weight_kg": 124.73805009480093,
-              "reps": 1
+              "weight_kg": 142.88176647222653,
+              "reps": 2
             },
             {
               "type": "normal",
@@ -862,12 +867,17 @@
             {
               "type": "warmup",
               "weight_kg": 61.235042773811365,
-              "reps": 5
+              "reps": 8
             },
             {
               "type": "warmup",
               "weight_kg": 83.91468824559335,
               "reps": 3
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 102.05840462301894,
+              "reps": 2
             },
             {
               "type": "normal",
@@ -1010,8 +1020,13 @@
           "sets": [
             {
               "type": "warmup",
-              "weight_kg": 0.0,
-              "reps": 6
+              "weight_kg": 0.45359290943563974,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 20.41168092460379,
+              "reps": 3
             },
             {
               "type": "normal",
@@ -1165,8 +1180,13 @@
           "sets": [
             {
               "type": "warmup",
-              "weight_kg": 0.0,
+              "weight_kg": 0.45359290943563974,
               "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 20.41168092460379,
+              "reps": 5
             },
             {
               "type": "normal",
@@ -1353,12 +1373,7 @@
             {
               "type": "warmup",
               "weight_kg": 61.235042773811365,
-              "reps": 5
-            },
-            {
-              "type": "warmup",
-              "weight_kg": 83.91468824559335,
-              "reps": 3
+              "reps": 8
             },
             {
               "type": "warmup",
@@ -1542,17 +1557,17 @@
             {
               "type": "warmup",
               "weight_kg": 61.235042773811365,
-              "reps": 5
+              "reps": 8
             },
             {
               "type": "warmup",
               "weight_kg": 102.05840462301894,
-              "reps": 3
+              "reps": 5
             },
             {
               "type": "warmup",
-              "weight_kg": 124.73805009480093,
-              "reps": 1
+              "weight_kg": 142.88176647222653,
+              "reps": 2
             },
             {
               "type": "normal",
@@ -1595,12 +1610,17 @@
             {
               "type": "warmup",
               "weight_kg": 61.235042773811365,
-              "reps": 5
+              "reps": 8
             },
             {
               "type": "warmup",
               "weight_kg": 83.91468824559335,
               "reps": 3
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 102.05840462301894,
+              "reps": 2
             },
             {
               "type": "normal",
@@ -1743,8 +1763,13 @@
           "sets": [
             {
               "type": "warmup",
-              "weight_kg": 0.0,
-              "reps": 6
+              "weight_kg": 0.45359290943563974,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 20.41168092460379,
+              "reps": 3
             },
             {
               "type": "normal",
@@ -1898,13 +1923,13 @@
           "sets": [
             {
               "type": "warmup",
-              "weight_kg": 0.0,
+              "weight_kg": 0.45359290943563974,
               "reps": 8
             },
             {
               "type": "warmup",
               "weight_kg": 20.41168092460379,
-              "reps": 3
+              "reps": 5
             },
             {
               "type": "normal",
@@ -2091,12 +2116,7 @@
             {
               "type": "warmup",
               "weight_kg": 61.235042773811365,
-              "reps": 5
-            },
-            {
-              "type": "warmup",
-              "weight_kg": 83.91468824559335,
-              "reps": 3
+              "reps": 8
             },
             {
               "type": "warmup",
@@ -2280,17 +2300,17 @@
             {
               "type": "warmup",
               "weight_kg": 61.235042773811365,
-              "reps": 5
+              "reps": 8
             },
             {
               "type": "warmup",
               "weight_kg": 102.05840462301894,
-              "reps": 3
+              "reps": 5
             },
             {
               "type": "warmup",
-              "weight_kg": 124.73805009480093,
-              "reps": 1
+              "weight_kg": 142.88176647222653,
+              "reps": 3
             },
             {
               "type": "normal",
@@ -2327,12 +2347,17 @@
             {
               "type": "warmup",
               "weight_kg": 61.235042773811365,
-              "reps": 5
+              "reps": 8
             },
             {
               "type": "warmup",
               "weight_kg": 83.91468824559335,
               "reps": 3
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 102.05840462301894,
+              "reps": 2
             },
             {
               "type": "normal",
@@ -2469,8 +2494,18 @@
           "sets": [
             {
               "type": "warmup",
-              "weight_kg": 0.0,
-              "reps": 6
+              "weight_kg": 0.45359290943563974,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 20.41168092460379,
+              "reps": 3
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 31.75150366049478,
+              "reps": 1
             },
             {
               "type": "normal",
@@ -2624,8 +2659,13 @@
           "sets": [
             {
               "type": "warmup",
-              "weight_kg": 0.0,
+              "weight_kg": 0.45359290943563974,
               "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 20.41168092460379,
+              "reps": 5
             },
             {
               "type": "normal",
@@ -2812,17 +2852,12 @@
             {
               "type": "warmup",
               "weight_kg": 61.235042773811365,
-              "reps": 5
-            },
-            {
-              "type": "warmup",
-              "weight_kg": 83.91468824559335,
-              "reps": 3
+              "reps": 8
             },
             {
               "type": "warmup",
               "weight_kg": 102.05840462301894,
-              "reps": 2
+              "reps": 3
             },
             {
               "type": "normal",
@@ -3001,12 +3036,12 @@
             {
               "type": "warmup",
               "weight_kg": 61.235042773811365,
-              "reps": 5
+              "reps": 8
             },
             {
               "type": "warmup",
-              "weight_kg": 83.91468824559335,
-              "reps": 3
+              "weight_kg": 102.05840462301894,
+              "reps": 2
             },
             {
               "type": "normal",
@@ -3045,12 +3080,12 @@
             {
               "type": "warmup",
               "weight_kg": 61.235042773811365,
-              "reps": 5
+              "reps": 8
             },
             {
               "type": "warmup",
               "weight_kg": 83.91468824559335,
-              "reps": 3
+              "reps": 2
             },
             {
               "type": "normal",
@@ -3193,8 +3228,13 @@
           "sets": [
             {
               "type": "warmup",
-              "weight_kg": 0.0,
-              "reps": 6
+              "weight_kg": 0.45359290943563974,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 15.87575183024739,
+              "reps": 3
             },
             {
               "type": "normal",
@@ -3358,8 +3398,13 @@
           "sets": [
             {
               "type": "warmup",
-              "weight_kg": 0.0,
+              "weight_kg": 0.45359290943563974,
               "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 15.87575183024739,
+              "reps": 5
             },
             {
               "type": "normal",
@@ -3550,12 +3595,7 @@
             {
               "type": "warmup",
               "weight_kg": 61.235042773811365,
-              "reps": 5
-            },
-            {
-              "type": "warmup",
-              "weight_kg": 83.91468824559335,
-              "reps": 3
+              "reps": 8
             },
             {
               "type": "normal",
