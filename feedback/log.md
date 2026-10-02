@@ -725,3 +725,80 @@ current-block and active-issues. Fix missing exercise occurrences in the Sheet e
 add per-week phase overrides and correct the summary. No standing progression rule changed.
 
 → rules: one-off B5 exception to `axial-return-ladder`; no new general rule.
+
+### 2026-09-24 · general, block · whole-body sessions · bridge + 2026-Q4-B06
+**Feedback:** "For each workout I want to target the whole body, not necessarily distribute effort
+evenly across every muscle. I can focus more on the chest or push, but ultimately I aim to hit all
+the major muscle groups. I noticed that Thursday's session today omitted the lower-body workout
+entirely, which is why I added the leg press."
+
+**Verified (Hevy):** bridge Thu 09-24 ran exactly the written upper-only day (Dip, CGB, Pulldown, Reverse Pec
+Deck, Face Pull, Dead Bug) plus an off-plan **Leg Press 415×10 ×3**. Leg Press over the last 90 days: 6 sessions, median **405**, max 415. So 415 was his normal working
+load, not a reckless one. The problem was that it was unplanned and came the day before the sumo 225
+read, during the baclofen course.
+
+**Root cause:** a design gap, not an athlete one. `muscle-coverage-audit` checks coverage
+**across the week**, so a day with no lower body passed as long as another day had quads. The
+coach flagged the leg press as "off-plan", but the plan was what had the hole.
+
+**Actions taken:** (1) new rule `whole-body-every-day`; (2) bridge Friday: Leg Press 315 →
+**Leg Extension 130×12 ×3** (quads already took the Thursday press), pushed to Hevy with
+`--update --start W1-D2` and verified in the app; (3) B6 amended before its push: **D1 +
+Iso-Lateral Row 125→130** (no pull on Monday) and **D3 + Leg Extension 130→140** (no lower
+body on Thursday), both pinned `hold`, with a per-day coverage table added to
+`brain/current-block.md`. B6 isn't in Hevy yet, so nothing else to push.
+→ rules: `whole-body-every-day`
+
+### 2026-09-25 · general · blank RPE on main lifts · bridge
+**Feedback:** "If there is no RPE set, you can assume it's below 6, roughly around 5." Asked
+because bridge Friday's sumo 235×3 ×3 had no RPE; he confirmed it was **@5**.
+**Why it fits:** Hevy's RPE ladder starts at 6 (`rpe-hevy-ladder`), so a blank is the only way to
+log an easy set. The coach had been treating it as a gap. The weekly review's narration printed
+"⚠️ Top sets missing RPE", which was wrong under this convention.
+**Scope decision:** applied to primaries and secondaries. Accessories keep `accessory-rpe` (blank =
+7–8, his 2026-06-14 convention). That's a direct conflict, so it goes back to him to confirm.
+**Actions taken:** (1) rule `blank-rpe-below-6`; (2) `scripts/review/narrate.py` now reports blank
+top sets as "read as below @6 (~@5)" instead of warning, and the `weekly_metrics.readiness`
+comment is updated. Tests: 40 passed. (3) Friday sumo re-read as 235 @5.
+→ rules: `blank-rpe-below-6`
+
+### 2026-09-27 · block, load · squat peak, sumo start, landmine floor · 2026-Q4-B06
+**Feedback:** (1) Back check: "lower back seems to be fine eventually" (after the Sep 25 sumo).
+(2) Landmine press minimum should be **50 lb**; 25 is too light. (3) "I usually hit 475 or 485 for
+the peak and this block's peak is 405, about 80%. I'm worried I'll lose strength, skills, form or
+tempo." He asked for a **range depending on the day**, a **minimum load** for each day, and the
+**range and ceiling in the notes**. (4) Sumo is too light at the start. He likes the slight weekly
+climb and is fine with squat-now, sumo-next-block, but not with the starting point.
+**Interpretation note:** the transcription read "minimum load for squats … at least 15 lbs … right now
+it's 25". The only 25 lb press load in B6 is the Single Arm Landmine Press (plates on the sleeve), and
+15 < 25 doesn't parse, so this was read as **landmine, 50 lb**. Confirm with the athlete.
+**Verified (Hevy):** DB Shoulder Press ran 70/hand (B5), so 50 lb of plates on a single-arm landmine is
+conservative. Sumo: 235×3 ×3 @5 on 09-25, 295×3 @6 on 09-04 and 09-11. Squat: 90-day max 480 and median
+425 as of 09-05; B5 top 365×3 @6.
+**Actions taken:** back check logged *fine* (medicated). B6 amended before its first push:
+squat W2–W4 → floor/range/ceiling **365→385 · 385→405 · 405→435**, with W1 315 fixed (still medicated).
+Sumo **255 · 265 · 275 · 285 · 235** (was 225 · 275 · 275 · 275 · 225). Landmine **50 · 50 · 55 · 55 · 50**.
+New rule `axial-floor-range-ceiling`; `sumo-skill-lift` amended (a gentle gated climb is allowed).
+→ rules: `axial-floor-range-ceiling`, `sumo-skill-lift` (amended)
+
+### 2026-09-27 · general · blank RPE on accessories
+**Feedback:** "For accessories that have a blank RPE, you can treat them as 5 or less." This answers
+the open question from `blank-rpe-below-6`: a blank now means below the app's @6 floor on every lift.
+**Actions taken:** `accessory-rpe` revised (blank = @5 or less, replacing the 2026-06-14 "7–8").
+`blank-rpe-below-6` no longer carves out accessories. The `designing-training-block` skill wording is updated.
+→ rules: `accessory-rpe` (revised), `blank-rpe-below-6`
+
+### 2026-09-27 · general · blank RPE, by context (replaces the two entries above)
+**Feedback:** "Ignore what I just said… use your common sense." (1) If the first one or two sets are
+rated (@6–7) and the last one or two are blank, that's a mistake: read them as about the same RPE.
+(2) If no set of the exercise is rated, it's @5 or less, and he'll probably raise the load next time and
+rate it. (3) If the load went up and it's still blank, it's @5, because the app has no number below 6.
+**Actions taken:** `accessory-rpe` and `blank-rpe-below-6` are replaced by one rule, `blank-rpe`, which
+covers every lift. The weekly review now uses `effective_rpes`: a trailing blank carries the last
+logged RPE (shown `*`), an exercise with nothing rated reads `@≤5`, and the cap flags use the
+effective value. Three tests added (43 pass).
+**Open (asked):** a *leading* blank (set 1 blank, set 2 rated) currently takes the next logged value.
+→ rules: `blank-rpe`
+**Answered 2026-09-27:** (1) A leading blank reads as the next set, which confirms the default. (2) "For the
+backoff, I usually put the RPE, so if it is blank, it probably meant RPE 5 or less." A blank set lighter than a
+rated set is now the floor (@5 or less), not carried. `effective_rpes` is updated and has a 4th test.

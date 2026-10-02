@@ -110,7 +110,13 @@ def narrate(stats: dict, context: str | None = None, model: str = MODEL) -> str:
 def _fmt_set(s: dict | None) -> str:
     if not s:
         return "—"
-    rpe = f"@{s['rpe']}" if s.get("rpe") is not None else "@—"
+    src = s.get("rpe_src", "logged")
+    if s.get("rpe") is None:
+        rpe = "@—"
+    elif src == "floor":
+        rpe = "@≤5"
+    else:
+        rpe = f"@{s['rpe']:g}" + ("*" if src == "carried" else "")
     base = f"{fmt_load(s['added_lb'], s['is_bw'])}×{s['reps']} {rpe}"
     return f"{base} (e1RM {s['e1rm']:g})" if s.get("e1rm") is not None else base
 
@@ -135,7 +141,10 @@ def render_fallback(stats: dict) -> str:
     logged = [a["name"] for a in stats["accessories"] if a["logged"]]
     lines += ["", f"<b>Accessories</b>: {len(logged)}/{len(stats['accessories'])} logged."]
     if rd["rpe_gaps"]:
-        lines.append(f"⚠️ Top sets missing RPE: {', '.join(rd['rpe_gaps'])}.")
+        # Nothing rated on the exercise: below the app's @6 floor, not missing data (`blank-rpe`).
+        lines.append(f"ℹ️ No RPE on any set, read as @5 or less: {', '.join(rd['rpe_gaps'])}.")
+    if rd.get("rpe_carried"):
+        lines.append(f"ℹ️ Top set unrated but other sets rated, read as those (*): {', '.join(rd['rpe_carried'])}.")
 
     bc = stats.get("back_checks")
     if bc:
