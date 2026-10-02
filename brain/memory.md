@@ -726,3 +726,162 @@ exposure, and a triceps movement behind an incline press is a fifth press-patter
    the JSON, pinned `hold`, and goes to Hevy over the DROPPED placeholder. If both had been pushed
    he'd have had two contradictory routines at the gym. **Whoever writes to the app owns the
    answer** — which is why the app, not the chat log, is the thing to reconcile against.
+
+## Block 5 retrospective (2026-Q3-B05, completed 2026-09-18) — see `reviews/2026-Q3-B05.md`
+
+**Verdict:** the strive half delivered (comp bench 293 e1RM, +26.6, closing B4's named under-reach;
+pull-up 297; dip 313.5; 23/23 sessions, best adherence on record). The protect half held where it
+was watched and leaked where it wasn't.
+
+**The durable finding, and it's a new class:** **every check in this repo reads loads for exercises
+the plan already names. Nothing reads the set of exercises in a session and asks whether they belong
+there.** `reconcile_loads` sweeps prescribed movements, `block_report` tracks the Big 5, the weekly
+review compares planned days to logged days — **a substitution is invisible to all of them.** Five
+off-plan movements ran across B5 and not one was flagged: barbell OHP twice in place of a capped DB
+Shoulder Press, **barbell upright row 90×8 ×3 on a shoulder with subacromial bursitis and AC
+degeneration**, Inverted Row twice on D1 (a day structurally barred from back work), T Bar Row, and
+a barbell incline on W6-D3 against a prescription that said dumbbells-only in bold. Found five weeks
+late, by reading the raw log during the block review. Fix is an off-plan movement check in the
+weekly review; it should have existed before the upright row ran.
+
+**Correction to a claim this repo made on 2026-09-15/16:** "it is specifically the axial/primary
+number that creeps — never the accessories" is **wrong**, and it was written from two days of data.
+Over the full block the worst RPE breaches are all on accessories — DB Shoulder Press to **@10**
+against a hard @7 cap, Seated Calf Raise @9.5 twice, CS Incline Row @9.5. The real shape is **load
+creeps on the primaries; RPE runs away on the accessories** — two failure modes, and only the first
+was ever being watched. Generalizing a behavioral pattern from one week of one lift is how that
+happened.
+
+**A pin protects the plan from the sync, not from the gym.** CGB was pinned `hold` so the Saturday
+sync couldn't rebase it up from its 165→185 ramp. It ran **185 flat for all five sessions** anyway,
+including the W5 deload written at 135. The pin worked perfectly and changed nothing.
+
+**What the correction loop proves, though:** W4's pull-up ran BW+90×3 @8.5 against an @8 hard stop;
+the amendment said *repeat the load, fix the RPE, no 95*; W5 came back **BW+90×3 @8 exactly.** A
+specific, recent, self-explaining correction lands with this athlete. A number written five weeks
+ago in a block file does not. That asymmetry is the thing to design B6's axial ladder around.
+
+## 2026-09-22 — good news and a restriction arrive in the same sentence, and only the good news gets reported
+
+The Sep 11 clinic visit went unreported for **eleven days**, through a block review that named it as
+a blocker. When it finally came, it came as: *"All good. My doctor said I'm doing great, and he also
+gave me a prescription for pain and muscle relaxation."* The restriction is in the second clause,
+delivered as an afterthought to the first.
+
+**The pattern, and it is now three for three:** every genuinely good clinical update he has reported
+has had a constraint attached that he did not lead with. Aug 14 — "the series ends" (it stepped down
+and continued). Aug 28 — "pain much improved" (with a *graded* 25% clearance, which he read as
+clearance). Sep 11 — "doing great" (with three weeks of analgesia and a muscle relaxant). **His
+headline is always the prognosis; the instruction is always in the subordinate clause.** So: when he
+reports a good visit, ask what else was said, what was prescribed, and what the next appointment is
+— every time, as procedure, not as suspicion.
+
+**The rule extension it forced:** `masked-pain-load-cap` named injections, because injections were
+all we'd seen. The mechanism was never the needle — it is that a chemically muffled pain signal stops
+protecting the structure. **A three-week oral course masks continuously, where an injection masks for
+hours**, which makes it the *worse* case for a gate that reads "how does your back feel the morning
+after." Extended 2026-09-22. The general lesson: when a rule names an instrument rather than a
+mechanism, the first novel instrument walks straight past it.
+
+**And the scheduling consequence, which is the real cost:** B6's whole design is
+`axial-return-ladder` — rungs gated on back checks. You cannot open that block while the gate is
+medicated. A prescription nobody mentioned for eleven days moved a block start by a week.
+
+
+## 2026-09-23 — a planning note outlived the evidence that produced it, and the athlete caught it
+
+I recommended B6 be **sumo-heavy** on the strength of one line written in the old block file on
+2026-08-29: *"Sumo's return is B6's whole job."* He asked me to justify it. **I couldn't, and
+reversed to squat-heavy.**
+
+**The mechanism, which is the durable part:** that note was written before the 365×3 @6 squat, before
+the baclofen/pregabalin course, and before the B5 review — and it assumed a Sep 8 back check that was
+never logged. Every input it rested on had changed or evaporated, but the sentence was still sitting
+in `current-block.md` reading like a decision. **A forward-looking note is an argument with a
+timestamp, not a conclusion.** When one is cited in a later decision, re-derive it against what is
+true now rather than treating it as settled — especially a note that says what the *next* block
+should do, since those are written at exactly the moment we know least about the next block.
+
+**The substance, for the record:** `sumo-back-cap` caps a heavy-sumo block at 405 (~81% of his sumo
+e1RM), so it cannot actually be a heavy block; sumo is the lift that provokes this back and the squat
+is not; and B5's only real axial data point is a squat. Squat-heavy was the better call on all three.
+
+**And the meta-point worth keeping: he challenged a recommendation and was right.** The right response
+to *"convince me"* is to re-run the argument, not to defend the position. This is the second
+self-correction in two days (the other: overstating the drug masking). Both were caught because he
+pushed back rather than complied — which is worth more than a coach who is never questioned.
+
+## 2026-09-24 — B6 designed: the check is the key, not the number
+
+B6 (2026-Q4-B06, Sep 28 → Oct 30) is squat-heavy. The design answer to B5's action item #5 — *a bare
+number on a page fails on the axial primaries* — is to stop relying on the number: **each squat rung
+is unlocked by a logged `fine` back check, and an unlogged morning, a `tight`, running hot the week
+before, or a top triple past @8 all forfeit the next rung.** The instrument he kept skipping (4/13 in
+B5) is now the thing standing between him and the 405 he wants. If it works, it fixes compliance and
+creep with one mechanism; if the check log is still thin by W3, that's the finding to carry into B7.
+Also: `hold` in the block JSON is name-scoped, not week-scoped — a W5 deload pin freezes every
+exercise for the whole block. Same as B5; now written down.
+
+## 2026-09-24 — "Off-plan" can be the plan's fault
+
+I flagged Thursday's 415 leg press as the B5 off-plan pattern recurring. It wasn't the same thing.
+The bridge Thursday had **no lower body at all**, and he filled it himself because he trains
+whole-body every session and always has. The B5 upright rows were a restriction ignored. This was
+a hole filled. **Before calling a logged movement off-plan, ask whether the day left a region
+empty.** New rule `whole-body-every-day`: lower · push · pull · core in every session, with
+emphasis allowed. B6 D1 (no pull) and D3 (no lower) were amended before the push.
+
+## 2026-09-25 — Bridge Friday: the ceiling became a target again
+
+Sumo was written as **225, "a ceiling, not a target"**, the comparability load for B6's entry. He
+pulled **235×3 ×3 and logged no RPE**, while on baclofen. It's not dangerous (he pulled 295×3 @6 on
+09-04 and 09-11), but it's the ninth-plus time a written axial number was treated as a starting
+point, and the one set with no RPE is the one that mattered. Everything else was clean: Spoto
+235×4 @7/7/7.5 as written, leg extension 130×12 after the sumo as written, leg curl 105 @6. Two small
+changes: CS Incline Row → Iso-Lateral Row 115×12 (noted "one hand"), and seated calf raise skipped.
+**B6 sumo W1 stays 225.** The bridge read is 235 with no RPE, so the back check is the only usable
+signal left from this session.
+
+**Correction, same day:** the 235 sumo was **@5**. He confirmed it, and a blank RPE on a main lift
+now means below @6 by rule (`blank-rpe-below-6`). So the "no RPE, unusable read" above was my
+misreading of the log. 235 @5 is a usable bridge read, and a good one: 10 lb over the ceiling at
+the easiest effort the app can't even record. The ceiling overrun still counts, but it's small.
+
+## 2026-09-27 — His worry about the 405 was fair
+
+He's peaked at 475–485, so a hard 405 read to him as "lose strength, lose the groove". The honest answer
+is that 3 weeks of triples at 80–85% with weekly squatting keeps strength and skill; detraining at
+that intensity over one block is small. But a single number also taught him that a good day doesn't
+count. Now the floor is the gate and the range is the reward: floor 405, ceiling 435 in W4. Watch
+whether he takes the range on marginal days. The four conditions exist for exactly that. Sumo re-set
+to 255 → 285 at his call.
+
+## 2026-09-28 — B6 W1-D1: main work exact, half the accessories gone
+
+Squat 315×3 then 275×4 ×4, exactly as written, nothing rated (= @5 or less, `blank-rpe`), on baclofen.
+Bench 240×4 @7 exact (e1RM ~296, level with the B5 best). Backoffs 205×5 @6/6/7, but **three, not
+four**. Iso-Lateral Row 125/arm ran **@7.5 → 8.5**, hotter than the @7 it was written for (a
+Tuesday-pull-up interference slot), so hold 125 until it reads ≤@7.5. **Skipped:** pushdown, chest
+fly, side plank. The session ran **80 min** against a 60-min cap. Likely D1 is overstuffed for his
+clock, not skipped by choice: squat + bench are 10 working sets before any accessory. **Core was
+the casualty**, which breaks `core-every-day`. Asked him why before trimming D1.
+
+## 2026-09-29 — B6 W1-D2: landmine 50 was wrong, the rest clean
+
+WPU BW+60×4 @6, then 3× BW+45×5 @6/7/7.5, as written. Hip thrust 225×10 @6–7, leg curl 105 @6,
+lateral raise 33 (30 written) @6–7, Pallof 25 @7.5/8/**9**. **Chest Fly 100×12 moved here from
+Monday**, where it was skipped. **Landmine: he ran 45, not 50, @8/9/9.5** — "too heavy with 50lbs,
+even 45lbs was 8rpe for the first set". So the 50 floor I set from his "25 is too light" message
+put a torn-tendon shoulder slot at @9.5 against a @7 cap. The right load is between 25 and 45:
+**35 proposed**. The session ran ~2 h on the clock (10:47–12:43), so check whether the timer was
+left running. Monday's squat back check has not been reported yet.
+
+## 2026-10-02 — W1 done; six accessories recalibrated from what he actually lifted
+
+Week 1 complete. Squat 315 + 275s fine the next morning (medicated), sumo 255×3 @6 ×3 on target,
+Spoto 235×4 drifted to @8.5 after a bad night's sleep (his read, accepted). Six accessories finished
+@8.5–9.5 and were re-set from W1 actuals, with his approval line by line. **He wants a confirm step
+before every plan change**, and he wants to keep every exercise: "I don't want to drop any workouts."
+So when a session runs long, the answer is lighter loads or shorter rests, not cutting exercises.
+He also deletes Hevy routines after training them, so W1-D1..D3 are gone from the app. That's
+expected; `--update --start` only ever touches the untrained weeks.

@@ -138,6 +138,67 @@ Sumo remains **295×3 ×3 @6**. W6 deloads: squat **225×5 ×3 @6**, D4 sumo dro
 for travel. Existing hard stops and next-day checks remain in force. The Aug 28 plan below
 is the historical W4 amendment; its original W5 deload moved to W6.
 
+### Visit 2026-09-11 — reported 2026-09-22, eleven days late · **details filled in 2026-09-23**
+
+**Clinical fact (athlete report, 2026-09-22):** *"All good. My doctor said I'm doing great, and he
+also gave me a prescription for pain and muscle relaxation. I'm taking that for, I think, 3 weeks."*
+
+**Confirmed 2026-09-23 — the five open questions, four now answered:**
+
+| | Answer |
+|---|---|
+| **Injection given?** | ✅ **Yes.** *"I did get the same pain trigger point injections a few times. It was pretty similar, just on the lower back."* `injections.md` row updated expected → **given**. |
+| **Which drugs?** | ✅ **apo-baclofen 10 mg** and **pms-pregabalin 25 mg**, **both twice daily.** |
+| **Course dates?** | ✅ *"I have one more week to consume"* (said 2026-09-23) → **ends ~2026-09-30**, two days earlier than the ~Oct 2 estimate. |
+| **Steroid?** | ✅ **Never given, and now ruled out** — see `injections.md` for the athlete's wording and the one caveat on it. |
+| **Next appointment?** | ❌ **Still unknown.** Ask. |
+| **Does the doctor know he lifts heavy?** | ❌ **Still unknown, fourth block running.** He prescribed a muscle relaxant to someone who squats at 6 am. |
+
+**Coach's read — revised on the drug names, and one thing I said on 09-22 was overstated.**
+
+On 09-22 I told him he was on *"three weeks of painkillers"* and that his back would *"feel fine
+whether or not it is."* **With the actual prescriptions that is too strong, and the record should
+say so.** Neither drug is a conventional analgesic — no NSAID, no opioid — and **pregabalin at
+25 mg BID is the low end of a starting dose** (the usual therapeutic range is many times that).
+The pain-masking effect is real but modest, not the blackout I implied.
+
+**What the actual drugs change, which matters more than the masking:**
+
+1. **Baclofen is the one with a direct mechanical consequence, and it is not about pain.** It is a
+   muscle relaxant that reduces motor-neuron excitability and muscle tone. **Trunk stiffness under a
+   loaded bar is the brace** — the exact quality this athlete is told to hold on every axial rep. A
+   drug whose job is to lower muscle tone is a reason to keep the axial ceiling fixed that stands
+   on its own, even if pain perception were untouched. This is now the primary argument, ahead of
+   masking.
+2. **Both are CNS depressants** — sedation and reduced coordination are the common effects, and he
+   trains at 6 am on a dose taken the night before.
+3. **❓ Pregabalin is a nerve-pain drug, and nothing in this record mentions leg symptoms.** Not a
+   diagnosis and not alarming at this dose — it is also used for general musculoskeletal pain — but
+   the choice is worth one question: *is the doctor treating a nerve component, or is this a
+   low-dose adjunct?* The answer would tell us whether "new or worsening leg symptoms" (already a
+   hard stop) is being watched for a reason.
+4. **The masking still binds the instrument**, just less severely than stated: the back check is the
+   gate on every axial load, and a check taken on these two drugs is not comparable to an
+   unmedicated one. **2026-09-22 (squat) — `tight`** is logged as the first medicated row.
+
+**Restriction — in force 2026-09-11 → ~2026-09-30 (course end, athlete-reported):**
+- **Squat and sumo capped by absolute load.** No PR attempts, no ladder rungs claimed, no
+  autoregulating upward. Known loads only. `masked-pain-load-cap`, extended 2026-09-22.
+- **Bench, pull-up and dip are unaffected.** The prescription is for the back, there is still no
+  shoulder injection, and those lifts are not gated on a back check.
+- **Back checks continue**, each tagged `medicated`.
+- **Expiry: course finished AND one clean unmedicated check.** Not on how it feels.
+
+**Hard stops unchanged:** new or worsening leg symptoms, night or rest pain, pain not settling
+within 24 h, or two consecutive `sore` axial checks → axial work stops, back to the clinic.
+
+**Open questions for the next visit** *(raised 2026-09-22, trimmed 2026-09-23)*:
+- [ ] **Is there a next appointment, and does the injection series continue past 2026-09-11?**
+- [ ] **Tell him you are squatting and deadlifting again, and at what weight.** Fourth block owed.
+- [ ] **Why pregabalin?** Nerve component being treated, or a low-dose adjunct?
+- [ ] Is there a clearance to progress axial load past 365 squat / 295 sumo, and on what evidence?
+- [ ] Confirm the steroid reasoning — what exactly was the concern, so the record is right.
+
 ### Visit 2026-08-28
 
 **Clinical fact (athlete report):** injection given. Pain had *"improved quite a lot."* The doctor

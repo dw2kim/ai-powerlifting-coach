@@ -71,7 +71,7 @@ description: Design a new training block — pull context from prior block + mem
      (e.g. "cable row 15 lb → machine row equivalent") and prescribe from that — don't guess.
    - **Progress accessories gradually** (rule `accessory-progression`): hold 2–3 weeks, small
      bumps — not +5 lb/week.
-   - **Accessory RPE** (rule `accessory-rpe`): assume 7–8; don't prescribe or expect logged RPE
+   - **Accessory RPE** (rule `blank-rpe`): read blanks by context (trailing blank = the last logged RPE, nothing rated = @5 or less); don't prescribe or expect logged RPE
      on them unless it's a 9+ situation.
 6. **Write**:
    - `brain/current-block.md` — prose for humans (this is what you read on your phone)

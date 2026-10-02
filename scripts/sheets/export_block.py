@@ -606,7 +606,8 @@ def _load_prior(block: dict) -> dict | None:
                 c = json.loads(p.read_text())
             except Exception:  # noqa: BLE001
                 continue
-            if c.get("block_id") and c.get("block_id") != bid:
+            # Real blocks only (".._B05"); a bridge or other interlude isn't a prior block.
+            if c.get("block_id") and c.get("block_id") != bid and re.search(r"-B\d+$", c["block_id"]):
                 cands.append(c)
         if cands:
             return max(cands, key=lambda c: c["block_id"])  # newest by block id

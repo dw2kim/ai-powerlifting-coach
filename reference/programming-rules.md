@@ -80,6 +80,18 @@
   Set the destination from the Hevy log, but treat the **ramp rate** as the exposure. While
   injections continue, every rung remains an absolute load under `masked-pain-load-cap`, never an
   RPE target. [FB 2026-08-29]
+- **axial-floor-range-ceiling** — Once an axial lift is out of a medical course (injection or
+  medication window) but still on `axial-return-ladder`, write each gated rung as a **floor → range →
+  ceiling**, not a single number. The **floor** is the rung: gated by the ladder, the load the app shows,
+  and the backoffs key off it. The **range** above it is earned on the day, only when the last morning
+  check was *fine*, a clean unmedicated check is on file, last week's top was ≤@7.5 and the warm-ups move
+  fast. Climb in 10s and stop at the week's RPE or the ceiling. The **ceiling** is hard: above it is creep
+  and forfeits the next rung. Going above the floor inside the range is not creep. **Next week's floor
+  never moves with what the range reached.** State the floor, range and ceiling in the Hevy notes and
+  `display_load`. Inside a medical window the rung stays a single fixed load (`masked-pain-load-cap`).
+  **Why:** the athlete peaks at 475–485 historically and a single 405 read as a cap on a good day, with a
+  real worry about losing strength, groove and tempo. A range lets a good day count without letting a
+  good day reset the ladder. [FB 2026-09-27]
 - **accessory-progression** — Accessories progress *gradually*: hold a load for 2–3 weeks,
   then small bumps. Do **not** apply the primary/secondary "+5 lb each week" default to
   accessories. They should still trend up across blocks, just slowly. [FB 2026-06-14]
@@ -146,6 +158,19 @@
   movements while another day ran thin. **Balance days by working-set volume, not accessory
   count** — a day with two primary lifts needs fewer accessories than a day with one.
   [FB 2026-08-07]
+- **whole-body-every-day** — **Every session hits the whole body: at least one lower-body, one
+  upper push, one upper pull and one core movement, every day.** Emphasis is allowed and expected. A
+  bench day can lean chest and a pull day can lean back; the rule is **coverage, not even
+  distribution**. The off-emphasis regions get a *dose* (one accessory, ~3 working sets), not parity.
+  This is the per-day check; `muscle-coverage-audit` stays the per-block check across the 13 groups.
+  The dose **inherits every constraint of its day**: `accessory-day-interference` picks the
+  movement (lowest cost to the next day, e.g. leg extension rather than leg press before sumo,
+  and a chest-supported mid-back row rather than a lat-heavy pull before the pull-up), and medical
+  caps still apply (no loaded hinge or axial squat pattern just to fill the lower slot). State the
+  per-day table in the block file. **Why it exists:** the 2026-09-24 bridge Thursday had no lower
+  body at all, and the athlete filled it himself with an off-plan 415×10 ×3 leg press, 24 h before
+  the sumo read. A hole in the plan gets filled at 6am, by feel, at a load nobody chose.
+  [FB 2026-09-24]
 - **equipment-fallbacks** — **The gym is busy and the session is capped at 60 minutes. When a
   machine or implement is occupied he substitutes an equivalent movement rather than waiting, and
   that is correct behaviour — not non-compliance, not drift, not a mapping bug.** Athlete's own
@@ -214,6 +239,22 @@
   steroid dulls pain gradually over days. Established for the lower back / squat + sumo; **applies
   to the shoulder and bench the moment a shoulder injection starts** (still not given as of
   2026-08-07 — the athlete must report it so bench and dip get the same treatment).
+  **EXTENDED 2026-09-22 to systemic analgesia.** The mechanism is masked pain, not the needle: a
+  prescribed **oral analgesic and/or muscle relaxant** masks the same signal **continuously for the
+  whole course**, where an injection masks for hours. While such a course is active, the affected
+  region's lifts are capped by absolute load exactly as under an injection, back checks logged
+  inside the window are tagged **medicated** and are not comparable to unmedicated ones, and the cap
+  lifts on the course finishing **plus** a clean unmedicated check — never on "doing great".
+  **Muscle relaxants carry a second problem that has nothing to do with pain, and it is usually the
+  stronger objection**: they lower muscle tone and motor-neuron excitability — the same quality the
+  **brace** depends on — on top of drowsiness and reduced coordination under a loaded bar. Hold
+  maximal axial attempts for the course regardless of what the back check says.
+  **Read the dose before sizing the masking claim**: a low starting dose (e.g. pregabalin 25 mg BID,
+  the bottom of a range that runs many times higher) masks modestly, and overstating it costs
+  credibility the next time a real restriction is needed. Name the drug and the dose in
+  `active-issues.md`, never just "painkillers".
+  [Sep 11 visit, reported 2026-09-22; drugs confirmed 2026-09-23 — baclofen 10 mg BID +
+  pregabalin 25 mg BID]
   **A clearance can be GRADED, and a graded clearance moves the cap rather than removing it**
   (added 2026-08-28 after *"start with a 25% weight increase and see how it goes"*). Convert it to
   one conservative **absolute-load step**, still not autoregulated while the region is masked.
@@ -225,10 +266,22 @@
 
 ## RPE conventions
 
-- **accessory-rpe** — Accessories usually have **no logged RPE**. Treat a blank-RPE accessory
-  set as **RPE 7–8**, not as missing data — do not flag it. Only an explicitly logged **RPE 9+**
-  on an accessory is a signal worth reacting to. Applies both to `reviewing-session` and to
-  reading the log during block design. [FB 2026-06-14]
+- **blank-rpe** — A blank RPE is read **with common sense, by context**, on every lift (primary,
+  secondary and accessory alike). Hevy's ladder starts at @6, so a blank is often the only way to
+  log an easy set, but it can also be a missed tap.
+  - **Some sets of the exercise rated, later ones blank at the same load** → a missed tap. Read the
+    blanks as the last logged RPE. A **leading** blank (set 1 blank, set 2 rated) reads as the next
+    logged set.
+  - **A blank backoff** (lighter than a rated top set) → **@5 or less**. He rates his backoffs, so a
+    blank one was too easy to rate.
+  - **No set of the exercise rated that session** → **@5 or less**. He'll usually raise the load next
+    time and rate it then.
+  - **Load raised and still blank** → still **@5**. The app has no number below 6 for him to enter.
+  Never flag a blank as missing data or ask him to fill it in. Only a **logged** RPE is a cap signal,
+  and **@9+ on an accessory** is the one worth reacting to. The weekly review implements this
+  (`scripts/review/weekly_metrics.effective_rpes`: logged / carried `*` / floor `@≤5`).
+  [FB 2026-06-14 as `accessory-rpe`; FB 2026-09-25 `blank-rpe-below-6`; replaced by this, FB 2026-09-27]
+- **accessory-rpe** — *Superseded by `blank-rpe`.* (Was: a blank accessory = @7–8.)
 - **rpe-hevy-ladder** — Every prescribed RPE must be a value the Hevy app can actually record:
   **{6, 7, 7.5, 8, 8.5, 9, 9.5, 10}**. There is **no 6.5, and nothing below 6** — never program
   @6.5 / @5.5 / @5. Round submax (backoff / calibration) targets **down** to the nearest ladder
@@ -328,7 +381,11 @@
 - **sumo-skill-lift** — **Applies when sumo is the moderate lift** under
   `alternating-axial-emphasis` (athlete reversed the permanent skill-lift treatment on 2026-08-29).
   In moderate blocks, keep sumo on its day at a fixed low band: crisp low reps, technique focus,
-  no PR intent, no intensity wave, and no autoregulating upward. In heavy-sumo blocks it may wave,
+  no PR intent, no intensity wave, and no autoregulating upward.
+  **Amended 2026-09-27:** the fixed band may **climb gently, about +10 lb/week**, each step gated on
+  the sumo back check and topping out under the prior block's sumo peak. The athlete wants a visible
+  trend, and a start **no lower than his most recent easy pull** (B6: 255 → 285, after 235 @5).
+  Still no range and no autoregulating up. [FB 2026-09-27] In heavy-sumo blocks it may wave,
   but only through `axial-return-ladder` and inside `sumo-back-cap`; back rounding or bar-speed
   loss always ends the set.
   **Why keep it rather than drop it:** detraining a hinge makes returning to it more dangerous;
