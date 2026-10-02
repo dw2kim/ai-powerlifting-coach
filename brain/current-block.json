@@ -950,26 +950,26 @@
         {
           "name": "Iso-Lateral Row (Machine)",
           "tier": "accessory",
-          "notes": "PULL FOR MONDAY (whole-body-every-day, FB 2026-09-24). PER ARM, one arm at a time (as you log it: 115x12 on 09-25). Chest-supported machine: zero lumbar load. Aim for mid-back, not lats: elbows about 45° out, squeeze the shoulder blades, and stop there. D1 must not pre-fatigue Tuesday's pull-up (accessory-day-interference), so 125 sits under your 145 median on purpose. If Tuesday's pull-up backoffs suffer, this is cut first. FALLBACK if the machine is taken: Chest Supported Incline Row (DB) 45/hand x12. FORBIDDEN fallback: no T-bar, barbell or bent-over row (erector load).",
+          "notes": "RECALIBRATED from W1 (125/arm ran @7.5/8.5). PER ARM, one arm at a time. Chest-supported, zero lumbar load. Mid-back, not lats: Tuesday is the weighted pull-up, so finish around @7.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 56.69911367945497,
+              "weight_kg": 52.16318458509857,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 56.69911367945497,
+              "weight_kg": 52.16318458509857,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 56.69911367945497,
+              "weight_kg": 52.16318458509857,
               "reps": 12
             }
           ],
           "hold": true,
-          "hold_reason": "Deliberately under the 145 median: D1 row must not pre-fatigue D2 weighted pull-up."
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         },
         {
           "name": "Side Plank",
@@ -1086,26 +1086,26 @@
         {
           "name": "Single Arm Landmine Press (Barbell)",
           "tier": "accessory",
-          "notes": "50 lb of PLATES on the sleeve, not counting the bar, per arm. Floor 50 per the athlete (FB 2026-09-27): 25 was too light. Press to a stop just short of lockout if the front of the shoulder talks. RPE cap @7: this slot ran to @10 as the DB press in B5.",
+          "notes": "RECALIBRATED from W1 (45x10 ran @8/9/9.5): plates per arm. W3/W4 go to 40 ONLY if last week's last set was <=@7, else stay 35. Shoulder slot, RPE cap @7. Press to a stop just short of lockout if the front of the shoulder talks.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 22.67964547178199,
+              "weight_kg": 15.87575183024739,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 22.67964547178199,
+              "weight_kg": 15.87575183024739,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 22.67964547178199,
+              "weight_kg": 15.87575183024739,
               "reps": 10
             }
           ],
           "hold": true,
-          "hold_reason": "First exposure / long-gap re-entry — deliberately under any log anchor until two sessions set a real one."
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         },
         {
           "name": "Lateral Raise (Dumbbell)",
@@ -1132,24 +1132,26 @@
         {
           "name": "Pallof Press",
           "tier": "core",
-          "notes": "Anti-rotation. 12 per side.",
+          "notes": "RECALIBRATED from W1 (25 ran @7.5/8/9). Anti-rotation core, finish around @7. Slow out, hold a beat, slow in.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
+              "weight_kg": 9.071858188712795,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
+              "weight_kg": 9.071858188712795,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
+              "weight_kg": 9.071858188712795,
               "reps": 12
             }
-          ]
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         }
       ]
     },
@@ -1227,46 +1229,50 @@
         {
           "name": "Lat Pulldown",
           "tier": "accessory",
-          "notes": "Lats. Seated, no axial load.",
+          "notes": "RECALIBRATED from W1 (165x12 ran @7/8/9.5). Lats, seated, no axial load. Last set should finish around @8, not near failure.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 74.84283005688056,
+              "weight_kg": 68.03893641534596,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 74.84283005688056,
+              "weight_kg": 68.03893641534596,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 74.84283005688056,
+              "weight_kg": 68.03893641534596,
               "reps": 12
             }
-          ]
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         },
         {
           "name": "Reverse Pec Deck",
           "tier": "accessory",
-          "notes": "LOAD-BEARING, NOT FILLER: posterior cuff is intact behind two torn anterior tendons — this shares load off them.",
+          "notes": "RECALIBRATED from W1 (115x15 ran @7/8.5/9.5). LOAD-BEARING, NOT FILLER: the posterior cuff shares load off two torn anterior tendons. Cap @7, never grind it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 52.16318458509857,
+              "weight_kg": 45.35929094356398,
               "reps": 15
             },
             {
               "type": "normal",
-              "weight_kg": 52.16318458509857,
+              "weight_kg": 45.35929094356398,
               "reps": 15
             },
             {
               "type": "normal",
-              "weight_kg": 52.16318458509857,
+              "weight_kg": 45.35929094356398,
               "reps": 15
             }
-          ]
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         },
         {
           "name": "Face Pull",
@@ -1484,7 +1490,7 @@
         {
           "name": "Concentration Curl",
           "tier": "accessory",
-          "notes": "Direct biceps.",
+          "notes": "RECALIBRATED from W1 (40x10 ran @7/8/8.5): hold 40 until it's comfortably @7, then +5 next block.",
           "sets": [
             {
               "type": "normal",
@@ -1501,7 +1507,9 @@
               "weight_kg": 18.14371637742559,
               "reps": 10
             }
-          ]
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         },
         {
           "name": "Bird Dog",
@@ -1683,26 +1691,26 @@
         {
           "name": "Iso-Lateral Row (Machine)",
           "tier": "accessory",
-          "notes": "PULL FOR MONDAY (whole-body-every-day, FB 2026-09-24). PER ARM, one arm at a time (as you log it: 115x12 on 09-25). Chest-supported machine: zero lumbar load. Aim for mid-back, not lats: elbows about 45° out, squeeze the shoulder blades, and stop there. D1 must not pre-fatigue Tuesday's pull-up (accessory-day-interference), so 125 sits under your 145 median on purpose. If Tuesday's pull-up backoffs suffer, this is cut first. FALLBACK if the machine is taken: Chest Supported Incline Row (DB) 45/hand x12. FORBIDDEN fallback: no T-bar, barbell or bent-over row (erector load).",
+          "notes": "RECALIBRATED from W1 (125/arm ran @7.5/8.5). PER ARM, one arm at a time. Chest-supported, zero lumbar load. Mid-back, not lats: Tuesday is the weighted pull-up, so finish around @7.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 58.96707822663317,
+              "weight_kg": 52.16318458509857,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 58.96707822663317,
+              "weight_kg": 52.16318458509857,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 58.96707822663317,
+              "weight_kg": 52.16318458509857,
               "reps": 12
             }
           ],
           "hold": true,
-          "hold_reason": "Deliberately under the 145 median: D1 row must not pre-fatigue D2 weighted pull-up."
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         },
         {
           "name": "Side Plank",
@@ -1819,26 +1827,26 @@
         {
           "name": "Single Arm Landmine Press (Barbell)",
           "tier": "accessory",
-          "notes": "55 lb of PLATES on the sleeve, not counting the bar, per arm. Floor 50 per the athlete (FB 2026-09-27): 25 was too light. Press to a stop just short of lockout if the front of the shoulder talks. RPE cap @7: this slot ran to @10 as the DB press in B5.",
+          "notes": "RECALIBRATED from W1 (45x10 ran @8/9/9.5): plates per arm. W3/W4 go to 40 ONLY if last week's last set was <=@7, else stay 35. Shoulder slot, RPE cap @7. Press to a stop just short of lockout if the front of the shoulder talks.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 24.947610018960187,
+              "weight_kg": 18.14371637742559,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 24.947610018960187,
+              "weight_kg": 18.14371637742559,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 24.947610018960187,
+              "weight_kg": 18.14371637742559,
               "reps": 10
             }
           ],
           "hold": true,
-          "hold_reason": "First exposure / long-gap re-entry — deliberately under any log anchor until two sessions set a real one."
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         },
         {
           "name": "Lateral Raise (Dumbbell)",
@@ -1865,24 +1873,26 @@
         {
           "name": "Pallof Press",
           "tier": "core",
-          "notes": "Anti-rotation. 12 per side.",
+          "notes": "RECALIBRATED from W1 (25 ran @7.5/8/9). Anti-rotation core, finish around @7. Slow out, hold a beat, slow in.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
+              "weight_kg": 9.071858188712795,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
+              "weight_kg": 9.071858188712795,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
+              "weight_kg": 9.071858188712795,
               "reps": 12
             }
-          ]
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         }
       ]
     },
@@ -1965,46 +1975,50 @@
         {
           "name": "Lat Pulldown",
           "tier": "accessory",
-          "notes": "Lats. Seated, no axial load.",
+          "notes": "RECALIBRATED from W1 (165x12 ran @7/8/9.5). Lats, seated, no axial load. Last set should finish around @8, not near failure.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 77.11079460405875,
+              "weight_kg": 70.30690096252415,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 77.11079460405875,
+              "weight_kg": 70.30690096252415,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 77.11079460405875,
+              "weight_kg": 70.30690096252415,
               "reps": 12
             }
-          ]
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         },
         {
           "name": "Reverse Pec Deck",
           "tier": "accessory",
-          "notes": "LOAD-BEARING, NOT FILLER: posterior cuff is intact behind two torn anterior tendons — this shares load off them.",
+          "notes": "RECALIBRATED from W1 (115x15 ran @7/8.5/9.5). LOAD-BEARING, NOT FILLER: the posterior cuff shares load off two torn anterior tendons. Cap @7, never grind it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 52.16318458509857,
+              "weight_kg": 47.62725549074217,
               "reps": 15
             },
             {
               "type": "normal",
-              "weight_kg": 52.16318458509857,
+              "weight_kg": 47.62725549074217,
               "reps": 15
             },
             {
               "type": "normal",
-              "weight_kg": 52.16318458509857,
+              "weight_kg": 47.62725549074217,
               "reps": 15
             }
-          ]
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         },
         {
           "name": "Face Pull",
@@ -2222,24 +2236,26 @@
         {
           "name": "Concentration Curl",
           "tier": "accessory",
-          "notes": "Direct biceps.",
+          "notes": "RECALIBRATED from W1 (40x10 ran @7/8/8.5): hold 40 until it's comfortably @7, then +5 next block.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 20.41168092460379,
+              "weight_kg": 18.14371637742559,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 20.41168092460379,
+              "weight_kg": 18.14371637742559,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 20.41168092460379,
+              "weight_kg": 18.14371637742559,
               "reps": 10
             }
-          ]
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         },
         {
           "name": "Bird Dog",
@@ -2409,26 +2425,26 @@
         {
           "name": "Iso-Lateral Row (Machine)",
           "tier": "accessory",
-          "notes": "PULL FOR MONDAY (whole-body-every-day, FB 2026-09-24). PER ARM, one arm at a time (as you log it: 115x12 on 09-25). Chest-supported machine: zero lumbar load. Aim for mid-back, not lats: elbows about 45° out, squeeze the shoulder blades, and stop there. D1 must not pre-fatigue Tuesday's pull-up (accessory-day-interference), so 125 sits under your 145 median on purpose. If Tuesday's pull-up backoffs suffer, this is cut first. FALLBACK if the machine is taken: Chest Supported Incline Row (DB) 45/hand x12. FORBIDDEN fallback: no T-bar, barbell or bent-over row (erector load).",
+          "notes": "RECALIBRATED from W1 (125/arm ran @7.5/8.5). PER ARM, one arm at a time. Chest-supported, zero lumbar load. Mid-back, not lats: Tuesday is the weighted pull-up, so finish around @7.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 58.96707822663317,
+              "weight_kg": 54.43114913227677,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 58.96707822663317,
+              "weight_kg": 54.43114913227677,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 58.96707822663317,
+              "weight_kg": 54.43114913227677,
               "reps": 12
             }
           ],
           "hold": true,
-          "hold_reason": "Deliberately under the 145 median: D1 row must not pre-fatigue D2 weighted pull-up."
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         },
         {
           "name": "Side Plank",
@@ -2545,26 +2561,26 @@
         {
           "name": "Single Arm Landmine Press (Barbell)",
           "tier": "accessory",
-          "notes": "55 lb of PLATES on the sleeve, not counting the bar, per arm. Floor 50 per the athlete (FB 2026-09-27): 25 was too light. Press to a stop just short of lockout if the front of the shoulder talks. RPE cap @7: this slot ran to @10 as the DB press in B5.",
+          "notes": "RECALIBRATED from W1 (45x10 ran @8/9/9.5): plates per arm. W3/W4 go to 40 ONLY if last week's last set was <=@7, else stay 35. Shoulder slot, RPE cap @7. Press to a stop just short of lockout if the front of the shoulder talks.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 24.947610018960187,
+              "weight_kg": 18.14371637742559,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 24.947610018960187,
+              "weight_kg": 18.14371637742559,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 24.947610018960187,
+              "weight_kg": 18.14371637742559,
               "reps": 10
             }
           ],
           "hold": true,
-          "hold_reason": "First exposure / long-gap re-entry — deliberately under any log anchor until two sessions set a real one."
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         },
         {
           "name": "Lateral Raise (Dumbbell)",
@@ -2591,24 +2607,26 @@
         {
           "name": "Pallof Press",
           "tier": "core",
-          "notes": "Anti-rotation. 12 per side.",
+          "notes": "RECALIBRATED from W1 (25 ran @7.5/8/9). Anti-rotation core, finish around @7. Slow out, hold a beat, slow in.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
+              "weight_kg": 9.071858188712795,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
+              "weight_kg": 9.071858188712795,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 11.339822735890994,
+              "weight_kg": 9.071858188712795,
               "reps": 12
             }
-          ]
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         }
       ]
     },
@@ -2686,46 +2704,50 @@
         {
           "name": "Lat Pulldown",
           "tier": "accessory",
-          "notes": "Lats. Seated, no axial load.",
+          "notes": "RECALIBRATED from W1 (165x12 ran @7/8/9.5). Lats, seated, no axial load. Last set should finish around @8, not near failure.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 77.11079460405875,
+              "weight_kg": 70.30690096252415,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 77.11079460405875,
+              "weight_kg": 70.30690096252415,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 77.11079460405875,
+              "weight_kg": 70.30690096252415,
               "reps": 12
             }
-          ]
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         },
         {
           "name": "Reverse Pec Deck",
           "tier": "accessory",
-          "notes": "LOAD-BEARING, NOT FILLER: posterior cuff is intact behind two torn anterior tendons — this shares load off them.",
+          "notes": "RECALIBRATED from W1 (115x15 ran @7/8.5/9.5). LOAD-BEARING, NOT FILLER: the posterior cuff shares load off two torn anterior tendons. Cap @7, never grind it.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 52.16318458509857,
+              "weight_kg": 47.62725549074217,
               "reps": 15
             },
             {
               "type": "normal",
-              "weight_kg": 52.16318458509857,
+              "weight_kg": 47.62725549074217,
               "reps": 15
             },
             {
               "type": "normal",
-              "weight_kg": 52.16318458509857,
+              "weight_kg": 47.62725549074217,
               "reps": 15
             }
-          ]
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         },
         {
           "name": "Face Pull",
@@ -2943,24 +2965,26 @@
         {
           "name": "Concentration Curl",
           "tier": "accessory",
-          "notes": "Direct biceps.",
+          "notes": "RECALIBRATED from W1 (40x10 ran @7/8/8.5): hold 40 until it's comfortably @7, then +5 next block.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 20.41168092460379,
+              "weight_kg": 18.14371637742559,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 20.41168092460379,
+              "weight_kg": 18.14371637742559,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 20.41168092460379,
+              "weight_kg": 18.14371637742559,
               "reps": 10
             }
-          ]
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         },
         {
           "name": "Bird Dog",
@@ -3129,26 +3153,26 @@
         {
           "name": "Iso-Lateral Row (Machine)",
           "tier": "accessory",
-          "notes": "PULL FOR MONDAY (whole-body-every-day, FB 2026-09-24). PER ARM, one arm at a time (as you log it: 115x12 on 09-25). Chest-supported machine: zero lumbar load. Aim for mid-back, not lats: elbows about 45° out, squeeze the shoulder blades, and stop there. D1 must not pre-fatigue Tuesday's pull-up (accessory-day-interference), so 125 sits under your 145 median on purpose. If Tuesday's pull-up backoffs suffer, this is cut first. FALLBACK if the machine is taken: Chest Supported Incline Row (DB) 45/hand x12. FORBIDDEN fallback: no T-bar, barbell or bent-over row (erector load). W5 deload.",
+          "notes": "RECALIBRATED from W1 (125/arm ran @7.5/8.5). PER ARM, one arm at a time. Chest-supported, zero lumbar load. Mid-back, not lats: Tuesday is the weighted pull-up, so finish around @7. W5 deload.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 49.895220037920375,
+              "weight_kg": 47.62725549074217,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 49.895220037920375,
+              "weight_kg": 47.62725549074217,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 49.895220037920375,
+              "weight_kg": 47.62725549074217,
               "reps": 12
             }
           ],
           "hold": true,
-          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         },
         {
           "name": "Side Plank",
@@ -3273,26 +3297,26 @@
         {
           "name": "Single Arm Landmine Press (Barbell)",
           "tier": "accessory",
-          "notes": "50 lb of PLATES on the sleeve, not counting the bar, per arm. Floor 50 per the athlete (FB 2026-09-27): 25 was too light. Press to a stop just short of lockout if the front of the shoulder talks. RPE cap @7: this slot ran to @10 as the DB press in B5. W5 deload stays at the 50 floor.",
+          "notes": "RECALIBRATED from W1 (45x10 ran @8/9/9.5): plates per arm. W3/W4 go to 40 ONLY if last week's last set was <=@7, else stay 35. Shoulder slot, RPE cap @7. Press to a stop just short of lockout if the front of the shoulder talks. W5 deload.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 22.67964547178199,
+              "weight_kg": 15.87575183024739,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 22.67964547178199,
+              "weight_kg": 15.87575183024739,
               "reps": 10
             },
             {
               "type": "normal",
-              "weight_kg": 22.67964547178199,
+              "weight_kg": 15.87575183024739,
               "reps": 10
             }
           ],
           "hold": true,
-          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         },
         {
           "name": "Lateral Raise (Dumbbell)",
@@ -3321,26 +3345,26 @@
         {
           "name": "Pallof Press",
           "tier": "core",
-          "notes": "Anti-rotation. 12 per side. W5 deload.",
+          "notes": "RECALIBRATED from W1 (25 ran @7.5/8/9). Anti-rotation core, finish around @7. Slow out, hold a beat, slow in. W5 deload.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 9.071858188712795,
+              "weight_kg": 6.8038936415345965,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 9.071858188712795,
+              "weight_kg": 6.8038936415345965,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 9.071858188712795,
+              "weight_kg": 6.8038936415345965,
               "reps": 12
             }
           ],
           "hold": true,
-          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         }
       ]
     },
@@ -3416,50 +3440,50 @@
         {
           "name": "Lat Pulldown",
           "tier": "accessory",
-          "notes": "Lats. Seated, no axial load. W5 deload.",
+          "notes": "RECALIBRATED from W1 (165x12 ran @7/8/9.5). Lats, seated, no axial load. Last set should finish around @8, not near failure. W5 deload.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 65.77097186816776,
+              "weight_kg": 61.235042773811365,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 65.77097186816776,
+              "weight_kg": 61.235042773811365,
               "reps": 12
             },
             {
               "type": "normal",
-              "weight_kg": 65.77097186816776,
+              "weight_kg": 61.235042773811365,
               "reps": 12
             }
           ],
           "hold": true,
-          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         },
         {
           "name": "Reverse Pec Deck",
           "tier": "accessory",
-          "notes": "LOAD-BEARING, NOT FILLER: posterior cuff is intact behind two torn anterior tendons — this shares load off them. W5 deload.",
+          "notes": "RECALIBRATED from W1 (115x15 ran @7/8.5/9.5). LOAD-BEARING, NOT FILLER: the posterior cuff shares load off two torn anterior tendons. Cap @7, never grind it. W5 deload.",
           "sets": [
             {
               "type": "normal",
-              "weight_kg": 45.35929094356398,
+              "weight_kg": 40.82336184920758,
               "reps": 15
             },
             {
               "type": "normal",
-              "weight_kg": 45.35929094356398,
+              "weight_kg": 40.82336184920758,
               "reps": 15
             },
             {
               "type": "normal",
-              "weight_kg": 45.35929094356398,
+              "weight_kg": 40.82336184920758,
               "reps": 15
             }
           ],
           "hold": true,
-          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         },
         {
           "name": "Face Pull",
@@ -3684,7 +3708,7 @@
         {
           "name": "Concentration Curl",
           "tier": "accessory",
-          "notes": "Direct biceps. W5 deload.",
+          "notes": "RECALIBRATED from W1 (40x10 ran @7/8/8.5): hold 40 until it's comfortably @7, then +5 next block. W5 deload.",
           "sets": [
             {
               "type": "normal",
@@ -3703,7 +3727,7 @@
             }
           ],
           "hold": true,
-          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
         },
         {
           "name": "Bird Dog",

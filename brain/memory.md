@@ -875,3 +875,13 @@ even 45lbs was 8rpe for the first set". So the 50 floor I set from his "25 is to
 put a torn-tendon shoulder slot at @9.5 against a @7 cap. The right load is between 25 and 45:
 **35 proposed**. The session ran ~2 h on the clock (10:47–12:43), so check whether the timer was
 left running. Monday's squat back check has not been reported yet.
+
+## 2026-10-02 — W1 done; six accessories recalibrated from what he actually lifted
+
+Week 1 complete. Squat 315 + 275s fine the next morning (medicated), sumo 255×3 @6 ×3 on target,
+Spoto 235×4 drifted to @8.5 after a bad night's sleep (his read, accepted). Six accessories finished
+@8.5–9.5 and were re-set from W1 actuals, with his approval line by line. **He wants a confirm step
+before every plan change**, and he wants to keep every exercise: "I don't want to drop any workouts."
+So when a session runs long, the answer is lighter loads or shorter rests, not cutting exercises.
+He also deletes Hevy routines after training them, so W1-D1..D3 are gone from the app. That's
+expected; `--update --start` only ever touches the untrained weeks.

@@ -201,22 +201,22 @@ item #2) — an accessory at @9+ gets flagged like a primary would.
 |---|---|---|---|---|
 | D1 | Tricep Pushdown | 50 → 55×12 (45) | Lockout (bench weak point) → triceps → pushdown → finishing reps | Cable Triceps Extension |
 | D1 | **Chest Fly (Machine)** 🆕 | 100 → 105×12 (85) | Chest only trained by presses → pec isolation, no pressing exposure | Seated Cable Fly |
-| D1 | **Iso-Lateral Row (Machine)** ➕ | 125 → 130×12 (110) *(hold)*, **per arm, one at a time** | **Pull on Monday** (`whole-body-every-day`) → mid-back, chest-supported, zero lumbar load. Under the 145 median so it doesn't pre-fatigue Tuesday's pull-up; **first cut** if the WPU backoffs suffer | CS Incline Row (DB) 45/hand. **Never T-bar or bent-over.** |
+| D1 | **Iso-Lateral Row (Machine)** ➕ | W1 125 → **115 · 115 · 120 (105)** *(recal. 10-02)*, **per arm, one at a time** | **Pull on Monday** (`whole-body-every-day`) → mid-back, chest-supported, zero lumbar load. Under the 145 median so it doesn't pre-fatigue Tuesday's pull-up; **first cut** if the WPU backoffs suffer | CS Incline Row (DB) 45/hand. **Never T-bar or bent-over.** |
 | D2 | Hip Thrust (Smith) | 225×10 → 245×8 (185) | Sumo lockout / squat out of the hole → glutes | Glute Bridge (Barbell) |
 | D2 | Seated Leg Curl | 105 → 115×12 (95) | Hamstrings (knee-flexion side) | Lying Leg Curl |
-| D2 | **Single Arm Landmine Press** 🔄 | **50** → 55×10/arm (50) — floor 50, athlete FB 09-27 | Front delts → shoulder-friendly press path | Neutral-grip DB Press (seated, @7) |
+| D2 | **Single Arm Landmine Press** 🔄 | W1 50 (ran 45 @8–9.5) → **35 · 40 · 40 (35)** ×10/arm *(recal. 10-02; 40 only if last set ≤@7)* | Front delts → shoulder-friendly press path | Neutral-grip DB Press (seated, @7) |
 | D2 | Lateral Raise (DB) | 30 → 35×15 (25) | Lateral delts — was a hole in B4 | Cable Lateral Raise |
-| D3 | Lat Pulldown | 165 → 170×12 (145) | Pull-up → lats, seated, no axial load | Natural Grip Pulldown |
-| D3 | Reverse Pec Deck | 110 → 115×15 (100) | **Load-bearing**: intact posterior cuff shares load off two torn anterior tendons | Rear Delt Fly (DB) 25 |
+| D3 | Lat Pulldown | W1 165 (@9.5) → **150 · 155 · 155 (135)** ×12 *(recal. 10-02)* | Pull-up → lats, seated, no axial load | Natural Grip Pulldown |
+| D3 | Reverse Pec Deck | W1 110 (ran 115 @9.5) → **100 · 105 · 105 (90)** ×15 *(recal. 10-02)* | **Load-bearing**: intact posterior cuff shares load off two torn anterior tendons | Rear Delt Fly (DB) 25 |
 | D3 | Face Pull | 40 → 45×15 (35) | Same — external rotation, scapular control | Band pull-apart |
 | D3 | **Leg Extension (Machine)** ➕ | 130 → 140×12 (115) *(hold)* | **Lower body on Thursday** (`whole-body-every-day`) → quads, the lowest-cost option before Friday: no spinal load, no loaded hip flexion, no adductor cost for sumo | Leg Press 270×12, ROM-capped. **No squat pattern.** |
 | D4 | Bulgarian Split Squat | 40 → 50×10 (35) | Quads/glutes unilateral, non-axial | Leg Press (ROM-capped) |
 | D4 | CS Incline Row | 50 → 55×12 (45) | Mid-back, zero lumbar load | Seated Cable Row. **Never barbell bent-over.** |
 | D4 | Seated Calf Raise | 90 → 100×12 (80) | Calves — **corrected anchor** (not 155–175) | — |
-| D4 | Concentration Curl | 40 → 45×10 (35) | Biceps, direct | Hammer Curl |
+| D4 | Concentration Curl | **40 flat** ×10 (35) *(recal. 10-02; W1 @7–8.5)* | Biceps, direct | Hammer Curl |
 
 **Core, one different pattern per day** (`core-every-day`): Side Plank 40 s (anti-lateral-flexion) ·
-Pallof 25×12 (anti-rotation) · Dead Bug ×10 (anti-extension) · Bird Dog ×10 (spine-neutral). **No
+Pallof 25 → **20**×12 from W2 (anti-rotation; W1 ran @9) · Dead Bug ×10 (anti-extension) · Bird Dog ×10 (spine-neutral). **No
 loaded lumbar flexion, no hanging leg raise** while the back is under treatment.
 
 ### What changed from B5, and why (`accessory-rotation`)
@@ -243,6 +243,16 @@ loaded lumbar flexion, no hanging leg raise** while the back is under treatment.
   lower body, the same hole that sent him to a 415 leg press on the bridge Thursday. Each was picked
   for the lowest cost to the next day: D1 → D2 is back-to-back with the pull-up, and D3 → D4 is
   back-to-back with sumo + BSS. Neither is an emphasis; each gives that region its dose for the day.
+
+### Week-1 recalibration (2026-10-02, athlete-approved)
+
+W1's logged loads and RPEs are the source of truth for six accessories that finished at @8.5–9.5.
+They're re-set so the last set lands around @7–8, or ≤@7 for the shoulder slots (landmine, reverse pec
+deck): landmine, pulldown, reverse pec deck, Iso-Lateral Row, Pallof and concentration curl. All are
+pinned `hold`. **Kept as written at the athlete's call:** Spoto (W1's @8.5 came after a bad night's
+sleep, and the triples from W2 sit inside target) and BSS (12 reps were logged by mistake; at 10 the
+RPE holds). **No D1 trim:** the athlete keeps every exercise, so the triceps pushdown and side plank
+stay. Pushed to Hevy W2–W5 with `--update --start W2-D1`.
 
 ### Muscle coverage audit (`muscle-coverage-audit`)
 
