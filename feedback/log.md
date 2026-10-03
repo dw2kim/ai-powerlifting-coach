@@ -802,3 +802,17 @@ effective value. Three tests added (43 pass).
 **Answered 2026-09-27:** (1) A leading blank reads as the next set, which confirms the default. (2) "For the
 backoff, I usually put the RPE, so if it is blank, it probably meant RPE 5 or less." A blank set lighter than a
 rated set is now the floor (@5 or less), not carried. `effective_rpes` is updated and has a 4th test.
+
+### 2026-10-02 · load · week-1 recalibration · 2026-Q4-B06
+**Feedback:** "Fix the landmine load… apply those RPEs with my current load on week 1 as the source of
+truth, and let's recalibrate. Before you make any change, double-check with me." The proposal covered
+seven exercises. Approved: landmine 35/40/40/35 (from 50/55/55/50), pulldown 150/155/155/135, reverse pec
+deck 100/105/105/90, Iso-Lateral Row 115/115/120/105, Pallof 20/20/20/15, concentration curl 40/40/40/35.
+**Declined, with reasons:** Spoto (W1 @8.5 was a poor-sleep day, and the triples from W2 should sit on
+target) and BSS (12 reps were a logging mistake; at 10 the RPE holds). **No D1 trim:** "I don't want to
+drop any workouts." The pushdown and side plank stay.
+**Verified (Hevy):** landmine 45×10 @8/9/9.5; pulldown 165×12 @7/8/9.5; rear-delt fly 115×15 @7/8.5/9.5;
+Iso-Lateral Row 125/arm @7.5/8.5; Pallof 25 @7.5/8/9; concentration curl 40×10 @7/8/8.5.
+**Process note:** he wants a confirm step before any plan change. Propose first, then apply. That's
+already the norm for Hevy writes; it now applies to plan edits too.
+→ rules: none new (`loads-from-logs`, `blank-rpe` applied)

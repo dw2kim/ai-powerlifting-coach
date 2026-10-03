@@ -80,3 +80,4 @@ _The check is the morning after the session date. Newest at the bottom._
 | 2026-09-15 | sumo | fine | Athlete reported 'back was not tight this morning' (Sep 16). Recorded fine: an explicit negation of 'tight' after three consecutive tight reads, not the ambiguous 'fine-tight in the middle' of Sep 1/5. Sumo 225x3 x3 @6, ~88h post 09-11 injection, outside the flare window — the clean comparable axial read of W6. |
 | 2026-09-22 | squat | tight | MEDICATED ROW - athlete on baclofen 10mg BID + pregabalin 25mg BID. Reported 'a little tight, almost fine' (2026-09-23) - ambiguous, rounds down to tight per standing rule. First check after Korea; session was off-plan squat 275/245/245x3. NOT comparable to the four unmedicated rows. |
 | 2026-09-25 | sumo | fine | medicated (baclofen+pregabalin); athlete: 'seems to be fine eventually' — reported Sep 27 |
+| 2026-09-28 | squat | fine | medicated (baclofen course ends ~Sep 30); reported Oct 2 |
