@@ -97,3 +97,56 @@ class RowRoleTests(unittest.TestCase):
     def test_amrap_note_still_wins_over_position(self):
         labels = self.labels(self.block("Top set.", "AMRAP to failure."))
         self.assertEqual(labels[1], "Low-bar Squat (AMRAP)")
+
+
+class TopBackoffSplitTests(unittest.TestCase):
+    """One Hevy exercise = top set + backoffs. The Sheet must show one load per row
+    (athlete feedback 2026-10-03: '5 sets, 3/4/4/4/4, 365-385' hid the 295 backoffs)."""
+
+    LB = 0.45359237
+
+    def sets(self, top, back, n=4, top_reps=3, back_reps=4):
+        return ([{"type": "warmup", "weight_kg": 135 * self.LB, "reps": 8},
+                 {"type": "normal", "weight_kg": top * self.LB, "reps": top_reps, "rpe": 7.5}]
+                + [{"type": "normal", "weight_kg": back * self.LB, "reps": back_reps, "rpe": 7}] * n)
+
+    def block(self):
+        squat = {"name": "Low-bar Squat", "notes": "Floor 365. Backoffs @ 295 keyed to the floor.",
+                 "display_load": "365–385", "sets": self.sets(365, 295)}
+        dip_flat = {"name": "Weighted Dip", "notes": "Stop above the pinch.",
+                    "sets": [{"type": "normal", "weight_kg": 70 * self.LB, "reps": 5, "rpe": 7}] * 4}
+        dip_peak = {"name": "Weighted Dip", "notes": "Dip peak.",
+                    "sets": self.sets(105, 85, n=3, back_reps=5)}
+        return {"block_id": "test", "weeks": 2, "start_date": "2026-09-28",
+                "days": [{"label": "D1", "focus": "Squat"}],
+                "prescriptions": [
+                    {"week": 1, "day": "D1", "exercises": [squat, dip_flat]},
+                    {"week": 2, "day": "D1", "exercises": [squat, dip_peak]}]}
+
+    def rows(self):
+        rows, _, _ = build_plan(self.block())
+        return {r[2]: r for r in rows if r[2] and r[2] != "Exercise"}
+
+    def test_squat_top_and_backoffs_get_their_own_rows_and_loads(self):
+        rows = self.rows()
+        top, back = rows["Low-bar Squat (top set)"], rows["Low-bar Squat (backoff)"]
+        self.assertEqual(top[3:7], ["1", "3", "@7.5", "365–385"])
+        self.assertTrue(top[7])                       # e1RM on the top set
+        self.assertIn("Floor 365", top[8])
+        self.assertEqual(back[3:9], ["4", "4", "@7", "295", "", ""])
+
+    def test_top_row_sits_above_backoff_row(self):
+        names = list(self.rows())
+        self.assertLess(names.index("Low-bar Squat (top set)"),
+                        names.index("Low-bar Squat (backoff)"))
+        self.assertLess(names.index("Weighted Dip (top set)"),
+                        names.index("Weighted Dip (backoff / straight sets)"))
+
+    def test_straight_sets_week_lands_on_volume_row_not_top_row(self):
+        rows = self.rows()
+        top = rows["Weighted Dip (top set)"]
+        vol = rows["Weighted Dip (backoff / straight sets)"]
+        self.assertEqual(top[3:7], [""] * 4)          # W1 has no dip top set
+        self.assertEqual(vol[3:7], ["4", "5", "@7", "BW+70"])
+        self.assertEqual(top[10:14], ["1", "3", "@7.5", "BW+105"])
+        self.assertEqual(vol[10:14], ["3", "5", "@7", "BW+85"])
