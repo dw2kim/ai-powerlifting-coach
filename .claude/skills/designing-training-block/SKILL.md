@@ -86,6 +86,11 @@ description: Design a new training block — pull context from prior block + mem
      the numbers** — they're the athlete's, not a coaching preference. Where a set genuinely
      wants longer (a peak / @8 test), say so **in the block prose** rather than overriding the
      field.
+   - **Warm-ups on the Big-5 come from the generator, not by hand** (rule
+     `primary-warmup-ramp`). Write the working sets, then run
+     `python -m scripts.hevy.warmups --apply`: every `primary` gets a ramp scaled to that day's
+     top set — barbell ramps close to within ~10% of the work, pull-ups and dips get a loaded
+     bridge after the BW set. Don't paste one ramp into every week.
    - **Mark `hold` on anything deliberately prescribed below the log** (rule `sheet-load-sync`) —
      medical caps, technique work, first-exposure pattern work. Sweep the finished JSON against
      `reconcile_loads` output and confirm every under-prescribed lift is pinned; an unheld one
