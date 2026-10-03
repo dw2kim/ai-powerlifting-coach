@@ -302,6 +302,9 @@ long-gap re-entry), and **all of W5** (deload).
   dip BW×8 → +35×5 to a +70 top, +45×5 above. The note prefix now counts working sets only — the
   dip read `[5×8]` off the warm-up. **No working set changed.** W1-D1..D3 were already trained and
   stay as prescribed.
+- **2026-10-03 — W2-D1 → W5-D4 re-pushed again.** The Oct 2 accessory recalibration was pushed from a
+  branch that didn't have the ramps yet, so it put the old single warm-ups and `[5×8]`-style prefixes
+  back in the app. Both changes now live together: recalibrated accessories **and** the warm-up ramps.
 
 ---
 
