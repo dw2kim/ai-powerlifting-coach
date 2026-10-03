@@ -11,7 +11,7 @@ named after the block (e.g. "Block 4 Overview" / "Block 4 Plan"):
   - **<Block N> Plan** — the weekly plan (W1…Wn), every day's exercises with the set scheme,
     load (lb, rounded to real plate loads), RPE, and notes. Each week's header is shaded by
     training phase (calibration → peak → deload) with a colour key up top; primary lifts are
-    bold. Top vs backoff is in the notes.
+    bold. A top set and its backoffs get one row each, so every row has one load.
 
 Auth: a Google **service account**. Same env-from-.env pattern as the Hevy/Telegram helpers.
 
@@ -366,7 +366,7 @@ def _e1rm_cell(ex: dict) -> str:
     """Projected 1RM (Epley, same as block_report) for the heaviest working set — primary
     and secondary lifts only. Blank for accessories and for AMRAP sets (unknown reps)."""
     name = ex.get("name", "")
-    if _family(name) == "Acc":
+    if _family(name) == "Acc" or ex.get("_part") == "backoff":
         return ""
     working = [s for s in ex.get("sets", []) if s.get("type") != "warmup"]
     if not working:
@@ -415,19 +415,65 @@ def _row_role(key: tuple, occurrences: int, per_week_exs: list) -> str:
     if any(_role_suffix(n) == " (AMRAP)" for n in notes):
         return " (AMRAP)"
     if occurrences > 1:
-        return " (top set)" if key[1] == 0 else " (backoff)"
+        if key[1] == 0:
+            return " (top set)"
+        parts = {ex.get("_part") for ex in per_week_exs if ex is not None}
+        return " (backoff / straight sets)" if "straight" in parts else " (backoff)"
     return next((s for n in notes if (s := _role_suffix(n))), "")
 
 
-def _keyed(exs: list) -> dict:
-    """(name, occurrence-within-day) -> exercise, so a lift's top/backoff stay distinct."""
+def _split_top_backoff(ex: dict) -> list[dict] | None:
+    """One Hevy exercise holding a top set + backoffs -> [top, backoff] Sheet entries.
+
+    Hevy stores a primary as ONE exercise whose first working set is the top set and whose
+    remaining sets are the lighter backoffs. Rendered as one row, that collapsed to
+    "5 sets · 3/4/4/4/4 · 365-385": one load for five sets, the 295 backoffs invisible
+    behind the `display_load` override (athlete feedback 2026-10-03). Split when the first
+    working set is strictly heavier than every other working set and those others share one
+    load. The top row keeps the notes and `display_load`; the backoff row shows its own load
+    and no e1RM. Anything else (straight sets, pyramids) stays a single row. None = no split.
+    """
+    working = [s for s in ex.get("sets", []) if s.get("type") != "warmup"]
+    if len(working) < 2:
+        return None
+    lbs = [_round5((s.get("weight_kg") or 0) * KG_TO_LBS) for s in working]
+    top, rest = lbs[0], set(lbs[1:])
+    if len(rest) != 1 or top <= next(iter(rest)):
+        return None
+    top_ex = {**ex, "sets": working[:1], "_part": "top"}
+    back_ex = {k: v for k, v in ex.items() if k not in ("display_load", "notes")}
+    back_ex.update({"sets": working[1:], "notes": "", "_part": "backoff"})
+    return [top_ex, back_ex]
+
+
+def _split_names(exs: list) -> set[str]:
+    """Lifts in a day's exercise list that render as a top-set/backoff pair."""
+    return {ex.get("name", "") for ex in exs if _split_top_backoff(ex)}
+
+
+def _keyed(exs: list, split_names: set[str] = frozenset()) -> dict:
+    """(name, occurrence-within-day) -> exercise, so a lift's top/backoff stay distinct.
+
+    A top+backoff exercise expands into two occurrences (see `_split_top_backoff`). For a
+    lift split in *some* week of the day (`split_names`), a week that runs it as straight
+    sets (e.g. dips 4x5 outside their peak week) belongs on the volume row, not the top-set
+    row — so its lone entry takes occurrence 1.
+    """
     seen: dict[str, int] = {}
     out: dict[tuple, dict] = {}
+    counts: dict[str, int] = {}
+    for ex in exs:
+        counts[ex.get("name", "")] = counts.get(ex.get("name", ""), 0) + 1
     for ex in exs:
         nm = ex.get("name", "")
-        occ = seen.get(nm, 0)
-        seen[nm] = occ + 1
-        out[(nm, occ)] = ex
+        parts = _split_top_backoff(ex)
+        if parts is None and nm in split_names and counts[nm] == 1:
+            parts = [None, {**ex, "_part": "straight"}]
+        for part in parts or [ex]:
+            occ = seen.get(nm, 0)
+            seen[nm] = occ + 1
+            if part is not None:
+                out[(nm, occ)] = part
     return out
 
 
@@ -528,8 +574,9 @@ def build_plan(block: dict, final: bool = False) -> tuple[list[list[str]], list[
         _, canon_exs = max(weeks_exs, key=lambda t: len(t[1]))  # fullest week sets the row order
         if not canon_exs:
             continue
-        canon_order = list(_keyed(canon_exs).keys())
-        per_week = {w: _keyed(exs) for w, exs in weeks_exs}
+        split = set().union(*(_split_names(exs) for _, exs in weeks_exs))
+        canon_order = list(_keyed(canon_exs, split).keys())
+        per_week = {w: _keyed(exs, split) for w, exs in weeks_exs}
         # A later amendment can introduce a second occurrence (e.g. squat backoffs)
         # without becoming the fullest week. Keep every occurrence across weeks.
         for keyed in per_week.values():
@@ -540,6 +587,11 @@ def build_plan(block: dict, final: bool = False) -> tuple[list[list[str]], list[
                         canon_order.insert(siblings[-1] + 1, key)
                     else:
                         canon_order.append(key)
+        # Same lift's rows in occurrence order (top set above backoff), at the lift's slot.
+        first = {}
+        for i, k in enumerate(canon_order):
+            first.setdefault(k[0], i)
+        canon_order.sort(key=lambda k: (first[k[0]], k[1]))
 
         # Day band — full-width coloured row; "Dn · focus" overflows across the frozen cols.
         r = _row(); banner_rows.append(r); row = blank_row()
