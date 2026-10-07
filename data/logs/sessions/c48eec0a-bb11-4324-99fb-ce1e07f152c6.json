@@ -6,7 +6,7 @@
     {
       "exercise_template_id": "57e29496-c8d7-4f8b-9bca-d1401504cbc8",
       "index": 0,
-      "notes": "",
+      "notes": null,
       "sets": [
         {
           "custom_metric": null,
@@ -184,7 +184,7 @@
     {
       "exercise_template_id": "AA1EB7D8",
       "index": 2,
-      "notes": "",
+      "notes": null,
       "sets": [
         {
           "custom_metric": null,
