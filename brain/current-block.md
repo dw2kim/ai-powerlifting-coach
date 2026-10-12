@@ -62,7 +62,7 @@ morning-after back check — while bench, pull-up and dip keep climbing on stagg
 | **D3 Thu** | **Weighted Dip** · CGB | Lat Pulldown · Reverse Pec Deck · Face Pull | Dead Bug |
 | **D4 Fri** | **Sumo (moderate)** · Spoto Bench | Bulgarian Split Squat *(back)* · CS Incline Row · Seated Calf Raise · Concentration Curl | Bird Dog |
 
-**Working sets per day: D1 19 · D2 19 · D3 19 · D4 21** — balanced by volume, not exercise count
+**Working sets per day: D1 19 · D2 19 · D3 19 · D4 21** *(W1–W2; from W3 accessories run 2 sets — see Amendments 10-12)* — balanced by volume, not exercise count
 (`muscle-coverage-audit`). D1 runs only two accessories because it carries both heavy primaries.
 
 ### Managing overlap (explicit, per CLAUDE.md)
@@ -93,8 +93,8 @@ morning-after back check — while bench, pull-up and dip keep climbing on stagg
 |---|---|---|---|---|---|
 | **W1** calibration | **315×3** fixed, @≤7 | 240×4 @7 | **255×3 ×3** @6 | BW+60×4 @7 | BW+70×5 ×4 @7 |
 | **W2** establish | **365** 🔒 → ≤385 | 250×3 @7.5 | **265×3 ×3** 🔒 | BW+75×4 @7.5 | BW+85×5 ×4 @7.5 |
-| **W3** push | **385** 🔒 → ≤405 | 255×3 @7.5 *(hold)* | 275×3 ×3 🔒 | BW+85×3 @8 | **⛰️ work up to @8: BW+105–110×3** |
-| **W4** peak | **405** 🔒 → ≤**435** ⛰️ | **⛰️ work up to @8: 275–285×2** | 285×3 ×3 🔒 | **⛰️ work up to @8 HARD STOP: BW+90–95×3** | BW+85×5 ×4 *(hold)* |
+| **W3** push | **385** 🔒 → ≤405 | **255 → ≤265**×3 @7.5 *(range, 10-12)* | 275×3 ×3 🔒 | BW+85×3 @8 | **⛰️ work up to @8: BW+105–110×3** |
+| **W4** peak | **405** 🔒 → ≤**435** ⛰️ | **⛰️ work up to @8: 275 → ≤295×2** *(10-12)* | 285×3 ×3 🔒 | **⛰️ work up to @8.5: BW+95 → ≤100×3** *(10-12)* | BW+85×5 ×4 *(hold)* |
 | **W5** deload | 275×3 @6 | 225×4 @6 | 235×3 ×3 @6 | BW+50×4 @6 | BW+60×5 ×3 @6 |
 
 🔒 = gated rung (see the ladder rules). ⛰️ = that lift's peak week. **Squat W2–W4 = floor → ceiling** (FB 2026-09-27): the app shows the floor, and the range above it is earned on the day.
@@ -305,6 +305,24 @@ long-gap re-entry), and **all of W5** (deload).
 - **2026-10-03 — W2-D1 → W5-D4 re-pushed again.** The Oct 2 accessory recalibration was pushed from a
   branch that didn't have the ramps yet, so it put the old single warm-ups and `[5×8]`-style prefixes
   back in the app. Both changes now live together: recalibrated accessories **and** the warm-up ramps.
+
+- **2026-10-12 — mid-block retrospective changes, W3-D1 → W5-D4 re-pushed** (athlete-approved; see
+  `brain/memory.md` 2026-10-08). The retro found bench and pull-up flat for three years, primaries
+  logged @6 against @7–7.5 targets, and accessories absorbing the effort.
+  - **Bench W3:** the 255 "hold" is gone. **Floor 255, range to 265**, stop at @7.5. Proposed as a straight
+    265×3; **written softer on a re-check**. W2's 250×3 went @6 and then @7.5 at the same load, so the
+    real read is ~295–300 e1RM, and 265×3 lands @8.5–9 against the shoulder's @8 cap. The range gives
+    him 265 on a day that earns it.
+  - **Bench W4:** **work up to @8, floor 275, range to 295** (was 275–285). Same correction: a 285 floor is a
+    ~305–320 e1RM ask. 285×2 @8 is the PR target, and 295 is there only if 285 moves like @7.
+  - **Pull-up W4:** **BW+95×3 @8.5, range to BW+100** (was BW+90–95 @8 hard stop). Written to beat the
+    BW+90×3 PR, not match it. Open at BW+90 if W3's BW+85×3 came in above @8.
+  - **Accessories W3–W5:** **2 working sets, stop at @8**, or @7 on the shoulder slots (landmine, reverse
+    pec deck), whose cap stands. No exercise dropped (his rule). Core unchanged at 3.
+  - **Holds: unchanged, and that's a correction to the retro.** The retro said the `hold` pins stop primaries
+    moving up. Wrong: `reconcile_loads` never auto-adjusts a primary, held or not. Primaries only move when
+    the coach re-pushes them. The fix is a process: the weekly review raises a primary that ran 1+ RPE
+    under target. The pins stay.
 
 ---
 

@@ -95,6 +95,12 @@
 - **accessory-progression** — Accessories progress *gradually*: hold a load for 2–3 weeks,
   then small bumps. Do **not** apply the primary/secondary "+5 lb each week" default to
   accessories. They should still trend up across blocks, just slowly. [FB 2026-06-14]
+- **accessory-effort-cap** — **Effort goes to the Big 5.** Accessories run **2 working sets, stopping at @8**
+  (or the slot's own lower cap — shoulder slots stay @7). They are never the hardest sets of the day.
+  The weekly review flags any accessory logged @9+ the same way it flags a primary. **Why:** in B6 W1–W2,
+  primaries logged @6 while accessories logged @8.5–9.5 and sessions ran 80–120 min against a 60-min
+  cap. Bench and pull-up have been flat for three years. Fewer sets, **not fewer exercises** — he keeps
+  every movement. [FB 2026-10-12]
 - **primary-backoff-volume** — Backoff volume matches the athlete's **actual logged
   working-set counts** (from the Hevy log: 139 squat / 163 sumo / 83 bench sessions), NOT a
   flat guess, and **tapers one set at the W4 peak** (which is what he already does when the
@@ -161,7 +167,7 @@
 - **whole-body-every-day** — **Every session hits the whole body: at least one lower-body, one
   upper push, one upper pull and one core movement, every day.** Emphasis is allowed and expected. A
   bench day can lean chest and a pull day can lean back; the rule is **coverage, not even
-  distribution**. The off-emphasis regions get a *dose* (one accessory, ~3 working sets), not parity.
+  distribution**. The off-emphasis regions get a *dose* (one accessory, 2–3 working sets — see `accessory-effort-cap`), not parity.
   This is the per-day check; `muscle-coverage-audit` stays the per-block check across the 13 groups.
   The dose **inherits every constraint of its day**: `accessory-day-interference` picks the
   movement (lowest cost to the next day, e.g. leg extension rather than leg press before sumo,

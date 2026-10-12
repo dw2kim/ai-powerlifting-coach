@@ -1612,8 +1612,8 @@
         {
           "name": "Comp Bench",
           "tier": "primary",
-          "notes": "HOLD-ISH at 255 @7.5 on purpose — dip peaks Thursday this week; the two presses don't peak together. Arch moderates before load does if the back complains.",
-          "display_load": "255",
+          "notes": "W3 PUSH — floor 255×3, range to 265 (retro 10-12: the W3 'hold' is gone). Hit 255×3; if it reads ≤@7 and the shoulder is ≤3/10, add 10 and take one more triple. Stop at @7.5 or 265, whichever comes first. Backoffs 220×4 ×4 stay keyed to the floor. ≤3/10 shoulder pain, always. Arch moderates before load does if the back complains.",
+          "display_load": "255–265",
           "sets": [
             {
               "type": "warmup",
@@ -1665,13 +1665,8 @@
         {
           "name": "Tricep Pushdown",
           "tier": "accessory",
-          "notes": "Triceps / lockout carryover. D1 accessories stay off Tuesday's pull.",
+          "notes": "Triceps / lockout carryover. D1 accessories stay off Tuesday's pull. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 24.947610018960187,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 24.947610018960187,
@@ -1687,13 +1682,8 @@
         {
           "name": "Chest Fly (Machine)",
           "tier": "accessory",
-          "notes": "NEW (expansion): chest isolation — the program only hits chest through presses, and you asked for chest work. A FLY, not a press, so no extra pressing exposure. SHOULDER RULE: stop the handles before your elbows travel behind your torso — the stretched bottom loads the anterior capsule where the subscapularis tear is. Last logged 115×11 (Dec 2025, nine months ago) — re-entry below it.",
+          "notes": "NEW (expansion): chest isolation — the program only hits chest through presses, and you asked for chest work. A FLY, not a press, so no extra pressing exposure. SHOULDER RULE: stop the handles before your elbows travel behind your torso — the stretched bottom loads the anterior capsule where the subscapularis tear is. Last logged 115×11 (Dec 2025, nine months ago) — re-entry below it. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 47.62725549074217,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 47.62725549074217,
@@ -1711,13 +1701,8 @@
         {
           "name": "Iso-Lateral Row (Machine)",
           "tier": "accessory",
-          "notes": "RECALIBRATED from W1 (125/arm ran @7.5/8.5). PER ARM, one arm at a time. Chest-supported, zero lumbar load. Mid-back, not lats: Tuesday is the weighted pull-up, so finish around @7.",
+          "notes": "RECALIBRATED from W1 (125/arm ran @7.5/8.5). PER ARM, one arm at a time. Chest-supported, zero lumbar load. Mid-back, not lats: Tuesday is the weighted pull-up, so finish around @7. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 52.16318458509857,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 52.16318458509857,
@@ -1808,13 +1793,8 @@
         {
           "name": "Hip Thrust (Smith Machine)",
           "tier": "accessory",
-          "notes": "MOVED D3→D2: it sat the day before sumo in B5, allowed only because sumo was 225. Tuesday is unconstrained (Wed rest).",
+          "notes": "MOVED D3→D2: it sat the day before sumo in B5, allowed only because sumo was 225. Tuesday is unconstrained (Wed rest). · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 111.13026281173174,
-              "reps": 8
-            },
             {
               "type": "normal",
               "weight_kg": 111.13026281173174,
@@ -1830,13 +1810,8 @@
         {
           "name": "Seated Leg Curl",
           "tier": "accessory",
-          "notes": "Hamstrings. Log anchor 115.",
+          "notes": "Hamstrings. Log anchor 115. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 52.16318458509857,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 52.16318458509857,
@@ -1852,13 +1827,8 @@
         {
           "name": "Single Arm Landmine Press (Barbell)",
           "tier": "accessory",
-          "notes": "RECALIBRATED from W1 (45x10 ran @8/9/9.5): plates per arm. W3/W4 go to 40 ONLY if last week's last set was <=@7, else stay 35. Shoulder slot, RPE cap @7. Press to a stop just short of lockout if the front of the shoulder talks.",
+          "notes": "RECALIBRATED from W1 (45x10 ran @8/9/9.5): plates per arm. W3/W4 go to 40 ONLY if last week's last set was <=@7, else stay 35. Shoulder slot, RPE cap @7. Press to a stop just short of lockout if the front of the shoulder talks. · 2 working sets, stop each at @7 — shoulder slot, the @7 cap stands (retro 10-12).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 18.14371637742559,
-              "reps": 10
-            },
             {
               "type": "normal",
               "weight_kg": 18.14371637742559,
@@ -1876,13 +1846,8 @@
         {
           "name": "Lateral Raise (Dumbbell)",
           "tier": "accessory",
-          "notes": "Lateral delts. Raise to shoulder height, not above.",
+          "notes": "Lateral delts. Raise to shoulder height, not above. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 15.87575183024739,
-              "reps": 15
-            },
             {
               "type": "normal",
               "weight_kg": 15.87575183024739,
@@ -2000,13 +1965,8 @@
         {
           "name": "Lat Pulldown",
           "tier": "accessory",
-          "notes": "RECALIBRATED from W1 (165x12 ran @7/8/9.5). Lats, seated, no axial load. Last set should finish around @8, not near failure.",
+          "notes": "RECALIBRATED from W1 (165x12 ran @7/8/9.5). Lats, seated, no axial load. Last set should finish around @8, not near failure. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 70.30690096252415,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 70.30690096252415,
@@ -2024,13 +1984,8 @@
         {
           "name": "Reverse Pec Deck",
           "tier": "accessory",
-          "notes": "RECALIBRATED from W1 (115x15 ran @7/8.5/9.5). LOAD-BEARING, NOT FILLER: the posterior cuff shares load off two torn anterior tendons. Cap @7, never grind it.",
+          "notes": "RECALIBRATED from W1 (115x15 ran @7/8.5/9.5). LOAD-BEARING, NOT FILLER: the posterior cuff shares load off two torn anterior tendons. Cap @7, never grind it. · 2 working sets, stop each at @7 — shoulder slot, the @7 cap stands (retro 10-12).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 47.62725549074217,
-              "reps": 15
-            },
             {
               "type": "normal",
               "weight_kg": 47.62725549074217,
@@ -2048,13 +2003,8 @@
         {
           "name": "Face Pull",
           "tier": "accessory",
-          "notes": "Same job as the pec deck. Never the thing you cut when the clock runs out.",
+          "notes": "Same job as the pec deck. Never the thing you cut when the clock runs out. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 20.41168092460379,
-              "reps": 15
-            },
             {
               "type": "normal",
               "weight_kg": 20.41168092460379,
@@ -2070,13 +2020,8 @@
         {
           "name": "Leg Extension (Machine)",
           "tier": "accessory",
-          "notes": "LOWER BODY FOR THURSDAY (whole-body-every-day, FB 2026-09-24). This day had none, which is why you added a 415 leg press on 09-24. Leg extension is the lowest-cost quad work available: no spinal load, no loaded hip flexion, and no adductor or lat cost for Friday's sumo (accessory-day-interference). Held a notch under your 140 median because Friday also has BSS. FALLBACK if the machine is taken: Leg Press 270x12, ROM-capped (stop before the hips roll off the pad). FORBIDDEN fallback: no squat pattern, no hack squat, no goblet squat.",
+          "notes": "LOWER BODY FOR THURSDAY (whole-body-every-day, FB 2026-09-24). This day had none, which is why you added a 415 leg press on 09-24. Leg extension is the lowest-cost quad work available: no spinal load, no loaded hip flexion, and no adductor or lat cost for Friday's sumo (accessory-day-interference). Held a notch under your 140 median because Friday also has BSS. FALLBACK if the machine is taken: Leg Press 270x12, ROM-capped (stop before the hips roll off the pad). FORBIDDEN fallback: no squat pattern, no hack squat, no goblet squat. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 61.235042773811365,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 61.235042773811365,
@@ -2190,13 +2135,8 @@
         {
           "name": "Bulgarian Split Squat",
           "tier": "accessory",
-          "notes": "BACK — it was declined during the baclofen course (muscle relaxant + single-leg balance under load). The course ends Sep 30; this is Oct 2. 40/hand re-entry, then your 50.",
+          "notes": "BACK — it was declined during the baclofen course (muscle relaxant + single-leg balance under load). The course ends Sep 30; this is Oct 2. 40/hand re-entry, then your 50. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 22.67964547178199,
-              "reps": 10
-            },
             {
               "type": "normal",
               "weight_kg": 22.67964547178199,
@@ -2212,13 +2152,8 @@
         {
           "name": "Chest Supported Incline Row",
           "tier": "accessory",
-          "notes": "Mid-back. Chest-supported = zero lumbar load. FORBIDDEN fallback: no barbell bent-over row.",
+          "notes": "Mid-back. Chest-supported = zero lumbar load. FORBIDDEN fallback: no barbell bent-over row. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 24.947610018960187,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 24.947610018960187,
@@ -2234,13 +2169,8 @@
         {
           "name": "Seated Calf Raise",
           "tier": "accessory",
-          "notes": "Corrected anchor — 90–100, not the 155–175 written off a 2023 median.",
+          "notes": "Corrected anchor — 90–100, not the 155–175 written off a 2023 median. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 45.35929094356398,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 45.35929094356398,
@@ -2256,13 +2186,8 @@
         {
           "name": "Concentration Curl",
           "tier": "accessory",
-          "notes": "RECALIBRATED from W1 (40x10 ran @7/8/8.5): hold 40 until it's comfortably @7, then +5 next block.",
+          "notes": "RECALIBRATED from W1 (40x10 ran @7/8/8.5): hold 40 until it's comfortably @7, then +5 next block. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 18.14371637742559,
-              "reps": 10
-            },
             {
               "type": "normal",
               "weight_kg": 18.14371637742559,
@@ -2357,8 +2282,8 @@
         {
           "name": "Comp Bench",
           "tier": "primary",
-          "notes": "PEAK — WORK UP TO @8: take the heaviest double in 275–285 that stays at or under @8. 275×2 @8.5 is the PR (e1RM 293) — 285×2 @8 would be ~304. Find the cap, don't sit two points under it. Runs AFTER the 405 squat: if the squat ran long, cut bench backoffs to 2 first. Arch moderates before load does if the back complains.",
-          "display_load": "275–285",
+          "notes": "W4 PEAK — work up to @8: floor 275×2, range to 295×2. Climb in 10s, one double per jump; take the heaviest double at or under @8 (cap-is-a-target). 285×2 @8 ≈ a PR; 295 only if 285 moved like @7. Backoffs 225×4 ×3. ≤3/10 shoulder pain, always. Runs AFTER the squat: if the squat ran long, cut bench backoffs to 2 first. Arch moderates before load does if the back complains.",
+          "display_load": "275–295",
           "sets": [
             {
               "type": "warmup",
@@ -2404,13 +2329,8 @@
         {
           "name": "Tricep Pushdown",
           "tier": "accessory",
-          "notes": "Triceps / lockout carryover. D1 accessories stay off Tuesday's pull.",
+          "notes": "Triceps / lockout carryover. D1 accessories stay off Tuesday's pull. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 24.947610018960187,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 24.947610018960187,
@@ -2426,13 +2346,8 @@
         {
           "name": "Chest Fly (Machine)",
           "tier": "accessory",
-          "notes": "NEW (expansion): chest isolation — the program only hits chest through presses, and you asked for chest work. A FLY, not a press, so no extra pressing exposure. SHOULDER RULE: stop the handles before your elbows travel behind your torso — the stretched bottom loads the anterior capsule where the subscapularis tear is. Last logged 115×11 (Dec 2025, nine months ago) — re-entry below it.",
+          "notes": "NEW (expansion): chest isolation — the program only hits chest through presses, and you asked for chest work. A FLY, not a press, so no extra pressing exposure. SHOULDER RULE: stop the handles before your elbows travel behind your torso — the stretched bottom loads the anterior capsule where the subscapularis tear is. Last logged 115×11 (Dec 2025, nine months ago) — re-entry below it. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 47.62725549074217,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 47.62725549074217,
@@ -2450,13 +2365,8 @@
         {
           "name": "Iso-Lateral Row (Machine)",
           "tier": "accessory",
-          "notes": "RECALIBRATED from W1 (125/arm ran @7.5/8.5). PER ARM, one arm at a time. Chest-supported, zero lumbar load. Mid-back, not lats: Tuesday is the weighted pull-up, so finish around @7.",
+          "notes": "RECALIBRATED from W1 (125/arm ran @7.5/8.5). PER ARM, one arm at a time. Chest-supported, zero lumbar load. Mid-back, not lats: Tuesday is the weighted pull-up, so finish around @7. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 54.43114913227677,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 54.43114913227677,
@@ -2505,8 +2415,8 @@
         {
           "name": "Weighted Pull-up",
           "tier": "primary",
-          "notes": "PEAK — WORK UP TO @8, HARD STOP: BW+90–95×3. @8 is a hard stop, not a cap to approach past — W4 of B5 ran @8.5 and W5 corrected it to exactly @8. Do that again. Backoffs 3.",
-          "display_load": "BW+90–95",
+          "notes": "W4 PEAK — work up to @8.5: BW+95×3, range to BW+100×3 (retro 10-12: written to beat the BW+90×3 PR, not match it). If W3's BW+85×3 came in above @8, open at BW+90 instead. @8.5 is the stop — chin over the bar on every rep or it doesn't count. Backoffs BW+60×5 ×3.",
+          "display_load": "BW+95–100",
           "sets": [
             {
               "type": "warmup",
@@ -2525,9 +2435,9 @@
             },
             {
               "type": "normal",
-              "weight_kg": 40.82336184920758,
+              "weight_kg": 43.091326396385774,
               "reps": 3,
-              "rpe": 8
+              "rpe": 8.5
             },
             {
               "type": "normal",
@@ -2552,13 +2462,8 @@
         {
           "name": "Hip Thrust (Smith Machine)",
           "tier": "accessory",
-          "notes": "MOVED D3→D2: it sat the day before sumo in B5, allowed only because sumo was 225. Tuesday is unconstrained (Wed rest).",
+          "notes": "MOVED D3→D2: it sat the day before sumo in B5, allowed only because sumo was 225. Tuesday is unconstrained (Wed rest). · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 111.13026281173174,
-              "reps": 8
-            },
             {
               "type": "normal",
               "weight_kg": 111.13026281173174,
@@ -2574,13 +2479,8 @@
         {
           "name": "Seated Leg Curl",
           "tier": "accessory",
-          "notes": "Hamstrings. Log anchor 115.",
+          "notes": "Hamstrings. Log anchor 115. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 52.16318458509857,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 52.16318458509857,
@@ -2596,13 +2496,8 @@
         {
           "name": "Single Arm Landmine Press (Barbell)",
           "tier": "accessory",
-          "notes": "RECALIBRATED from W1 (45x10 ran @8/9/9.5): plates per arm. W3/W4 go to 40 ONLY if last week's last set was <=@7, else stay 35. Shoulder slot, RPE cap @7. Press to a stop just short of lockout if the front of the shoulder talks.",
+          "notes": "RECALIBRATED from W1 (45x10 ran @8/9/9.5): plates per arm. W3/W4 go to 40 ONLY if last week's last set was <=@7, else stay 35. Shoulder slot, RPE cap @7. Press to a stop just short of lockout if the front of the shoulder talks. · 2 working sets, stop each at @7 — shoulder slot, the @7 cap stands (retro 10-12).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 18.14371637742559,
-              "reps": 10
-            },
             {
               "type": "normal",
               "weight_kg": 18.14371637742559,
@@ -2620,13 +2515,8 @@
         {
           "name": "Lateral Raise (Dumbbell)",
           "tier": "accessory",
-          "notes": "Lateral delts. Raise to shoulder height, not above.",
+          "notes": "Lateral delts. Raise to shoulder height, not above. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 15.87575183024739,
-              "reps": 15
-            },
             {
               "type": "normal",
               "weight_kg": 15.87575183024739,
@@ -2744,13 +2634,8 @@
         {
           "name": "Lat Pulldown",
           "tier": "accessory",
-          "notes": "RECALIBRATED from W1 (165x12 ran @7/8/9.5). Lats, seated, no axial load. Last set should finish around @8, not near failure.",
+          "notes": "RECALIBRATED from W1 (165x12 ran @7/8/9.5). Lats, seated, no axial load. Last set should finish around @8, not near failure. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 70.30690096252415,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 70.30690096252415,
@@ -2768,13 +2653,8 @@
         {
           "name": "Reverse Pec Deck",
           "tier": "accessory",
-          "notes": "RECALIBRATED from W1 (115x15 ran @7/8.5/9.5). LOAD-BEARING, NOT FILLER: the posterior cuff shares load off two torn anterior tendons. Cap @7, never grind it.",
+          "notes": "RECALIBRATED from W1 (115x15 ran @7/8.5/9.5). LOAD-BEARING, NOT FILLER: the posterior cuff shares load off two torn anterior tendons. Cap @7, never grind it. · 2 working sets, stop each at @7 — shoulder slot, the @7 cap stands (retro 10-12).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 47.62725549074217,
-              "reps": 15
-            },
             {
               "type": "normal",
               "weight_kg": 47.62725549074217,
@@ -2792,13 +2672,8 @@
         {
           "name": "Face Pull",
           "tier": "accessory",
-          "notes": "Same job as the pec deck. Never the thing you cut when the clock runs out.",
+          "notes": "Same job as the pec deck. Never the thing you cut when the clock runs out. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 20.41168092460379,
-              "reps": 15
-            },
             {
               "type": "normal",
               "weight_kg": 20.41168092460379,
@@ -2814,13 +2689,8 @@
         {
           "name": "Leg Extension (Machine)",
           "tier": "accessory",
-          "notes": "LOWER BODY FOR THURSDAY (whole-body-every-day, FB 2026-09-24). This day had none, which is why you added a 415 leg press on 09-24. Leg extension is the lowest-cost quad work available: no spinal load, no loaded hip flexion, and no adductor or lat cost for Friday's sumo (accessory-day-interference). Held a notch under your 140 median because Friday also has BSS. FALLBACK if the machine is taken: Leg Press 270x12, ROM-capped (stop before the hips roll off the pad). FORBIDDEN fallback: no squat pattern, no hack squat, no goblet squat.",
+          "notes": "LOWER BODY FOR THURSDAY (whole-body-every-day, FB 2026-09-24). This day had none, which is why you added a 415 leg press on 09-24. Leg extension is the lowest-cost quad work available: no spinal load, no loaded hip flexion, and no adductor or lat cost for Friday's sumo (accessory-day-interference). Held a notch under your 140 median because Friday also has BSS. FALLBACK if the machine is taken: Leg Press 270x12, ROM-capped (stop before the hips roll off the pad). FORBIDDEN fallback: no squat pattern, no hack squat, no goblet squat. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 63.50300732098956,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 63.50300732098956,
@@ -2934,13 +2804,8 @@
         {
           "name": "Bulgarian Split Squat",
           "tier": "accessory",
-          "notes": "BACK — it was declined during the baclofen course (muscle relaxant + single-leg balance under load). The course ends Sep 30; this is Oct 2. 40/hand re-entry, then your 50.",
+          "notes": "BACK — it was declined during the baclofen course (muscle relaxant + single-leg balance under load). The course ends Sep 30; this is Oct 2. 40/hand re-entry, then your 50. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 22.67964547178199,
-              "reps": 10
-            },
             {
               "type": "normal",
               "weight_kg": 22.67964547178199,
@@ -2956,13 +2821,8 @@
         {
           "name": "Chest Supported Incline Row",
           "tier": "accessory",
-          "notes": "Mid-back. Chest-supported = zero lumbar load. FORBIDDEN fallback: no barbell bent-over row.",
+          "notes": "Mid-back. Chest-supported = zero lumbar load. FORBIDDEN fallback: no barbell bent-over row. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 24.947610018960187,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 24.947610018960187,
@@ -2978,13 +2838,8 @@
         {
           "name": "Seated Calf Raise",
           "tier": "accessory",
-          "notes": "Corrected anchor — 90–100, not the 155–175 written off a 2023 median.",
+          "notes": "Corrected anchor — 90–100, not the 155–175 written off a 2023 median. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 45.35929094356398,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 45.35929094356398,
@@ -3000,13 +2855,8 @@
         {
           "name": "Concentration Curl",
           "tier": "accessory",
-          "notes": "RECALIBRATED from W1 (40x10 ran @7/8/8.5): hold 40 until it's comfortably @7, then +5 next block.",
+          "notes": "RECALIBRATED from W1 (40x10 ran @7/8/8.5): hold 40 until it's comfortably @7, then +5 next block. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 18.14371637742559,
-              "reps": 10
-            },
             {
               "type": "normal",
               "weight_kg": 18.14371637742559,
@@ -3140,13 +2990,8 @@
         {
           "name": "Tricep Pushdown",
           "tier": "accessory",
-          "notes": "Triceps / lockout carryover. D1 accessories stay off Tuesday's pull. W5 deload.",
+          "notes": "Triceps / lockout carryover. D1 accessories stay off Tuesday's pull. W5 deload. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 20.41168092460379,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 20.41168092460379,
@@ -3164,13 +3009,8 @@
         {
           "name": "Chest Fly (Machine)",
           "tier": "accessory",
-          "notes": "NEW (expansion): chest isolation — the program only hits chest through presses, and you asked for chest work. A FLY, not a press, so no extra pressing exposure. SHOULDER RULE: stop the handles before your elbows travel behind your torso — the stretched bottom loads the anterior capsule where the subscapularis tear is. Last logged 115×11 (Dec 2025, nine months ago) — re-entry below it. W5 deload.",
+          "notes": "NEW (expansion): chest isolation — the program only hits chest through presses, and you asked for chest work. A FLY, not a press, so no extra pressing exposure. SHOULDER RULE: stop the handles before your elbows travel behind your torso — the stretched bottom loads the anterior capsule where the subscapularis tear is. Last logged 115×11 (Dec 2025, nine months ago) — re-entry below it. W5 deload. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 38.55539730202938,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 38.55539730202938,
@@ -3188,13 +3028,8 @@
         {
           "name": "Iso-Lateral Row (Machine)",
           "tier": "accessory",
-          "notes": "RECALIBRATED from W1 (125/arm ran @7.5/8.5). PER ARM, one arm at a time. Chest-supported, zero lumbar load. Mid-back, not lats: Tuesday is the weighted pull-up, so finish around @7. W5 deload.",
+          "notes": "RECALIBRATED from W1 (125/arm ran @7.5/8.5). PER ARM, one arm at a time. Chest-supported, zero lumbar load. Mid-back, not lats: Tuesday is the weighted pull-up, so finish around @7. W5 deload. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 47.62725549074217,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 47.62725549074217,
@@ -3289,13 +3124,8 @@
         {
           "name": "Hip Thrust (Smith Machine)",
           "tier": "accessory",
-          "notes": "MOVED D3→D2: it sat the day before sumo in B5, allowed only because sumo was 225. Tuesday is unconstrained (Wed rest). W5 deload.",
+          "notes": "MOVED D3→D2: it sat the day before sumo in B5, allowed only because sumo was 225. Tuesday is unconstrained (Wed rest). W5 deload. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 83.91468824559335,
-              "reps": 10
-            },
             {
               "type": "normal",
               "weight_kg": 83.91468824559335,
@@ -3313,13 +3143,8 @@
         {
           "name": "Seated Leg Curl",
           "tier": "accessory",
-          "notes": "Hamstrings. Log anchor 115. W5 deload.",
+          "notes": "Hamstrings. Log anchor 115. W5 deload. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 43.091326396385774,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 43.091326396385774,
@@ -3337,13 +3162,8 @@
         {
           "name": "Single Arm Landmine Press (Barbell)",
           "tier": "accessory",
-          "notes": "RECALIBRATED from W1 (45x10 ran @8/9/9.5): plates per arm. W3/W4 go to 40 ONLY if last week's last set was <=@7, else stay 35. Shoulder slot, RPE cap @7. Press to a stop just short of lockout if the front of the shoulder talks. W5 deload.",
+          "notes": "RECALIBRATED from W1 (45x10 ran @8/9/9.5): plates per arm. W3/W4 go to 40 ONLY if last week's last set was <=@7, else stay 35. Shoulder slot, RPE cap @7. Press to a stop just short of lockout if the front of the shoulder talks. W5 deload. · 2 working sets, stop each at @7 — shoulder slot, the @7 cap stands (retro 10-12).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 15.87575183024739,
-              "reps": 10
-            },
             {
               "type": "normal",
               "weight_kg": 15.87575183024739,
@@ -3361,13 +3181,8 @@
         {
           "name": "Lateral Raise (Dumbbell)",
           "tier": "accessory",
-          "notes": "Lateral delts. Raise to shoulder height, not above. W5 deload.",
+          "notes": "Lateral delts. Raise to shoulder height, not above. W5 deload. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 11.339822735890994,
-              "reps": 15
-            },
             {
               "type": "normal",
               "weight_kg": 11.339822735890994,
@@ -3485,13 +3300,8 @@
         {
           "name": "Lat Pulldown",
           "tier": "accessory",
-          "notes": "RECALIBRATED from W1 (165x12 ran @7/8/9.5). Lats, seated, no axial load. Last set should finish around @8, not near failure. W5 deload.",
+          "notes": "RECALIBRATED from W1 (165x12 ran @7/8/9.5). Lats, seated, no axial load. Last set should finish around @8, not near failure. W5 deload. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 61.235042773811365,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 61.235042773811365,
@@ -3509,13 +3319,8 @@
         {
           "name": "Reverse Pec Deck",
           "tier": "accessory",
-          "notes": "RECALIBRATED from W1 (115x15 ran @7/8.5/9.5). LOAD-BEARING, NOT FILLER: the posterior cuff shares load off two torn anterior tendons. Cap @7, never grind it. W5 deload.",
+          "notes": "RECALIBRATED from W1 (115x15 ran @7/8.5/9.5). LOAD-BEARING, NOT FILLER: the posterior cuff shares load off two torn anterior tendons. Cap @7, never grind it. W5 deload. · 2 working sets, stop each at @7 — shoulder slot, the @7 cap stands (retro 10-12).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 40.82336184920758,
-              "reps": 15
-            },
             {
               "type": "normal",
               "weight_kg": 40.82336184920758,
@@ -3533,13 +3338,8 @@
         {
           "name": "Face Pull",
           "tier": "accessory",
-          "notes": "Same job as the pec deck. Never the thing you cut when the clock runs out. W5 deload.",
+          "notes": "Same job as the pec deck. Never the thing you cut when the clock runs out. W5 deload. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 15.87575183024739,
-              "reps": 15
-            },
             {
               "type": "normal",
               "weight_kg": 15.87575183024739,
@@ -3557,13 +3357,8 @@
         {
           "name": "Leg Extension (Machine)",
           "tier": "accessory",
-          "notes": "LOWER BODY FOR THURSDAY (whole-body-every-day, FB 2026-09-24). This day had none, which is why you added a 415 leg press on 09-24. Leg extension is the lowest-cost quad work available: no spinal load, no loaded hip flexion, and no adductor or lat cost for Friday's sumo (accessory-day-interference). Held a notch under your 140 median because Friday also has BSS. FALLBACK if the machine is taken: Leg Press 270x12, ROM-capped (stop before the hips roll off the pad). FORBIDDEN fallback: no squat pattern, no hack squat, no goblet squat. W5 deload.",
+          "notes": "LOWER BODY FOR THURSDAY (whole-body-every-day, FB 2026-09-24). This day had none, which is why you added a 415 leg press on 09-24. Leg extension is the lowest-cost quad work available: no spinal load, no loaded hip flexion, and no adductor or lat cost for Friday's sumo (accessory-day-interference). Held a notch under your 140 median because Friday also has BSS. FALLBACK if the machine is taken: Leg Press 270x12, ROM-capped (stop before the hips roll off the pad). FORBIDDEN fallback: no squat pattern, no hack squat, no goblet squat. W5 deload. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 52.16318458509857,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 52.16318458509857,
@@ -3676,13 +3471,8 @@
         {
           "name": "Bulgarian Split Squat",
           "tier": "accessory",
-          "notes": "BACK — it was declined during the baclofen course (muscle relaxant + single-leg balance under load). The course ends Sep 30; this is Oct 2. 40/hand re-entry, then your 50. W5 deload.",
+          "notes": "BACK — it was declined during the baclofen course (muscle relaxant + single-leg balance under load). The course ends Sep 30; this is Oct 2. 40/hand re-entry, then your 50. W5 deload. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 15.87575183024739,
-              "reps": 10
-            },
             {
               "type": "normal",
               "weight_kg": 15.87575183024739,
@@ -3700,13 +3490,8 @@
         {
           "name": "Chest Supported Incline Row",
           "tier": "accessory",
-          "notes": "Mid-back. Chest-supported = zero lumbar load. FORBIDDEN fallback: no barbell bent-over row. W5 deload.",
+          "notes": "Mid-back. Chest-supported = zero lumbar load. FORBIDDEN fallback: no barbell bent-over row. W5 deload. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 20.41168092460379,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 20.41168092460379,
@@ -3724,13 +3509,8 @@
         {
           "name": "Seated Calf Raise",
           "tier": "accessory",
-          "notes": "Corrected anchor — 90–100, not the 155–175 written off a 2023 median. W5 deload.",
+          "notes": "Corrected anchor — 90–100, not the 155–175 written off a 2023 median. W5 deload. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 36.28743275485118,
-              "reps": 12
-            },
             {
               "type": "normal",
               "weight_kg": 36.28743275485118,
@@ -3748,13 +3528,8 @@
         {
           "name": "Concentration Curl",
           "tier": "accessory",
-          "notes": "RECALIBRATED from W1 (40x10 ran @7/8/8.5): hold 40 until it's comfortably @7, then +5 next block. W5 deload.",
+          "notes": "RECALIBRATED from W1 (40x10 ran @7/8/8.5): hold 40 until it's comfortably @7, then +5 next block. W5 deload. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
           "sets": [
-            {
-              "type": "normal",
-              "weight_kg": 15.87575183024739,
-              "reps": 10
-            },
             {
               "type": "normal",
               "weight_kg": 15.87575183024739,
