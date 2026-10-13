@@ -1,0 +1,317 @@
+{
+  "created_at": "2026-10-12T14:51:50.386Z",
+  "description": "",
+  "end_time": "2026-10-12T14:51:46+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "57e29496-c8d7-4f8b-9bca-d1401504cbc8",
+      "index": 0,
+      "notes": null,
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 61.235042773811365
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 5,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 2,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 1,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 165.5614119440085
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 3,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 188.2410574157905
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 5,
+          "reps": 4,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 151.9536246609393
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 6,
+          "reps": 4,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 151.9536246609393
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 7,
+          "reps": 4,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 151.9536246609393
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 8,
+          "reps": 4,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 151.9536246609393
+        }
+      ],
+      "superset_id": null,
+      "title": "Low-bar Squat"
+    },
+    {
+      "exercise_template_id": "d8218be2-977f-4000-ac42-66cb11986863",
+      "index": 1,
+      "notes": null,
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 61.235042773811365
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 83.91468824559335
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 2,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 106.59433371737533
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 3,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 115.66619190608813
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 4,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 99.79044007584075
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 5,
+          "reps": 4,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 99.79044007584075
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 6,
+          "reps": 4,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 99.79044007584075
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 7,
+          "reps": 4,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 99.79044007584075
+        }
+      ],
+      "superset_id": null,
+      "title": "POWER Bench Press"
+    },
+    {
+      "exercise_template_id": "21310F5F",
+      "index": 2,
+      "notes": null,
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 24.947610018960187
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": 9,
+          "type": "normal",
+          "weight_kg": 24.947610018960187
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 8,
+          "rpe": 10,
+          "type": "normal",
+          "weight_kg": 24.947610018960187
+        }
+      ],
+      "superset_id": null,
+      "title": "Triceps Extension (Cable)"
+    },
+    {
+      "exercise_template_id": "AA1EB7D8",
+      "index": 3,
+      "notes": null,
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 61.235042773811365
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 61.235042773811365
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": 9,
+          "type": "normal",
+          "weight_kg": 61.235042773811365
+        }
+      ],
+      "superset_id": null,
+      "title": "Iso-Lateral Row (Machine)"
+    },
+    {
+      "exercise_template_id": "E3EDA509",
+      "index": 4,
+      "notes": null,
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": 81,
+          "index": 0,
+          "reps": null,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": null
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": 82,
+          "index": 1,
+          "reps": null,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": null
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": 84,
+          "index": 2,
+          "reps": null,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": null
+        }
+      ],
+      "superset_id": null,
+      "title": "Side Plank"
+    }
+  ],
+  "id": "25994516-32a0-4048-a2ab-dba18f85628f",
+  "routine_id": null,
+  "start_time": "2026-10-12T12:49:49+00:00",
+  "title": "W3-D1 Squat + Comp Bench",
+  "updated_at": "2026-10-12T14:51:50.386Z"
+}
