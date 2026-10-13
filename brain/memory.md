@@ -885,3 +885,40 @@ before every plan change**, and he wants to keep every exercise: "I don't want t
 So when a session runs long, the answer is lighter loads or shorter rests, not cutting exercises.
 He also deletes Hevy routines after training them, so W1-D1..D3 are gone from the app. That's
 expected; `--update --start` only ever touches the untrained weeks.
+
+## 2026-10-08 — Mid-B6 retrospective: "are we moving the needle?" Honest answer: not enough.
+
+He asked whether the program is too conservative and the primaries are going backwards. Pulled the
+whole Hevy log (2023 → B6 W2) rather than answer from the block files.
+
+**Long-run best e1RM (Epley, logged sets):**
+- Squat: ~435 (2023) → 482 (2024) → **517 (Oct 2025)** → 512 (B3) → injured, capped since Aug 7. Now 365×3 @6.
+- Sumo: 485 (2024) → 501 (2025) → **507 (B2)** → capped. Now 255×3 @6.
+- Bench: **~295 in 2023, ~295 in 2025, 293 in B5.** The "B5 PR" was a return to 2023, not new ground.
+  But B6 W2 250×3 @6 / @7.5 is his best bench set by RPE ever (~300 e1RM) — the bench is *not* falling.
+- Pull-up: BW+90×5 (May 2023) still beats BW+90×3 (B5). **Flat three years.**
+- Dip: BW+70×8 (2023) → **BW+105×3 (B5)**. The only lift with clear new ground.
+
+**Against the Apr 2026 12-month targets, at the halfway mark:** dip on pace; bench and pull-up ~zero
+progress; squat/sumo behind because of the back.
+
+**Diagnosis — mostly mine, and it's structural:**
+1. **The caps outlived the problem.** B1–B3 overshot every cap, so every block since added caps. From
+   B4 on he *under*-reaches (B4 bench @6 vs @8; B6 W2 squat, bench, sumo top sets all @6 against
+   @7–7.5). Correcting overshoot after it has reversed = dosing an 11-year lifter at maintenance.
+2. **Hard weeks per block ≈ one.** W1 calibration @7 + W5 deload @6 + a stagger "hold" week leaves W4
+   as the only week near @8. 40% of every block is light *before* bridges and travel.
+3. **Effort budget is inverted.** 19–21 working sets/day, sessions 80–120 min against a 60-min cap,
+   accessories logged @8.5–9.5 while primaries sit @6.
+4. **`hold` pins + name-scoped holds** mean the Saturday sync can never move a primary up to what he
+   actually lifted. The system can only go down or sideways.
+5. Pull-up W4 peak written *at* the PR (BW+90–95). Never programmed to beat it.
+
+**What is not the program being timid:** squat/sumo are down because of the back, the clinic, and
+baclofen. That part is correct and stays. But the ladder only works if checks are logged — the
+W2 squat check (Oct 6) and W1 sumo check (Oct 3) are missing, which by the B6 rules holds W3 at 365.
+
+**Proposed (awaiting his go — he wants a confirm step before any plan change):** see the chat
+reply of 2026-10-08. Core idea: retire overshoot-era caps on the non-axial primaries, make every
+primary "floor + work up to @8" weekly from W2, cut accessory effort not exercises, unpin holds on
+bench/WPU/dip, and treat pull-up and bench as plateaued lifts that need a new stimulus in B7.

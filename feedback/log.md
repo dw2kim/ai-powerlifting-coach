@@ -816,3 +816,20 @@ Iso-Lateral Row 125/arm @7.5/8.5; Pallof 25 @7.5/8/9; concentration curl 40×10 
 **Process note:** he wants a confirm step before any plan change. Propose first, then apply. That's
 already the norm for Hevy writes; it now applies to plan edits too.
 → rules: none new (`loads-from-logs`, `blank-rpe` applied)
+
+### 2026-10-12 · block · load · "too conservative" — mid-B6 retrospective · 2026-Q4-B06
+**Feedback (2026-10-08):** "I think I was too relying on you and all the movements are too conservative
+and my performance for all the primary movements are decreasing." Approved 2026-10-12: "Yes. let's update them."
+**Verified (Hevy, 2023 → B6 W2):** not all decreasing. Squat and sumo are down under the medical cap. Bench is
+~295 e1RM in 2023, 2025 and B5, so flat for three years. Pull-up is flat since 2023 (BW+90×5 then, BW+90×3 now).
+Dip is the only lift on new ground (BW+105×3). B6 W2 top sets for squat, bench and sumo logged @6 against
+@7–7.5 written. Accessories logged @8.5–9.5. Sessions ran 80–120 min against a 60-min cap.
+**Root cause:** the caps written for the B1–B3 overshoot stayed after he started under-reaching (B4 on).
+**Actions taken:** B6 W3–W5 re-pushed (see `brain/current-block.md` → Amendments 10-12): bench W3 range to
+265, bench W4 range to 295, pull-up W4 @8.5 BW+95–100, accessories 2 sets stopping at @8 (@7 on the
+shoulder slots). Two coach corrections are recorded there: bench was written as a range rather than a
+straight 265 on the RPE re-check, and the holds were left alone because they never governed primaries.
+**Open (B7 design):** no calibration week after a deload. Every primary gets a floor plus "work up to @8"
+weekly from W2. A primary 1+ RPE under target goes up the next week. Pull-up and bench need a new
+stimulus. Proposed, not yet ruled.
+→ rules: `accessory-effort-cap` (new), `whole-body-every-day` (dose wording amended)
