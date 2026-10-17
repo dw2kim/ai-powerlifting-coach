@@ -1,0 +1,85 @@
+name: Weekend make-up (Friday)
+
+# Fires Friday 12:00 America/New_York: D4 (6–7am) is in the log by then, and the weekend
+# is still ahead. Collects the week's missed accessories into one home routine in the Hevy
+# folder "Weekend Make-up" (rule `weekend-makeup`), Telegrams the list, and commits the
+# week's record to reviews/makeup/.
+#
+# Same DST trick as weekly-review.yml: GitHub cron is UTC with no DST, so both 16:00 UTC
+# (12:00 EDT) and 17:00 UTC (12:00 EST) fire. The in-script guard takes the first firing at
+# or after 12:00 Eastern and no-ops the rest against the week's record file. A Hevy failure
+# writes no record, so the second firing retries it.
+#
+# Manual runs use workflow_dispatch and bypass the guard.
+on:
+  schedule:
+    - cron: "0 16 * * 5"
+    - cron: "0 17 * * 5"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Make up the week containing this date (YYYY-MM-DD). Blank = today."
+        type: string
+        default: ""
+      dry_run:
+        description: "Compute and print only: no Hevy write, no Telegram, no commit"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekend-makeup
+  cancel-in-progress: false
+
+jobs:
+  makeup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The branch tip, not the event SHA, so a queued second firing sees the record
+          # the first one pushed (same reason as weekly-review.yml).
+          ref: ${{ github.ref_name }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Build and push the weekend make-up
+        env:
+          HEVY_API_KEY: ${{ secrets.HEVY_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # Via env, not ${{ }} spliced into the script (command-injection seam).
+          MAKEUP_DATE: ${{ inputs.date }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          ARGS=""
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            ARGS="--force"
+          fi
+          if [ -n "$MAKEUP_DATE" ]; then
+            case "$MAKEUP_DATE" in
+              [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9])
+                ARGS="$ARGS --date $MAKEUP_DATE" ;;
+              *)
+                echo "date must be YYYY-MM-DD, got: $MAKEUP_DATE" >&2
+                exit 1 ;;
+            esac
+          fi
+          if [ "$DRY_RUN" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          echo "Running: weekend_makeup $ARGS"
+          python -m scripts.review.weekend_makeup $ARGS
