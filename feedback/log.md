@@ -833,3 +833,21 @@ straight 265 on the RPE re-check, and the holds were left alone because they nev
 weekly from W2. A primary 1+ RPE under target goes up the next week. Pull-up and bench need a new
 stimulus. Proposed, not yet ruled.
 → rules: `accessory-effort-cap` (new), `whole-body-every-day` (dose wording amended)
+
+### 2026-10-17 · general · exercise · weekend make-up for missed accessories · 2026-Q4-B06
+**Feedback:** "Every Friday around noon, I want to … collect all the exercises that I missed due to the
+time … create the routine … so I can work on those missing exercises at home over the weekend before
+starting the next week." Answers to the design questions: home has **dumbbells 5–50 lb, a bench, bands**
+("you can replace the dumbbell or other workout, e.g. rear delt fly machine → rear delt dumbbell fly");
+time zone **EST**; **push it automatically**; **"ignore it if only 1 set is missed."**
+On the push-back that repeat misses mean the session is too long: "I was actually sleeping a little late
+these days, 11:30pm, and have little time for workout … I will adjust it. Don't worry. We can revisit if
+this continues for the next block."
+**Verified (Hevy):** B6 W3 missed Chest Fly (Machine) on D1, Reverse Pec Deck on D3 and Concentration Curl on
+D4, all with nothing logged. Everything else got at least its planned sets. W2 missed six (pushdown, side
+plank, lateral raise, face pull, CS row, concentration curl). Home-swap loads from the log: DB rear-delt fly
+median 25 (19 sessions), DB fly 25–28, concentration curl 40.
+**Actions taken:** `scripts/review/weekend_makeup.py` + `.github/workflows/weekend-makeup.yml` (Fri 12:00 ET),
+`data/home-gym.json` (equipment + swap table), make-up sessions excluded from the gym week so a home load never
+anchors a gym prescription, 23 tests. B6 W3's make-up pushed by hand the same day.
+→ rules: `weekend-makeup` (new)

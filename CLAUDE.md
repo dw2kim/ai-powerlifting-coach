@@ -107,6 +107,9 @@ These map to skills. Load the skill; don't reinvent the procedure here.
   the program. Raw entries in `feedback/log.md`; durable rules promoted to
   `reference/programming-rules.md`, which `designing-training-block` is bound to obey.
   Loads are grounded in the Hevy log — `block_report.py --exercise "<name>"` — never guessed.
+- **Missed work** → automatic every Friday 12:00 ET: the week's missed accessories become one home
+  routine in the Hevy folder "Weekend Make-up" (rule `weekend-makeup`, `scripts/review/weekend_makeup.py`).
+  Home equipment and swaps live in `data/home-gym.json`; each week's record in `reviews/makeup/`.
 
 ### Output format
 - Clean markdown tables for blocks.

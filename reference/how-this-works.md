@@ -32,6 +32,7 @@ When a training session is reported:
 |---|---|---|
 | Daily | After each session | Brief compare + next-session adjustment |
 | Weekly | Sunday (or end-of-week ping) | Volume/intensity/RPE trend, next-week flags |
+| Weekly make-up | Friday 12:00 ET, automatic | Missed accessories → one home routine in Hevy for the weekend (`weekend-makeup`) |
 | Block | End of W4 (W5 is deload — plan next block during it) | Full debrief, archive block, plan next |
 | Quarterly | End of Q | Goal-pacing check vs 12-month targets |
 | Yearly | End of calendar year | Lifetime goal pacing + structural changes |
