@@ -922,3 +922,14 @@ W2 squat check (Oct 6) and W1 sumo check (Oct 3) are missing, which by the B6 ru
 reply of 2026-10-08. Core idea: retire overshoot-era caps on the non-axial primaries, make every
 primary "floor + work up to @8" weekly from W2, cut accessory effort not exercises, unpin holds on
 bench/WPU/dip, and treat pull-up and bench as plateaued lifts that need a new stimulus in B7.
+
+## 2026-10-17 — Missed accessories: sleep, not session design (for now)
+
+- B6 W2 left six accessories unlogged, W3 three (Chest Fly, Reverse Pec Deck, Concentration Curl). His
+  read: he's been going to bed ~11:30pm and cutting the 6am session short to keep the sleep. That's the
+  right trade, and he's fixing the bedtime. No block change.
+- New Friday make-up routine (`weekend-makeup`) catches the misses at home on the weekend. It's catch-up
+  with a 5-exercise cap @7, not a fifth session.
+- **Revisit at the B6 review / B7 design:** read `reviews/makeup/`. If the same slots keep landing there
+  after the bedtime fix, it's the session length (D3/D4 run long against the 60-min window), and the
+  answer is a superset, a move or a cut. It isn't a bigger weekend.

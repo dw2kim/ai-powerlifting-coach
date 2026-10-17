@@ -76,6 +76,45 @@ workflow** (defaults to bypassing the guard).
 
 ---
 
+# Friday make-up → Hevy + Telegram
+
+Every **Friday 12:00 p.m. US Eastern** (`weekend-makeup.yml`, rule `weekend-makeup`), the week's
+missed accessories become **one home routine** in the Hevy folder **"Weekend Make-up"**,
+overwritten each week. The list goes to Telegram, and a record goes to
+`reviews/makeup/<ISO-week>.md`.
+
+## Pipeline (`weekend_makeup.py`)
+
+1. **Time guard**: the first Friday firing at or after 12:00 ET. The week's record file is the
+   idempotency key. Same 16:00 + 17:00 UTC trick as the Saturday review.
+2. **Sync** the Hevy log (best-effort).
+3. **Plan vs log**: working sets prescribed vs logged per exercise, matched week-wide by the
+   weekly review's own matcher (`weekly_metrics._match_all`), plus each swap's `also_counts`.
+4. **Owed** = nothing logged, or 2+ sets short (1 short is ignored). Today's unlogged day (D4)
+   is "not logged yet" and adds nothing. A past unlogged day was skipped, and its accessories
+   are owed.
+5. **Home swap** from `data/home-gym.json`: home exercise, load (`plan` / `log` median / `none`),
+   class. Big-5 lifts and secondaries are never made up, and neither is anything marked `never`
+   or missing from the table. At most 5 exercises, all @7, chest/triceps marked SAT ONLY.
+6. **Push** to Hevy (PUT over last week's make-up, or create folder + routine), then Telegram,
+   record, commit.
+
+Make-up workouts keep their `Make-up …` title in the log, and `weekly_metrics._sessions_in`
+leaves them out. That way a Saturday make-up never counts as the Friday→Saturday D4 slip, and a
+home dumbbell load never anchors a gym prescription in the load sync.
+
+```bash
+# Preview this week's make-up: no Hevy write, no Telegram, no commit:
+.venv/bin/python -m scripts.review.weekend_makeup --dry-run --date 2026-10-16
+
+# Push it for real, but don't commit (needs HEVY_API_KEY; Telegram optional locally):
+.venv/bin/python -m scripts.review.weekend_makeup --force --no-commit
+```
+
+Secrets: `HEVY_API_KEY`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`.
+
+---
+
 # End-of-W4 next-block draft → Google Sheet
 
 At the **end of Week 4** (the Sunday before the W5 deload) a scheduled Claude Code routine

@@ -142,6 +142,34 @@ def existing_routines(client) -> dict[str, str]:
     }
 
 
+def exercise_payload(ex: dict, resolver: Resolver) -> dict:
+    """One prescription entry as the routine API wants it. Shared with the weekend make-up
+    (scripts/review/weekend_makeup.py) so both land in the app the same way."""
+    template_id = resolver.resolve(ex["name"])
+    raw_sets = ex.get("sets", [])
+    sets = []
+    for s in raw_sets:
+        sets.append(
+            {
+                "type": _set_type(s.get("type")),
+                # Normalized, not passed through: the app displays lb, and an
+                # imprecisely-stored kg shows up there as "70.11" instead of "70".
+                "weight_kg": normalize_kg(s.get("weight_kg")),
+                "reps": s.get("reps"),
+                "distance_meters": s.get("distance_meters"),
+                "duration_seconds": s.get("duration_seconds"),
+                "custom_metric": s.get("custom_metric"),
+            }
+        )
+    return {
+        "exercise_template_id": template_id,
+        "superset_id": ex.get("superset_id"),
+        "rest_seconds": rest_seconds_for(ex),
+        "notes": _notes_with_scheme(raw_sets, ex.get("notes", "")),
+        "sets": sets,
+    }
+
+
 def build_routine_payload(
     block_id: str,
     week: int,
@@ -150,33 +178,7 @@ def build_routine_payload(
     folder_id: str | None,
     resolver: Resolver,
 ) -> dict:
-    exercises = []
-    for ex_idx, ex in enumerate(prescription["exercises"]):
-        template_id = resolver.resolve(ex["name"])
-        raw_sets = ex.get("sets", [])
-        sets = []
-        for set_idx, s in enumerate(raw_sets):
-            sets.append(
-                {
-                    "type": _set_type(s.get("type")),
-                    # Normalized, not passed through: the app displays lb, and an
-                    # imprecisely-stored kg shows up there as "70.11" instead of "70".
-                    "weight_kg": normalize_kg(s.get("weight_kg")),
-                    "reps": s.get("reps"),
-                    "distance_meters": s.get("distance_meters"),
-                    "duration_seconds": s.get("duration_seconds"),
-                    "custom_metric": s.get("custom_metric"),
-                }
-            )
-        exercises.append(
-            {
-                "exercise_template_id": template_id,
-                "superset_id": ex.get("superset_id"),
-                "rest_seconds": rest_seconds_for(ex),
-                "notes": _notes_with_scheme(raw_sets, ex.get("notes", "")),
-                "sets": sets,
-            }
-        )
+    exercises = [exercise_payload(ex, resolver) for ex in prescription["exercises"]]
     # A prescription may override the day's shared focus. The `days` list is block-wide, so
     # editing it to retitle one session would rename that day in *every* week and strand the
     # rest as duplicates — the exact `push-is-idempotent-with-update` failure this avoids.
