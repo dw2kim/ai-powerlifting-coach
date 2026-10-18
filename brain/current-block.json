@@ -2233,10 +2233,10 @@
         {
           "name": "Low-bar Squat",
           "tier": "primary",
-          "notes": "PEAK — work up to @8. FLOOR 405x3 (the app shows the floor) · RANGE 405–435 · CEILING 435, hard. The floor is gated: 405 ONLY IF the morning after last week's squat was logged FINE. 'tight', or NO CHECK LOGGED -> repeat last week's floor. THE RANGE ABOVE THE FLOOR IS EARNED ON THE DAY, only if ALL hold: (a) last squat's morning check logged FINE; (b) off the meds with a clean unmedicated check on file; (c) last week's top triple was <=@7.5; (d) warm-up bar speed is crisp. Any one missing -> take the floor and stop there. Jump in 10s from the floor, one triple per jump, and stop at the first triple that reads @8 or the ceiling, whichever comes first. Above 435 forfeits next week's rung. Top triple harder than @8 -> next week holds. Next week's floor does NOT move with what you hit today. Longer rest before the top set is fine, take 3 min. SQUAT FIRST on D1. Backoffs @ 335 stay keyed to the FLOOR, not to the top you hit: crisp, every set started fresh.",
-          "display_load": "405–435",
+          "notes": "PEAK — work up to @8. FLOOR 415x3 (the app shows the floor: last Monday's 415 went @7). Climb in 10s, one triple per jump, and STOP at the first triple that reads @8, or at 455, whichever comes first. 455 is your summer working triple: a lid, not a target. From 415 @7, @8 most likely lands 425–435. Take 3 min before the top set. SQUAT FIRST on D1. Backoffs 345x4 x3 @7, keyed to the floor: crisp, every set started fresh. HARD STOPS, unchanged: new or worse leg symptoms, night or rest pain, pain not settling in 24 h -> stop axial work, back to the clinic. Text one word Tuesday morning (fine / tight / sore). It's the record now, not a gate.",
+          "display_load": "415–455",
           "hold": true,
-          "hold_reason": "Squat is on axial-return-ladder: every rung is an absolute load gated on the prior squat day's next-morning back check. Written below the log on purpose; the sync must not rebase it.",
+          "hold_reason": "Athlete's call 2026-10-18 (FB): the squat's graded return is over. Floor 415 (W3's 415x3 @7), work up to @8, lid 455. The sync never auto-adjusts primaries; the hold records that this is a coaching decision.",
           "sets": [
             {
               "type": "warmup",
@@ -2255,25 +2255,25 @@
             },
             {
               "type": "normal",
-              "weight_kg": 183.7051283214341,
+              "weight_kg": 188.2410574157905,
               "reps": 3,
               "rpe": 8
             },
             {
               "type": "normal",
-              "weight_kg": 151.9536246609393,
+              "weight_kg": 156.4895537552957,
               "reps": 4,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 151.9536246609393,
+              "weight_kg": 156.4895537552957,
               "reps": 4,
               "rpe": 7
             },
             {
               "type": "normal",
-              "weight_kg": 151.9536246609393,
+              "weight_kg": 156.4895537552957,
               "reps": 4,
               "rpe": 7
             }
