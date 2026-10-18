@@ -94,13 +94,13 @@ morning-after back check — while bench, pull-up and dip keep climbing on stagg
 | **W1** calibration | **315×3** fixed, @≤7 | 240×4 @7 | **255×3 ×3** @6 | BW+60×4 @7 | BW+70×5 ×4 @7 |
 | **W2** establish | **365** 🔒 → ≤385 | 250×3 @7.5 | **265×3 ×3** 🔒 | BW+75×4 @7.5 | BW+85×5 ×4 @7.5 |
 | **W3** push | **385** 🔒 → ≤405 | **255 → ≤265**×3 @7.5 *(range, 10-12)* | 275×3 ×3 🔒 | BW+85×3 @8 | **⛰️ work up to @8: BW+105–110×3** |
-| **W4** peak | **405** 🔒 → ≤**435** ⛰️ | **⛰️ work up to @8: 275 → ≤295×2** *(10-12)* | 285×3 ×3 🔒 | **⛰️ work up to @8.5: BW+95 → ≤100×3** *(10-12)* | BW+85×5 ×4 *(hold)* |
+| **W4** peak | **⛰️ work up to @8: 415 → ≤455×3** *(10-18, ladder retired)* | **⛰️ work up to @8: 275 → ≤295×2** *(10-12)* | 285×3 ×3 🔒 | **⛰️ work up to @8.5: BW+95 → ≤100×3** *(10-12)* | BW+85×5 ×4 *(hold)* |
 | **W5** deload | 275×3 @6 | 225×4 @6 | 235×3 ×3 @6 | BW+50×4 @6 | BW+60×5 ×3 @6 |
 
 🔒 = gated rung (see the ladder rules). ⛰️ = that lift's peak week. **Squat W2–W4 = floor → ceiling** (FB 2026-09-27): the app shows the floor, and the range above it is earned on the day.
 
 **Backoffs**
-- **Squat** (`primary-backoff-volume` 4·4·4·3·3): 275×4 ×4 · 295×4 ×4 · 315×4 ×4 · 335×4 ×3 · 245×4 ×3.
+- **Squat** (`primary-backoff-volume` 4·4·4·3·3): 275×4 ×4 · 295×4 ×4 · 315×4 ×4 · **345×4 ×3** *(W4, 10-18; was 335)* · 245×4 ×3.
   **Fours, not fives** — backs get hurt on the fatigued reps, so each backoff stops a rep earlier than
   his usual five and every set starts fresh.
 - **Comp bench** (4·4·4·3·3): 205×5 ×4 · 215×5 ×4 · 220×4 ×4 · 225×4 ×3 · 195×4 ×3.
@@ -112,6 +112,11 @@ morning-after back check — while bench, pull-up and dip keep climbing on stagg
 ---
 
 ## 🔴 The squat ladder — and the part that costs you when you skip it
+
+> **Retired for the squat 2026-10-18, at the athlete's call** (see Amendments). W3 came in at 415×3 @7,
+> over the 405 ceiling, with no back check logged since Oct 2. By the rules below, W4 would repeat 385.
+> He declined that, and the log backs him: 415 @7 is ~496 e1RM, a return rather than a risk. The section
+> stays as the record of how the return was run.
 
 B5's review action item #5: *a bare number on a page held on the accessories and the strive lifts,
 but failed five times on the axial primaries — including once after you agreed to it in writing.*
@@ -325,6 +330,22 @@ long-gap re-entry), and **all of W5** (deload).
     under target. The pins stay.
 
 ---
+
+- **2026-10-18 — squat ladder retired, W4 re-pushed** (athlete's call: *"We should more thrive the squat
+  load to go back to my norm. Don't push 385lb for W4 squat."*). W3 squat went **415×3 @7**, over the 405
+  ceiling, and no back check has been logged since Oct 2. The ladder said repeat 385; he declined.
+  - **W4-D1 squat: floor 415×3** (a known load: last Monday's @7), climb in 10s, **stop at the first triple
+    at @8, lid 455** (his Jun–Jul working triple). Backoffs **345×4 ×3 @7** (keyed to the floor, was 335).
+    Warm-ups unchanged: 135 / 225 / 315, since the ramp stops 20 lb under the top.
+  - **What to expect:** from 415 @7 (~496 e1RM), an @8 triple is ~425–435. 455×3 @8 would be an
+    all-time best, so the lid only binds on a day that's well ahead.
+  - **Gone:** the rung gates and the "repeat last week's floor" clause. **Stays:** the clinical hard stops
+    (leg symptoms, night or rest pain, pain not settling in 24 h, `sore` twice → stop axial work). The
+    Tuesday back check is now a record, not a gate.
+  - **Not changed:** W5 deload (275×3 @6) and sumo (285×3 ×3, still the moderate lift; B7 is its block).
+    Pushed `--update --week 4 --start W4-D1`, so W4-D2..D4 were re-PUT with the same content.
+  - **Cost, stated:** this is the athlete's call, not clinical clearance. The clinic still doesn't know he
+    squats, let alone 415–455 (`active-issues.md`, fourth block owed).
 
 ## Open items carried into B6
 

@@ -851,3 +851,18 @@ median 25 (19 sessions), DB fly 25–28, concentration curl 40.
 `data/home-gym.json` (equipment + swap table), make-up sessions excluded from the gym week so a home load never
 anchors a gym prescription, 23 tests. B6 W3's make-up pushed by hand the same day.
 → rules: `weekend-makeup` (new)
+
+### 2026-10-18 · load · block · squat back to normal progression · 2026-Q4-B06
+**Feedback:** "We should more thrive the squat load to go back to my norm. Don't push 385lb for W4 squat."
+Chose, from three options: **W4 floor 415 → work up to @8, lid 455** (over 405 → 455 and 425 → 465).
+**Verified (Hevy):** W3 (Oct 12) 415×3 @7, over the 405 ceiling. By `axial-floor-range-ceiling`, that
+forfeits the W4 rung, and so does the missing check: no back check logged since Oct 2. Saturday's review
+read it as "W4 stays 405". The app note on W4-D1 said "no check logged → repeat last week's floor", i.e. 385.
+Pre-injury norm: 455×3 @7.5–8 and 465×3 @7.5 (Jul 2026), 480×2 @8 (Jun 22); best e1RM 517 (Oct 2025).
+415×3 @7 ≈ 496 e1RM (RPE table), so an @8 triple is ~425–435. The ladder was reading him low.
+**Root cause:** the ladder had become a dead letter. Its gate was a back check he stopped logging, and its
+ceiling sat under what he was lifting @7. Holding him to it would cost a rung on paper, not on the bar.
+**Actions taken:** W4-D1 squat 415×3 @8 floor, lid 455, backoffs 345×4 ×3, gates removed from the note;
+pushed `--update --week 4 --start W4-D1` and read back from Hevy. `current-block.md` amended,
+`active-issues.md` records that this is the athlete's call, not clinical clearance.
+→ rules: `axial-return-ladder` (squat return closed), `axial-floor-range-ceiling` (no longer binds the squat)

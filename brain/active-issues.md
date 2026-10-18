@@ -129,6 +129,10 @@ blind). User accepts and proceeds under the rule below. This **overrides** the p
 
 ## Lower back — graded return; B5 W5 athlete-directed 365 squat ceiling
 
+**2026-10-18 — squat's graded return ended, athlete's call.** After B6 W3's 415×3 @7, W4 works up to @8
+from a 415 floor, lid 455 (`brain/current-block.md` → Amendments). **Not a clinical clearance.** The
+clinic has never been told the loads. Hard stops unchanged. Sumo stays the moderate lift.
+
 ### B5 W5–W6 plan confirmed 2026-09-05
 
 Athlete explicitly retains W5 squat **365×3 @≤7**, followed by **275×3 ×2 @6**,

@@ -80,6 +80,11 @@
   Set the destination from the Hevy log, but treat the **ramp rate** as the exposure. While
   injections continue, every rung remains an absolute load under `masked-pain-load-cap`, never an
   RPE target. [FB 2026-08-29]
+  - **Squat: return closed 2026-10-18, at the athlete's call**, after 415×3 @7 in B6 W3 (~496 e1RM). The
+    squat is a normal primary again: floor plus "work up to @8", with a lid set from his pre-injury log
+    (455–465×3), not a gated rung. Back checks stay as the record; the hard stops above are still hard
+    stops. **Sumo is still on the ladder** until B7 is designed. Not a clinical clearance: if the clinic
+    restricts axial load, `clinical-override` puts the squat back on it. [FB 2026-10-18]
 - **axial-floor-range-ceiling** — Once an axial lift is out of a medical course (injection or
   medication window) but still on `axial-return-ladder`, write each gated rung as a **floor → range →
   ceiling**, not a single number. The **floor** is the rung: gated by the ladder, the load the app shows,
