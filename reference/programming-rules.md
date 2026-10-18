@@ -389,6 +389,28 @@
   plan) · 🟡 okay (flat / on plan) · 🔴 needs attention (down, or RPE-cap breach). Show **how
   much each Big-5 lift increased** vs the prior block (or the block's W1 baseline) — e1RM delta
   in lb. Bench gets called out explicitly (it's the priority lift). [FB 2026-06-18]
+- **weekend-makeup** — **Every Friday at 12:00 ET the week's missed accessories become one home
+  routine for the weekend**, pushed to the Hevy folder "Weekend Make-up" **without a confirm step**
+  (athlete's call: it never touches the block's routines). Run by `scripts/review/weekend_makeup.py`
+  (`.github/workflows/weekend-makeup.yml`); the record of every week goes in `reviews/makeup/`.
+  - **What's owed:** an exercise with **nothing logged**, or **two or more working sets short**. One
+    set short is ignored. A logged equivalent (the DB fly when the pec deck was taken) counts as done
+    (`equipment-fallbacks`).
+  - **Never made up:** Big-5 lifts and barbell secondaries (the weekly review handles a missed
+    primary), and loaded lower body (the weekend before Monday's squat). Exclusions and their
+    reasons live in `data/home-gym.json`. An exercise with no home swap there is not made up either.
+  - **Home equipment** (athlete, 2026-10-17): dumbbells 5–50 lb, a bench, bands. Each swap keeps the
+    slot's constraints: shoulder RPE caps, no standing hinge or standing calf raise while the back
+    is under treatment, no overhead pressing.
+  - **Dose:** at most **5 exercises**, the owed sets only, **everything @7**. Order: shoulder cuff
+    work first, then the standard slots, then chest/triceps (**Saturday only**, since on Sunday they
+    pre-tire Monday's bench), then core. Nothing in a deload week.
+  - **Not yet logged ≠ missed.** A day with no session that is today (D4, on the Friday run) is
+    reported as not logged and adds nothing. A day already past was skipped, and its accessories
+    are owed.
+  - **The record matters more than the routine.** If the same slot shows up there week after
+    week, the session is too long for the morning. That's a block-design input, revisited at the
+    next block review (`reviews/makeup/`). [FB 2026-10-17]
 
 ## By-exercise
 

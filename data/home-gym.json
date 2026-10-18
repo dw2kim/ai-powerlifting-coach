@@ -1,0 +1,164 @@
+{
+  "_about": "Home equipment and the gym -> home swap table read by the Friday make-up job (scripts/review/weekend_makeup.py, rule `weekend-makeup`). Keys under `swaps` are the gym exercise as the block names it, or its Hevy template title; both resolve through scripts/hevy/exercise_map.py. An exercise with no entry here is never made up at home. Big-5 primaries and barbell secondaries are excluded by tier and need no entry.",
+  "_source": "Athlete, 2026-10-17: dumbbells 5-50 lb, a bench, bands. No barbell, no machines.",
+  "equipment": {
+    "dumbbell_min_lb": 5,
+    "dumbbell_max_lb": 50,
+    "dumbbell_step_lb": 5,
+    "_dumbbell_step_note": "Assumed. Correct it here if the set jumps differently; loads snap DOWN onto this grid.",
+    "bench": true,
+    "bands": true
+  },
+  "_classes": {
+    "priority": "Load-bearing shoulder work. Made up first.",
+    "standard": "Cheap, nothing the next Monday depends on.",
+    "saturday-only": "Chest/triceps. Done Sunday it pre-tires Monday's bench (accessory-day-interference).",
+    "core": "Low cost; fills the routine last.",
+    "never": "Not made up at home. `why` says why."
+  },
+  "_load_modes": {
+    "plan": "Same implement as the gym: the plan's load for that week.",
+    "log": "Median of the last 3 logged sessions of the HOME exercise (loads-from-logs); `default_lb` only when there is no history in the last year.",
+    "none": "Bodyweight or band. No load."
+  },
+  "swaps": {
+    "Reverse Pec Deck": {
+      "home": "Rear Delt Reverse Fly (Dumbbell)",
+      "class": "priority",
+      "load": "log",
+      "default_lb": 25,
+      "also_counts": [
+        "Rear Delt Reverse Fly (Dumbbell)",
+        "Rear Delt Reverse Fly (Cable)",
+        "Reverse Fly Single Arm (Cable)",
+        "Chest Supported Reverse Fly (Dumbbell)"
+      ],
+      "note": "Chest down on the inclined bench, or seated with your chest on your thighs. No standing hinge while the back is under treatment. Cuff work for the torn anterior tendons, so the @7 cap stands."
+    },
+    "Face Pull": {
+      "home": "Band Pullaparts",
+      "class": "priority",
+      "load": "none",
+      "reps": 15,
+      "also_counts": [
+        "Band Pullaparts"
+      ],
+      "note": "Band at chest height, squeeze the shoulder blades, slow on the way back. Same job as the face pull."
+    },
+    "Concentration Curl": {
+      "home": "Concentration Curl",
+      "class": "standard",
+      "load": "plan",
+      "also_counts": [
+        "Hammer Curl (Dumbbell)",
+        "Bicep Curl (Dumbbell)",
+        "Bicep Curl (Cable)"
+      ],
+      "note": "Same exercise as the gym."
+    },
+    "Lateral Raise (Dumbbell)": {
+      "home": "Lateral Raise (Dumbbell)",
+      "class": "standard",
+      "load": "plan",
+      "also_counts": [
+        "Lateral Raise (Cable)",
+        "Lateral Raise (Machine)",
+        "Seated Lateral Raise (Dumbbell)",
+        "Single Arm Lateral Raise (Cable)"
+      ],
+      "note": "To shoulder height, not above."
+    },
+    "Chest Supported Incline Row": {
+      "home": "Chest Supported Incline Row (Dumbbell)",
+      "class": "standard",
+      "load": "plan",
+      "note": "Chest on the bench, inclined or flat. Never bent-over: the back rule holds at home too."
+    },
+    "Iso-Lateral Row (Machine)": {
+      "home": "Chest Supported Incline Row (Dumbbell)",
+      "class": "standard",
+      "load": "log",
+      "default_lb": 45,
+      "note": "Chest on the bench, one arm at a time if you like. Never bent-over."
+    },
+    "Chest Fly (Machine)": {
+      "home": "Chest Fly (Dumbbell)",
+      "class": "saturday-only",
+      "load": "log",
+      "default_lb": 25,
+      "also_counts": [
+        "Chest Fly (Dumbbell)",
+        "Butterfly (Pec Deck)",
+        "Cable Fly Crossovers",
+        "Seated Chest Flys (Cable)"
+      ],
+      "note": "Lie on the FLOOR, not the bench. The floor stops your elbows level with your torso, which is the shoulder rule (subscapularis tear) built in."
+    },
+    "Tricep Pushdown": {
+      "home": "Triceps Kickback (Dumbbell)",
+      "class": "saturday-only",
+      "load": "log",
+      "default_lb": 15,
+      "reps": 12,
+      "also_counts": [
+        "Triceps Pushdown",
+        "Triceps Rope Pushdown",
+        "Single Arm Triceps Pushdown (Cable)",
+        "Triceps Kickback (Dumbbell)"
+      ],
+      "note": "Kickback, not an overhead extension: overhead is the bursitis pattern. First time at home, so let the RPE set the load; the log anchors it from next time."
+    },
+    "Side Plank": {
+      "home": "Side Plank",
+      "class": "core",
+      "load": "none",
+      "note": "Same as the gym."
+    },
+    "Dead Bug": {
+      "home": "Dead Bug",
+      "class": "core",
+      "load": "none",
+      "note": "Same as the gym."
+    },
+    "Bird Dog": {
+      "home": "Bird Dog",
+      "class": "core",
+      "load": "none",
+      "note": "Same as the gym."
+    },
+    "Pallof Press": {
+      "home": "Cable Core Pallof Press",
+      "class": "core",
+      "load": "none",
+      "note": "Band anchored at chest height. Slow out, hold a beat, slow in."
+    },
+    "Single Arm Landmine Press (Barbell)": {
+      "class": "never",
+      "why": "The landmine replaced the DB press because the DB press ran to @10 under an @7 cap. A home DB press would bring that back. Bench and dip cover the front delts."
+    },
+    "Lat Pulldown": {
+      "class": "never",
+      "why": "The pull-up covers lats, and a band pulldown is too light to earn a slot."
+    },
+    "Seated Calf Raise": {
+      "class": "never",
+      "why": "The only home calf raise is standing, which is banned while the back is under treatment (equipment-fallbacks)."
+    },
+    "Leg Extension (Machine)": {
+      "class": "never",
+      "why": "Loaded lower body the weekend before Monday's squat."
+    },
+    "Seated Leg Curl": {
+      "class": "never",
+      "why": "Loaded lower body the weekend before Monday's squat."
+    },
+    "Hip Thrust (Smith Machine)": {
+      "class": "never",
+      "why": "Loaded lower body the weekend before Monday's squat."
+    },
+    "Bulgarian Split Squat": {
+      "class": "never",
+      "why": "Loaded lower body the weekend before Monday's squat."
+    }
+  }
+}

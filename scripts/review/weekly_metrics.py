@@ -60,6 +60,10 @@ PRIMARY_NAMES = {name for _, name, _, _ in PRIMARIES}
 # is advisory. D4 occasionally slips to Saturday — handled in _label_for_weekday.
 DAY_WEEKDAY = {"D1": 0, "D2": 1, "D3": 3, "D4": 4}
 
+# Every weekend make-up routine is titled with this, and a workout started from it keeps
+# the title. That is how the log tells a home make-up from a gym session.
+MAKEUP_TITLE_PREFIX = "Make-up"
+
 
 def _load_block() -> dict:
     return json.loads(BLOCK_JSON.read_text())
@@ -100,28 +104,31 @@ def _index_exercises(sessions: list[dict]) -> list[dict]:
     return index
 
 
-def _match_accessory(name: str, index: list[dict], resolver) -> dict | None:
-    """Find the logged exercise for an accessory name. Priority: exact title (raw
-    name), exact title (OVERRIDES alias), template id, then strict token-subset."""
+def _match_all(name: str, index: list[dict], resolver) -> list[dict]:
+    """Every logged exercise for an accessory name, at the first priority level that hits:
+    exact title (raw name), exact title (OVERRIDES alias), template id, then strict
+    token-subset. The Friday make-up counts sets across all of them."""
     name_norm = _normalize(name)
     alias_norm = _normalize(OVERRIDES.get(name_norm, ""))
-    for entry in index:
-        if entry["title_norm"] == name_norm:
-            return entry["ex"]
-    if alias_norm:
-        for entry in index:
-            if entry["title_norm"] == alias_norm:
-                return entry["ex"]
     tid = resolver(name)
-    if tid:
-        for entry in index:
-            if entry["tid"] == tid:
-                return entry["ex"]
     name_tokens = set(name_norm.split())
-    for entry in index:
-        if name_tokens and name_tokens.issubset(entry["tokens"]):
-            return entry["ex"]
-    return None
+    levels = [
+        lambda e: e["title_norm"] == name_norm,
+        lambda e: bool(alias_norm) and e["title_norm"] == alias_norm,
+        lambda e: bool(tid) and e["tid"] == tid,
+        lambda e: bool(name_tokens) and name_tokens.issubset(e["tokens"]),
+    ]
+    for hit in levels:
+        found = [entry["ex"] for entry in index if hit(entry)]
+        if found:
+            return found
+    return []
+
+
+def _match_accessory(name: str, index: list[dict], resolver) -> dict | None:
+    """Find the logged exercise for an accessory name — the first of `_match_all`."""
+    found = _match_all(name, index, resolver)
+    return found[0] if found else None
 
 
 BLANK_RPE_FLOOR = 5.0  # Hevy's RPE ladder starts at 6, so a set he couldn't rate reads as @5
@@ -186,12 +193,20 @@ def _best_working_set(ex: dict, is_bw: bool, bw: float) -> dict | None:
     return best
 
 
+def is_makeup_session(workout: dict) -> bool:
+    """A weekend make-up workout (scripts/review/weekend_makeup.py), by its routine title."""
+    return (workout.get("title") or "").startswith(MAKEUP_TITLE_PREFIX)
+
+
 def _sessions_in(start: str, end: str) -> list[dict]:
+    """The window's gym sessions. Weekend make-ups are left out: a Saturday make-up must
+    not fold into D4 as the Friday slip, and a home dumbbell load must never anchor a gym
+    prescription (`equipment-fallbacks`: never blend a fallback's load into the median)."""
     out = []
     for p in glob.glob(str(SESSIONS_DIR / "*.json")):
         w = json.load(open(p))
         st = (w.get("start_time") or "")[:10]
-        if start <= st <= end:
+        if start <= st <= end and not is_makeup_session(w):
             out.append(w)
     out.sort(key=lambda w: w.get("start_time") or "")
     return out

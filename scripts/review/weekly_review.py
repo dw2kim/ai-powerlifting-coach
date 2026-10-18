@@ -343,7 +343,8 @@ def write_snapshot(stats: dict, message: str) -> Path:
     return path
 
 
-def commit(paths: list[Path]) -> None:
+def commit(paths: list[Path],
+           message: str = "chore(review): weekly Saturday sync + snapshot") -> None:
     """Commit the synced data + snapshot so the repo stays fresh and the scheduled
     workflow stays alive (GitHub disables crons after 60 days of inactivity)."""
     rels = [str(p.relative_to(REPO_ROOT)) for p in paths]
@@ -356,12 +357,11 @@ def commit(paths: list[Path]) -> None:
         print("No changes to commit.")
         return
     subprocess.run(
-        ["git", "-C", str(REPO_ROOT), "commit", "-m",
-         "chore(review): weekly Saturday sync + snapshot"],
+        ["git", "-C", str(REPO_ROOT), "commit", "-m", message],
         check=True,
     )
     subprocess.run(["git", "-C", str(REPO_ROOT), "push"], check=True)
-    print("Committed + pushed weekly review.")
+    print(f"Committed + pushed: {message}")
 
 
 def main() -> None:
