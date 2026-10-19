@@ -7,3 +7,7 @@
 2026-W30   # Sat 2026-07-25, block B04 — archived before the gap was found (both
            # firings landed 12:02 and 13:06 ET and the old exact-hour guard dropped
            # them). B05 started 2026-08-10, so --date 2026-07-25 is refused.
+2026-W35   # Sat 2026-08-29, block B05 — dropped by the same exact-hour guard (firings
+           # landed 14:10 and 15:20 ET). Fix #19 merged 2026-09-01 but nobody backfilled
+           # before B05 ended 2026-09-18; B06 started 2026-09-28, so --date 2026-08-29
+           # is refused. Flagged red on every Saturday W36–W42 until acked here.
