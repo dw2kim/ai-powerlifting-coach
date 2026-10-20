@@ -1,0 +1,51 @@
+{
+  "created_at": "2026-10-18T18:45:04.960Z",
+  "description": "",
+  "end_time": "2026-10-18T18:45:02+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "E5988A0A",
+      "index": 0,
+      "notes": null,
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 15,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 11.339822735890994
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 15,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 11.339822735890994
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 15,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 11.339822735890994
+        }
+      ],
+      "superset_id": null,
+      "title": "Rear Delt Reverse Fly (Dumbbell)"
+    }
+  ],
+  "id": "e5c0102b-c970-4cbc-8eb4-221d10e2a43f",
+  "routine_id": null,
+  "start_time": "2026-10-18T18:38:12+00:00",
+  "title": "Make-up \u00b7 W3 \u00b7 Oct 17\u201318",
+  "updated_at": "2026-10-18T18:45:04.960Z"
+}
