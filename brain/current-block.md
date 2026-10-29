@@ -62,7 +62,7 @@ morning-after back check — while bench, pull-up and dip keep climbing on stagg
 | **D3 Thu** | **Weighted Dip** · CGB | Lat Pulldown · Reverse Pec Deck · Face Pull | Dead Bug |
 | **D4 Fri** | **Sumo (moderate)** · Spoto Bench | Bulgarian Split Squat *(back)* · CS Incline Row · Seated Calf Raise · Concentration Curl | Bird Dog |
 
-**Working sets per day: D1 19 · D2 19 · D3 19 · D4 21** *(W1–W2; from W3 accessories run 2 sets — see Amendments 10-12)* — balanced by volume, not exercise count
+**Working sets per day: D1 19 · D2 19 · D3 19 · D4 21** *(W1–W2; W3–W5-D2 accessories were written at 2 sets — see Amendments 10-12; back to 3 from W5-D3, 10-29)* — balanced by volume, not exercise count
 (`muscle-coverage-audit`). D1 runs only two accessories because it carries both heavy primaries.
 
 ### Managing overlap (explicit, per CLAUDE.md)
@@ -346,6 +346,14 @@ long-gap re-entry), and **all of W5** (deload).
     Pushed `--update --week 4 --start W4-D1`, so W4-D2..D4 were re-PUT with the same content.
   - **Cost, stated:** this is the athlete's call, not clinical clearance. The clinic still doesn't know he
     squats, let alone 415–455 (`active-issues.md`, fourth block owed).
+
+- **2026-10-29 — accessories back to 3 sets, deload primaries on a 1:00 timer, W5-D3 → W5-D4 re-pushed**
+  (athlete's feedback, `feedback/log.md`). Every accessory runs **at least 3 working sets**, same loads,
+  same @8 stop (@7 on the shoulder slots). No exercise added or dropped. The log already said 3: 30 of
+  32 accessory slots in W3–W5 were logged at 3 against the written 2. **Primary rest drops 1:15 → 1:00 in
+  the warm-up week and the deload**, so today's dip and Friday's sumo push at 1:00. W5-D1/D2 were trained
+  and stay as written. **Cost, stated:** +8 sets across D3/D4, roughly 5 min a session. The 60 s timer on
+  the deload primaries gives about a minute of it back.
 
 ## Open items carried into B6
 
