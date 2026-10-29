@@ -6,7 +6,7 @@ Nothing else moves.
 import unittest
 
 from scripts.hevy.push_block import build_routine_payload
-from scripts.hevy.rest_times import is_light_week, rest_seconds_for
+from scripts.hevy.rest_times import is_light_week, rest_seconds_for, week_phase
 
 
 class _StubResolver:
@@ -37,6 +37,24 @@ class LightWeekTests(unittest.TestCase):
         """A block that opens straight into work (no calibration after a deload) says so."""
         self.assertFalse(is_light_week(1, {"label": "ESTABLISH", "light": False}))
         self.assertTrue(is_light_week(3, {"label": "TRAVEL", "light": True}))
+
+    def test_only_a_real_true_counts(self):
+        """A hand-typed "false" must not flip a working W1 to the short timer."""
+        self.assertFalse(is_light_week(1, {"label": "ESTABLISH", "light": "false"}))
+
+
+class WeekPhaseTests(unittest.TestCase):
+    def test_bare_string_label_is_a_label(self):
+        """The bridge block wrote {"1": "bridge"} — that must not crash a push."""
+        self.assertEqual(week_phase({"week_phases": {"1": "bridge"}}, 1), {"label": "bridge"})
+        self.assertTrue(is_light_week(1, week_phase({"week_phases": {"5": "deload"}}, 1)))
+        self.assertTrue(is_light_week(5, week_phase({"week_phases": {"5": "deload"}}, 5)))
+
+    def test_missing_or_null_phases(self):
+        self.assertEqual(week_phase({}, 2), {})
+        self.assertEqual(week_phase({"week_phases": None}, 2), {})
+        self.assertEqual(week_phase({"week_phases": {"2": None}}, 2), {})
+        self.assertFalse(is_light_week(2, week_phase({"week_phases": None}, 2)))
 
 
 class RestSecondsTests(unittest.TestCase):

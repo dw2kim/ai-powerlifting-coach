@@ -88,13 +88,27 @@ def tier_for(exercise: dict) -> str:
     return classify(exercise.get("name", ""))
 
 
+def week_phase(spec: dict, week: int) -> dict:
+    """A block's ``week_phases`` entry for one week, always as a dict. Blocks have written it
+    as a bare label (the bridge: ``{"1": "bridge"}``), as null, or not at all."""
+    phase = (spec.get("week_phases") or {}).get(str(week))
+    if isinstance(phase, str):
+        return {"label": phase}
+    return phase if isinstance(phase, dict) else {}
+
+
+def is_deload(phase: dict) -> bool:
+    return "deload" in _normalize(phase.get("label") or "")
+
+
 def is_light_week(week: int, phase: dict | None = None) -> bool:
-    """The warm-up week (W1) or a deload. An explicit ``"light"`` on the block's
-    ``week_phases`` entry wins, for a block whose first week isn't a warm-up."""
+    """The warm-up week (W1) or a deload. An explicit ``"light": true/false`` on the block's
+    ``week_phases`` entry wins, for a block whose first week isn't a warm-up. Only a real
+    JSON ``true`` counts, so a stray ``"false"`` string falls back to the full timer."""
     phase = phase or {}
     if "light" in phase:
-        return bool(phase["light"])
-    return week == 1 or "deload" in _normalize(phase.get("label", ""))
+        return phase["light"] is True
+    return week == 1 or is_deload(phase)
 
 
 def rest_seconds_for(exercise: dict, light_week: bool = False) -> int:

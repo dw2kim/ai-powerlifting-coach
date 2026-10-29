@@ -55,7 +55,7 @@ from pathlib import Path
 
 from .client import HevyClient
 from .exercise_map import Resolver
-from .rest_times import fmt_rest, is_light_week, rest_seconds_for, tier_for
+from .rest_times import fmt_rest, is_light_week, rest_seconds_for, tier_for, week_phase
 from .units import fmt_lb, normalize_kg
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -322,7 +322,7 @@ def main() -> None:
         if start_key and (week, day_order[pres["day"]]) < start_key:
             continue
         day = day_lookup[pres["day"]]
-        light = is_light_week(week, spec.get("week_phases", {}).get(str(week)))
+        light = is_light_week(week, week_phase(spec, week))
         payload = build_routine_payload(
             block_id, week, day, pres, folder_id, resolver, light
         )
@@ -351,7 +351,10 @@ def main() -> None:
             print(f"[dry-run] W{week}-{day['label']}:")
             print(json.dumps(payload, indent=2))
         else:
-            print(f"[dry-run] W{week}-{day['label']}:")
+            # Say when the week was judged light, so a working W1 pushed at 1:00 shows up
+            # here rather than in the app.
+            tag = " (light week: primaries rest 1:00)" if light else ""
+            print(f"[dry-run] W{week}-{day['label']}:{tag}")
             print_routine_preview(payload, pres["exercises"])
 
 
