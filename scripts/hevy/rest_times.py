@@ -2,16 +2,20 @@
 
 Athlete's rule (2026-08-11): every exercise in a pushed routine carries a rest timer.
 
-    primary lift            → 1:15  (75s)
+    primary lift            → 1:15  (75s), 1:00 in a light week
     secondary / accessory   → 1:00  (60s)
     core / abs              → 0:30  (30s)
+
+Light weeks (2026-10-29): the warm-up week (W1) and the deload. The primaries run well under
+their top there, so they drop to the accessory timer.
 
 Resolution order per exercise, most explicit first:
 
 1. an explicit ``rest_seconds`` on the exercise entry (a deliberate one-off — a heavy single
    that genuinely needs longer),
 2. its ``tier`` (``primary`` / ``secondary`` / ``accessory`` / ``core``), which the block JSON
-   carries so intent is auditable rather than inferred,
+   carries so intent is auditable rather than inferred, read against the light-week table when
+   the week is light,
 3. a name classifier, so an exercise added by hand without a tier still gets a sane timer
    instead of silently pushing with none.
 
@@ -28,6 +32,11 @@ REST_SECONDS: dict[str, int] = {
     "secondary": 60,
     "accessory": 60,
     "core": 30,
+}
+
+# Only the tiers that change in a light week; everything else keeps REST_SECONDS.
+LIGHT_WEEK_REST_SECONDS: dict[str, int] = {
+    "primary": 60,
 }
 
 DEFAULT_TIER = "accessory"
@@ -79,12 +88,24 @@ def tier_for(exercise: dict) -> str:
     return classify(exercise.get("name", ""))
 
 
-def rest_seconds_for(exercise: dict) -> int:
+def is_light_week(week: int, phase: dict | None = None) -> bool:
+    """The warm-up week (W1) or a deload. An explicit ``"light"`` on the block's
+    ``week_phases`` entry wins, for a block whose first week isn't a warm-up."""
+    phase = phase or {}
+    if "light" in phase:
+        return bool(phase["light"])
+    return week == 1 or "deload" in _normalize(phase.get("label", ""))
+
+
+def rest_seconds_for(exercise: dict, light_week: bool = False) -> int:
     """Rest timer in seconds for one exercise entry of a block prescription."""
     explicit = exercise.get("rest_seconds")
     if explicit is not None:
         return int(explicit)
-    return REST_SECONDS[tier_for(exercise)]
+    tier = tier_for(exercise)
+    if light_week and tier in LIGHT_WEEK_REST_SECONDS:
+        return LIGHT_WEEK_REST_SECONDS[tier]
+    return REST_SECONDS[tier]
 
 
 def fmt_rest(seconds: int) -> str:

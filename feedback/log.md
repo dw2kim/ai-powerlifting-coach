@@ -866,3 +866,25 @@ ceiling sat under what he was lifting @7. Holding him to it would cost a rung on
 pushed `--update --week 4 --start W4-D1` and read back from Hevy. `current-block.md` amended,
 `active-issues.md` records that this is the athlete's call, not clinical clearance.
 → rules: `axial-return-ladder` (squat return closed), `axial-floor-range-ceiling` (no longer binds the squat)
+
+### 2026-10-29 · general · block · accessories at 3 sets, lighter rest in light weeks · 2026-Q4-B06
+**Feedback:** "Make sure that all the accessories have at least 3 sets. I see a lot of accessories put at 2
+… Just increase to 3. Don't adjust the number of accessories per day." And: "For the deload and warm-up
+week you can reduce the rest time. For primary I think it's 1 minute and 15 seconds. You can reduce to
+1 minute."
+**Verified (Hevy):** since the 10-12 change to 2 sets, he logged **3 working sets on 30 of 32 accessory
+slots** in B6 W3–W5 (the two misses: W3-D3 Face Pull, W4-D4 Concentration Curl). The plan said 2. He was
+doing 3. The prescription was the thing out of line. Primary rest is 75 s by tier (`rest_times.py`).
+**Read as:** "warm-up week" = W1, the calibration/intro week. If he meant something else, re-scope.
+**Root cause:** 2 sets was my lever for the B6 W1–W2 session length and accessory effort. The @8 stop did
+the work; the set count he overrode himself from day one.
+**Actions taken:**
+- `scripts/hevy/rest_times.py`: `is_light_week()` (W1, or a `week_phases` label containing DELOAD; an
+  explicit `"light"` on the phase wins) and `LIGHT_WEEK_REST_SECONDS` (primary 60 s). `push_block` passes
+  the week through. Tests in `tests/test_rest_times.py`.
+- B6 W5-D3 and W5-D4 (the two untrained sessions): every accessory to 3 sets at the same load, notes
+  updated. Pushed `--update --start W5-D3`, read back from Hevy: 3 working sets on every accessory,
+  primaries (dip, sumo) at 60 s.
+- Not done: W5-D1/D2 are trained (he did 3 sets anyway). W1 is history.
+→ rules: `accessory-effort-cap` (set floor 3), `whole-body-every-day` (dose wording), `hevy-rest-timers`
+(light weeks)

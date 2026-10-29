@@ -59,7 +59,8 @@ cut.
 - **Loads: full-precision kg**, `scripts.hevy.units.lb_to_kg(<lb>)`, never rounded
   (`hevy-load-fidelity`). Prescribe in 5 lb increments — that's what's on the bar.
 - **Every exercise entry carries a `tier`** — `primary` / `secondary` / `accessory` / `core`
-  — which drives the rest timer, 1:15 / 1:00 / 1:00 / 0:30 (`hevy-rest-timers`). Don't leave
+  — which drives the rest timer, 1:15 / 1:00 / 1:00 / 0:30, primaries 1:00 in W1 and the deload
+  (`hevy-rest-timers`). Don't leave
   it to the name classifier and don't re-inflate the numbers; they're his.
 - Keep week/day numbering intact so `--update` matches routines by title.
 - **Changed a primary's load? Re-run `python -m scripts.hevy.warmups --apply`** so its

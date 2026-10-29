@@ -82,7 +82,9 @@ description: Design a new training block — pull context from prior block + mem
      increments; that's what's on the bar and in the stack.
    - **Every exercise entry gets a `tier`** — `primary` / `secondary` / `accessory` / `core`
      (rules `hevy-rest-timers`, `rest-times-athlete-set`). It drives the pushed rest timer
-     (1:15 / 1:00 / 1:00 / 0:30). Don't leave it to the name classifier, and **don't re-inflate
+     (1:15 / 1:00 / 1:00 / 0:30; primaries drop to 1:00 in W1 and the deload). If W1 is **not** a
+     warm-up week, set `"light": false` on its `week_phases` entry, or the push gives the
+     primaries 1:00. Don't leave the tier to the name classifier, and **don't re-inflate
      the numbers** — they're the athlete's, not a coaching preference. Where a set genuinely
      wants longer (a peak / @8 test), say so **in the block prose** rather than overriding the
      field.
