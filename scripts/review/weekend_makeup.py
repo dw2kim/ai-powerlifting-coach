@@ -306,6 +306,15 @@ def plan_makeup(rows: list[dict], statuses: dict[str, str], swaps: dict[str, dic
     return items[:MAX_EXERCISES], excluded
 
 
+def deload_misses(rows: list[dict], statuses: dict[str, str]) -> list[dict]:
+    """A deload's misses are not made up (less work is the point of the week), but they are
+    still reported. "Nothing to make up" read as "nothing missed", and the record is how a
+    slot that keeps getting dropped reaches the block review."""
+    return [{"name": r["name"], "where": _done_days(r, statuses), "owed": r["owed"],
+             "why": "Deload week. Missed sets aren't made up."}
+            for r in rows if r["owed"]]
+
+
 # --- the routine -------------------------------------------------------------------------
 
 def weekend(geo: dict) -> tuple[date_cls, date_cls]:
@@ -390,11 +399,15 @@ def render_message(geo: dict, statuses: dict, items: list, excluded: list,
     esc = html.escape
     head = f"{geo['block_id']} W{geo['week_no']}"
     sync_note = "\n⚠️ Hevy sync failed, so this ran on last night's log." if not synced else ""
-    if deload:
-        return f"🛌 <b>Weekend make-up · {head}</b>\nDeload week. Nothing to make up. Rest.{sync_note}"
     pending = [d for d, s in statuses.items() if s == "pending"]
     lines = []
-    if items:
+    if deload:
+        lines += [f"🛌 <b>Weekend make-up · {head}</b>",
+                  "Deload week, so nothing is made up. Rest."]
+        if excluded:
+            lines += ["", f"<b>Missed this week ({len(excluded)}), not owed</b>"]
+            lines += [f"• {esc(e['name'])} ({esc(e['where'])})" for e in excluded]
+    elif items:
         sat, sun = weekend(geo)
         lines += [f"🏠 <b>Weekend make-up · {head}</b> ({_span(sat, sun)})",
                   f"Hevy → <i>{FOLDER_TITLE}</i> → <i>{esc(routine_title(geo))}</i>", "",
@@ -408,7 +421,7 @@ def render_message(geo: dict, statuses: dict, items: list, excluded: list,
         lines += [f"✅ <b>Weekend make-up · {head}</b>",
                   "Nothing owed that can be done at home. The make-up routine in Hevy is "
                   "last week's, so ignore it."]
-    if excluded:
+    if excluded and not deload:
         lines += ["", "<b>Owed, not made up</b>"]
         lines += [f"• {esc(e['name'])} ({esc(e['where'])}): {esc(e['why'])}" for e in excluded]
     if pending:
@@ -425,10 +438,10 @@ def render_record(geo: dict, statuses: dict, rows: list, items: list, excluded: 
     out = [f"# Weekend make-up — {geo['block_id']} · Week {geo['week_no']}/{geo['weeks']}",
            "", f"_Generated {generated:%Y-%m-%d %H:%M %Z}. Hevy log = source of truth. "
                "Rule `weekend-makeup`._", ""]
-    if deload:
-        return "\n".join(out + ["Deload week: nothing made up.", ""])
     out += [f"**Hevy:** {pushed}", "", "## In the routine", ""]
-    if items:
+    if deload:
+        out.append("Deload week: nothing made up.")
+    elif items:
         out += ["| Home exercise | Sets × reps @ load | For | Missed | Class |",
                 "|---|---|---|---|---|"]
         out += [f"| {i['home']} | {_scheme(i)} | {i['for']} | {i['where']} | {i['class']} |"
@@ -436,7 +449,9 @@ def render_record(geo: dict, statuses: dict, rows: list, items: list, excluded: 
     else:
         out.append("Nothing owed that can be done at home.")
     if excluded:
-        out += ["", "## Owed, not made up", "", "| Exercise | Day | Sets owed | Why |",
+        heading, col = ("Missed, not made up", "Sets missed") if deload else \
+            ("Owed, not made up", "Sets owed")
+        out += ["", f"## {heading}", "", f"| Exercise | Day | {col} | Why |",
                 "|---|---|---|---|"]
         out += [f"| {e['name']} | {e['where']} | {e['owed']} | {e['why']} |" for e in excluded]
     days = " · ".join(f"{_day_label(d)} {s}" for d, s in statuses.items())
@@ -493,7 +508,7 @@ def main() -> None:
     home = load_home()
     swaps = swaps_by_template(home, resolve)
     rows = diff_week(block, geo["week_no"], statuses, week_sessions, resolve, swaps)
-    items, excluded = ([], []) if deload else plan_makeup(
+    items, excluded = ([], deload_misses(rows, statuses)) if deload else plan_makeup(
         rows, statuses, swaps, home["equipment"], resolve,
         lambda tid: home_log_load(tid, today) if tid else None)
     message = render_message(geo, statuses, items, excluded, deload, synced)
@@ -511,7 +526,7 @@ def main() -> None:
         summary("### 🔍 Dry run — nothing pushed, sent or committed")
         return
 
-    pushed = "nothing pushed — nothing owed"
+    pushed = "nothing pushed — deload week" if deload else "nothing pushed — nothing owed"
     if payload:
         from ..hevy.client import HevyClient
         action, rid = push(HevyClient(), payload)

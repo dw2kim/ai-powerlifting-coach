@@ -197,6 +197,39 @@ class Eligibility(unittest.TestCase):
         self.assertEqual(loads["CS Row"], 50)
 
 
+class Deload(unittest.TestCase):
+    def test_a_deload_reports_its_misses_and_makes_nothing_up(self):
+        """B6 W5: "Nothing to make up" went out with Leg Extension and the curl unlogged."""
+        d3 = session("2026-10-15", ("Reverse Pec Deck", 2), ("Face Pull", 2), ("Dead Bug", 3),
+                     title="W1-D3 x")
+        d4 = session("2026-10-16", ("CS Row", 2), title="W1-D4 x")
+        week = [FULL_D1, d3, d4]
+        geo = wmx.geometry(BLOCK, FRIDAY)
+        statuses = wm.day_statuses(BLOCK, geo, FRIDAY, week)
+        rows = wm.diff_week(BLOCK, 1, statuses, week, resolve, SWAPS)
+        misses = wm.deload_misses(rows, statuses)
+        self.assertEqual([(m["name"], m["where"], m["owed"]) for m in misses],
+                         [("Leg Extension", "Thu D3", 2), ("Concentration Curl", "Fri D4", 3)])
+
+        msg = wm.render_message(geo, statuses, [], misses, deload=True, synced=True)
+        self.assertIn("nothing is made up", msg)
+        self.assertIn("• Leg Extension (Thu D3)", msg)
+        self.assertIn("• Concentration Curl (Fri D4)", msg)
+        self.assertNotIn("Owed, not made up", msg)
+
+        record = wm.render_record(geo, statuses, rows, [], misses, True,
+                                  datetime(2026, 10, 16, 16, 16, tzinfo=ET), "nothing pushed")
+        self.assertIn("## Missed, not made up", record)
+        self.assertIn("| Concentration Curl | D4 | accessory | 3 | 0 | missed |", record)
+
+    def test_a_clean_deload_says_rest_and_nothing_else(self):
+        geo = wmx.geometry(BLOCK, FRIDAY)
+        statuses = {"D1": "logged", "D3": "logged", "D4": "logged"}
+        msg = wm.render_message(geo, statuses, [], [], deload=True, synced=True)
+        self.assertNotIn("Missed", msg)
+        self.assertIn("Rest.", msg)
+
+
 class Routine(unittest.TestCase):
     def test_title_spans_the_weekend(self):
         self.assertEqual(wm.routine_title({"week_start": "2026-10-12", "week_no": 3}),

@@ -933,3 +933,14 @@ bench/WPU/dip, and treat pull-up and bench as plateaued lifts that need a new st
 - **Revisit at the B6 review / B7 design:** read `reviews/makeup/`. If the same slots keep landing there
   after the bedtime fix, it's the session length (D3/D4 run long against the 60-min window), and the
   answer is a superset, a move or a cut. It isn't a bigger weekend.
+
+## 2026-10-30 — B6 missed-accessory tally: the bedtime fix didn't close it
+
+- Every B6 week left accessories unlogged: W1 4 · W2 6 · W3 3 · W4 3 · W5 2 (a deload, the shortest
+  sessions of the block). **Concentration Curl (D4) 3 of 5 weeks · Tricep Pushdown (D1) 3 of 5** ·
+  Side Plank, Face Pull, CS Incline Row 2 each. W4–W5 came after the Oct 17 bedtime fix.
+- That's the trigger the Oct 17 note set: the same slots keep landing in `reviews/makeup/`, so it's
+  session length, not sleep. **B7 design input:** superset, move or cut the D1 pushdown and the D4
+  curl. Don't solve it with a bigger weekend.
+- The W5 make-up said "Deload week. Nothing to make up." with Leg Extension and the curl unlogged.
+  Deloads still make nothing up, but the message and the record now list the misses.
