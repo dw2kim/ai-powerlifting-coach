@@ -409,7 +409,8 @@
     is under treatment, no overhead pressing.
   - **Dose:** at most **5 exercises**, the owed sets only, **everything @7**. Order: shoulder cuff
     work first, then the standard slots, then chest/triceps (**Saturday only**, since on Sunday they
-    pre-tire Monday's bench), then core. Nothing in a deload week.
+    pre-tire Monday's bench), then core. **Nothing made up in a deload week**, but its misses are
+    still listed in the message and the record. "Nothing to make up" read as "nothing missed".
   - **Not yet logged ≠ missed.** A day with no session that is today (D4, on the Friday run) is
     reported as not logged and adds nothing. A day already past was skipped, and its accessories
     are owed.
