@@ -866,3 +866,13 @@ ceiling sat under what he was lifting @7. Holding him to it would cost a rung on
 pushed `--update --week 4 --start W4-D1` and read back from Hevy. `current-block.md` amended,
 `active-issues.md` records that this is the athlete's call, not clinical clearance.
 → rules: `axial-return-ladder` (squat return closed), `axial-floor-range-ceiling` (no longer binds the squat)
+
+### 2026-10-31 · block · accessory volume stays despite the misses · 2026-Q4-B06
+**Feedback:** "This is okay. I am just a little swamped up with the interviews. We should keep it high like
+how we're doing now." This was his answer to the B6 tally of missed accessories.
+**Verified (Hevy):** missed accessories by week: W1 4 · W2 6 · W3 3 · W4 3 · W5 2. Concentration Curl (D4) and
+Tricep Pushdown (D1) were each missed 3 weeks of 5.
+**Decision:** the cause is a busy stretch (interviews), not how the sessions are designed. Accessory volume and
+selection carry into B7 unchanged, with no superset, move or cut. The Friday make-up catches what gets missed.
+The record keeps running. If the same slots are still being missed once the interviews are over, raise it again.
+→ rules: `weekend-makeup` (repeat-miss clause: suspended for the interview stretch)

@@ -416,7 +416,9 @@
     are owed.
   - **The record matters more than the routine.** If the same slot shows up there week after
     week, the session is too long for the morning. That's a block-design input, revisited at the
-    next block review (`reviews/makeup/`). [FB 2026-10-17]
+    next block review (`reviews/makeup/`). [FB 2026-10-17] **Suspended during the interview
+    stretch:** the B6 repeat misses are a busy calendar, so volume stays as is. Raise it again if
+    the misses continue after the interviews. [FB 2026-10-31]
 
 ## By-exercise
 

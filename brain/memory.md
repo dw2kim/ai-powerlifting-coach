@@ -944,3 +944,6 @@ bench/WPU/dip, and treat pull-up and bench as plateaued lifts that need a new st
   curl. Don't solve it with a bigger weekend.
 - The W5 make-up said "Deload week. Nothing to make up." with Leg Extension and the curl unlogged.
   Deloads still make nothing up, but the message and the record now list the misses.
+- **Overruled 2026-10-31 (athlete):** the misses are interview season, not session length. **Keep
+  accessory volume as is into B7.** No superset, move or cut. The make-up covers the gaps. Raise it
+  again only if the same slots keep dropping after the interviews end.
