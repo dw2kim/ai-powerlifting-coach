@@ -933,3 +933,13 @@ bench/WPU/dip, and treat pull-up and bench as plateaued lifts that need a new st
 - **Revisit at the B6 review / B7 design:** read `reviews/makeup/`. If the same slots keep landing there
   after the bedtime fix, it's the session length (D3/D4 run long against the 60-min window), and the
   answer is a superset, a move or a cut. It isn't a bigger weekend.
+
+## 2026-10-29 — Accessories at 3, and the prescription was the thing out of line
+
+He asked for every accessory at 3 sets ("don't adjust the number of accessories per day") and a 1:00
+primary timer in the warm-up week and the deload. The log had already decided the first one: after I
+cut accessories to 2 sets on 10-12, he logged 3 on 30 of 32 slots. **Pattern worth keeping:** when he
+quietly does more sets than written at the right RPE, the plan is what's off. When he does it at @9+,
+he is. The @8 stop was the real fix for the W1–W2 accessory effort, and it held. Light-week rest is now
+in the push tooling (`is_light_week`). **B7 note:** the 10-12 retro proposed no calibration week after
+a deload. If B7's W1 is a working week, set `"light": false` on its phase or the primaries push at 1:00.

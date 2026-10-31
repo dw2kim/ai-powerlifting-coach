@@ -41,7 +41,7 @@ from zoneinfo import ZoneInfo
 
 from ..hevy.block_report import KG_TO_LBS, REPO_ROOT, load_window
 from ..hevy.push_block import _routine_id, exercise_payload, print_routine_preview
-from ..hevy.rest_times import tier_for
+from ..hevy.rest_times import is_deload, tier_for, week_phase
 from ..hevy.units import lb_to_kg
 from ..notifications import telegram
 from .weekly_metrics import (
@@ -456,8 +456,7 @@ def _in_block(block: dict, day: date_cls) -> bool:
 
 
 def _is_deload(block: dict, week_no: int) -> bool:
-    phase = (block.get("week_phases") or {}).get(str(week_no)) or {}
-    return "deload" in (phase.get("label") or "").lower()
+    return is_deload(week_phase(block, week_no))
 
 
 def main() -> None:

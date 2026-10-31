@@ -44,8 +44,8 @@ actually trains off:
 - **Loads match the Google Sheet.** Every weight is re-snapped onto a real loading increment
   and converted with Hevy's own factor, so a 70 lb prescription reads "70" in the app rather
   than "70.11". See `units.py`.
-- **Every exercise carries a rest timer** — primary 1:15, secondary/accessory 1:00, core 0:30
-  — from the entry's `tier`. See `rest_times.py`.
+- **Every exercise carries a rest timer** — primary 1:15 (1:00 in the warm-up week and the
+  deload), secondary/accessory 1:00, core 0:30 — from the entry's `tier`. See `rest_times.py`.
 """
 from __future__ import annotations
 
@@ -55,7 +55,7 @@ from pathlib import Path
 
 from .client import HevyClient
 from .exercise_map import Resolver
-from .rest_times import fmt_rest, rest_seconds_for, tier_for
+from .rest_times import fmt_rest, is_light_week, rest_seconds_for, tier_for, week_phase
 from .units import fmt_lb, normalize_kg
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -142,7 +142,7 @@ def existing_routines(client) -> dict[str, str]:
     }
 
 
-def exercise_payload(ex: dict, resolver: Resolver) -> dict:
+def exercise_payload(ex: dict, resolver: Resolver, light_week: bool = False) -> dict:
     """One prescription entry as the routine API wants it. Shared with the weekend make-up
     (scripts/review/weekend_makeup.py) so both land in the app the same way."""
     template_id = resolver.resolve(ex["name"])
@@ -164,7 +164,7 @@ def exercise_payload(ex: dict, resolver: Resolver) -> dict:
     return {
         "exercise_template_id": template_id,
         "superset_id": ex.get("superset_id"),
-        "rest_seconds": rest_seconds_for(ex),
+        "rest_seconds": rest_seconds_for(ex, light_week),
         "notes": _notes_with_scheme(raw_sets, ex.get("notes", "")),
         "sets": sets,
     }
@@ -177,8 +177,11 @@ def build_routine_payload(
     prescription: dict,
     folder_id: str | None,
     resolver: Resolver,
+    light_week: bool = False,
 ) -> dict:
-    exercises = [exercise_payload(ex, resolver) for ex in prescription["exercises"]]
+    exercises = [
+        exercise_payload(ex, resolver, light_week) for ex in prescription["exercises"]
+    ]
     # A prescription may override the day's shared focus. The `days` list is block-wide, so
     # editing it to retitle one session would rename that day in *every* week and strand the
     # rest as duplicates — the exact `push-is-idempotent-with-update` failure this avoids.
@@ -319,8 +322,9 @@ def main() -> None:
         if start_key and (week, day_order[pres["day"]]) < start_key:
             continue
         day = day_lookup[pres["day"]]
+        light = is_light_week(week, week_phase(spec, week))
         payload = build_routine_payload(
-            block_id, week, day, pres, folder_id, resolver
+            block_id, week, day, pres, folder_id, resolver, light
         )
         title = payload["routine"]["title"]
         if args.apply:
@@ -347,7 +351,10 @@ def main() -> None:
             print(f"[dry-run] W{week}-{day['label']}:")
             print(json.dumps(payload, indent=2))
         else:
-            print(f"[dry-run] W{week}-{day['label']}:")
+            # Say when the week was judged light, so a working W1 pushed at 1:00 shows up
+            # here rather than in the app.
+            tag = " (light week: primaries rest 1:00)" if light else ""
+            print(f"[dry-run] W{week}-{day['label']}:{tag}")
             print_routine_preview(payload, pres["exercises"])
 
 
