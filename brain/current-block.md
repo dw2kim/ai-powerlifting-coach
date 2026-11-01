@@ -43,15 +43,29 @@ Nothing bad happened. But B6's sumo was 255–315; **B7's sumo is 345–405**, w
 One word, Saturday morning, after the pull. Two clean ones already got you the 345 opener — you
 reported **10/26 `fine`** and **10/30 `fine`** on 11-01 and both are logged.
 
-### 2. Your right elbow is in the plan
+### 2. Both your elbows are in the plan, and they've been there since September
 
-Pain on bend, still there (mild) as of today. **The pull-up is capped by absolute load, not RPE** —
-a sore tendon cannot be autoregulated, because you'll rate the set off how your lats feel. It tops
-at **BW+85**, under both B6's +95 and B5's +90, for two independent reasons: the elbow, and
-CLAUDE.md's rule that pull-up volume drops when deadlift volume is high. **Neutral grip if the gym
-has a neutral bar, otherwise the wider pronated grip you found yourself.** Full detail and the hard
-stops are in `active-issues.md` → *Right elbow*. **Any pain during a set ends the exercise that
-day — don't finish the set.**
+I went back through your Hevy notes rather than trust my own summary, and I had this wrong twice over:
+
+| | What I'd written | What your notes actually say |
+|---|---|---|
+| Side | right only | **both** — left from ~late September, right from late October |
+| Onset | 2026-10-30 | **~late September.** On 10-20 you wrote it was *"the bottleneck for pushing the pull up"* |
+| Grip fix | neutral grip | **wider than shoulder, pronated.** Your 10-22 note: *"right inner elbow pain with the nuetral grip"* — on the lat pulldown |
+
+**So: wide pronated grip, explicitly NOT neutral** — on the pull-up *and* the lat pulldown. You
+noticed wide feels *"a bit more weak? cuz it doesnt use the bicep"*. That's exactly why it helps, and
+it's the right trade. **The pull-up is capped by absolute load, not RPE** — a sore tendon can't be
+autoregulated, because you'll rate the set off how your lats feel. It tops at **BW+85**, under both
+B6's +95 and B5's +90, for two independent reasons: the elbows, and CLAUDE.md's rule that pull-up
+volume drops when deadlift volume is high.
+
+**Any pain during a set ends the exercise that day — don't finish the set.** Full record, the verbatim
+notes and the hard stops are in `active-issues.md` → *Elbows*.
+
+You said *"no need to go hospital but need to take care."* **Push back on that once:** bilateral,
+anterior, five weeks old and already limiting a main lift is not a niggle, and you have an open clinic
+relationship with a visit already owed. One sentence in a visit that's happening anyway.
 
 ### 3. The clinic is six blocks owed, and the sumo ceiling is the price
 
@@ -225,7 +239,7 @@ bump (`accessory-progression`). **At least 3 working sets, stopping at @8** — 
 | D2 | Seated Leg Curl ⚯ | 110 · 110 · 115 · 115 (95) ×12 | Hamstrings, knee-flexion side | Lying Leg Curl |
 | D2 | Lateral Raise (DB) ⚯ | 35 · 35 · 40 · 40 (30) ×15 | Lateral delts. **First cut on D2.** | Cable Lateral Raise 20 |
 | D2 | Single Arm Landmine Press | 40 · 40 · 45 · 45 (35) ×10/arm, **@7 cap** | Front delts on a diagonal path — least subacromial compression available | Neutral-grip DB Press (seated) 45, **same @7 cap**. **Never barbell OHP.** |
-| D3 | Lat Pulldown ⚯ | **145 · 145 · 150 · 150 (130)** ×12 | Lats, seated, no axial load. **Pinned well under the 157 median — tomorrow is 345–405 sumo.** | Natural Grip Pulldown, same load |
+| D3 | Lat Pulldown ⚯ | **145 · 145 · 150 · 150 (130)** ×12 | Lats, seated, no axial load. **Pinned well under the 157 median — tomorrow is 345–405 sumo.** **Wide pronated grip — the 10-22 "right inner elbow pain with the neutral grip" note was on this exercise.** | Wide-grip pulldown, same load. **No neutral bar.** |
 | D3 | Leg Extension (Machine) ⚯ | 135 flat (115) ×12 | Thursday's lower dose, and the cheapest one that exists before a heavy pull: no spinal load, no loaded hip flexion, no adductor cost | Leg Press 270, ROM-capped. **No squat pattern, no hinge.** |
 | D3 | Reverse Pec Deck ⚯ | 100 · 100 · 105 · 105 (90) ×15, **@7 cap** | Intact posterior cuff shares load off two torn anterior tendons | Rear Delt Fly (DB) 25 |
 | D3 | Face Pull ⚯ | 40 · 40 · 45 · 45 (35) ×15, @7 | External rotation + scapular control. **First cut on D3.** | Band pull-apart ×20 |
@@ -250,8 +264,9 @@ Pallof Press 20×12 (anti-rotation) · Dead Bug ×10 (anti-extension) · Bird Do
 - **➕ Re-entry: Hip Adduction (Machine) (D4).** Not new (90 sessions, last trained 09-20 at 105) but
   out for a while. It's here because it is **sumo-specific** and this is the sumo block, and because it
   takes the slot the Concentration Curl vacated.
-- **❌ Out: Concentration Curl.** Direct elbow flexion, and your right elbow hurts on flexion. Biceps
-  get their dose from the pull-up and the two row slots. Back when the elbow is quiet.
+- **❌ Out: Concentration Curl.** Direct elbow flexion, and **both** elbows hurt on flexion. Your own
+  *"doesnt use the bicep"* observation is the argument for it. Biceps get their dose from the wide-grip
+  pull and the two row slots. Back when the elbows are quiet.
 - **❌ Out: Bulgarian Split Squat.** **This one is a judgement call and I'll own it:** a heavy-sumo
   block cannot carry loaded unilateral leg work in the 48 h either side of a 405 pull, and every day
   already has its lower-body dose without it (squat D1, hip thrust + leg curl D2, leg extension D3,
@@ -286,7 +301,7 @@ Raise · D3 Face Pull · D4 Seated Calf Raise. Naming them now beats deciding at
 | **Adductors** | **Hip Adduction (D4)** — new coverage | Lateral delts | Lateral Raise (D2) |
 | Erectors | Squat · sumo · Bird Dog — **no direct loaded work, by decision** | Rear delts | Reverse Pec Deck · Face Pull (D3) |
 | Chest | Comp Bench (D1 **+ D4**) · Chest Fly (D1) · Dip · Spoto (D3) | **Serratus** | **Straight Arm PD (D2)** — new coverage |
-| Triceps | Pushdown (D1) · Dip (D3) · all benching | Biceps | Pull-up + both rows — **no direct work, by decision (elbow)** |
+| Triceps | Pushdown (D1) · Dip (D3) · all benching | Biceps | Pull-up + both rows — **no direct work, by decision (both elbows)** |
 | Calves | Seated Calf Raise (D4) | Core | All four days, four patterns |
 
 **Two deliberate gaps, both named with reasons**: direct erector loading (back under treatment) and
@@ -327,8 +342,10 @@ Pulldown** (stale 3-year anchor), and **all of W5** (deload).
       Six blocks owed. Questions are listed in `active-issues.md`. **The 405 ceiling is set by this
       being undone.**
 - [ ] **🔴 Back check every Saturday, after Friday's pull.** One word. No check, no rung.
-- [ ] **🔴 Report the elbow** as it changes — better or worse. Two sessions with pain and the pull-up
-      comes out of the block.
+- [ ] **🔴 Report the elbows** as they change, and **say which side** — the record needs it. Two
+      sessions with pain at the written loads and the pull-up comes out of the block.
+- [ ] **🔴 Answer the six elbow questions** in `active-issues.md` → *Elbows* (where exactly, does it
+      hurt outside the gym, does it hurt on dips, what changed in late September).
 - [ ] **🟡 Push to Hevy** — dry-run clean, 20 routines. **Waiting on your go.**
 - [ ] **🟡 Export to the Google Sheet** — needs the Actions workflow (no Google creds in session).
 - [ ] **🟡 Tooling: make a `hold` still get checked against the log** (B6 sumo ran +30 unnoticed).

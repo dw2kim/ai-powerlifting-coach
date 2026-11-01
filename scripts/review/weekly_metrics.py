@@ -241,15 +241,27 @@ def fmt_load(added_lb: float, is_bw: bool) -> str:
 
 
 def _planned_top(block: dict, week: int, name: str, is_bw: bool, bw: float) -> dict | None:
-    """The planned top set for a lift in a given week (first set of the first
-    prescription block matching the name), in lbs."""
+    """The planned top set for a lift in a given week, in lbs.
+
+    **Working sets only.** This used to take `sets[0]` outright, which was correct right up
+    until `primary-warmup-ramp` landed on 2026-10-02 and put a real warm-up ramp in front of
+    every Big-5 primary. From that day the "plan" read as **135×8 @None** for every barbell
+    lift and **BW+1×8** for the pull-up — so `rpe_flag` had no planned RPE to compare against
+    and returned "none" for every lift, every week, for the whole of B6.
+
+    The cost was not theoretical: B6 W4's pull-up came in **@9.5 against an @8.5 cap** and the
+    deterministic flag said nothing. It was only caught because the LLM narrator reads the
+    prescription *notes* and spotted the cap written in prose. The rules lean on this flag
+    (`accessory-effort-cap`: "the weekly review flags any accessory logged @9+ the same way it
+    flags a primary"), so it has to work on its own.
+    """
     for presc in block.get("prescriptions", []):
         if presc.get("week") != week:
             continue
         for ex in presc.get("exercises", []):
             if ex.get("name") != name:
                 continue
-            sets = ex.get("sets", [])
+            sets = [s for s in ex.get("sets", []) if s.get("type") != "warmup"]
             if not sets:
                 return None
             top = sets[0]

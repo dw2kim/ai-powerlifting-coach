@@ -38,7 +38,7 @@ from zoneinfo import ZoneInfo
 from ..hevy.block_report import DEFAULT_BW, REPO_ROOT
 from ..notifications import telegram
 from ..sheets import reconcile_loads as recon
-from . import back_checks
+from . import back_checks, handover
 from .narrate import gather_context, narrate, render_fallback
 from .render_chart import render
 from .weekly_metrics import BLOCK_JSON, build_stats
@@ -136,17 +136,29 @@ def missed_weeks(today: date_cls, lookback: int = LOOKBACK_WEEKS) -> list[str]:
     return sorted(set(gaps) - acknowledged_gaps())
 
 
-def _fail_on_gaps(gaps: list[str]) -> None:
-    """Report unfilled weeks and exit non-zero. Called by EVERY firing, shipping or
-    skipping, so a later green skip cannot repaint the day."""
-    if not gaps:
+def _fail_on_gaps(gaps: list[str], handover_reasons: list[str] | None = None) -> None:
+    """Report unfilled weeks / an overdue block handover and exit non-zero.
+
+    Called by EVERY firing, shipping or skipping, so a later green skip cannot repaint the
+    day. `handover_reasons` comes from `handover.blocking()` and is only ever non-empty once
+    the block has actually ended — a draft that is merely due nags in the message instead.
+    """
+    handover_reasons = handover_reasons or []
+    if not gaps and not handover_reasons:
         return
-    summary("", "### ❌ Weeks that never got a review", "",
-            *[f"- `{g}`" for g in gaps], "",
-            "Backfill one with `review_date` set to that Saturday — only if it falls "
-            "inside the running block. Otherwise add it to "
-            f"`{_rel(GAP_ACK)}` to acknowledge it.")
-    raise SystemExit("Weeks with no review: " + ", ".join(gaps))
+    if gaps:
+        summary("", "### ❌ Weeks that never got a review", "",
+                *[f"- `{g}`" for g in gaps], "",
+                "Backfill one with `review_date` set to that Saturday — only if it falls "
+                "inside the running block. Otherwise add it to "
+                f"`{_rel(GAP_ACK)}` to acknowledge it.")
+    if handover_reasons:
+        summary("", "### ❌ Block handover overdue", "",
+                *[f"- {r}" for r in handover_reasons], "",
+                "Run the `reviewing-block` skill, then `designing-training-block`. "
+                "The review is the documented gate on designing the next block.")
+    raise SystemExit("; ".join(
+        ([f"Weeks with no review: {', '.join(gaps)}"] if gaps else []) + handover_reasons))
 
 
 def time_guard(force: bool) -> tuple[bool, str]:
@@ -412,6 +424,13 @@ def main() -> None:
     # Metrics first: the week just finished is judged against the plan it actually ran
     # under, before the sync rewrites anything ahead of it.
     stats = build_stats(today, args.bw)
+    # Block handover: does the next block exist, and did this one get reviewed? Computed
+    # here because the Saturday review is the job that actually runs — the draft routine
+    # lives in a local scheduler that never fired once (see handover.py's docstring).
+    stats["handover"] = handover.state(
+        json.loads(BLOCK_JSON.read_text()),
+        date_cls.fromisoformat(stats["generated_for"]),
+    )
     report = reconcile_step(
         today, args.bw,
         enabled=not args.no_reconcile,
@@ -429,6 +448,12 @@ def main() -> None:
     if gaps:
         message += ("\n\n⚠️ <b>No review was ever sent for: "
                     + ", ".join(gaps) + "</b>")
+
+    # The handover warning goes in the message, not only the job log: B7's start day
+    # arrived with nothing and the only person who noticed was the athlete.
+    ho_text = handover.render(stats["handover"])
+    if ho_text:
+        message += "\n\n" + ho_text
 
     if args.dry_run:
         print("\n===== CAPTION =====\n" + cap)
@@ -455,8 +480,9 @@ def main() -> None:
             f"- Snapshot: `{_rel(snapshot)}`")
 
     # Shipped first, complain second: a past gap must never withhold this week's
-    # review, but it must not leave a green check either.
-    _fail_on_gaps(gaps)
+    # review, but it must not leave a green check either. Same for the handover — a block
+    # that ended with no review and no next block is exactly the state nobody noticed.
+    _fail_on_gaps(gaps, handover.blocking(stats["handover"]))
 
 
 if __name__ == "__main__":

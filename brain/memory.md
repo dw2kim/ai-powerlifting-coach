@@ -972,6 +972,49 @@ block was supposed to watch got watched.
 6. **The make-up record answered its own question.** W3 and W4 each shed three accessories, always
    the last slot written on D1/D3/D4. The bedtime fix didn't clear it. 19–21 sets/day doesn't fit
    60 minutes. He won't cut exercises — so pair them (supersets on the tail slots).
-7. **The end-of-block automation has never run.** `draft_next_block` is built, tested, documented —
+7. **Two instruments were broken, and both broke silently.**
+   - **`_planned_top` took `sets[0]`**, which became a *warm-up* when `primary-warmup-ramp` landed
+     2026-10-02. So the weekly review compared every Big-5 actual against "135×8 @None" and
+     `rpe_flag` returned `"none"` for every lift, every week, all block. W4's pull-up @9.5 against
+     an @8.5 cap was caught **only** because the LLM narrator reads the prescription *notes*. A
+     deterministic check that a rule depends on was being covered for by prose. Fixed 11-01 + test.
+   - **An athlete note in Hevy is not state until something writes it down.** The elbow sat in
+     three session notes from 10-20, was narrated once to Telegram on 10-24, and by 11-01 the
+     repo's working summary had degraded to the wrong side, the wrong onset (by five weeks) and
+     the wrong severity — and I then prescribed the exact grip his own note said hurt. **Same
+     failure family as B5's five off-plan movements and B6's +30 lb sumo: anything that only ever
+     existed in a narrated message evaporated.** The fix is structural, not "read more carefully".
+8. **The end-of-block automation has never run.** `draft_next_block` is built, tested, documented —
    and lives in a local scheduler that doesn't exist on this account. B7's start day arrived with no
    draft and no review, and he had to ask. Built ≠ wired.
+
+## 2026-11-01 — B7 designed the day before it started, and three bugs found on the way
+
+He opened with *"Should we plan Block 7? Tomorrow is the first day... Didn't we have any automation
+for reviewing the next block at the end of the previous block?"* Both halves were fair.
+
+**The automation answer: it exists in the repo and had never run once.** `draft_next_block` is built,
+tested and documented, and `scripts/review/README.md` says plainly that it lives in *"the local Claude
+app scheduler"*. No such scheduled task exists on the account, and `git log` on the draft files shows a
+single commit, from a hand-written B04 draft in PR #17. **Built is not wired.**
+
+**And the guard had a bug that made one missed firing permanent.** `evaluate_guard` required
+`geo["week_no"] == target`, but `weekly_metrics.geometry` **clamps** week_no to the block length — so
+from the W5 Sunday onward it can never equal the target again. Even with a working scheduler, one
+missed Sunday meant silence forever. Fixed with a catch-up clause conditioned on the *draft* rather
+than the date, so it keeps firing until a current draft exists and then goes quiet.
+
+**The durable fix is not a better scheduler, it's putting the check where the reliable job is.** New
+`scripts/review/handover.py`, wired into the Saturday weekly review (which runs in GitHub Actions and
+has shipped for months): from the penultimate week it reports whether the next block is drafted and
+whether this block has a review, and **once the block has ended with neither, the job goes red.**
+Replayed against B6 it would have nagged on 10-24 and failed on 10-31. It also catches the thing
+nobody had noticed at all: `next-block-draft.json` had been sitting on **2026-Q3-B04 since July**,
+four blocks stale, and every check that looked at it only ever asked whether the file *existed*.
+
+**Pattern (the third time now, so it's the real one):** B5 lost five off-plan movements, B6 lost a
++30 lb sumo overage and a five-week bilateral elbow problem, and B7's start day arrived empty. In
+every case the signal existed and the thing that was supposed to look at it either didn't run, or
+only inspected what it already intended to change. `hold` meaning "don't rebase" got read as "don't
+look"; a guard that fires on one day got treated as a guard; an existing file got treated as a
+current one. **Write checks that assert the state is right, not that the step was attempted.**

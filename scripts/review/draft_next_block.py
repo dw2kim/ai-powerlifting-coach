@@ -35,6 +35,7 @@ from zoneinfo import ZoneInfo
 from ..hevy.block_report import REPO_ROOT
 from ..notifications import telegram
 from ..sheets.export_block import KG_TO_LBS, export
+from . import handover
 from .weekly_metrics import geometry
 
 TZ = ZoneInfo("America/Toronto")
@@ -63,14 +64,42 @@ def _target_week(block: dict) -> int:
 
 
 def evaluate_guard(today: date_cls, force: bool) -> tuple[bool, dict]:
-    """(proceed, geometry). Proceed when today is the Sunday of the block's penultimate
-    week — the W4 Sunday for a 5-week block — or when forced."""
+    """(proceed, geometry). Proceed on the Sunday of the block's penultimate week — the W4
+    Sunday for a 5-week block — **or on any Sunday after it while the draft is still
+    missing or stale**, or when forced.
+
+    The catch-up clause is not belt-and-braces; it fixes a real bug. The original guard
+    required `geo["week_no"] == target`, and `weekly_metrics.geometry` **clamps** week_no to
+    the block length. So from the W5 Sunday onward week_no can never equal the target again,
+    and a single missed firing became permanent silence: B7's start Monday arrived with no
+    draft, no warning, and the athlete asking where his block was.
+
+    Catch-up is deliberately conditioned on the draft, not on the date. Once a current draft
+    exists this returns False again, so a Sunday during the deload is a clean no-op and the
+    job cannot churn out a second draft over the top of one already under review.
+    """
     block = json.loads(CURRENT_BLOCK.read_text())
     geo = geometry(block, today)
     target = _target_week(block)
-    proceed = force or (today.weekday() == SUNDAY and geo["week_no"] == target)
-    geo["target_week"] = target
-    geo["is_sunday"] = today.weekday() == SUNDAY
+    is_sunday = today.weekday() == SUNDAY
+    # Unclamped, so it keeps counting past the end of the block (geometry() does not).
+    start = date_cls.fromisoformat(block["start_date"])
+    true_week = (today - start).days // 7 + 1
+    draft_state, draft_id = handover.draft_status(block.get("block_id"))
+    on_target = is_sunday and true_week == target
+    catching_up = is_sunday and true_week > target and draft_state != "current"
+    proceed = force or on_target or catching_up
+    geo.update({
+        "target_week": target,
+        "is_sunday": is_sunday,
+        "true_week_no": true_week,
+        "draft_status": draft_state,
+        "draft_block_id": draft_id,
+        "reason": ("forced" if force and not (on_target or catching_up)
+                   else "on-target W%d Sunday" % target if on_target
+                   else "catch-up: past W%d and the draft is %s" % (target, draft_state)
+                   if catching_up else "not due"),
+    })
     return proceed, geo
 
 
