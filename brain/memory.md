@@ -943,3 +943,35 @@ quietly does more sets than written at the right RPE, the plan is what's off. Wh
 he is. The @8 stop was the real fix for the W1–W2 accessory effort, and it held. Light-week rest is now
 in the push tooling (`is_light_week`). **B7 note:** the 10-12 retro proposed no calibration week after
 a deload. If B7's W1 is a working week, set `"light": false` on its phase or the primaries push at 1:00.
+
+## Block 6 retrospective (2026-Q4-B06, completed 2026-10-30) — see `reviews/2026-Q4-B06.md`
+
+**Verdict:** the squat came back (401.5 → 478.5 e1RM, ~450 → ~515 RPE-adjusted) and nothing else the
+block was supposed to watch got watched.
+
+**Durable patterns, worth more than the numbers:**
+
+1. **"Floor + work up to @8 + a lid" is the format that works on this athlete.** Squat W4: given
+   415 → ≤455, stop at @8, he produced 435×3 @7.5. No breach, no under-reach. Third confirmation
+   (B5 bench W4, B6 squat W4). Use it for every non-axial primary.
+2. **…except the pull-up, where a range re-opens the drift.** A hard @8 stop held clean for two
+   blocks. The moment 10-12 relaxed it to "@8.5, range to +100", W4 went **@9.5** and the W5 *deload*
+   top went @8.5. `cap-is-a-target` is now explicitly **suspended for the pull-up**.
+3. **A `hold` means "don't rebase", and it got read as "don't look".** Sumo ran +10/+20/+30 over a
+   written fixed band for five weeks and no weekly review flagged it, because `reconcile_loads`
+   skips held lines entirely. Same blind-spot family as B5's five off-plan movements: the system
+   only inspects what it intends to change.
+4. **The gate was the block's load-bearing wall and it got 1 reading in 10.** Every axial decision
+   in B6 — the retired ladder, the sumo climb — was made with no back-check input. The override was
+   still the right call (the ladder was reading him low), but it was right by luck, not by signal.
+   **B7 is the heavy-sumo block, so this stops being a discipline note and becomes a design constraint.**
+5. **Same stimulus, same number.** Comp bench logged 275×2 @8.5 in B5 and *275×2 @8.5* in B6 — the
+   identical set seven weeks apart, after zero secondary rotations and a third block of Spoto + CGB.
+   The 10-12 retro said bench and pull-up needed a new stimulus; B6 didn't give them one. When a lift
+   is flat for four blocks, change the input, not the load.
+6. **The make-up record answered its own question.** W3 and W4 each shed three accessories, always
+   the last slot written on D1/D3/D4. The bedtime fix didn't clear it. 19–21 sets/day doesn't fit
+   60 minutes. He won't cut exercises — so pair them (supersets on the tail slots).
+7. **The end-of-block automation has never run.** `draft_next_block` is built, tested, documented —
+   and lives in a local scheduler that doesn't exist on this account. B7's start day arrived with no
+   draft and no review, and he had to ask. Built ≠ wired.
