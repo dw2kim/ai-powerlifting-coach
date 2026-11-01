@@ -129,6 +129,18 @@ blind). User accepts and proceeds under the rule below. This **overrides** the p
 
 ## Lower back — graded return; B5 W5 athlete-directed 365 squat ceiling
 
+**2026-11-01 — B7 runs HEAVY SUMO, opened conservatively. Two clean unmedicated checks on file.**
+At the B6 review the athlete reported **2026-10-26 (squat) `fine`** and **2026-10-30 (sumo) `fine`** —
+the first two clean unmedicated rows since the medication course ended ~Sep 30, and the condition
+`masked-pain-load-cap` named for lifting the medication-window cap. B6 closed with **squat 435×3 @7.5**
+and **sumo 315×3 @6**, no flare, no leg symptoms, no escalation tripped.
+- **B7 sumo: opens 345** (the `sumo-back-cap` band floor), **405 is the hard ceiling** — unchanged and
+  durable. Each rung gated on the next-morning check. Chosen by the athlete 2026-11-01 over a more
+  aggressive 365 open, explicitly *because* the clinic has not been told anything.
+- **B7 squat: moderate**, fixed band, no peak (`alternating-axial-emphasis`).
+- ⚠️ **Still not a clinical clearance.** The clinic has never been told the loads — **six blocks owed**
+  — and there is **no appointment on file.** The conservative sumo open is the price of that.
+
 **2026-10-18 — squat's graded return ended, athlete's call.** After B6 W3's 415×3 @7, W4 works up to @8
 from a 415 floor, lid 455 (`brain/current-block.md` → Amendments). **Not a clinical clearance.** The
 clinic has never been told the loads. Hard stops unchanged. Sumo stays the moderate lift.
@@ -198,7 +210,10 @@ within 24 h, or two consecutive `sore` axial checks → axial work stops, back t
 
 **Open questions for the next visit** *(raised 2026-09-22, trimmed 2026-09-23)*:
 - [ ] **Is there a next appointment, and does the injection series continue past 2026-09-11?**
-- [ ] **Tell him you are squatting and deadlifting again, and at what weight.** Fourth block owed.
+- [ ] **Tell him you are squatting and deadlifting again, and at what weight.** **Sixth block owed as of
+  2026-11-01** — the numbers to say out loud are **squat 435×3** and **sumo 315×3**, and B7 takes sumo to
+  345–405. He prescribed a muscle relaxant to someone doing this.
+- [ ] **NEW 2026-11-01 — mention the right elbow** (pain on flexion, see the Right elbow section).
 - [ ] **Why pregabalin?** Nerve component being treated, or a low-dose adjunct?
 - [ ] Is there a clearance to progress axial load past 365 squat / 295 sumo, and on what evidence?
 - [ ] Confirm the steroid reasoning — what exactly was the concern, so the record is right.
@@ -454,6 +469,67 @@ the plan as written rather than reduce further or stop. **This is his call and i
       only, no top set). Thu D3 tempo squat (6am) still precedes the shot — fine.
   - **Avoid heavy squat / deadlift in the ~24–72 h *after* an injection** (local soreness/flare,
     then relief builds over days). **Confirm the exact heavy-lifting window with the doctor.**
+
+## Right elbow — NEW, 2026-10-30 · ⚠️ symptom only, no clinician has seen it
+
+**Athlete's words (reported with the B6 W5 session, 2026-10-30):** *"right elbow painful on bend"* —
+and he **widened his pull-up grip to cope.** **Confirmed 2026-11-01 at the B6 review: still there, mild.**
+
+**This is a symptom report, not a clinical finding.** No exam, no imaging, no clinician involved. Recorded
+here because it constrains a Big-5 lift, not because anything has been diagnosed. Nothing below is a
+diagnosis.
+
+### The three things, kept apart
+
+| | |
+|---|---|
+| **Clinical fact** | **None.** Nobody has looked at it. |
+| **Athlete's report** | Right elbow, pain **on bend** (flexion), onset on/around 2026-10-30, mild and persisting two days later. Compensated by widening pull-up grip. |
+| **Coach's read** | Pain on elbow flexion in someone who does weighted pull-ups and concentration curls points at **loaded-flexion tendon irritation** (the common ones are medial — the flexor/pronator origin — or distal biceps). Benign and self-limiting *if* the load comes off it now; the way it becomes a months-long problem is training through it. **Widening the grip is a compensation, not a fix** — it moves the load, it doesn't reduce it. |
+
+### Where the load came from, which is the part worth noticing
+
+The session it appeared in was a **deload week written at @6**, and the pull-up top set went
+**BW+50×4 @8.5.** The week before, W4 ran **BW+95×3 @9.5 against an @8.5 written cap.** So the two
+heaviest-effort pull-up sessions of the block were the last two, one of which was supposed to be easy.
+An elbow showing up at the end of that is not a coincidence, and it is the second cost of the same
+RPE drift the B6 review flags.
+
+### ❓ Unconfirmed — ask him, do not record as fact
+
+- [ ] **Where exactly?** Inside of the elbow (medial), outside (lateral), or front/crease? Point to it.
+- [ ] **Does it hurt outside the gym** — carrying, opening a door, a full bend with no load?
+- [ ] **Did it really start 10-30**, or had it been building through W3–W4 unreported?
+- [ ] Any swelling, clicking, or loss of full straightening?
+- [ ] Does it hurt on **dips** (elbow extension under load) and **curls**, or only on pulling?
+
+### Training restriction — in force 2026-11-02 (B7 W1), expiry: **symptom-free, or a clinician's call**
+
+Per `clinical-override`'s corollary — *write the light numbers down, "be careful" is not a restriction*:
+
+1. **Weighted Pull-up stays in the block but opens low and is capped by *absolute load*, not RPE.**
+   A painful tendon is exactly the case where an RPE target doesn't protect the structure — he will
+   rate the set off how the lats feel. B7 writes fixed loads.
+2. **Grip change is written into the plan, not left to the morning:** neutral grip where the gym has a
+   neutral bar, otherwise the wider pronated grip he adopted himself. Both reduce the flexor/pronator
+   demand versus a narrow supinated or close pronated grip.
+3. **Hard stop — pull-up: any pain *during* a set ends the exercise for the day.** Not "finish the
+   set", not "drop a rep". Rack it. Report it the same day.
+4. **Direct elbow-flexion accessories come off D2 for the block.** Concentration Curl is the obvious
+   one — biceps gets its dose from the pulling work while this settles (`whole-body-every-day` is
+   satisfied by the row/pull-down slots).
+5. **Dips are NOT restricted** — elbow *extension* under load, a different tissue, and dip is the one
+   lift making clean progress. But it is on the question list above: if dips hurt it too, that changes
+   the read and the plan.
+6. **Two-session rule:** if the pull-up produces pain in **two consecutive sessions** at the written
+   loads, the lift comes out and is replaced with a lat/mid-back movement for the rest of the block,
+   and he books it in. That is a hard stop, not a "reduce".
+
+### For the next clinic visit
+
+Add to the question list: **mention the elbow.** He is already going in owed a conversation about
+squatting 435 and pulling 315 (six blocks). An elbow is a cheap thing to get looked at in a visit
+that is happening anyway, and it is the kind of thing that gets expensive if it waits.
 
 ## Left ankle — RESOLVED (2026-07-11)
 - Mild left-ankle swelling appeared ~week of 2026-07-06 (no mechanism) and destabilized the squat

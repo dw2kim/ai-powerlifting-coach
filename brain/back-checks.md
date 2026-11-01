@@ -81,3 +81,5 @@ _The check is the morning after the session date. Newest at the bottom._
 | 2026-09-22 | squat | tight | MEDICATED ROW - athlete on baclofen 10mg BID + pregabalin 25mg BID. Reported 'a little tight, almost fine' (2026-09-23) - ambiguous, rounds down to tight per standing rule. First check after Korea; session was off-plan squat 275/245/245x3. NOT comparable to the four unmedicated rows. |
 | 2026-09-25 | sumo | fine | medicated (baclofen+pregabalin); athlete: 'seems to be fine eventually' — reported Sep 27 |
 | 2026-09-28 | squat | fine | medicated (baclofen course ends ~Sep 30); reported Oct 2 |
+| 2026-10-26 | squat | fine | Reported 2026-11-01 at the B6 review. Unmedicated (course ended ~Sep 30). Squat 335x3 @6 deload. |
+| 2026-10-30 | sumo | fine | Reported 2026-11-01 at the B6 review. Unmedicated. Sumo 245x3 deload. Second clean unmedicated row - unlocks B7 sumo opening at the 345 band floor. |
