@@ -123,6 +123,28 @@ deload and finalized before the new block starts. W5 is a deload — it produces
 design-relevant data, so W1–W4 actuals are the inputs and drafting at end-of-W4 is correct.
 The draft is **provisional**: never auto-applied to `current-block.*`, never pushed to Hevy.
 
+## ⚠️ Status (2026-11-01): this has never actually run
+
+Stated plainly because the docs below describe an intent, not a working system. On 2026-11-01 the
+athlete asked why nothing had drafted B7 — which was due to start the next morning. Two defects:
+
+1. **Nowhere runs it.** The note at the bottom says the job lives in "the local Claude app
+   scheduler". No such scheduled task exists on the account, and `git log` on
+   `brain/next-block-draft.{md,json}` shows **one** commit ever — a hand-written B04 draft from
+   PR #17 in August. The file then sat on `2026-Q3-B04` until November, four blocks stale.
+2. **The guard could only ever fire once.** `evaluate_guard` required `week_no == target`, and
+   `weekly_metrics.geometry` **clamps** `week_no` to the block length — so from the W5 Sunday
+   onward it can never match again. One missed firing was permanent silence. **Fixed**: a
+   catch-up clause now proceeds on *any* Sunday past the target while the draft is missing or
+   stale, and stops once a current draft exists.
+
+**The safety net does not depend on any of this.** `handover.py` runs inside the **Saturday weekly
+review** — a GitHub Actions job that has shipped every week for months. From the penultimate week it
+reports whether the next block is drafted and whether the current block has a review, and **once the
+block has ended with neither, the job fails red.** If the draft routine never runs again, the
+handover check still catches it. Treat the pipeline below as the nice path and the handover check as
+the one that's load-bearing.
+
 ## Why a routine, not a pure cron
 
 The drafting itself is the `designing-training-block` skill (LLM work — retrospect,
@@ -184,10 +206,12 @@ The Sheet is created by a Google **service account** (so the routine needs no in
 
 `gspread` + `google-auth` are declared in `pyproject.toml` — `pip install -e .` picks them up.
 
-> **Where this runs:** the draft job lives in the **local Claude app scheduler** (the
+> **Where this runs:** the draft job was *intended* for the **local Claude app scheduler** (a
 > `next-block-draft` task), not GitHub Actions — step 2 runs the `designing-training-block`
-> *skill*, which needs Claude. So `GOOGLE_SA_JSON` as a **local file path** is correct; the
-> key file stays on your Mac and never goes in git.
+> *skill*, which needs Claude. **See the status note at the top: that task does not exist and the
+> job has never run.** If it is ever set up there, `GOOGLE_SA_JSON` as a **local file path** is
+> correct and the key file stays on the Mac. Until then the end-of-block gate is `handover.py`
+> inside the Saturday review, and the review + design are run by hand in a session.
 >
 > If you ever run any of this in **GitHub Actions** instead, a local path is meaningless on
 > the runner. Store the **JSON content** (not a path) as a GitHub secret and pass it through:

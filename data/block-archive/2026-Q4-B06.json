@@ -1,0 +1,3614 @@
+{
+  "block_id": "2026-Q4-B06",
+  "start_date": "2026-09-28",
+  "weeks": 5,
+  "summary": {
+    "goal": "Squat-heavy block, sumo moderate (alternating-axial-emphasis). The squat climbs a gated ladder, 315 -> 365 -> 385 -> 405, where each floor is unlocked by a FINE morning back check, and W2-W4 carry a range above the floor up to a hard ceiling (385 / 405 / 435). Bench, pull-up and dip keep strive waves with staggered peaks: dip in W3, bench and pull-up in W4. W5 deloads.",
+    "changes": [
+      "SQUAT floor -> range -> ceiling (athlete, 2026-09-27): W1 315x3 fixed (still on baclofen). W2 365 up to 385, W3 385 up to 405, W4 405 working up to @8, ceiling 435. The range is earned on the day: last check FINE, off meds with a clean unmedicated check, last week's top <=@7.5, crisp warm-ups. Next week's floor never moves with the range. Above the ceiling forfeits the next rung.",
+      "SUMO re-set (athlete, 2026-09-27): 255 / 265 / 275 / 285 / 235, triples x3 @6, +10 a week, each step gated on the sumo back check. It stays under B5's 295 so the squat peaks alone in W4. B7 is the heavy-sumo block.",
+      "Comp bench W4 is 'work up to @8: 275-285x2' (cap-is-a-target); it holds at 255 in W3 so it doesn't peak with the dip.",
+      "Dip peaks in W3 (work up to @8: BW+105-110x3) and holds in W4. Pull-up peaks in W4 with a hard stop at @8 (BW+90-95x3).",
+      "Squat and deadlift secondary pools are fully Blocked - medical, so there is no squat or sumo secondary. Spoto (D4) and CGB (D3) are held.",
+      "Squat backoffs are fours, not fives (4-4-4-3-3 sets), keyed to the floor."
+    ],
+    "accessory_changes": [
+      "WHOLE-BODY EVERY DAY (athlete, 2026-09-24): D1 + Iso-Lateral Row (Machine) 125 -> 130 per arm (a pull on Monday); D3 + Leg Extension 130 -> 140 (lower body on Thursday).",
+      "ROTATED: DB Shoulder Press -> Single Arm Landmine Press, plates-only floor 50 lb (athlete, 2026-09-27; 25 was too light).",
+      "EXPANSION: Chest Fly (Machine) on D1, chest isolation rather than a fifth press.",
+      "BACK after the medication course: Bulgarian Split Squat (D4). MOVED: Hip Thrust D3 -> D2, off the day before sumo.",
+      "DROPPED: Leg Press and Weighted Back Extension. STILL OUT: Incline DB Press, all overhead barbell work, upright row.",
+      "Core every day, a different pattern each day: Side Plank, Pallof, Dead Bug, Bird Dog."
+    ]
+  },
+  "days": [
+    {
+      "label": "D1",
+      "focus": "Squat + Comp Bench",
+      "weekday": "Mon"
+    },
+    {
+      "label": "D2",
+      "focus": "WPU + Posterior Chain + Shoulders",
+      "weekday": "Tue"
+    },
+    {
+      "label": "D3",
+      "focus": "Dip + Upper Back",
+      "weekday": "Thu"
+    },
+    {
+      "label": "D4",
+      "focus": "Sumo (moderate) + Spoto",
+      "weekday": "Fri"
+    }
+  ],
+  "week_phases": {
+    "1": {
+      "label": "CALIBRATION",
+      "description": "Squat 315x3 fixed (still on baclofen until ~Sep 30). Sumo 255. Every lift re-enters under its old working load."
+    },
+    "2": {
+      "label": "ESTABLISH",
+      "description": "Squat floor 365, range to 385 if the day earns it. Sumo 265, gated on the sumo check."
+    },
+    "3": {
+      "label": "PUSH",
+      "description": "Squat floor 385, range to 405. DIP PEAK (work up to @8). Bench holds at 255."
+    },
+    "4": {
+      "label": "PEAK",
+      "description": "Squat floor 405, work up to @8, ceiling 435. Bench and pull-up peak (work up to @8). Dip holds. Sumo 285, still moderate."
+    },
+    "5": {
+      "label": "DELOAD",
+      "description": "Loads drop, @6. Squat 275, sumo 235."
+    }
+  },
+  "prescriptions": [
+    {
+      "week": 1,
+      "day": "D1",
+      "exercises": [
+        {
+          "name": "Low-bar Squat",
+          "tier": "primary",
+          "notes": "W1 CALIBRATION — fixed, no rung claimed. You are still on baclofen today (course ends ~Sep 30): baclofen lowers muscle tone, and tone is the brace. Nothing heavier than written. SQUAT FIRST on D1 — never squat heavy pre-fatigued. Backoffs 4x4 @ 275: crisp, every set started fresh. If the rung holds, the backoffs hold with it.",
+          "display_load": "315",
+          "hold": true,
+          "hold_reason": "Squat is on axial-return-ladder: every rung is an absolute load gated on the prior squat day's next-morning back check. Written below the log on purpose; the sync must not rebase it.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 102.05840462301894,
+              "reps": 3
+            },
+            {
+              "type": "normal",
+              "weight_kg": 142.88176647222653,
+              "reps": 3,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 124.73805009480093,
+              "reps": 4,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 124.73805009480093,
+              "reps": 4,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 124.73805009480093,
+              "reps": 4,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 124.73805009480093,
+              "reps": 4,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Comp Bench",
+          "tier": "primary",
+          "notes": "W1 calibration. Top @7. PRIORITY LIFT — strive. ≤3/10 shoulder pain, always. Arch moderates before load does if the back complains.",
+          "display_load": "240",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 83.91468824559335,
+              "reps": 3
+            },
+            {
+              "type": "normal",
+              "weight_kg": 108.86229826455354,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 92.98654643430615,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 92.98654643430615,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 92.98654643430615,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 92.98654643430615,
+              "reps": 5,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Tricep Pushdown",
+          "tier": "accessory",
+          "notes": "Triceps / lockout carryover. D1 accessories stay off Tuesday's pull.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "name": "Chest Fly (Machine)",
+          "tier": "accessory",
+          "notes": "NEW (expansion): chest isolation — the program only hits chest through presses, and you asked for chest work. A FLY, not a press, so no extra pressing exposure. SHOULDER RULE: stop the handles before your elbows travel behind your torso — the stretched bottom loads the anterior capsule where the subscapularis tear is. Last logged 115×11 (Dec 2025, nine months ago) — re-entry below it.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 45.35929094356398,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 45.35929094356398,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 45.35929094356398,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "First exposure / long-gap re-entry — deliberately under any log anchor until two sessions set a real one."
+        },
+        {
+          "name": "Iso-Lateral Row (Machine)",
+          "tier": "accessory",
+          "notes": "PULL FOR MONDAY (whole-body-every-day, FB 2026-09-24). PER ARM, one arm at a time (as you log it: 115x12 on 09-25). Chest-supported machine: zero lumbar load. Aim for mid-back, not lats: elbows about 45° out, squeeze the shoulder blades, and stop there. D1 must not pre-fatigue Tuesday's pull-up (accessory-day-interference), so 125 sits under your 145 median on purpose. If Tuesday's pull-up backoffs suffer, this is cut first. FALLBACK if the machine is taken: Chest Supported Incline Row (DB) 45/hand x12. FORBIDDEN fallback: no T-bar, barbell or bent-over row (erector load).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 56.69911367945497,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 56.69911367945497,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 56.69911367945497,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Deliberately under the 145 median: D1 row must not pre-fatigue D2 weighted pull-up."
+        },
+        {
+          "name": "Side Plank",
+          "tier": "core",
+          "notes": "Anti-lateral-flexion. 30–45 s per side.",
+          "sets": [
+            {
+              "type": "duration",
+              "weight_kg": 0.0,
+              "duration_seconds": 40,
+              "rpe": 7
+            },
+            {
+              "type": "duration",
+              "weight_kg": 0.0,
+              "duration_seconds": 40,
+              "rpe": 7
+            },
+            {
+              "type": "duration",
+              "weight_kg": 0.0,
+              "duration_seconds": 40,
+              "rpe": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "day": "D2",
+      "exercises": [
+        {
+          "name": "Weighted Pull-up",
+          "tier": "primary",
+          "notes": "Straight crisp reps. Backoffs 3.",
+          "display_load": "BW+60",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 0.45359290943563974,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 20.41168092460379,
+              "reps": 3
+            },
+            {
+              "type": "normal",
+              "weight_kg": 27.215574566138386,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.41168092460379,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.41168092460379,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.41168092460379,
+              "reps": 5,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Hip Thrust (Smith Machine)",
+          "tier": "accessory",
+          "notes": "MOVED D3→D2: it sat the day before sumo in B5, allowed only because sumo was 225. Tuesday is unconstrained (Wed rest).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 102.05840462301894,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 102.05840462301894,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 102.05840462301894,
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "name": "Seated Leg Curl",
+          "tier": "accessory",
+          "notes": "Hamstrings. Log anchor 115.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 47.62725549074217,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 47.62725549074217,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 47.62725549074217,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "name": "Single Arm Landmine Press (Barbell)",
+          "tier": "accessory",
+          "notes": "50 lb of PLATES on the sleeve, not counting the bar, per arm. Floor 50 per the athlete (FB 2026-09-27): 25 was too light. Press to a stop just short of lockout if the front of the shoulder talks. RPE cap @7: this slot ran to @10 as the DB press in B5.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "reps": 10
+            }
+          ],
+          "hold": true,
+          "hold_reason": "First exposure / long-gap re-entry — deliberately under any log anchor until two sessions set a real one."
+        },
+        {
+          "name": "Lateral Raise (Dumbbell)",
+          "tier": "accessory",
+          "notes": "Lateral delts. Raise to shoulder height, not above.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 13.607787283069193,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 13.607787283069193,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 13.607787283069193,
+              "reps": 15
+            }
+          ]
+        },
+        {
+          "name": "Pallof Press",
+          "tier": "core",
+          "notes": "Anti-rotation. 12 per side.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 11.339822735890994,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 11.339822735890994,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 11.339822735890994,
+              "reps": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "day": "D3",
+      "exercises": [
+        {
+          "name": "Weighted Dip",
+          "tier": "primary",
+          "display_load": "BW+70",
+          "notes": "STOP ABOVE THE PINCH — depth is the dip variable ahead of load; the bursitis and AC changes sit in the space that closes at the bottom.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 0.45359290943563974,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 15.87575183024739,
+              "reps": 5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 31.75150366049478,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 31.75150366049478,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 31.75150366049478,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 31.75150366049478,
+              "reps": 5,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "CGB",
+          "tier": "secondary",
+          "notes": "185 is your ACTUAL load (you ran it flat all of B5) — written where you lift. Hard @7. Lockout work.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.91468824559335,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.91468824559335,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.91468824559335,
+              "reps": 5,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Lat Pulldown",
+          "tier": "accessory",
+          "notes": "Lats. Seated, no axial load.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 74.84283005688056,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 74.84283005688056,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 74.84283005688056,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "name": "Reverse Pec Deck",
+          "tier": "accessory",
+          "notes": "LOAD-BEARING, NOT FILLER: posterior cuff is intact behind two torn anterior tendons — this shares load off them.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 49.895220037920375,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 49.895220037920375,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 49.895220037920375,
+              "reps": 15
+            }
+          ]
+        },
+        {
+          "name": "Face Pull",
+          "tier": "accessory",
+          "notes": "Same job as the pec deck. Never the thing you cut when the clock runs out.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 15
+            }
+          ]
+        },
+        {
+          "name": "Leg Extension (Machine)",
+          "tier": "accessory",
+          "notes": "LOWER BODY FOR THURSDAY (whole-body-every-day, FB 2026-09-24). This day had none, which is why you added a 415 leg press on 09-24. Leg extension is the lowest-cost quad work available: no spinal load, no loaded hip flexion, and no adductor or lat cost for Friday's sumo (accessory-day-interference). Held a notch under your 140 median because Friday also has BSS. FALLBACK if the machine is taken: Leg Press 270x12, ROM-capped (stop before the hips roll off the pad). FORBIDDEN fallback: no squat pattern, no hack squat, no goblet squat.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 58.96707822663317,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 58.96707822663317,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 58.96707822663317,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "At/under the 140 median: D3 quad work must not pre-fatigue D4 (sumo + BSS)."
+        },
+        {
+          "name": "Dead Bug",
+          "tier": "core",
+          "notes": "Anti-extension. 10 per side.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "day": "D4",
+      "exercises": [
+        {
+          "name": "Sumo Deadlift",
+          "tier": "primary",
+          "display_load": "255",
+          "hold": true,
+          "hold_reason": "Moderate lift this block (alternating-axial-emphasis): a gentle +10/week climb set by the athlete (FB 2026-09-27), gated on the sumo back check. Written below the log on purpose; the sync must not rebase it.",
+          "notes": "255x3 x3 @6: a small step up from Friday's bridge 235 @5. The climb is +10/week to 285 in W4, deliberately staying under B5's 295: this is the MODERATE lift while the squat peaks. A fixed load, not a floor: no range, no autoregulating up (the squat gets the range this block, the sumo gets it in B7). Any rounding or bar-speed loss racks it. Back check the next morning.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 102.05840462301894,
+              "reps": 2
+            },
+            {
+              "type": "normal",
+              "weight_kg": 115.66619190608813,
+              "reps": 3,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 115.66619190608813,
+              "reps": 3,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 115.66619190608813,
+              "reps": 3,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Spoto Bench Press",
+          "tier": "secondary",
+          "notes": "Third block running — the one lift that progressed every session of B5. @7.5 ceiling; it is support for Monday, not a test.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 106.59433371737533,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 106.59433371737533,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 106.59433371737533,
+              "reps": 4,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Bulgarian Split Squat",
+          "tier": "accessory",
+          "notes": "BACK — it was declined during the baclofen course (muscle relaxant + single-leg balance under load). The course ends Sep 30; this is Oct 2. 40/hand re-entry, then your 50.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "name": "Chest Supported Incline Row",
+          "tier": "accessory",
+          "notes": "Mid-back. Chest-supported = zero lumbar load. FORBIDDEN fallback: no barbell bent-over row.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "name": "Seated Calf Raise",
+          "tier": "accessory",
+          "notes": "Corrected anchor — 90–100, not the 155–175 written off a 2023 median.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 40.82336184920758,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 40.82336184920758,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 40.82336184920758,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "name": "Concentration Curl",
+          "tier": "accessory",
+          "notes": "Direct biceps.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "name": "Bird Dog",
+          "tier": "core",
+          "notes": "Spine-neutral. 10 per side.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "day": "D1",
+      "exercises": [
+        {
+          "name": "Low-bar Squat",
+          "tier": "primary",
+          "notes": "FLOOR 365x3 (the app shows the floor) · RANGE 365–385 · CEILING 385, hard. The floor is gated: 365 ONLY IF the morning after last week's squat was logged FINE. 'tight', or NO CHECK LOGGED -> repeat last week's floor. THE RANGE ABOVE THE FLOOR IS EARNED ON THE DAY, only if ALL hold: (a) last squat's morning check logged FINE; (b) off the meds with a clean unmedicated check on file; (c) last week's top triple was <=@7.5; (d) warm-up bar speed is crisp. Any one missing -> take the floor and stop there. Jump in 10s from the floor, one triple per jump, and stop at the first triple that reads @7.5 or the ceiling, whichever comes first. Above 385 forfeits next week's rung. Top triple harder than @8 -> next week holds. Next week's floor does NOT move with what you hit today. SQUAT FIRST on D1. Backoffs @ 295 stay keyed to the FLOOR, not to the top you hit: crisp, every set started fresh.",
+          "display_load": "365–385",
+          "hold": true,
+          "hold_reason": "Squat is on axial-return-ladder: every rung is an absolute load gated on the prior squat day's next-morning back check. Written below the log on purpose; the sync must not rebase it.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 102.05840462301894,
+              "reps": 5
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 142.88176647222653,
+              "reps": 2
+            },
+            {
+              "type": "normal",
+              "weight_kg": 165.5614119440085,
+              "reps": 3,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 133.80990828351372,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 133.80990828351372,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 133.80990828351372,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 133.80990828351372,
+              "reps": 4,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Comp Bench",
+          "tier": "primary",
+          "notes": "Top @7.5. Priority lift, strive posture. Arch moderates before load does if the back complains.",
+          "display_load": "250",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 83.91468824559335,
+              "reps": 3
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 102.05840462301894,
+              "reps": 2
+            },
+            {
+              "type": "normal",
+              "weight_kg": 113.39822735890993,
+              "reps": 3,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 97.52247552866254,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 97.52247552866254,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 97.52247552866254,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 97.52247552866254,
+              "reps": 5,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Tricep Pushdown",
+          "tier": "accessory",
+          "notes": "Triceps / lockout carryover. D1 accessories stay off Tuesday's pull.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 24.947610018960187,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.947610018960187,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.947610018960187,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "name": "Chest Fly (Machine)",
+          "tier": "accessory",
+          "notes": "NEW (expansion): chest isolation — the program only hits chest through presses, and you asked for chest work. A FLY, not a press, so no extra pressing exposure. SHOULDER RULE: stop the handles before your elbows travel behind your torso — the stretched bottom loads the anterior capsule where the subscapularis tear is. Last logged 115×11 (Dec 2025, nine months ago) — re-entry below it.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 45.35929094356398,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 45.35929094356398,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 45.35929094356398,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "First exposure / long-gap re-entry — deliberately under any log anchor until two sessions set a real one."
+        },
+        {
+          "name": "Iso-Lateral Row (Machine)",
+          "tier": "accessory",
+          "notes": "RECALIBRATED from W1 (125/arm ran @7.5/8.5). PER ARM, one arm at a time. Chest-supported, zero lumbar load. Mid-back, not lats: Tuesday is the weighted pull-up, so finish around @7.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 52.16318458509857,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.16318458509857,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.16318458509857,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        },
+        {
+          "name": "Side Plank",
+          "tier": "core",
+          "notes": "Anti-lateral-flexion. 30–45 s per side.",
+          "sets": [
+            {
+              "type": "duration",
+              "weight_kg": 0.0,
+              "duration_seconds": 40,
+              "rpe": 7
+            },
+            {
+              "type": "duration",
+              "weight_kg": 0.0,
+              "duration_seconds": 40,
+              "rpe": 7
+            },
+            {
+              "type": "duration",
+              "weight_kg": 0.0,
+              "duration_seconds": 40,
+              "rpe": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "day": "D2",
+      "exercises": [
+        {
+          "name": "Weighted Pull-up",
+          "tier": "primary",
+          "notes": "Straight crisp reps. Backoffs 3.",
+          "display_load": "BW+75",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 0.45359290943563974,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 20.41168092460379,
+              "reps": 3
+            },
+            {
+              "type": "normal",
+              "weight_kg": 34.01946820767298,
+              "reps": 4,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.947610018960187,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.947610018960187,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.947610018960187,
+              "reps": 5,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Hip Thrust (Smith Machine)",
+          "tier": "accessory",
+          "notes": "MOVED D3→D2: it sat the day before sumo in B5, allowed only because sumo was 225. Tuesday is unconstrained (Wed rest).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 102.05840462301894,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 102.05840462301894,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 102.05840462301894,
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "name": "Seated Leg Curl",
+          "tier": "accessory",
+          "notes": "Hamstrings. Log anchor 115.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 52.16318458509857,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.16318458509857,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.16318458509857,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "name": "Single Arm Landmine Press (Barbell)",
+          "tier": "accessory",
+          "notes": "RECALIBRATED from W1 (45x10 ran @8/9/9.5): plates per arm. W3/W4 go to 40 ONLY if last week's last set was <=@7, else stay 35. Shoulder slot, RPE cap @7. Press to a stop just short of lockout if the front of the shoulder talks.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 10
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        },
+        {
+          "name": "Lateral Raise (Dumbbell)",
+          "tier": "accessory",
+          "notes": "Lateral delts. Raise to shoulder height, not above.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 15
+            }
+          ]
+        },
+        {
+          "name": "Pallof Press",
+          "tier": "core",
+          "notes": "RECALIBRATED from W1 (25 ran @7.5/8/9). Anti-rotation core, finish around @7. Slow out, hold a beat, slow in.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 9.071858188712795,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 9.071858188712795,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 9.071858188712795,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "day": "D3",
+      "exercises": [
+        {
+          "name": "Weighted Dip",
+          "tier": "primary",
+          "display_load": "BW+85",
+          "notes": "STOP ABOVE THE PINCH — depth is the dip variable ahead of load; the bursitis and AC changes sit in the space that closes at the bottom.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 0.45359290943563974,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 20.41168092460379,
+              "reps": 5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 38.55539730202938,
+              "reps": 5,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 38.55539730202938,
+              "reps": 5,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 38.55539730202938,
+              "reps": 5,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 38.55539730202938,
+              "reps": 5,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "CGB",
+          "tier": "secondary",
+          "notes": "185 is your ACTUAL load (you ran it flat all of B5) — written where you lift. Hard @7. Lockout work.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.91468824559335,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.91468824559335,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.91468824559335,
+              "reps": 5,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Lat Pulldown",
+          "tier": "accessory",
+          "notes": "RECALIBRATED from W1 (165x12 ran @7/8/9.5). Lats, seated, no axial load. Last set should finish around @8, not near failure.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 68.03893641534596,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 68.03893641534596,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 68.03893641534596,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        },
+        {
+          "name": "Reverse Pec Deck",
+          "tier": "accessory",
+          "notes": "RECALIBRATED from W1 (115x15 ran @7/8.5/9.5). LOAD-BEARING, NOT FILLER: the posterior cuff shares load off two torn anterior tendons. Cap @7, never grind it.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 45.35929094356398,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 45.35929094356398,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 45.35929094356398,
+              "reps": 15
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        },
+        {
+          "name": "Face Pull",
+          "tier": "accessory",
+          "notes": "Same job as the pec deck. Never the thing you cut when the clock runs out.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 15
+            }
+          ]
+        },
+        {
+          "name": "Leg Extension (Machine)",
+          "tier": "accessory",
+          "notes": "LOWER BODY FOR THURSDAY (whole-body-every-day, FB 2026-09-24). This day had none, which is why you added a 415 leg press on 09-24. Leg extension is the lowest-cost quad work available: no spinal load, no loaded hip flexion, and no adductor or lat cost for Friday's sumo (accessory-day-interference). Held a notch under your 140 median because Friday also has BSS. FALLBACK if the machine is taken: Leg Press 270x12, ROM-capped (stop before the hips roll off the pad). FORBIDDEN fallback: no squat pattern, no hack squat, no goblet squat.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 61.235042773811365,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 61.235042773811365,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 61.235042773811365,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "At/under the 140 median: D3 quad work must not pre-fatigue D4 (sumo + BSS)."
+        },
+        {
+          "name": "Dead Bug",
+          "tier": "core",
+          "notes": "Anti-extension. 10 per side.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "day": "D4",
+      "exercises": [
+        {
+          "name": "Sumo Deadlift",
+          "tier": "primary",
+          "display_load": "265",
+          "hold": true,
+          "hold_reason": "Moderate lift this block (alternating-axial-emphasis): a gentle +10/week climb set by the athlete (FB 2026-09-27), gated on the sumo back check. Written below the log on purpose; the sync must not rebase it.",
+          "notes": "265x3 x3 @6: a small step up from 255. The climb is +10/week to 285 in W4, deliberately staying under B5's 295: this is the MODERATE lift while the squat peaks. 265 ONLY IF the morning after last week's sumo was logged FINE; tight or no check -> repeat last week's load. A fixed load, not a floor: no range, no autoregulating up (the squat gets the range this block, the sumo gets it in B7). Any rounding or bar-speed loss racks it. Back check the next morning.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 102.05840462301894,
+              "reps": 2
+            },
+            {
+              "type": "normal",
+              "weight_kg": 120.20212100044454,
+              "reps": 3,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 120.20212100044454,
+              "reps": 3,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 120.20212100044454,
+              "reps": 3,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Spoto Bench Press",
+          "tier": "secondary",
+          "notes": "Third block running — the one lift that progressed every session of B5. @7.5 ceiling; it is support for Monday, not a test.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 111.13026281173174,
+              "reps": 3,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 111.13026281173174,
+              "reps": 3,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 111.13026281173174,
+              "reps": 3,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Bulgarian Split Squat",
+          "tier": "accessory",
+          "notes": "BACK — it was declined during the baclofen course (muscle relaxant + single-leg balance under load). The course ends Sep 30; this is Oct 2. 40/hand re-entry, then your 50.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "name": "Chest Supported Incline Row",
+          "tier": "accessory",
+          "notes": "Mid-back. Chest-supported = zero lumbar load. FORBIDDEN fallback: no barbell bent-over row.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 24.947610018960187,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.947610018960187,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.947610018960187,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "name": "Seated Calf Raise",
+          "tier": "accessory",
+          "notes": "Corrected anchor — 90–100, not the 155–175 written off a 2023 median.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 40.82336184920758,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 40.82336184920758,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 40.82336184920758,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "name": "Concentration Curl",
+          "tier": "accessory",
+          "notes": "RECALIBRATED from W1 (40x10 ran @7/8/8.5): hold 40 until it's comfortably @7, then +5 next block.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 10
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        },
+        {
+          "name": "Bird Dog",
+          "tier": "core",
+          "notes": "Spine-neutral. 10 per side.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "day": "D1",
+      "exercises": [
+        {
+          "name": "Low-bar Squat",
+          "tier": "primary",
+          "notes": "FLOOR 385x3 (the app shows the floor) · RANGE 385–405 · CEILING 405, hard. The floor is gated: 385 ONLY IF the morning after last week's squat was logged FINE. 'tight', or NO CHECK LOGGED -> repeat last week's floor. THE RANGE ABOVE THE FLOOR IS EARNED ON THE DAY, only if ALL hold: (a) last squat's morning check logged FINE; (b) off the meds with a clean unmedicated check on file; (c) last week's top triple was <=@7.5; (d) warm-up bar speed is crisp. Any one missing -> take the floor and stop there. Jump in 10s from the floor, one triple per jump, and stop at the first triple that reads @8 or the ceiling, whichever comes first. Above 405 forfeits next week's rung. Top triple harder than @8 -> next week holds. Next week's floor does NOT move with what you hit today. SQUAT FIRST on D1. Backoffs @ 315 stay keyed to the FLOOR, not to the top you hit: crisp, every set started fresh.",
+          "display_load": "385–405",
+          "hold": true,
+          "hold_reason": "Squat is on axial-return-ladder: every rung is an absolute load gated on the prior squat day's next-morning back check. Written below the log on purpose; the sync must not rebase it.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 102.05840462301894,
+              "reps": 5
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 142.88176647222653,
+              "reps": 2
+            },
+            {
+              "type": "normal",
+              "weight_kg": 174.6332701327213,
+              "reps": 3,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 142.88176647222653,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 142.88176647222653,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 142.88176647222653,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 142.88176647222653,
+              "reps": 4,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Comp Bench",
+          "tier": "primary",
+          "notes": "W3 PUSH — floor 255×3, range to 265 (retro 10-12: the W3 'hold' is gone). Hit 255×3; if it reads ≤@7 and the shoulder is ≤3/10, add 10 and take one more triple. Stop at @7.5 or 265, whichever comes first. Backoffs 220×4 ×4 stay keyed to the floor. ≤3/10 shoulder pain, always. Arch moderates before load does if the back complains.",
+          "display_load": "255–265",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 83.91468824559335,
+              "reps": 3
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 102.05840462301894,
+              "reps": 2
+            },
+            {
+              "type": "normal",
+              "weight_kg": 115.66619190608813,
+              "reps": 3,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 99.79044007584075,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 99.79044007584075,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 99.79044007584075,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 99.79044007584075,
+              "reps": 4,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Tricep Pushdown",
+          "tier": "accessory",
+          "notes": "Triceps / lockout carryover. D1 accessories stay off Tuesday's pull. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 24.947610018960187,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.947610018960187,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "name": "Chest Fly (Machine)",
+          "tier": "accessory",
+          "notes": "NEW (expansion): chest isolation — the program only hits chest through presses, and you asked for chest work. A FLY, not a press, so no extra pressing exposure. SHOULDER RULE: stop the handles before your elbows travel behind your torso — the stretched bottom loads the anterior capsule where the subscapularis tear is. Last logged 115×11 (Dec 2025, nine months ago) — re-entry below it. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 47.62725549074217,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 47.62725549074217,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "First exposure / long-gap re-entry — deliberately under any log anchor until two sessions set a real one."
+        },
+        {
+          "name": "Iso-Lateral Row (Machine)",
+          "tier": "accessory",
+          "notes": "RECALIBRATED from W1 (125/arm ran @7.5/8.5). PER ARM, one arm at a time. Chest-supported, zero lumbar load. Mid-back, not lats: Tuesday is the weighted pull-up, so finish around @7. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 52.16318458509857,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.16318458509857,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        },
+        {
+          "name": "Side Plank",
+          "tier": "core",
+          "notes": "Anti-lateral-flexion. 30–45 s per side.",
+          "sets": [
+            {
+              "type": "duration",
+              "weight_kg": 0.0,
+              "duration_seconds": 40,
+              "rpe": 7
+            },
+            {
+              "type": "duration",
+              "weight_kg": 0.0,
+              "duration_seconds": 40,
+              "rpe": 7
+            },
+            {
+              "type": "duration",
+              "weight_kg": 0.0,
+              "duration_seconds": 40,
+              "rpe": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "day": "D2",
+      "exercises": [
+        {
+          "name": "Weighted Pull-up",
+          "tier": "primary",
+          "notes": "@8 hard stop. Backoffs 3.",
+          "display_load": "BW+85",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 0.45359290943563974,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 20.41168092460379,
+              "reps": 3
+            },
+            {
+              "type": "normal",
+              "weight_kg": 38.55539730202938,
+              "reps": 3,
+              "rpe": 8
+            },
+            {
+              "type": "normal",
+              "weight_kg": 27.215574566138386,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 27.215574566138386,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 27.215574566138386,
+              "reps": 5,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Hip Thrust (Smith Machine)",
+          "tier": "accessory",
+          "notes": "MOVED D3→D2: it sat the day before sumo in B5, allowed only because sumo was 225. Tuesday is unconstrained (Wed rest). · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 111.13026281173174,
+              "reps": 8
+            },
+            {
+              "type": "normal",
+              "weight_kg": 111.13026281173174,
+              "reps": 8
+            }
+          ]
+        },
+        {
+          "name": "Seated Leg Curl",
+          "tier": "accessory",
+          "notes": "Hamstrings. Log anchor 115. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 52.16318458509857,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.16318458509857,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "name": "Single Arm Landmine Press (Barbell)",
+          "tier": "accessory",
+          "notes": "RECALIBRATED from W1 (45x10 ran @8/9/9.5): plates per arm. W3/W4 go to 40 ONLY if last week's last set was <=@7, else stay 35. Shoulder slot, RPE cap @7. Press to a stop just short of lockout if the front of the shoulder talks. · 2 working sets, stop each at @7 — shoulder slot, the @7 cap stands (retro 10-12).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 10
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        },
+        {
+          "name": "Lateral Raise (Dumbbell)",
+          "tier": "accessory",
+          "notes": "Lateral delts. Raise to shoulder height, not above. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 15
+            }
+          ]
+        },
+        {
+          "name": "Pallof Press",
+          "tier": "core",
+          "notes": "RECALIBRATED from W1 (25 ran @7.5/8/9). Anti-rotation core, finish around @7. Slow out, hold a beat, slow in.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 9.071858188712795,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 9.071858188712795,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 9.071858188712795,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "day": "D3",
+      "exercises": [
+        {
+          "name": "Weighted Dip",
+          "tier": "primary",
+          "display_load": "BW+105–110",
+          "notes": "DIP PEAK — WORK UP TO @8: BW+105–110×3, heaviest triple at or under @8 (PR BW+105×3 @8). Then BW+85×5 ×3. Bench holds this week so the two don't peak together. STOP ABOVE THE PINCH — depth is the dip variable ahead of load; the bursitis and AC changes sit in the space that closes at the bottom.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 0.45359290943563974,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 20.41168092460379,
+              "reps": 5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 47.62725549074217,
+              "reps": 3,
+              "rpe": 8
+            },
+            {
+              "type": "normal",
+              "weight_kg": 38.55539730202938,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 38.55539730202938,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 38.55539730202938,
+              "reps": 5,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "CGB",
+          "tier": "secondary",
+          "notes": "HOLD 185 — dip peaks today. Two peaking presses on one day is how the shoulder flares. Hard @7. Lockout work.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.91468824559335,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.91468824559335,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.91468824559335,
+              "reps": 5,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Lat Pulldown",
+          "tier": "accessory",
+          "notes": "RECALIBRATED from W1 (165x12 ran @7/8/9.5). Lats, seated, no axial load. Last set should finish around @8, not near failure. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 70.30690096252415,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 70.30690096252415,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        },
+        {
+          "name": "Reverse Pec Deck",
+          "tier": "accessory",
+          "notes": "RECALIBRATED from W1 (115x15 ran @7/8.5/9.5). LOAD-BEARING, NOT FILLER: the posterior cuff shares load off two torn anterior tendons. Cap @7, never grind it. · 2 working sets, stop each at @7 — shoulder slot, the @7 cap stands (retro 10-12).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 47.62725549074217,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 47.62725549074217,
+              "reps": 15
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        },
+        {
+          "name": "Face Pull",
+          "tier": "accessory",
+          "notes": "Same job as the pec deck. Never the thing you cut when the clock runs out. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 20.41168092460379,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.41168092460379,
+              "reps": 15
+            }
+          ]
+        },
+        {
+          "name": "Leg Extension (Machine)",
+          "tier": "accessory",
+          "notes": "LOWER BODY FOR THURSDAY (whole-body-every-day, FB 2026-09-24). This day had none, which is why you added a 415 leg press on 09-24. Leg extension is the lowest-cost quad work available: no spinal load, no loaded hip flexion, and no adductor or lat cost for Friday's sumo (accessory-day-interference). Held a notch under your 140 median because Friday also has BSS. FALLBACK if the machine is taken: Leg Press 270x12, ROM-capped (stop before the hips roll off the pad). FORBIDDEN fallback: no squat pattern, no hack squat, no goblet squat. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 61.235042773811365,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 61.235042773811365,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "At/under the 140 median: D3 quad work must not pre-fatigue D4 (sumo + BSS)."
+        },
+        {
+          "name": "Dead Bug",
+          "tier": "core",
+          "notes": "Anti-extension. 10 per side.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "day": "D4",
+      "exercises": [
+        {
+          "name": "Sumo Deadlift",
+          "tier": "primary",
+          "display_load": "275",
+          "hold": true,
+          "hold_reason": "Moderate lift this block (alternating-axial-emphasis): a gentle +10/week climb set by the athlete (FB 2026-09-27), gated on the sumo back check. Written below the log on purpose; the sync must not rebase it.",
+          "notes": "275x3 x3 @6: a small step up from 265. The climb is +10/week to 285 in W4, deliberately staying under B5's 295: this is the MODERATE lift while the squat peaks. 275 ONLY IF the morning after last week's sumo was logged FINE; tight or no check -> repeat last week's load. A fixed load, not a floor: no range, no autoregulating up (the squat gets the range this block, the sumo gets it in B7). Any rounding or bar-speed loss racks it. Back check the next morning.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 102.05840462301894,
+              "reps": 2
+            },
+            {
+              "type": "normal",
+              "weight_kg": 124.73805009480093,
+              "reps": 3,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 124.73805009480093,
+              "reps": 3,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 124.73805009480093,
+              "reps": 3,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Spoto Bench Press",
+          "tier": "secondary",
+          "notes": "Third block running — the one lift that progressed every session of B5. @7.5 ceiling; it is support for Monday, not a test.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 113.39822735890993,
+              "reps": 3,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 113.39822735890993,
+              "reps": 3,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 113.39822735890993,
+              "reps": 3,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Bulgarian Split Squat",
+          "tier": "accessory",
+          "notes": "BACK — it was declined during the baclofen course (muscle relaxant + single-leg balance under load). The course ends Sep 30; this is Oct 2. 40/hand re-entry, then your 50. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "name": "Chest Supported Incline Row",
+          "tier": "accessory",
+          "notes": "Mid-back. Chest-supported = zero lumbar load. FORBIDDEN fallback: no barbell bent-over row. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 24.947610018960187,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.947610018960187,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "name": "Seated Calf Raise",
+          "tier": "accessory",
+          "notes": "Corrected anchor — 90–100, not the 155–175 written off a 2023 median. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 45.35929094356398,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 45.35929094356398,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "name": "Concentration Curl",
+          "tier": "accessory",
+          "notes": "RECALIBRATED from W1 (40x10 ran @7/8/8.5): hold 40 until it's comfortably @7, then +5 next block. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 10
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        },
+        {
+          "name": "Bird Dog",
+          "tier": "core",
+          "notes": "Spine-neutral. 10 per side.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "day": "D1",
+      "exercises": [
+        {
+          "name": "Low-bar Squat",
+          "tier": "primary",
+          "notes": "PEAK — work up to @8. FLOOR 415x3 (the app shows the floor: last Monday's 415 went @7). Climb in 10s, one triple per jump, and STOP at the first triple that reads @8, or at 455, whichever comes first. 455 is your summer working triple: a lid, not a target. From 415 @7, @8 most likely lands 425–435. Take 3 min before the top set. SQUAT FIRST on D1. Backoffs 345x4 x3 @7, keyed to the floor: crisp, every set started fresh. HARD STOPS, unchanged: new or worse leg symptoms, night or rest pain, pain not settling in 24 h -> stop axial work, back to the clinic. Text one word Tuesday morning (fine / tight / sore). It's the record now, not a gate.",
+          "display_load": "415–455",
+          "hold": true,
+          "hold_reason": "Athlete's call 2026-10-18 (FB): the squat's graded return is over. Floor 415 (W3's 415x3 @7), work up to @8, lid 455. The sync never auto-adjusts primaries; the hold records that this is a coaching decision.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 102.05840462301894,
+              "reps": 5
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 142.88176647222653,
+              "reps": 3
+            },
+            {
+              "type": "normal",
+              "weight_kg": 188.2410574157905,
+              "reps": 3,
+              "rpe": 8
+            },
+            {
+              "type": "normal",
+              "weight_kg": 156.4895537552957,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 156.4895537552957,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 156.4895537552957,
+              "reps": 4,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Comp Bench",
+          "tier": "primary",
+          "notes": "W4 PEAK — work up to @8: floor 275×2, range to 295×2. Climb in 10s, one double per jump; take the heaviest double at or under @8 (cap-is-a-target). 285×2 @8 ≈ a PR; 295 only if 285 moved like @7. Backoffs 225×4 ×3. ≤3/10 shoulder pain, always. Runs AFTER the squat: if the squat ran long, cut bench backoffs to 2 first. Arch moderates before load does if the back complains.",
+          "display_load": "275–295",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 83.91468824559335,
+              "reps": 3
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 102.05840462301894,
+              "reps": 2
+            },
+            {
+              "type": "normal",
+              "weight_kg": 124.73805009480093,
+              "reps": 2,
+              "rpe": 8
+            },
+            {
+              "type": "normal",
+              "weight_kg": 102.05840462301894,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 102.05840462301894,
+              "reps": 4,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 102.05840462301894,
+              "reps": 4,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Tricep Pushdown",
+          "tier": "accessory",
+          "notes": "Triceps / lockout carryover. D1 accessories stay off Tuesday's pull. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 24.947610018960187,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.947610018960187,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "name": "Chest Fly (Machine)",
+          "tier": "accessory",
+          "notes": "NEW (expansion): chest isolation — the program only hits chest through presses, and you asked for chest work. A FLY, not a press, so no extra pressing exposure. SHOULDER RULE: stop the handles before your elbows travel behind your torso — the stretched bottom loads the anterior capsule where the subscapularis tear is. Last logged 115×11 (Dec 2025, nine months ago) — re-entry below it. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 47.62725549074217,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 47.62725549074217,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "First exposure / long-gap re-entry — deliberately under any log anchor until two sessions set a real one."
+        },
+        {
+          "name": "Iso-Lateral Row (Machine)",
+          "tier": "accessory",
+          "notes": "RECALIBRATED from W1 (125/arm ran @7.5/8.5). PER ARM, one arm at a time. Chest-supported, zero lumbar load. Mid-back, not lats: Tuesday is the weighted pull-up, so finish around @7. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 54.43114913227677,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 54.43114913227677,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        },
+        {
+          "name": "Side Plank",
+          "tier": "core",
+          "notes": "Anti-lateral-flexion. 30–45 s per side.",
+          "sets": [
+            {
+              "type": "duration",
+              "weight_kg": 0.0,
+              "duration_seconds": 40,
+              "rpe": 7
+            },
+            {
+              "type": "duration",
+              "weight_kg": 0.0,
+              "duration_seconds": 40,
+              "rpe": 7
+            },
+            {
+              "type": "duration",
+              "weight_kg": 0.0,
+              "duration_seconds": 40,
+              "rpe": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "day": "D2",
+      "exercises": [
+        {
+          "name": "Weighted Pull-up",
+          "tier": "primary",
+          "notes": "W4 PEAK — work up to @8.5: BW+95×3, range to BW+100×3 (retro 10-12: written to beat the BW+90×3 PR, not match it). If W3's BW+85×3 came in above @8, open at BW+90 instead. @8.5 is the stop — chin over the bar on every rep or it doesn't count. Backoffs BW+60×5 ×3.",
+          "display_load": "BW+95–100",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 0.45359290943563974,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 20.41168092460379,
+              "reps": 3
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 31.75150366049478,
+              "reps": 1
+            },
+            {
+              "type": "normal",
+              "weight_kg": 43.091326396385774,
+              "reps": 3,
+              "rpe": 8.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 27.215574566138386,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 27.215574566138386,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 27.215574566138386,
+              "reps": 5,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Hip Thrust (Smith Machine)",
+          "tier": "accessory",
+          "notes": "MOVED D3→D2: it sat the day before sumo in B5, allowed only because sumo was 225. Tuesday is unconstrained (Wed rest). · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 111.13026281173174,
+              "reps": 8
+            },
+            {
+              "type": "normal",
+              "weight_kg": 111.13026281173174,
+              "reps": 8
+            }
+          ]
+        },
+        {
+          "name": "Seated Leg Curl",
+          "tier": "accessory",
+          "notes": "Hamstrings. Log anchor 115. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 52.16318458509857,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.16318458509857,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "name": "Single Arm Landmine Press (Barbell)",
+          "tier": "accessory",
+          "notes": "RECALIBRATED from W1 (45x10 ran @8/9/9.5): plates per arm. W3/W4 go to 40 ONLY if last week's last set was <=@7, else stay 35. Shoulder slot, RPE cap @7. Press to a stop just short of lockout if the front of the shoulder talks. · 2 working sets, stop each at @7 — shoulder slot, the @7 cap stands (retro 10-12).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 10
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        },
+        {
+          "name": "Lateral Raise (Dumbbell)",
+          "tier": "accessory",
+          "notes": "Lateral delts. Raise to shoulder height, not above. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 15
+            }
+          ]
+        },
+        {
+          "name": "Pallof Press",
+          "tier": "core",
+          "notes": "RECALIBRATED from W1 (25 ran @7.5/8/9). Anti-rotation core, finish around @7. Slow out, hold a beat, slow in.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 9.071858188712795,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 9.071858188712795,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 9.071858188712795,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "day": "D3",
+      "exercises": [
+        {
+          "name": "Weighted Dip",
+          "tier": "primary",
+          "display_load": "BW+85",
+          "notes": "Holds at BW+85 while bench peaks Monday. STOP ABOVE THE PINCH — depth is the dip variable ahead of load; the bursitis and AC changes sit in the space that closes at the bottom.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 0.45359290943563974,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 20.41168092460379,
+              "reps": 5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 38.55539730202938,
+              "reps": 5,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 38.55539730202938,
+              "reps": 5,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 38.55539730202938,
+              "reps": 5,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 38.55539730202938,
+              "reps": 5,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "CGB",
+          "tier": "secondary",
+          "notes": "+10. Bench peaked Monday — do not chase Monday's number on Thursday. Hard @7. Lockout work.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 88.45061733994974,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 88.45061733994974,
+              "reps": 5,
+              "rpe": 7
+            },
+            {
+              "type": "normal",
+              "weight_kg": 88.45061733994974,
+              "reps": 5,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Lat Pulldown",
+          "tier": "accessory",
+          "notes": "RECALIBRATED from W1 (165x12 ran @7/8/9.5). Lats, seated, no axial load. Last set should finish around @8, not near failure. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 70.30690096252415,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 70.30690096252415,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        },
+        {
+          "name": "Reverse Pec Deck",
+          "tier": "accessory",
+          "notes": "RECALIBRATED from W1 (115x15 ran @7/8.5/9.5). LOAD-BEARING, NOT FILLER: the posterior cuff shares load off two torn anterior tendons. Cap @7, never grind it. · 2 working sets, stop each at @7 — shoulder slot, the @7 cap stands (retro 10-12).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 47.62725549074217,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 47.62725549074217,
+              "reps": 15
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        },
+        {
+          "name": "Face Pull",
+          "tier": "accessory",
+          "notes": "Same job as the pec deck. Never the thing you cut when the clock runs out. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 20.41168092460379,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.41168092460379,
+              "reps": 15
+            }
+          ]
+        },
+        {
+          "name": "Leg Extension (Machine)",
+          "tier": "accessory",
+          "notes": "LOWER BODY FOR THURSDAY (whole-body-every-day, FB 2026-09-24). This day had none, which is why you added a 415 leg press on 09-24. Leg extension is the lowest-cost quad work available: no spinal load, no loaded hip flexion, and no adductor or lat cost for Friday's sumo (accessory-day-interference). Held a notch under your 140 median because Friday also has BSS. FALLBACK if the machine is taken: Leg Press 270x12, ROM-capped (stop before the hips roll off the pad). FORBIDDEN fallback: no squat pattern, no hack squat, no goblet squat. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 63.50300732098956,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 63.50300732098956,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "At/under the 140 median: D3 quad work must not pre-fatigue D4 (sumo + BSS)."
+        },
+        {
+          "name": "Dead Bug",
+          "tier": "core",
+          "notes": "Anti-extension. 10 per side.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "day": "D4",
+      "exercises": [
+        {
+          "name": "Sumo Deadlift",
+          "tier": "primary",
+          "display_load": "285",
+          "hold": true,
+          "hold_reason": "Moderate lift this block (alternating-axial-emphasis): a gentle +10/week climb set by the athlete (FB 2026-09-27), gated on the sumo back check. Written below the log on purpose; the sync must not rebase it.",
+          "notes": "285x3 x3 @6: a small step up from 275. The climb is +10/week to 285 in W4, deliberately staying under B5's 295: this is the MODERATE lift while the squat peaks. 285 ONLY IF the morning after last week's sumo was logged FINE; tight or no check -> repeat last week's load. A fixed load, not a floor: no range, no autoregulating up (the squat gets the range this block, the sumo gets it in B7). Any rounding or bar-speed loss racks it. Back check the next morning.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 102.05840462301894,
+              "reps": 3
+            },
+            {
+              "type": "normal",
+              "weight_kg": 129.27397918915733,
+              "reps": 3,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 129.27397918915733,
+              "reps": 3,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 129.27397918915733,
+              "reps": 3,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Spoto Bench Press",
+          "tier": "secondary",
+          "notes": "Third block running — the one lift that progressed every session of B5. @7.5 ceiling; it is support for Monday, not a test.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 115.66619190608813,
+              "reps": 3,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 115.66619190608813,
+              "reps": 3,
+              "rpe": 7.5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 115.66619190608813,
+              "reps": 3,
+              "rpe": 7.5
+            }
+          ]
+        },
+        {
+          "name": "Bulgarian Split Squat",
+          "tier": "accessory",
+          "notes": "BACK — it was declined during the baclofen course (muscle relaxant + single-leg balance under load). The course ends Sep 30; this is Oct 2. 40/hand re-entry, then your 50. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "name": "Chest Supported Incline Row",
+          "tier": "accessory",
+          "notes": "Mid-back. Chest-supported = zero lumbar load. FORBIDDEN fallback: no barbell bent-over row. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 24.947610018960187,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 24.947610018960187,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "name": "Seated Calf Raise",
+          "tier": "accessory",
+          "notes": "Corrected anchor — 90–100, not the 155–175 written off a 2023 median. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 45.35929094356398,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 45.35929094356398,
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "name": "Concentration Curl",
+          "tier": "accessory",
+          "notes": "RECALIBRATED from W1 (40x10 ran @7/8/8.5): hold 40 until it's comfortably @7, then +5 next block. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 10
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        },
+        {
+          "name": "Bird Dog",
+          "tier": "core",
+          "notes": "Spine-neutral. 10 per side.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "day": "D1",
+      "exercises": [
+        {
+          "name": "Low-bar Squat",
+          "tier": "primary",
+          "notes": "W5 DELOAD. The load drop is the deload. SQUAT FIRST on D1 — never squat heavy pre-fatigued. Backoffs 3x4 @ 245: crisp, every set started fresh. If the rung holds, the backoffs hold with it.",
+          "display_load": "275",
+          "hold": true,
+          "hold_reason": "Squat is on axial-return-ladder: every rung is an absolute load gated on the prior squat day's next-morning back check. Written below the log on purpose; the sync must not rebase it.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 102.05840462301894,
+              "reps": 2
+            },
+            {
+              "type": "normal",
+              "weight_kg": 124.73805009480093,
+              "reps": 3,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 111.13026281173174,
+              "reps": 4,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 111.13026281173174,
+              "reps": 4,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 111.13026281173174,
+              "reps": 4,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Comp Bench",
+          "tier": "primary",
+          "notes": "W5 deload, @6. Arch moderates before load does if the back complains.",
+          "display_load": "225",
+          "hold": true,
+          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 83.91468824559335,
+              "reps": 2
+            },
+            {
+              "type": "normal",
+              "weight_kg": 102.05840462301894,
+              "reps": 4,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 88.45061733994974,
+              "reps": 4,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 88.45061733994974,
+              "reps": 4,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 88.45061733994974,
+              "reps": 4,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Tricep Pushdown",
+          "tier": "accessory",
+          "notes": "Triceps / lockout carryover. D1 accessories stay off Tuesday's pull. W5 deload. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 20.41168092460379,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.41168092460379,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+        },
+        {
+          "name": "Chest Fly (Machine)",
+          "tier": "accessory",
+          "notes": "NEW (expansion): chest isolation — the program only hits chest through presses, and you asked for chest work. A FLY, not a press, so no extra pressing exposure. SHOULDER RULE: stop the handles before your elbows travel behind your torso — the stretched bottom loads the anterior capsule where the subscapularis tear is. Last logged 115×11 (Dec 2025, nine months ago) — re-entry below it. W5 deload. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 38.55539730202938,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 38.55539730202938,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+        },
+        {
+          "name": "Iso-Lateral Row (Machine)",
+          "tier": "accessory",
+          "notes": "RECALIBRATED from W1 (125/arm ran @7.5/8.5). PER ARM, one arm at a time. Chest-supported, zero lumbar load. Mid-back, not lats: Tuesday is the weighted pull-up, so finish around @7. W5 deload. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 47.62725549074217,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 47.62725549074217,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        },
+        {
+          "name": "Side Plank",
+          "tier": "core",
+          "notes": "Anti-lateral-flexion. 30–45 s per side. W5 deload.",
+          "sets": [
+            {
+              "type": "duration",
+              "weight_kg": 0.0,
+              "duration_seconds": 40,
+              "rpe": 7
+            },
+            {
+              "type": "duration",
+              "weight_kg": 0.0,
+              "duration_seconds": 40,
+              "rpe": 7
+            },
+            {
+              "type": "duration",
+              "weight_kg": 0.0,
+              "duration_seconds": 40,
+              "rpe": 7
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "day": "D2",
+      "exercises": [
+        {
+          "name": "Weighted Pull-up",
+          "tier": "primary",
+          "notes": "W5 deload, @6. Backoffs 3.",
+          "display_load": "BW+50",
+          "hold": true,
+          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 0.45359290943563974,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 15.87575183024739,
+              "reps": 3
+            },
+            {
+              "type": "normal",
+              "weight_kg": 22.67964547178199,
+              "reps": 4,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 5,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 5,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 18.14371637742559,
+              "reps": 5,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Hip Thrust (Smith Machine)",
+          "tier": "accessory",
+          "notes": "MOVED D3→D2: it sat the day before sumo in B5, allowed only because sumo was 225. Tuesday is unconstrained (Wed rest). W5 deload. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 83.91468824559335,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 83.91468824559335,
+              "reps": 10
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+        },
+        {
+          "name": "Seated Leg Curl",
+          "tier": "accessory",
+          "notes": "Hamstrings. Log anchor 115. W5 deload. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 43.091326396385774,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 43.091326396385774,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+        },
+        {
+          "name": "Single Arm Landmine Press (Barbell)",
+          "tier": "accessory",
+          "notes": "RECALIBRATED from W1 (45x10 ran @8/9/9.5): plates per arm. W3/W4 go to 40 ONLY if last week's last set was <=@7, else stay 35. Shoulder slot, RPE cap @7. Press to a stop just short of lockout if the front of the shoulder talks. W5 deload. · 2 working sets, stop each at @7 — shoulder slot, the @7 cap stands (retro 10-12).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 10
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        },
+        {
+          "name": "Lateral Raise (Dumbbell)",
+          "tier": "accessory",
+          "notes": "Lateral delts. Raise to shoulder height, not above. W5 deload. · 2 working sets, stop each at @8 (retro 10-12: effort goes to the primaries).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 11.339822735890994,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 11.339822735890994,
+              "reps": 15
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+        },
+        {
+          "name": "Pallof Press",
+          "tier": "core",
+          "notes": "RECALIBRATED from W1 (25 ran @7.5/8/9). Anti-rotation core, finish around @7. Slow out, hold a beat, slow in. W5 deload.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 6.8038936415345965,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 6.8038936415345965,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 6.8038936415345965,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "day": "D3",
+      "exercises": [
+        {
+          "name": "Weighted Dip",
+          "tier": "primary",
+          "display_load": "BW+60",
+          "notes": "W5 deload. STOP ABOVE THE PINCH — depth is the dip variable ahead of load; the bursitis and AC changes sit in the space that closes at the bottom.",
+          "hold": true,
+          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 0.45359290943563974,
+              "reps": 8
+            },
+            {
+              "type": "warmup",
+              "weight_kg": 15.87575183024739,
+              "reps": 5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 27.215574566138386,
+              "reps": 5,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 27.215574566138386,
+              "reps": 5,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 27.215574566138386,
+              "reps": 5,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "CGB",
+          "tier": "secondary",
+          "notes": "W5 deload. Hard @7. Lockout work.",
+          "hold": true,
+          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 70.30690096252415,
+              "reps": 5,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 70.30690096252415,
+              "reps": 5,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 70.30690096252415,
+              "reps": 5,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Lat Pulldown",
+          "tier": "accessory",
+          "notes": "RECALIBRATED from W1 (165x12 ran @7/8/9.5). Lats, seated, no axial load. Last set should finish around @8, not near failure. W5 deload. · 3 working sets, stop each at @8 (FB 2026-10-29: accessories never under 3 sets).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 61.235042773811365,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 61.235042773811365,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 61.235042773811365,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        },
+        {
+          "name": "Reverse Pec Deck",
+          "tier": "accessory",
+          "notes": "RECALIBRATED from W1 (115x15 ran @7/8.5/9.5). LOAD-BEARING, NOT FILLER: the posterior cuff shares load off two torn anterior tendons. Cap @7, never grind it. W5 deload. · 3 working sets, stop each at @7 — shoulder slot, the @7 cap stands (FB 2026-10-29: accessories never under 3 sets).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 40.82336184920758,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 40.82336184920758,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 40.82336184920758,
+              "reps": 15
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        },
+        {
+          "name": "Face Pull",
+          "tier": "accessory",
+          "notes": "Same job as the pec deck. Never the thing you cut when the clock runs out. W5 deload. · 3 working sets, stop each at @8 (FB 2026-10-29: accessories never under 3 sets).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 15
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 15
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+        },
+        {
+          "name": "Leg Extension (Machine)",
+          "tier": "accessory",
+          "notes": "LOWER BODY FOR THURSDAY (whole-body-every-day, FB 2026-09-24). This day had none, which is why you added a 415 leg press on 09-24. Leg extension is the lowest-cost quad work available: no spinal load, no loaded hip flexion, and no adductor or lat cost for Friday's sumo (accessory-day-interference). Held a notch under your 140 median because Friday also has BSS. FALLBACK if the machine is taken: Leg Press 270x12, ROM-capped (stop before the hips roll off the pad). FORBIDDEN fallback: no squat pattern, no hack squat, no goblet squat. W5 deload. · 3 working sets, stop each at @8 (FB 2026-10-29: accessories never under 3 sets).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 52.16318458509857,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.16318458509857,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 52.16318458509857,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+        },
+        {
+          "name": "Dead Bug",
+          "tier": "core",
+          "notes": "Anti-extension. 10 per side. W5 deload.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "day": "D4",
+      "exercises": [
+        {
+          "name": "Sumo Deadlift",
+          "tier": "primary",
+          "display_load": "235",
+          "hold": true,
+          "hold_reason": "Moderate lift this block (alternating-axial-emphasis): a gentle +10/week climb set by the athlete (FB 2026-09-27), gated on the sumo back check. Written below the log on purpose; the sync must not rebase it.",
+          "notes": "DELOAD 235x3 x3 @6. Crisp. Back check the next morning.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 8
+            },
+            {
+              "type": "normal",
+              "weight_kg": 106.59433371737533,
+              "reps": 3,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 106.59433371737533,
+              "reps": 3,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 106.59433371737533,
+              "reps": 3,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Spoto Bench Press",
+          "tier": "secondary",
+          "notes": "Third block running — the one lift that progressed every session of B5. @7.5 ceiling; it is support for Monday, not a test. W5 deload.",
+          "hold": true,
+          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase.",
+          "sets": [
+            {
+              "type": "warmup",
+              "weight_kg": 61.235042773811365,
+              "reps": 5
+            },
+            {
+              "type": "normal",
+              "weight_kg": 92.98654643430615,
+              "reps": 4,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 92.98654643430615,
+              "reps": 4,
+              "rpe": 6
+            },
+            {
+              "type": "normal",
+              "weight_kg": 92.98654643430615,
+              "reps": 4,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Bulgarian Split Squat",
+          "tier": "accessory",
+          "notes": "BACK — it was declined during the baclofen course (muscle relaxant + single-leg balance under load). The course ends Sep 30; this is Oct 2. 40/hand re-entry, then your 50. W5 deload. · 3 working sets, stop each at @8 (FB 2026-10-29: accessories never under 3 sets).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 10
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+        },
+        {
+          "name": "Chest Supported Incline Row",
+          "tier": "accessory",
+          "notes": "Mid-back. Chest-supported = zero lumbar load. FORBIDDEN fallback: no barbell bent-over row. W5 deload. · 3 working sets, stop each at @8 (FB 2026-10-29: accessories never under 3 sets).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 20.41168092460379,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.41168092460379,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 20.41168092460379,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+        },
+        {
+          "name": "Seated Calf Raise",
+          "tier": "accessory",
+          "notes": "Corrected anchor — 90–100, not the 155–175 written off a 2023 median. W5 deload. · 3 working sets, stop each at @8 (FB 2026-10-29: accessories never under 3 sets).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 36.28743275485118,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 36.28743275485118,
+              "reps": 12
+            },
+            {
+              "type": "normal",
+              "weight_kg": 36.28743275485118,
+              "reps": 12
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+        },
+        {
+          "name": "Concentration Curl",
+          "tier": "accessory",
+          "notes": "RECALIBRATED from W1 (40x10 ran @7/8/8.5): hold 40 until it's comfortably @7, then +5 next block. W5 deload. · 3 working sets, stop each at @8 (FB 2026-10-29: accessories never under 3 sets).",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 15.87575183024739,
+              "reps": 10
+            }
+          ],
+          "hold": true,
+          "hold_reason": "Recalibrated 2026-10-02 from the athlete's W1 loads and RPEs (athlete-approved). Set below the log median on purpose; the sync must not rebase it."
+        },
+        {
+          "name": "Bird Dog",
+          "tier": "core",
+          "notes": "Spine-neutral. 10 per side. W5 deload.",
+          "sets": [
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            },
+            {
+              "type": "normal",
+              "weight_kg": 0.0,
+              "reps": 10
+            }
+          ],
+          "hold": true,
+          "hold_reason": "W5 deload — every load deliberately under the log. Do not rebase."
+        }
+      ]
+    }
+  ]
+}

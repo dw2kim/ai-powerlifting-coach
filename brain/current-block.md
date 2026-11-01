@@ -1,367 +1,354 @@
 # Current Block
 
-# Block 6 — 2026-Q4-B06 (Squat returns, upstairs keeps climbing)
+# Block 7 — 2026-Q4-B07 (Heavy sumo on a gate that works; bench finally gets a new input)
 
-**Block ID**: 2026-Q4-B06
-**Dates**: **Mon 2026-09-28 → Fri 2026-10-30** (5 weeks, 4 days/week)
-**Source**: Designed 2026-09-24 from the B5 review (`reviews/2026-Q3-B05.md`), the Sep 11 clinical
-update, and the athlete's call on axial emphasis (2026-09-23).
-**Live in Hevy**: pushed **2026-09-28 01:14 UTC**, folder `2026-Q4-B06` (id 3744659), 20 routines, athlete-approved
-after a Sheet review. Changes from here go through `amending-live-block` (`--update --start`).
-**Prior block**: `data/block-archive/2026-Q3-B05.{md,json}` · bridge sessions in
-`data/block-archive/2026-Q3-BRIDGE.{md,json}`
+**Block ID**: 2026-Q4-B07
+**Dates**: **Mon 2026-11-02 → Fri 2026-12-04** (5 weeks, 4 days/week)
+**Source**: Designed 2026-11-01 from the B6 review (`reviews/2026-Q4-B06.md`), the 2026-10-12
+"too conservative" ruling, and four calls you made on 2026-11-01 (axial direction, bench stimulus,
+elbow status, back checks).
+**Live in Hevy**: ⏳ **not pushed yet** — dry-run is clean (folder `2026-Q4-B07`, 20 routines,
+whole-pound loads, a rest timer on every line). **Waiting on your go.**
+**Prior block**: `data/block-archive/2026-Q4-B06.{md,json}` · review in `reviews/2026-Q4-B06.md`
 
-**Axial emphasis (`alternating-axial-emphasis`)**: **current = SQUAT heavy, sumo moderate.
-Prior = none** — B5 froze both under a medical cap. **B7 runs heavy sumo.** Reasoning recorded in the
-bridge archive: `sumo-back-cap` caps a heavy-sumo block at 405 (~81% of the sumo e1RM), sumo is the
-lift that provokes this back and the squat is not, and B5's only genuine axial data point is a squat.
+**Axial emphasis (`alternating-axial-emphasis`)**: **current = SUMO heavy, squat moderate.
+Prior (B6) = squat heavy, sumo moderate.** Alternation satisfied.
 
 ## The one-sentence version
 
-**The squat walks back to the 405 it was owed — one rung a week, each rung unlocked by the
-morning-after back check — while bench, pull-up and dip keep climbing on staggered peaks.**
+**Sumo walks from 345 to the 405 ceiling on a gate you actually have to feed, the squat drops to a
+fixed moderate band to pay for it, and the bench gets the one thing it has never had — a second
+competition-lift exposure at six reps.**
 
 ---
 
-## ⚠️ Standing orders carried in from the bridge — read these first
+## ⚠️ Read these first — the three things that are different this block
 
-- **Medication: baclofen 10 mg BID + pregabalin 25 mg BID, course ends ~Wed Sep 30.** That is
-  **Monday and Tuesday of W1**. Baclofen lowers muscle tone, which is what the brace *is* — so W1's
-  axial work is fixed and light regardless of how it feels. W1-D3 onward is unmedicated.
-- **Back checks tagged `medicated`** through ~Sep 30. Every check from W2 on is clean, and those
-  are the ones the ladder is gated on.
-- **Hard stops, unchanged**: new or worsening leg symptoms, night or rest pain, pain not settling in
-  24 h, or `sore` two axial days running → axial work stops, back to the clinic.
-- **Still owed to the clinic** (`active-issues.md`): next appointment date; tell the doctor you are
-  squatting and pulling again and at what weight (fourth block owed); why pregabalin.
+### 1. Sumo is the block, and it is gated for real
+
+B6 gave me **one back check in ten axial sessions**, and the one I got was medicated. Then sumo —
+written as a *fixed* load, gated on that check — climbed **+10, +20, +30** over what was written.
+Nothing bad happened. But B6's sumo was 255–315; **B7's sumo is 345–405**, which is the actual
+`sumo-back-cap` band, and that is not a load to self-advance on feel.
+
+**So: no check, no rung.** Not a punishment, and not paperwork:
+
+| Saturday's check on Friday's pull | Next Friday |
+|---|---|
+| `fine` | next rung |
+| `tight` | **repeat the same load** |
+| nothing logged | **repeat the same load** |
+| `sore` twice running | **axial work stops, back to the clinic** |
+
+One word, Saturday morning, after the pull. Two clean ones already got you the 345 opener — you
+reported **10/26 `fine`** and **10/30 `fine`** on 11-01 and both are logged.
+
+### 2. Both your elbows are in the plan, and they've been there since September
+
+I went back through your Hevy notes rather than trust my own summary, and I had this wrong twice over:
+
+| | What I'd written | What your notes actually say |
+|---|---|---|
+| Side | right only | **both** — left from ~late September, right from late October |
+| Onset | 2026-10-30 | **~late September.** On 10-20 you wrote it was *"the bottleneck for pushing the pull up"* |
+| Grip fix | neutral grip | **wider than shoulder, pronated.** Your 10-22 note: *"right inner elbow pain with the nuetral grip"* — on the lat pulldown |
+
+**So: wide pronated grip, explicitly NOT neutral** — on the pull-up *and* the lat pulldown. You
+noticed wide feels *"a bit more weak? cuz it doesnt use the bicep"*. That's exactly why it helps, and
+it's the right trade. **The pull-up is capped by absolute load, not RPE** — a sore tendon can't be
+autoregulated, because you'll rate the set off how your lats feel. It tops at **BW+85**, under both
+B6's +95 and B5's +90, for two independent reasons: the elbows, and CLAUDE.md's rule that pull-up
+volume drops when deadlift volume is high.
+
+**Any pain during a set ends the exercise that day — don't finish the set.** Full record, the verbatim
+notes and the hard stops are in `active-issues.md` → *Elbows*.
+
+You said *"no need to go hospital but need to take care."* **Push back on that once:** bilateral,
+anterior, five weeks old and already limiting a main lift is not a niggle, and you have an open clinic
+relationship with a visit already owed. One sentence in a visit that's happening anyway.
+
+### 3. The clinic is six blocks owed, and the sumo ceiling is the price
+
+You pulled 315 and squatted 435 last block. The clinic's last input was a muscle relaxant on
+**2026-09-11** and there is **no appointment on file.** 405 is the ceiling this block *because* that
+conversation hasn't happened — not because 405 is your limit. Book it, tell them the numbers, and
+the ceiling becomes a question we can answer with evidence instead of caution.
+
+**Hard stops, unchanged**: new or worsening leg symptoms, night or rest pain, pain not settling in
+24 h, or `sore` two axial days running → axial work stops, back to the clinic.
 
 ---
 
-## B5 in five bullets (from the review)
+## B6 in five bullets (from the review)
 
-1. **Bench delivered** — 293 e1RM (+26.6), and W4's 265×2 @8 closed B4's under-reach. The
-   "range + find the cap" instruction works. Kept.
-2. **Pull-up correction landed** — BW+90 @8.5 in W4, told to repeat the load and fix the RPE, came
-   back @8 exactly. Specific, recent corrections land. Kept.
-3. **Dip was the one lift with zero drift** all block. Kept, same shape.
-4. **Load crept on the axial primaries; RPE ran away on the accessories** — DB Shoulder Press to
-   @10 under an @7 cap. B6 fixes both: the squat ladder (below) and the shoulder slot rotation.
-5. **Five off-plan movements ran undetected**, including a barbell upright row on a bursitic
-   shoulder. The movement library now **blocks** upright row, barbell OHP and barbell incline.
+1. **The squat came back.** 435×3 @7.5, e1RM 401 → 478 (~450 → ~515 on effort). You were right to
+   retire the ladder. Two-thirds of what the injury cost you is back.
+2. **Dip is the only lift on new ground** — BW+95×5 **@6**, three blocks running. Unchanged here.
+3. **Bench logged the identical set at the identical RPE as B5** — 275×2 @8.5 both times. Four
+   blocks of priority, +0. Not an effort problem: a **stimulus** problem. This block fixes that.
+4. **Pull-up's cap broke** — @9.5 against @8.5 written, then an @8.5 top in a *deload* week, then
+   the elbow. A range re-opened a drift that a hard stop had closed for two blocks.
+5. **One back check in ten axial sessions**, and sumo self-advanced +30 over a fixed band with
+   nothing noticing. Both addressed above.
 
 ---
 
-## Split — Big-5 days unchanged (locked)
+## Split — Big-5 days unchanged, but the order inside D1 and D4 changed
 
 > **D1 Mon · D2 Tue · D3 Thu · D4 Fri.** 6–7 am.
 
 | Day | Primary / secondary | Accessories | Core |
 |---|---|---|---|
-| **D1 Mon** | **Low-bar Squat (ladder)** · **Comp Bench** | Tricep Pushdown · **Chest Fly (Machine) — NEW** | Side Plank |
-| **D2 Tue** | **Weighted Pull-up** | Hip Thrust (Smith) *(moved from D3)* · Seated Leg Curl · **Single Arm Landmine Press — ROTATED** · Lateral Raise | Pallof Press |
-| **D3 Thu** | **Weighted Dip** · CGB | Lat Pulldown · Reverse Pec Deck · Face Pull | Dead Bug |
-| **D4 Fri** | **Sumo (moderate)** · Spoto Bench | Bulgarian Split Squat *(back)* · CS Incline Row · Seated Calf Raise · Concentration Curl | Bird Dog |
+| **D1 Mon** | **Comp Bench (heavy)** ← *first now* · Low-bar Squat (moderate band) | Tricep Pushdown ⚯ Chest Fly · Iso-Lateral Row | Side Plank |
+| **D2 Tue** | **Weighted Pull-up** (absolute-load cap) | **Straight Arm Lat Pulldown 🆕** ⚯ Hip Thrust · Seated Leg Curl ⚯ Lateral Raise · Landmine Press | Pallof Press |
+| **D3 Thu** | **Weighted Dip** · Spoto Bench | Lat Pulldown ⚯ Leg Extension · Reverse Pec Deck ⚯ Face Pull | Dead Bug |
+| **D4 Fri** | **Sumo Deadlift (HEAVY)** · **Comp Bench (volume, 6s)** | Seated Calf Raise ⚯ CS Incline Row · **Hip Adduction ➕** | Bird Dog |
 
-**Working sets per day: D1 19 · D2 19 · D3 19 · D4 21** *(W1–W2; W3–W5-D2 accessories were written at 2 sets — see Amendments 10-12; back to 3 from W5-D3, 10-29)* — balanced by volume, not exercise count
-(`muscle-coverage-audit`). D1 runs only two accessories because it carries both heavy primaries.
+**⚯ = superset pair** (alternate sets, ~30 s between). Six pairs across the week — see *Session
+length* below. **Working sets/day: D1 20 · D2 22 · D3 22 · D4 20**, but **five effective slots per
+day** because of the pairing.
+
+**Order changes, both deliberate:**
+- **D1: bench goes FIRST.** B6 put the squat first because it was heavy and a pre-fatigued 435 is
+  the back risk. The squat is moderate now and bench is the priority lift, so the priority lift gets
+  the fresh body. This is the first block where that's been true.
+- **D4: sumo first, always.** 405 does not go second behind anything.
 
 ### Managing overlap (explicit, per CLAUDE.md)
 
-- **Bench (D1) + Dip (D3)** — three days apart, peaks staggered: **dip peaks W3, bench peaks W4.**
-  Bench holds at 255 in W3 and dip holds at BW+85 in W4, so the two presses never peak the same week.
-- **Sumo (D4) + Pull-up (D2)** — three days apart. Sumo is the moderate lift at a fixed band, so the
-  back/grip/lat conflict is small. Pull-up peaks W4 against a moderate sumo — the cleanest pairing.
-- **Squat (D1) + Sumo (D4)** — four days apart, and only one of them is heavy. That's the whole
-  point of `alternating-axial-emphasis`.
-- **Dip + shoulder load** — the overhead slot is now a landmine press (diagonal path, less
-  subacromial compression); barbell OHP, upright row and barbell incline are blocked in the library.
-  Face Pull + Reverse Pec Deck stay on dip day as load-bearing cuff work.
-- **Squat + Bench on the same Monday, both peaking W4** — the one stacked day. **Squat goes first**
-  (never squat heavy pre-fatigued — that's the back risk), bench second. If the 405 day runs long,
-  **bench backoffs drop to 2 first**.
-- **D1 → D2 (no rest)**: D1 accessories are triceps + chest fly only — nothing touches Tuesday's
-  lats/biceps. ✅
-- **D3 → D4 (no rest)**: D3 carries lats + rear delts + CGB. **Hip Thrust moved off D3** — in B5 it
-  sat the day before sumo, allowed only because sumo was 225. CGB pre-fatiguing Friday's Spoto is
-  the known, accepted exception (held light and flat). ✅
+- **Bench (D1) + Dip (D3)** — three days apart, **and the peaks are staggered: dip peaks W3, bench
+  peaks W4.** Dip *holds* at BW+95 in W4 and Spoto holds at 255 in W3, so the two never peak together.
+- **Bench #2 (D4 Fri) + Dip (D3 Thu)** — back-to-back horizontal pressing, and I'm naming it rather
+  than hiding it. This adjacency already existed in B6 (CGB Thu → Spoto Fri) and was accepted. It's
+  managed by **never making Friday's bench a push**: fixed 4×6 at an @7 ceiling, no range, no work-up.
+  Thursday's Spoto is capped @7.5. Neither is a peak, so the collision is volume, not intensity.
+- **Sumo (D4) + Pull-up (D2)** — three days apart, and this is the pairing the heavy-sumo block has
+  to protect. **The pull-up's load was cut for it** (tops at BW+85, down from BW+95), and **D3's Lat
+  Pulldown is pinned well under its 157 median** so Friday's lats and grip are fresh. The elbow
+  happens to want the same thing.
+- **Squat (D1) + Sumo (D4)** — four days apart, **and only one of them is heavy.** The squat band
+  tops at 395 against B6's 435 peak precisely to free the axial budget. That is the whole function of
+  `alternating-axial-emphasis`, and this is the first block where it's actually being spent.
+- **Dip + shoulder load** — the overhead slot stays the landmine press (diagonal path, less
+  subacromial compression) at a hard @7. Barbell OHP, upright row and barbell incline remain blocked
+  in the movement library. Face Pull + Reverse Pec Deck stay on dip day as load-bearing cuff work.
+- **D1 → D2 (no rest)**: D1's only pull is the Iso-Lateral Row, held under its median and named the
+  **first cut** if Tuesday's pull-up backoffs suffer. Nothing else on D1 touches lats or biceps. ✅
+- **D3 → D4 (no rest, and Friday is now HEAVY)**: this got stricter. D3 carries lats (pinned low),
+  rear delts, and quads via leg extension only. **No hinge, no adductor work, no erector work, no
+  squat pattern on D3 this block.** ✅
 
 ---
 
 ## Wave — top sets
 
-| Week | Squat *(ladder)* | Comp Bench | Sumo *(moderate)* | Pull-up | Dip |
-|---|---|---|---|---|---|
-| **W1** calibration | **315×3** fixed, @≤7 | 240×4 @7 | **255×3 ×3** @6 | BW+60×4 @7 | BW+70×5 ×4 @7 |
-| **W2** establish | **365** 🔒 → ≤385 | 250×3 @7.5 | **265×3 ×3** 🔒 | BW+75×4 @7.5 | BW+85×5 ×4 @7.5 |
-| **W3** push | **385** 🔒 → ≤405 | **255 → ≤265**×3 @7.5 *(range, 10-12)* | 275×3 ×3 🔒 | BW+85×3 @8 | **⛰️ work up to @8: BW+105–110×3** |
-| **W4** peak | **⛰️ work up to @8: 415 → ≤455×3** *(10-18, ladder retired)* | **⛰️ work up to @8: 275 → ≤295×2** *(10-12)* | 285×3 ×3 🔒 | **⛰️ work up to @8.5: BW+95 → ≤100×3** *(10-12)* | BW+85×5 ×4 *(hold)* |
-| **W5** deload | 275×3 @6 | 225×4 @6 | 235×3 ×3 @6 | BW+50×4 @6 | BW+60×5 ×3 @6 |
+| Week | Sumo *(HEAVY, gated)* | Comp Bench D1 *(heavy)* | Comp Bench D4 *(6s, fixed)* | Squat *(moderate, fixed)* | Pull-up *(absolute)* | Dip |
+|---|---|---|---|---|---|---|
+| **W1** BUILD | **345**×3 @7 🔒 | 255×3 → @7.5, lid 265 | 210×6 ×4 @7 | 365×3 ×3 @7 | BW+55×4 | BW+80×5 @7 |
+| **W2** ESTABLISH | **365**×3 @7 🔒 | 265×3 → @8, lid 275 | 215×6 ×4 @7 | 375×3 ×3 @7 | BW+65×4 | BW+90×5 @7.5 |
+| **W3** PUSH | **385**×3 @7 🔒 | 270×2 → @8, lid 285 | 220×6 ×4 @7 | 385×3 ×3 @7 | BW+75×3 | **⛰️ work up to @8: BW+105×3, lid BW+115** |
+| **W4** PEAK | **405**×3 @7 🔒 **← hard ceiling** | **⛰️ 280×2 → @8, lid 295** | 225×6 ×3 @7 | 395×3 ×3 @7 | BW+85×3 | BW+95×5 *(hold)* |
+| **W5** DELOAD | 295×3 @6 | 225×4 @6 | 185×6 ×3 @6 | 315×3 ×3 @6 | BW+45×5 | BW+60×5 @6 |
 
-🔒 = gated rung (see the ladder rules). ⛰️ = that lift's peak week. **Squat W2–W4 = floor → ceiling** (FB 2026-09-27): the app shows the floor, and the range above it is earned on the day.
+🔒 = gated rung · ⛰️ = that lift's peak week.
+**W1 is a working week, not a calibration week** (FB 2026-10-12: no warm-up week after a deload).
+Primaries push at the full 1:15 rest from day one; only W5 drops to 1:00.
 
-**Backoffs**
-- **Squat** (`primary-backoff-volume` 4·4·4·3·3): 275×4 ×4 · 295×4 ×4 · 315×4 ×4 · **345×4 ×3** *(W4, 10-18; was 335)* · 245×4 ×3.
-  **Fours, not fives** — backs get hurt on the fatigued reps, so each backoff stops a rep earlier than
-  his usual five and every set starts fresh.
-- **Comp bench** (4·4·4·3·3): 205×5 ×4 · 215×5 ×4 · 220×4 ×4 · 225×4 ×3 · 195×4 ×3.
-- **Pull-up**: 3 backoffs throughout — BW+45 · 55 · 60 · 60 · 40, ×5.
-- **Dip**: straight 4×5 except the W3 peak (top triple + BW+85×5 ×3).
-- **Sumo**: flat 3×3, no top/backoff split. **Documented exception to `primary-backoff-volume`** —
-  a moderate lift under `sumo-skill-lift` gets a fixed band, and the back rule outranks the volume rule.
+**Backoffs** (`primary-backoff-volume`)
+- **Sumo** 3·3·3·2·3: 305 · 325 · 345 · **365 ×2** · 265, all ×3. Crisp triples, every set fresh.
+  *The B6 flat-3×3 exception is retired* — sumo is a heavy primary again, so the rule applies normally.
+- **Comp Bench D1** 4·4·4·3·3: 210 · 220 · 225 · **230 ×3** · 195, at ×4 reps.
+- **Squat**: no top/backoff split — **flat 3×3 at one fixed load.** It isn't peaking, so it doesn't
+  need a wave; it needs its groove and nothing more.
+- **Pull-up**: 3 backoffs throughout — BW+35 · 40 · 45 · 50 · 30, ×5.
+- **Dip**: 3 backoffs — BW+65 · 70 · 85 · 75 · 45, ×5.
+
+### The squat band will feel light, and that's the trade
+
+You squatted **435×3 @7.5** three weeks ago. W4 here is **395**. That is deliberate and it is the
+cost of the answer you picked: a 415 squat on Monday and a 405 sumo on Friday is two heavy axial
+days in one week on a treated back with no clinical clearance, and I won't write it. **Fixed loads,
+@7 ceiling, no range, no autoregulating upward** — the same wording B6 used for sumo, which you then
+climbed +30 lb on feel. That's the mistake this phrasing exists to prevent, and it's now pointed at
+the squat.
+
+If the sumo gate runs clean through W3 and the clinic conversation happens, the squat is the first
+thing I'd re-open in B8.
 
 ---
 
-## 🔴 The squat ladder — and the part that costs you when you skip it
+## Bench — the actual change, and why it's this one
 
-> **Retired for the squat 2026-10-18, at the athlete's call** (see Amendments). W3 came in at 415×3 @7,
-> over the 405 ceiling, with no back check logged since Oct 2. By the rules below, W4 would repeat 385.
-> He declined that, and the log backs him: 415 @7 is ~496 e1RM, a return rather than a risk. The section
-> stays as the record of how the return was run.
+Four blocks of `big5-priority` pointing at bench produced **293 → 293**, the same set at the same
+RPE. The input had to change, not the number. **It gets a second competition-lift exposure:**
 
-B5's review action item #5: *a bare number on a page held on the accessories and the strive lifts,
-but failed five times on the axial primaries — including once after you agreed to it in writing.*
-So this block doesn't rely on the number. **The rung is unlocked by the back check, and the check is
-the thing you want.**
-
-| Rung | Load | Unlocked by |
+| | Before (B6) | Now (B7) |
 |---|---|---|
-| W1 | **315×3** | — calibration, fixed. Medicated day, no rung claimed. |
-| W2 | **365×3**, range to **385** | W1 check (Tue Sep 29) logged **fine**. A return to a load you've already done @6 on Sep 7 — medicated check is acceptable for the floor. |
-| W3 | **385×3**, range to **405** | W2 check (Tue Oct 6) logged **fine**. **The first genuinely new rung**, on an unmedicated check. |
-| W4 | **405×3**, work up to @8 → **435** ceiling | W3 check (Tue Oct 13) logged **fine**. **The 405 you were owed, and up to 435 if the day is there.** |
+| Comp bench exposures/week | **1** | **2** |
+| Bench-pattern sets/week | 12 (CB 5 + CGB 3 + Spoto 4) | **13** (CB 5 + Spoto 3 + CB 4) |
+| Rep range on the comp lift | 2–4 only | **2–4 and 6** |
+| Bench secondaries | CGB + Spoto | **Spoto only** |
 
-**The four ways a rung is lost — every one of them means repeat last week's squat, top and backoffs:**
-1. The check reads **tight**.
-2. **No check is logged.** Silence is not "fine". This is the lever: in B5 you logged 4 of 13. In B6,
-   an unlogged morning costs you the next rung — directly, the same week.
-3. **You went above the week's ceiling.** Anything inside the range is the plan working. Above the ceiling is creep, and creep forfeits the next rung.
-4. The top triple came in **harder than @8**.
+**The exposure count is near-identical — it's redistributed onto the competition lift.** That matters
+for the shoulder: B6 ran four pressing exposures a week (incl. the dip) and the shoulder was quiet
+all block, so this isn't new pressing volume, it's the same volume aimed at the thing being tested.
 
-**Floor → range → ceiling (added 2026-09-27, athlete's call).** The floor is the rung, gated as above, and
-it's what the app shows. The range above it is **earned on the day**, only if all four hold: the last squat
-morning check was *fine*; you're off the meds with a clean unmedicated check on file; last week's top triple
-was ≤@7.5; and the warm-ups move fast. Then climb in 10s, one triple per jump, and stop at the first triple
-that hits the week's RPE or the ceiling. **Next week's floor doesn't move with what you hit**, so a good day
-doesn't become next week's minimum. Backoffs stay keyed to the floor. W1 has no range: it's today, and
-you're still on baclofen (`masked-pain-load-cap`: no maximal axial work during the course).
+**Why sixes on Friday.** Your bench weak point is *"loses arch under fatigue"* — and a double never
+exposes it. Six reps does. On D4 the instruction is explicitly **position, not load**: hold the arch
+and the upper back on rep 6 exactly as on rep 1, and **if the arch collapses the set is over even if
+the reps are there.** Fixed load, @7 ceiling, no chasing. The sixes are the stimulus; D1 is where the
+number gets tested.
 
-**If a rung holds, tell me and I'll re-push that week's squat at the held load** (`amending-live-block`)
-so the app always shows the true number. The app never shows a rung you haven't earned.
+### Secondaries — 1 rotation (`secondary-rotation`, 0–2 allowed)
 
-**Why not 445** (your stated target in August): 315 → 405 is already +90 lb in four weeks coming off a
-medical restriction, and `axial-return-ladder` says the ramp rate *is* the exposure. 405 is 79% of your
-511 e1RM — a return, not a PR. The W4 range to **435** (85%) is the most this block will sign off on,
-and only on a day that earns it. **445+ is a B8 conversation**, after B7's sumo block.
-
-**Why no squat secondary**: the entire squat secondary pool (Paused, Tempo, High-bar, Front) is
-**Blocked — medical**, and a graded return is not clearance for a second weekly axial session.
-Same for the deadlift secondary pool. Revisit both when the clinic clears axial load outright.
-
----
-
-## Sumo — moderate, on purpose
-
-**255 → 265 → 275 → 285, then 235 in W5**: crisp triples @6, +10 a week, each step gated on the sumo
-morning check (tight or no check → repeat last week's load). **Re-set 2026-09-27 at the athlete's call**
-(`FB 2026-09-27`): the original 225 → 275-flat started below what he'd just pulled at @5 (235 on Sep 25).
-The gentle climb is his preference too. It tops out at 285, **under B5's 295**, so the squat still peaks
-alone in W4 (`alternating-axial-emphasis`). A fixed load, not a floor: the squat gets the range this
-block, and sumo gets it in **B7**, the heavy-sumo block. All of it sits below the 345–405 `sumo-back-cap` band.
-
-Keeping it at all matters: detraining a hinge makes returning to it more dangerous, and light crisp
-pulling keeps the erectors and glutes doing protective work while the squat takes the load.
-
----
-
-## Bench · Pull-up · Dip — strive, unchanged by the back
-
-- **Bench (standing priority lift, `big5-priority`)**: W4 is written as an **instruction plus a
-  range** — *work up to @8, 275–285×2, take the heaviest double at or under @8* (`cap-is-a-target`).
-  285×2 @8 would be an e1RM around 304, eleven pounds past the PR. W3 deliberately holds at 255.
-- **Pull-up**: W4 work up to **@8 hard stop**, BW+90–95×3. That hard stop is what ended three blocks
-  of RPE drift. Same terms.
-- **Dip**: W3 peak, work up to @8, BW+105–110×3 (PR is BW+105×3 @8). **Depth before load** — stop
-  above the pinch, every rep.
-- **Shoulder**: ≤3/10 pain on every press, always. No shoulder injection to date, so
-  `masked-pain-load-cap` doesn't bind these three.
-
-### Secondaries — 0 rotations (`secondary-rotation`)
-
-| Lift | Secondary | Day | Plan | Why held |
+| Lift | Secondary | Day | Plan | Why |
 |---|---|---|---|---|
-| Bench | **Spoto** | D4 | 235×4 → 245×3 → 250×3 → 255×3 → 205×4, @7.5 ceiling | Third block. Progressed **every session** of B5. Don't rotate a thing that's working. |
-| Bench | **CGB** | D3 | 185×5 ×3 W1–W3 · 195 W4 · 155 W5, hard @7 | Lockout is the bench weak point. Written at **185 because that's what you actually lift** — B5's 165→175 ramp was ignored all block. Held at 185 in W3 because dip peaks that day. |
-| Squat | — | — | — | Whole pool blocked — medical. |
-| Deadlift | — | — | — | Whole pool blocked — medical. |
+| Bench | **Spoto** | D3 | 250 → 255 → 255 → 265 ×3 ×3, @7.5 | **HELD.** Progressed every session for two blocks — the only bench movement with an unbroken upward record. Don't rotate a thing that's working. |
+| Bench | ~~CGB~~ | — | **out** | Three straight blocks. Its slot became the second comp-bench exposure, which is a bigger change than swapping it for another variant. |
+| Squat | — | — | — | Whole pool `Blocked — medical`. |
+| Deadlift | — | — | — | Whole pool `Blocked — medical`. **Relevant this block**: it means the heavy-sumo block has no barbell secondary to groove the lockout, so **Hip Thrust (D2) is the hitch work.** |
+
+---
+
+## Pull-up & Dip
+
+- **Pull-up — a hard number, not a range.** `cap-is-a-target` is **suspended for this lift** and that
+  is a standing finding, not a one-block tweak: a hard @8 stop held clean for two blocks; the moment
+  it became "@8.5, range to +100" it went @9.5. Fixed absolute loads this block (elbow + heavy sumo).
+  Chin over the bar every rep or the set is over. Earn the load back with clean reps.
+- **Dip — unchanged, because it's working.** Peak **W3** (work up to @8, floor BW+105, lid BW+115 —
+  you did BW+105×3 @7.5 *and* BW+95×5 @6 in the same session, so there's real reserve), then **hold**
+  at BW+95 in W4 so it never peaks the same week as the bench. **Depth before load**: stop above the
+  pinch, every rep. The AC joint and the bursa are what the bottom compresses.
 
 ---
 
 ## Accessories — weak point → target → exercise → carryover
 
-Loads from the Hevy log (`loads-from-logs`), median of recent sessions. Held 2–3 weeks, then a small
-bump (`accessory-progression`). **Every shoulder-pattern slot gets its RPE read weekly** (B5 action
-item #2) — an accessory at @9+ gets flagged like a primary would.
+Loads from the Hevy log (`loads-from-logs`), median of recent sessions, held 2–3 weeks then a small
+bump (`accessory-progression`). **At least 3 working sets, stopping at @8** — @7 on the shoulder slots
+(`accessory-effort-cap`).
 
 | Day | Exercise | W1 → W4 (W5) | Chain | Alternative |
 |---|---|---|---|---|
-| D1 | Tricep Pushdown | 50 → 55×12 (45) | Lockout (bench weak point) → triceps → pushdown → finishing reps | Cable Triceps Extension |
-| D1 | **Chest Fly (Machine)** 🆕 | 100 → 105×12 (85) | Chest only trained by presses → pec isolation, no pressing exposure | Seated Cable Fly |
-| D1 | **Iso-Lateral Row (Machine)** ➕ | W1 125 → **115 · 115 · 120 (105)** *(recal. 10-02)*, **per arm, one at a time** | **Pull on Monday** (`whole-body-every-day`) → mid-back, chest-supported, zero lumbar load. Under the 145 median so it doesn't pre-fatigue Tuesday's pull-up; **first cut** if the WPU backoffs suffer | CS Incline Row (DB) 45/hand. **Never T-bar or bent-over.** |
-| D2 | Hip Thrust (Smith) | 225×10 → 245×8 (185) | Sumo lockout / squat out of the hole → glutes | Glute Bridge (Barbell) |
-| D2 | Seated Leg Curl | 105 → 115×12 (95) | Hamstrings (knee-flexion side) | Lying Leg Curl |
-| D2 | **Single Arm Landmine Press** 🔄 | W1 50 (ran 45 @8–9.5) → **35 · 40 · 40 (35)** ×10/arm *(recal. 10-02; 40 only if last set ≤@7)* | Front delts → shoulder-friendly press path | Neutral-grip DB Press (seated, @7) |
-| D2 | Lateral Raise (DB) | 30 → 35×15 (25) | Lateral delts — was a hole in B4 | Cable Lateral Raise |
-| D3 | Lat Pulldown | W1 165 (@9.5) → **150 · 155 · 155 (135)** ×12 *(recal. 10-02)* | Pull-up → lats, seated, no axial load | Natural Grip Pulldown |
-| D3 | Reverse Pec Deck | W1 110 (ran 115 @9.5) → **100 · 105 · 105 (90)** ×15 *(recal. 10-02)* | **Load-bearing**: intact posterior cuff shares load off two torn anterior tendons | Rear Delt Fly (DB) 25 |
-| D3 | Face Pull | 40 → 45×15 (35) | Same — external rotation, scapular control | Band pull-apart |
-| D3 | **Leg Extension (Machine)** ➕ | 130 → 140×12 (115) *(hold)* | **Lower body on Thursday** (`whole-body-every-day`) → quads, the lowest-cost option before Friday: no spinal load, no loaded hip flexion, no adductor cost for sumo | Leg Press 270×12, ROM-capped. **No squat pattern.** |
-| D4 | Bulgarian Split Squat | 40 → 50×10 (35) | Quads/glutes unilateral, non-axial | Leg Press (ROM-capped) |
-| D4 | CS Incline Row | 50 → 55×12 (45) | Mid-back, zero lumbar load | Seated Cable Row. **Never barbell bent-over.** |
-| D4 | Seated Calf Raise | 90 → 100×12 (80) | Calves — **corrected anchor** (not 155–175) | — |
-| D4 | Concentration Curl | **40 flat** ×10 (35) *(recal. 10-02; W1 @7–8.5)* | Biceps, direct | Hammer Curl |
+| D1 | Tricep Pushdown ⚯ | 50 · 50 · 55 · 55 (45) ×12 | Lockout (bench weak point) → triceps | Cable Triceps Extension, same load |
+| D1 | Chest Fly (Machine) ⚯ | 100 · 100 · 105 · 105 (85) ×12 | Chest only trained by presses → pec isolation, no fifth press | Seated Cable Fly 70 |
+| D1 | Iso-Lateral Row (Machine) | 120 · 120 · 125 · 125 (105) ×12, per arm | Monday's pull dose, chest-supported, zero lumbar load. **First cut on D1.** | CS Incline Row (DB) 45/hand. **Never T-bar or bent-over.** |
+| D2 | **Straight Arm Lat Pulldown 🆕** ⚯ | 45 · 45 · 50 · 50 (40) ×12 | **Lats + serratus with ZERO elbow flexion** — see below | Rope Straight Arm Pulldown |
+| D2 | Hip Thrust (Smith) ⚯ | 245 · 245 · 255 · 255 (205) ×8 | **The hitch work.** Sumo lockout → glutes. Carries the load the blocked deadlift secondary pool can't. | Glute Bridge (Barbell) 185 |
+| D2 | Seated Leg Curl ⚯ | 110 · 110 · 115 · 115 (95) ×12 | Hamstrings, knee-flexion side | Lying Leg Curl |
+| D2 | Lateral Raise (DB) ⚯ | 35 · 35 · 40 · 40 (30) ×15 | Lateral delts. **First cut on D2.** | Cable Lateral Raise 20 |
+| D2 | Single Arm Landmine Press | 40 · 40 · 45 · 45 (35) ×10/arm, **@7 cap** | Front delts on a diagonal path — least subacromial compression available | Neutral-grip DB Press (seated) 45, **same @7 cap**. **Never barbell OHP.** |
+| D3 | Lat Pulldown ⚯ | **145 · 145 · 150 · 150 (130)** ×12 | Lats, seated, no axial load. **Pinned well under the 157 median — tomorrow is 345–405 sumo.** **Wide pronated grip — the 10-22 "right inner elbow pain with the neutral grip" note was on this exercise.** | Wide-grip pulldown, same load. **No neutral bar.** |
+| D3 | Leg Extension (Machine) ⚯ | 135 flat (115) ×12 | Thursday's lower dose, and the cheapest one that exists before a heavy pull: no spinal load, no loaded hip flexion, no adductor cost | Leg Press 270, ROM-capped. **No squat pattern, no hinge.** |
+| D3 | Reverse Pec Deck ⚯ | 100 · 100 · 105 · 105 (90) ×15, **@7 cap** | Intact posterior cuff shares load off two torn anterior tendons | Rear Delt Fly (DB) 25 |
+| D3 | Face Pull ⚯ | 40 · 40 · 45 · 45 (35) ×15, @7 | External rotation + scapular control. **First cut on D3.** | Band pull-apart ×20 |
+| D4 | Seated Calf Raise ⚯ | 95 · 95 · 100 · 100 (85) ×12 | Calves. **First cut on D4.** | — **No standing/barbell calf raise** (axial compression). |
+| D4 | CS Incline Row ⚯ | 55 · 55 · 60 · 60 (45) ×12 | Mid-back, zero lumbar load — the row that survives on a heavy-pull day | Seated Cable Row 120. **Never barbell bent-over.** |
+| D4 | **Hip Adduction (Machine) ➕** | 105 · 105 · 115 · 115 (95) ×15 | **Sumo-stance-specific adductors, in the heavy-sumo block.** After sumo, never before. | — (anchor is your real 105–115, not the 90s) |
 
 **Core, one different pattern per day** (`core-every-day`): Side Plank 40 s (anti-lateral-flexion) ·
-Pallof 25 → **20**×12 from W2 (anti-rotation; W1 ran @9) · Dead Bug ×10 (anti-extension) · Bird Dog ×10 (spine-neutral). **No
-loaded lumbar flexion, no hanging leg raise** while the back is under treatment.
+Pallof Press 20×12 (anti-rotation) · Dead Bug ×10 (anti-extension) · Bird Dog ×10 (spine-neutral).
+**No loaded lumbar flexion, no hanging leg raise** while the back is under treatment.
 
-### What changed from B5, and why (`accessory-rotation`)
+### What changed from B6, and why (`accessory-rotation`)
 
-- **🔄 Rotated: DB Shoulder Press → Single Arm Landmine Press.** Same target, shoulder-friendlier
-  implement. The DB press ran to @10 under a hard @7 cap and was swapped for barbell OHP twice.
-  **First exposure: the load is plates on the sleeve, not counting the bar** — log it that way.
-  There's no reliable DB→landmine conversion (published guidance only says landmine allows *more*
-  load on a friendlier path), so it was written at 25; **the athlete re-set the floor at 50 (FB 2026-09-27)** — 25 was too light.
-- **🆕 Expansion: Chest Fly (Machine)** — chest isolation, the group the program only reaches through
-  presses. It answers your Sep 16 ask for chest work **as a fly, not a fifth press**. Stop the handles
-  before the elbows travel behind the torso — the stretched bottom loads the anterior capsule where
-  the subscapularis tear sits. Last logged 115×11 in Dec 2025, so it re-enters below that.
-- **Back: Bulgarian Split Squat** — declined only during the baclofen course. First D4 is Oct 2,
-  after the course ends.
-- **Moved: Hip Thrust D3 → D2** — off the day before sumo.
-- **Dropped: Leg Press.** It came into B5 to replace squat volume the medical cap removed. With the
-  squat heavy again, the reason is gone.
-- **Dropped: Weighted Back Extension.** Erectors are covered by a heavy squat, sumo and Bird Dog, and
-  direct loaded lumbar extension the day after a 385–405 squat is the wrong trade on a treated back.
-- **Still out: Incline DB Press, all overhead barbell work, upright row.**
-- **➕ Added 09-24: Iso-Lateral Row (D1) and Leg Extension (D3)**, per the athlete's feedback that
-  **every session hits the whole body** (`whole-body-every-day`). D1 had no pull and D3 had no
-  lower body, the same hole that sent him to a 415 leg press on the bridge Thursday. Each was picked
-  for the lowest cost to the next day: D1 → D2 is back-to-back with the pull-up, and D3 → D4 is
-  back-to-back with sumo + BSS. Neither is an emphasis; each gives that region its dose for the day.
+- **🆕 New: Straight Arm Lat Pulldown (D2).** The one genuinely novel movement, and it earns its place
+  on the elbow: **straight arms mean zero elbow-flexion load**, so it is the lat stimulus your elbow
+  currently forbids everywhere else — at exactly the moment the pull-up's load is being held back. It
+  also loads **serratus anterior**, which drives scapular upward rotation and therefore the
+  subacromial space the bursitis sits in. Soft elbows, move at the shoulder only.
+  *Honest labelling*: 28 sessions in the log, but **all of them 2022–2023**. Per
+  `secondary-first-exposure` a three-year-old 61 lb median is history, not a starting point — it opens
+  at 45 and the log re-establishes the level. Pinned `hold` until it does.
+- **➕ Re-entry: Hip Adduction (Machine) (D4).** Not new (90 sessions, last trained 09-20 at 105) but
+  out for a while. It's here because it is **sumo-specific** and this is the sumo block, and because it
+  takes the slot the Concentration Curl vacated.
+- **❌ Out: Concentration Curl.** Direct elbow flexion, and **both** elbows hurt on flexion. Your own
+  *"doesnt use the bicep"* observation is the argument for it. Biceps get their dose from the wide-grip
+  pull and the two row slots. Back when the elbows are quiet.
+- **❌ Out: Bulgarian Split Squat.** **This one is a judgement call and I'll own it:** a heavy-sumo
+  block cannot carry loaded unilateral leg work in the 48 h either side of a 405 pull, and every day
+  already has its lower-body dose without it (squat D1, hip thrust + leg curl D2, leg extension D3,
+  sumo D4). It's out for a reason, not for time. **If you want it back, it goes on D2 and D2 gets long.**
+- **⚯ Six superset pairs added** — see below. No exercise was removed to save time.
+- **Still out**: Incline DB Press, all overhead barbell work, upright row, barbell incline.
 
-### Week-1 recalibration (2026-10-02, athlete-approved)
+### ⚠️ One thing I did that brushes your own rule
 
-W1's logged loads and RPEs are the source of truth for six accessories that finished at @8.5–9.5.
-They're re-set so the last set lands around @7–8, or ≤@7 for the shoulder slots (landmine, reverse pec
-deck): landmine, pulldown, reverse pec deck, Iso-Lateral Row, Pallof and concentration curl. All are
-pinned `hold`. **Kept as written at the athlete's call:** Spoto (W1's @8.5 came after a bad night's
-sleep, and the triples from W2 sit inside target) and BSS (12 reps were logged by mistake; at 10 the
-RPE holds). **No D1 trim:** the athlete keeps every exercise, so the triceps pushdown and side plank
-stay. Pushed to Hevy W2–W5 with `--update --start W2-D1`.
+You said on 10-29: *"Don't adjust the number of accessories per day."* **D4 goes from 7 exercises to
+6** (Spoto moved to D3, BSS and the curl out, comp bench and hip adduction in). D1/D2/D3 are at 6/7/7.
+I think it's right — Friday now carries a 405 pull *and* four sets of bench — but it's your rule, so
+it's flagged rather than slipped past. Say the word and the seventh slot comes back.
+
+### Session length — the make-up record's answer
+
+W3 and W4 of B6 each shed three accessories to the weekend, always the **last exercise written on
+D1, D3 and D4**. The bedtime fix didn't clear it. You won't cut exercises, so **they're paired
+instead**: six superset pairs, roughly two per day, which buys the time back from rest rather than
+from the movement list.
+
+**If the tail slots still bleed by W2, the named first cuts are**: D1 Iso-Lateral Row · D2 Lateral
+Raise · D3 Face Pull · D4 Seated Calf Raise. Naming them now beats deciding at 6:50 am.
 
 ### Muscle coverage audit (`muscle-coverage-audit`)
 
 | Group | Where | Group | Where |
 |---|---|---|---|
-| Quads | Squat (D1) · Leg Ext (D3) · BSS (D4) | Lats | Pull-up (D2) · Lat Pulldown (D3) |
+| Quads | Squat (D1) · Leg Ext (D3) | Lats | Pull-up · **Straight Arm PD** (D2) · Lat Pulldown (D3) |
 | Hamstrings | Leg Curl (D2) · sumo | Mid-back | Iso-Lateral Row (D1) · CS Incline Row (D4) |
-| Glutes | Hip Thrust (D2) · BSS (D4) · squat · sumo | Front delts | Landmine Press (D2) · all pressing |
-| Erectors | Squat · sumo · Bird Dog — **no direct loaded work, by decision** (above) | Lateral delts | Lateral Raise (D2) |
-| Chest | Bench (D1) · **Chest Fly (D1)** · Dip (D3) · Spoto (D4) | Rear delts | Reverse Pec Deck · Face Pull (D3) |
-| Triceps | Pushdown (D1) · Dip · CGB (D3) · all benching | Biceps | Concentration Curl (D4) · pull-ups |
+| Glutes | Hip Thrust (D2) · squat · sumo | Front delts | Landmine Press (D2) · all pressing |
+| **Adductors** | **Hip Adduction (D4)** — new coverage | Lateral delts | Lateral Raise (D2) |
+| Erectors | Squat · sumo · Bird Dog — **no direct loaded work, by decision** | Rear delts | Reverse Pec Deck · Face Pull (D3) |
+| Chest | Comp Bench (D1 **+ D4**) · Chest Fly (D1) · Dip · Spoto (D3) | **Serratus** | **Straight Arm PD (D2)** — new coverage |
+| Triceps | Pushdown (D1) · Dip (D3) · all benching | Biceps | Pull-up + both rows — **no direct work, by decision (both elbows)** |
 | Calves | Seated Calf Raise (D4) | Core | All four days, four patterns |
 
-**Every group covered.** The one deliberate gap is direct erector loading, named above.
+**Two deliberate gaps, both named with reasons**: direct erector loading (back under treatment) and
+direct biceps (the elbow). Everything else covered.
 
 **Per-day check (`whole-body-every-day`)** — lower · push · pull · core in every session:
 
 | Day | Lower | Push | Pull | Core |
 |---|---|---|---|---|
 | D1 | **Squat** | **Bench** · Fly · Pushdown | Iso-Lateral Row | Side Plank |
-| D2 | Hip Thrust · Leg Curl | Landmine Press · Lateral Raise | **Pull-up** | Pallof |
-| D3 | Leg Extension | **Dip** · CGB | Pulldown · Pec Deck · Face Pull | Dead Bug |
-| D4 | **Sumo** · BSS · Calf | Spoto | CS Row · Curl | Bird Dog |
-
+| D2 | Hip Thrust · Leg Curl | Landmine · Lateral Raise | **Pull-up** · Straight Arm PD | Pallof |
+| D3 | Leg Extension | **Dip** · Spoto | Pulldown · Pec Deck · Face Pull | Dead Bug |
+| D4 | **Sumo** · Hip Adduction | **Bench (6s)** | CS Incline Row | Bird Dog |
 
 ---
 
 ## Holds (`sheet-load-sync`)
 
-Pinned `hold` in the JSON so the Saturday sync can't rebase them up to the log: **every squat rung**
-(gated ladder), **every sumo set** (moderate band), **Chest Fly and Landmine Press** (first exposure /
-long-gap re-entry), and **all of W5** (deload).
+Pinned `hold` so the Saturday sync can't rebase them up to the log: **every sumo set** (gated rung +
+`sumo-back-cap`), **every squat set** (moderate fixed band, deliberately under the log), **every
+pull-up set** (absolute-load cap — elbow + heavy sumo), **Lat Pulldown** and **Leg Extension** (pinned
+under their medians to protect Friday), **Iso-Lateral Row** (pinned to protect Tuesday), **Landmine
+Press** and **Reverse Pec Deck** (shoulder @7 caps set the load, not the log), **Straight Arm Lat
+Pulldown** (stale 3-year anchor), and **all of W5** (deload).
 
-> **Side effect, stated rather than discovered later:** `reconcile_loads` scopes `hold` by exercise
-> **name**, not by week — so pinning the W5 deload pins every exercise for the whole block (B5 worked
-> the same way). The Saturday sync still **reports** every sheet→log drift; it just won't rewrite a
-> prescription. After this block's creep history that's the right default — a sync that raises the
-> plan to whatever was lifted rewards running hot. Corrections go through `amending-live-block`.
-
----
-
-## Amendments
-
-- **2026-10-02 — warm-ups rebuilt, W1-D4 → W5-D4 re-pushed** (`primary-warmup-ramp`). Every Big-5
-  primary now carries your ramp, scaled to that day's top set: barbell opens 135×8, squat/sumo climb
-  +90 (225, 315, 405), bench 185 → 225 → 275; pull-up BW(1 lb)×8 → +45×3 (+70×1 from a +90 top),
-  dip BW×8 → +35×5 to a +70 top, +45×5 above. The note prefix now counts working sets only — the
-  dip read `[5×8]` off the warm-up. **No working set changed.** W1-D1..D3 were already trained and
-  stay as prescribed.
-- **2026-10-03 — W2-D1 → W5-D4 re-pushed again.** The Oct 2 accessory recalibration was pushed from a
-  branch that didn't have the ramps yet, so it put the old single warm-ups and `[5×8]`-style prefixes
-  back in the app. Both changes now live together: recalibrated accessories **and** the warm-up ramps.
-
-- **2026-10-12 — mid-block retrospective changes, W3-D1 → W5-D4 re-pushed** (athlete-approved; see
-  `brain/memory.md` 2026-10-08). The retro found bench and pull-up flat for three years, primaries
-  logged @6 against @7–7.5 targets, and accessories absorbing the effort.
-  - **Bench W3:** the 255 "hold" is gone. **Floor 255, range to 265**, stop at @7.5. Proposed as a straight
-    265×3; **written softer on a re-check**. W2's 250×3 went @6 and then @7.5 at the same load, so the
-    real read is ~295–300 e1RM, and 265×3 lands @8.5–9 against the shoulder's @8 cap. The range gives
-    him 265 on a day that earns it.
-  - **Bench W4:** **work up to @8, floor 275, range to 295** (was 275–285). Same correction: a 285 floor is a
-    ~305–320 e1RM ask. 285×2 @8 is the PR target, and 295 is there only if 285 moves like @7.
-  - **Pull-up W4:** **BW+95×3 @8.5, range to BW+100** (was BW+90–95 @8 hard stop). Written to beat the
-    BW+90×3 PR, not match it. Open at BW+90 if W3's BW+85×3 came in above @8.
-  - **Accessories W3–W5:** **2 working sets, stop at @8**, or @7 on the shoulder slots (landmine, reverse
-    pec deck), whose cap stands. No exercise dropped (his rule). Core unchanged at 3.
-  - **Holds: unchanged, and that's a correction to the retro.** The retro said the `hold` pins stop primaries
-    moving up. Wrong: `reconcile_loads` never auto-adjusts a primary, held or not. Primaries only move when
-    the coach re-pushes them. The fix is a process: the weekly review raises a primary that ran 1+ RPE
-    under target. The pins stay.
+> **Known limitation, stated up front:** `reconcile_loads` scopes by exercise **name**, and
+> **"Comp Bench" now appears twice a week at different loads** (280 on D1, 225 on D4). Primaries are
+> report-only and never auto-adjusted, so no prescription is at risk — but the Saturday drift report
+> will read oddly for bench. **And the B6 lesson stands: a `hold` means "don't rebase", not "don't
+> look."** Sumo ran +30 lb over a held line for five weeks and no review said a word. That's on the
+> action list to fix in the tooling.
 
 ---
 
-- **2026-10-18 — squat ladder retired, W4 re-pushed** (athlete's call: *"We should more thrive the squat
-  load to go back to my norm. Don't push 385lb for W4 squat."*). W3 squat went **415×3 @7**, over the 405
-  ceiling, and no back check has been logged since Oct 2. The ladder said repeat 385; he declined.
-  - **W4-D1 squat: floor 415×3** (a known load: last Monday's @7), climb in 10s, **stop at the first triple
-    at @8, lid 455** (his Jun–Jul working triple). Backoffs **345×4 ×3 @7** (keyed to the floor, was 335).
-    Warm-ups unchanged: 135 / 225 / 315, since the ramp stops 20 lb under the top.
-  - **What to expect:** from 415 @7 (~496 e1RM), an @8 triple is ~425–435. 455×3 @8 would be an
-    all-time best, so the lid only binds on a day that's well ahead.
-  - **Gone:** the rung gates and the "repeat last week's floor" clause. **Stays:** the clinical hard stops
-    (leg symptoms, night or rest pain, pain not settling in 24 h, `sore` twice → stop axial work). The
-    Tuesday back check is now a record, not a gate.
-  - **Not changed:** W5 deload (275×3 @6) and sumo (285×3 ×3, still the moderate lift; B7 is its block).
-    Pushed `--update --week 4 --start W4-D1`, so W4-D2..D4 were re-PUT with the same content.
-  - **Cost, stated:** this is the athlete's call, not clinical clearance. The clinic still doesn't know he
-    squats, let alone 415–455 (`active-issues.md`, fourth block owed).
+## Open items carried into B7
 
-- **2026-10-29 — accessories back to 3 sets, deload primaries on a 1:00 timer, W5-D3 → W5-D4 re-pushed**
-  (athlete's feedback, `feedback/log.md`). Every accessory runs **at least 3 working sets**, same loads,
-  same @8 stop (@7 on the shoulder slots). No exercise added or dropped. The log already said 3: 30 of
-  32 accessory slots in W3–W5 were logged at 3 against the written 2. **Primary rest drops 1:15 → 1:00 in
-  the warm-up week and the deload**, so today's dip and Friday's sumo push at 1:00. W5-D1/D2 were trained
-  and stay as written. **Cost, stated:** +8 sets across D3/D4, roughly 5 min a session. The 60 s timer on
-  the deload primaries gives about a minute of it back.
-
-## Open items carried into B6
-
-- [ ] **B5 action #1 — off-plan movement check in the weekly review.** Not built yet. Until it
-      is, the weekly review reads loads for the exercises above and nothing else — an unplanned
-      movement is still invisible. Next engineering task.
-- [ ] **`back_checks.py` doesn't know about the medication course** and matches axial sessions by
-      template/exact name (the Korea Smith squat/RDL never registered). Same fix family.
-- [ ] Clinic questions in `active-issues.md` → *Visit 2026-09-11*.
-- [ ] **Push to Hevy** — dry-run is clean (folder `2026-Q4-B06`, 20 routines, whole-pound loads,
-      rest timers on every line). Waiting on your go.
+- [ ] **🔴 Book the clinic.** Say the numbers out loud: squat 435×3, sumo 315×3, and B7 goes to 405.
+      Six blocks owed. Questions are listed in `active-issues.md`. **The 405 ceiling is set by this
+      being undone.**
+- [ ] **🔴 Back check every Saturday, after Friday's pull.** One word. No check, no rung.
+- [ ] **🔴 Report the elbows** as they change, and **say which side** — the record needs it. Two
+      sessions with pain at the written loads and the pull-up comes out of the block.
+- [ ] **🔴 Answer the six elbow questions** in `active-issues.md` → *Elbows* (where exactly, does it
+      hurt outside the gym, does it hurt on dips, what changed in late September).
+- [ ] **🟡 Push to Hevy** — dry-run clean, 20 routines. **Waiting on your go.**
+- [ ] **🟡 Export to the Google Sheet** — needs the Actions workflow (no Google creds in session).
+- [ ] **🟡 Tooling: make a `hold` still get checked against the log** (B6 sumo ran +30 unnoticed).
+- [ ] **🟡 Tooling: the end-of-block draft automation has never fired.** It's a local scheduled task
+      that doesn't exist. B7 arrived with nothing because of it.
+- [ ] *(carried, B5 #1)* **Off-plan movement detection in the weekly review** — still not built.
