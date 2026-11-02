@@ -7,8 +7,18 @@
 **Source**: Designed 2026-11-01 from the B6 review (`reviews/2026-Q4-B06.md`), the 2026-10-12
 "too conservative" ruling, and four calls you made on 2026-11-01 (axial direction, bench stimulus,
 elbow status, back checks).
-**Live in Hevy**: ⏳ **not pushed yet** — dry-run is clean (folder `2026-Q4-B07`, 20 routines,
-whole-pound loads, a rest timer on every line). **Waiting on your go.**
+**Live in Hevy**: ✅ pushed **2026-11-02 12:05 UTC**, folder `2026-Q4-B07` (id **4003492**),
+**20 routines**, whole-pound loads, a rest timer on every line. Changes from here go through
+`amending-live-block` (`--update --start`).
+> **It took three attempts and the first two were my fault** — kept here because the next person
+> to push a block should know. (1) The block JSON used readable superset labels (`"d1a"`); Hevy's
+> `superset_id` is a **number**, so they became `NaN` and the first routine was rejected *after*
+> the folder had been created. (2) I then told him to run from a non-default branch to reach a
+> `folder_id` input that only existed there, so the default click ran the old code and made a
+> second orphan folder. Both fixed on master: numeric ids with a build-time guard, `SS<n>` in the
+> dry-run preview, and the push now **reuses the block's folder by title** instead of creating one.
+> He clicked twice at the same second on the successful attempt; the workflow's `concurrency` group
+> plus the routine-title check meant the second run skipped all 20 rather than duplicating them.
 **Prior block**: `data/block-archive/2026-Q4-B06.{md,json}` · review in `reviews/2026-Q4-B06.md`
 
 **Axial emphasis (`alternating-axial-emphasis`)**: **current = SUMO heavy, squat moderate.
@@ -346,8 +356,13 @@ Pulldown** (stale 3-year anchor), and **all of W5** (deload).
       sessions with pain at the written loads and the pull-up comes out of the block.
 - [ ] **🔴 Answer the six elbow questions** in `active-issues.md` → *Elbows* (where exactly, does it
       hurt outside the gym, does it hurt on dips, what changed in late September).
-- [ ] **🟡 Push to Hevy** — dry-run clean, 20 routines. **Waiting on your go.**
-- [ ] **🟡 Export to the Google Sheet** — needs the Actions workflow (no Google creds in session).
+- [x] **Push to Hevy** — done 2026-11-02, folder 4003492, 20 routines, no duplicates.
+- [x] **Export to the Google Sheet** — done 2026-11-02 (his run 18:16 UTC on 11-01, tabs
+      "Block 7 Overview" + "Block 7 Plan"), reviewed and approved before the Hevy push.
+- [ ] **🔴 W1-D1 (Mon 2026-11-02) — did it happen?** The app was empty at 6am because of the
+      failed pushes. If it was trained off the Sheet I need the actual loads; if it was missed,
+      W1 shifts to start Tue 11-03 rather than stacking bench-heavy D1 against the
+      elbow-limited pull-up D2 on consecutive days.
 - [ ] **🟡 Tooling: make a `hold` still get checked against the log** (B6 sumo ran +30 unnoticed).
 - [ ] **🟡 Tooling: the end-of-block draft automation has never fired.** It's a local scheduled task
       that doesn't exist. B7 arrived with nothing because of it.
