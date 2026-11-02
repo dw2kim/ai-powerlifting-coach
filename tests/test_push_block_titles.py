@@ -3,8 +3,10 @@
 Hevy has no DELETE for routines, so a title that stops matching the plan is a routine the
 athlete has to clear by hand. Both behaviours here exist to stop that happening.
 """
+import json
 import unittest
 
+from scripts.hevy import push_block
 from scripts.hevy.push_block import build_routine_payload
 
 
@@ -52,3 +54,51 @@ class RoutineTitleTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class SupersetIdMustBeNumericTests(unittest.TestCase):
+    """B7's first push died here, after the routine folder had already been created.
+
+    The block JSON used readable superset labels ("d1a", "d2b"). Hevy's `superset_id` is a
+    NUMBER, so a string is coerced to NaN and the routine is rejected with
+    `400 Expected number, received nan` — twice, once per exercise in W1-D1's superset pair.
+    The dry run printed loads and rest timers and never looked at the field, so it passed
+    clean 20/20 while being unpushable.
+    """
+
+    def _ex(self, ss):
+        return {"name": "Tricep Pushdown", "tier": "accessory", "superset_id": ss,
+                "sets": [{"type": "normal", "weight_kg": 22.7, "reps": 12}]}
+
+    def test_int_passes_through(self):
+        self.assertEqual(
+            push_block.exercise_payload(self._ex(0), _StubResolver(), False)["superset_id"], 0)
+
+    def test_none_passes_through(self):
+        self.assertIsNone(
+            push_block.exercise_payload(self._ex(None), _StubResolver(), False)["superset_id"])
+
+    def test_missing_key_is_none(self):
+        ex = self._ex(0); del ex["superset_id"]
+        self.assertIsNone(
+            push_block.exercise_payload(ex, _StubResolver(), False)["superset_id"])
+
+    def test_digit_string_is_coerced(self):
+        self.assertEqual(
+            push_block.exercise_payload(self._ex("2"), _StubResolver(), False)["superset_id"], 2)
+
+    def test_the_actual_bug_is_refused_at_build_time(self):
+        """'d1a' must fail loudly here, not as a 400 after the folder exists."""
+        with self.assertRaises(SystemExit) as cm:
+            push_block.exercise_payload(self._ex("d1a"), _StubResolver(), False)
+        self.assertIn("superset_id", str(cm.exception))
+
+    def test_the_shipped_block_is_clean(self):
+        """Guards the real file: every superset_id in current-block.json is numeric."""
+        spec = json.loads(push_block.SPEC_PATH.read_text())
+        offenders = [
+            (p["week"], p["day"], e.get("name"), e["superset_id"])
+            for p in spec["prescriptions"] for e in p["exercises"]
+            if e.get("superset_id") is not None and not isinstance(e["superset_id"], int)
+        ]
+        self.assertEqual(offenders, [])

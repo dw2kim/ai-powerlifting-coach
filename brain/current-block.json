@@ -194,7 +194,7 @@
        "reps": 12
       }
      ],
-     "superset_id": "d1a"
+     "superset_id": 0
     },
     {
      "name": "Chest Fly (Machine)",
@@ -217,7 +217,7 @@
        "reps": 12
       }
      ],
-     "superset_id": "d1a"
+     "superset_id": 0
     },
     {
      "name": "Iso-Lateral Row (Machine)",
@@ -341,7 +341,7 @@
      ],
      "hold": true,
      "hold_reason": "3-year-gap re-entry: 28 sessions but all 2022-2023, median 61 lb. Per secondary-first-exposure a stale anchor is history, not a starting point - open under it and let the log re-establish the level.",
-     "superset_id": "d2c"
+     "superset_id": 0
     },
     {
      "name": "Hip Thrust (Smith Machine)",
@@ -364,7 +364,7 @@
        "reps": 8
       }
      ],
-     "superset_id": "d2c"
+     "superset_id": 0
     },
     {
      "name": "Seated Leg Curl",
@@ -387,7 +387,7 @@
        "reps": 12
       }
      ],
-     "superset_id": "d2b"
+     "superset_id": 1
     },
     {
      "name": "Lateral Raise (Dumbbell)",
@@ -410,7 +410,7 @@
        "reps": 15
       }
      ],
-     "superset_id": "d2b"
+     "superset_id": 1
     },
     {
      "name": "Single Arm Landmine Press (Barbell)",
@@ -555,7 +555,7 @@
      ],
      "hold": true,
      "hold_reason": "Held under the 157 log median on purpose: D3 lat work must not pre-fatigue D4, which is HEAVY sumo this block. This is a sumo-protection pin, not a progression target.",
-     "superset_id": "d3e"
+     "superset_id": 0
     },
     {
      "name": "Leg Extension (Machine)",
@@ -580,7 +580,7 @@
      ],
      "hold": true,
      "hold_reason": "Flat at/under the 135-140 median: D3 quad work must not pre-fatigue D4 heavy sumo.",
-     "superset_id": "d3e"
+     "superset_id": 0
     },
     {
      "name": "Reverse Pec Deck",
@@ -605,7 +605,7 @@
      ],
      "hold": true,
      "hold_reason": "Shoulder slot under a hard @7 cap. Ran to @9.5 in B5 under this same cap; the cap sets the load, not the log.",
-     "superset_id": "d3d"
+     "superset_id": 1
     },
     {
      "name": "Face Pull",
@@ -628,7 +628,7 @@
        "reps": 15
       }
      ],
-     "superset_id": "d3d"
+     "superset_id": 1
     },
     {
      "name": "Dead Bug",
@@ -770,7 +770,7 @@
        "reps": 12
       }
      ],
-     "superset_id": "d4f"
+     "superset_id": 0
     },
     {
      "name": "Chest Supported Incline Row",
@@ -793,7 +793,7 @@
        "reps": 12
       }
      ],
-     "superset_id": "d4f"
+     "superset_id": 0
     },
     {
      "name": "Hip Adduction (Machine)",
@@ -962,7 +962,7 @@
        "reps": 12
       }
      ],
-     "superset_id": "d1a"
+     "superset_id": 0
     },
     {
      "name": "Chest Fly (Machine)",
@@ -985,7 +985,7 @@
        "reps": 12
       }
      ],
-     "superset_id": "d1a"
+     "superset_id": 0
     },
     {
      "name": "Iso-Lateral Row (Machine)",
@@ -1109,7 +1109,7 @@
      ],
      "hold": true,
      "hold_reason": "3-year-gap re-entry: 28 sessions but all 2022-2023, median 61 lb. Per secondary-first-exposure a stale anchor is history, not a starting point - open under it and let the log re-establish the level.",
-     "superset_id": "d2c"
+     "superset_id": 0
     },
     {
      "name": "Hip Thrust (Smith Machine)",
@@ -1132,7 +1132,7 @@
        "reps": 8
       }
      ],
-     "superset_id": "d2c"
+     "superset_id": 0
     },
     {
      "name": "Seated Leg Curl",
@@ -1155,7 +1155,7 @@
        "reps": 12
       }
      ],
-     "superset_id": "d2b"
+     "superset_id": 1
     },
     {
      "name": "Lateral Raise (Dumbbell)",
@@ -1178,7 +1178,7 @@
        "reps": 15
       }
      ],
-     "superset_id": "d2b"
+     "superset_id": 1
     },
     {
      "name": "Single Arm Landmine Press (Barbell)",
@@ -1323,7 +1323,7 @@
      ],
      "hold": true,
      "hold_reason": "Held under the 157 log median on purpose: D3 lat work must not pre-fatigue D4, which is HEAVY sumo this block. This is a sumo-protection pin, not a progression target.",
-     "superset_id": "d3e"
+     "superset_id": 0
     },
     {
      "name": "Leg Extension (Machine)",
@@ -1348,7 +1348,7 @@
      ],
      "hold": true,
      "hold_reason": "Flat at/under the 135-140 median: D3 quad work must not pre-fatigue D4 heavy sumo.",
-     "superset_id": "d3e"
+     "superset_id": 0
     },
     {
      "name": "Reverse Pec Deck",
@@ -1373,7 +1373,7 @@
      ],
      "hold": true,
      "hold_reason": "Shoulder slot under a hard @7 cap. Ran to @9.5 in B5 under this same cap; the cap sets the load, not the log.",
-     "superset_id": "d3d"
+     "superset_id": 1
     },
     {
      "name": "Face Pull",
@@ -1396,7 +1396,7 @@
        "reps": 15
       }
      ],
-     "superset_id": "d3d"
+     "superset_id": 1
     },
     {
      "name": "Dead Bug",
@@ -1538,7 +1538,7 @@
        "reps": 12
       }
      ],
-     "superset_id": "d4f"
+     "superset_id": 0
     },
     {
      "name": "Chest Supported Incline Row",
@@ -1561,7 +1561,7 @@
        "reps": 12
       }
      ],
-     "superset_id": "d4f"
+     "superset_id": 0
     },
     {
      "name": "Hip Adduction (Machine)",
@@ -1730,7 +1730,7 @@
        "reps": 12
       }
      ],
-     "superset_id": "d1a"
+     "superset_id": 0
     },
     {
      "name": "Chest Fly (Machine)",
@@ -1753,7 +1753,7 @@
        "reps": 12
       }
      ],
-     "superset_id": "d1a"
+     "superset_id": 0
     },
     {
      "name": "Iso-Lateral Row (Machine)",
@@ -1877,7 +1877,7 @@
      ],
      "hold": true,
      "hold_reason": "3-year-gap re-entry: 28 sessions but all 2022-2023, median 61 lb. Per secondary-first-exposure a stale anchor is history, not a starting point - open under it and let the log re-establish the level.",
-     "superset_id": "d2c"
+     "superset_id": 0
     },
     {
      "name": "Hip Thrust (Smith Machine)",
@@ -1900,7 +1900,7 @@
        "reps": 8
       }
      ],
-     "superset_id": "d2c"
+     "superset_id": 0
     },
     {
      "name": "Seated Leg Curl",
@@ -1923,7 +1923,7 @@
        "reps": 12
       }
      ],
-     "superset_id": "d2b"
+     "superset_id": 1
     },
     {
      "name": "Lateral Raise (Dumbbell)",
@@ -1946,7 +1946,7 @@
        "reps": 15
       }
      ],
-     "superset_id": "d2b"
+     "superset_id": 1
     },
     {
      "name": "Single Arm Landmine Press (Barbell)",
@@ -2091,7 +2091,7 @@
      ],
      "hold": true,
      "hold_reason": "Held under the 157 log median on purpose: D3 lat work must not pre-fatigue D4, which is HEAVY sumo this block. This is a sumo-protection pin, not a progression target.",
-     "superset_id": "d3e"
+     "superset_id": 0
     },
     {
      "name": "Leg Extension (Machine)",
@@ -2116,7 +2116,7 @@
      ],
      "hold": true,
      "hold_reason": "Flat at/under the 135-140 median: D3 quad work must not pre-fatigue D4 heavy sumo.",
-     "superset_id": "d3e"
+     "superset_id": 0
     },
     {
      "name": "Reverse Pec Deck",
@@ -2141,7 +2141,7 @@
      ],
      "hold": true,
      "hold_reason": "Shoulder slot under a hard @7 cap. Ran to @9.5 in B5 under this same cap; the cap sets the load, not the log.",
-     "superset_id": "d3d"
+     "superset_id": 1
     },
     {
      "name": "Face Pull",
@@ -2164,7 +2164,7 @@
        "reps": 15
       }
      ],
-     "superset_id": "d3d"
+     "superset_id": 1
     },
     {
      "name": "Dead Bug",
@@ -2306,7 +2306,7 @@
        "reps": 12
       }
      ],
-     "superset_id": "d4f"
+     "superset_id": 0
     },
     {
      "name": "Chest Supported Incline Row",
@@ -2329,7 +2329,7 @@
        "reps": 12
       }
      ],
-     "superset_id": "d4f"
+     "superset_id": 0
     },
     {
      "name": "Hip Adduction (Machine)",
@@ -2492,7 +2492,7 @@
        "reps": 12
       }
      ],
-     "superset_id": "d1a"
+     "superset_id": 0
     },
     {
      "name": "Chest Fly (Machine)",
@@ -2515,7 +2515,7 @@
        "reps": 12
       }
      ],
-     "superset_id": "d1a"
+     "superset_id": 0
     },
     {
      "name": "Iso-Lateral Row (Machine)",
@@ -2639,7 +2639,7 @@
      ],
      "hold": true,
      "hold_reason": "3-year-gap re-entry: 28 sessions but all 2022-2023, median 61 lb. Per secondary-first-exposure a stale anchor is history, not a starting point - open under it and let the log re-establish the level.",
-     "superset_id": "d2c"
+     "superset_id": 0
     },
     {
      "name": "Hip Thrust (Smith Machine)",
@@ -2662,7 +2662,7 @@
        "reps": 8
       }
      ],
-     "superset_id": "d2c"
+     "superset_id": 0
     },
     {
      "name": "Seated Leg Curl",
@@ -2685,7 +2685,7 @@
        "reps": 12
       }
      ],
-     "superset_id": "d2b"
+     "superset_id": 1
     },
     {
      "name": "Lateral Raise (Dumbbell)",
@@ -2708,7 +2708,7 @@
        "reps": 15
       }
      ],
-     "superset_id": "d2b"
+     "superset_id": 1
     },
     {
      "name": "Single Arm Landmine Press (Barbell)",
@@ -2853,7 +2853,7 @@
      ],
      "hold": true,
      "hold_reason": "Held under the 157 log median on purpose: D3 lat work must not pre-fatigue D4, which is HEAVY sumo this block. This is a sumo-protection pin, not a progression target.",
-     "superset_id": "d3e"
+     "superset_id": 0
     },
     {
      "name": "Leg Extension (Machine)",
@@ -2878,7 +2878,7 @@
      ],
      "hold": true,
      "hold_reason": "Flat at/under the 135-140 median: D3 quad work must not pre-fatigue D4 heavy sumo.",
-     "superset_id": "d3e"
+     "superset_id": 0
     },
     {
      "name": "Reverse Pec Deck",
@@ -2903,7 +2903,7 @@
      ],
      "hold": true,
      "hold_reason": "Shoulder slot under a hard @7 cap. Ran to @9.5 in B5 under this same cap; the cap sets the load, not the log.",
-     "superset_id": "d3d"
+     "superset_id": 1
     },
     {
      "name": "Face Pull",
@@ -2926,7 +2926,7 @@
        "reps": 15
       }
      ],
-     "superset_id": "d3d"
+     "superset_id": 1
     },
     {
      "name": "Dead Bug",
@@ -3056,7 +3056,7 @@
        "reps": 12
       }
      ],
-     "superset_id": "d4f"
+     "superset_id": 0
     },
     {
      "name": "Chest Supported Incline Row",
@@ -3079,7 +3079,7 @@
        "reps": 12
       }
      ],
-     "superset_id": "d4f"
+     "superset_id": 0
     },
     {
      "name": "Hip Adduction (Machine)",
@@ -3234,7 +3234,7 @@
      ],
      "hold": true,
      "hold_reason": "W5 deload - every load deliberately under the log. Do not rebase.",
-     "superset_id": "d1a"
+     "superset_id": 0
     },
     {
      "name": "Chest Fly (Machine)",
@@ -3259,7 +3259,7 @@
      ],
      "hold": true,
      "hold_reason": "W5 deload - every load deliberately under the log. Do not rebase.",
-     "superset_id": "d1a"
+     "superset_id": 0
     },
     {
      "name": "Iso-Lateral Row (Machine)",
@@ -3383,7 +3383,7 @@
      ],
      "hold": true,
      "hold_reason": "3-year-gap re-entry: 28 sessions but all 2022-2023, median 61 lb. Per secondary-first-exposure a stale anchor is history, not a starting point - open under it and let the log re-establish the level.",
-     "superset_id": "d2c"
+     "superset_id": 0
     },
     {
      "name": "Hip Thrust (Smith Machine)",
@@ -3408,7 +3408,7 @@
      ],
      "hold": true,
      "hold_reason": "W5 deload - every load deliberately under the log. Do not rebase.",
-     "superset_id": "d2c"
+     "superset_id": 0
     },
     {
      "name": "Seated Leg Curl",
@@ -3433,7 +3433,7 @@
      ],
      "hold": true,
      "hold_reason": "W5 deload - every load deliberately under the log. Do not rebase.",
-     "superset_id": "d2b"
+     "superset_id": 1
     },
     {
      "name": "Lateral Raise (Dumbbell)",
@@ -3458,7 +3458,7 @@
      ],
      "hold": true,
      "hold_reason": "W5 deload - every load deliberately under the log. Do not rebase.",
-     "superset_id": "d2b"
+     "superset_id": 1
     },
     {
      "name": "Single Arm Landmine Press (Barbell)",
@@ -3603,7 +3603,7 @@
      ],
      "hold": true,
      "hold_reason": "Held under the 157 log median on purpose: D3 lat work must not pre-fatigue D4, which is HEAVY sumo this block. This is a sumo-protection pin, not a progression target.",
-     "superset_id": "d3e"
+     "superset_id": 0
     },
     {
      "name": "Leg Extension (Machine)",
@@ -3628,7 +3628,7 @@
      ],
      "hold": true,
      "hold_reason": "Flat at/under the 135-140 median: D3 quad work must not pre-fatigue D4 heavy sumo.",
-     "superset_id": "d3e"
+     "superset_id": 0
     },
     {
      "name": "Reverse Pec Deck",
@@ -3653,7 +3653,7 @@
      ],
      "hold": true,
      "hold_reason": "Shoulder slot under a hard @7 cap. Ran to @9.5 in B5 under this same cap; the cap sets the load, not the log.",
-     "superset_id": "d3d"
+     "superset_id": 1
     },
     {
      "name": "Face Pull",
@@ -3678,7 +3678,7 @@
      ],
      "hold": true,
      "hold_reason": "W5 deload - every load deliberately under the log. Do not rebase.",
-     "superset_id": "d3d"
+     "superset_id": 1
     },
     {
      "name": "Dead Bug",
@@ -3806,7 +3806,7 @@
      ],
      "hold": true,
      "hold_reason": "W5 deload - every load deliberately under the log. Do not rebase.",
-     "superset_id": "d4f"
+     "superset_id": 0
     },
     {
      "name": "Chest Supported Incline Row",
@@ -3831,7 +3831,7 @@
      ],
      "hold": true,
      "hold_reason": "W5 deload - every load deliberately under the log. Do not rebase.",
-     "superset_id": "d4f"
+     "superset_id": 0
     },
     {
      "name": "Hip Adduction (Machine)",

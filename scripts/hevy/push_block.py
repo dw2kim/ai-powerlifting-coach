@@ -70,6 +70,30 @@ def _set_type(raw: str | None) -> str:
     return raw if raw in _VALID_SET_TYPES else "normal"
 
 
+def _superset_id(ex: dict) -> int | None:
+    """Hevy's `superset_id` is a NUMBER. A string here is silently coerced to NaN.
+
+    B7's first push died on this: the block JSON used readable labels ("d1a", "d2b") and
+    Hevy answered `400 Expected number, received nan` — twice, once per exercise in W1-D1's
+    superset pair — after the routine folder had already been created. The dry run could not
+    catch it, because it printed loads and timers and never looked at superset_id.
+
+    So: accept an int, accept a digit string, and refuse anything else loudly at build time
+    rather than at the API. Exercises sharing a superset share the number, and it only has to
+    be unique within the routine.
+    """
+    raw = ex.get("superset_id")
+    if raw is None or isinstance(raw, int) and not isinstance(raw, bool):
+        return raw
+    if isinstance(raw, str) and raw.strip().lstrip("-").isdigit():
+        return int(raw)
+    raise SystemExit(
+        f"superset_id must be a number or null, got {raw!r} on {ex.get('name', '?')}. "
+        "Hevy coerces a non-numeric superset_id to NaN and rejects the routine with "
+        "'Expected number, received nan'. Number the supersets within each routine (0, 1, …)."
+    )
+
+
 def _notes_with_scheme(sets: list[dict], notes: str) -> str:
     """Prefix the set scheme + RPE onto the exercise note.
 
@@ -142,6 +166,35 @@ def existing_routines(client) -> dict[str, str]:
     }
 
 
+def existing_folders(client, title: str) -> list[str]:
+    """Ids of every routine folder already titled `title`, oldest (lowest id) first.
+
+    Why this exists: a push that dies partway has already created its folder, and the next
+    attempt used to create *another* one. B7 did this twice in one morning — folders 4003373
+    and 4003492, both empty — and Hevy has no DELETE for routines, so cleanup is by hand in
+    the app. Looking the folder up by title makes a retry idempotent, which is what it should
+    have been, and means nobody has to remember a folder id or which branch they are on.
+
+    Tolerant of the response shape (a `routine_folders` list, a bare list, or a single
+    object) and never fatal: if the lookup fails, the caller falls back to creating one and
+    says so, because a duplicate folder is annoying and a blocked push is worse.
+    """
+    try:
+        items = list(client.paginate("/routine_folders", "routine_folders"))
+    except Exception as exc:  # noqa: BLE001 - shape/endpoint drift must not block a push
+        print(f"⚠️  Could not list routine folders ({exc}); falling back to creating one.")
+        return []
+    found = []
+    for it in items:
+        if not isinstance(it, dict):
+            continue
+        f = it.get("routine_folder") if isinstance(it.get("routine_folder"), dict) else it
+        if f.get("title") == title and f.get("id") is not None:
+            found.append(f["id"])
+    # Lowest id first: the one created first is the one to fill.
+    return sorted(found, key=lambda i: (len(str(i)), str(i)))
+
+
 def exercise_payload(ex: dict, resolver: Resolver, light_week: bool = False) -> dict:
     """One prescription entry as the routine API wants it. Shared with the weekend make-up
     (scripts/review/weekend_makeup.py) so both land in the app the same way."""
@@ -163,7 +216,7 @@ def exercise_payload(ex: dict, resolver: Resolver, light_week: bool = False) -> 
         )
     return {
         "exercise_template_id": template_id,
-        "superset_id": ex.get("superset_id"),
+        "superset_id": _superset_id(ex),
         "rest_seconds": rest_seconds_for(ex, light_week),
         "notes": _notes_with_scheme(raw_sets, ex.get("notes", "")),
         "sets": sets,
@@ -226,8 +279,12 @@ def print_routine_preview(payload: dict, spec_exercises: list[dict]) -> None:
     print(f"  {routine['title']}")
     for ex, src in zip(routine["exercises"], spec_exercises):
         rest = fmt_rest(ex["rest_seconds"])
+        # superset_id is shown because it is pushed: an unprintable field is a field nobody
+        # checks, and a bad one took out B7's first push after the folder was created.
+        ss = ex.get("superset_id")
+        ss_tag = f" SS{ss}" if ss is not None else ""
         print(
-            f"    {src['name']:<32} {tier_for(src):<10} rest {rest:>5}   "
+            f"    {src['name']:<32} {tier_for(src):<10} rest {rest:>5}{ss_tag:<5} "
             f"{_sets_summary(ex['sets'])}"
         )
 
@@ -303,11 +360,21 @@ def main() -> None:
         # Creating one here would leave an empty folder behind on every correction.
         print("Update mode: reusing each routine's existing folder")
     elif args.apply and folder_id is None:
-        folder_resp = client.post(
-            "/routine_folders", {"routine_folder": {"title": block_id}}
-        )
-        folder_id = (folder_resp.get("routine_folder") or folder_resp).get("id")
-        print(f"Created folder {block_id} -> {folder_id}")
+        # Reuse before create: a retry after a partial failure must not add a second folder.
+        same_title = existing_folders(client, block_id)
+        if same_title:
+            folder_id = same_title[0]
+            print(f"Reusing existing folder {block_id} -> {folder_id}")
+            if len(same_title) > 1:
+                print(f"⚠️  {len(same_title)} folders are titled {block_id}: "
+                      f"{', '.join(str(i) for i in same_title)}. Filling the first; "
+                      f"delete the others in the app (Hevy has no API delete for folders).")
+        else:
+            folder_resp = client.post(
+                "/routine_folders", {"routine_folder": {"title": block_id}}
+            )
+            folder_id = (folder_resp.get("routine_folder") or folder_resp).get("id")
+            print(f"Created folder {block_id} -> {folder_id}")
     elif args.apply:
         print(f"Reusing folder {block_id} -> {folder_id}")
     else:
