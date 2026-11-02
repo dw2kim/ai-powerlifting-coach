@@ -70,6 +70,30 @@ def _set_type(raw: str | None) -> str:
     return raw if raw in _VALID_SET_TYPES else "normal"
 
 
+def _superset_id(ex: dict) -> int | None:
+    """Hevy's `superset_id` is a NUMBER. A string here is silently coerced to NaN.
+
+    B7's first push died on this: the block JSON used readable labels ("d1a", "d2b") and
+    Hevy answered `400 Expected number, received nan` — twice, once per exercise in W1-D1's
+    superset pair — after the routine folder had already been created. The dry run could not
+    catch it, because it printed loads and timers and never looked at superset_id.
+
+    So: accept an int, accept a digit string, and refuse anything else loudly at build time
+    rather than at the API. Exercises sharing a superset share the number, and it only has to
+    be unique within the routine.
+    """
+    raw = ex.get("superset_id")
+    if raw is None or isinstance(raw, int) and not isinstance(raw, bool):
+        return raw
+    if isinstance(raw, str) and raw.strip().lstrip("-").isdigit():
+        return int(raw)
+    raise SystemExit(
+        f"superset_id must be a number or null, got {raw!r} on {ex.get('name', '?')}. "
+        "Hevy coerces a non-numeric superset_id to NaN and rejects the routine with "
+        "'Expected number, received nan'. Number the supersets within each routine (0, 1, …)."
+    )
+
+
 def _notes_with_scheme(sets: list[dict], notes: str) -> str:
     """Prefix the set scheme + RPE onto the exercise note.
 
@@ -163,7 +187,7 @@ def exercise_payload(ex: dict, resolver: Resolver, light_week: bool = False) -> 
         )
     return {
         "exercise_template_id": template_id,
-        "superset_id": ex.get("superset_id"),
+        "superset_id": _superset_id(ex),
         "rest_seconds": rest_seconds_for(ex, light_week),
         "notes": _notes_with_scheme(raw_sets, ex.get("notes", "")),
         "sets": sets,
@@ -226,8 +250,12 @@ def print_routine_preview(payload: dict, spec_exercises: list[dict]) -> None:
     print(f"  {routine['title']}")
     for ex, src in zip(routine["exercises"], spec_exercises):
         rest = fmt_rest(ex["rest_seconds"])
+        # superset_id is shown because it is pushed: an unprintable field is a field nobody
+        # checks, and a bad one took out B7's first push after the folder was created.
+        ss = ex.get("superset_id")
+        ss_tag = f" SS{ss}" if ss is not None else ""
         print(
-            f"    {src['name']:<32} {tier_for(src):<10} rest {rest:>5}   "
+            f"    {src['name']:<32} {tier_for(src):<10} rest {rest:>5}{ss_tag:<5} "
             f"{_sets_summary(ex['sets'])}"
         )
 

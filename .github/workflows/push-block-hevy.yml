@@ -30,6 +30,10 @@ on:
         description: "Start from this session, e.g. W4-D1. Leaves already-trained sessions untouched."
         type: string
         default: ""
+      folder_id:
+        description: "Resume into an EXISTING Hevy folder id instead of creating one. Use after a partial failure so you don't get a duplicate folder."
+        type: string
+        default: ""
 
 permissions:
   contents: read
@@ -60,12 +64,21 @@ jobs:
           WEEK: ${{ inputs.week }}
           UPDATE: ${{ inputs.update }}
           START: ${{ inputs.start }}
+          FOLDER_ID: ${{ inputs.folder_id }}
         run: |
           args=()
           [ "$APPLY" = "true" ] && args+=(--apply)
           [ -n "$WEEK" ] && args+=(--week "$WEEK")
           [ "$UPDATE" = "true" ] && args+=(--update)
           [ -n "$START" ] && args+=(--start "$START")
+          if [ -n "$FOLDER_ID" ]; then
+            case "$FOLDER_ID" in
+              ''|*[!0-9]*)
+                echo "::error::folder_id must be digits only, got: $FOLDER_ID"
+                exit 1 ;;
+              *) args+=(--folder-id "$FOLDER_ID") ;;
+            esac
+          fi
 
           if [ "$UPDATE" = "true" ] && [ -z "$START" ]; then
             echo "::error::Update mode requires a start session so trained routines are preserved."
@@ -79,8 +92,10 @@ jobs:
           if [ "$APPLY" = "true" ]; then
             if [ "$UPDATE" = "true" ]; then
               echo "::warning::Writing to Hevy for real, in UPDATE mode — overwrites matching routines in place."
+            elif [ -n "$FOLDER_ID" ]; then
+              echo "::warning::Writing to Hevy for real, ADDITIVE, into EXISTING folder $FOLDER_ID — resuming a partial push. Routines already there are skipped by title."
             else
-              echo "::warning::Writing to Hevy for real, ADDITIVE — re-running duplicates the folder. For a live block use update:true."
+              echo "::warning::Writing to Hevy for real, ADDITIVE — re-running duplicates the folder. For a live block use update:true. To resume a FAILED push, pass the folder_id it already created."
             fi
           else
             echo "Dry run — no Hevy calls. Flip 'apply' on to write."
