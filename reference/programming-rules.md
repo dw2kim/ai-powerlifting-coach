@@ -423,15 +423,20 @@
   - **What's owed:** an exercise with **nothing logged**, or **two or more working sets short**. One
     set short is ignored. A logged equivalent (the DB fly when the pec deck was taken) counts as done
     (`equipment-fallbacks`).
-  - **Never made up:** Big-5 lifts and barbell secondaries (the weekly review handles a missed
-    primary), and loaded lower body (the weekend before Monday's squat). Exclusions and their
-    reasons live in `data/home-gym.json`. An exercise with no home swap there is not made up either.
-  - **Home equipment** (athlete, 2026-10-17): dumbbells 5–50 lb, a bench, bands. Each swap keeps the
-    slot's constraints: shoulder RPE caps, no standing hinge or standing calf raise while the back
-    is under treatment, no overhead pressing.
-  - **Dose:** at most **5 exercises**, the owed sets only, **everything @7**. Order: shoulder cuff
-    work first, then the standard slots, then chest/triceps (**Saturday only**, since on Sunday they
-    pre-tire Monday's bench), then core. Nothing in a deload week.
+  - **Nothing owed is left out** (athlete, 2026-11-08: *"Do not keep any workout out if they are
+    missed."*). The make-up is optional, so skipping a line is his call, never the job's. Each owed
+    exercise goes in as its home swap from `data/home-gym.json`, or, with no swap (Big-5 included),
+    **as written**: the block's own sets and loads. He improvises at home, and **what he logs for an
+    as-written line becomes its home swap** (coach adds it to `data/home-gym.json` at the Saturday
+    review). No exercise cap. [FB 2026-11-08]
+  - **Home equipment** (athlete, 2026-10-17): dumbbells 5–50 lb, a bench, bands. Swaps keep the
+    slot's constraints and their notes say so: shoulder RPE caps, wide pronated grip for the elbows,
+    no loaded hinge or overhead pressing. The calf raise is a single-leg DB standing raise (one
+    dumbbell, no load on the spine). The gym ban on standing/barbell calf raises stays. [FB 2026-11-08]
+  - **Dose:** the owed sets only, **everything @7**. Order: shoulder cuff work first, then the
+    standard slots, then the Monday-adjacent work: chest/triceps, legs, Big-5 and secondaries
+    (**Saturday only**, since on Sunday they pre-tire Monday's bench and squat). Core last. Nothing
+    in a deload week.
   - **Not yet logged ≠ missed.** A day with no session that is today (D4, on the Friday run) is
     reported as not logged and adds nothing. A day already past was skipped, and its accessories
     are owed.

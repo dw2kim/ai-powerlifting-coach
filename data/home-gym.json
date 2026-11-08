@@ -1,5 +1,5 @@
 {
-  "_about": "Home equipment and the gym -> home swap table read by the Friday make-up job (scripts/review/weekend_makeup.py, rule `weekend-makeup`). Keys under `swaps` are the gym exercise as the block names it, or its Hevy template title; both resolve through scripts/hevy/exercise_map.py. An exercise with no entry here is never made up at home. Big-5 primaries and barbell secondaries are excluded by tier and need no entry.",
+  "_about": "Home equipment and the gym -> home swap table read by the Friday make-up job (scripts/review/weekend_makeup.py, rule `weekend-makeup`). Keys under `swaps` are the gym exercise as the block names it, or its Hevy template title; both resolve through scripts/hevy/exercise_map.py. Every owed exercise goes in the make-up (FB 2026-11-08). One with no entry here, Big-5 included, goes in as written; `as_written: true` does the same with a note. When he logs a home alternative for an as-written line, add it here as the swap.",
   "_source": "Athlete, 2026-10-17: dumbbells 5-50 lb, a bench, bands. No barbell, no machines.",
   "equipment": {
     "dumbbell_min_lb": 5,
@@ -12,14 +12,14 @@
   "_classes": {
     "priority": "Load-bearing shoulder work. Made up first.",
     "standard": "Cheap, nothing the next Monday depends on.",
-    "saturday-only": "Chest/triceps. Done Sunday it pre-tires Monday's bench (accessory-day-interference).",
-    "core": "Low cost; fills the routine last.",
-    "never": "Not made up at home. `why` says why."
+    "saturday-only": "Chest/triceps and legs. Done Sunday they pre-tire Monday's bench or squat (accessory-day-interference). Big-5 and barbell secondaries with no swap land here too.",
+    "core": "Low cost; fills the routine last."
   },
   "_load_modes": {
     "plan": "Same implement as the gym: the plan's load for that week.",
     "log": "Median of the last 3 logged sessions of the HOME exercise (loads-from-logs); `default_lb` only when there is no history in the last year.",
-    "none": "Bodyweight or band. No load."
+    "none": "Bodyweight or band. No load.",
+    "as_written": "`as_written: true`: the gym exercise as the block writes it, at the plan's load, not snapped to the dumbbell rack. He improvises at home."
   },
   "swaps": {
     "Reverse Pec Deck": {
@@ -133,32 +133,60 @@
       "note": "Band anchored at chest height. Slow out, hold a beat, slow in."
     },
     "Single Arm Landmine Press (Barbell)": {
-      "class": "never",
-      "why": "The landmine replaced the DB press because the DB press ran to @10 under an @7 cap. A home DB press would bring that back. Bench and dip cover the front delts."
+      "as_written": true,
+      "class": "saturday-only",
+      "note": "No landmine at home. If you improvise with a dumbbell, keep it angled (half-kneeling, pressing up and forward, not overhead) and stop at @7: the DB press is the one that kept running to @10. Log it under what you did."
     },
     "Lat Pulldown": {
-      "class": "never",
-      "why": "The pull-up covers lats, and a band pulldown is too light to earn a slot."
+      "home": "Lat Pulldown (Band)",
+      "class": "standard",
+      "load": "none",
+      "also_counts": [
+        "Lat Pulldown (Band)",
+        "Kneeling Pulldown (band)"
+      ],
+      "note": "Band anchored high (door anchor), kneeling. Hands wider than shoulders, palms forward, the same grip as the gym for the elbows. Never neutral."
     },
     "Seated Calf Raise": {
-      "class": "never",
-      "why": "The only home calf raise is standing, which is banned while the back is under treatment (equipment-fallbacks)."
+      "home": "Single Leg Standing Calf Raise (Dumbbell)",
+      "class": "standard",
+      "load": "log",
+      "default_lb": 25,
+      "reps": 12,
+      "also_counts": [
+        "Single Leg Standing Calf Raise (Dumbbell)",
+        "Standing Calf Raise (Dumbbell)"
+      ],
+      "note": "Optional, your call (FB 2026-11-08): the gym bans standing calf raises while the back is under treatment, but here it's one dumbbell in one hand, not load on the spine. Ball of the foot on a step, free hand on the wall, full stretch at the bottom, pause at the top. Back says no, skip it."
     },
     "Leg Extension (Machine)": {
-      "class": "never",
-      "why": "Loaded lower body the weekend before Monday's squat."
+      "home": "Sissy Squat (Weighted)",
+      "class": "saturday-only",
+      "load": "none",
+      "note": "Hold a door frame, knees forward, heels up, lean back as you go. Bodyweight first; hold a dumbbell to your chest only when 12 is easy. Quads without loading the back."
     },
     "Seated Leg Curl": {
-      "class": "never",
-      "why": "Loaded lower body the weekend before Monday's squat."
+      "as_written": true,
+      "class": "saturday-only",
+      "note": "No dumbbell leg curl at home. Ideas: sliding leg curls on socks or a towel (hips up), or a band-assisted Nordic. Never a loaded hinge (back). Log it under what you did."
     },
     "Hip Thrust (Smith Machine)": {
-      "class": "never",
-      "why": "Loaded lower body the weekend before Monday's squat."
+      "home": "Single Leg Hip Thrust (Dumbbell)",
+      "class": "saturday-only",
+      "load": "log",
+      "default_lb": 25,
+      "also_counts": [
+        "Single Leg Hip Thrust (Dumbbell)",
+        "Single Leg Hip Thrust",
+        "Hip Thrust"
+      ],
+      "note": "Shoulders on the bench, dumbbell on the working hip, one leg at a time. Single leg because a 50 lb dumbbell is too light for two."
     },
     "Bulgarian Split Squat": {
-      "class": "never",
-      "why": "Loaded lower body the weekend before Monday's squat."
+      "home": "Bulgarian Split Squat",
+      "class": "saturday-only",
+      "load": "plan",
+      "note": "Same exercise as the gym, rear foot on the bench, dumbbells at your sides."
     }
   }
 }

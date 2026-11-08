@@ -4,7 +4,8 @@ Run: python -m unittest discover -s tests
 
 Synthetic block + sessions, so the owed/not-owed rules are pinned without the archive:
 one set short is ignored, two short is owed, today's unlogged day is "not logged yet"
-rather than missed, and nothing heavy or Big-5 ever lands in a home routine.
+rather than missed, and everything owed lands in the routine: as its home swap, or as
+written when there is none (FB 2026-11-08).
 """
 from __future__ import annotations
 
@@ -67,7 +68,7 @@ SWAPS = {
     "PEC": {"home": "Rear Delt Reverse Fly (Dumbbell)", "class": "priority", "load": "log",
             "default_lb": 25, "also_counts": ["Rear Delt Reverse Fly (Dumbbell)"]},
     "FACE": {"home": "Band Pullaparts", "class": "priority", "load": "none", "reps": 15},
-    "LEGEXT": {"class": "never", "why": "Monday is squat."},
+    "LEGEXT": {"as_written": True, "class": "saturday-only", "note": "Improvise."},
     "CURL": {"home": "Concentration Curl", "class": "standard", "load": "plan"},
     "DEADBUG": {"home": "Dead Bug", "class": "core", "load": "none"},
     "CSROW": {"home": "CS Row", "class": "standard", "load": "plan"},
@@ -86,9 +87,8 @@ def run(sessions, today):
     geo = wmx.geometry(BLOCK, today)
     statuses = wm.day_statuses(BLOCK, geo, today, sessions)
     rows = wm.diff_week(BLOCK, geo["week_no"], statuses, sessions, resolve, SWAPS)
-    items, excluded = wm.plan_makeup(rows, statuses, SWAPS, EQUIPMENT, resolve,
-                                     lambda tid: None)
-    return statuses, {r["name"]: r for r in rows}, items, excluded
+    items = wm.plan_makeup(rows, statuses, SWAPS, EQUIPMENT, resolve, lambda tid: None)
+    return statuses, {r["name"]: r for r in rows}, items
 
 
 FULL_D1 = session("2026-10-12", ("Comp Bench", 4), ("Chest Fly (Machine)", 2), ("Iso Row", 2))
@@ -100,27 +100,26 @@ FRIDAY = date(2026, 10, 16)
 
 class Owed(unittest.TestCase):
     def test_full_week_owes_nothing(self):
-        _, rows, items, excluded = run([FULL_D1, FULL_D3, FULL_D4], FRIDAY)
+        _, rows, items = run([FULL_D1, FULL_D3, FULL_D4], FRIDAY)
         self.assertEqual(items, [])
-        self.assertEqual(excluded, [])
         self.assertTrue(all(r["status"] == "done" for r in rows.values()))
 
     def test_one_set_short_is_ignored(self):
         d4 = session("2026-10-16", ("Concentration Curl", 2), ("CS Row", 2), title="W1-D4 x")
-        _, rows, items, _ = run([FULL_D1, FULL_D3, d4], FRIDAY)
+        _, rows, items = run([FULL_D1, FULL_D3, d4], FRIDAY)
         self.assertEqual(rows["Concentration Curl"]["status"], "one short")
         self.assertEqual(items, [])
 
     def test_two_sets_short_owes_the_missing_sets(self):
         d4 = session("2026-10-16", ("Concentration Curl", 1), ("CS Row", 2), title="W1-D4 x")
-        _, rows, items, _ = run([FULL_D1, FULL_D3, d4], FRIDAY)
+        _, rows, items = run([FULL_D1, FULL_D3, d4], FRIDAY)
         self.assertEqual(rows["Concentration Curl"]["status"], "short")
         self.assertEqual([(i["home"], i["sets"]) for i in items], [("Concentration Curl", 2)])
 
     def test_missed_exercise_is_owed_in_full(self):
         d3 = session("2026-10-15", ("Face Pull", 2), ("Leg Extension", 2), ("Dead Bug", 3),
                      title="W1-D3 x")
-        _, _, items, _ = run([FULL_D1, d3, FULL_D4], FRIDAY)
+        _, _, items = run([FULL_D1, d3, FULL_D4], FRIDAY)
         self.assertEqual([(i["home"], i["sets"], i["load_lb"]) for i in items],
                          [("Rear Delt Reverse Fly (Dumbbell)", 2, 25)])
 
@@ -128,14 +127,14 @@ class Owed(unittest.TestCase):
         """The machine was taken, he did the DB fly at the gym (`equipment-fallbacks`)."""
         d3 = session("2026-10-15", ("Rear Delt Reverse Fly (Dumbbell)", 2), ("Face Pull", 2),
                      ("Leg Extension", 2), ("Dead Bug", 3), title="W1-D3 x")
-        _, rows, items, _ = run([FULL_D1, d3, FULL_D4], FRIDAY)
+        _, rows, items = run([FULL_D1, d3, FULL_D4], FRIDAY)
         self.assertEqual(rows["Reverse Pec Deck"]["status"], "done")
         self.assertEqual(items, [])
 
     def test_an_equivalent_planned_on_its_own_does_not_cover_another_slot(self):
         """D4's CS row is the CS row's sets. It must not hide a missed D1 Iso Row."""
         d1 = session("2026-10-12", ("Comp Bench", 4), ("Chest Fly (Machine)", 2))
-        _, rows, items, _ = run([d1, FULL_D3, FULL_D4], FRIDAY)
+        _, rows, items = run([d1, FULL_D3, FULL_D4], FRIDAY)
         self.assertEqual(rows["Iso Row"]["status"], "missed")
         self.assertEqual([i["for"] for i in items], ["Iso Row"])
 
@@ -143,46 +142,76 @@ class Owed(unittest.TestCase):
 class Days(unittest.TestCase):
     def test_todays_unlogged_day_is_pending_not_missed(self):
         """Friday noon, D4 not in the app yet: report it, don't dump D4 into the routine."""
-        statuses, rows, items, excluded = run([FULL_D1, FULL_D3], FRIDAY)
+        statuses, rows, items = run([FULL_D1, FULL_D3], FRIDAY)
         self.assertEqual(statuses["D4"], "pending")
         self.assertEqual(rows["Concentration Curl"]["status"], "pending")
         self.assertEqual(items, [])
-        self.assertEqual(excluded, [])
 
     def test_a_past_unlogged_day_is_skipped_and_owed(self):
-        statuses, _, items, excluded = run([FULL_D1, FULL_D4], FRIDAY)
+        statuses, _, items = run([FULL_D1, FULL_D4], FRIDAY)
         self.assertEqual(statuses["D3"], "skipped")
         self.assertEqual([i["home"] for i in items],
-                         ["Rear Delt Reverse Fly (Dumbbell)", "Band Pullaparts", "Dead Bug"])
-        self.assertEqual([e["name"] for e in excluded], ["Leg Extension"])
+                         ["Rear Delt Reverse Fly (Dumbbell)", "Band Pullaparts",
+                          "Leg Extension", "Dead Bug"])
 
     def test_the_d4_routine_title_counts_a_day_trained_off_its_weekday(self):
         d4_on_thursday = session("2026-10-15", ("Concentration Curl", 3), ("CS Row", 2),
                                  title="W1-D4 x")
-        statuses, _, _, _ = run([FULL_D1, d4_on_thursday], FRIDAY)
+        statuses, _, _ = run([FULL_D1, d4_on_thursday], FRIDAY)
         self.assertEqual(statuses["D4"], "logged")
 
 
 class Eligibility(unittest.TestCase):
-    def test_big5_and_never_and_unknown_are_excluded_with_reasons(self):
+    def test_nothing_owed_is_left_out(self):
+        """Big-5, an `as_written` swap and an exercise with no swap all go in, as written,
+        at the gym's load (not snapped to the dumbbell rack)."""
         block = json.loads(json.dumps(BLOCK))
-        block["prescriptions"][0]["exercises"].append(_ex("Mystery Machine", 2))
+        block["prescriptions"][0]["exercises"].append(_ex("Mystery Machine", 2, lb=120))
         geo = wmx.geometry(block, FRIDAY)
         statuses = wm.day_statuses(block, geo, FRIDAY, [])
         rows = wm.diff_week(block, 1, statuses, [], resolve, SWAPS)
-        _, excluded = wm.plan_makeup(rows, statuses, SWAPS, EQUIPMENT, resolve, lambda t: None)
-        why = {e["name"]: e["why"] for e in excluded}
-        self.assertIn("Big-5", why["Comp Bench"])
-        self.assertEqual(why["Leg Extension"], "Monday is squat.")
-        self.assertIn("No home swap", why["Mystery Machine"])
+        items = {i["for"]: i for i in
+                 wm.plan_makeup(rows, statuses, SWAPS, EQUIPMENT, resolve, lambda t: None)}
+        bench, legext, mystery = items["Comp Bench"], items["Leg Extension"], items["Mystery Machine"]
+        self.assertEqual((bench["home"], bench["load_lb"], bench["reps"], bench["class"]),
+                         ("Comp Bench", 255, 3, "saturday-only"))
+        self.assertEqual((legext["home"], legext["load_lb"], legext["note"]),
+                         ("Leg Extension", 50, "Improvise."))
+        self.assertEqual((mystery["home"], mystery["load_lb"], mystery["class"]),
+                         ("Mystery Machine", 120, "standard"))
+        self.assertIn("No home swap", mystery["note"])
 
-    def test_fill_order_and_cap(self):
-        """Everything missed: priority first, SAT ONLY after standard, core last, cap 5."""
-        _, _, items, excluded = run([], date(2026, 10, 17))
-        self.assertEqual([i["class"] for i in items],
-                         ["priority", "priority", "standard", "standard", "standard"])
-        overflow = [e["name"] for e in excluded if "cap" in e["why"]]
-        self.assertEqual(overflow, ["Chest Fly (Machine)", "Dead Bug"])
+    def test_as_written_keeps_the_blocks_sets_set_by_set(self):
+        """Top set and back-offs as the block writes them, not N copies of the first set.
+        Two sets short means the last two."""
+        block = json.loads(json.dumps(BLOCK))
+        bench = block["prescriptions"][0]["exercises"][0]
+        bench["sets"] = [{"type": "warmup", "weight_kg": 135 * KG, "reps": 5},
+                         {"type": "normal", "weight_kg": 255 * KG, "reps": 3}] + _sets(3, 210, 4)
+        geo = wmx.geometry(block, FRIDAY)
+        statuses = wm.day_statuses(block, geo, FRIDAY, [])
+        rows = wm.diff_week(block, 1, statuses, [], resolve, SWAPS)
+        item = next(i for i in wm.plan_makeup(rows, statuses, SWAPS, EQUIPMENT, resolve,
+                                              lambda t: None) if i["for"] == "Comp Bench")
+        self.assertEqual(wm._scheme(item), "1×3 @ 255 lb, 3×4 @ 210 lb")
+        spec = wm.spec_exercises([item])[0]
+        self.assertEqual([st["reps"] for st in spec["sets"]], [3, 4, 4, 4])
+
+        d1 = session("2026-10-12", ("Comp Bench", 2), ("Chest Fly (Machine)", 2),
+                     ("Iso Row", 2))
+        rows = wm.diff_week(block, 1, statuses, [d1], resolve, SWAPS)
+        item = next(i for i in wm.plan_makeup(rows, statuses, SWAPS, EQUIPMENT, resolve,
+                                              lambda t: None) if i["for"] == "Comp Bench")
+        self.assertEqual(wm._scheme(item), "2×4 @ 210 lb")
+
+    def test_fill_order_and_no_cap(self):
+        """Everything missed, everything in: priority, standard, SAT ONLY, core."""
+        _, _, items = run([], date(2026, 10, 17))
+        self.assertEqual([i["for"] for i in items], [
+            "Reverse Pec Deck", "Face Pull",
+            "Iso Row", "Concentration Curl", "CS Row",
+            "Comp Bench", "Chest Fly (Machine)", "Leg Extension",
+            "Dead Bug"])
 
     def test_loads_snap_down_onto_the_home_rack(self):
         self.assertEqual(wm.snap_dumbbell(26.5, EQUIPMENT), 25)
@@ -191,7 +220,7 @@ class Eligibility(unittest.TestCase):
         self.assertEqual(wm.snap_dumbbell(2, EQUIPMENT), 5)
 
     def test_plan_loads_use_this_weeks_prescription(self):
-        _, _, items, _ = run([FULL_D1, FULL_D3], date(2026, 10, 17))
+        _, _, items = run([FULL_D1, FULL_D3], date(2026, 10, 17))
         loads = {i["home"]: i["load_lb"] for i in items}
         self.assertEqual(loads["Concentration Curl"], 40)
         self.assertEqual(loads["CS Row"], 50)
@@ -276,9 +305,9 @@ class HomeGymData(unittest.TestCase):
         resolver = Resolver()
         swaps = wm.swaps_by_template(home, lambda n: resolver.resolve(n))
         for swap in swaps.values():
-            self.assertIn(swap["class"], wm.CLASS_ORDER + ["never"], swap["key"])
-            if swap["class"] == "never":
-                self.assertTrue(swap.get("why"), swap["key"])
+            self.assertIn(swap["class"], wm.CLASS_ORDER, swap["key"])
+            if swap.get("as_written"):
+                self.assertTrue(swap.get("note"), swap["key"])
                 continue
             resolver.resolve(swap["home"])
             self.assertIn(swap.get("load"), ("plan", "log", "none"), swap["key"])
