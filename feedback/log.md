@@ -955,3 +955,9 @@ conservative (athlete's own call, both elbows), the variant at a fixed @7, and *
 is the grip-flexor side). ❓ Placement pending athlete confirmation.
 **Actions taken:** rules below. Library unblock of the chosen variants happens at B8 design. B7 unchanged.
 → rules: `alternating-axial-emphasis` (amended), `sumo-skill-lift` (moderate band floor), `axial-variant-weekly` (new)
+**Addendum, same day (athlete answers):** doctor **heard the loads**; "come back" = **"normal heavy
+lifting"**; the 10-30 shot was after the 6 am pull. **Norm = 455–485 on squat and sumo.** Hinge variant:
+coach's pick, **barbell only** ("so it felt like a secondary movement and not accessories") → **Paused Sumo,
+pause just above the knee.** Elbow pain is from the pull motion, not the grip → straps optional, not required.
+D2 placement not contested; still ❓ until said.
+→ rules: `sumo-back-cap` (re-opened from B9), `axial-variant-weekly` (barbell-only, B8 pick, straps optional)

@@ -142,7 +142,9 @@
   from the `secondary-rotation` pool. **Fixed load, @7 cap, ≤4 reps, never a peak.** Placement: **D2 by
   default** — D3 is always the day before D4 sumo (two hinge days running, or a squat 24 h before a heavy
   pull). On D2 in a heavy-squat block it shares the day with the pull-up: **pull-up first, pull-up held
-  conservative, straps on the variant** (elbows). Gated on the back check like any axial lift. This
+  conservative**; straps optional (the elbows hurt on pulling, not gripping — athlete 2026-11-08). Gated on
+  the back check like any axial lift. **Barbell only** — it has to feel like a secondary, not an accessory
+  (athlete). **B8's pick: Paused Sumo, pause just above the knee** (the hitch position). This
   reverses the B5 cut of the paused squat (it was removed for being a second axial session — that's now
   the point). ❓ D2-vs-D3 placement pending athlete confirmation. [FB 2026-11-08]
 - **secondary-rotation** — Rotate the **secondary** movement for the three barbell lifts
@@ -487,3 +489,10 @@
   **durable** rule, distinct from the temporary injection-series axial cap in `active-issues.md`
   (that one lifts on doctor clearance; this stays until a long pain-free stretch). Revisit the band
   upward only on sustained clean pulling. [FB 2026-07-22]
+  **Re-opened 2026-11-08, from B9.** The doctor, having heard the loads, said *"come back to normal heavy
+  lifting"* after 1–3 more sessions (series ends ~December). Normal = **455–485** (athlete-defined, matches
+  the pre-injury log). So: **B7 and B8 keep 405 as the hard ceiling** (still inside the series). **From B9 —
+  the first block after the last shot — the ceiling becomes a gated ladder toward the norm**, written per
+  `axial-floor-range-ceiling`: B9 floor opens at B7's 405, rungs +10–20 lb/week on a `fine` check, **B9 ceiling
+  455**; the remaining 455 → 485 is B11's job. **RPE cap 7 → 7.5**, reps ≤3 at the top, and **never grind**
+  — rounding or bar-speed loss still racks it. The canary is still the canary. [FB 2026-11-08]

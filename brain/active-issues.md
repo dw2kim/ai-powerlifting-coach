@@ -141,11 +141,27 @@ point instead of 10-15 shots previously around the lower back."*
 
 | | |
 |---|---|
-| **Injection given 10-30?** | Implied ("currently we are just injecting 2-3") — ❓ confirm, and the **time** (before or after the 6 am sumo). |
+| **Injection given 10-30?** | ✅ **Yes, after the 6 am sumo** (confirmed 2026-11-08 — *"The clinic does not open before 6 am"*). The 10-31 check is post-injection. |
 | **Sites** | **2–3 trigger points**, down from **10–15** earlier in the series (this file recorded ~8 and 4–5 for individual visits; his "10-15" is the series high). |
 | **Next** | **Fri 2026-11-27** — that is **B7 W4 D4, the 405 sumo day.** Then probably **one in December, and that's the end of the series.** |
-| **Doctor's words** | *"looked good"*, and *"maybe I can come back after 1-3 additional session"*. ❓ **"Come back" to what?** Read as: back to normal lifting once the series finishes. Unconfirmed — it could also mean "come back for 1–3 more visits". |
-| **Was the doctor told the loads?** | ❓ **Unknown, seventh block running.** "Looked good" from someone who doesn't know you pull 345–405 is a different statement from one who does. |
+| **Doctor's words** | *"looked good"*, and *"maybe I can come back after 1-3 additional session"*. ✅ **"Come back" = "come back to normal heavy lifting"** (athlete, 2026-11-08). |
+| **Was the doctor told the loads?** | ✅ **Yes** (athlete, 2026-11-08: *"He heard it, yeah."*). **Closes the item open since 2026-08-07** — the doctor's advice is now built on the real picture. |
+
+### ✅ 2026-11-08 — this is a clinical clearance, conditional on the series ending
+
+A doctor who has heard the loads says *"come back to normal heavy lifting after 1–3 more sessions."* That
+is the first clearance in this record that meets `clinical-override`'s bar: it's from the clinician, it's
+informed, and it has an end condition. **Normal = the pre-injury norm, 455–485 lb on both squat and sumo**
+(athlete-defined 2026-11-08, matches the log: squat 455–480 ×2–3, sumo 465–485).
+
+| Gate | Status | Lifts when |
+|---|---|---|
+| `masked-pain-load-cap` (axial, post-injection windows) | **still binds** inside each 72 h window | **The last shot** (11-27, then ~December). After it, no window, no cap. |
+| `sumo-back-cap` 405 ceiling | **binds through B7 and B8** | **Re-opened in B9** as a gated ladder to the norm — see the rule's 2026-11-08 amendment. |
+| Squat | already a normal primary (return closed 10-18) | B8 climbs to the 455–485 norm. |
+
+**Hard stops are unchanged and outlive the clearance**: new or worsening leg symptoms, night or rest pain,
+pain not settling in 24 h, or two `sore` axial checks running → axial work stops, back to the clinic.
 
 **Correction.** On 2026-11-01 this file and `current-block.md` said *"no appointment on file"* and *"six
 blocks owed"* — **there had been a visit two days earlier.** Same failure as every other fact that lived
@@ -255,9 +271,10 @@ within 24 h, or two consecutive `sore` axial checks → axial work stops, back t
 **Open questions for the next visit — Fri 2026-11-27** *(raised 2026-09-22, trimmed 2026-09-23, updated 2026-11-08)*:
 - [x] ~~**Is there a next appointment, and does the injection series continue past 2026-09-11?**~~
   **Answered 2026-11-08:** visit 10-30, next **11-27**, probably one more in December, then the series ends.
-- [ ] **NEW 2026-11-08 — what does "come back after 1–3 sessions" mean?** Back to normal lifting, or
-  back for more visits? And to what load — does he know "normal" is a 465–485 squat and sumo?
-- [ ] **Tell him you are squatting and deadlifting again, and at what weight.** **Sixth block owed as of
+- [x] ~~**NEW 2026-11-08 — what does "come back after 1–3 sessions" mean?**~~ **Answered same day:** back to
+  normal heavy lifting, and the doctor has heard the loads.
+- [ ] **When is the December visit?** It lands inside B8 (heavy squat) — its 72 h window needs planning.
+- [x] ~~**Tell him you are squatting and deadlifting again, and at what weight.**~~ **✅ Done by 2026-10-30** (athlete, 2026-11-08: *"He heard it"*). Original text: **Sixth block owed as of
   2026-11-01** — the numbers to say out loud are **squat 435×3** and **sumo 315×3**, and B7 takes sumo to
   345–405. He prescribed a muscle relaxant to someone doing this.
 - [ ] **NEW 2026-11-01 — mention BOTH elbows** (anterior, left since ~late Sept, right from late Oct, limiting the pull-up — see the Elbows section).
@@ -569,6 +586,18 @@ the **grip-flexor** origin, which every heavy pull taxes — including a hinge v
   medial elbow, and grip is not what we're training on those sets.
 - **Pull-up stays conservative "for a while"** — his own call, and the right one. The B7 absolute-load cap
   (BW+85 top) and the two-session rule stand.
+
+**↳ Answered 2026-11-08 (athlete) — and half my read above was wrong:**
+- **Left, wide overhand grip:** *"it's better but the inflammation is not gone."* → **Keep the wide pronated
+  grip.** It helps; it hasn't fixed it. No grip change.
+- **Right, gripping:** *"it doesn't affect any grip. Grip does not make the pain. it's the pull movement."* →
+  **The grip-flexor read is withdrawn.** The trigger is loaded **elbow flexion** (pulling), not gripping.
+  **Straps are optional, not required** — on the hinge variant and on sumo alike. And a hinge doesn't flex
+  the elbow, so the D2 hinge variant doesn't load the painful motion at all.
+- **Clinician:** *"I just know it. almost 100% it's true."* He declines raising it at the clinic. **Asked twice
+  (11-01, 11-08); his call, recorded, not re-asked.** The written hard stops are the substitute: pain during a
+  pull-up set ends the exercise; two sessions with pain at the written loads → the pull-up comes out and it
+  goes to the clinic, no further discussion.
 
 ### What those three notes actually establish
 
