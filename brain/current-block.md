@@ -151,12 +151,18 @@ day** because of the pairing.
 | Week | Sumo *(HEAVY, gated)* | Comp Bench D1 *(heavy)* | Comp Bench D4 *(6s, fixed)* | Squat *(moderate, fixed)* | Pull-up *(absolute)* | Dip |
 |---|---|---|---|---|---|---|
 | **W1** BUILD | **345**×3 @7 🔒 | 255×3 → @7.5, lid 265 | 210×6 ×4 @7 | 365×3 ×3 @7 | BW+55×4 | BW+80×5 @7 |
-| **W2** ESTABLISH | **365**×3 @7 🔒 | 265×3 → @8, lid 275 | 215×6 ×4 @7 | 375×3 ×3 @7 | BW+65×4 | BW+90×5 @7.5 |
-| **W3** PUSH | **385**×3 @7 🔒 | 270×2 → @8, lid 285 | 220×6 ×4 @7 | 385×3 ×3 @7 | BW+75×3 | **⛰️ work up to @8: BW+105×3, lid BW+115** |
+| **W2** ESTABLISH | **365**×3 @7 🔒 → lid **375** | 265×3 → @8, lid 275 | 215×6 ×4 @7 | 375×3 ×3 @7 | BW+65×4 | BW+90×5 @7.5 |
+| **W3** PUSH | **385**×3 @7 🔒 → lid **395** | 270×2 → @8, lid 285 | 220×6 ×4 @7 | 385×3 ×3 @7 | BW+75×3 | **⛰️ work up to @8: BW+105×3, lid BW+115** |
 | **W4** PEAK | **405**×3 @7 🔒 **← hard ceiling** | **⛰️ 280×2 → @8, lid 295** | 225×6 ×3 @7 | 395×3 ×3 @7 | BW+85×3 | BW+95×5 *(hold)* |
 | **W5** DELOAD | 295×3 @6 | 225×4 @6 | 185×6 ×3 @6 | 315×3 ×3 @6 | BW+45×5 | BW+60×5 @6 |
 
 🔒 = gated rung · ⛰️ = that lift's peak week.
+**Amended 2026-11-08 (athlete: *"we can push a little more on sumo"*):** W2 and W3 sumo get a **+10 range**
+above the floor (`axial-floor-range-ceiling`) — one more triple at the lid, **only if the floor triple is ≤@7
+and the warm-ups move fast**. Backoffs stay keyed off the floor, and **next week's floor does not move with what
+the range reached.** **W4 stays 405 flat — 405 is the ceiling** and it holds through B8 (`sumo-back-cap`;
+re-opens as a ladder in B9). W2's rung was earned by the **11-06 `fine`** check. Pushed to Hevy
+`--update --start W2-D4`.
 **W1 is a working week, not a calibration week** (FB 2026-10-12: no warm-up week after a deload).
 Primaries push at the full 1:15 rest from day one; only W5 drops to 1:00.
 

@@ -1429,10 +1429,10 @@
     {
      "name": "Sumo Deadlift",
      "tier": "primary",
-     "display_load": "365",
+     "display_load": "365 -> 375",
      "hold": true,
      "hold_reason": "HEAVY sumo under sumo-back-cap (band 345-405, @7 cap, reps <=4, 405 hard ceiling) AND still on axial-return-ladder: every rung is an absolute load gated on the next-morning back check. Never rebase this from the log.",
-     "notes": "W2 ESTABLISH - SUMO IS THE BLOCK. 365x3, backoffs 325x3 x3. sumo-back-cap: @7 is a HARD cap, reps <=4, every rep crisp, 405 is the hard ceiling. Any back rounding or bar-speed drop -> rack it. NEVER grind sumo. GATE: this rung is unlocked only by Saturday's back check on last week's pull reading `fine`. `tight` -> repeat last week's load. No check logged -> repeat last week's load. Two `sore` in a row -> axial work stops, back to the clinic. Sumo goes FIRST on D4, always. Tall lockout, no hitch - if it hitches above the knee the weight is too heavy for today regardless of what the plan says.",
+     "notes": "W2 ESTABLISH - SUMO IS THE BLOCK. Floor 365x3 -> lid 375, backoffs 325x3 x3. sumo-back-cap: @7 is a HARD cap, reps <=4, every rep crisp, 405 is the hard ceiling. Any back rounding or bar-speed drop -> rack it. NEVER grind sumo. RANGE (added 2026-11-08, athlete: 'push a little more'): floor 365, lid 375. Only if the floor triple is <=@7 AND the warm-ups move fast, take one more triple at 375 - heaviest set at or under @7 counts. Going above the floor inside the range is not creep; going above the lid is. Backoffs stay at 325 off the FLOOR. Next week's floor does NOT move with what the range reached. GATE: this rung is unlocked only by Saturday's back check on last week's pull reading `fine`. `tight` -> repeat last week's load. No check logged -> repeat last week's load. Two `sore` in a row -> axial work stops, back to the clinic. Sumo goes FIRST on D4, always. Tall lockout, no hitch - if it hitches above the knee the weight is too heavy for today regardless of what the plan says.",
      "sets": [
       {
        "type": "warmup",
@@ -2197,10 +2197,10 @@
     {
      "name": "Sumo Deadlift",
      "tier": "primary",
-     "display_load": "385",
+     "display_load": "385 -> 395",
      "hold": true,
      "hold_reason": "HEAVY sumo under sumo-back-cap (band 345-405, @7 cap, reps <=4, 405 hard ceiling) AND still on axial-return-ladder: every rung is an absolute load gated on the next-morning back check. Never rebase this from the log.",
-     "notes": "W3 PUSH - SUMO IS THE BLOCK. 385x3, backoffs 345x3 x3. sumo-back-cap: @7 is a HARD cap, reps <=4, every rep crisp, 405 is the hard ceiling. Any back rounding or bar-speed drop -> rack it. NEVER grind sumo. GATE: this rung is unlocked only by Saturday's back check on last week's pull reading `fine`. `tight` -> repeat last week's load. No check logged -> repeat last week's load. Two `sore` in a row -> axial work stops, back to the clinic. Sumo goes FIRST on D4, always. Tall lockout, no hitch - if it hitches above the knee the weight is too heavy for today regardless of what the plan says.",
+     "notes": "W3 PUSH - SUMO IS THE BLOCK. Floor 385x3 -> lid 395, backoffs 345x3 x3. sumo-back-cap: @7 is a HARD cap, reps <=4, every rep crisp, 405 is the hard ceiling. Any back rounding or bar-speed drop -> rack it. NEVER grind sumo. RANGE (added 2026-11-08, athlete: 'push a little more'): floor 385, lid 395. Only if the floor triple is <=@7 AND the warm-ups move fast, take one more triple at 395 - heaviest set at or under @7 counts. Going above the floor inside the range is not creep; going above the lid is. Backoffs stay at 345 off the FLOOR. Next week's floor does NOT move with what the range reached. GATE: this rung is unlocked only by Saturday's back check on last week's pull reading `fine`. `tight` -> repeat last week's load. No check logged -> repeat last week's load. Two `sore` in a row -> axial work stops, back to the clinic. Sumo goes FIRST on D4, always. Tall lockout, no hitch - if it hitches above the knee the weight is too heavy for today regardless of what the plan says.",
      "sets": [
       {
        "type": "warmup",
@@ -2962,7 +2962,7 @@
      "display_load": "405",
      "hold": true,
      "hold_reason": "HEAVY sumo under sumo-back-cap (band 345-405, @7 cap, reps <=4, 405 hard ceiling) AND still on axial-return-ladder: every rung is an absolute load gated on the next-morning back check. Never rebase this from the log.",
-     "notes": "W4 PEAK - SUMO IS THE BLOCK. 405x3, backoffs 365x3 x2. sumo-back-cap: @7 is a HARD cap, reps <=4, every rep crisp, 405 is the hard ceiling. Any back rounding or bar-speed drop -> rack it. NEVER grind sumo. GATE: this rung is unlocked only by Saturday's back check on last week's pull reading `fine`. `tight` -> repeat last week's load. No check logged -> repeat last week's load. Two `sore` in a row -> axial work stops, back to the clinic. Sumo goes FIRST on D4, always. Tall lockout, no hitch - if it hitches above the knee the weight is too heavy for today regardless of what the plan says.",
+     "notes": "W4 PEAK - SUMO IS THE BLOCK. 405x3, backoffs 365x3 x2. sumo-back-cap: @7 is a HARD cap, reps <=4, every rep crisp, 405 is the hard ceiling. Any back rounding or bar-speed drop -> rack it. NEVER grind sumo. No range this week - 405 IS the ceiling (sumo-back-cap holds through B8; it re-opens as a ladder in B9). Fri 11-27 is also the clinic day: the shot comes after this pull. GATE: this rung is unlocked only by Saturday's back check on last week's pull reading `fine`. `tight` -> repeat last week's load. No check logged -> repeat last week's load. Two `sore` in a row -> axial work stops, back to the clinic. Sumo goes FIRST on D4, always. Tall lockout, no hitch - if it hitches above the knee the weight is too heavy for today regardless of what the plan says.",
      "sets": [
       {
        "type": "warmup",
