@@ -888,3 +888,45 @@ the work; the set count he overrode himself from day one.
 - Not done: W5-D1/D2 are trained (he did 3 sets anyway). W1 is history.
 → rules: `accessory-effort-cap` (set floor 3), `whole-body-every-day` (dose wording), `hevy-rest-timers`
 (light weeks)
+
+### 2026-11-08 · exercise · general · weekend make-up is optional, so the calf raise goes in · 2026-Q4-B07
+**Feedback:** "Let's not have the rule for the makeup workout because it's optional. Leave it up to me if I
+don't want to do it but you still need to log it. Maybe with the dumbbell calf raise or something."
+**Context:** W45 (B7 W1) make-up had only Bird Dog. Seated Calf Raise (Fri D4, 3 sets) was owed but
+dropped as `never`: "the only home calf raise is standing, which is banned while the back is under
+treatment". It showed up only in the record's "Owed, not made up" section, so to him it looked missed.
+**Verified (Hevy):** W1-D4 (Nov 6) has no calf work. The rest of the week matched; Monday's pushdown, fly
+and side plank were moved to Thu D3 and counted there.
+**Read as:** the make-up is optional, so a restriction caution is his call there, not a reason to leave the
+work out. The ban's actual reason is axial compression from a barbell or shoulder pad. One dumbbell in one
+hand for a single-leg calf raise barely loads the spine. **The gym ban stands** (`equipment-fallbacks`):
+no standing/barbell calf raise in the block itself.
+**Actions taken:** `data/home-gym.json`, Seated Calf Raise `never` → home swap **Single Leg Standing Calf
+Raise (Dumbbell)**, `standard`, load from the home log (25 lb default), 12 reps, note says it's optional.
+Separate Hevy template from the gym's Seated Calf Raise, so a home load never anchors the machine.
+Not extended to the other `never` entries (leg extension, leg curl, hip thrust, BSS: weekend lower body
+before Monday's squat; landmine; lat pulldown). Those exclusions are about the program, not his back.
+Asked whether he wants them in too.
+→ rules: `weekend-makeup` (home equipment bullet)
+
+### 2026-11-08 · general · weekend make-up leaves nothing out · 2026-Q4-B07
+**Feedback:** "Please do not keep them out. Do not keep any workout out if they are missed. Just try to find
+the alternative workout that I can do at home. If not please bring the workout as it is. Maybe I can be a
+little bit more creative and do a similar alternative exercise at home. Once it's logged maybe you can see
+what alternative I can do at home."
+**Context:** right after the calf-raise entry above. I'd recommended keeping six `never` swaps out (leg
+extension, leg curl, hip thrust and BSS for Monday's squat; landmine; lat pulldown). Overruled. Nothing was
+owed from them this week, so this is a policy change, not a W1 fix.
+**Read as:** applies to everything, Big-5 and barbell secondaries included, and the 5-exercise cap too
+(a cap is also leaving work out). Kept: one set short is still ignored (his 10-17 rule), nothing in a
+deload week, and the Saturday-only tag for work that pre-tires Monday.
+**Actions taken:**
+- `scripts/review/weekend_makeup.py`: no `never` class, no tier exclusion, no cap. An owed exercise
+  with no swap, or `as_written: true`, goes in as the block's own sets set by set (top set and
+  back-offs, gym loads, not snapped to the dumbbell rack), with a note to log what he actually did.
+  Big-5/secondaries as written are Saturday only. Tests updated plus a set-by-set test (126 OK).
+- `data/home-gym.json`: Lat Pulldown → Lat Pulldown (Band), wide pronated grip · Leg Extension → Sissy
+  Squat (Weighted) · Hip Thrust → Single Leg Hip Thrust (Dumbbell) · BSS → BSS with dumbbells · Seated
+  Leg Curl and Landmine Press → as written with ideas (sliding curl, angled half-kneeling DB press @7).
+- Checked against B7 with a fully missed week simulated: 25 lines, payload builds.
+→ rules: `weekend-makeup` (nothing owed is left out; dose; home equipment)

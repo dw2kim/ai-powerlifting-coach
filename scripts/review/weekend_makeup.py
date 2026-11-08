@@ -10,9 +10,10 @@ still ahead:
   3. Plan vs log for the block week: working sets prescribed vs logged, per exercise.
   4. What's owed — an exercise with nothing logged, or two or more sets short. One set short
      is ignored (athlete's call).
-  5. What can be done at home — data/home-gym.json holds the home swap, how it is loaded,
-     and the exercises that are never made up. Big-5 lifts and barbell secondaries never
-     are, by tier. Capped at MAX_EXERCISES, everything @MAKEUP_RPE.
+  5. Everything owed goes in (FB 2026-11-08: the make-up is optional, so skipping is his
+     call, never the job's). data/home-gym.json holds the home swap and how it is loaded.
+     An exercise with no swap, Big-5 included, goes in as written; he improvises at home,
+     and what he logs is how a new swap gets added. Everything @MAKEUP_RPE.
   6. One routine in the Hevy folder "Weekend Make-up", overwritten every week (the routine
      API has no DELETE). Pushed without a confirm step, the athlete's call: it never touches
      the block's routines.
@@ -63,17 +64,19 @@ HOME_GYM = REPO_ROOT / "data" / "home-gym.json"
 MAKEUP_DIR = REPO_ROOT / "reviews" / "makeup"
 FOLDER_TITLE = "Weekend Make-up"
 
-# The make-up is catch-up, not a fifth training day: about half an hour, nothing hard.
-MAX_EXERCISES = 5
+# Catch-up, not a fifth training day: nothing hard.
 MAKEUP_RPE = 7
 # Athlete, 2026-10-17: "ignore it if only 1 set is missed".
 MIN_SETS_SHORT = 2
-# Fill order when the cap bites. Cuff work first, Monday-bench-adjacent work after the rest.
+# Routine order. Cuff work first, the Monday-adjacent (bench, squat) work after the rest.
 CLASS_ORDER = ["priority", "standard", "saturday-only", "core"]
 # `log` loads: the median of the last few sessions of the home exercise.
 LOG_LOOKBACK_DAYS = 365
 LOG_ANCHOR_SESSIONS = 3
-NEVER_TIERS = {"primary", "secondary"}
+# No home swap on file: the exercise as written. Big-5 and barbell secondaries pre-tire
+# Monday's bench or squat, so they're Saturday only.
+AS_WRITTEN_NOTE = ("No home swap on file, so this is the gym exercise as written. Do what you "
+                   "can at home and log it under what you actually did; that becomes the swap.")
 WEEKDAY_NAMES = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 
@@ -118,7 +121,7 @@ def load_home(path: Path = HOME_GYM) -> dict:
 def swaps_by_template(home: dict, resolve) -> dict[str, dict]:
     """The swap table keyed by Hevy template id, so a block that renames an exercise still
     finds its swap. A key that resolves to nothing is a typo in the data file: fail loud,
-    or that exercise is silently never made up again."""
+    or that exercise silently loses its home swap."""
     out: dict[str, dict] = {}
     for key, swap in home.get("swaps", {}).items():
         tid = resolve(key)
@@ -208,9 +211,10 @@ def diff_week(block: dict, week_no: int, statuses: dict[str, str],
             name = ex.get("name", "")
             row = rows.setdefault(name, {
                 "name": name, "tier": tier_for(ex), "tid": resolve(name),
-                "days": [], "planned": 0, "entry": ex,
+                "days": [], "planned": 0, "entry": ex, "entries": [],
             })
             row["days"].append(day)
+            row["entries"].append((day, ex))
             if statuses.get(day) != "pending":
                 row["planned"] += len(_working(ex.get("sets", [])))
 
@@ -248,31 +252,37 @@ def _done_days(row: dict, statuses: dict[str, str]) -> str:
     return " + ".join(_day_label(d) for d in days)
 
 
+def _as_written_class(tier: str) -> str:
+    if tier == "core":
+        return "core"
+    return "saturday-only" if tier in ("primary", "secondary") else "standard"
+
+
+def _as_written_sets(row: dict, statuses: dict[str, str]) -> list[dict]:
+    """The owed sets exactly as the block writes them, top set and back-offs, across the
+    days that are due. Short, not missed: the last `owed` of them."""
+    sets = [st for day, ex in row["entries"] if statuses.get(day) != "pending"
+            for st in _working(ex.get("sets", []))]
+    return [{"load_lb": float(round(st["weight_kg"] * KG_TO_LBS)) if st.get("weight_kg") else None,
+             "reps": st.get("reps"), "duration_seconds": st.get("duration_seconds")}
+            for st in sets[-row["owed"]:]]
+
+
 def plan_makeup(rows: list[dict], statuses: dict[str, str], swaps: dict[str, dict],
-                equipment: dict, resolve, log_load) -> tuple[list[dict], list[dict]]:
-    """(routine items, owed-but-not-made-up). `log_load(tid)` is the log anchor for a
-    home exercise, injected so this stays testable without the archive."""
-    items, excluded = [], []
+                equipment: dict, resolve, log_load) -> list[dict]:
+    """The routine: every owed exercise, as its home swap or else as written.
+    `log_load(tid)` is the log anchor for a home exercise, injected so this stays testable
+    without the archive."""
+    items = []
     order = list(DAY_WEEKDAY)
     for pos, row in enumerate(rows):
         if row["owed"] == 0:
             continue
-        swap = swaps.get(row["tid"])
-        where = _done_days(row, statuses)
-        if row["tier"] in NEVER_TIERS:
-            why = "Big-5 lift or barbell secondary. Never made up at home; the weekly review handles it."
-        elif swap is None:
-            why = f"No home swap on file. Add one to {_rel(HOME_GYM)} if it should be."
-        elif swap.get("class") == "never":
-            why = swap.get("why", "Marked never in the home swap table.")
-        else:
-            why = None
-        if why:
-            excluded.append({"name": row["name"], "where": where, "owed": row["owed"],
-                             "why": why})
-            continue
-
         first = (_working(row["entry"].get("sets", [])) or [{}])[0]
+        swap = swaps.get(row["tid"])
+        if swap is None or swap.get("as_written"):
+            swap = {"class": _as_written_class(row["tier"]), "note": AS_WRITTEN_NOTE,
+                    **(swap or {}), "home": row["name"], "load": "plan", "as_written": True}
         mode = swap.get("load", "none")
         lb = None
         if mode == "plan" and first.get("weight_kg"):
@@ -280,13 +290,15 @@ def plan_makeup(rows: list[dict], statuses: dict[str, str], swaps: dict[str, dic
         elif mode == "log":
             lb = log_load(resolve(swap["home"])) or swap.get("default_lb")
         if lb is not None:
-            lb = snap_dumbbell(lb, equipment)
+            # A home swap is on dumbbells. As written keeps the gym's load, whole pounds.
+            lb = float(round(lb)) if swap.get("as_written") else snap_dumbbell(lb, equipment)
         reps = swap.get("reps", first.get("reps"))
         duration = first.get("duration_seconds") if "reps" not in swap else None
+        set_list = _as_written_sets(row, statuses) if swap.get("as_written") else None
         items.append({
             "home": swap["home"],
             "for": row["name"],
-            "where": where,
+            "where": _done_days(row, statuses),
             "class": swap["class"],
             "tier": row["tier"],
             "sets": row["owed"],
@@ -294,16 +306,12 @@ def plan_makeup(rows: list[dict], statuses: dict[str, str], swaps: dict[str, dic
             "duration_seconds": duration,
             "load_lb": lb,
             "note": swap.get("note", ""),
+            "set_list": set_list,
             "_sort": (CLASS_ORDER.index(swap["class"]),
                       min(order.index(d) for d in row["days"]), pos),
         })
-
     items.sort(key=lambda i: i.pop("_sort"))
-    for over in items[MAX_EXERCISES:]:
-        excluded.append({"name": over["for"], "where": over["where"], "owed": over["sets"],
-                         "why": f"Over the {MAX_EXERCISES}-exercise cap. The make-up is "
-                                "catch-up, not a fifth session."})
-    return items[:MAX_EXERCISES], excluded
+    return items
 
 
 # --- the routine -------------------------------------------------------------------------
@@ -336,14 +344,15 @@ def spec_exercises(items: list[dict]) -> list[dict]:
     for i in items:
         sat_only = "SAT ONLY · " if i["class"] == "saturday-only" else ""
         note = f"{sat_only}Missed {i['where']} ({i['for']}). {i['note']}".strip()
-        kg = lb_to_kg(i["load_lb"]) if i["load_lb"] is not None else None
         out.append({
             "name": i["home"],
             "tier": i["tier"],
             "notes": note,
-            "sets": [{"type": "normal", "weight_kg": kg, "reps": i["reps"],
-                      "duration_seconds": i["duration_seconds"], "rpe": MAKEUP_RPE}
-                     for _ in range(i["sets"])],
+            "sets": [{"type": "normal",
+                      "weight_kg": lb_to_kg(st["load_lb"]) if st["load_lb"] is not None else None,
+                      "reps": st["reps"], "duration_seconds": st["duration_seconds"],
+                      "rpe": MAKEUP_RPE}
+                     for st in _set_list(i)],
         })
     return out
 
@@ -379,14 +388,29 @@ def push(client, payload: dict) -> tuple[str, str | None]:
 
 # --- what he reads ---------------------------------------------------------------------
 
+def _set_list(i: dict) -> list[dict]:
+    return i.get("set_list") or [{"load_lb": i["load_lb"], "reps": i["reps"],
+                                  "duration_seconds": i["duration_seconds"]}] * i["sets"]
+
+
 def _scheme(i: dict) -> str:
-    unit = f"{i['duration_seconds']}s" if i["duration_seconds"] else f"{i['reps']}"
-    load = f" @ {i['load_lb']:g} lb" if i["load_lb"] is not None else ""
-    return f"{i['sets']}×{unit}{load}"
+    """Runs of identical sets: `3×12 @ 25 lb`, or `1×3 @ 255 lb, 4×4 @ 210 lb`."""
+    runs: list[list] = []
+    for st in _set_list(i):
+        key = (st["load_lb"], st["reps"], st["duration_seconds"])
+        if runs and runs[-1][0] == key:
+            runs[-1][1] += 1
+        else:
+            runs.append([key, 1])
+    out = []
+    for (lb, reps, dur), n in runs:
+        unit = f"{dur}s" if dur else f"{reps}"
+        out.append(f"{n}×{unit}" + (f" @ {lb:g} lb" if lb is not None else ""))
+    return ", ".join(out)
 
 
-def render_message(geo: dict, statuses: dict, items: list, excluded: list,
-                   deload: bool, synced: bool) -> str:
+def render_message(geo: dict, statuses: dict, items: list, deload: bool,
+                   synced: bool) -> str:
     esc = html.escape
     head = f"{geo['block_id']} W{geo['week_no']}"
     sync_note = "\n⚠️ Hevy sync failed, so this ran on last night's log." if not synced else ""
@@ -406,11 +430,7 @@ def render_message(geo: dict, statuses: dict, items: list, excluded: list,
                          f"{esc(i['where'])}{tag}")
     else:
         lines += [f"✅ <b>Weekend make-up · {head}</b>",
-                  "Nothing owed that can be done at home. The make-up routine in Hevy is "
-                  "last week's, so ignore it."]
-    if excluded:
-        lines += ["", "<b>Owed, not made up</b>"]
-        lines += [f"• {esc(e['name'])} ({esc(e['where'])}): {esc(e['why'])}" for e in excluded]
+                  "Nothing owed. The make-up routine in Hevy is last week's, so ignore it."]
     if pending:
         days = ", ".join(_day_label(d) for d in pending)
         lines += ["", f"⏳ {days} not logged yet, so nothing from it is in here. If you "
@@ -420,8 +440,8 @@ def render_message(geo: dict, statuses: dict, items: list, excluded: list,
     return "\n".join(lines) + sync_note
 
 
-def render_record(geo: dict, statuses: dict, rows: list, items: list, excluded: list,
-                  deload: bool, generated: datetime, pushed: str) -> str:
+def render_record(geo: dict, statuses: dict, rows: list, items: list, deload: bool,
+                  generated: datetime, pushed: str) -> str:
     out = [f"# Weekend make-up — {geo['block_id']} · Week {geo['week_no']}/{geo['weeks']}",
            "", f"_Generated {generated:%Y-%m-%d %H:%M %Z}. Hevy log = source of truth. "
                "Rule `weekend-makeup`._", ""]
@@ -434,11 +454,7 @@ def render_record(geo: dict, statuses: dict, rows: list, items: list, excluded: 
         out += [f"| {i['home']} | {_scheme(i)} | {i['for']} | {i['where']} | {i['class']} |"
                 for i in items]
     else:
-        out.append("Nothing owed that can be done at home.")
-    if excluded:
-        out += ["", "## Owed, not made up", "", "| Exercise | Day | Sets owed | Why |",
-                "|---|---|---|---|"]
-        out += [f"| {e['name']} | {e['where']} | {e['owed']} | {e['why']} |" for e in excluded]
+        out.append("Nothing owed.")
     days = " · ".join(f"{_day_label(d)} {s}" for d, s in statuses.items())
     out += ["", "## The week, planned vs logged", "", f"Days: {days}", "",
             "| Exercise | Day | Tier | Planned sets | Logged | Status |",
@@ -492,10 +508,10 @@ def main() -> None:
     home = load_home()
     swaps = swaps_by_template(home, resolve)
     rows = diff_week(block, geo["week_no"], statuses, week_sessions, resolve, swaps)
-    items, excluded = ([], []) if deload else plan_makeup(
+    items = [] if deload else plan_makeup(
         rows, statuses, swaps, home["equipment"], resolve,
         lambda tid: home_log_load(tid, today) if tid else None)
-    message = render_message(geo, statuses, items, excluded, deload, synced)
+    message = render_message(geo, statuses, items, deload, synced)
 
     from ..hevy.exercise_map import Resolver
     payload = build_payload(geo, items, Resolver()) if items else None
@@ -506,7 +522,7 @@ def main() -> None:
             print("\n===== ROUTINE (not pushed) =====")
             print_routine_preview(payload, spec_exercises(items))
         print("\n===== RECORD =====\n" + render_record(
-            geo, statuses, rows, items, excluded, deload, now, "dry run, not pushed"))
+            geo, statuses, rows, items, deload, now, "dry run, not pushed"))
         summary("### 🔍 Dry run — nothing pushed, sent or committed")
         return
 
@@ -525,7 +541,7 @@ def main() -> None:
         print(f"⚠️ Telegram not sent ({exc}).")
 
     MAKEUP_DIR.mkdir(parents=True, exist_ok=True)
-    record.write_text(render_record(geo, statuses, rows, items, excluded, deload, now, pushed))
+    record.write_text(render_record(geo, statuses, rows, items, deload, now, pushed))
     if not args.no_commit:
         commit([REPO_ROOT / "data" / "logs", record],
                message=f"chore(makeup): weekend make-up {geo['block_id']} W{geo['week_no']} "
