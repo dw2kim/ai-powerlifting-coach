@@ -18,6 +18,11 @@
   keeps its day and pattern but does not peak. This satisfies the project overlap rule by keeping
   only one axial lift heavy at a time. Every block states the current and prior axial emphasis;
   bench, pull-up, and dip keep their own waves. [FB 2026-08-29]
+  **Reaffirmed as the standing structure 2026-11-08** — and **"moderate" does not mean easy.** The
+  moderate lift is *somewhat challenging, at a level that's good for the lower back*: its band starts
+  at **~85% of the top set the prior heavy block reached for that lift** (never a reset to B6's 255–315),
+  climbs gently, RPE ≤7, no peak. **From B8 the heavy lift returns toward the pre-injury norm** —
+  squat 455–485, sumo through `sumo-back-cap` — the B8 design brief. [FB 2026-11-08]
 
 ## Loads & progression
 
@@ -131,6 +136,15 @@
   new** accessory/secondary movements that expand an under-trained muscle group for novel
   stimulus — while keeping ≥1 carry-over per slot and primaries fixed. State explicitly which
   1–2 movements were added and which group each expands. [FB 2026-06-18, extended 2026-06-29]
+- **axial-variant-weekly** — **Every block carries one barbell variant for the *moderate* axial lift,
+  on its own day (D2 or D3)**: heavy-squat block → a **hinge** variant (paused sumo, paused RDL); heavy-sumo
+  block → a **squat** variant (paused or tempo low-bar). It's the moderate lift's second exposure, chosen
+  from the `secondary-rotation` pool. **Fixed load, @7 cap, ≤4 reps, never a peak.** Placement: **D2 by
+  default** — D3 is always the day before D4 sumo (two hinge days running, or a squat 24 h before a heavy
+  pull). On D2 in a heavy-squat block it shares the day with the pull-up: **pull-up first, pull-up held
+  conservative, straps on the variant** (elbows). Gated on the back check like any axial lift. This
+  reverses the B5 cut of the paused squat (it was removed for being a second axial session — that's now
+  the point). ❓ D2-vs-D3 placement pending athlete confirmation. [FB 2026-11-08]
 - **secondary-rotation** — Rotate the **secondary** movement for the three barbell lifts
   (squat, bench, sumo deadlift) across blocks: **0–2 rotations per block, coach's discretion.**
   Hold a secondary when a weak point is better served by staying on it — don't rotate for its
@@ -444,7 +458,9 @@
   **Amended 2026-09-27:** the fixed band may **climb gently, about +10 lb/week**, each step gated on
   the sumo back check and topping out under the prior block's sumo peak. The athlete wants a visible
   trend, and a start **no lower than his most recent easy pull** (B6: 255 → 285, after 235 @5).
-  Still no range and no autoregulating up. [FB 2026-09-27] In heavy-sumo blocks it may wave,
+  Still no range and no autoregulating up. [FB 2026-09-27] **Band floor from 2026-11-08: ~85% of the
+  prior heavy-sumo block's top set** (B7 tops 405 → B8 sumo opens ~345), per `alternating-axial-emphasis`.
+  [FB 2026-11-08] In heavy-sumo blocks it may wave,
   but only through `axial-return-ladder` and inside `sumo-back-cap`; back rounding or bar-speed
   loss always ends the set.
   **Why keep it rather than drop it:** detraining a hinge makes returning to it more dangerous;

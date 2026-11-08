@@ -888,3 +888,28 @@ the work; the set count he overrode himself from day one.
 - Not done: W5-D1/D2 are trained (he did 3 sets anyway). W1 is history.
 → rules: `accessory-effort-cap` (set floor 3), `whole-body-every-day` (dose wording), `hevy-rest-timers`
 (light weeks)
+
+### 2026-11-08 · block · general · exercise · axial return from B8, a challenging moderate lift, and a weekly axial variant · 2026-Q4-B07 → B8+
+**Feedback (verbatim, condensed):** "I agree B7 can be conservative for my lower back but from B8 we should
+come back." · "In the future, maybe we should keep alternative blocks where one push hard on Squat and the
+other one push hard on Sumo. But it does not mean that on Heavy Squat block, I want to have too conservative
+on sumo, it should be somewhat challenging but in the level it is good for my lowerback." · "I think we
+should have at least one alternative variant on D2 or D3. So if we have the heavy squat block, then D1 will
+be heavy so we can have D2 or D3 Hinge variant. If we have the heavy sumo, we should have D2 or D3 squat
+variant." · "We can have a little conservative pull up for awhile, and introduce the 'Hinge variant D2'."
+**Context:** the coach had proposed (same day) putting the variant inside the support lift's own day as its
+backoffs, to avoid a third axial day. **Athlete disagreed** and wants a separate variant session. Accepted —
+it's a reasonable trade with the injection series ending (10-30 visit: 2–3 sites, "looked good"; next 11-27,
+last ~December).
+**Verified (record):** B6's moderate sumo ran **255–315** while B5/B4 sumo had reached 465–485; the gap is
+what "too conservative" refers to. B7 W1 sumo 345×3 @7. Whole squat + hinge secondary pools are
+`Blocked — medical` in `data/movement-library.csv`; paused squat was cut in B5 for being the second weekly
+axial session — this feedback deliberately reverses that.
+**Coach's position on placement:** **D2, in both block types.** D3 is always the day before D4 sumo — a
+hinge variant there is two hinge days running, and a squat variant there is 24 h before a 405 pull (B7
+banned exactly that). D2 costs a Mon→Tue axial pair instead, and in heavy-squat blocks shares the day with
+the pull-up (CLAUDE.md: deadlift + pull-up never heavy together) — managed by pull-up first, pull-up
+conservative (athlete's own call, both elbows), the variant at a fixed @7, and **straps** (right medial elbow
+is the grip-flexor side). ❓ Placement pending athlete confirmation.
+**Actions taken:** rules below. Library unblock of the chosen variants happens at B8 design. B7 unchanged.
+→ rules: `alternating-axial-emphasis` (amended), `sumo-skill-lift` (moderate band floor), `axial-variant-weekly` (new)
