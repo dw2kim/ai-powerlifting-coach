@@ -908,3 +908,25 @@ Not extended to the other `never` entries (leg extension, leg curl, hip thrust, 
 before Monday's squat; landmine; lat pulldown). Those exclusions are about the program, not his back.
 Asked whether he wants them in too.
 → rules: `weekend-makeup` (home equipment bullet)
+
+### 2026-11-08 · general · weekend make-up leaves nothing out · 2026-Q4-B07
+**Feedback:** "Please do not keep them out. Do not keep any workout out if they are missed. Just try to find
+the alternative workout that I can do at home. If not please bring the workout as it is. Maybe I can be a
+little bit more creative and do a similar alternative exercise at home. Once it's logged maybe you can see
+what alternative I can do at home."
+**Context:** right after the calf-raise entry above. I'd recommended keeping six `never` swaps out (leg
+extension, leg curl, hip thrust and BSS for Monday's squat; landmine; lat pulldown). Overruled. Nothing was
+owed from them this week, so this is a policy change, not a W1 fix.
+**Read as:** applies to everything, Big-5 and barbell secondaries included, and the 5-exercise cap too
+(a cap is also leaving work out). Kept: one set short is still ignored (his 10-17 rule), nothing in a
+deload week, and the Saturday-only tag for work that pre-tires Monday.
+**Actions taken:**
+- `scripts/review/weekend_makeup.py`: no `never` class, no tier exclusion, no cap. An owed exercise
+  with no swap, or `as_written: true`, goes in as the block's own sets set by set (top set and
+  back-offs, gym loads, not snapped to the dumbbell rack), with a note to log what he actually did.
+  Big-5/secondaries as written are Saturday only. Tests updated plus a set-by-set test (126 OK).
+- `data/home-gym.json`: Lat Pulldown → Lat Pulldown (Band), wide pronated grip · Leg Extension → Sissy
+  Squat (Weighted) · Hip Thrust → Single Leg Hip Thrust (Dumbbell) · BSS → BSS with dumbbells · Seated
+  Leg Curl and Landmine Press → as written with ideas (sliding curl, angled half-kneeling DB press @7).
+- Checked against B7 with a fully missed week simulated: 25 lines, payload builds.
+→ rules: `weekend-makeup` (nothing owed is left out; dose; home equipment)
