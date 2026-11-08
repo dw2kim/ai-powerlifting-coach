@@ -961,3 +961,9 @@ coach's pick, **barbell only** ("so it felt like a secondary movement and not ac
 pause just above the knee.** Elbow pain is from the pull motion, not the grip → straps optional, not required.
 D2 placement not contested; still ❓ until said.
 → rules: `sumo-back-cap` (re-opened from B9), `axial-variant-weekly` (barbell-only, B8 pick, straps optional)
+**Addendum 2 (placement settled):** athlete: *"for the squat-heavy block, D2 will have the hinge variant. For
+the sumo-heavy block, D3 will have the squat variant! … unless you have a strong pushback."* Coach: not a
+strong pushback — the Mon/Thu squat spacing is a fair argument. Accepted with guardrails (D3 squat variant
+@6.5, ≤3×3, ≤~70% of D1; a `tight` Saturday check moves it to D2). December shot ~12-18 (not booked; B8 W2
+D4). No travel planned Dec 7 → Jan 8.
+→ rules: `axial-variant-weekly` (placement)

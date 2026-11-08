@@ -1018,3 +1018,19 @@ every case the signal existed and the thing that was supposed to look at it eith
 only inspected what it already intended to change. `hold` meaning "don't rebase" got read as "don't
 look"; a guard that fires on one day got treated as a guard; an existing file got treated as a
 current one. **Write checks that assert the state is right, not that the step was attempted.**
+
+## 2026-11-08 — the long-term axial plan, B7 → B11, agreed
+
+He asked what the next 3–4 blocks should focus on. Answer, now agreed and in the rules:
+- **Alternation stays as the standing structure**, but the moderate lift is *challenging*, not a reset
+  (~85% of the last heavy top). B6's 255–315 sumo was the thing he objected to.
+- **The doctor heard the loads on 10-30** and said *"come back to normal heavy lifting"* after 1–3 more
+  sessions. Normal = **455–485 on both**. First informed clearance in the record — the "doctor doesn't
+  know" item that ran from 08-07 to 11-08 is closed.
+- **Roadmap:** B7 heavy sumo, 405 ceiling · **B8 heavy squat** to the norm, Paused Sumo on D2 · **B9 heavy
+  sumo**, ceiling becomes a ladder 405 → 455, squat variant on D3 · B10 first block where both progress,
+  staggered peaks · B11 optional mock meet, sumo 455 → 485.
+- **B8 calendar trap, found before design:** Dec 25 and Jan 1 are both **Fridays — B8 W3 D4 and W4 D4.**
+  Two of five D4s land on holidays. Plan the move at design, not on the morning.
+- **Pattern, again:** the 10-30 visit took nine days to reach the repo, and in the meantime I argued a
+  ceiling on "no appointment on file". Ask about the clinic at every block boundary, not when it comes up.

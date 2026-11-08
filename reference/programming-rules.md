@@ -139,14 +139,16 @@
 - **axial-variant-weekly** — **Every block carries one barbell variant for the *moderate* axial lift,
   on its own day (D2 or D3)**: heavy-squat block → a **hinge** variant (paused sumo, paused RDL); heavy-sumo
   block → a **squat** variant (paused or tempo low-bar). It's the moderate lift's second exposure, chosen
-  from the `secondary-rotation` pool. **Fixed load, @7 cap, ≤4 reps, never a peak.** Placement: **D2 by
-  default** — D3 is always the day before D4 sumo (two hinge days running, or a squat 24 h before a heavy
-  pull). On D2 in a heavy-squat block it shares the day with the pull-up: **pull-up first, pull-up held
-  conservative**; straps optional (the elbows hurt on pulling, not gripping — athlete 2026-11-08). Gated on
-  the back check like any axial lift. **Barbell only** — it has to feel like a secondary, not an accessory
+  from the `secondary-rotation` pool. **Fixed load, @7 cap, ≤4 reps, never a peak.** Placement **(athlete's call, 2026-11-08)**: **heavy-squat block → hinge variant on D2** (pull-up first, pull-up
+  held conservative); **heavy-sumo block → squat variant on D3**, the day before the heavy pull. The D3 cost is
+  real (erectors and adductors the day before the heaviest sumo of the block) and the athlete accepts it for
+  Mon/Thu squat spacing. **Guardrails on the D3 squat variant:** fixed load, **@6.5 cap**, ≤3×3, never above
+  ~70% of the D1 squat; and **if any Saturday sumo check reads `tight`, the variant moves to D2 from the next
+  week — no debate.** Straps optional (the elbows hurt on pulling, not gripping). Gated on the back check like
+  any axial lift. **Barbell only** — it has to feel like a secondary, not an accessory
   (athlete). **B8's pick: Paused Sumo, pause just above the knee** (the hitch position). This
   reverses the B5 cut of the paused squat (it was removed for being a second axial session — that's now
-  the point). ❓ D2-vs-D3 placement pending athlete confirmation. [FB 2026-11-08]
+  the point). [FB 2026-11-08]
 - **secondary-rotation** — Rotate the **secondary** movement for the three barbell lifts
   (squat, bench, sumo deadlift) across blocks: **0–2 rotations per block, coach's discretion.**
   Hold a secondary when a weak point is better served by staying on it — don't rotate for its

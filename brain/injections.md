@@ -27,6 +27,8 @@
 | 2026-10-30 | given | lower back | anesthetic | Reported 2026-11-08 (nine days late). **2–3 sites**, down from the series high of ~10–15. Doctor: *"looked good"*, *"maybe I can come back after 1-3 additional session."* ❓ time of day vs the 6 am B6 W5 sumo unconfirmed — the 10-30 sumo check reads as post-injection until it is. |
 | 2026-11-27 | expected | lower back | anesthetic | Fri — **B7 W4 D4, the 405 sumo day.** Pull at 6 am before the shot. W5 deload follows, so the flare window costs nothing. |
 
+| 2026-12-18 | expected | lower back | anesthetic | ❓ **Approximate — not booked yet; athlete books it on 11-27.** Fri = **B8 W2 D4**. Probably the last of the series. Mon 12-21 (B8 W3 D1, heavy squat) sits ~64 h post — inside the window, so that squat runs at a fixed load. |
+
 **Series end: probably one more visit in December, then done** (athlete, 2026-11-08). No date yet —
 add the row when it's booked. After the last shot every back check is chemically honest for the first
 time since 2026-07-03.
