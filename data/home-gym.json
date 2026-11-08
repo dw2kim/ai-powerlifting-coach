@@ -141,8 +141,16 @@
       "why": "The pull-up covers lats, and a band pulldown is too light to earn a slot."
     },
     "Seated Calf Raise": {
-      "class": "never",
-      "why": "The only home calf raise is standing, which is banned while the back is under treatment (equipment-fallbacks)."
+      "home": "Single Leg Standing Calf Raise (Dumbbell)",
+      "class": "standard",
+      "load": "log",
+      "default_lb": 25,
+      "reps": 12,
+      "also_counts": [
+        "Single Leg Standing Calf Raise (Dumbbell)",
+        "Standing Calf Raise (Dumbbell)"
+      ],
+      "note": "Optional, your call (FB 2026-11-08): the gym bans standing calf raises while the back is under treatment, but here it's one dumbbell in one hand, not load on the spine. Ball of the foot on a step, free hand on the wall, full stretch at the bottom, pause at the top. Back says no, skip it."
     },
     "Leg Extension (Machine)": {
       "class": "never",

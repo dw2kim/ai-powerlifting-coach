@@ -413,8 +413,10 @@
     primary), and loaded lower body (the weekend before Monday's squat). Exclusions and their
     reasons live in `data/home-gym.json`. An exercise with no home swap there is not made up either.
   - **Home equipment** (athlete, 2026-10-17): dumbbells 5–50 lb, a bench, bands. Each swap keeps the
-    slot's constraints: shoulder RPE caps, no standing hinge or standing calf raise while the back
-    is under treatment, no overhead pressing.
+    slot's constraints: shoulder RPE caps, no standing hinge while the back is under treatment, no
+    overhead pressing. **Exception, the athlete's call:** the make-up is optional, so the calf raise
+    goes in as a single-leg DB standing raise (one dumbbell, no spinal load) and he decides whether
+    to do it. The gym ban on standing/barbell calf raises stays. [FB 2026-11-08]
   - **Dose:** at most **5 exercises**, the owed sets only, **everything @7**. Order: shoulder cuff
     work first, then the standard slots, then chest/triceps (**Saturday only**, since on Sunday they
     pre-tire Monday's bench), then core. Nothing in a deload week.

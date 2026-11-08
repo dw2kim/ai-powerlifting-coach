@@ -888,3 +888,23 @@ the work; the set count he overrode himself from day one.
 - Not done: W5-D1/D2 are trained (he did 3 sets anyway). W1 is history.
 → rules: `accessory-effort-cap` (set floor 3), `whole-body-every-day` (dose wording), `hevy-rest-timers`
 (light weeks)
+
+### 2026-11-08 · exercise · general · weekend make-up is optional, so the calf raise goes in · 2026-Q4-B07
+**Feedback:** "Let's not have the rule for the makeup workout because it's optional. Leave it up to me if I
+don't want to do it but you still need to log it. Maybe with the dumbbell calf raise or something."
+**Context:** W45 (B7 W1) make-up had only Bird Dog. Seated Calf Raise (Fri D4, 3 sets) was owed but
+dropped as `never`: "the only home calf raise is standing, which is banned while the back is under
+treatment". It showed up only in the record's "Owed, not made up" section, so to him it looked missed.
+**Verified (Hevy):** W1-D4 (Nov 6) has no calf work. The rest of the week matched; Monday's pushdown, fly
+and side plank were moved to Thu D3 and counted there.
+**Read as:** the make-up is optional, so a restriction caution is his call there, not a reason to leave the
+work out. The ban's actual reason is axial compression from a barbell or shoulder pad. One dumbbell in one
+hand for a single-leg calf raise barely loads the spine. **The gym ban stands** (`equipment-fallbacks`):
+no standing/barbell calf raise in the block itself.
+**Actions taken:** `data/home-gym.json`, Seated Calf Raise `never` → home swap **Single Leg Standing Calf
+Raise (Dumbbell)**, `standard`, load from the home log (25 lb default), 12 reps, note says it's optional.
+Separate Hevy template from the gym's Seated Calf Raise, so a home load never anchors the machine.
+Not extended to the other `never` entries (leg extension, leg curl, hip thrust, BSS: weekend lower body
+before Monday's squat; landmine; lat pulldown). Those exclusions are about the program, not his back.
+Asked whether he wants them in too.
+→ rules: `weekend-makeup` (home equipment bullet)
