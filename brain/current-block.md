@@ -69,6 +69,12 @@ relationship with a visit already owed. One sentence in a visit that's happening
 
 ### 3. The clinic is six blocks owed, and the sumo ceiling is the price
 
+> **↳ Corrected 2026-11-08.** There was a visit on **2026-10-30** (2–3 trigger points, down from 10–15;
+> doctor: *"looked good"*). **Next: Fri 2026-11-27 — W4 D4, the 405 day: pull at 6 am, before the shot.**
+> Probably one more in December, then the series ends. **B7 changes: nothing** — it stays conservative,
+> your call. B8 is the return-to-norm block. Whether the doctor has heard the loads is still unknown, so
+> **say them on 11-27.** Full record: `active-issues.md` → *Visit 2026-10-30*.
+
 You pulled 315 and squatted 435 last block. The clinic's last input was a muscle relaxant on
 **2026-09-11** and there is **no appointment on file.** 405 is the ceiling this block *because* that
 conversation hasn't happened — not because 405 is your limit. Book it, tell them the numbers, and
@@ -338,7 +344,8 @@ Pulldown** (stale 3-year anchor), and **all of W5** (deload).
 
 ## Open items carried into B7
 
-- [ ] **🔴 Book the clinic.** Say the numbers out loud: squat 435×3, sumo 315×3, and B7 goes to 405.
+- [x] ~~**🔴 Book the clinic.**~~ **Booked — Fri 2026-11-27** (reported 2026-11-08; last visit was 10-30).
+- [ ] **🔴 At the 11-27 visit, say the numbers out loud**: squat 435×3, sumo 405×3 that morning. And the elbows.
       Six blocks owed. Questions are listed in `active-issues.md`. **The 405 ceiling is set by this
       being undone.**
 - [ ] **🔴 Back check every Saturday, after Friday's pull.** One word. No check, no rung.

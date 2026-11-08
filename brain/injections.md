@@ -24,6 +24,13 @@
 | 2026-08-28 | given | lower back | anesthetic | W3 D4. Trained 6–7am, before the shot. **Pain much improved. Doctor cleared a graded load increase — "start with a 25% weight increase and see how it goes."** Supersedes the 4-week no-heavy order. |
 | 2026-09-11 | **given** | lower back | anesthetic | W5 D4 (deload). **Confirmed by the athlete 2026-09-23**: *"I did get the same pain trigger point injections a few times. It was pretty similar, just on the lower back."* Same visit produced a 3-week oral course — baclofen 10 mg BID + pregabalin 25 mg BID — see `active-issues.md` → *Visit 2026-09-11*. |
 
+| 2026-10-30 | given | lower back | anesthetic | Reported 2026-11-08 (nine days late). **2–3 sites**, down from the series high of ~10–15. Doctor: *"looked good"*, *"maybe I can come back after 1-3 additional session."* ❓ time of day vs the 6 am B6 W5 sumo unconfirmed — the 10-30 sumo check reads as post-injection until it is. |
+| 2026-11-27 | expected | lower back | anesthetic | Fri — **B7 W4 D4, the 405 sumo day.** Pull at 6 am before the shot. W5 deload follows, so the flare window costs nothing. |
+
+**Series end: probably one more visit in December, then done** (athlete, 2026-11-08). No date yet —
+add the row when it's booked. After the last shot every back check is chemically honest for the first
+time since 2026-07-03.
+
 > ⚠️ **2026-09-22 — a masking/CNS source that is not an injection.** An oral course started on or
 > about **2026-09-11**: **apo-baclofen 10 mg twice daily** (muscle relaxant) + **pms-pregabalin
 > 25 mg twice daily** (gabapentinoid). **Athlete confirmed 2026-09-23 he has one week left → the
