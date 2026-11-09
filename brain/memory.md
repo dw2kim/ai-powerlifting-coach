@@ -1018,3 +1018,42 @@ every case the signal existed and the thing that was supposed to look at it eith
 only inspected what it already intended to change. `hold` meaning "don't rebase" got read as "don't
 look"; a guard that fires on one day got treated as a guard; an existing file got treated as a
 current one. **Write checks that assert the state is right, not that the step was attempted.**
+
+## 2026-11-02 — B7 reached the app on the third attempt, and all three bugs were one bug
+
+Two failed pushes before it landed. Worth keeping because the *shape* is now unmistakable.
+
+**What broke**
+1. **`superset_id` as a string.** The block JSON used readable labels (`"d1a"`, `"d2b"`). Hevy's
+   `superset_id` is a **number**, so they coerced to `NaN`: `400 Expected number, received nan`,
+   twice, on W1-D1's superset pair — *after* the routine folder had been created. Folder 4003373,
+   zero routines.
+2. **Then a process failure, mine.** I told him to run the workflow from a non-default branch to
+   reach a `folder_id` input that only existed there. He ran the default. Old code, same NaN, and a
+   **second** orphan folder (4003492).
+
+**The pattern, now confirmed four times in two weeks**
+
+| What was wrong | What should have caught it |
+|---|---|
+| `superset_id` string → NaN | the dry run — but it never printed the field |
+| sumo crept +30 lb over a fixed band | the Saturday sync — but `hold` means "don't rebase", read as "don't look" |
+| RPE-cap flag dead for a whole block | itself — but `_planned_top` took `sets[0]`, which became a warm-up |
+| B7 arrived with no draft and no review | the draft routine — which had never run, with a guard that could fire on one day only |
+
+**Every one is a field the tooling wrote and never showed back, or a check that asserted a step was
+attempted rather than that the state was right.** That is the lesson, not four unlucky bugs.
+
+**Fixes that stuck:** numeric `superset_id` with a build-time guard that quotes Hevy's own error ·
+`SS<n>` printed in the dry-run preview · the push **reuses the block's folder by title** instead of
+creating one, so a retry after a partial failure is idempotent and nobody carries a folder id ·
+`handover.py` in the Saturday review goes **red** when a block ends with no review and no next block ·
+`_planned_top` skips warm-ups.
+
+**One thing that worked by design and is worth not breaking:** he clicked the successful push twice
+in the same second. The workflow's `concurrency` group serialised the runs and `existing_routines`'
+title check made the second one skip all 20 instead of duplicating them. Both guards earned their
+keep on the same morning.
+
+**Cost to the athlete:** D1 of a new block, with an empty app at 6am. The tooling failures were
+mine; the training day was his.
