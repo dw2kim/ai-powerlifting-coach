@@ -83,3 +83,5 @@ _The check is the morning after the session date. Newest at the bottom._
 | 2026-09-28 | squat | fine | medicated (baclofen course ends ~Sep 30); reported Oct 2 |
 | 2026-10-26 | squat | fine | Reported 2026-11-01 at the B6 review. Unmedicated (course ended ~Sep 30). Squat 335x3 @6 deload. |
 | 2026-10-30 | sumo | fine | Reported 2026-11-01 at the B6 review. Unmedicated. Sumo 245x3 deload. Second clean unmedicated row - unlocks B7 sumo opening at the 345 band floor. |
+| 2026-11-02 | squat | fine | Reported 2026-11-08. Unmedicated, clean week. B7 W1 D1 squat 365x3 @6 (moderate band). |
+| 2026-11-06 | sumo | fine | Reported 2026-11-08. Unmedicated, clean week (last shot 10-30). B7 W1 D4 sumo 345x3 @7. Opens the W2 rung. |

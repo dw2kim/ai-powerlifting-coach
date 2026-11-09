@@ -5,6 +5,9 @@
 
 ## Shoulder (chronic)
 - **Status**: chronic, manageable, symptomatic. No acute flare as of 2026-06-13.
+  **2026-11-08 (athlete): *"My shoulders are great these days."*** Quiet through B6 and B7 W1 at four
+  pressing exposures a week. No restriction lifted by this — the MRI findings are structural — but it's
+  the evidence that the current pressing volume is tolerated.
 
 ### ✅ DEFINITIVE FINDING — R shoulder MRI without contrast, **taken 2026-07-28** (shared 2026-08-07)
 **This supersedes the 2025 ultrasound and closes the "training blind" gap open since June.** The
@@ -129,6 +132,61 @@ blind). User accepts and proceeds under the rule below. This **overrides** the p
 
 ## Lower back — graded return; B5 W5 athlete-directed 365 squat ceiling
 
+### Visit 2026-10-30 — reported 2026-11-08, nine days late · **the series is winding down**
+
+**Clinical fact (athlete report, 2026-11-08, verbatim):** *"I went for Oct 30, and the doctor said it
+looked good, and maybe I can come back after 1-3 additional session. Next one is Nov 27, and I will
+probably have the last one on December and that's it. Currently, we are just injecting 2-3 pain trigger
+point instead of 10-15 shots previously around the lower back."*
+
+| | |
+|---|---|
+| **Injection given 10-30?** | ✅ **Yes, after the 6 am sumo** (confirmed 2026-11-08 — *"The clinic does not open before 6 am"*). The 10-31 check is post-injection. |
+| **Sites** | **2–3 trigger points**, down from **10–15** earlier in the series (this file recorded ~8 and 4–5 for individual visits; his "10-15" is the series high). |
+| **Next** | **Fri 2026-11-27** — that is **B7 W4 D4, the 405 sumo day.** Then probably **one in December, and that's the end of the series.** |
+| **Doctor's words** | *"looked good"*, and *"maybe I can come back after 1-3 additional session"*. ✅ **"Come back" = "come back to normal heavy lifting"** (athlete, 2026-11-08). |
+| **Was the doctor told the loads?** | ✅ **Yes** (athlete, 2026-11-08: *"He heard it, yeah."*). **Closes the item open since 2026-08-07** — the doctor's advice is now built on the real picture. |
+
+### ✅ 2026-11-08 — this is a clinical clearance, conditional on the series ending
+
+A doctor who has heard the loads says *"come back to normal heavy lifting after 1–3 more sessions."* That
+is the first clearance in this record that meets `clinical-override`'s bar: it's from the clinician, it's
+informed, and it has an end condition. **Normal = the pre-injury norm, 455–485 lb on both squat and sumo**
+(athlete-defined 2026-11-08, matches the log: squat 455–480 ×2–3, sumo 465–485).
+
+| Gate | Status | Lifts when |
+|---|---|---|
+| `masked-pain-load-cap` (axial, post-injection windows) | **still binds** inside each 72 h window | **The last shot** (11-27, then ~December). After it, no window, no cap. |
+| `sumo-back-cap` 405 ceiling | **binds through B7 and B8** | **Re-opened in B9** as a gated ladder to the norm — see the rule's 2026-11-08 amendment. |
+| Squat | already a normal primary (return closed 10-18) | B8 climbs to the 455–485 norm. |
+
+**Hard stops are unchanged and outlive the clearance**: new or worsening leg symptoms, night or rest pain,
+pain not settling in 24 h, or two `sore` axial checks running → axial work stops, back to the clinic.
+
+**Correction.** On 2026-11-01 this file and `current-block.md` said *"no appointment on file"* and *"six
+blocks owed"* — **there had been a visit two days earlier.** Same failure as every other fact that lived
+only in his head: the record was wrong for nine days and B7's sumo ceiling was argued partly on it. The
+10-30 sumo back check (`fine`, morning of 10-31) is therefore ❓ **probably post-injection**, not one of
+two clean ones — `back_checks.py` will now classify it that way from the `injections.md` row.
+
+**Athlete's interpretation:** *"I think we're good to load it back to my norm slowly. I agree B7 can be
+conservative for my lower back but from B8 we should come back."*
+
+**Coach's read.** **Agreed on direction — this is the best back news in the record.** Site count down
+~80%, a doctor saying "looks good", and an end date for the series. Three things keep it honest:
+1. **"Come back to my norm" is a goal, not a clearance.** `masked-pain-load-cap` binds in each
+   post-injection window until the series ends; `sumo-back-cap` (405) is durable and is revisited on
+   *sustained clean pulling* — which is exactly what B7's gated 345 → 405 is collecting.
+2. **The clean read only starts when the shots stop.** After the December visit, every check is
+   chemically honest. That is the first time since 2026-07-03.
+3. **Tell the doctor the numbers on Nov 27.** Squat 435×3, sumo 405×3 that same morning. If "looked
+   good" survives those numbers, it is a clearance. Until then it is a good sign.
+
+**Training delta: none for B7** — it was already designed conservative and you agreed it stays that way.
+**Nov 27 (W4 D4, 405):** pull at 6 am **before** the shot, as always; Monday Nov 30 is the W5 deload, so the
+72 h flare window costs nothing. **B8 onward: the return to norm is the design brief** (see
+`feedback/log.md` 2026-11-08).
+
 **2026-11-01 — B7 runs HEAVY SUMO, opened conservatively. Two clean unmedicated checks on file.**
 At the B6 review the athlete reported **2026-10-26 (squat) `fine`** and **2026-10-30 (sumo) `fine`** —
 the first two clean unmedicated rows since the medication course ended ~Sep 30, and the condition
@@ -140,6 +198,8 @@ and **sumo 315×3 @6**, no flare, no leg symptoms, no escalation tripped.
 - **B7 squat: moderate**, fixed band, no peak (`alternating-axial-emphasis`).
 - ⚠️ **Still not a clinical clearance.** The clinic has never been told the loads — **six blocks owed**
   — and there is **no appointment on file.** The conservative sumo open is the price of that.
+  **↳ Corrected 2026-11-08:** there *was* a visit, on 2026-10-30, and the next is booked for **2026-11-27**.
+  Whether the loads were said out loud is still unknown. See *Visit 2026-10-30* above.
 
 **2026-10-18 — squat's graded return ended, athlete's call.** After B6 W3's 415×3 @7, W4 works up to @8
 from a 415 floor, lid 455 (`brain/current-block.md` → Amendments). **Not a clinical clearance.** The
@@ -208,9 +268,13 @@ The pain-masking effect is real but modest, not the blackout I implied.
 **Hard stops unchanged:** new or worsening leg symptoms, night or rest pain, pain not settling
 within 24 h, or two consecutive `sore` axial checks → axial work stops, back to the clinic.
 
-**Open questions for the next visit** *(raised 2026-09-22, trimmed 2026-09-23)*:
-- [ ] **Is there a next appointment, and does the injection series continue past 2026-09-11?**
-- [ ] **Tell him you are squatting and deadlifting again, and at what weight.** **Sixth block owed as of
+**Open questions for the next visit — Fri 2026-11-27** *(raised 2026-09-22, trimmed 2026-09-23, updated 2026-11-08)*:
+- [x] ~~**Is there a next appointment, and does the injection series continue past 2026-09-11?**~~
+  **Answered 2026-11-08:** visit 10-30, next **11-27**, probably one more in December, then the series ends.
+- [x] ~~**NEW 2026-11-08 — what does "come back after 1–3 sessions" mean?**~~ **Answered same day:** back to
+  normal heavy lifting, and the doctor has heard the loads.
+- [ ] **When is the December visit?** It lands inside B8 (heavy squat) — its 72 h window needs planning.
+- [x] ~~**Tell him you are squatting and deadlifting again, and at what weight.**~~ **✅ Done by 2026-10-30** (athlete, 2026-11-08: *"He heard it"*). Original text: **Sixth block owed as of
   2026-11-01** — the numbers to say out loud are **squat 435×3** and **sumo 315×3**, and B7 takes sumo to
   345–405. He prescribed a muscle relaxant to someone doing this.
 - [ ] **NEW 2026-11-01 — mention BOTH elbows** (anterior, left since ~late Sept, right from late Oct, limiting the pull-up — see the Elbows section).
@@ -497,6 +561,44 @@ the plan as written rather than reduce further or stop. **This is his call and i
 
 **2026-11-01 (asked directly at the B6 review):** still there, **mild**.
 
+**2026-11-08 (athlete, in chat):** *"now I'm having this inflammation in the front or outer side of the
+left elbow AND back or inner side of right elbow. So we can have a little conservative pull up for
+awhile."*
+
+### ⚠️ 2026-11-08 — the sites have moved, and that matters for the grip
+
+| | Before (10-20 → 10-27 notes) | Now (11-08) |
+|---|---|---|
+| **Left** | front | **front or outer** — the outer side is the *lateral* elbow |
+| **Right** | inner (pulldown, neutral) · front (bending) | **back or inner** — *medial / posterior* |
+
+"Inflammation" is his word. ❓ **Nobody has examined it** — no clinician, still. Not a diagnosis.
+
+**Coach's read, and it changes one instruction.** The outer (lateral) elbow is where the **wrist
+extensors** attach, and those work hardest when you grip **overhand (pronated)** — which is exactly the
+grip this file prescribed on 11-01 to protect the front of the elbow. So the wide pronated grip that
+helped the left *front* may be what's now loading the left *outside*. And the right inner/medial side is
+the **grip-flexor** origin, which every heavy pull taxes — including a hinge variant.
+- **Don't change the grip until he answers** whether the left outer side is worse on the overhand pull-up
+  or pulldown. If yes, the next step is a **mixed-width / slightly narrower pronated** grip or a
+  rotating-handle option — not back to neutral (that's what hurt the right).
+- **Straps on any hinge variant, and on heavy sumo backoffs.** The grip is the hinge's job for the right
+  medial elbow, and grip is not what we're training on those sets.
+- **Pull-up stays conservative "for a while"** — his own call, and the right one. The B7 absolute-load cap
+  (BW+85 top) and the two-session rule stand.
+
+**↳ Answered 2026-11-08 (athlete) — and half my read above was wrong:**
+- **Left, wide overhand grip:** *"it's better but the inflammation is not gone."* → **Keep the wide pronated
+  grip.** It helps; it hasn't fixed it. No grip change.
+- **Right, gripping:** *"it doesn't affect any grip. Grip does not make the pain. it's the pull movement."* →
+  **The grip-flexor read is withdrawn.** The trigger is loaded **elbow flexion** (pulling), not gripping.
+  **Straps are optional, not required** — on the hinge variant and on sumo alike. And a hinge doesn't flex
+  the elbow, so the D2 hinge variant doesn't load the painful motion at all.
+- **Clinician:** *"I just know it. almost 100% it's true."* He declines raising it at the clinic. **Asked twice
+  (11-01, 11-08); his call, recorded, not re-asked.** The written hard stops are the substitute: pain during a
+  pull-up set ends the exercise; two sessions with pain at the written loads → the pull-up comes out and it
+  goes to the clinic, no further discussion.
+
 ### What those three notes actually establish
 
 | | |
@@ -520,8 +622,12 @@ sentence to a visit that is happening anyway costs nothing.
 
 ### ❓ Still unconfirmed — ask, do not record as fact
 
-- [ ] **Is it still both sides, or has one settled?** The 11-01 answer ("still there, mild") did not say which.
-- [ ] Point to it: front/crease, inside, or outside — on each side.
+- [x] ~~**Is it still both sides, or has one settled?**~~ **Both, 2026-11-08.**
+- [x] ~~Point to it: front/crease, inside, or outside — on each side.~~ **2026-11-08: left front-or-outer,
+  right back-or-inner.** Sites have moved since October — see the 11-08 table above.
+- [ ] **NEW 2026-11-08 — is the LEFT outer side worse on the overhand (pronated) pull-up / pulldown?**
+  Decides the grip.
+- [ ] **NEW 2026-11-08 — does the RIGHT inner side hurt when gripping a heavy bar** (sumo, rows)? Decides straps.
 - [ ] **Does it hurt outside the gym** — carrying, a door, a full bend unloaded?
 - [ ] Any swelling, clicking, or loss of full straightening?
 - [ ] **Does it hurt on dips** (elbow extension under load) and on **curls**, or only pulling?

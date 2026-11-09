@@ -18,6 +18,11 @@
   keeps its day and pattern but does not peak. This satisfies the project overlap rule by keeping
   only one axial lift heavy at a time. Every block states the current and prior axial emphasis;
   bench, pull-up, and dip keep their own waves. [FB 2026-08-29]
+  **Reaffirmed as the standing structure 2026-11-08** — and **"moderate" does not mean easy.** The
+  moderate lift is *somewhat challenging, at a level that's good for the lower back*: its band starts
+  at **~85% of the top set the prior heavy block reached for that lift** (never a reset to B6's 255–315),
+  climbs gently, RPE ≤7, no peak. **From B8 the heavy lift returns toward the pre-injury norm** —
+  squat 455–485, sumo through `sumo-back-cap` — the B8 design brief. [FB 2026-11-08]
 
 ## Loads & progression
 
@@ -131,6 +136,19 @@
   new** accessory/secondary movements that expand an under-trained muscle group for novel
   stimulus — while keeping ≥1 carry-over per slot and primaries fixed. State explicitly which
   1–2 movements were added and which group each expands. [FB 2026-06-18, extended 2026-06-29]
+- **axial-variant-weekly** — **Every block carries one barbell variant for the *moderate* axial lift,
+  on its own day (D2 or D3)**: heavy-squat block → a **hinge** variant (paused sumo, paused RDL); heavy-sumo
+  block → a **squat** variant (paused or tempo low-bar). It's the moderate lift's second exposure, chosen
+  from the `secondary-rotation` pool. **Fixed load, @7 cap, ≤4 reps, never a peak.** Placement **(athlete's call, 2026-11-08)**: **heavy-squat block → hinge variant on D2** (pull-up first, pull-up
+  held conservative); **heavy-sumo block → squat variant on D3**, the day before the heavy pull. The D3 cost is
+  real (erectors and adductors the day before the heaviest sumo of the block) and the athlete accepts it for
+  Mon/Thu squat spacing. **Guardrails on the D3 squat variant:** fixed load, **@6.5 cap**, ≤3×3, never above
+  ~70% of the D1 squat; and **if any Saturday sumo check reads `tight`, the variant moves to D2 from the next
+  week — no debate.** Straps optional (the elbows hurt on pulling, not gripping). Gated on the back check like
+  any axial lift. **Barbell only** — it has to feel like a secondary, not an accessory
+  (athlete). **B8's pick: Paused Sumo, pause just above the knee** (the hitch position). This
+  reverses the B5 cut of the paused squat (it was removed for being a second axial session — that's now
+  the point). [FB 2026-11-08]
 - **secondary-rotation** — Rotate the **secondary** movement for the three barbell lifts
   (squat, bench, sumo deadlift) across blocks: **0–2 rotations per block, coach's discretion.**
   Hold a secondary when a weak point is better served by staying on it — don't rotate for its
@@ -449,7 +467,9 @@
   **Amended 2026-09-27:** the fixed band may **climb gently, about +10 lb/week**, each step gated on
   the sumo back check and topping out under the prior block's sumo peak. The athlete wants a visible
   trend, and a start **no lower than his most recent easy pull** (B6: 255 → 285, after 235 @5).
-  Still no range and no autoregulating up. [FB 2026-09-27] In heavy-sumo blocks it may wave,
+  Still no range and no autoregulating up. [FB 2026-09-27] **Band floor from 2026-11-08: ~85% of the
+  prior heavy-sumo block's top set** (B7 tops 405 → B8 sumo opens ~345), per `alternating-axial-emphasis`.
+  [FB 2026-11-08] In heavy-sumo blocks it may wave,
   but only through `axial-return-ladder` and inside `sumo-back-cap`; back rounding or bar-speed
   loss always ends the set.
   **Why keep it rather than drop it:** detraining a hinge makes returning to it more dangerous;
@@ -471,3 +491,10 @@
   **durable** rule, distinct from the temporary injection-series axial cap in `active-issues.md`
   (that one lifts on doctor clearance; this stays until a long pain-free stretch). Revisit the band
   upward only on sustained clean pulling. [FB 2026-07-22]
+  **Re-opened 2026-11-08, from B9.** The doctor, having heard the loads, said *"come back to normal heavy
+  lifting"* after 1–3 more sessions (series ends ~December). Normal = **455–485** (athlete-defined, matches
+  the pre-injury log). So: **B7 and B8 keep 405 as the hard ceiling** (still inside the series). **From B9 —
+  the first block after the last shot — the ceiling becomes a gated ladder toward the norm**, written per
+  `axial-floor-range-ceiling`: B9 floor opens at B7's 405, rungs +10–20 lb/week on a `fine` check, **B9 ceiling
+  455**; the remaining 455 → 485 is B11's job. **RPE cap 7 → 7.5**, reps ≤3 at the top, and **never grind**
+  — rounding or bar-speed loss still racks it. The canary is still the canary. [FB 2026-11-08]

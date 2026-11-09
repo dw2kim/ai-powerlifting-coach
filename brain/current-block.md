@@ -69,6 +69,12 @@ relationship with a visit already owed. One sentence in a visit that's happening
 
 ### 3. The clinic is six blocks owed, and the sumo ceiling is the price
 
+> **↳ Corrected 2026-11-08.** There was a visit on **2026-10-30** (2–3 trigger points, down from 10–15;
+> doctor: *"looked good"*). **Next: Fri 2026-11-27 — W4 D4, the 405 day: pull at 6 am, before the shot.**
+> Probably one more in December, then the series ends. **B7 changes: nothing** — it stays conservative,
+> your call. B8 is the return-to-norm block. Whether the doctor has heard the loads is still unknown, so
+> **say them on 11-27.** Full record: `active-issues.md` → *Visit 2026-10-30*.
+
 You pulled 315 and squatted 435 last block. The clinic's last input was a muscle relaxant on
 **2026-09-11** and there is **no appointment on file.** 405 is the ceiling this block *because* that
 conversation hasn't happened — not because 405 is your limit. Book it, tell them the numbers, and
@@ -145,12 +151,18 @@ day** because of the pairing.
 | Week | Sumo *(HEAVY, gated)* | Comp Bench D1 *(heavy)* | Comp Bench D4 *(6s, fixed)* | Squat *(moderate, fixed)* | Pull-up *(absolute)* | Dip |
 |---|---|---|---|---|---|---|
 | **W1** BUILD | **345**×3 @7 🔒 | 255×3 → @7.5, lid 265 | 210×6 ×4 @7 | 365×3 ×3 @7 | BW+55×4 | BW+80×5 @7 |
-| **W2** ESTABLISH | **365**×3 @7 🔒 | 265×3 → @8, lid 275 | 215×6 ×4 @7 | 375×3 ×3 @7 | BW+65×4 | BW+90×5 @7.5 |
-| **W3** PUSH | **385**×3 @7 🔒 | 270×2 → @8, lid 285 | 220×6 ×4 @7 | 385×3 ×3 @7 | BW+75×3 | **⛰️ work up to @8: BW+105×3, lid BW+115** |
+| **W2** ESTABLISH | **365**×3 @7 🔒 → lid **375** | 265×3 → @8, lid 275 | 215×6 ×4 @7 | 375×3 ×3 @7 | BW+65×4 | BW+90×5 @7.5 |
+| **W3** PUSH | **385**×3 @7 🔒 → lid **395** | 270×2 → @8, lid 285 | 220×6 ×4 @7 | 385×3 ×3 @7 | BW+75×3 | **⛰️ work up to @8: BW+105×3, lid BW+115** |
 | **W4** PEAK | **405**×3 @7 🔒 **← hard ceiling** | **⛰️ 280×2 → @8, lid 295** | 225×6 ×3 @7 | 395×3 ×3 @7 | BW+85×3 | BW+95×5 *(hold)* |
 | **W5** DELOAD | 295×3 @6 | 225×4 @6 | 185×6 ×3 @6 | 315×3 ×3 @6 | BW+45×5 | BW+60×5 @6 |
 
 🔒 = gated rung · ⛰️ = that lift's peak week.
+**Amended 2026-11-08 (athlete: *"we can push a little more on sumo"*):** W2 and W3 sumo get a **+10 range**
+above the floor (`axial-floor-range-ceiling`) — one more triple at the lid, **only if the floor triple is ≤@7
+and the warm-ups move fast**. Backoffs stay keyed off the floor, and **next week's floor does not move with what
+the range reached.** **W4 stays 405 flat — 405 is the ceiling** and it holds through B8 (`sumo-back-cap`;
+re-opens as a ladder in B9). W2's rung was earned by the **11-06 `fine`** check. Pushed to Hevy
+`--update --start W2-D4`.
 **W1 is a working week, not a calibration week** (FB 2026-10-12: no warm-up week after a deload).
 Primaries push at the full 1:15 rest from day one; only W5 drops to 1:00.
 
@@ -338,7 +350,8 @@ Pulldown** (stale 3-year anchor), and **all of W5** (deload).
 
 ## Open items carried into B7
 
-- [ ] **🔴 Book the clinic.** Say the numbers out loud: squat 435×3, sumo 315×3, and B7 goes to 405.
+- [x] ~~**🔴 Book the clinic.**~~ **Booked — Fri 2026-11-27** (reported 2026-11-08; last visit was 10-30).
+- [ ] **🔴 At the 11-27 visit, say the numbers out loud**: squat 435×3, sumo 405×3 that morning. And the elbows.
       Six blocks owed. Questions are listed in `active-issues.md`. **The 405 ceiling is set by this
       being undone.**
 - [ ] **🔴 Back check every Saturday, after Friday's pull.** One word. No check, no rung.
