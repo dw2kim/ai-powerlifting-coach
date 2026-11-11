@@ -366,6 +366,12 @@ def main() -> None:
              "Use it to leave sessions already trained untouched when correcting a live block.",
     )
     parser.add_argument(
+        "--skip-rotation-check",
+        action="store_true",
+        help="Push a new block even if it misses the accessory-rotation floor. Only on the "
+        "athlete's say-so.",
+    )
+    parser.add_argument(
         "--update",
         action="store_true",
         help="Overwrite routines that already exist (PUT) instead of skipping them. This is "
@@ -397,6 +403,22 @@ def main() -> None:
         if not day_s or day_s not in day_order:
             raise SystemExit(f"--start must look like W1-D3 (got {args.start!r})")
         start_key = (int(week_s.lstrip("W")), day_order[day_s])
+
+    # A brand-new block (not a correction, not a resume) has to clear the rotation floor first.
+    # B7 went out with zero real accessory rotations and nobody caught it. FB 2026-11-11.
+    if not (args.update or args.folder_id or args.start or args.week):
+        from scripts.review.rotation_check import compare, find_prior, render
+
+        rep = compare(spec, json.loads(find_prior(block_id).read_text()), resolver)
+        print(render(rep))
+        if rep.failures():
+            if args.apply and not args.skip_rotation_check:
+                raise SystemExit(
+                    "Refusing to push: the block misses the accessory-rotation floor. Rotate more, "
+                    "or pass --skip-rotation-check on the athlete's say-so."
+                )
+            print("⚠️  Rotation floor not met"
+                  + (" — pushing anyway (--skip-rotation-check)." if args.apply else "."))
 
     client = HevyClient() if args.apply else None
 

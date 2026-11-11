@@ -141,7 +141,11 @@
   top of the 1–2 new movements. **A drop, a re-entry or an addition is not a rotation** — B7 had two
   drops, one re-entry, one new, and **zero rotations**; 12 of its 14 accessories were B6's, and 9 had
   run since B5. Medical limits narrow the options; they don't excuse zero. Every block prints a
-  **rotation table** (day · out · in · target · why) with the count. [FB 2026-11-11, athlete set 4]
+  **rotation table** (day · out · in · target · why) with the count. **Checked by
+  `scripts/review/rotation_check.py`**: a rotation = a dropped accessory paired with a new one for
+  the same Hevy primary muscle group. A first push of a new block refuses under the floor
+  (`--skip-rotation-check` / workflow input only on the athlete's say-so).
+  [FB 2026-11-11, athlete set 4; check built 2026-11-11]
 - **superset-same-equipment** — **A superset only pairs two exercises done on the same equipment**:
   dumbbell + dumbbell, cable + cable, barbell + barbell. **A machine never goes in a superset** —
   you can't hold the chest fly machine while you're on the leg curl, so machine + machine and

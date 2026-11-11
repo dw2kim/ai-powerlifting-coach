@@ -1014,4 +1014,10 @@ Raise 20") were wrong. One was not in the log under that name and the other was 
   Raise (Dumbbell) → **Lateral Raise (Cable)** 15 ×12/arm (W5 10) ⚯ Straight Arm Pulldown, moved up beside
   it. Both cable + cable, one station. D2 first cut moves to the Landmine Press. W2 untouched.
 → rules: `accessory-rotation` (floor 4, one per day)
+**Addendum (same day, athlete: "yes, build the rotation check"):** `scripts/review/rotation_check.py` +
+`tests/test_rotation_check.py`. It reads the new block against the whole prior block (bridges skipped), pairs
+each dropped accessory with a new one by Hevy primary muscle group (same day first), and fails under 4 rotations
+or with a day at zero. Wired into `push_block`: a fresh full `--apply` refuses on failure; `--update`/`--start`
+corrections aren't affected. Ran against history: **B6 vs B5 = 2** (DB Shoulder Press → Landmine, Leg Press →
+Leg Extension). My earlier "~4" was wrong. **B7 W1 = 0, B7 W3 = 2** (D3/D4 still at zero).
 

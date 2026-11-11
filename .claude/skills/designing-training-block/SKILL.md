@@ -48,7 +48,9 @@ description: Design a new training block — pull context from prior block + mem
      prior block, but rotate **at least 4 — at least one on every training day (D1–D4)**. A
      rotation = same target, new implement (DB→cable→machine) OR more specific targeting
      (general back → rear delt). A drop, re-entry or addition is **not** a rotation. Primaries
-     never rotate. Print a **rotation table** (day · out · in · target · why) and the count.
+     never rotate. **Run `python -m scripts.review.rotation_check --block <draft.json>`** — it
+     prints the rotation table and exits 1 under the floor. Paste its table into the block file
+     and add the *why* per row. A fresh `push_block --apply` refuses a block that fails it.
    - **Supersets** (rule `superset-same-equipment`): only same equipment (DB+DB, cable+cable),
      never a machine. Prefer rotations that create a legal pair. `push_block` refuses the rest.
    - **Expansion/shock** (rule `accessory-rotation`, extended): on top of carry-over,
