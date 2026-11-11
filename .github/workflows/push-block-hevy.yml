@@ -30,6 +30,10 @@ on:
         description: "Start from this session, e.g. W4-D1. Leaves already-trained sessions untouched."
         type: string
         default: ""
+      skip_rotation_check:
+        description: "Push a NEW block even if it rotates fewer than 4 accessories (athlete's call only)"
+        type: boolean
+        default: false
       folder_id:
         description: "Resume into an EXISTING Hevy folder id instead of creating one. Use after a partial failure so you don't get a duplicate folder."
         type: string
@@ -65,12 +69,14 @@ jobs:
           UPDATE: ${{ inputs.update }}
           START: ${{ inputs.start }}
           FOLDER_ID: ${{ inputs.folder_id }}
+          SKIP_ROTATION: ${{ inputs.skip_rotation_check }}
         run: |
           args=()
           [ "$APPLY" = "true" ] && args+=(--apply)
           [ -n "$WEEK" ] && args+=(--week "$WEEK")
           [ "$UPDATE" = "true" ] && args+=(--update)
           [ -n "$START" ] && args+=(--start "$START")
+          [ "$SKIP_ROTATION" = "true" ] && args+=(--skip-rotation-check)
           if [ -n "$FOLDER_ID" ]; then
             case "$FOLDER_ID" in
               ''|*[!0-9]*)

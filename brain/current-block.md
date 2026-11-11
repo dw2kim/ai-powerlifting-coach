@@ -7,8 +7,8 @@
 **Source**: Designed 2026-11-01 from the B6 review (`reviews/2026-Q4-B06.md`), the 2026-10-12
 "too conservative" ruling, and four calls you made on 2026-11-01 (axial direction, bench stimulus,
 elbow status, back checks).
-**Live in Hevy**: ⏳ **not pushed yet** — dry-run is clean (folder `2026-Q4-B07`, 20 routines,
-whole-pound loads, a rest timer on every line). **Waiting on your go.**
+**Live in Hevy**: ✅ live. **Last pushed 2026-11-11** (`--update --start W2-D3`): supersets removed from W2-D3,
+and the two W3 cable rotations with their pairs (Pushdown ⚯ Cable Fly · Straight-Arm PD ⚯ Cable Lateral Raise).
 **Prior block**: `data/block-archive/2026-Q4-B06.{md,json}` · review in `reviews/2026-Q4-B06.md`
 
 **Axial emphasis (`alternating-axial-emphasis`)**: **current = SUMO heavy, squat moderate.
@@ -105,14 +105,17 @@ the ceiling becomes a question we can answer with evidence instead of caution.
 
 | Day | Primary / secondary | Accessories | Core |
 |---|---|---|---|
-| **D1 Mon** | **Comp Bench (heavy)** ← *first now* · Low-bar Squat (moderate band) | Tricep Pushdown ⚯ Chest Fly · Iso-Lateral Row | Side Plank |
-| **D2 Tue** | **Weighted Pull-up** (absolute-load cap) | **Straight Arm Lat Pulldown 🆕** ⚯ Hip Thrust · Seated Leg Curl ⚯ Lateral Raise · Landmine Press | Pallof Press |
-| **D3 Thu** | **Weighted Dip** · Spoto Bench | Lat Pulldown ⚯ Leg Extension · Reverse Pec Deck ⚯ Face Pull | Dead Bug |
-| **D4 Fri** | **Sumo Deadlift (HEAVY)** · **Comp Bench (volume, 6s)** | Seated Calf Raise ⚯ CS Incline Row · **Hip Adduction ➕** | Bird Dog |
+| **D1 Mon** | **Comp Bench (heavy)** ← *first now* · Low-bar Squat (moderate band) | Tricep Pushdown ⚯ **Cable Fly 🔄 (W3+)** · Iso-Lateral Row | Side Plank |
+| **D2 Tue** | **Weighted Pull-up** (absolute-load cap) | **Straight Arm Lat Pulldown 🆕** ⚯ **Cable Lateral Raise 🔄 (W3+)** · Hip Thrust · Seated Leg Curl · Landmine Press | Pallof Press |
+| **D3 Thu** | **Weighted Dip** · Spoto Bench | Lat Pulldown · Leg Extension · Reverse Pec Deck · Face Pull | Dead Bug |
+| **D4 Fri** | **Sumo Deadlift (HEAVY)** · **Comp Bench (volume, 6s)** | Seated Calf Raise · CS Incline Row · **Hip Adduction ➕** | Bird Dog |
 
-**⚯ = superset pair** (alternate sets, ~30 s between). Six pairs across the week — see *Session
-length* below. **Working sets/day: D1 20 · D2 22 · D3 22 · D4 20**, but **five effective slots per
-day** because of the pairing.
+~~**⚯ = superset pair**~~ **No supersets from W2-D3 on (amended 2026-11-11, `superset-same-equipment`).**
+All six B7 pairs had a machine on at least one side — you can't hold one machine while working another.
+Straight sets throughout. **Working sets/day: D1 20 · D2 22 · D3 22 · D4 20.**
+**From W3, two legal pairs return** through rotation: D1 Pushdown ⚯ Cable Fly Crossovers and D2 Straight-Arm
+Pulldown ⚯ Cable Lateral Raise — each pair on one cable station. 🔄 = rotated in mid-block (FB 2026-11-11).
+**D2 first cut is now the Landmine Press.**
 
 **Order changes, both deliberate:**
 - **D1: bench goes FIRST.** B6 put the squat first because it was heavy and a pre-fatigued 435 is
@@ -243,20 +246,20 @@ bump (`accessory-progression`). **At least 3 working sets, stopping at @8** — 
 
 | Day | Exercise | W1 → W4 (W5) | Chain | Alternative |
 |---|---|---|---|---|
-| D1 | Tricep Pushdown ⚯ | 50 · 50 · 55 · 55 (45) ×12 | Lockout (bench weak point) → triceps | Cable Triceps Extension, same load |
-| D1 | Chest Fly (Machine) ⚯ | 100 · 100 · 105 · 105 (85) ×12 | Chest only trained by presses → pec isolation, no fifth press | Seated Cable Fly 70 |
+| D1 | Tricep Pushdown | 50 · 50 · 55 · 55 (45) ×12 | Lockout (bench weak point) → triceps | Cable Triceps Extension, same load |
+| D1 | Chest Fly (Machine) | 100 · 100 · 105 · 105 (85) ×12 | Chest only trained by presses → pec isolation, no fifth press | Seated Cable Fly 70 |
 | D1 | Iso-Lateral Row (Machine) | 120 · 120 · 125 · 125 (105) ×12, per arm | Monday's pull dose, chest-supported, zero lumbar load. **First cut on D1.** | CS Incline Row (DB) 45/hand. **Never T-bar or bent-over.** |
-| D2 | **Straight Arm Lat Pulldown 🆕** ⚯ | 45 · 45 · 50 · 50 (40) ×12 | **Lats + serratus with ZERO elbow flexion** — see below | Rope Straight Arm Pulldown |
-| D2 | Hip Thrust (Smith) ⚯ | 245 · 245 · 255 · 255 (205) ×8 | **The hitch work.** Sumo lockout → glutes. Carries the load the blocked deadlift secondary pool can't. | Glute Bridge (Barbell) 185 |
-| D2 | Seated Leg Curl ⚯ | 110 · 110 · 115 · 115 (95) ×12 | Hamstrings, knee-flexion side | Lying Leg Curl |
-| D2 | Lateral Raise (DB) ⚯ | 35 · 35 · 40 · 40 (30) ×15 | Lateral delts. **First cut on D2.** | Cable Lateral Raise 20 |
+| D2 | **Straight Arm Lat Pulldown 🆕** | 45 · 45 · 50 · 50 (40) ×12 | **Lats + serratus with ZERO elbow flexion** — see below | Rope Straight Arm Pulldown |
+| D2 | Hip Thrust (Smith) | 245 · 245 · 255 · 255 (205) ×8 | **The hitch work.** Sumo lockout → glutes. Carries the load the blocked deadlift secondary pool can't. | Glute Bridge (Barbell) 185 |
+| D2 | Seated Leg Curl | 110 · 110 · 115 · 115 (95) ×12 | Hamstrings, knee-flexion side | Lying Leg Curl |
+| D2 | Lateral Raise (DB) | 35 · 35 · 40 · 40 (30) ×15 | Lateral delts. **First cut on D2.** | Cable Lateral Raise 20 |
 | D2 | Single Arm Landmine Press | 40 · 40 · 45 · 45 (35) ×10/arm, **@7 cap** | Front delts on a diagonal path — least subacromial compression available | Neutral-grip DB Press (seated) 45, **same @7 cap**. **Never barbell OHP.** |
-| D3 | Lat Pulldown ⚯ | **145 · 145 · 150 · 150 (130)** ×12 | Lats, seated, no axial load. **Pinned well under the 157 median — tomorrow is 345–405 sumo.** **Wide pronated grip — the 10-22 "right inner elbow pain with the neutral grip" note was on this exercise.** | Wide-grip pulldown, same load. **No neutral bar.** |
-| D3 | Leg Extension (Machine) ⚯ | 135 flat (115) ×12 | Thursday's lower dose, and the cheapest one that exists before a heavy pull: no spinal load, no loaded hip flexion, no adductor cost | Leg Press 270, ROM-capped. **No squat pattern, no hinge.** |
-| D3 | Reverse Pec Deck ⚯ | 100 · 100 · 105 · 105 (90) ×15, **@7 cap** | Intact posterior cuff shares load off two torn anterior tendons | Rear Delt Fly (DB) 25 |
-| D3 | Face Pull ⚯ | 40 · 40 · 45 · 45 (35) ×15, @7 | External rotation + scapular control. **First cut on D3.** | Band pull-apart ×20 |
-| D4 | Seated Calf Raise ⚯ | 95 · 95 · 100 · 100 (85) ×12 | Calves. **First cut on D4.** | — **No standing/barbell calf raise** (axial compression). |
-| D4 | CS Incline Row ⚯ | 55 · 55 · 60 · 60 (45) ×12 | Mid-back, zero lumbar load — the row that survives on a heavy-pull day | Seated Cable Row 120. **Never barbell bent-over.** |
+| D3 | Lat Pulldown | **145 · 145 · 150 · 150 (130)** ×12 | Lats, seated, no axial load. **Pinned well under the 157 median — tomorrow is 345–405 sumo.** **Wide pronated grip — the 10-22 "right inner elbow pain with the neutral grip" note was on this exercise.** | Wide-grip pulldown, same load. **No neutral bar.** |
+| D3 | Leg Extension (Machine) | 135 flat (115) ×12 | Thursday's lower dose, and the cheapest one that exists before a heavy pull: no spinal load, no loaded hip flexion, no adductor cost | Leg Press 270, ROM-capped. **No squat pattern, no hinge.** |
+| D3 | Reverse Pec Deck | 100 · 100 · 105 · 105 (90) ×15, **@7 cap** | Intact posterior cuff shares load off two torn anterior tendons | Rear Delt Fly (DB) 25 |
+| D3 | Face Pull | 40 · 40 · 45 · 45 (35) ×15, @7 | External rotation + scapular control. **First cut on D3.** | Band pull-apart ×20 |
+| D4 | Seated Calf Raise | 95 · 95 · 100 · 100 (85) ×12 | Calves. **First cut on D4.** | — **No standing/barbell calf raise** (axial compression). |
+| D4 | CS Incline Row | 55 · 55 · 60 · 60 (45) ×12 | Mid-back, zero lumbar load — the row that survives on a heavy-pull day | Seated Cable Row 120. **Never barbell bent-over.** |
 | D4 | **Hip Adduction (Machine) ➕** | 105 · 105 · 115 · 115 (95) ×15 | **Sumo-stance-specific adductors, in the heavy-sumo block.** After sumo, never before. | — (anchor is your real 105–115, not the 90s) |
 
 **Core, one different pattern per day** (`core-every-day`): Side Plank 40 s (anti-lateral-flexion) ·
@@ -283,7 +286,7 @@ Pallof Press 20×12 (anti-rotation) · Dead Bug ×10 (anti-extension) · Bird Do
   block cannot carry loaded unilateral leg work in the 48 h either side of a 405 pull, and every day
   already has its lower-body dose without it (squat D1, hip thrust + leg curl D2, leg extension D3,
   sumo D4). It's out for a reason, not for time. **If you want it back, it goes on D2 and D2 gets long.**
-- **⚯ Six superset pairs added** — see below. No exercise was removed to save time.
+- ~~**⚯ Six superset pairs added**~~ — **removed 2026-11-11**: every pair mixed a machine with something else (`superset-same-equipment`). No exercise was removed to save time.
 - **Still out**: Incline DB Press, all overhead barbell work, upright row, barbell incline.
 
 ### ⚠️ One thing I did that brushes your own rule
@@ -299,6 +302,8 @@ W3 and W4 of B6 each shed three accessories to the weekend, always the **last ex
 D1, D3 and D4**. The bedtime fix didn't clear it. You won't cut exercises, so **they're paired
 instead**: six superset pairs, roughly two per day, which buys the time back from rest rather than
 from the movement list.
+**Amended 2026-11-11: the pairs are gone** (machine pairs aren't workable on the floor). The
+time comes back the hard way — so the first cuts below are now live, not hypothetical.
 
 **If the tail slots still bleed by W2, the named first cuts are**: D1 Iso-Lateral Row · D2 Lateral
 Raise · D3 Face Pull · D4 Seated Calf Raise. Naming them now beats deciding at 6:50 am.
@@ -359,7 +364,7 @@ Pulldown** (stale 3-year anchor), and **all of W5** (deload).
       sessions with pain at the written loads and the pull-up comes out of the block.
 - [ ] **🔴 Answer the six elbow questions** in `active-issues.md` → *Elbows* (where exactly, does it
       hurt outside the gym, does it hurt on dips, what changed in late September).
-- [ ] **🟡 Push to Hevy** — dry-run clean, 20 routines. **Waiting on your go.**
+- [x] ~~**🟡 Push to Hevy**~~ — live; last update pushed 2026-11-11 from W2-D3.
 - [ ] **🟡 Export to the Google Sheet** — needs the Actions workflow (no Google creds in session).
 - [ ] **🟡 Tooling: make a `hold` still get checked against the log** (B6 sumo ran +30 unnoticed).
 - [ ] **🟡 Tooling: the end-of-block draft automation has never fired.** It's a local scheduled task

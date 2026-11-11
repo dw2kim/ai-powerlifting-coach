@@ -1034,3 +1034,12 @@ He asked what the next 3–4 blocks should focus on. Answer, now agreed and in t
   Two of five D4s land on holidays. Plan the move at design, not on the morning.
 - **Pattern, again:** the 10-30 visit took nine days to reach the repo, and in the meantime I argued a
   ceiling on "no appointment on file". Ask about the clinic at every block boundary, not when it comes up.
+
+### 2026-11-11 — supersets need a floor plan, and B7's accessories went stale
+- Supersets were new in B7 and I picked all six pairs for muscle overlap and time, never for **where in the
+  gym** each lift happens. Every one had a machine on a side. He can't hold a machine while working another.
+  Now a rule (`superset-same-equipment`) and a push-time check. B7 unpaired from W2-D3.
+- He noticed B7 rotated **zero** accessories (12 of 14 carried from B6, 9 since B5). I'd been leaning on
+  "don't rotate what's working" plus medical limits as cover. "A few" now means ≥3 per block. **B8 owes it.**
+  Good overlap with the superset rule: rotating onto matching implements (cable fly beside a cable pushdown,
+  cable lateral raise beside the straight-arm pulldown) is how pairs come back legitimately.

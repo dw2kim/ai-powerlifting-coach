@@ -136,6 +136,24 @@
   new** accessory/secondary movements that expand an under-trained muscle group for novel
   stimulus — while keeping ≥1 carry-over per slot and primaries fixed. State explicitly which
   1–2 movements were added and which group each expands. [FB 2026-06-18, extended 2026-06-29]
+  **Floor: at least 4 accessory rotations per block, and at least one on every training day
+  (D1–D4)** — so every session has something new in it. Same target, new implement or angle; on
+  top of the 1–2 new movements. **A drop, a re-entry or an addition is not a rotation** — B7 had two
+  drops, one re-entry, one new, and **zero rotations**; 12 of its 14 accessories were B6's, and 9 had
+  run since B5. Medical limits narrow the options; they don't excuse zero. Every block prints a
+  **rotation table** (day · out · in · target · why) with the count. **Checked by
+  `scripts/review/rotation_check.py`**: a rotation = a dropped accessory paired with a new one for
+  the same Hevy primary muscle group. A first push of a new block refuses under the floor
+  (`--skip-rotation-check` / workflow input only on the athlete's say-so).
+  [FB 2026-11-11, athlete set 4; check built 2026-11-11]
+- **superset-same-equipment** — **A superset only pairs two exercises done on the same equipment**:
+  dumbbell + dumbbell, cable + cable, barbell + barbell. **A machine never goes in a superset** —
+  you can't hold the chest fly machine while you're on the leg curl, so machine + machine and
+  machine + anything else are both out. When the session needs time back and nothing pairs, unpair
+  rather than force it; a rotation onto a matching implement (machine fly → cable fly next to a
+  cable pushdown) is the legitimate way to create a pair. **Enforced at push time**:
+  `push_block.check_supersets` refuses a mismatched pair before anything reaches Hevy (Hevy files
+  cable under "machine", so the check reads "(Cable)" in the title). [FB 2026-11-11]
 - **axial-variant-weekly** — **Every block carries one barbell variant for the *moderate* axial lift,
   on its own day (D2 or D3)**: heavy-squat block → a **hinge** variant (paused sumo, paused RDL); heavy-sumo
   block → a **squat** variant (paused or tempo low-bar). It's the moderate lift's second exposure, chosen
