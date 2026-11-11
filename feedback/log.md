@@ -1002,3 +1002,16 @@ at most" when it means "a few, every block".
 counting. B7 left as is unless he asks for a W3 swap; B8 is where it's paid back.
 → rules: `accessory-rotation` (rotation floor)
 
+### 2026-11-11 · block · exercise · rotation floor is 4, one per day; two B7 swaps from W3 · 2026-Q4-B07
+**Feedback:** "Let's make it at least 4 rotations so I can see at least 1 accessory is rotated for each training
+day (day 1 to 4)." · "Yes, swap those two lifts from W3 and get two legal pairs back."
+**Verified (Hevy log):** Cable Fly Crossovers: 20 sessions, median 20/side, last 23×12 on 10-19. Lateral Raise
+(Cable): 38 sessions, median 15×12. The block's written alternatives ("Seated Cable Fly 70", "Cable Lateral
+Raise 20") were wrong. One was not in the log under that name and the other was 5 lb heavy. Corrected from the log.
+**Actions taken:**
+- `accessory-rotation`: floor 4, ≥1 per day; design skill prints a rotation table.
+- B7 from W3-D1: Chest Fly (Machine) → **Cable Fly Crossovers** 20 ×12 (W5 15) ⚯ Tricep Pushdown. Lateral
+  Raise (Dumbbell) → **Lateral Raise (Cable)** 15 ×12/arm (W5 10) ⚯ Straight Arm Pulldown, moved up beside
+  it. Both cable + cable, one station. D2 first cut moves to the Landmine Press. W2 untouched.
+→ rules: `accessory-rotation` (floor 4, one per day)
+

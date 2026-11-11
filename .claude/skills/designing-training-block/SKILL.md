@@ -45,9 +45,12 @@ description: Design a new training block — pull context from prior block + mem
      lifts keep their existing scheme.
 5. **Assign accessories** with weak-point chain: weak point → target → exercise → expected carryover. Offer one alternative per slot.
    - **Rotate mindfully** (rule `accessory-rotation`): carry most accessories over from the
-     prior block; change only a **few** for variant exposure. A rotation = same target, new
-     implement (DB→cable→machine) OR more specific targeting (general back → rear delt).
-     Primaries never rotate. State explicitly which slots you rotated and why.
+     prior block, but rotate **at least 4 — at least one on every training day (D1–D4)**. A
+     rotation = same target, new implement (DB→cable→machine) OR more specific targeting
+     (general back → rear delt). A drop, re-entry or addition is **not** a rotation. Primaries
+     never rotate. Print a **rotation table** (day · out · in · target · why) and the count.
+   - **Supersets** (rule `superset-same-equipment`): only same equipment (DB+DB, cable+cable),
+     never a machine. Prefer rotations that create a legal pair. `push_block` refuses the rest.
    - **Expansion/shock** (rule `accessory-rotation`, extended): on top of carry-over,
      deliberately introduce **1–2 genuinely new** accessory/secondary movements that expand
      an under-trained muscle group for novel stimulus. Name which 1–2 you added and the group

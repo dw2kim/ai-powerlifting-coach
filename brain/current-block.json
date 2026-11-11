@@ -14,7 +14,8 @@
    "DIP unchanged because it works: W3 peak (work up to @8, floor BW+105x3, lid BW+115), then HOLDS at BW+95 in W4 so it never peaks the same week as the bench. Depth before load.",
    "SECONDARIES \u2014 1 rotation. Spoto HELD on D3 (250/255/255/265 x3 x3 @7.5): it has progressed every session for two blocks. CGB OUT after three blocks; its slot became the second comp-bench exposure. Squat and deadlift secondary pools are still fully Blocked - medical, so the heavy-sumo block has no barbell lockout secondary \u2014 Hip Thrust (D2) carries that.",
    "SUPERSETS REMOVED from W2-D3 on (FB 2026-11-11, superset-same-equipment): all six B7 pairs put a machine on at least one side, and you can't hold one machine while working another. Every accessory now runs straight sets. Named first cuts if the tail bleeds: D1 Iso-Lateral Row, D2 Lateral Raise, D3 Face Pull, D4 Seated Calf Raise.",
-   "W1 IS A WORKING WEEK, not a calibration week (FB 2026-10-12: no warm-up week after a deload). Primaries push at the full 1:15 rest from day one; only W5 drops to 1:00."
+   "W1 IS A WORKING WEEK, not a calibration week (FB 2026-10-12: no warm-up week after a deload). Primaries push at the full 1:15 rest from day one; only W5 drops to 1:00.",
+   "W3 ROTATIONS (FB 2026-11-11): D1 Chest Fly (Machine) -> Cable Fly Crossovers 20 x12, supersetted with Tricep Pushdown; D2 Lateral Raise (Dumbbell) -> Lateral Raise (Cable) 15 x12/arm, supersetted with Straight Arm Pulldown and moved up to sit next to it. Both pairs are cable + cable on one station (superset-same-equipment). D2 first cut is now the Landmine Press."
   ],
   "accessory_changes": [
    "NEW: Straight Arm Lat Pulldown (D2), 45 -> 50 x12. Straight arms mean ZERO elbow-flexion load, so it is the lat stimulus the elbows currently forbid everywhere else \u2014 exactly while the pull-up is being held back. Also loads serratus, which drives scapular upward rotation and the subacromial space the bursitis sits in. 28 sessions in the log but all 2022-2023, so the 61 lb median is history: it opens at 45 and is pinned until the log re-establishes the level (secondary-first-exposure).",
@@ -1712,7 +1713,7 @@
     {
      "name": "Tricep Pushdown",
      "tier": "accessory",
-     "notes": "Lockout (bench weak point) -> triceps. Stop at @8. Alt: Cable Triceps Extension, same load.",
+     "notes": "SUPERSET with Cable Fly Crossovers - same cable station, alternate sets, ~30 s between. Lockout (bench weak point) -> triceps. Stop at @8. Alt: Cable Triceps Extension, same load.",
      "sets": [
       {
        "type": "normal",
@@ -1730,30 +1731,30 @@
        "reps": 12
       }
      ],
-     "superset_id": null
+     "superset_id": 0
     },
     {
-     "name": "Chest Fly (Machine)",
+     "name": "Cable Fly Crossovers",
      "tier": "accessory",
-     "notes": "Pec isolation without a fifth press. STOP the handles before the elbows travel behind the torso - the stretched bottom loads the anterior capsule where the subscapularis tear sits. Alt: Seated Cable Fly 70.",
+     "notes": "ROTATED W3 (machine -> cable, FB 2026-11-11). SUPERSET with Tricep Pushdown - same cable station, alternate sets. Load per side from your log (median 20, 20 sessions). Pec isolation without a fifth press. STOP before the elbows travel behind the torso - the stretched end loads the anterior capsule where the subscapularis tear sits. Stop at @8.",
      "sets": [
       {
        "type": "normal",
-       "weight_kg": 47.62725549074217,
+       "weight_kg": 9.071858188712795,
        "reps": 12
       },
       {
        "type": "normal",
-       "weight_kg": 47.62725549074217,
+       "weight_kg": 9.071858188712795,
        "reps": 12
       },
       {
        "type": "normal",
-       "weight_kg": 47.62725549074217,
+       "weight_kg": 9.071858188712795,
        "reps": 12
       }
      ],
-     "superset_id": null
+     "superset_id": 0
     },
     {
      "name": "Iso-Lateral Row (Machine)",
@@ -1857,7 +1858,7 @@
     {
      "name": "Straight Arm Lat Pulldown (Cable)",
      "tier": "accessory",
-     "notes": "NEW THIS BLOCK (last trained Nov 2023). Straight arms - ZERO elbow flexion, which is the whole point: it is the lat stimulus the elbow currently forbids everywhere else. Also loads serratus, which helps scapular upward rotation and the subacromial space. Soft elbows, move at the shoulder only. Opens well under the stale 61 lb anchor. Alt: Rope Straight Arm Pulldown.",
+     "notes": "SUPERSET with Lateral Raise (Cable) - same cable station. NEW THIS BLOCK (last trained Nov 2023). Straight arms - ZERO elbow flexion, which is the whole point: it is the lat stimulus the elbow currently forbids everywhere else. Also loads serratus, which helps scapular upward rotation and the subacromial space. Soft elbows, move at the shoulder only. Opens well under the stale 61 lb anchor. Alt: Rope Straight Arm Pulldown.",
      "sets": [
       {
        "type": "normal",
@@ -1877,7 +1878,30 @@
      ],
      "hold": true,
      "hold_reason": "3-year-gap re-entry: 28 sessions but all 2022-2023, median 61 lb. Per secondary-first-exposure a stale anchor is history, not a starting point - open under it and let the log re-establish the level.",
-     "superset_id": null
+     "superset_id": 0
+    },
+    {
+     "name": "Lateral Raise (Cable)",
+     "tier": "accessory",
+     "notes": "ROTATED W3 (dumbbell -> cable, FB 2026-11-11). SUPERSET with Straight Arm Pulldown - same cable station, drop the pulley to the bottom. Per arm, single-arm. Load from your log (median 15 x12, 38 sessions). Lateral delts; the cable keeps tension at the bottom where the dumbbell goes slack. Stop at @8.",
+     "sets": [
+      {
+       "type": "normal",
+       "weight_kg": 6.8038936415345965,
+       "reps": 12
+      },
+      {
+       "type": "normal",
+       "weight_kg": 6.8038936415345965,
+       "reps": 12
+      },
+      {
+       "type": "normal",
+       "weight_kg": 6.8038936415345965,
+       "reps": 12
+      }
+     ],
+     "superset_id": 0
     },
     {
      "name": "Hip Thrust (Smith Machine)",
@@ -1926,32 +1950,9 @@
      "superset_id": null
     },
     {
-     "name": "Lateral Raise (Dumbbell)",
-     "tier": "accessory",
-     "notes": "Lateral delts. FIRST CUT on D2 if the morning runs out. Alt: Cable Lateral Raise 20.",
-     "sets": [
-      {
-       "type": "normal",
-       "weight_kg": 18.14371637742559,
-       "reps": 15
-      },
-      {
-       "type": "normal",
-       "weight_kg": 18.14371637742559,
-       "reps": 15
-      },
-      {
-       "type": "normal",
-       "weight_kg": 18.14371637742559,
-       "reps": 15
-      }
-     ],
-     "superset_id": null
-    },
-    {
      "name": "Single Arm Landmine Press (Barbell)",
      "tier": "accessory",
-     "notes": "Per arm. Front delts on a diagonal path - less subacromial compression than any overhead press. @7 CAP, and that cap is the shoulder's, not a preference: two low-grade partial tears plus bursitis. Load is plates on the sleeve, not counting the bar. Alt: Neutral-grip DB Press (seated) 45, same @7 cap. NEVER barbell OHP.",
+     "notes": "FIRST CUT on D2 if the morning runs out (front delts get the most indirect work). Per arm. Front delts on a diagonal path - less subacromial compression than any overhead press. @7 CAP, and that cap is the shoulder's, not a preference: two low-grade partial tears plus bursitis. Load is plates on the sleeve, not counting the bar. Alt: Neutral-grip DB Press (seated) 45, same @7 cap. NEVER barbell OHP.",
      "sets": [
       {
        "type": "normal",
@@ -2474,7 +2475,7 @@
     {
      "name": "Tricep Pushdown",
      "tier": "accessory",
-     "notes": "Lockout (bench weak point) -> triceps. Stop at @8. Alt: Cable Triceps Extension, same load.",
+     "notes": "SUPERSET with Cable Fly Crossovers - same cable station, alternate sets, ~30 s between. Lockout (bench weak point) -> triceps. Stop at @8. Alt: Cable Triceps Extension, same load.",
      "sets": [
       {
        "type": "normal",
@@ -2492,30 +2493,30 @@
        "reps": 12
       }
      ],
-     "superset_id": null
+     "superset_id": 0
     },
     {
-     "name": "Chest Fly (Machine)",
+     "name": "Cable Fly Crossovers",
      "tier": "accessory",
-     "notes": "Pec isolation without a fifth press. STOP the handles before the elbows travel behind the torso - the stretched bottom loads the anterior capsule where the subscapularis tear sits. Alt: Seated Cable Fly 70.",
+     "notes": "ROTATED W3 (machine -> cable, FB 2026-11-11). SUPERSET with Tricep Pushdown - same cable station, alternate sets. Load per side from your log (median 20, 20 sessions). Pec isolation without a fifth press. STOP before the elbows travel behind the torso - the stretched end loads the anterior capsule where the subscapularis tear sits. Stop at @8.",
      "sets": [
       {
        "type": "normal",
-       "weight_kg": 47.62725549074217,
+       "weight_kg": 9.071858188712795,
        "reps": 12
       },
       {
        "type": "normal",
-       "weight_kg": 47.62725549074217,
+       "weight_kg": 9.071858188712795,
        "reps": 12
       },
       {
        "type": "normal",
-       "weight_kg": 47.62725549074217,
+       "weight_kg": 9.071858188712795,
        "reps": 12
       }
      ],
-     "superset_id": null
+     "superset_id": 0
     },
     {
      "name": "Iso-Lateral Row (Machine)",
@@ -2619,7 +2620,7 @@
     {
      "name": "Straight Arm Lat Pulldown (Cable)",
      "tier": "accessory",
-     "notes": "NEW THIS BLOCK (last trained Nov 2023). Straight arms - ZERO elbow flexion, which is the whole point: it is the lat stimulus the elbow currently forbids everywhere else. Also loads serratus, which helps scapular upward rotation and the subacromial space. Soft elbows, move at the shoulder only. Opens well under the stale 61 lb anchor. Alt: Rope Straight Arm Pulldown.",
+     "notes": "SUPERSET with Lateral Raise (Cable) - same cable station. NEW THIS BLOCK (last trained Nov 2023). Straight arms - ZERO elbow flexion, which is the whole point: it is the lat stimulus the elbow currently forbids everywhere else. Also loads serratus, which helps scapular upward rotation and the subacromial space. Soft elbows, move at the shoulder only. Opens well under the stale 61 lb anchor. Alt: Rope Straight Arm Pulldown.",
      "sets": [
       {
        "type": "normal",
@@ -2639,7 +2640,30 @@
      ],
      "hold": true,
      "hold_reason": "3-year-gap re-entry: 28 sessions but all 2022-2023, median 61 lb. Per secondary-first-exposure a stale anchor is history, not a starting point - open under it and let the log re-establish the level.",
-     "superset_id": null
+     "superset_id": 0
+    },
+    {
+     "name": "Lateral Raise (Cable)",
+     "tier": "accessory",
+     "notes": "ROTATED W3 (dumbbell -> cable, FB 2026-11-11). SUPERSET with Straight Arm Pulldown - same cable station, drop the pulley to the bottom. Per arm, single-arm. Load from your log (median 15 x12, 38 sessions). Lateral delts; the cable keeps tension at the bottom where the dumbbell goes slack. Stop at @8.",
+     "sets": [
+      {
+       "type": "normal",
+       "weight_kg": 6.8038936415345965,
+       "reps": 12
+      },
+      {
+       "type": "normal",
+       "weight_kg": 6.8038936415345965,
+       "reps": 12
+      },
+      {
+       "type": "normal",
+       "weight_kg": 6.8038936415345965,
+       "reps": 12
+      }
+     ],
+     "superset_id": 0
     },
     {
      "name": "Hip Thrust (Smith Machine)",
@@ -2688,32 +2712,9 @@
      "superset_id": null
     },
     {
-     "name": "Lateral Raise (Dumbbell)",
-     "tier": "accessory",
-     "notes": "Lateral delts. FIRST CUT on D2 if the morning runs out. Alt: Cable Lateral Raise 20.",
-     "sets": [
-      {
-       "type": "normal",
-       "weight_kg": 18.14371637742559,
-       "reps": 15
-      },
-      {
-       "type": "normal",
-       "weight_kg": 18.14371637742559,
-       "reps": 15
-      },
-      {
-       "type": "normal",
-       "weight_kg": 18.14371637742559,
-       "reps": 15
-      }
-     ],
-     "superset_id": null
-    },
-    {
      "name": "Single Arm Landmine Press (Barbell)",
      "tier": "accessory",
-     "notes": "Per arm. Front delts on a diagonal path - less subacromial compression than any overhead press. @7 CAP, and that cap is the shoulder's, not a preference: two low-grade partial tears plus bursitis. Load is plates on the sleeve, not counting the bar. Alt: Neutral-grip DB Press (seated) 45, same @7 cap. NEVER barbell OHP.",
+     "notes": "FIRST CUT on D2 if the morning runs out (front delts get the most indirect work). Per arm. Front delts on a diagonal path - less subacromial compression than any overhead press. @7 CAP, and that cap is the shoulder's, not a preference: two low-grade partial tears plus bursitis. Load is plates on the sleeve, not counting the bar. Alt: Neutral-grip DB Press (seated) 45, same @7 cap. NEVER barbell OHP.",
      "sets": [
       {
        "type": "normal",
@@ -3214,7 +3215,7 @@
     {
      "name": "Tricep Pushdown",
      "tier": "accessory",
-     "notes": "Lockout (bench weak point) -> triceps. Stop at @8. Alt: Cable Triceps Extension, same load.",
+     "notes": "SUPERSET with Cable Fly Crossovers - same cable station, alternate sets, ~30 s between. Lockout (bench weak point) -> triceps. Stop at @8. Alt: Cable Triceps Extension, same load.",
      "sets": [
       {
        "type": "normal",
@@ -3234,32 +3235,32 @@
      ],
      "hold": true,
      "hold_reason": "W5 deload - every load deliberately under the log. Do not rebase.",
-     "superset_id": null
+     "superset_id": 0
     },
     {
-     "name": "Chest Fly (Machine)",
+     "name": "Cable Fly Crossovers",
      "tier": "accessory",
-     "notes": "Pec isolation without a fifth press. STOP the handles before the elbows travel behind the torso - the stretched bottom loads the anterior capsule where the subscapularis tear sits. Alt: Seated Cable Fly 70.",
+     "notes": "ROTATED W3 (machine -> cable, FB 2026-11-11). SUPERSET with Tricep Pushdown - same cable station, alternate sets. Load per side from your log (median 20, 20 sessions). Pec isolation without a fifth press. STOP before the elbows travel behind the torso - the stretched end loads the anterior capsule where the subscapularis tear sits. Stop at @8.",
      "sets": [
       {
        "type": "normal",
-       "weight_kg": 38.55539730202938,
+       "weight_kg": 6.8038936415345965,
        "reps": 12
       },
       {
        "type": "normal",
-       "weight_kg": 38.55539730202938,
+       "weight_kg": 6.8038936415345965,
        "reps": 12
       },
       {
        "type": "normal",
-       "weight_kg": 38.55539730202938,
+       "weight_kg": 6.8038936415345965,
        "reps": 12
       }
      ],
+     "superset_id": 0,
      "hold": true,
-     "hold_reason": "W5 deload - every load deliberately under the log. Do not rebase.",
-     "superset_id": null
+     "hold_reason": "deload"
     },
     {
      "name": "Iso-Lateral Row (Machine)",
@@ -3363,7 +3364,7 @@
     {
      "name": "Straight Arm Lat Pulldown (Cable)",
      "tier": "accessory",
-     "notes": "NEW THIS BLOCK (last trained Nov 2023). Straight arms - ZERO elbow flexion, which is the whole point: it is the lat stimulus the elbow currently forbids everywhere else. Also loads serratus, which helps scapular upward rotation and the subacromial space. Soft elbows, move at the shoulder only. Opens well under the stale 61 lb anchor. Alt: Rope Straight Arm Pulldown.",
+     "notes": "SUPERSET with Lateral Raise (Cable) - same cable station. NEW THIS BLOCK (last trained Nov 2023). Straight arms - ZERO elbow flexion, which is the whole point: it is the lat stimulus the elbow currently forbids everywhere else. Also loads serratus, which helps scapular upward rotation and the subacromial space. Soft elbows, move at the shoulder only. Opens well under the stale 61 lb anchor. Alt: Rope Straight Arm Pulldown.",
      "sets": [
       {
        "type": "normal",
@@ -3383,7 +3384,32 @@
      ],
      "hold": true,
      "hold_reason": "3-year-gap re-entry: 28 sessions but all 2022-2023, median 61 lb. Per secondary-first-exposure a stale anchor is history, not a starting point - open under it and let the log re-establish the level.",
-     "superset_id": null
+     "superset_id": 0
+    },
+    {
+     "name": "Lateral Raise (Cable)",
+     "tier": "accessory",
+     "notes": "ROTATED W3 (dumbbell -> cable, FB 2026-11-11). SUPERSET with Straight Arm Pulldown - same cable station, drop the pulley to the bottom. Per arm, single-arm. Load from your log (median 15 x12, 38 sessions). Lateral delts; the cable keeps tension at the bottom where the dumbbell goes slack. Stop at @8.",
+     "sets": [
+      {
+       "type": "normal",
+       "weight_kg": 4.535929094356398,
+       "reps": 12
+      },
+      {
+       "type": "normal",
+       "weight_kg": 4.535929094356398,
+       "reps": 12
+      },
+      {
+       "type": "normal",
+       "weight_kg": 4.535929094356398,
+       "reps": 12
+      }
+     ],
+     "superset_id": 0,
+     "hold": true,
+     "hold_reason": "deload"
     },
     {
      "name": "Hip Thrust (Smith Machine)",
@@ -3436,34 +3462,9 @@
      "superset_id": null
     },
     {
-     "name": "Lateral Raise (Dumbbell)",
-     "tier": "accessory",
-     "notes": "Lateral delts. FIRST CUT on D2 if the morning runs out. Alt: Cable Lateral Raise 20.",
-     "sets": [
-      {
-       "type": "normal",
-       "weight_kg": 13.607787283069193,
-       "reps": 15
-      },
-      {
-       "type": "normal",
-       "weight_kg": 13.607787283069193,
-       "reps": 15
-      },
-      {
-       "type": "normal",
-       "weight_kg": 13.607787283069193,
-       "reps": 15
-      }
-     ],
-     "hold": true,
-     "hold_reason": "W5 deload - every load deliberately under the log. Do not rebase.",
-     "superset_id": null
-    },
-    {
      "name": "Single Arm Landmine Press (Barbell)",
      "tier": "accessory",
-     "notes": "Per arm. Front delts on a diagonal path - less subacromial compression than any overhead press. @7 CAP, and that cap is the shoulder's, not a preference: two low-grade partial tears plus bursitis. Load is plates on the sleeve, not counting the bar. Alt: Neutral-grip DB Press (seated) 45, same @7 cap. NEVER barbell OHP.",
+     "notes": "FIRST CUT on D2 if the morning runs out (front delts get the most indirect work). Per arm. Front delts on a diagonal path - less subacromial compression than any overhead press. @7 CAP, and that cap is the shoulder's, not a preference: two low-grade partial tears plus bursitis. Load is plates on the sleeve, not counting the bar. Alt: Neutral-grip DB Press (seated) 45, same @7 cap. NEVER barbell OHP.",
      "sets": [
       {
        "type": "normal",

@@ -105,14 +105,17 @@ the ceiling becomes a question we can answer with evidence instead of caution.
 
 | Day | Primary / secondary | Accessories | Core |
 |---|---|---|---|
-| **D1 Mon** | **Comp Bench (heavy)** ← *first now* · Low-bar Squat (moderate band) | Tricep Pushdown · Chest Fly · Iso-Lateral Row | Side Plank |
-| **D2 Tue** | **Weighted Pull-up** (absolute-load cap) | **Straight Arm Lat Pulldown 🆕** · Hip Thrust · Seated Leg Curl · Lateral Raise · Landmine Press | Pallof Press |
+| **D1 Mon** | **Comp Bench (heavy)** ← *first now* · Low-bar Squat (moderate band) | Tricep Pushdown ⚯ **Cable Fly 🔄 (W3+)** · Iso-Lateral Row | Side Plank |
+| **D2 Tue** | **Weighted Pull-up** (absolute-load cap) | **Straight Arm Lat Pulldown 🆕** ⚯ **Cable Lateral Raise 🔄 (W3+)** · Hip Thrust · Seated Leg Curl · Landmine Press | Pallof Press |
 | **D3 Thu** | **Weighted Dip** · Spoto Bench | Lat Pulldown · Leg Extension · Reverse Pec Deck · Face Pull | Dead Bug |
 | **D4 Fri** | **Sumo Deadlift (HEAVY)** · **Comp Bench (volume, 6s)** | Seated Calf Raise · CS Incline Row · **Hip Adduction ➕** | Bird Dog |
 
 ~~**⚯ = superset pair**~~ **No supersets from W2-D3 on (amended 2026-11-11, `superset-same-equipment`).**
 All six B7 pairs had a machine on at least one side — you can't hold one machine while working another.
 Straight sets throughout. **Working sets/day: D1 20 · D2 22 · D3 22 · D4 20.**
+**From W3, two legal pairs return** through rotation: D1 Pushdown ⚯ Cable Fly Crossovers and D2 Straight-Arm
+Pulldown ⚯ Cable Lateral Raise — each pair on one cable station. 🔄 = rotated in mid-block (FB 2026-11-11).
+**D2 first cut is now the Landmine Press.**
 
 **Order changes, both deliberate:**
 - **D1: bench goes FIRST.** B6 put the squat first because it was heavy and a pre-fatigued 435 is

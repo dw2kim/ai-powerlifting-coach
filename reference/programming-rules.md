@@ -136,12 +136,12 @@
   new** accessory/secondary movements that expand an under-trained muscle group for novel
   stimulus — while keeping ≥1 carry-over per slot and primaries fixed. State explicitly which
   1–2 movements were added and which group each expands. [FB 2026-06-18, extended 2026-06-29]
-  **Floor: at least 3 accessory rotations per block** (same target, new implement or angle), on top
-  of the 1–2 new movements. **A drop, a re-entry or an addition is not a rotation** — B7 had two
+  **Floor: at least 4 accessory rotations per block, and at least one on every training day
+  (D1–D4)** — so every session has something new in it. Same target, new implement or angle; on
+  top of the 1–2 new movements. **A drop, a re-entry or an addition is not a rotation** — B7 had two
   drops, one re-entry, one new, and **zero rotations**; 12 of its 14 accessories were B6's, and 9 had
-  run since B5. Medical limits narrow the options; they don't excuse zero. State the rotation count in
-  the block's change list. *(The number 3 is the coach's read of "a few" — athlete to confirm.)*
-  [FB 2026-11-11]
+  run since B5. Medical limits narrow the options; they don't excuse zero. Every block prints a
+  **rotation table** (day · out · in · target · why) with the count. [FB 2026-11-11, athlete set 4]
 - **superset-same-equipment** — **A superset only pairs two exercises done on the same equipment**:
   dumbbell + dumbbell, cable + cable, barbell + barbell. **A machine never goes in a superset** —
   you can't hold the chest fly machine while you're on the leg curl, so machine + machine and
