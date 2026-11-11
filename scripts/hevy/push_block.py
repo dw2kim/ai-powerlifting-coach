@@ -195,6 +195,51 @@ def existing_folders(client, title: str) -> list[str]:
     return sorted(found, key=lambda i: (len(str(i)), str(i)))
 
 
+# Hevy files every cable movement under equipment "machine". These are the cable ones whose
+# template title doesn't say "(Cable)".
+_CABLE_TITLES = {"face pull", "pallof press", "triceps pushdown", "rope straight arm pulldown"}
+
+
+def superset_station(template: dict) -> str:
+    """Where in the gym an exercise is done, for `superset-same-equipment`.
+
+    Free weights you carry with you (dumbbell, kettlebell, barbell, band, bodyweight) are their
+    equipment type. A cable movement is "cable": one stack, swap the handle. Any other machine is
+    its own station — you can't hold the chest fly machine while you're on the leg curl.
+    """
+    eq = template.get("equipment") or "none"
+    title = (template.get("title") or "").lower()
+    if eq == "machine":
+        if "cable" in title or title in _CABLE_TITLES:
+            return "cable"
+        return f"machine:{title}"
+    return eq
+
+
+def check_supersets(exercises: list[dict], resolver: Resolver, where: str = "") -> None:
+    """Refuse a superset whose members aren't done on the same equipment
+    (`superset-same-equipment`): dumbbell + dumbbell or cable + cable, never machine + anything."""
+    paired = [ex for ex in exercises if _superset_id(ex) is not None]
+    if not paired:
+        return
+    by_id = {t["id"]: t for t in getattr(resolver, "templates", [])}
+    groups: dict[int, list[tuple[str, str]]] = {}
+    for ex in paired:
+        ss = _superset_id(ex)
+        tpl = by_id.get(resolver.resolve(ex["name"]), {"title": ex["name"]})
+        groups.setdefault(ss, []).append((ex["name"], superset_station(tpl)))
+    for ss, members in groups.items():
+        stations = {st for _, st in members}
+        machine = any(st.startswith("machine:") for st in stations)
+        if len(stations) > 1 or (machine and len(members) > 1):
+            listing = ", ".join(f"{n} [{st}]" for n, st in members)
+            raise ValueError(
+                f"{where} superset {ss} mixes equipment: {listing}. "
+                "superset-same-equipment: pair only dumbbell+dumbbell, cable+cable, etc. — "
+                "never a machine with anything. Unpair it (superset_id: null) or swap one side."
+            )
+
+
 def exercise_payload(ex: dict, resolver: Resolver, light_week: bool = False) -> dict:
     """One prescription entry as the routine API wants it. Shared with the weekend make-up
     (scripts/review/weekend_makeup.py) so both land in the app the same way."""
@@ -232,6 +277,7 @@ def build_routine_payload(
     resolver: Resolver,
     light_week: bool = False,
 ) -> dict:
+    check_supersets(prescription["exercises"], resolver, f"W{week}-{day['label']}:")
     exercises = [
         exercise_payload(ex, resolver, light_week) for ex in prescription["exercises"]
     ]

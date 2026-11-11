@@ -967,3 +967,38 @@ strong pushback — the Mon/Thu squat spacing is a fair argument. Accepted with 
 @6.5, ≤3×3, ≤~70% of D1; a `tight` Saturday check moves it to D2). December shot ~12-18 (not booked; B8 W2
 D4). No travel planned Dec 7 → Jan 8.
 → rules: `axial-variant-weekly` (placement)
+
+### 2026-11-11 · general · exercise · supersets only on the same equipment · 2026-Q4-B07
+**Feedback:** "If we have a machine workout, it cannot be a superset, because I can't hold a machine and work
+on the other machine. If we want to have a superset, make sure it's the same equipment. If I have a dumbbell
+fly and dumbbell lateral raise, for example, they can be a superset. If you have a chest fly machine and a leg
+curl machine, I can't have a superset. If they are the same equipment, like two cable workouts, they can be a
+superset."
+**Verified (block JSON vs Hevy templates):** supersets were new in B7 (B5/B6 had none). **All six B7 pairs
+broke it** — every one had a machine on at least one side: Pushdown (cable) ⚯ Chest Fly (machine) · Straight
+Arm PD (cable) ⚯ Hip Thrust (Smith) · Seated Leg Curl (machine) ⚯ Lateral Raise (DB) · Lat Pulldown (cable) ⚯
+Leg Extension (machine) · Reverse Pec Deck (machine) ⚯ Face Pull (cable) · Seated Calf Raise (machine) ⚯ CS
+Incline Row (DB).
+**Root cause:** the pairs were picked for muscle non-overlap and time, never for where in the gym each one is
+done. Nothing in the design skill or the push asked.
+**Actions taken:**
+- `scripts/hevy/push_block.py`: `check_supersets` refuses a mixed-equipment or machine pair before the API is
+  called. Cable counts as one station (Hevy labels cable "machine"; read from the title). Tests in
+  `tests/test_push_block_supersets.py`. The old B7 JSON fails it on all six pairs, as it should.
+- B7 amended **from W2-D3 (Thu 11-12) on**: all six pairs unpaired, notes cleaned, no load or exercise change.
+  W2-D1/D2 are trained and left alone. The minutes the pairs saved go back on the clock; the named first cuts are unchanged.
+→ rules: `superset-same-equipment` (new)
+
+### 2026-11-11 · block · exercise · B7 barely rotated accessories · 2026-Q4-B07 → B8
+**Feedback (question):** "How many accessories have we rotated? From the last block 6, I don't see many
+changes on block 7, which makes the block a little bit less interesting."
+**Verified (W2 of each block JSON):** B7 has 14 accessories; **12 are B6's, unchanged**. Out: Concentration
+Curl (elbows), BSS (heavy-sumo block). In: Straight Arm Lat Pulldown (new), Hip Adduction (re-entry). **True
+rotations (same target, new implement): zero.** Nine accessories have run since B5 or earlier (Pushdown, Leg
+Curl, Lateral Raise, Hip Thrust, Lat Pulldown, Reverse Pec Deck, Face Pull, CS Incline Row, Seated Calf Raise).
+B6 by comparison rotated ~4 off B5. He's right, and the rule's "change only a few" let me read it as "a few
+at most" when it means "a few, every block".
+**Actions taken:** `accessory-rotation` gets a floor of 3 real rotations per block, and drops/re-entries stop
+counting. B7 left as is unless he asks for a W3 swap; B8 is where it's paid back.
+→ rules: `accessory-rotation` (rotation floor)
+
