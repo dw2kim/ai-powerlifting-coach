@@ -7,8 +7,8 @@
 **Source**: Designed 2026-11-01 from the B6 review (`reviews/2026-Q4-B06.md`), the 2026-10-12
 "too conservative" ruling, and four calls you made on 2026-11-01 (axial direction, bench stimulus,
 elbow status, back checks).
-**Live in Hevy**: ⏳ **not pushed yet** — dry-run is clean (folder `2026-Q4-B07`, 20 routines,
-whole-pound loads, a rest timer on every line). **Waiting on your go.**
+**Live in Hevy**: ✅ live. **Last pushed 2026-11-11** (`--update --start W2-D3`): supersets removed from W2-D3,
+and the two W3 cable rotations with their pairs (Pushdown ⚯ Cable Fly · Straight-Arm PD ⚯ Cable Lateral Raise).
 **Prior block**: `data/block-archive/2026-Q4-B06.{md,json}` · review in `reviews/2026-Q4-B06.md`
 
 **Axial emphasis (`alternating-axial-emphasis`)**: **current = SUMO heavy, squat moderate.
@@ -364,7 +364,7 @@ Pulldown** (stale 3-year anchor), and **all of W5** (deload).
       sessions with pain at the written loads and the pull-up comes out of the block.
 - [ ] **🔴 Answer the six elbow questions** in `active-issues.md` → *Elbows* (where exactly, does it
       hurt outside the gym, does it hurt on dips, what changed in late September).
-- [ ] **🟡 Push to Hevy** — dry-run clean, 20 routines. **Waiting on your go.**
+- [x] ~~**🟡 Push to Hevy**~~ — live; last update pushed 2026-11-11 from W2-D3.
 - [ ] **🟡 Export to the Google Sheet** — needs the Actions workflow (no Google creds in session).
 - [ ] **🟡 Tooling: make a `hold` still get checked against the log** (B6 sumo ran +30 unnoticed).
 - [ ] **🟡 Tooling: the end-of-block draft automation has never fired.** It's a local scheduled task
