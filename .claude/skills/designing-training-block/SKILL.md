@@ -109,7 +109,12 @@ description: Design a new training block — pull context from prior block + mem
      the **tier, rest timer and loads in lb** — the same units as the Sheet. **Check that
      against the Sheet before applying**: whole-pound loads, and a timer on every line
      (rules `hevy-load-fidelity`, `hevy-rest-timers`). `--json` dumps the raw kg payload.
-   - On confirmation: `python -m scripts.hevy.push_block --apply`. Routines land in a folder named after the block id.
+   - On confirmation: `python -m scripts.hevy.push_block --apply`. Routines land in **one
+     folder per week**, titled `<block-id>-W<n>` — `2026-Q4-B08-W1`, `…-W2`, … — so he opens
+     the week he's training instead of scrolling the whole block (rule `hevy-folder-per-week`).
+     Folders are created in ascending week order, and only for the weeks being pushed.
+     **Leave `folder_layout` out of the block JSON**; per-week is the default. The key exists
+     only to pin a block that is already live to the old single-folder shape (`"single"`).
    - **Correcting a block that is already live** — that's a different job with its own traps
      (the `hold` sweep, the mapping check, the Sheet re-render). **Use the
      `amending-live-block` skill**, which owns that path end to end; don't improvise it here.

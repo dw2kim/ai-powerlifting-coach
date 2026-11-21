@@ -430,6 +430,11 @@
   everything before the start point alone. **Hevy has no DELETE for routines**, so a plain re-push
   is additive and strands duplicates the athlete has to clear by hand. **Never ask him to delete
   routines to make room for a correction** — fix the push instead. [FB 2026-08-11]
+- **hevy-folder-per-week** — **From B8 on, every block is pushed as one Hevy folder per week**,
+  titled `<block-id>-W<n>` (`2026-Q4-B08-W1` … `-W5`), each holding that week's routines. Routine
+  titles stay `W<n>-D<n> <focus>`. Per-week is the push default — a new block JSON leaves
+  `folder_layout` out. **A block that's already live keeps the shape it was pushed with**
+  (B7 is pinned `"single"`); never re-shape folders mid-block. [FB 2026-11-21]
 
 ## Review conventions
 
