@@ -169,11 +169,14 @@ def existing_routines(client, folder_ids: set | None = None) -> dict[str, str]:
     prior block. Pass None to fall back to the whole account, which is what an update does
     when the block's folders can't be found. FB 2026-11-21.
     """
+    # Compare as strings: `--folder-id` arrives from argparse as "200" while Hevy returns
+    # folder_id 200, and a str/int miss here silently turns a resume into duplicates.
+    wanted = None if folder_ids is None else {str(f) for f in folder_ids}
     out: dict[str, str] = {}
     for r in client.paginate("/routines", "routines"):
         if not (r.get("title") and r.get("id")):
             continue
-        if folder_ids is not None and r.get("folder_id") not in folder_ids:
+        if wanted is not None and str(r.get("folder_id")) not in wanted:
             continue
         out[r["title"]] = r["id"]
     return out

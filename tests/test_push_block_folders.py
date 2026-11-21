@@ -159,6 +159,11 @@ class ExistingRoutinesScopeTests(unittest.TestCase):
         got = existing_routines(_RoutineClient(self.ROUTINES), {999})
         self.assertEqual(got, {})
 
+    def test_a_folder_id_from_the_command_line_still_matches(self):
+        """`--folder-id 200` is the string "200"; Hevy's folder_id is the int 200."""
+        got = existing_routines(_RoutineClient(self.ROUTINES), {"200"})
+        self.assertEqual(got, {"W1-D1 Squat + Comp Bench": "b8"})
+
     def test_none_falls_back_to_the_whole_account(self):
         """What an update does when the block's folders can't be found: better a title
         match than a duplicate set of routines."""
