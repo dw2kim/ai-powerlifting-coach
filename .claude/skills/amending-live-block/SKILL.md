@@ -24,8 +24,12 @@ For designing a *new* block use `designing-training-block`. For a clinical event
 - **Never ask him to delete routines in the app.** Hevy has **no DELETE for routines** — the
   update path exists precisely so he never has to. *"The right answer to 'should I delete
   it?' is always no — fix the push, not his Saturday."*
-- **Never re-push without `--update`.** A plain push is additive: it POSTs a **second** folder
-  and a duplicate set of 20 routines that can only be cleared by hand.
+- **Never re-push without `--update`.** A plain push is additive: it POSTs a duplicate set of
+  20 routines that can only be cleared by hand. (It no longer duplicates folders — those are
+  looked up by title and reused — but the routines are the damage.)
+- **Never change a live block's `folder_layout`.** A block he is already training off keeps
+  the folder shape it was pushed with; B7 and earlier are pinned `"single"` in their JSON. Re-shaping
+  folders mid-block means hunting for routines at 6am. Rule `hevy-folder-per-week`.
 - **Never rewrite a week he has already trained.** That week is the record of what was
   prescribed.
 
@@ -96,8 +100,10 @@ addition gets a hold.
 python -m scripts.hevy.push_block --update --start W<n>-D<n> --apply
 ```
 
-`--update` PUTs over the routines whose titles match, keeping their existing folder;
-`--start` leaves already-trained sessions alone.
+`--update` PUTs over the routines whose titles match, keeping their existing folder (it
+never creates one); `--start` leaves already-trained sessions alone. The title match is
+scoped to this block's own folders, so a leftover routine from the prior block with the same
+`W<n>-D<n> <focus>` title can't be overwritten by mistake.
 
 **No credentials in the session?** An agent session usually has no `HEVY_API_KEY` or
 `GOOGLE_SA_JSON`. **Say so — do not claim the push happened.** Point at the

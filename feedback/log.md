@@ -1021,3 +1021,28 @@ or with a day at zero. Wired into `push_block`: a fresh full `--apply` refuses o
 corrections aren't affected. Ran against history: **B6 vs B5 = 2** (DB Shoulder Press → Landmine, Leg Press →
 Leg Extension). My earlier "~4" was wrong. **B7 W1 = 0, B7 W3 = 2** (D3/D4 still at zero).
 
+### 2026-11-21 · general · Hevy folders, one per week · 2026-Q4-B08 →
+**Feedback:** "Going forward, when you are creating the routines, can you make the separate folders for the
+new block by the weeks? … E.g. 2026-Q4-B07-W1. I don't need to change for this block … apply the logic in the
+next one, block 8, and so on."
+**Verified (Hevy, today):** three folders — `2026-Q4-B07` (one folder, the whole block), `Weekend Make-up`, and
+a mobility plan. B7's W1–W3 routines are gone from the app (deleted by hand once trained); W4/W5 remain. Two B6
+leftovers (`W5-D3 Dip + Upper Back`, `W5-D4 Sumo (moderate) + Spoto`) and a bridge routine still sit loose.
+**Root cause:** `push_block` hard-coded one folder titled with the block id. There was no layout option.
+**Found on the way:** the routine lookup that decides skip-vs-overwrite matched by title across the **whole
+account**. Titles carry no block id, and B3/B4 both had `W1-D1 Squat + Comp Bench`. A B8 that repeats a B7
+day label would have had its W1-D1 skipped, or with `--update`, written over the B7 leftover. It hasn't bitten
+yet only because the labels changed every block and he deletes trained routines.
+**Actions taken:**
+- `scripts/hevy/push_block.py`: `folder_layout` (spec key; `"per-week"` default, `"single"` legacy),
+  `folder_title` → `<block-id>-W<n>`, `resolve_folder` (reuse-before-create per week; never creates in
+  `--update`). Folders are made in ascending week order and only for the weeks being pushed, so a
+  `--start W3-D2` can't leave empty W1/W2 folders behind. `existing_routines` is now scoped to the block's own
+  folders, falling back to the whole account only when an update can't find them.
+- `brain/current-block.json` (B7) pinned `"folder_layout": "single"`: its next `--update` is unchanged.
+  Archives untouched — they're never pushed again.
+- Tests in `tests/test_push_block_folders.py` (150 pass). Dry-run of a per-week copy of the spec from W3-D1
+  prints W3, W4, W5 folders, in order.
+- `designing-training-block` and `amending-live-block` skills updated.
+→ rules: `hevy-folder-per-week` (new)
+

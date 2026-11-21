@@ -1,8 +1,11 @@
 """Push a block's routines to Hevy.
 
 Reads a structured spec from `brain/current-block.json` (sidecar to the prose
-current-block.md). Creates one routine folder named after the block id, then
-one routine per (week, day) under it.
+current-block.md). Creates **one routine folder per week** — `<block-id>-W<n>`, e.g.
+`2026-Q4-B08-W1` — and files that week's routines under it, so a training week is one tap
+in the app instead of a scroll through twenty routines (FB 2026-11-21). Set
+`"folder_layout": "single"` in the spec for the old one-folder-per-block shape; B7 and
+earlier are pinned to it because they are already live.
 
 Default is dry-run; pass --apply to actually call the API.
 
@@ -151,19 +154,78 @@ def _routine_id(resp) -> str | None:
     return obj.get("id") if isinstance(obj, dict) else None
 
 
-def existing_routines(client) -> dict[str, str]:
-    """Map routine title -> id for everything already in Hevy.
+def existing_routines(client, folder_ids: set | None = None) -> dict[str, str]:
+    """Map routine title -> id for what's already in Hevy.
 
     Used two ways: to skip what's already there on a resumed push, and (with --update) to PUT
     a corrected routine straight over the old one. The Hevy API has **no DELETE for routines**,
     so overwriting in place is the only way to fix a block that's already live without the
     athlete hand-deleting rows in the app.
+
+    `folder_ids` narrows the map to this block's own folders. Routine titles are
+    `W<n>-D<n> <focus>` and carry no block id, so two blocks that keep the same split
+    produce the *same* titles — B3 and B4 both had "W1-D1 Squat + Comp Bench". Unscoped, a
+    new block's push would skip (or, with --update, overwrite) a leftover routine from the
+    prior block. Pass None to fall back to the whole account, which is what an update does
+    when the block's folders can't be found. FB 2026-11-21.
     """
-    return {
-        r["title"]: r["id"]
-        for r in client.paginate("/routines", "routines")
-        if r.get("title") and r.get("id")
-    }
+    out: dict[str, str] = {}
+    for r in client.paginate("/routines", "routines"):
+        if not (r.get("title") and r.get("id")):
+            continue
+        if folder_ids is not None and r.get("folder_id") not in folder_ids:
+            continue
+        out[r["title"]] = r["id"]
+    return out
+
+
+def folder_layout(spec: dict) -> str:
+    """`"per-week"` (the default) or `"single"`.
+
+    The athlete asked for a folder per week so he opens one week in the app rather than
+    scrolling a whole block (FB 2026-11-21). Default is per-week so nobody has to remember
+    the key on a new block; B7 and earlier carry `"single"` in their own JSON, because
+    re-shaping the folders of a block he is already training off is not a correction.
+    """
+    layout = spec.get("folder_layout", "per-week")
+    if layout not in ("single", "per-week"):
+        raise SystemExit(
+            f'folder_layout must be "single" or "per-week" (got {layout!r})'
+        )
+    return layout
+
+
+def folder_title(block_id: str, layout: str, week: int) -> str:
+    """`2026-Q4-B08-W1` per-week, or the bare block id under the old single layout."""
+    return block_id if layout == "single" else f"{block_id}-W{week}"
+
+
+def resolve_folder(client, title: str, *, create: bool, apply: bool) -> str | None:
+    """Folder id for `title`: reuse one that already exists, create it only if asked to.
+
+    Reuse before create, because a retry after a partial failure must not add a second
+    folder — B7 left two empty ones in a single morning and Hevy has no API delete for
+    folders. `create=False` is update mode, which must never add a folder: the routines it
+    PUTs keep whatever folder they are already filed under.
+    """
+    if not apply:
+        print(f"[dry-run] Would use folder: {title}")
+        return None
+    same_title = existing_folders(client, title)
+    if same_title:
+        if len(same_title) > 1:
+            print(f"⚠️  {len(same_title)} folders are titled {title}: "
+                  f"{', '.join(str(i) for i in same_title)}. Filling the first; "
+                  f"delete the others in the app (Hevy has no API delete for folders).")
+        print(f"Reusing existing folder {title} -> {same_title[0]}")
+        return same_title[0]
+    if not create:
+        print(f"⚠️  No folder titled {title} — its routines keep the folder they're in.")
+        return None
+    resp = client.post("/routine_folders", {"routine_folder": {"title": title}})
+    fid = (resp.get("routine_folder") or resp).get("id")
+    print(f"Created folder {title} -> {fid}")
+    return fid
 
 
 def existing_folders(client, title: str) -> list[str]:
@@ -380,9 +442,9 @@ def main() -> None:
     )
     parser.add_argument(
         "--folder-id",
-        help="Push into an existing routine folder instead of creating one. Use this to "
-             "resume after a partial failure, so the block doesn't end up with duplicate "
-             "folders in the app.",
+        help="Push every selected week into this one existing folder instead of resolving "
+             "a folder per week. Use this to resume after a partial failure, so the block "
+             "doesn't end up with duplicate folders in the app.",
     )
     parser.add_argument(
         "--json",
@@ -421,45 +483,52 @@ def main() -> None:
                   + (" — pushing anyway (--skip-rotation-check)." if args.apply else "."))
 
     client = HevyClient() if args.apply else None
+    layout = folder_layout(spec)
 
-    folder_id = args.folder_id
-    if args.update and folder_id is None:
-        # An update lands on routines that already exist, and they already have a folder.
-        # Creating one here would leave an empty folder behind on every correction.
-        print("Update mode: reusing each routine's existing folder")
-    elif args.apply and folder_id is None:
-        # Reuse before create: a retry after a partial failure must not add a second folder.
-        same_title = existing_folders(client, block_id)
-        if same_title:
-            folder_id = same_title[0]
-            print(f"Reusing existing folder {block_id} -> {folder_id}")
-            if len(same_title) > 1:
-                print(f"⚠️  {len(same_title)} folders are titled {block_id}: "
-                      f"{', '.join(str(i) for i in same_title)}. Filling the first; "
-                      f"delete the others in the app (Hevy has no API delete for folders).")
-        else:
-            folder_resp = client.post(
-                "/routine_folders", {"routine_folder": {"title": block_id}}
-            )
-            folder_id = (folder_resp.get("routine_folder") or folder_resp).get("id")
-            print(f"Created folder {block_id} -> {folder_id}")
-    elif args.apply:
-        print(f"Reusing folder {block_id} -> {folder_id}")
-    else:
-        print(f"[dry-run] Would create folder: {block_id}")
-
-    existing = existing_routines(client) if args.apply else {}
-
+    # Which sessions this invocation actually touches. Folders are resolved only for the
+    # weeks that get a routine, so a `--start W3-D2` correction doesn't leave empty W1/W2
+    # folders behind in the app.
+    selected = []
     for pres in spec["prescriptions"]:
         week = pres["week"]
         if args.week and week != args.week:
             continue
         if start_key and (week, day_order[pres["day"]]) < start_key:
             continue
+        selected.append(pres)
+    weeks = sorted({p["week"] for p in selected})
+
+    folders: dict[int, str | None] = {}
+    if args.folder_id:
+        print(f"Using folder {args.folder_id} for every selected week (--folder-id)")
+        folders = {w: args.folder_id for w in weeks}
+    else:
+        if args.update:
+            # An update lands on routines that already exist, and they already have a
+            # folder. Creating one here would leave an empty folder behind on every
+            # correction. The lookup still runs, to scope the title match to this block.
+            print("Update mode: reusing each routine's existing folder")
+        # Ascending week order, so the app lists W1 … W5 in the order he trains them.
+        for w in weeks:
+            folders[w] = resolve_folder(
+                client,
+                folder_title(block_id, layout, w),
+                create=not args.update,
+                apply=bool(args.apply),
+            )
+            if layout == "single":
+                folders = dict.fromkeys(weeks, folders[w])
+                break
+
+    found = {f for f in folders.values() if f is not None}
+    existing = existing_routines(client, found or None) if args.apply else {}
+
+    for pres in selected:
+        week = pres["week"]
         day = day_lookup[pres["day"]]
         light = is_light_week(week, week_phase(spec, week))
         payload = build_routine_payload(
-            block_id, week, day, pres, folder_id, resolver, light
+            block_id, week, day, pres, folders.get(week), resolver, light
         )
         title = payload["routine"]["title"]
         if args.apply:
