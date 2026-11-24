@@ -1,0 +1,316 @@
+{
+  "created_at": "2026-11-24T12:47:59.012Z",
+  "description": "",
+  "end_time": "2026-11-24T12:47:57+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "729237D1",
+      "index": 0,
+      "notes": null,
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 0.45359290943563974
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 20.41168092460379
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 3,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 38.55539730202938
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 5,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 24.947610018960187
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 5,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 24.947610018960187
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 5,
+          "reps": 5,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 24.947610018960187
+        }
+      ],
+      "superset_id": null,
+      "title": "Pull Up (Weighted)"
+    },
+    {
+      "exercise_template_id": "1837BA23",
+      "index": 1,
+      "notes": null,
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 20.41168092460379
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 22.67964547178199
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 22.67964547178199
+        }
+      ],
+      "superset_id": null,
+      "title": "Single Arm Landmine Press (Barbell)"
+    },
+    {
+      "exercise_template_id": "291ABA92",
+      "index": 2,
+      "notes": null,
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 8,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 8,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 142.88176647222653
+        }
+      ],
+      "superset_id": null,
+      "title": "Hip Thrust (Smith Machine)"
+    },
+    {
+      "exercise_template_id": "D2387AB1",
+      "index": 3,
+      "notes": null,
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 22.67964547178199
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 22.67964547178199
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 22.67964547178199
+        }
+      ],
+      "superset_id": 0,
+      "title": "Straight Arm Lat Pulldown (Cable)"
+    },
+    {
+      "exercise_template_id": "BE289E45",
+      "index": 4,
+      "notes": null,
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 6.8038936415345965
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 6.8038936415345965
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 6.8038936415345965
+        }
+      ],
+      "superset_id": 0,
+      "title": "Lateral Raise (Cable)"
+    },
+    {
+      "exercise_template_id": "CC55119B",
+      "index": 5,
+      "notes": null,
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 9.071858188712795
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 9.071858188712795
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 9.071858188712795
+        }
+      ],
+      "superset_id": null,
+      "title": "Cable Core Pallof Press"
+    },
+    {
+      "exercise_template_id": "ABEC557F",
+      "index": 6,
+      "notes": null,
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 43.091326396385774
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 43.091326396385774
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 43.091326396385774
+        }
+      ],
+      "superset_id": null,
+      "title": "Shrug (Dumbbell)"
+    }
+  ],
+  "id": "172ba64a-ab90-4e2a-82bb-ad640384a50f",
+  "media": [],
+  "routine_id": "b36380ed-7be4-4b5c-81b2-5df39b4990d5",
+  "start_time": "2026-11-24T11:42:29+00:00",
+  "title": "W4-D2 Pull-up + Lats/Posterior + Shoulders",
+  "updated_at": "2026-11-24T12:47:59.012Z"
+}
