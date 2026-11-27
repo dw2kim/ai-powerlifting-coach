@@ -1,0 +1,317 @@
+{
+  "created_at": "2026-11-27T13:34:02.617Z",
+  "description": "",
+  "end_time": "2026-11-27T13:34:00+00:00",
+  "exercises": [
+    {
+      "exercise_template_id": "D20D7BBE",
+      "index": 0,
+      "notes": null,
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 8,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 61.235042773811365
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 5,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 3,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 142.88176647222653
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 2,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 165.5614119440085
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 3,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 188.2410574157905
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 5,
+          "reps": 3,
+          "rpe": 6,
+          "type": "normal",
+          "weight_kg": 165.5614119440085
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 6,
+          "reps": 3,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 165.5614119440085
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 7,
+          "reps": 3,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 165.5614119440085
+        }
+      ],
+      "superset_id": null,
+      "title": "Sumo Deadlift"
+    },
+    {
+      "exercise_template_id": "d8218be2-977f-4000-ac42-66cb11986863",
+      "index": 1,
+      "notes": null,
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 5,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 61.235042773811365
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 2,
+          "rpe": null,
+          "type": "warmup",
+          "weight_kg": 83.91468824559335
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 6,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 3,
+          "reps": 6,
+          "rpe": 7.5,
+          "type": "normal",
+          "weight_kg": 102.05840462301894
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 4,
+          "reps": 6,
+          "rpe": 8,
+          "type": "normal",
+          "weight_kg": 102.05840462301894
+        }
+      ],
+      "superset_id": null,
+      "title": "POWER Bench Press"
+    },
+    {
+      "exercise_template_id": "0393F233",
+      "index": 2,
+      "notes": "120lbs too light",
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 65.77097186816776
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 65.77097186816776
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": 7,
+          "type": "normal",
+          "weight_kg": 65.77097186816776
+        }
+      ],
+      "superset_id": null,
+      "title": "Seated Cable Row - V Grip (Cable)"
+    },
+    {
+      "exercise_template_id": "8BEBFED6",
+      "index": 3,
+      "notes": null,
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 52.16318458509857
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 15,
+          "rpe": 8.5,
+          "type": "normal",
+          "weight_kg": 47.62725549074217
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 15,
+          "rpe": 9.5,
+          "type": "normal",
+          "weight_kg": 47.62725549074217
+        }
+      ],
+      "superset_id": null,
+      "title": "Hip Adduction (Machine)"
+    },
+    {
+      "exercise_template_id": "47B9DF13",
+      "index": 4,
+      "notes": null,
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 95.25451098148434
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 104.32636917019714
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 12,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": 122.47008554762273
+        }
+      ],
+      "superset_id": null,
+      "title": "Calf Extension (Machine)"
+    },
+    {
+      "exercise_template_id": "BD0AD077",
+      "index": 5,
+      "notes": null,
+      "sets": [
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 0,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": null
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 1,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": null
+        },
+        {
+          "custom_metric": null,
+          "distance_meters": null,
+          "duration_seconds": null,
+          "index": 2,
+          "reps": 10,
+          "rpe": null,
+          "type": "normal",
+          "weight_kg": null
+        }
+      ],
+      "superset_id": null,
+      "title": "Bird Dog"
+    }
+  ],
+  "id": "c5fc0958-1549-4be0-998c-f79991a45147",
+  "media": [],
+  "routine_id": "b0cf4058-7a88-4052-92ef-387825033f92",
+  "start_time": "2026-11-27T11:31:44+00:00",
+  "title": "W4-D4 Sumo (HEAVY) + Comp Bench (volume)",
+  "updated_at": "2026-11-27T13:34:02.617Z"
+}
